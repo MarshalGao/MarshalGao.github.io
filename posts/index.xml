@@ -1,0 +1,361 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on This is Marshal</title>
+        <link>https://www.marshalgao.com/posts/</link>
+        <description>Recent content in Posts on This is Marshal</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
+        <lastBuildDate>Wed, 14 Oct 2020 10:41:28 +0800</lastBuildDate>
+        <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>PM Basic Knowledge</title>
+            <link>https://www.marshalgao.com/posts/2020/10/pm-basic-knowledge/</link>
+            <pubDate>Wed, 14 Oct 2020 10:41:28 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/posts/2020/10/pm-basic-knowledge/</guid>
+            <description>&lt;h2 id=&#34;产品经理分类&#34;&gt;产品经理分类：&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/MarshalGAOGAO/image_hosting/master/hugo_images/v2-8867ecb270bfd7a20cdcada8a35b0c0b_1440w.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This is a simple preview for styles in Den.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<h2 id="产品经理分类">产品经理分类：</h2>
+<p><img src="https://raw.githubusercontent.com/MarshalGAOGAO/image_hosting/master/hugo_images/v2-8867ecb270bfd7a20cdcada8a35b0c0b_1440w.jpg" alt=""></p>
+<p>This is a simple preview for styles in Den.</p>
+<h2 id="header">Header</h2>
+<p>A paragraph is like this.</p>
+<p>A paragraph might be very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long.</p>
+<h3 id="headers">Headers</h3>
+<h4 id="headers-1">Headers</h4>
+<h2 id="code-blocks">Code blocks</h2>
+<pre><code>text code blocks
+text code blocks
+text code blocks
+text code blocks
+</code></pre>
+<h2 id="highlighted-code-blocks">Highlighted Code Blocks</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;hello world&#39;</span>)
+</code></pre></div><h2 id="blockquotes">Blockquotes</h2>
+<blockquote>
+<p>This is a blockquote with two paragraphs. This is first paragraph.</p>
+<p>This is second pragraph.</p>
+</blockquote>
+<h2 id="lists">Lists</h2>
+<ul>
+<li>Red</li>
+<li>Green</li>
+<li>Blue</li>
+</ul>
+<ol>
+<li>Red</li>
+<li>Green</li>
+<li>Blue
+<ul>
+<li>A</li>
+<li>B</li>
+<li>C
+<ol>
+<li>D</li>
+<li>E</li>
+<li>F</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="task-list">Task List</h2>
+<ul>
+<li><input disabled="" type="checkbox"> a task list item</li>
+<li><input disabled="" type="checkbox"> list syntax <del>required</del></li>
+<li><input disabled="" type="checkbox"> normal <strong>formatting</strong></li>
+<li><input disabled="" type="checkbox"> incomplete</li>
+<li><input checked="" disabled="" type="checkbox"> completed</li>
+</ul>
+<h2 id="formatted-texts">Formatted Texts</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Markdown</th>
+<th>HTML tag</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Emphasis</em></td>
+<td>*Emphasis*</td>
+<td><code>&lt;em&gt;&lt;/em&gt;</code></td>
+</tr>
+<tr>
+<td><strong>Strong</strong></td>
+<td>**Strong**</td>
+<td><code>&lt;strong&gt;&lt;/strong&gt;</code></td>
+</tr>
+<tr>
+<td><code>code</code></td>
+<td>`code`</td>
+<td><code>&lt;code&gt;&lt;/code&gt;</code></td>
+</tr>
+<tr>
+<td><del>Strikethrough</del></td>
+<td>~~Strikethrough~~</td>
+<td><code>&lt;del&gt;&lt;/del</code></td>
+</tr>
+<tr>
+<td><strong>Underline</strong></td>
+<td>__underline__</td>
+<td><code>&lt;u&gt;&lt;/u&gt;</code></td>
+</tr>
+<tr>
+<td><kbd>Key</kbd></td>
+<td>&lt;kbd&gt;Key&lt;/kbd&gt;</td>
+<td><code>&lt;kbd&gt;&lt;/kbd&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="tables">Tables</h2>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a</td>
+<td>b</td>
+<td>c</td>
+</tr>
+<tr>
+<td>d</td>
+<td>e</td>
+<td>f</td>
+</tr>
+</tbody>
+</table>
+<h2 id="footnotes">Footnotes</h2>
+<p>You can create footnotes like this<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<h2 id="horizontal-rules">Horizontal Rules</h2>
+<p>A rule.</p>
+<hr>
+<p>A rule.</p>
+<hr>
+<h2 id="links">Links</h2>
+<p>This is <a href="http://example.com/%22Title%22">an example</a> inline link.</p>
+<h2 id="images">Images</h2>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Octicons-globe.svg/240px-Octicons-globe.svg.png" alt="Globe"></p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Here is the <em>text</em> of the <strong>footnote</strong>. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>]]></content>
+        </item>
+        
+        <item>
+            <title>New</title>
+            <link>https://www.marshalgao.com/posts/2020/10/new/</link>
+            <pubDate>Sat, 10 Oct 2020 19:52:36 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/posts/2020/10/new/</guid>
+            <description>Bitcoin and Cryptocurrency Technologies Lecture 1 Introduction to Crypto and Cryptocurrencies Hash Function
+ Takes any string as input Fixed-size output Efficiently computable  Security Properties
+ Collision-free  Nobody can find x and y such as &amp;ldquo;x!=y and H(x)=H(y)&amp;quot;   Hiding  Given H(x), it&amp;rsquo;s infeasible to find x   Puzzle-friendly  For every possible output value y, if k is chosen from a distribution with high min-entropy, then it&amp;rsquo;s infeasible to find x such as H(k|x)=y    SHA-256 Hash Function</description>
+            <content type="html"><![CDATA[<h1 id="bitcoin-and-cryptocurrency-technologies">Bitcoin and Cryptocurrency Technologies</h1>
+<h2 id="lecture-1-introduction-to-crypto-and-cryptocurrencies">Lecture 1 Introduction to Crypto and Cryptocurrencies</h2>
+<p><strong>Hash Function</strong></p>
+<ul>
+<li>Takes any string as input</li>
+<li>Fixed-size output</li>
+<li>Efficiently computable</li>
+</ul>
+<p><strong>Security Properties</strong></p>
+<ul>
+<li>Collision-free
+<ul>
+<li>Nobody can find x and y such as <em>&ldquo;x!=y and H(x)=H(y)&quot;</em></li>
+</ul>
+</li>
+<li>Hiding
+<ul>
+<li>Given H(x), it&rsquo;s infeasible to find x</li>
+</ul>
+</li>
+<li>Puzzle-friendly
+<ul>
+<li>For every possible output value y, if k is chosen from a distribution with high min-entropy, then it&rsquo;s infeasible to find x such as <em>H(k|x)=y</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>SHA-256 Hash Function</strong></p>
+<p><img src="https://raw.githubusercontent.com/pseudoyu/image_hosting/master/hugo_images/sha256_hash_function.png" alt="sha256_hash_function"></p>
+<p><em>Theorem: If c is collision-free, then SHA-256 is collision-free</em></p>
+<p><strong>Hash Pointer</strong></p>
+<ul>
+<li>Where some info is stored</li>
+<li>Cryptographic hash of the info</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pseudoyu/image_hosting/master/hugo_images/hash_pointer.png" alt="hash_pointer"></p>
+<p><strong>Merkle Trees</strong></p>
+<ul>
+<li>The root hash can verify membership in O(log n) time/space</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pseudoyu/image_hosting/master/hugo_images/merkle_trees.png" alt="merkle_trees"></p>
+<p><strong>Digital Signature</strong></p>
+<ul>
+<li>Only you can sign, but anyone can verify</li>
+<li>Signature is tied to a particular document
+<ul>
+<li>verify(public key, message, sign(secret key, message)) == true</li>
+</ul>
+</li>
+<li>&ldquo;can&rsquo;t forge signatures&rdquo;
+<ul>
+<li>knows public key</li>
+<li>knows signature</li>
+</ul>
+</li>
+<li>Relies on hairy math</li>
+<li>Good randomness is essential</li>
+<li>Bitcoin use ECDSA(Elliptic Curve Digital Signature Algorithm) standard</li>
+</ul>
+<p><strong>Public Key As An Identity</strong></p>
+<ul>
+<li>Create a new, random key-pair (secret key, public key)
+<ul>
+<li>Public key is the public &ldquo;name&rdquo; you can use</li>
+<li>Secret key lets you &ldquo;speak for&rdquo; the identity</li>
+</ul>
+</li>
+</ul>
+<p><strong>Privacy</strong></p>
+<ul>
+<li>Addresses not directly connected to real-world identity</li>
+<li>Observer can link together an address&rsquo;s activity over time, make inferences</li>
+</ul>
+<p><strong>A Simple Cryptocurrency - Scrooge Coin</strong></p>
+<ul>
+<li>Create Coins
+<ul>
+<li><img src="https://raw.githubusercontent.com/pseudoyu/image_hosting/master/hugo_images/create_coins.png" alt="create_coins"></li>
+</ul>
+</li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>[1] Two Sum</title>
+            <link>https://www.marshalgao.com/posts/2020/10/1-two-sum/</link>
+            <pubDate>Wed, 07 Oct 2020 18:24:14 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/posts/2020/10/1-two-sum/</guid>
+            <description>Question: Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+You can return the answer in any order.
+Example 1: Input: nums = [2,7,11,15], target = 9 Output: [0,1] Output: Because nums[0] + nums[1] == 9, we return [0, 1].</description>
+            <content type="html"><![CDATA[<h2 id="question">Question:</h2>
+
+<p align="justify">Given an array of integers <b>nums</b> and an integer <b>target</b>, return <i>indices of the two numbers such that they add up to <b>target</b></i>.</p>
+
+<p align="justify">You may assume that each input would have <strong><i>exactly</i> one solution</strong>, and you may not use the <i>same</i> element twice.</p>
+
+<p>You can return the answer in any order.</p>
+
+<h2 id="example-1">Example 1:</h2>
+<pre><code>Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Output: Because nums[0] + nums[1] == 9, we return [0, 1].</code></pre>
+<h2 id="example-2">Example 2:</h2>
+<pre><code>Input: nums = [3,2,4], target = 6
+Output: [1,2] </code></pre>
+<h2 id="example-3">Example 3:</h2>
+<pre><code>Input: nums = [3,3], target = 6
+Output: [0,1]</code></pre>
+<h2 id="constraints">Constraints:</h2>
+
+<ul>
+<li>2 <span  class="math">\(\leq\)</span> nums.length <span  class="math">\(\leq 10^5\)</span></li>
+<li><span  class="math">\(-10^9 \leq\)</span> nums[i] <span  class="math">\(\leq 10^9\)</span></li>
+<li><span  class="math">\(-10^9 \leq\)</span> target <span  class="math">\(\leq 10^9\)</span></li>
+<li><strong>Only one valid answer exists.</strong></li>
+</ul>
+
+<h2 id="my-interesting-code">My Interesting Code:</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>(object):
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">twoSum</span>(self, nums, target):
+        <span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">        :type nums: List[int]
+</span><span style="color:#e6db74">        :type target: int
+</span><span style="color:#e6db74">        :rtype: List[int]
+</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> nums:
+            temp <span style="color:#f92672">=</span> nums[:nums<span style="color:#f92672">.</span>index(i):] <span style="color:#f92672">+</span> nums[nums<span style="color:#f92672">.</span>index(i)<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>::]
+            <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> temp:
+                <span style="color:#66d9ef">if</span> i <span style="color:#f92672">+</span> j <span style="color:#f92672">==</span> target:
+                    result_1 <span style="color:#f92672">=</span> nums<span style="color:#f92672">.</span>index(i)
+                    nums<span style="color:#f92672">.</span>remove(i)
+                    result_2 <span style="color:#f92672">=</span> nums<span style="color:#f92672">.</span>index(j) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+                    <span style="color:#66d9ef">return</span> list((result_1, result_2))</code></pre></div>
+<h2 id="my-perspective-chinese-only">My Perspective (Chinese Only)</h2>
+
+<p align="justify">之所以是interesting的代码，是因为个人擅长使用暴力拆解。所以在LeetCode的所有习题中，在保证通过的情况下，个人会优先考虑暴力拆解。暴力拆解的优势在于代码易于理解，但是其时间复杂度和空间复杂度较高。</p>
+
+<p align="justify">首先，我们先依次遍历列表nums。以第一个Example为例，当我们取出数字2后，为了寻找符合target的元素，我们只需遍历除了数字2以外的元素即可。那么如何获取除了数字2以外的元素？Python自带的切片(split)可以很好的解决这个问题。所以，下面先来学习一下切片。</p>
+
+<p align="justify">一个完整的切片表达式包含两个“:”，用于分隔三个参数(start_index、end_index、step)。当只有一个“:”时，默认第三个参数step=1；当一个“:”也没有时，start_index=end_index，表示切取start_index指定的那个元素。</p>
+
+<p align="justify">step：正负数均可，其绝对值大小决定了切取数据时的“步长”，而正负号决定了“切取方向”，正表示“从左往右”取值，负表示“从右往左”取值。当step省略时，默认为1，即从左往右以步长1取值。</p>
+
+<p align="justify">start_index：表示起始索引（包含该索引对应值）；该参数省略时，表示从对象“端点”开始取值，至于是从“起点”还是从“终点”开始，则由step参数的正负决定，step为正从“起点”开始，为负从“终点”开始。</p>
+
+<p align="justify">end_index：表示终止索引（不包含该索引对应值）；该参数省略时，表示一直取到数据“端点”，至于是到“起点”还是到“终点”，同样由step参数的正负决定，step为正时直到“终点”，为负时直到“起点”。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">nums <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]
+<span style="color:#f92672">&gt;&gt;</span>nums[<span style="color:#ae81ff">0</span>: <span style="color:#ae81ff">2</span>:] <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>]
+<span style="color:#f92672">&gt;&gt;</span>nums[<span style="color:#ae81ff">1</span>: <span style="color:#ae81ff">3</span>: <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> []
+<span style="color:#f92672">&gt;&gt;</span>nums[: <span style="color:#ae81ff">2</span>: <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> [<span style="color:#ae81ff">4</span>]
+<span style="color:#f92672">&gt;&gt;</span>nums[::] <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]
+<span style="color:#f92672">&gt;&gt;</span>nums[::<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> [<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>]</code></pre></div>
+<p align="justify">学习好切片后，我们接着以第一个Example为例说明。当取出数字2后，利用切片，将nums中除了数字2以外的元素全部取出，组成新的列表temp。将temp中的每一个元素与数字2相加，如果结果等于target，便将两个元素的索引返回。注意，这里的元素索引应为nums中的元素索引值。特别地，在返回list时，小括号需用两层进行嵌套，否则会造成结果错误。</p>
+
+<p align="justify">本题所采用的暴力拆解是一种易于理解，基于穷举并完全遍历的思想，会造成一定的时间和空间浪费，但由于Python的切片是基于for循环的一种优化，所以代码效率相较于纯for循环来说，要好很多。</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Vlog 2 Quarantine Diary</title>
+            <link>https://www.marshalgao.com/posts/2020/09/vlog-2-quarantine-diary/</link>
+            <pubDate>Wed, 02 Sep 2020 14:12:35 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/posts/2020/09/vlog-2-quarantine-diary/</guid>
+            <description>   疫情期间赴港上学隔离14天的生活即将结束，刚刚上完第一节课，视频传传好，我要冲了，努力学习！ 再次感谢小刘同学提供的BGM，期望以后可以持续输出！ </description>
+            <content type="html"><![CDATA[<div class="iframe-container">
+    <iframe src="https://player.bilibili.com/player.html?aid=839485025&bvid=BV1S54y127AP&cid=231463415&page=1" allowfullscreen> </iframe>
+</div>
+<hr>
+<h5 id="疫情期间赴港上学隔离14天的生活即将结束刚刚上完第一节课视频传传好我要冲了努力学习">疫情期间赴港上学隔离14天的生活即将结束，刚刚上完第一节课，视频传传好，我要冲了，努力学习！</h5>
+<h5 id="再次感谢小刘同学提供的bgm期望以后可以持续输出">再次感谢小刘同学提供的BGM，期望以后可以持续输出！</h5>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Vlog 1  New Arrival</title>
+            <link>https://www.marshalgao.com/posts/2020/08/vlog-1-new-arrival/</link>
+            <pubDate>Sun, 23 Aug 2020 14:44:52 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/posts/2020/08/vlog-1-new-arrival/</guid>
+            <description>   疫情期间赴香港隔离，一路上新奇拍拍拍。要开始读书了，冲！ 特别感谢小刘同学提供的BGM，在这里夸赞一下她的歌品！ </description>
+            <content type="html"><![CDATA[<div class="iframe-container">
+    <iframe src="https://player.bilibili.com/player.html?aid=499308002&bvid=BV1QK411T7CR&cid=227836652&page=1" allowfullscreen> </iframe>
+</div>
+<hr>
+<h5 id="疫情期间赴香港隔离一路上新奇拍拍拍要开始读书了冲">疫情期间赴香港隔离，一路上新奇拍拍拍。要开始读书了，冲！</h5>
+<h5 id="特别感谢小刘同学提供的bgm在这里夸赞一下她的歌品">特别感谢小刘同学提供的BGM，在这里夸赞一下她的歌品！</h5>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>
