@@ -6,8 +6,163 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Wed, 14 Oct 2020 10:41:28 +0800</lastBuildDate>
+        <lastBuildDate>Thu, 15 Oct 2020 13:50:12 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ICOM6012 Transport Layer</title>
+            <link>https://www.marshalgao.com/posts/2020/10/icom6012-transport-layer/</link>
+            <pubDate>Thu, 15 Oct 2020 13:50:12 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/posts/2020/10/icom6012-transport-layer/</guid>
+            <description>Transport-layer Services Transport Services and Protocols
+ Provide logical communication (actually accomplished by network layer) between app processes on different hosts  logical communication means a pair of hosts is not connected physically, but it seems that they are connected by channel    Transport protocols run in end systems  send side: breaks app messages into segments (if needed), passes to network layer  using segment header, including port number, to communicate with the socket of receiver   receive side: reassembles segemnts into messages, uses segement header (or port number) to pass to application layer   More than one transport protocol available to apps  Majority: TCP and UDP  TCP: reliable, in-order delivery  congestion control flow control connection setup   UDP: unreliable, unordered delivery  no-frills extension of &amp;ldquo;best-effort&amp;rdquo; IP     Others: SCTP and DCCP  These protocols are very limited, so we just ignore them.</description>
+            <content type="html"><![CDATA[<h2 id="transport-layer-services">Transport-layer Services</h2>
+<p><strong>Transport Services and Protocols</strong></p>
+<ul>
+<li>Provide <em><strong>logical communication</strong></em> (actually accomplished by network layer) between app processes on different hosts
+<ul>
+<li><em><strong>logical communication</strong></em> means a pair of hosts is not connected physically, but it seems that they are connected by channel
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/IMG_0017.jpeg" alt="logical communication"></li>
+</ul>
+</li>
+<li>Transport protocols run in end systems
+<ul>
+<li><strong>send side</strong>: breaks app messages into <em><strong>segments</strong></em> (if needed), passes to network layer
+<ul>
+<li>using segment header, including port number, to communicate with the socket of receiver</li>
+</ul>
+</li>
+<li><strong>receive side</strong>: reassembles segemnts into messages, uses segement header (or port number) to pass to application layer</li>
+</ul>
+</li>
+<li>More than one transport protocol available to apps
+<ul>
+<li>Majority: <strong>TCP</strong> and <strong>UDP</strong>
+<ul>
+<li><strong>TCP</strong>: reliable, in-order delivery
+<ul>
+<li>congestion control</li>
+<li>flow control</li>
+<li>connection setup</li>
+</ul>
+</li>
+<li><strong>UDP</strong>: unreliable, unordered delivery
+<ul>
+<li>no-frills extension of &ldquo;best-effort&rdquo; IP</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Others: SCTP and DCCP
+<ul>
+<li>These protocols are very limited, so we just ignore them. Unless in specific environment, for example, SCTP would be used in wireless network (eg. celluar network)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Services not available
+<ul>
+<li>delay guarantee</li>
+<li>bandwidth guarantee</li>
+<li>throughput guarantee
+<ul>
+<li><strong>Q: Why the Internet can not guarantee throughput and so on?</strong></li>
+<li>A: Because the data link layer can not guarantee, the network layer can not guarantee. For example, we can use Zoom to meet, but the Internet can not guarantee the quality.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Transport Layer Actions</strong></p>
+<ul>
+<li>Sender:
+<ul>
+<li>is passed an application-layer message</li>
+<li>determines segment header fields values, including port number
+<ul>
+<li><strong>not change the pillow, just add a header with some important information</strong></li>
+</ul>
+</li>
+<li>creates segment</li>
+<li>passed segement to IP</li>
+</ul>
+</li>
+<li>Receiver:
+<ul>
+<li>receives segment from IP, ensuring the packet has arrived at the correct destination</li>
+<li>checks header values</li>
+<li>extracts application-layer message</li>
+<li>demultiplexes message up to application via socket</li>
+</ul>
+</li>
+</ul>
+<h2 id="multiplexing-and-demultiplexing">Multiplexing and Demultiplexing</h2>
+<p><strong>Overview</strong>
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-15%20%E4%B8%8B%E5%8D%884.54.22.png" alt=""></p>
+<p><strong>Demultiplexing</strong></p>
+<ul>
+<li>Host receives IP datagrams (network layer)
+<ul>
+<li>each datagram has source &amp; destination IP addresses</li>
+<li>each datagram carries one transport-layer segment</li>
+<li>each segment has source &amp; destination port number (for resending purpose)
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/IMG_0018.jpeg" alt=""></li>
+</ul>
+</li>
+<li>Host uses IP addresses &amp; port numbers to direct segment to appropriate socket</li>
+</ul>
+<p><strong>Connectionless Demux (UDP)</strong></p>
+<ul>
+<li>Create socket with unique local port number (sender)</li>
+<li>When creating datagram to send into UDP socket, must specify (sender)
+<ul>
+<li>destination IP address</li>
+<li>destination port number</li>
+</ul>
+</li>
+<li>When host receives UDP segment (receiver)
+<ul>
+<li>checks destination port number in segment</li>
+<li>directs UDP segment to socket with that port number</li>
+</ul>
+</li>
+<li>Attention
+<ul>
+<li>IP datagrams with <strong>same destination &amp; port number</strong>, but different source IP addresses and/or source port numbers will be directed to <strong>same socket</strong> at destination
+<ul>
+<li><strong>Q: We call the UDP segment &ldquo;datagram&rdquo;, why?</strong></li>
+<li>A: Becasue UDP does not improve or enhance the service of network layer.</li>
+</ul>
+</li>
+<li>share the same socket or door, using IP addressed and source port number to distinguish when receiving packets</li>
+</ul>
+</li>
+</ul>
+<p><strong>Connection-oriented Demux</strong></p>
+<ul>
+<li>TCP socket identified by 4-tuple:
+<ul>
+<li>source IP address</li>
+<li>source port number</li>
+<li>dest IP address</li>
+<li>dest port number</li>
+</ul>
+</li>
+<li>Server host may support many simultaneous TCP sockets
+<ul>
+<li>each socket is identified by its own 4-tuple</li>
+</ul>
+</li>
+<li>Receiver uses all four values to direct segment to appropriate socket</li>
+<li>Web servers have different sockets for each connecting client
+<ul>
+<li>Non-persistent HTTP will have different sockets for each request.</li>
+</ul>
+</li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>PM Basic Knowledge</title>
