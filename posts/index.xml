@@ -6,8 +6,32 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Thu, 15 Oct 2020 13:50:12 +0800</lastBuildDate>
+        <lastBuildDate>Sun, 18 Oct 2020 11:21:28 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>产品经理学习路线</title>
+            <link>https://www.marshalgao.com/posts/2020/10/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</link>
+            <pubDate>Sun, 18 Oct 2020 11:21:28 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/posts/2020/10/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</guid>
+            <description>方向选定及技能要求明确 （Oct）  了解B端产品类型，明确从事方向（Oct 19 - Oct 24）  重点了解广告及云服务产品经理   从JD入手，了解选定方向产品经理所需技能（Oct 25 - Oct 31)  相关技能的学习（Nov）  学习使用Axure，并对一些产品进行模仿（Nov 1 - Nov 8）   </description>
+            <content type="html"><![CDATA[<h4 id="方向选定及技能要求明确-oct">方向选定及技能要求明确 （Oct）</h4>
+<ul>
+<li>了解B端产品类型，明确从事方向（Oct 19 - Oct 24）
+<ul>
+<li><strong>重点了解广告及云服务产品经理</strong></li>
+</ul>
+</li>
+<li>从JD入手，了解选定方向产品经理所需技能（Oct 25 - Oct 31)</li>
+</ul>
+<h4 id="相关技能的学习nov">相关技能的学习（Nov）</h4>
+<ul>
+<li>学习使用Axure，并对一些产品进行模仿（Nov 1 - Nov 8）</li>
+<li></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>ICOM6012 Transport Layer</title>
@@ -162,152 +186,6 @@
 </li>
 </ul>
 ]]></content>
-        </item>
-        
-        <item>
-            <title>PM Basic Knowledge</title>
-            <link>https://www.marshalgao.com/posts/2020/10/pm-basic-knowledge/</link>
-            <pubDate>Wed, 14 Oct 2020 10:41:28 +0800</pubDate>
-            
-            <guid>https://www.marshalgao.com/posts/2020/10/pm-basic-knowledge/</guid>
-            <description>&lt;h2 id=&#34;产品经理分类&#34;&gt;产品经理分类：&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/MarshalGAOGAO/image_hosting/master/hugo_images/v2-8867ecb270bfd7a20cdcada8a35b0c0b_1440w.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;This is a simple preview for styles in Den.&lt;/p&gt;</description>
-            <content type="html"><![CDATA[<h2 id="产品经理分类">产品经理分类：</h2>
-<p><img src="https://raw.githubusercontent.com/MarshalGAOGAO/image_hosting/master/hugo_images/v2-8867ecb270bfd7a20cdcada8a35b0c0b_1440w.jpg" alt=""></p>
-<p>This is a simple preview for styles in Den.</p>
-<h2 id="header">Header</h2>
-<p>A paragraph is like this.</p>
-<p>A paragraph might be very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long.</p>
-<h3 id="headers">Headers</h3>
-<h4 id="headers-1">Headers</h4>
-<h2 id="code-blocks">Code blocks</h2>
-<pre><code>text code blocks
-text code blocks
-text code blocks
-text code blocks
-</code></pre>
-<h2 id="highlighted-code-blocks">Highlighted Code Blocks</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;hello world&#39;</span>)
-</code></pre></div><h2 id="blockquotes">Blockquotes</h2>
-<blockquote>
-<p>This is a blockquote with two paragraphs. This is first paragraph.</p>
-<p>This is second pragraph.</p>
-</blockquote>
-<h2 id="lists">Lists</h2>
-<ul>
-<li>Red</li>
-<li>Green</li>
-<li>Blue</li>
-</ul>
-<ol>
-<li>Red</li>
-<li>Green</li>
-<li>Blue
-<ul>
-<li>A</li>
-<li>B</li>
-<li>C
-<ol>
-<li>D</li>
-<li>E</li>
-<li>F</li>
-</ol>
-</li>
-</ul>
-</li>
-</ol>
-<h2 id="task-list">Task List</h2>
-<ul>
-<li><input disabled="" type="checkbox"> a task list item</li>
-<li><input disabled="" type="checkbox"> list syntax <del>required</del></li>
-<li><input disabled="" type="checkbox"> normal <strong>formatting</strong></li>
-<li><input disabled="" type="checkbox"> incomplete</li>
-<li><input checked="" disabled="" type="checkbox"> completed</li>
-</ul>
-<h2 id="formatted-texts">Formatted Texts</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Markdown</th>
-<th>HTML tag</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><em>Emphasis</em></td>
-<td>*Emphasis*</td>
-<td><code>&lt;em&gt;&lt;/em&gt;</code></td>
-</tr>
-<tr>
-<td><strong>Strong</strong></td>
-<td>**Strong**</td>
-<td><code>&lt;strong&gt;&lt;/strong&gt;</code></td>
-</tr>
-<tr>
-<td><code>code</code></td>
-<td>`code`</td>
-<td><code>&lt;code&gt;&lt;/code&gt;</code></td>
-</tr>
-<tr>
-<td><del>Strikethrough</del></td>
-<td>~~Strikethrough~~</td>
-<td><code>&lt;del&gt;&lt;/del</code></td>
-</tr>
-<tr>
-<td><strong>Underline</strong></td>
-<td>__underline__</td>
-<td><code>&lt;u&gt;&lt;/u&gt;</code></td>
-</tr>
-<tr>
-<td><kbd>Key</kbd></td>
-<td>&lt;kbd&gt;Key&lt;/kbd&gt;</td>
-<td><code>&lt;kbd&gt;&lt;/kbd&gt;</code></td>
-</tr>
-</tbody>
-</table>
-<h2 id="tables">Tables</h2>
-<table>
-<thead>
-<tr>
-<th>A</th>
-<th>B</th>
-<th>C</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>a</td>
-<td>b</td>
-<td>c</td>
-</tr>
-<tr>
-<td>d</td>
-<td>e</td>
-<td>f</td>
-</tr>
-</tbody>
-</table>
-<h2 id="footnotes">Footnotes</h2>
-<p>You can create footnotes like this<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
-<h2 id="horizontal-rules">Horizontal Rules</h2>
-<p>A rule.</p>
-<hr>
-<p>A rule.</p>
-<hr>
-<h2 id="links">Links</h2>
-<p>This is <a href="http://example.com/%22Title%22">an example</a> inline link.</p>
-<h2 id="images">Images</h2>
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Octicons-globe.svg/240px-Octicons-globe.svg.png" alt="Globe"></p>
-<section class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn:1" role="doc-endnote">
-<p>Here is the <em>text</em> of the <strong>footnote</strong>. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-</ol>
-</section>]]></content>
         </item>
         
         <item>

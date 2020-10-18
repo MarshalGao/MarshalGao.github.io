@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 15 Oct 2020 13:50:12 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Oct 2020 11:21:28 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>产品经理学习路线</title>
+      <link>https://www.marshalgao.com/posts/2020/10/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</link>
+      <pubDate>Sun, 18 Oct 2020 11:21:28 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/posts/2020/10/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</guid>
+      <description>方向选定及技能要求明确 （Oct）  了解B端产品类型，明确从事方向（Oct 19 - Oct 24）  重点了解广告及云服务产品经理   从JD入手，了解选定方向产品经理所需技能（Oct 25 - Oct 31)  相关技能的学习（Nov）  学习使用Axure，并对一些产品进行模仿（Nov 1 - Nov 8）   </description>
+    </item>
+    
     <item>
       <title>ICOM6012 Transport Layer</title>
       <link>https://www.marshalgao.com/posts/2020/10/icom6012-transport-layer/</link>
@@ -16,17 +25,6 @@
       <guid>https://www.marshalgao.com/posts/2020/10/icom6012-transport-layer/</guid>
       <description>Transport-layer Services Transport Services and Protocols
  Provide logical communication (actually accomplished by network layer) between app processes on different hosts  logical communication means a pair of hosts is not connected physically, but it seems that they are connected by channel    Transport protocols run in end systems  send side: breaks app messages into segments (if needed), passes to network layer  using segment header, including port number, to communicate with the socket of receiver   receive side: reassembles segemnts into messages, uses segement header (or port number) to pass to application layer   More than one transport protocol available to apps  Majority: TCP and UDP  TCP: reliable, in-order delivery  congestion control flow control connection setup   UDP: unreliable, unordered delivery  no-frills extension of &amp;ldquo;best-effort&amp;rdquo; IP     Others: SCTP and DCCP  These protocols are very limited, so we just ignore them.</description>
-    </item>
-    
-    <item>
-      <title>PM Basic Knowledge</title>
-      <link>https://www.marshalgao.com/posts/2020/10/pm-basic-knowledge/</link>
-      <pubDate>Wed, 14 Oct 2020 10:41:28 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/posts/2020/10/pm-basic-knowledge/</guid>
-      <description>&lt;h2 id=&#34;产品经理分类&#34;&gt;产品经理分类：&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/MarshalGAOGAO/image_hosting/master/hugo_images/v2-8867ecb270bfd7a20cdcada8a35b0c0b_1440w.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;This is a simple preview for styles in Den.&lt;/p&gt;</description>
     </item>
     
     <item>
