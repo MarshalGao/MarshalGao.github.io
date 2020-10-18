@@ -16,7 +16,7 @@
             
             <guid>https://www.marshalgao.com/posts/2020/10/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</guid>
             <description></description>
-            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/study.png" alt=""></p>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/final%20study.png" alt=""></p>
 ]]></content>
         </item>
         
@@ -109,23 +109,36 @@
 </li>
 </ul>
 <h2 id="multiplexing-and-demultiplexing">Multiplexing and Demultiplexing</h2>
-<p><strong>Overview</strong>
-<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-15%20%E4%B8%8B%E5%8D%884.54.22.png" alt=""></p>
+<p><strong>Overview</strong></p>
+<ul>
+<li>Multiplexing and demultiplexing happen at all layers. For example,
+<ul>
+<li>application layer &amp; transport Layer -&gt; port number in the TCP and UDP header</li>
+<li>transport layer &amp; network layer -&gt; protocol ID in the IP header</li>
+<li>network layer &amp; data link layer -&gt; frame type in the Ethernet header, for example.</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-15%20%E4%B8%8B%E5%8D%884.54.22.png" alt=""></p>
 <p><strong>Demultiplexing</strong></p>
 <ul>
 <li>Host receives IP datagrams (network layer)
 <ul>
 <li>each datagram has source &amp; destination IP addresses</li>
 <li>each datagram carries one transport-layer segment</li>
-<li>each segment has source &amp; destination port number (for resending purpose)
-<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/IMG_0018.jpeg" alt=""></li>
+<li>each segment has source &amp; destination port number (for resending and replying purpose)</li>
 </ul>
 </li>
-<li>Host uses IP addresses &amp; port numbers to direct segment to appropriate socket</li>
 </ul>
-<p><strong>Connectionless Demux (UDP)</strong></p>
+<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/IMG_0018.jpeg" alt=""></p>
 <ul>
-<li>Create socket with unique local port number (sender)</li>
+<li>
+<p>Host uses IP addresses &amp; port numbers to direct segment to appropriate socket</p>
+</li>
+<li>
+<p>Connectionless Demux (UDP Using destination port number only)</p>
+<ul>
+<li>Create socket with unique local port number, which is assigned by OS (sender)</li>
 <li>When creating datagram to send into UDP socket, must specify (sender)
 <ul>
 <li>destination IP address</li>
@@ -138,7 +151,7 @@
 <li>directs UDP segment to socket with that port number</li>
 </ul>
 </li>
-<li>Attention
+<li>Others
 <ul>
 <li>IP datagrams with <strong>same destination &amp; port number</strong>, but different source IP addresses and/or source port numbers will be directed to <strong>same socket</strong> at destination
 <ul>
@@ -146,11 +159,16 @@
 <li>A: Becasue UDP does not improve or enhance the service of network layer.</li>
 </ul>
 </li>
-<li>share the same socket or door, using IP addressed and source port number to distinguish when receiving packets</li>
+<li>share the same socket, but UDP does not care</li>
+<li>UDP socket is identified by two-tuple: (dest IP address, dest port number)</li>
 </ul>
 </li>
 </ul>
-<p><strong>Connection-oriented Demux</strong></p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-18%20%E4%B8%8B%E5%8D%887.57.53.png" alt=""></p>
+<ul>
+<li>Connection-oriented Demux (Using 4-tuple)
 <ul>
 <li>TCP socket identified by 4-tuple:
 <ul>
@@ -168,7 +186,25 @@
 <li>Receiver uses all four values to direct segment to appropriate socket</li>
 <li>Web servers have different sockets for each connecting client
 <ul>
-<li>Non-persistent HTTP will have different sockets for each request.</li>
+<li>Non-persistent HTTP will have different sockets for each request</li>
+</ul>
+</li>
+<li>Others
+<ul>
+<li>UDP shares one socket, but TCP has additional sockets</li>
+<li>TCP consumes extra resources, such as memory</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/connection.png" alt=""></p>
+<h2 id="connectionless-transport-udp">Connectionless Transport: UDP</h2>
+<ul>
+<li>Features
+<ul>
+<li>&ldquo;no frills&rdquo;, &ldquo;bare bones&rdquo; Internet transport protocol (means get the packets from Internet but do nothing)</li>
+<li>&ldquo;best effort&rdquo; service, UDP segment may be lost or delivered out-of -order to app</li>
 </ul>
 </li>
 </ul>
