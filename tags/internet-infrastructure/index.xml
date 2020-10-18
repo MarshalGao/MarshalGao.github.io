@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>internet infrastructure on This is Marshal</title>
+    <link>https://www.marshalgao.com/tags/internet-infrastructure/</link>
+    <description>Recent content in internet infrastructure on This is Marshal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 15 Oct 2020 13:50:12 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/internet-infrastructure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ICOM6012 Transport Layer</title>
+      <link>https://www.marshalgao.com/posts/2020/10/icom6012-transport-layer/</link>
+      <pubDate>Thu, 15 Oct 2020 13:50:12 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/posts/2020/10/icom6012-transport-layer/</guid>
+      <description>Transport-layer Services Transport Services and Protocols
+ Provide logical communication (actually accomplished by network layer) between app processes on different hosts  logical communication means a pair of hosts is not connected physically, but it seems that they are connected by channel    Transport protocols run in end systems  send side: breaks app messages into segments (if needed), passes to network layer  using segment header, including port number, to communicate with the socket of receiver   receive side: reassembles segemnts into messages, uses segement header (or port number) to pass to application layer   More than one transport protocol available to apps  Majority: TCP and UDP  TCP: reliable, in-order delivery  congestion control flow control connection setup   UDP: unreliable, unordered delivery  no-frills extension of &amp;ldquo;best-effort&amp;rdquo; IP     Others: SCTP and DCCP  These protocols are very limited, so we just ignore them.</description>
+    </item>
+    
+  </channel>
+</rss>
