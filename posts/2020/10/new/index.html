@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Marshal ">
+<meta name="description" content="Bitcoin and Cryptocurrency Technologies Lecture 1 Introduction to Crypto and Cryptocurrencies Hash Function
+ Takes any string as input Fixed-size output Efficiently computable  Security Properties
+ Collision-free  Nobody can find x and y such as &amp;ldquo;x!=y and H(x)=H(y)&amp;quot;   Hiding  Given H(x), it&amp;rsquo;s infeasible to find x   Puzzle-friendly  For every possible output value y, if k is chosen from a distribution with high min-entropy, then it&amp;rsquo;s infeasible to find x such as H(k|x)=y    SHA-256 Hash Function" />
+<meta name="keywords" content=", bitcoin, blockchain, cryptocurrency, security, technology, decentralization, princeton, coursera" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://www.marshalgao.com/posts/2020/10/new/" />
+
+
+    <title>
+        
+            New :: This is Marshal 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://www.marshalgao.com/main.ac119de588c02a3afa98fdd45f9c8f30b302a6dd95b3888bc43438233a5390cc.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.marshalgao.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.marshalgao.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.marshalgao.com/favicon-16x16.png">
+    <link rel="manifest" href="https://www.marshalgao.com/site.webmanifest">
+    <link rel="mask-icon" href="https://www.marshalgao.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://www.marshalgao.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="New">
+<meta itemprop="description" content="Bitcoin and Cryptocurrency Technologies Lecture 1 Introduction to Crypto and Cryptocurrencies Hash Function
+ Takes any string as input Fixed-size output Efficiently computable  Security Properties
+ Collision-free  Nobody can find x and y such as &ldquo;x!=y and H(x)=H(y)&quot;   Hiding  Given H(x), it&rsquo;s infeasible to find x   Puzzle-friendly  For every possible output value y, if k is chosen from a distribution with high min-entropy, then it&rsquo;s infeasible to find x such as H(k|x)=y    SHA-256 Hash Function">
+<meta itemprop="datePublished" content="2020-10-10T19:52:36+08:00" />
+<meta itemprop="dateModified" content="2020-10-10T19:52:36+08:00" />
+<meta itemprop="wordCount" content="213">
+<meta itemprop="image" content="https://www.marshalgao.com/"/>
+
+
+
+<meta itemprop="keywords" content="bitcoin,blockchain,cryptocurrency,security,technology,decentralization,princeton,coursera," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.marshalgao.com/"/>
+
+<meta name="twitter:title" content="New"/>
+<meta name="twitter:description" content="Bitcoin and Cryptocurrency Technologies Lecture 1 Introduction to Crypto and Cryptocurrencies Hash Function
+ Takes any string as input Fixed-size output Efficiently computable  Security Properties
+ Collision-free  Nobody can find x and y such as &ldquo;x!=y and H(x)=H(y)&quot;   Hiding  Given H(x), it&rsquo;s infeasible to find x   Puzzle-friendly  For every possible output value y, if k is chosen from a distribution with high min-entropy, then it&rsquo;s infeasible to find x such as H(k|x)=y    SHA-256 Hash Function"/>
+
+
+
+    <meta property="og:title" content="New" />
+<meta property="og:description" content="Bitcoin and Cryptocurrency Technologies Lecture 1 Introduction to Crypto and Cryptocurrencies Hash Function
+ Takes any string as input Fixed-size output Efficiently computable  Security Properties
+ Collision-free  Nobody can find x and y such as &ldquo;x!=y and H(x)=H(y)&quot;   Hiding  Given H(x), it&rsquo;s infeasible to find x   Puzzle-friendly  For every possible output value y, if k is chosen from a distribution with high min-entropy, then it&rsquo;s infeasible to find x such as H(k|x)=y    SHA-256 Hash Function" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.marshalgao.com/posts/2020/10/new/" />
+<meta property="og:image" content="https://www.marshalgao.com/"/>
+<meta property="article:published_time" content="2020-10-10T19:52:36+08:00" />
+<meta property="article:modified_time" content="2020-10-10T19:52:36+08:00" />
+
+
+
+
+    <meta property="article:section" content="Memory" />
+
+
+
+    <meta property="article:published_time" content="2020-10-10 19:52:36 &#43;0800 HKT" />
+
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://www.marshalgao.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://www.marshalgao.com/categories/hku">HKU</a></li><li><a href="https://www.marshalgao.com/categories/leetcode">LEETCODE</a></li><li><a href="https://www.marshalgao.com/categories/product-manager">PM</a></li><li><a href="https://www.marshalgao.com/categories/memory">MEMORY</a></li><li><a href="https://www.marshalgao.com/categories/vlog">VLOG</a></li><li><a href="https://www.marshalgao.com/tags/">TAGS</a></li><li><a href="https://www.marshalgao.com/about/">ABOUT</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        One minute
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://www.marshalgao.com/posts/2020/10/new/">New</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <h1 id="bitcoin-and-cryptocurrency-technologies">Bitcoin and Cryptocurrency Technologies</h1>
+<h2 id="lecture-1-introduction-to-crypto-and-cryptocurrencies">Lecture 1 Introduction to Crypto and Cryptocurrencies</h2>
+<p><strong>Hash Function</strong></p>
+<ul>
+<li>Takes any string as input</li>
+<li>Fixed-size output</li>
+<li>Efficiently computable</li>
+</ul>
+<p><strong>Security Properties</strong></p>
+<ul>
+<li>Collision-free
+<ul>
+<li>Nobody can find x and y such as <em>&ldquo;x!=y and H(x)=H(y)&quot;</em></li>
+</ul>
+</li>
+<li>Hiding
+<ul>
+<li>Given H(x), it&rsquo;s infeasible to find x</li>
+</ul>
+</li>
+<li>Puzzle-friendly
+<ul>
+<li>For every possible output value y, if k is chosen from a distribution with high min-entropy, then it&rsquo;s infeasible to find x such as <em>H(k|x)=y</em></li>
+</ul>
+</li>
+</ul>
+<p><strong>SHA-256 Hash Function</strong></p>
+<p><img src="https://raw.githubusercontent.com/pseudoyu/image_hosting/master/hugo_images/sha256_hash_function.png" alt="sha256_hash_function"></p>
+<p><em>Theorem: If c is collision-free, then SHA-256 is collision-free</em></p>
+<p><strong>Hash Pointer</strong></p>
+<ul>
+<li>Where some info is stored</li>
+<li>Cryptographic hash of the info</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pseudoyu/image_hosting/master/hugo_images/hash_pointer.png" alt="hash_pointer"></p>
+<p><strong>Merkle Trees</strong></p>
+<ul>
+<li>The root hash can verify membership in O(log n) time/space</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pseudoyu/image_hosting/master/hugo_images/merkle_trees.png" alt="merkle_trees"></p>
+<p><strong>Digital Signature</strong></p>
+<ul>
+<li>Only you can sign, but anyone can verify</li>
+<li>Signature is tied to a particular document
+<ul>
+<li>verify(public key, message, sign(secret key, message)) == true</li>
+</ul>
+</li>
+<li>&ldquo;can&rsquo;t forge signatures&rdquo;
+<ul>
+<li>knows public key</li>
+<li>knows signature</li>
+</ul>
+</li>
+<li>Relies on hairy math</li>
+<li>Good randomness is essential</li>
+<li>Bitcoin use ECDSA(Elliptic Curve Digital Signature Algorithm) standard</li>
+</ul>
+<p><strong>Public Key As An Identity</strong></p>
+<ul>
+<li>Create a new, random key-pair (secret key, public key)
+<ul>
+<li>Public key is the public &ldquo;name&rdquo; you can use</li>
+<li>Secret key lets you &ldquo;speak for&rdquo; the identity</li>
+</ul>
+</li>
+</ul>
+<p><strong>Privacy</strong></p>
+<ul>
+<li>Addresses not directly connected to real-world identity</li>
+<li>Observer can link together an address&rsquo;s activity over time, make inferences</li>
+</ul>
+<p><strong>A Simple Cryptocurrency - Scrooge Coin</strong></p>
+<ul>
+<li>Create Coins
+<ul>
+<li><img src="https://raw.githubusercontent.com/pseudoyu/image_hosting/master/hugo_images/create_coins.png" alt="create_coins"></li>
+</ul>
+</li>
+</ul>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/tags/bitcoin/">bitcoin</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/blockchain/">blockchain</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/cryptocurrency/">cryptocurrency</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/security/">security</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/technology/">technology</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/decentralization/">decentralization</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/princeton/">princeton</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/coursera/">coursera</a></span>
+        
+    </p>
+
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/categories/memory/">Memory</a></span>
+        
+    </p>
+
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        213 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2020-10-10 19:52
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+            <span class="button previous">
+              <a href="https://www.marshalgao.com/posts/2020/10/icom6012-transport-layer/">
+                <span class="button__icon">←</span>
+                <span class="button__text">ICOM6012 Transport Layer</span>
+              </a>
+            </span>
+          
+
+          
+            <span class="button next">
+              <a href="https://www.marshalgao.com/posts/2020/10/1-two-sum/">
+                <span class="button__text">[1] Two Sum</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://www.marshalgao.com/">Marshal</a></span>
+            
+            
+                <span><a href="https://www.hku.hk" target="_blank" rel="noopener">The University of Hong Kong</a></span>
+            <span><a href="https://www.marshalgao.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Team Rocket: <a href="https://www.hexarthur.com/" target="_blank" rel="noopener">Pseudoyu</a></span>
+            <span><a href="https://www.m1sty.com/" target="_blank" rel="noopener">Misty</a></span>
+          </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://www.marshalgao.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>
