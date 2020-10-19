@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="Marshal ">
 <meta name="description" content="Transport-layer Services Transport Services and Protocols
- Provide logical communication (actually accomplished by network layer) between app processes on different hosts  logical communication means a pair of hosts is not connected physically, but it seems that they are connected by channel    Transport protocols run in end systems  send side: breaks app messages into segments (if needed), passes to network layer  using segment header, including port number, to communicate with the socket of receiver   receive side: reassembles segemnts into messages, uses segement header (or port number) to pass to application layer   More than one transport protocol available to apps  Majority: TCP and UDP  TCP: reliable, in-order delivery  congestion control flow control connection setup   UDP: unreliable, unordered delivery  no-frills extension of &amp;ldquo;best-effort&amp;rdquo; IP     Others: SCTP and DCCP  These protocols are very limited, so we just ignore them." />
+ Provide logical communication (actually accomplished by network layer) between app processes on different hosts  logical communication means a pair of hosts is not connected physically, but it seems that they are connected by channel   Transport protocols run in end systems  send side: breaks app messages into segments (if needed), passes to network layer  using segment header, including port number, to communicate with the socket of receiver  receive side: reassembles segemnts into messages, uses segement header (or port number) to pass to application layer  More than one transport protocol available to apps  Majority: TCP and UDP  TCP: reliable, in-order delivery  congestion control flow control connection setup  UDP: unreliable, unordered delivery  no-frills extension of &amp;quot;best-effort&amp;quot; IP   Others: SCTP and DCCP  These protocols are very limited, so we just ignore them." />
 <meta name="keywords" content=", icom6012, internet infrastructure, transport layer" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="#252627" />
@@ -44,10 +44,10 @@
 
 <meta itemprop="name" content="ICOM6012 Transport Layer">
 <meta itemprop="description" content="Transport-layer Services Transport Services and Protocols
- Provide logical communication (actually accomplished by network layer) between app processes on different hosts  logical communication means a pair of hosts is not connected physically, but it seems that they are connected by channel    Transport protocols run in end systems  send side: breaks app messages into segments (if needed), passes to network layer  using segment header, including port number, to communicate with the socket of receiver   receive side: reassembles segemnts into messages, uses segement header (or port number) to pass to application layer   More than one transport protocol available to apps  Majority: TCP and UDP  TCP: reliable, in-order delivery  congestion control flow control connection setup   UDP: unreliable, unordered delivery  no-frills extension of &ldquo;best-effort&rdquo; IP     Others: SCTP and DCCP  These protocols are very limited, so we just ignore them.">
+ Provide logical communication (actually accomplished by network layer) between app processes on different hosts  logical communication means a pair of hosts is not connected physically, but it seems that they are connected by channel   Transport protocols run in end systems  send side: breaks app messages into segments (if needed), passes to network layer  using segment header, including port number, to communicate with the socket of receiver  receive side: reassembles segemnts into messages, uses segement header (or port number) to pass to application layer  More than one transport protocol available to apps  Majority: TCP and UDP  TCP: reliable, in-order delivery  congestion control flow control connection setup  UDP: unreliable, unordered delivery  no-frills extension of &quot;best-effort&quot; IP   Others: SCTP and DCCP  These protocols are very limited, so we just ignore them.">
 <meta itemprop="datePublished" content="2020-10-15T13:50:12+08:00" />
 <meta itemprop="dateModified" content="2020-10-15T13:50:12+08:00" />
-<meta itemprop="wordCount" content="1007">
+<meta itemprop="wordCount" content="1488">
 <meta itemprop="image" content="https://www.marshalgao.com/"/>
 
 
@@ -59,13 +59,13 @@
 
 <meta name="twitter:title" content="ICOM6012 Transport Layer"/>
 <meta name="twitter:description" content="Transport-layer Services Transport Services and Protocols
- Provide logical communication (actually accomplished by network layer) between app processes on different hosts  logical communication means a pair of hosts is not connected physically, but it seems that they are connected by channel    Transport protocols run in end systems  send side: breaks app messages into segments (if needed), passes to network layer  using segment header, including port number, to communicate with the socket of receiver   receive side: reassembles segemnts into messages, uses segement header (or port number) to pass to application layer   More than one transport protocol available to apps  Majority: TCP and UDP  TCP: reliable, in-order delivery  congestion control flow control connection setup   UDP: unreliable, unordered delivery  no-frills extension of &ldquo;best-effort&rdquo; IP     Others: SCTP and DCCP  These protocols are very limited, so we just ignore them."/>
+ Provide logical communication (actually accomplished by network layer) between app processes on different hosts  logical communication means a pair of hosts is not connected physically, but it seems that they are connected by channel   Transport protocols run in end systems  send side: breaks app messages into segments (if needed), passes to network layer  using segment header, including port number, to communicate with the socket of receiver  receive side: reassembles segemnts into messages, uses segement header (or port number) to pass to application layer  More than one transport protocol available to apps  Majority: TCP and UDP  TCP: reliable, in-order delivery  congestion control flow control connection setup  UDP: unreliable, unordered delivery  no-frills extension of &quot;best-effort&quot; IP   Others: SCTP and DCCP  These protocols are very limited, so we just ignore them."/>
 
 
 
     <meta property="og:title" content="ICOM6012 Transport Layer" />
 <meta property="og:description" content="Transport-layer Services Transport Services and Protocols
- Provide logical communication (actually accomplished by network layer) between app processes on different hosts  logical communication means a pair of hosts is not connected physically, but it seems that they are connected by channel    Transport protocols run in end systems  send side: breaks app messages into segments (if needed), passes to network layer  using segment header, including port number, to communicate with the socket of receiver   receive side: reassembles segemnts into messages, uses segement header (or port number) to pass to application layer   More than one transport protocol available to apps  Majority: TCP and UDP  TCP: reliable, in-order delivery  congestion control flow control connection setup   UDP: unreliable, unordered delivery  no-frills extension of &ldquo;best-effort&rdquo; IP     Others: SCTP and DCCP  These protocols are very limited, so we just ignore them." />
+ Provide logical communication (actually accomplished by network layer) between app processes on different hosts  logical communication means a pair of hosts is not connected physically, but it seems that they are connected by channel   Transport protocols run in end systems  send side: breaks app messages into segments (if needed), passes to network layer  using segment header, including port number, to communicate with the socket of receiver  receive side: reassembles segemnts into messages, uses segement header (or port number) to pass to application layer  More than one transport protocol available to apps  Majority: TCP and UDP  TCP: reliable, in-order delivery  congestion control flow control connection setup  UDP: unreliable, unordered delivery  no-frills extension of &quot;best-effort&quot; IP   Others: SCTP and DCCP  These protocols are very limited, so we just ignore them." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.marshalgao.com/posts/2020/10/icom6012-transport-layer/" />
 <meta property="og:image" content="https://www.marshalgao.com/"/>
@@ -88,6 +88,11 @@
 
 
 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css" integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.js" integrity="sha384-JiKN5O8x9Hhs/UE5cT5AAJqieYlOZbGT3CHws/y97o3ty4R7/O5poG9F3JoiOYw1" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
 
     </head>
 
@@ -145,7 +150,7 @@
           <circle cx="12" cy="12" r="10"></circle>
           <polyline points="12 6 12 12 16 14"></polyline>
         </svg>
-        5 minutes
+        7 minutes
 
         
       </p>
@@ -159,352 +164,454 @@
       
 
       <div class="post-content">
-        <h2 id="transport-layer-services">Transport-layer Services</h2>
+        <h2 id="transportlayer-services">Transport-layer Services</h2>
+
 <p><strong>Transport Services and Protocols</strong></p>
+
 <ul>
-<li>Provide <em><strong>logical communication</strong></em> (actually accomplished by network layer) between app processes on different hosts
+<li>Provide <strong><em>logical communication</em></strong> (actually accomplished by network layer) between app processes on different hosts
+
 <ul>
-<li><em><strong>logical communication</strong></em> means a pair of hosts is not connected physically, but it seems that they are connected by channel
-<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/IMG_0017.jpeg" alt="logical communication"></li>
-</ul>
-</li>
+<li><strong><em>logical communication</em></strong> means a pair of hosts is not connected physically, but it seems that they are connected by channel
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/IMG_0017.jpeg" alt="logical communication"></figure></li>
+</ul></li>
 <li>Transport protocols run in end systems
+
 <ul>
-<li><strong>send side</strong>: breaks app messages into <em><strong>segments</strong></em> (if needed), passes to network layer
+<li><strong>send side</strong>: breaks app messages into <strong><em>segments</em></strong> (if needed), passes to network layer
+
 <ul>
 <li>using segment header, including port number, to communicate with the socket of receiver</li>
-</ul>
-</li>
+</ul></li>
 <li><strong>receive side</strong>: reassembles segemnts into messages, uses segement header (or port number) to pass to application layer</li>
-</ul>
-</li>
+</ul></li>
 <li>More than one transport protocol available to apps
+
 <ul>
 <li>Majority: <strong>TCP</strong> and <strong>UDP</strong>
+
 <ul>
 <li><strong>TCP</strong>: reliable, in-order delivery
+
 <ul>
 <li>congestion control</li>
 <li>flow control</li>
 <li>connection setup</li>
-</ul>
-</li>
+</ul></li>
 <li><strong>UDP</strong>: unreliable, unordered delivery
+
 <ul>
-<li>no-frills extension of &ldquo;best-effort&rdquo; IP</li>
-</ul>
-</li>
-</ul>
-</li>
+<li>no-frills extension of &quot;best-effort&quot; IP</li>
+</ul></li>
+</ul></li>
 <li>Others: SCTP and DCCP
+
 <ul>
 <li>These protocols are very limited, so we just ignore them. Unless in specific environment, for example, SCTP would be used in wireless network (e.g. celluar network)</li>
-</ul>
-</li>
-</ul>
-</li>
+</ul></li>
+</ul></li>
 <li>Services not available
+
 <ul>
 <li>delay guarantee</li>
 <li>bandwidth guarantee</li>
-<li>throughput guarantee
-<ul>
+<li>throughput guarantee</li>
 <li><strong>Q: Why the Internet can not guarantee throughput and so on?</strong></li>
 <li>A: Because the data link layer can not guarantee, the network layer can not guarantee. For example, we can use Zoom to meet, but the Internet can not guarantee the quality.</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
+
 <p><strong>Transport Layer Actions</strong></p>
+
 <ul>
 <li>Sender:
+
 <ul>
 <li>is passed an application-layer message</li>
 <li>determines segment header fields values, including port number
+
 <ul>
 <li><strong>not change the pillow, just add a header with some important information</strong></li>
-</ul>
-</li>
+</ul></li>
 <li>creates segment</li>
 <li>passed segement to IP</li>
-</ul>
-</li>
+</ul></li>
 <li>Receiver:
+
 <ul>
 <li>receives segment from IP, ensuring the packet has arrived at the correct destination</li>
 <li>checks header values</li>
 <li>extracts application-layer message</li>
 <li>demultiplexes message up to application via socket</li>
+</ul></li>
 </ul>
-</li>
-</ul>
+
 <h2 id="multiplexing-and-demultiplexing">Multiplexing and Demultiplexing</h2>
+
 <p><strong>Overview</strong></p>
+
 <ul>
 <li>Multiplexing and demultiplexing happen at all layers. For example,
+
 <ul>
 <li>application layer &amp; transport Layer -&gt; port number in the TCP and UDP header</li>
 <li>transport layer &amp; network layer -&gt; protocol ID in the IP header</li>
-<li>network layer &amp; data link layer -&gt; frame type in the Ethernet header, for example.</li>
+<li>network layer &amp; data link layer -&gt; frame type in the Ethernet header, for example.
+<br></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-15%20%E4%B8%8B%E5%8D%884.54.22.png" alt=""></p>
+
+<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-15%20%E4%B8%8B%E5%8D%884.54.22.png" alt=""></figure></p>
+
 <p><strong>Demultiplexing</strong></p>
+
 <ul>
 <li>Host receives IP datagrams (network layer)
+
 <ul>
 <li>each datagram has source &amp; destination IP addresses</li>
 <li>each datagram carries one transport-layer segment</li>
 <li>each segment has source &amp; destination port number (for resending and replying purpose)</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/IMG_0018.jpeg" alt=""></p>
+
+<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/IMG_0018.jpeg" alt=""></figure></p>
+
 <ul>
-<li>
-<p>Host uses IP addresses &amp; port numbers to direct segment to appropriate socket</p>
-</li>
-<li>
-<p>Connectionless Demux (UDP Using destination port number only)</p>
+<li><p>Host uses IP addresses &amp; port numbers to direct segment to appropriate socket</p></li>
+
+<li><p>Connectionless Demux (UDP Using destination port number only)</p>
+
 <ul>
 <li>Create socket with unique local port number, which is assigned by OS (sender)</li>
-<li>When creating datagram to send into UDP socket, must specify (sender)
-<ul>
+<li>When creating datagram to send into UDP socket, must specify (sender)</li>
 <li>destination IP address</li>
 <li>destination port number</li>
-</ul>
-</li>
-<li>When host receives UDP segment (receiver)
-<ul>
+<li>When host receives UDP segment (receiver)</li>
 <li>checks destination port number in segment</li>
 <li>directs UDP segment to socket with that port number</li>
-</ul>
-</li>
-<li>Others
-<ul>
+<li>Others</li>
 <li>IP datagrams with <strong>same destination &amp; port number</strong>, but different source IP addresses and/or source port numbers will be directed to <strong>same socket</strong> at destination
+
 <ul>
-<li><strong>Q: We call the UDP segment &ldquo;datagram&rdquo;, why?</strong></li>
+<li><strong>Q: We call the UDP segment &quot;datagram&quot;, why?</strong></li>
 <li>A: Becasue UDP does not improve or enhance the service of network layer.</li>
-</ul>
-</li>
+</ul></li>
 <li>share the same socket, but UDP does not care</li>
 <li>UDP socket is identified by two-tuple: (dest IP address, dest port number)</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-18%20%E4%B8%8B%E5%8D%887.57.53.png" alt=""></p>
+
+<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-18%20%E4%B8%8B%E5%8D%887.57.53.png" alt=""></figure></p>
+
 <ul>
 <li>Connection-oriented Demux (Using 4-tuple)
+
 <ul>
-<li>TCP socket identified by 4-tuple:
-<ul>
+<li>TCP socket identified by 4-tuple:</li>
 <li>source IP address</li>
 <li>source port number</li>
 <li>dest IP address</li>
 <li>dest port number</li>
-</ul>
-</li>
-<li>Server host may support many simultaneous TCP sockets
-<ul>
+<li>Server host may support many simultaneous TCP sockets</li>
 <li>each socket is identified by its own 4-tuple</li>
-</ul>
-</li>
 <li>Receiver uses all four values to direct segment to appropriate socket</li>
-<li>Web servers have different sockets for each connecting client
-<ul>
+<li>Web servers have different sockets for each connecting client</li>
 <li>Non-persistent HTTP will have different sockets for each request</li>
-</ul>
-</li>
-<li>Others
-<ul>
+<li>Others</li>
 <li>UDP shares one socket, but TCP has additional sockets</li>
 <li>TCP consumes extra resources, such as memory</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/connection.png" alt=""></p>
+
+<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/connection.png" alt=""></figure></p>
+
 <h2 id="connectionless-transport-udp">Connectionless Transport: UDP</h2>
+
 <ul>
 <li>Features
+
 <ul>
-<li>&ldquo;no frills&rdquo;, &ldquo;bare bones&rdquo; Internet transport protocol (means get the packets from Internet but do nothing)</li>
-<li>&ldquo;best effort&rdquo; service, UDP segment may be lost or delivered out-of-order to app</li>
-<li>connectionless
-<ul>
+<li>&quot;no frills&quot;, &quot;bare bones&quot; Internet transport protocol (means get the packets from Internet but do nothing)</li>
+<li>&quot;best effort&quot; service, UDP segment may be lost or delivered out-of-order to app</li>
+<li>connectionless</li>
 <li>no handshaking between UDP senders and receivers</li>
 <li>each UDP segment handled independently of others</li>
-</ul>
-</li>
-</ul>
-</li>
+</ul></li>
 <li>The Reason of the Existence of UDP (Advantages)
+
 <ul>
-<li>no connection establishment
-<ul>
+<li>no connection establishment</li>
 <li>DNS choose this, due to no additional RTT delay</li>
-</ul>
-</li>
 <li>simple (no connection)</li>
 <li>small header size</li>
-<li>no congestion control
-<ul>
+<li>no congestion control</li>
 <li>UDP can blast away as fast as desired</li>
 <li>can function in the face of congestion</li>
-</ul>
-</li>
-</ul>
-</li>
+</ul></li>
 <li>Usage
+
 <ul>
 <li>streaming multimedia apps (loss tolerant, rate sensitive)</li>
 <li>DNS</li>
 <li>SNMP</li>
-<li>HTTP/3
-<ul>
+<li>HTTP/3</li>
 <li>if used UDP
+
 <ul>
 <li>add needed reliability at application layer</li>
 <li>add congestion control at application layer</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
+</ul></li>
+</ul></li>
 <li>Segment
+
 <ul>
-<li>length: in bytes of UDP segment, inlcuding header
-<ul>
+<li>length: in bytes of UDP segment, inlcuding header</li>
 <li>UDP segment would keep the length of packet below 1500 bytes, in order to avoid being fragmented by router</li>
-</ul>
-</li>
-<li>checksum: for error detection (cannnot dectect all, but majority)
-<ul>
+<li>checksum: for error detection (cannnot dectect all, but majority)</li>
 <li>procedure
+
 <ul>
-<li>sender
-<ul>
-<li>treat segment contents, including header, as sequence of 16-bit integers</li>
-<li>checksum: addition (one&rsquo;s complement sum) of segment contents</li>
+<li>sender</li>
+<li>treat segment contents, including header (8 bytes), as sequence of 16-bit integers</li>
+<li>checksum: addition (one's complement sum) of segment contents</li>
 <li>sender puts checksum value into UDP checksum field</li>
-</ul>
-</li>
-<li>receiver
-<ul>
+<li>receiver</li>
 <li>compute checksum of received segment</li>
 <li>check if computed checksum equals checksum field value:
+
 <ul>
-<li>no - error detected (two options)
-<ul>
+<li>no - error detected (two options)</li>
 <li>transport layer drop it</li>
 <li>transmit to application layer, it would decide the next action</li>
-</ul>
-</li>
 <li>yes - no error detected (but may still have errors)</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
+</ul></li>
+</ul></li>
 <li>others
+
 <ul>
 <li>some implementations allow UDP checksum calculation to be disabled in order to speed up the processing of incoming UDP datagrams
-<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/111.png" alt=""></li>
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/111.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="connection-oriented-transport-tcp">Connection-oriented Transport: TCP</h2>
+
+<h2 id="connectionoriented-transport-tcp">Connection-oriented Transport: TCP</h2>
+
 <ul>
 <li>Services
+
 <ul>
 <li>point-to-point</li>
-<li>reliable, in-order byte stream (no message boundaries)</li>
+<li>reliable, in-order byte stream (no message boundaries)
+
+<ul>
+<li>using ACK and sequence number to be reliable</li>
+<li>ACK and sequence number are byte-stream numbers, not packet number</li>
+<li>the sequence number of a segment is the byte-stream number of the first byte in the segment</li>
+</ul></li>
 <li>full duplex data
+
 <ul>
 <li>bi-directional data flow in same connection</li>
 <li>MSS: maximum segment size (excluding header)
+
 <ul>
 <li>connection specific</li>
-<li>two direcrions may have different MSSs.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>cumulative ACKs (in the header)</li>
+<li>two direcrions may have different MSSs</li>
+<li>in contrast, UDP has packet size</li>
+<li>depends on two issues
+
+<ul>
+<li>overhead management</li>
+<li>IP fragmentation</li>
+</ul></li>
+<li>absolute limit: 65495 =<span  class="math">\(\ (2^{16}-1-40)\)</span>
+
+<ul>
+<li><span  class="math">\(\ 2^{16}-1\)</span> is IP datagram maximum size</li>
+<li>IP header costs 20 bytes, and TCP header costs 20 bytes -&gt; 40 bytes</li>
+<li>in practice, it is hard to reach this number</li>
+</ul></li>
+<li>typically, its value is 1460 bytes (just pillow)
+
+<ul>
+<li>TCP header is 20 bytes (min), IP datagram header is 20 bytes (min), Ethernet maximum frame size is 1500 bytes (but up to 8000 bytes in data centre)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>cumulative ACKs (in the header)
+
+<ul>
+<li>ACK: sequence number of next byte expected from other side</li>
+<li>duplicated ACKs means packet loss (then restransmit fastly) or packets out of order</li>
+<li>another method to detect packet loss (then restransmit fastly) is timer (using time-out)
+
+<ul>
+<li>TCP and UDP both use this
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-19%20%E4%B8%8B%E5%8D%885.32.08.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
 <li>pipelining (means keep talking)
+
 <ul>
 <li>unpipelining -&gt; transmit packets one by one, but it is reliable</li>
-</ul>
-</li>
+</ul></li>
 <li>connection-oriented</li>
 <li>flow control
+
 <ul>
 <li>sender will not overwhelm receive buffer</li>
-</ul>
-</li>
+</ul></li>
 <li>congestion control
+
 <ul>
 <li>focus on router buffer</li>
 <li>through window size (key factor)</li>
-</ul>
-</li>
+</ul></li>
 <li>others
+
 <ul>
 <li>send buffer
+
 <ul>
 <li>decide when to send packets</li>
 <li>resending purpose</li>
-</ul>
-</li>
+</ul></li>
 <li>receive buffer
+
 <ul>
 <li>solve the problem of out-of-order packets</li>
+</ul></li>
+</ul></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-19%20%E4%B8%8A%E5%8D%8810.40.20.png" alt=""></p>
+
+<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-19%20%E4%B8%8A%E5%8D%8810.40.20.png" alt=""></figure></p>
+
 <ul>
 <li>Segment Structure
-<ul>
-<li>some additional tips
+
 <ul>
 <li>source &amp; dest ports -&gt; mutiplexing &amp; demultiplexing</li>
 <li>header length (4 bits)
+
 <ul>
 <li><strong>Q: What is the max header size?</strong></li>
-<li>A: The TCP header would combine 4 bytes as a union, although header length only has 4 bits (15), the max header size is 60 bytes.</li>
-</ul>
-</li>
-<li>C, E (for newer protocols, we can just ignore them)</li>
-<li>P, means push</li>
+<li>A: The TCP header would combine 4 bytes as a union, although header length only has 4 bits (15), the max header size is 60 bytes. Because TCP also has &quot;option&quot; in the header, there are 20 bytes except for &quot;options&quot;.</li>
+</ul></li>
+<li>C, E (for newer protocols, explicit congestion control, we can just ignore them)</li>
+<li>U (seldomly used)
+
+<ul>
+<li>if U equals 1, the pillow contains two types of data
+
+<ul>
+<li>urgent data
+
+<ul>
+<li>start from the first byte to the urgent data pointer</li>
+</ul></li>
+<li>original data</li>
+</ul></li>
+<li>the boundary of above two types of data is indicated by urgent data pointer</li>
+</ul></li>
+<li>P, means push quickly
+
+<ul>
+<li>the client would not transmit a packet to application layer when the transport layer receives the packet immediately</li>
+<li>packets would be save in the buffer, until the value of P equals 1, packets would be transmitted to the application layer together (buffer would be empty at the same time)</li>
+</ul></li>
 <li>R, S, F
+
 <ul>
 <li>RST: if the client or server crashes, make R as 1 to reset everything</li>
 <li>SYN: connection request</li>
-<li>FIN: finish my connection (finsh connections on both sides)
-<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-19%20%E4%B8%8A%E5%8D%8811.27.01.png" alt=""></li>
+<li>FIN: finish my connection (finsh connections on both sides)</li>
+</ul></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
+
+<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-19%20%E4%B8%8A%E5%8D%8811.27.01.png" alt=""></figure></p>
+
+<ul>
+<li>Reliable Data Transfer
+
+<ul>
+<li>window size
+
+<ul>
+<li>best N: determined by congestion control
+
+<ul>
+<li><strong>Q: How receiver handles out-of-order segments?</strong></li>
+<li>A: TCP spec does not say, up to implementor.
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-19%20%E4%B8%8B%E5%8D%884.34.24.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+<li>TCP round trip time, timeout
+
+<ul>
+<li>timer would be put in the oldest packet</li>
+<li>timeout value
+
+<ul>
+<li>longer than RTT, but RTT varies</li>
+<li>too short: premature timeout, unnecessary retransmissions</li>
+<li>too long: slow reaction to segment loss</li>
+</ul></li>
+<li>estimate RTT
+
+<ul>
+<li>SampleRTT: measured time from segment transmission until ACK receipt
+
+<ul>
+<li>ignore retransmissions</li>
+<li>SampleRTT will vary, want estimated RTT &quot;smoother&quot;
+
+<ul>
+<li>average several recent measurements, not just current SampleRTT</li>
+</ul></li>
+</ul></li>
+<li>EstimatedRTT =<span  class="math">\(\ (1-\alpha)\times\)</span>EstimatedRTT + <span  class="math">\(\alpha\times\)</span>SampleRTT
+
+<ul>
+<li>exponential weighted moving average (EWMA)</li>
+<li>influence of past sample decreases exponentially fast</li>
+<li>typcial value: <span  class="math">\(\alpha\)</span> = 0.125</li>
+<li>EstimatedRTT just like average RTT, SampleRTT just like current RTT, we can combine them to update EstimatedRTT
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-19%20%E4%B8%8B%E5%8D%885.03.25.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+<li>timeout interval: EstimatedRTT plus &quot;safety margin&quot;
+
+<ul>
+<li>large variation in EstimatedRTT: want a larger safety margin</li>
+<li>TimeoutInterval = EstimatedRTT + 4<span  class="math">\(\times\)</span>DevRTT
+
+<ul>
+<li>DevRTT (safety margin): EWMA of SampleRTT deviation from EstimatedRTT</li>
+<li>DevRTT = (1 - <span  class="math">\(\beta\)</span>)<span  class="math">\(\times\)</span>DevRTT + <span  class="math">\(\beta\times\)</span>|SampleRTT - EstimatedRTT|
+
+<ul>
+<li><span  class="math">\(\beta\)</span> = 0.25</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>TCP fast retransmit
+
+<ul>
+<li>due to lots of experiments, 3 duplicated ACKs are the best option
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-19%20%E4%B8%8B%E5%8D%885.38.49.png" alt=""></figure></li>
+</ul></li>
+<li>advantages of delayed ACK
+
+<ul>
+<li>wait up to 500ms for next segment and send a ACK for several segments to save</li>
+<li>save dedicated ACK (no pillow, just header)</li>
+</ul></li>
+</ul></li>
 </ul>
 
       </div>
@@ -540,7 +647,7 @@
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        1007 Words
+        1488 Words
       </p>
 
       <p>
