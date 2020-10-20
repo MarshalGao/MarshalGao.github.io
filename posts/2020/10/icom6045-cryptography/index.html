@@ -5,16 +5,17 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="Marshal ">
-<meta name="description" content="" />
-<meta name="keywords" content=", 产品经理, 学习路线" />
+<meta name="description" content="Overview Security Threats (explain basically)
+ Content  eavesdropping: the message would be listened by others when you communicate with your friends, using email or whatsapp masquerading: identity stealing message tampering: someone modify the message in the middle replaying: receive the same message twice, it is dangerous in transactions, but not in instant message, etc   Machine  infiltration: receive marewares(can control PC or smart phones) from hackers   Traffic  traffic analysis: only interestes in how to communicate denial of service: make others cannot access the services    " />
+<meta name="keywords" content=", icom6045, fundamentals of e-commerce security, cryptography" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="#252627" />
-<link rel="canonical" href="https://www.marshalgao.com/posts/2020/10/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/" />
+<link rel="canonical" href="https://www.marshalgao.com/posts/2020/10/icom6045-cryptography/" />
 
 
     <title>
         
-            产品经理学习路线 :: This is Marshal 
+            ICOM6045 Cryptography :: This is Marshal 
         
     </title>
 
@@ -41,41 +42,44 @@
 
 
 
-<meta itemprop="name" content="产品经理学习路线">
-<meta itemprop="description" content="">
-<meta itemprop="datePublished" content="2020-10-18T11:21:28+08:00" />
-<meta itemprop="dateModified" content="2020-10-18T11:21:28+08:00" />
-<meta itemprop="wordCount" content="0">
+<meta itemprop="name" content="ICOM6045 Cryptography">
+<meta itemprop="description" content="Overview Security Threats (explain basically)
+ Content  eavesdropping: the message would be listened by others when you communicate with your friends, using email or whatsapp masquerading: identity stealing message tampering: someone modify the message in the middle replaying: receive the same message twice, it is dangerous in transactions, but not in instant message, etc   Machine  infiltration: receive marewares(can control PC or smart phones) from hackers   Traffic  traffic analysis: only interestes in how to communicate denial of service: make others cannot access the services    ">
+<meta itemprop="datePublished" content="2020-10-20T23:12:13+08:00" />
+<meta itemprop="dateModified" content="2020-10-20T23:12:13+08:00" />
+<meta itemprop="wordCount" content="82">
 <meta itemprop="image" content="https://www.marshalgao.com/"/>
 
 
 
-<meta itemprop="keywords" content="产品经理,学习路线," />
+<meta itemprop="keywords" content="icom6045,fundamentals of e-commerce security,cryptography," />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.marshalgao.com/"/>
 
-<meta name="twitter:title" content="产品经理学习路线"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="ICOM6045 Cryptography"/>
+<meta name="twitter:description" content="Overview Security Threats (explain basically)
+ Content  eavesdropping: the message would be listened by others when you communicate with your friends, using email or whatsapp masquerading: identity stealing message tampering: someone modify the message in the middle replaying: receive the same message twice, it is dangerous in transactions, but not in instant message, etc   Machine  infiltration: receive marewares(can control PC or smart phones) from hackers   Traffic  traffic analysis: only interestes in how to communicate denial of service: make others cannot access the services    "/>
 
 
 
-    <meta property="og:title" content="产品经理学习路线" />
-<meta property="og:description" content="" />
+    <meta property="og:title" content="ICOM6045 Cryptography" />
+<meta property="og:description" content="Overview Security Threats (explain basically)
+ Content  eavesdropping: the message would be listened by others when you communicate with your friends, using email or whatsapp masquerading: identity stealing message tampering: someone modify the message in the middle replaying: receive the same message twice, it is dangerous in transactions, but not in instant message, etc   Machine  infiltration: receive marewares(can control PC or smart phones) from hackers   Traffic  traffic analysis: only interestes in how to communicate denial of service: make others cannot access the services    " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.marshalgao.com/posts/2020/10/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/" />
+<meta property="og:url" content="https://www.marshalgao.com/posts/2020/10/icom6045-cryptography/" />
 <meta property="og:image" content="https://www.marshalgao.com/"/>
-<meta property="article:published_time" content="2020-10-18T11:21:28+08:00" />
-<meta property="article:modified_time" content="2020-10-18T11:21:28+08:00" />
+<meta property="article:published_time" content="2020-10-20T23:12:13+08:00" />
+<meta property="article:modified_time" content="2020-10-20T23:12:13+08:00" />
 
 
 
 
-    <meta property="article:section" content="Product Manager" />
+    <meta property="article:section" content="HKU" />
 
 
 
-    <meta property="article:published_time" content="2020-10-18 11:21:28 &#43;0800 HKT" />
+    <meta property="article:published_time" content="2020-10-20 23:12:13 &#43;0800 HKT" />
 
 
 
@@ -141,7 +145,7 @@
           <circle cx="12" cy="12" r="10"></circle>
           <polyline points="12 6 12 12 16 14"></polyline>
         </svg>
-        0 minutes
+        One minute
 
         
       </p>
@@ -149,13 +153,35 @@
 
     <article>
       <h1 class="post-title">
-        <a href="https://www.marshalgao.com/posts/2020/10/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/">产品经理学习路线</a>
+        <a href="https://www.marshalgao.com/posts/2020/10/icom6045-cryptography/">ICOM6045 Cryptography</a>
       </h1>
 
       
 
       <div class="post-content">
-        <p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/revised_study2.png" alt=""></p>
+        <h2 id="overview">Overview</h2>
+<p><strong>Security Threats (explain basically)</strong></p>
+<ul>
+<li>Content
+<ul>
+<li>eavesdropping: the message would be listened by others when you communicate with your friends, using email or whatsapp</li>
+<li>masquerading: identity stealing</li>
+<li>message tampering: someone modify the message in the middle</li>
+<li>replaying: receive the same message twice, it is dangerous in transactions, but not in instant message, etc</li>
+</ul>
+</li>
+<li>Machine
+<ul>
+<li>infiltration: receive marewares(can control PC or smart phones) from hackers</li>
+</ul>
+</li>
+<li>Traffic
+<ul>
+<li>traffic analysis: only interestes in how to communicate</li>
+<li>denial of service: make others cannot access the services</li>
+</ul>
+</li>
+</ul>
 
       </div>
     </article>
@@ -167,8 +193,9 @@
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
-        <span class="tag"><a href="https://www.marshalgao.com/tags/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/">产品经理</a></span>
-        <span class="tag"><a href="https://www.marshalgao.com/tags/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/">学习路线</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/icom6045/">icom6045</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/fundamentals-of-e-commerce-security/">fundamentals of e-commerce security</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/cryptography/">cryptography</a></span>
         
     </p>
 
@@ -176,7 +203,7 @@
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
 
-        <span class="tag"><a href="https://www.marshalgao.com/categories/product-manager/">Product Manager</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/categories/hku/">HKU</a></span>
         
     </p>
 
@@ -189,7 +216,7 @@
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        0 Words
+        82 Words
       </p>
 
       <p>
@@ -200,7 +227,7 @@
           <line x1="3" y1="10" x2="21" y2="10"></line>
         </svg>
         
-          2020-10-18 11:21
+          2020-10-20 23:12
         
 
          
@@ -218,18 +245,11 @@
 
         <div class="pagination__buttons">
           
-            <span class="button previous">
-              <a href="https://www.marshalgao.com/posts/2020/10/icom6045-cryptography/">
-                <span class="button__icon">←</span>
-                <span class="button__text">ICOM6045 Cryptography</span>
-              </a>
-            </span>
-          
 
           
             <span class="button next">
-              <a href="https://www.marshalgao.com/posts/2020/10/icom6012-transport-layer/">
-                <span class="button__text">ICOM6012 Transport Layer</span>
+              <a href="https://www.marshalgao.com/posts/2020/10/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/">
+                <span class="button__text">产品经理学习路线</span>
                 <span class="button__icon">→</span>
               </a>
             </span>

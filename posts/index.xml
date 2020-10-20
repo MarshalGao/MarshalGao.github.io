@@ -6,8 +6,42 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Sun, 18 Oct 2020 11:21:28 +0800</lastBuildDate>
+        <lastBuildDate>Tue, 20 Oct 2020 23:12:13 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ICOM6045 Cryptography</title>
+            <link>https://www.marshalgao.com/posts/2020/10/icom6045-cryptography/</link>
+            <pubDate>Tue, 20 Oct 2020 23:12:13 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/posts/2020/10/icom6045-cryptography/</guid>
+            <description>Overview Security Threats (explain basically)
+ Content  eavesdropping: the message would be listened by others when you communicate with your friends, using email or whatsapp masquerading: identity stealing message tampering: someone modify the message in the middle replaying: receive the same message twice, it is dangerous in transactions, but not in instant message, etc   Machine  infiltration: receive marewares(can control PC or smart phones) from hackers   Traffic  traffic analysis: only interestes in how to communicate denial of service: make others cannot access the services    </description>
+            <content type="html"><![CDATA[<h2 id="overview">Overview</h2>
+<p><strong>Security Threats (explain basically)</strong></p>
+<ul>
+<li>Content
+<ul>
+<li>eavesdropping: the message would be listened by others when you communicate with your friends, using email or whatsapp</li>
+<li>masquerading: identity stealing</li>
+<li>message tampering: someone modify the message in the middle</li>
+<li>replaying: receive the same message twice, it is dangerous in transactions, but not in instant message, etc</li>
+</ul>
+</li>
+<li>Machine
+<ul>
+<li>infiltration: receive marewares(can control PC or smart phones) from hackers</li>
+</ul>
+</li>
+<li>Traffic
+<ul>
+<li>traffic analysis: only interestes in how to communicate</li>
+<li>denial of service: make others cannot access the services</li>
+</ul>
+</li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>产品经理学习路线</title>
