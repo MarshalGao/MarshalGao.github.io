@@ -6,8 +6,23 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Tue, 20 Oct 2020 23:12:13 +0800</lastBuildDate>
+        <lastBuildDate>Wed, 21 Oct 2020 09:52:19 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>产品经理方向选择</title>
+            <link>https://www.marshalgao.com/posts/2020/10/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E6%96%B9%E5%90%91%E9%80%89%E6%8B%A9/</link>
+            <pubDate>Wed, 21 Oct 2020 09:52:19 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/posts/2020/10/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E6%96%B9%E5%90%91%E9%80%89%E6%8B%A9/</guid>
+            <description>B端、C端产品从业市场  C端产品经理更多的是要面向用户，即to consumer。个人感觉现如今C端产品经理需求量即将饱和、竞争压力大，而且从长远角度看，B端产品经理的职业发展空间会更广阔。 B端相较于C端，更多的是在某一个领域与互联网结合的产品，比如需要服务企业方向的SaaS。B端产品发展前景广阔，但需要变换产品思维，门槛相较于C端产品经理更高，而且更注重产品对应方向领域相关知识的学习。  </description>
+            <content type="html"><![CDATA[<h3 id="b端c端产品从业市场">B端、C端产品从业市场</h3>
+<ul>
+<li>C端产品经理更多的是要面向用户，即to consumer。个人感觉现如今C端产品经理需求量即将饱和、竞争压力大，而且从长远角度看，B端产品经理的职业发展空间会更广阔。</li>
+<li>B端相较于C端，更多的是在某一个领域与互联网结合的产品，比如需要服务企业方向的SaaS。B端产品发展前景广阔，但需要变换产品思维，门槛相较于C端产品经理更高，而且更注重产品对应方向领域相关知识的学习。</li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>ICOM6045 Cryptography</title>
@@ -16,29 +31,477 @@
             
             <guid>https://www.marshalgao.com/posts/2020/10/icom6045-cryptography/</guid>
             <description>Overview Security Threats (explain basically)
- Content  eavesdropping: the message would be listened by others when you communicate with your friends, using email or whatsapp masquerading: identity stealing message tampering: someone modify the message in the middle replaying: receive the same message twice, it is dangerous in transactions, but not in instant message, etc   Machine  infiltration: receive marewares(can control PC or smart phones) from hackers   Traffic  traffic analysis: only interestes in how to communicate denial of service: make others cannot access the services    </description>
+ Content  eavesdropping: the message would be listened by others when you communicate with your friends, using email or whatsapp masquerading: identity stealing message tampering: someone modify the message in the middle replaying: receive the same message twice, it is dangerous in transactions, but not in instant message, etc  Machine  infiltration: receive marewares (can control PC or smart phones) from hackers  Traffic  traffic analysis: only interestes in how to communicate denial of service: make others cannot access the services   Security Services (implemented by security mechanisms)</description>
             <content type="html"><![CDATA[<h2 id="overview">Overview</h2>
+
 <p><strong>Security Threats (explain basically)</strong></p>
+
 <ul>
 <li>Content
+
 <ul>
 <li>eavesdropping: the message would be listened by others when you communicate with your friends, using email or whatsapp</li>
 <li>masquerading: identity stealing</li>
 <li>message tampering: someone modify the message in the middle</li>
 <li>replaying: receive the same message twice, it is dangerous in transactions, but not in instant message, etc</li>
-</ul>
-</li>
+</ul></li>
 <li>Machine
+
 <ul>
-<li>infiltration: receive marewares(can control PC or smart phones) from hackers</li>
-</ul>
-</li>
+<li>infiltration: receive marewares (can control PC or smart phones) from hackers</li>
+</ul></li>
 <li>Traffic
+
 <ul>
 <li>traffic analysis: only interestes in how to communicate</li>
 <li>denial of service: make others cannot access the services</li>
+</ul></li>
 </ul>
-</li>
+
+<p><strong>Security Services (implemented by security mechanisms)</strong></p>
+
+<ul>
+<li>Security policy
+
+<ul>
+<li>from risk analysis, we can have some security policies to deal with</li>
+<li>may not cover all possible risks, should have a reasonable trade-off between risks and available resources</li>
+</ul></li>
+<li>ISO security architecture
+
+<ul>
+<li>authentication</li>
+<li>access control</li>
+<li>data confidentiality</li>
+<li>data integrity</li>
+<li>nonrepudiation</li>
+</ul></li>
+<li>Basic computer security concepts (CIA)
+
+<ul>
+<li>related to cryptography
+
+<ul>
+<li>confidentiality: prevent unauthorized access</li>
+<li>integrity: prevent unauthorized modification</li>
+</ul></li>
+<li>related to access control
+
+<ul>
+<li>availability: prevent unauthorized withholding of information or resources</li>
+<li>authenticity: verify the origin of data</li>
+<li>accountability: audit information and trace to the responsible party if there are security issues</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h2 id="encryption--decryption">Encryption &amp; Decryption</h2>
+
+<p><strong>Types (still use today)</strong></p>
+
+<ul>
+<li>symmetric key encryption (single key cryptosystem)
+
+<ul>
+<li>using the same encryption and decryption key
+
+<ul>
+<li>e.g. AES, 3DES, RC4, pdf password</li>
+</ul></li>
+<li>usage:
+
+<ul>
+<li>file encryption</li>
+<li>others with lots of data</li>
+</ul></li>
+<li>rely on substitution and permutation, do not need to much computing</li>
+</ul></li>
+
+<li><p>public key encryption (two key cryptosystem)</p>
+
+<ul>
+<li>using different encryption and decryption keys
+
+<ul>
+<li>public key (encryption key): everyone knows it</li>
+<li>private key (decryption key): only I know</li>
+<li>e.g. RSA (still popular today)</li>
+</ul></li>
+<li>usage:
+
+<ul>
+<li>communication</li>
+<li>digital signature</li>
+<li>others not cover lots of data</li>
+</ul></li>
+<li>rely on complex math, need much computing</li>
+</ul>
+
+<p><strong>if you use the e-banking system or https, you should use both of them</strong></p></li>
+</ul>
+
+<p><strong>Monoalphabetic substitutions</strong></p>
+
+<ul>
+<li>concept
+
+<ul>
+<li>substitution: each letter is substituted by another one</li>
+<li>permutation: reorder the elements of a series</li>
+</ul></li>
+<li>caesar cipher
+
+<ul>
+<li>each letter is translated to the letter a fixed number of letters after it in the alphabet
+
+<ul>
+<li>Julius Caesar used a shift of 3</li>
+</ul></li>
+<li>attack (short message)
+
+<ul>
+<li>find the similarity of ciphertext (e.g. &quot;wr&quot; means &quot;to&quot; -&gt; &quot;wrr&quot; means &quot;too&quot;)</li>
+<li>guess the pattern(the number of shifting)</li>
+</ul></li>
+</ul></li>
+<li>cryptanalysis (mainly for long message)
+
+<ul>
+<li>count the frequency of the letter, find the difference according to the frequency of normal articles</li>
+<li>weakness: the frequency of distribution reflects the distribution of the underlying alphabet
+
+<ul>
+<li>make it stronger -&gt; polyalphabetic substitution ciphers
+
+<ul>
+<li>using combine or multiple distributions -&gt; different tables</li>
+<li>if you use 2 tables, it is not safe (if someone can guess the tables)</li>
+<li>26 tables may be safer, but it is difficult to maintain
+
+<ul>
+<li>solution (vigenere cipher): use a keyword (not be encrypted, but use different method or channel), letters in the key will be used to select a particular permutation (e.g. juliet, which needs to be repeated)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+
+<li><p>index of coincidence</p>
+
+<ul>
+<li>a measure of the variation between frequencies in a distribution (n is the number of ciphertext)
+<span  class="math">\(IC=\sum_{i=a}^{i=z}\frac{Freq(i)\times(Freq(i)-1)}{n\times(n-1)}\)</span></li>
+
+<li><p>IC ranges from 0.0384 (polyalphabetic substitution with perfectly flat distribution) to 0.068(monoalphabetic substitution from common English)</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">Alphabets</th>
+<th align="center">IC</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">0.068</td>
+</tr>
+
+<tr>
+<td align="center">2</td>
+<td align="center">0.052</td>
+</tr>
+
+<tr>
+<td align="center">3</td>
+<td align="center">0.047</td>
+</tr>
+
+<tr>
+<td align="center">4</td>
+<td align="center">0.044</td>
+</tr>
+
+<tr>
+<td align="center">5</td>
+<td align="center">0.044</td>
+</tr>
+
+<tr>
+<td align="center">10</td>
+<td align="center">0.041</td>
+</tr>
+
+<tr>
+<td align="center">large</td>
+<td align="center">0.038</td>
+</tr>
+</tbody>
+</table></li>
+
+<li><p>the value of IC</p>
+
+<ul>
+<li>close to or above 0.068 -&gt; monoalphabetic substitution</li>
+<li>close to or below 0.038 -&gt; polyalphabetic substitution</li>
+</ul></li>
+
+<li><p>kasiski method: determine when a pattern of encrypting permutations has repeated to predict the number of alphabets used for substitutions</p>
+
+<ul>
+<li>search for repeated sequence of characters</li>
+<li>calculate the distance between each two of them</li>
+<li>the estimated key length is the common divisor</li>
+</ul></li>
+</ul></li>
+
+<li><p>analyze polyalphabetic cipher</p>
+
+<ul>
+<li>use the kasiski method to predict likely numbers of enciphering alphabets</li>
+<li>if no numbers emerge fairly regularly, the encryption is not probably not a polyalphabetic substitution</li>
+<li>divide the ciphertext into serval sequences, according to the key length</li>
+<li>calculate IC for each sequence</li>
+</ul></li>
+</ul>
+
+<p><strong>The &quot;perfect&quot; substitution cipher</strong></p>
+
+<ul>
+<li>use infinite or a large nonrepeating keys
+
+<ul>
+<li>problems<br>
+
+<ul>
+<li>absolute synchronization between sender and receiver, difficult to distribute</li>
+<li>need an unlimited number of keys</li>
+</ul></li>
+</ul></li>
+
+<li><p>vernam cipher</p>
+
+<ul>
+<li>use random number as the key</li>
+
+<li><p>e.g.</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">plaintext</th>
+<th align="center">V</th>
+<th align="center">E</th>
+<th align="center">R</th>
+<th align="center">N</th>
+<th align="center">A</th>
+<th align="center">M</th>
+<th align="center">C</th>
+<th align="center">I</th>
+<th align="center">P</th>
+<th align="center">H</th>
+<th align="center">E</th>
+<th align="center">R</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">encoded</td>
+<td align="center">21</td>
+<td align="center">4</td>
+<td align="center">17</td>
+<td align="center">13</td>
+<td align="center">0</td>
+<td align="center">12</td>
+<td align="center">2</td>
+<td align="center">8</td>
+<td align="center">15</td>
+<td align="center">7</td>
+<td align="center">4</td>
+<td align="center">17</td>
+</tr>
+
+<tr>
+<td align="center">random</td>
+<td align="center">76</td>
+<td align="center">48</td>
+<td align="center">16</td>
+<td align="center">82</td>
+<td align="center">33</td>
+<td align="center">3</td>
+<td align="center">58</td>
+<td align="center">11</td>
+<td align="center">60</td>
+<td align="center">5</td>
+<td align="center">48</td>
+<td align="center">88</td>
+</tr>
+
+<tr>
+<td align="center">sum</td>
+<td align="center">97</td>
+<td align="center">52</td>
+<td align="center">33</td>
+<td align="center">95</td>
+<td align="center">33</td>
+<td align="center">15</td>
+<td align="center">60</td>
+<td align="center">19</td>
+<td align="center">75</td>
+<td align="center">12</td>
+<td align="center">52</td>
+<td align="center">105</td>
+</tr>
+
+<tr>
+<td align="center">mod 26</td>
+<td align="center">19</td>
+<td align="center">0</td>
+<td align="center">7</td>
+<td align="center">17</td>
+<td align="center">18</td>
+<td align="center">15</td>
+<td align="center">8</td>
+<td align="center">19</td>
+<td align="center">23</td>
+<td align="center">12</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+
+<tr>
+<td align="center">ciphertext</td>
+<td align="center">T</td>
+<td align="center">A</td>
+<td align="center">H</td>
+<td align="center">R</td>
+<td align="center">S</td>
+<td align="center">P</td>
+<td align="center">I</td>
+<td align="center">T</td>
+<td align="center">X</td>
+<td align="center">M</td>
+<td align="center">A</td>
+<td align="center">B</td>
+</tr>
+</tbody>
+</table></li>
+
+<li><p>possible attack</p>
+
+<ul>
+<li>random number generator</li>
+<li>most common type of random number generator: linear congruential random number generator</li>
+<li>seed: the initial value <span  class="math">\(r_0\)</span></li>
+
+<li><p>successive random number <span  class="math">\(r_{i+1}\)</span></p>
+
+<p><span  class="math">\[r_{i+1}=(a\times r_i+b)\mod\ n\]</span></p>
+
+<ul>
+<li>if someone knows a, b and n, he or she can use the current random number to calculate the next random number</li>
+</ul></li>
+
+<li><p>cracking the random number generator becomes solving a systems of equations</p></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>Permutations (transpositions)</strong></p>
+
+<ul>
+<li>rearrange the symbols of a message and try to break established patterns
+
+<ul>
+<li>columnar transposition: rearrangement of the characters of the plaintext into columns
+
+<ul>
+<li>e.g. THIS IS A MESSAGE TO SHOW HOW A COLUMN TRANSPOSITION WORKS
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-21%20%E4%B8%8B%E5%8D%888.17.38.png" alt=""></figure></li>
+<li>cryptanalysis
+
+<ul>
+<li>compute the letter frequencies: all letters appear with their normal frequencies implies that a transposition has been performed</li>
+<li>break the text into columns by compare a block of ciphertext characters against characters successively farther away in the ciphertext</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>complexity
+
+<ul>
+<li>the execution time of the algorithm is proportional to the length of the message</li>
+<li>store all characters</li>
+<li>output cannot be generated until all characters have been read (not good for long message)</li>
+</ul></li>
+<li>alternative method: permute the characters of the plaintext with a fixed period d
+
+<ul>
+<li>e.g. d = 5, and the permutation is (2 4 5 1 3)
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-21%20%E4%B8%8B%E5%8D%888.18.14.png" alt=""></figure></li>
+</ul></li>
+</ul>
+
+<p><strong>Confusion and Diffusion</strong></p>
+
+<ul>
+<li>confusion: change symbols
+
+<ul>
+<li>bad confusion: caesar cipher</li>
+<li>good confusion: polyalphabetic substitution with a long key</li>
+</ul></li>
+<li>diffusion: change order
+
+<ul>
+<li>bad diffusion: the substitution ciphers</li>
+<li>good diffusion: the transposition ciphers</li>
+</ul></li>
+<li>DES provides good confusion and diffusion
+
+<ul>
+<li>substitution provides confusion</li>
+<li>permutation provides diffusion</li>
+</ul></li>
+<li>purpose of cryptography -&gt; data confidentiality
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-21%20%E4%B8%8B%E5%8D%889.25.17.png" alt=""></figure></li>
+</ul>
+
+<p><strong>Ciphers</strong></p>
+
+<ul>
+<li>stream cipher: convert one symbol of plaintext immediately into a symbol of ciphertext, e.g. the substitution cipher
+
+<ul>
+<li>advantages:
+
+<ul>
+<li>speed of transformation</li>
+<li>low error propagation: each symbol is separately encoded</li>
+</ul></li>
+<li>disadvantages:
+
+<ul>
+<li>low diffusion: all information of a symbol is contained in the symbol, subject to attack like frequency count, digram analysis, IC and Kasiski method</li>
+<li>possible for malicious insertions and modifications</li>
+</ul></li>
+</ul></li>
+<li>block cipher: encrypt a group of plaintext symbol as one block, e.g. the columnar transposition cipher
+
+<ul>
+<li>advantages:
+
+<ul>
+<li>diffusion: information of plaintext is diffused into several ciphertext symbols</li>
+<li>diffusion: information of plaintext is diffused into several ciphertext symbols</li>
+</ul></li>
+<li>disadvantages:
+
+<ul>
+<li>slowness of encryption</li>
+<li>error propagation: an error will affect all other characters in the same block</li>
+</ul></li>
+</ul></li>
 </ul>
 ]]></content>
         </item>
