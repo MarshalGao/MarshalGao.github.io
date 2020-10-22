@@ -763,7 +763,7 @@
 
 <ul>
 <li>diffusion: information of plaintext is diffused into several ciphertext symbols</li>
-<li>diffusion: information of plaintext is diffused into several ciphertext symbols</li>
+<li>immunity to insertions: impossible to insert a single symbol in a block</li>
 </ul></li>
 <li>disadvantages:
 
@@ -772,6 +772,30 @@
 <li>error propagation: an error will affect all other characters in the same block</li>
 </ul></li>
 </ul></li>
+</ul>
+
+<p><strong>Rotor Machine</strong></p>
+
+<ul>
+<li>contains three rotors (key)</li>
+<li>is implemented by polyalphabetic substitution (not fixed substitution)
+
+<ul>
+<li>change one position, change the key</li>
+<li>the number of keys is <span  class="math">\({26}^3\)</span></li>
+</ul></li>
+<li>procedure
+
+<ul>
+<li>use original setting to do substitution</li>
+<li>after one input, the next input may generate the rotation of the first rotor (one position)</li>
+<li>if the first rotor rotates a cirle, jump to the second rotor</li>
+<li>after one input, the next input may generate the rotation of the second rotor (one position)</li>
+<li>until three rotors finish their rotation -&gt; original status -&gt; again and again</li>
+</ul></li>
+<li>utility: enigma machine (by German, with a 256-element rotor)</li>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-23%20%E4%B8%8A%E5%8D%8812.54.53.png" alt=""></figure></li>
 </ul>
 ]]></content>
         </item>
