@@ -265,11 +265,138 @@
 <li>lifetime: 3600s</li>
 </ul></li>
 </ul></li>
+<li>other parts of DHCP
+
+<ul>
+<li>IP address of first-hop router</li>
+<li>name and IP address of DNS server (e.g. dns.google.com -&gt; 8.8.8.8, due to collection of data, it is free)</li>
+<li>subnet mask (indicating network versus host portion of address)
+
+<ul>
+<li>it can dertermine whether the packet transmission needs a router</li>
+</ul></li>
+</ul></li>
 </ul></li>
 <li>subnet part: from ISP/ICANN -&gt; public IP addresses (unique on the Internet)
 
 <ul>
 <li>but in setting up a new WiFi router, network part address -&gt; private IP addresses (unique on the home network, so your this IP address can be the same as the others)</li>
+</ul></li>
+</ul></li>
+
+<li><p>NAT (network address translation)</p>
+
+<ul>
+<li>used in routers
+
+<ul>
+<li>use port number (should be unique, other processes can not use) to match with both sides</li>
+</ul></li>
+<li>translates a set of IP addresses to another set of IP addresses (using translation table)</li>
+<li>help preserve the limited amount of IPv4 public IP addresses (with private IP addresses)
+
+<ul>
+<li>public IP addresses
+
+<ul>
+<li>publicly registered</li>
+<li>directly access the Internet with a public IP address</li>
+</ul></li>
+<li>private IP addresses
+
+<ul>
+<li>not publicly registered</li>
+<li>cannot directly access the Internet with a private IP address</li>
+<li>only used internally, those IP addressed can not be seen on the Internet or routers</li>
+<li>if the packet contains these IP addresses, it may be considered as an error and dropped immediately
+<br></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th align="center"><strong>name</strong></th>
+<th align="center"><strong>start IP address</strong></th>
+<th align="center"><strong>end IP address</strong></th>
+<th align="center"><strong>subnet</strong></th>
+<th align="center"><strong>remark</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">24-bit block</td>
+<td align="center">10.0.0.0</td>
+<td align="center">10.255.255.255</td>
+<td align="center">10.0.0.0/8</td>
+<td align="center">apple use this</td>
+</tr>
+
+<tr>
+<td align="center">20-bit block</td>
+<td align="center">172.16.0.0</td>
+<td align="center">173.31.255.255</td>
+<td align="center">172.16.0.0/12</td>
+<td align="center">not many use this</td>
+</tr>
+
+<tr>
+<td align="center">16-bit block</td>
+<td align="center">192.168.0.0</td>
+<td align="center">192.168.255.255</td>
+<td align="center">192.168.0.0/16</td>
+<td align="center">most use this, e.g. asus</td>
+</tr>
+</tbody>
+</table>
+
+<ul>
+<li>advantage: good for security, just like a firewall, that is why we may use this even if we will use the IPv6</li>
+<li>outside hosts want to communicate with an internal host
+
+<ul>
+<li>DDNS</li>
+<li>configure NAT translation table in advance (the router would allow you to do that), called port forwarding</li>
+</ul></li>
+<li><strong>Q: The IP address you find on your iPhone is your smart phone IP address?</strong>
+
+<ul>
+<li>A: No. This IP address is assigned by WiFi router, you can dial <em>3001#12345#</em> to test for iPhone.</li>
+</ul></li>
+</ul></li>
+
+<li><p>IPv6</p>
+
+<ul>
+<li>differences between IPv4 and IPv6
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-23%20%E4%B8%8B%E5%8D%883.57.12.png" alt=""></figure></li>
+<li>motivations
+
+<ul>
+<li>to solve the IPv4 address space shortage problem</li>
+<li>to speed up packet processing/forwarding (by flow label)</li>
+<li>to facilitate QoS</li>
+</ul></li>
+<li>transition from IPv4 to IPv6
+
+<ul>
+<li>use tunneling: IPv6 datagram carried as payload in IPv4 datagram among IPv4 routers
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-23%20%E4%B8%8B%E5%8D%884.35.20.png" alt=""></figure></li>
+<li>set the value of upper layer protocol (in IPv4 header) is 41, making routers know IPv4 datagram is covered by IPv6 datagram</li>
+<li>problems
+
+<ul>
+<li>more overhead</li>
+<li>packets would be too big and fragmentated by router
+
+<ul>
+<li>consider the maximum length of Ethnet frame is 1500 bytes</li>
+</ul></li>
+</ul></li>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-23%20%E4%B8%8B%E5%8D%884.42.29.png" alt=""></figure></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -279,17 +406,78 @@
         </item>
         
         <item>
-            <title>产品经理方向选择</title>
-            <link>https://www.marshalgao.com/posts/2020/10/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E6%96%B9%E5%90%91%E9%80%89%E6%8B%A9/</link>
+            <title>产品经理方向及相关技能</title>
+            <link>https://www.marshalgao.com/posts/2020/10/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E6%96%B9%E5%90%91%E5%8F%8A%E7%9B%B8%E5%85%B3%E6%8A%80%E8%83%BD/</link>
             <pubDate>Wed, 21 Oct 2020 09:52:19 +0800</pubDate>
             
-            <guid>https://www.marshalgao.com/posts/2020/10/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E6%96%B9%E5%90%91%E9%80%89%E6%8B%A9/</guid>
-            <description>B端、C端产品从业市场  C端产品经理更多的是要面向用户，即to consumer。个人感觉现如今C端产品经理需求量即将饱和、竞争压力大，而且从长远角度看，B端产品经理的职业发展空间会更广阔。 B端相较于C端，更多的是在某一个领域与互联网结合的产品，比如需要服务企业方向的SaaS。B端产品发展前景广阔，但需要变换产品思维，门槛相较于C端产品经理更高，而且更注重产品对应方向领域相关知识的学习。  </description>
-            <content type="html"><![CDATA[<h3 id="b端c端产品从业市场">B端、C端产品从业市场</h3>
+            <guid>https://www.marshalgao.com/posts/2020/10/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E6%96%B9%E5%90%91%E5%8F%8A%E7%9B%B8%E5%85%B3%E6%8A%80%E8%83%BD/</guid>
+            <description>网络安全   阿里云智能事业群-云安全产品专家/高级专家
+ 岗位描述：  负责安全产品的市场定位，产品设计，规划产品愿景及发展方向，定义开发迭代范围，目标实现路径和策略 跟踪市场趋势和竞争，分析竞品，明确产品战略，提高核心竞争力 对用户体验、用户数、销售额等关键指标负责   岗位要求：  工具：axure、PRD文档 交互设计经验，了解其中的基本原则 网络、系统、数据库、安全等技术的基本实现原理 理解商业目标，对市场、行业有自己的调研方法 成功商业产品的经验，在用户数或销售额上有过成功实践      阿里集团-CRO-产品专家-系统/网络/应用安全
+ 岗位描述：  反入侵产品：打造阿里巴巴集团的系统、网络安全检测防御能力，入侵检测、webshell检测、异常行为分析等产品的设计建设 流量攻防产品：DDoS攻击防御、WAF、CC攻击防御、反爬虫/机器行为等产品能力建设、技术创新、方案制定，提升安全产品的能力 终端保护产品：负责APP端加固、应用实时防御和端风控产品的设计建设 人机验证/挑战产品：负责验证码、问答验证等人机挑战风控产品的设计建设   岗位要求：  熟悉安全产品的基本工作原理，清楚安全产品的相关能力要求，能够独立设计一款安全产品 有较好的产品架构能力，与完整的产品未来发展思路 数据分析和数据决策能力 技术领域多选一（至少）  WEB安全 人机挑战、人机验证、验证码安全技术 二进制安全攻防对抗、病毒行为分析、通信协议分析等 服务器入侵检测、事件溯源、日志分析、大数据威胁检测等 端安全产品，如HIDS，终端DLP，虚拟桌面等 关注最新web、系统漏洞，能够分析漏洞原理和实现PoC 熟悉IOT、物联网、智能硬件设备安全   加分项  安全产品相关研发经验，设计过面向大中型业务的安全防御、风控产品 熟悉日志、数据分析，能帮助业务一起分析恶意行为，提出自己的见解，转换成产品设计解决业务问题 了解安全运营的流程和心智，能够通过数据分析找到产品关键设计，提升安全运营的整体效率        互联网金融 AI </description>
+            <content type="html"><![CDATA[<h3 id="网络安全">网络安全</h3>
 <ul>
-<li>C端产品经理更多的是要面向用户，即to consumer。个人感觉现如今C端产品经理需求量即将饱和、竞争压力大，而且从长远角度看，B端产品经理的职业发展空间会更广阔。</li>
-<li>B端相较于C端，更多的是在某一个领域与互联网结合的产品，比如需要服务企业方向的SaaS。B端产品发展前景广阔，但需要变换产品思维，门槛相较于C端产品经理更高，而且更注重产品对应方向领域相关知识的学习。</li>
+<li>
+<p><strong>阿里云智能事业群-云安全产品专家/高级专家</strong></p>
+<ul>
+<li>岗位描述：
+<ul>
+<li>负责安全产品的市场定位，产品设计，规划产品愿景及发展方向，定义开发迭代范围，目标实现路径和策略</li>
+<li>跟踪市场趋势和竞争，分析竞品，明确产品战略，提高核心竞争力</li>
+<li>对用户体验、用户数、销售额等关键指标负责</li>
 </ul>
+</li>
+<li>岗位要求：
+<ul>
+<li>工具：axure、PRD文档</li>
+<li>交互设计经验，了解其中的基本原则</li>
+<li>网络、系统、数据库、安全等技术的基本实现原理</li>
+<li>理解商业目标，对市场、行业有自己的调研方法</li>
+<li>成功商业产品的经验，在用户数或销售额上有过成功实践</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>阿里集团-CRO-产品专家-系统/网络/应用安全</strong></p>
+<ul>
+<li>岗位描述：
+<ul>
+<li>反入侵产品：打造阿里巴巴集团的系统、网络安全检测防御能力，入侵检测、webshell检测、异常行为分析等产品的设计建设</li>
+<li>流量攻防产品：DDoS攻击防御、WAF、CC攻击防御、反爬虫/机器行为等产品能力建设、技术创新、方案制定，提升安全产品的能力</li>
+<li>终端保护产品：负责APP端加固、应用实时防御和端风控产品的设计建设</li>
+<li>人机验证/挑战产品：负责验证码、问答验证等人机挑战风控产品的设计建设</li>
+</ul>
+</li>
+<li>岗位要求：
+<ul>
+<li>熟悉安全产品的基本工作原理，清楚安全产品的相关能力要求，能够独立设计一款安全产品</li>
+<li>有较好的产品架构能力，与完整的产品未来发展思路</li>
+<li>数据分析和数据决策能力</li>
+<li>技术领域多选一（至少）
+<ul>
+<li>WEB安全</li>
+<li>人机挑战、人机验证、验证码安全技术</li>
+<li>二进制安全攻防对抗、病毒行为分析、通信协议分析等</li>
+<li>服务器入侵检测、事件溯源、日志分析、大数据威胁检测等</li>
+<li>端安全产品，如HIDS，终端DLP，虚拟桌面等</li>
+<li>关注最新web、系统漏洞，能够分析漏洞原理和实现PoC</li>
+<li>熟悉IOT、物联网、智能硬件设备安全</li>
+</ul>
+</li>
+<li>加分项
+<ul>
+<li>安全产品相关研发经验，设计过面向大中型业务的安全防御、风控产品</li>
+<li>熟悉日志、数据分析，能帮助业务一起分析恶意行为，提出自己的见解，转换成产品设计解决业务问题</li>
+<li>了解安全运营的流程和心智，能够通过数据分析找到产品关键设计，提升安全运营的整体效率</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="互联网金融">互联网金融</h3>
+<h3 id="ai">AI</h3>
 ]]></content>
         </item>
         
