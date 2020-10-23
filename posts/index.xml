@@ -552,7 +552,7 @@
 </ul></li>
 </ul>
 
-<h2 id="encryption--decryption">Encryption &amp; Decryption</h2>
+<h2 id="encryption-and-decryption-focus-on-classical-ones">Encryption and Decryption (focus on classical ones)</h2>
 
 <p><strong>Types (still use today)</strong></p>
 
@@ -981,9 +981,36 @@
 <li>after one input, the next input may generate the rotation of the second rotor (one position)</li>
 <li>until three rotors finish their rotation -&gt; original status -&gt; again and again</li>
 </ul></li>
-<li>utility: enigma machine (by German, with a 256-element rotor)</li>
+<li>utility: enigma machine (by German, with a 256-element rotor, use all rotors twice for each letter)</li>
 <li>example
 <figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-23%20%E4%B8%8A%E5%8D%8812.54.53.png" alt=""></figure></li>
+</ul>
+
+<h2 id="modern-cryptography">Modern Cryptography</h2>
+
+<ul>
+<li>DES (Data Encryption Standard)
+
+<ul>
+<li>a block cipher with 56-bit key (64-bit including parity bits), 64-bit block
+
+<ul>
+<li>the reason for 64-bit: 64-bit is 8 bytes, each character uses 1 byte in the computer, 8 characters means we can use ascii code to represent</li>
+<li>parity bits: just like checksum, solving the nosie problem, but today we may not use this</li>
+</ul></li>
+<li>most commonly use block cipher
+
+<ul>
+<li>in 1990s, this method was not safe any more, then generate &quot;triple DES&quot; (1999) and AES (2001, use until now)</li>
+</ul></li>
+<li>based on &quot;Feistel&quot; network structure
+
+<ul>
+<li>means for both encryption and decryptionn use the same hardware</li>
+<li>DES use this structure for 16 times, but using different subkey</li>
+</ul></li>
+<li>designed to facilitate hardware implementation</li>
+</ul></li>
 </ul>
 ]]></content>
         </item>
