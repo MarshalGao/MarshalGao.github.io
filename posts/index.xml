@@ -135,7 +135,7 @@
 <ul>
 <li>ver: 4 bits, e.g. IPv4, IPv6</li>
 <li>header length: 4 bits, 4 bytes as a union (just like TCP), the minimum header size is 20 bytes</li>
-<li>type of service: 8 bits, choose which type of service should be used, because the designed believe IP can do more than best-effort things (but majority people do not use this)</li>
+<li>type of service: 8 bits, choose which type of service should be used, because the designer believe IP can do more than best-effort things (but majority people do not use this)</li>
 <li>length: theoretically, maximum size of datagram is <span  class="math">\(2^{16}-1\)</span>
 
 <ul>
