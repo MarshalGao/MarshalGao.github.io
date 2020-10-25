@@ -57,22 +57,11 @@
     </item>
     
     <item>
-      <title>New</title>
-      <link>https://www.marshalgao.com/posts/2020/10/new/</link>
-      <pubDate>Sat, 10 Oct 2020 19:52:36 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/posts/2020/10/new/</guid>
-      <description>Bitcoin and Cryptocurrency Technologies Lecture 1 Introduction to Crypto and Cryptocurrencies Hash Function
- Takes any string as input Fixed-size output Efficiently computable  Security Properties
- Collision-free  Nobody can find x and y such as &amp;ldquo;x!=y and H(x)=H(y)&amp;quot;   Hiding  Given H(x), it&amp;rsquo;s infeasible to find x   Puzzle-friendly  For every possible output value y, if k is chosen from a distribution with high min-entropy, then it&amp;rsquo;s infeasible to find x such as H(k|x)=y    SHA-256 Hash Function</description>
-    </item>
-    
-    <item>
-      <title>[1] Two Sum</title>
-      <link>https://www.marshalgao.com/posts/2020/10/1-two-sum/</link>
+      <title>LeetCode[1] Two Sum</title>
+      <link>https://www.marshalgao.com/posts/2020/10/leetcode1-two-sum/</link>
       <pubDate>Wed, 07 Oct 2020 18:24:14 +0800</pubDate>
       
-      <guid>https://www.marshalgao.com/posts/2020/10/1-two-sum/</guid>
+      <guid>https://www.marshalgao.com/posts/2020/10/leetcode1-two-sum/</guid>
       <description>Question: Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 You can return the answer in any order.
