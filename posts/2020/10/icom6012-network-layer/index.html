@@ -164,7 +164,9 @@
       
 
       <div class="post-content">
-        <h2 id="overview">Overview</h2>
+        <p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Network%20Layer1.png" alt=""></figure></p>
+
+<h2 id="overview">Overview</h2>
 
 <p><strong>Services and protocols</strong></p>
 
@@ -273,7 +275,7 @@
 </ul></li>
 </ul>
 
-<p><strong>IP: the Internet Protocol</strong></p>
+<p><strong>IP: the Internet protocol</strong></p>
 
 <ul>
 <li>routhing protocols and ICMP all rely on IP, so IP is the &quot;only&quot; standard in the network layer</li>
@@ -539,7 +541,7 @@
 <li>packets would be too big and fragmentated by router
 
 <ul>
-<li>consider the maximum length of Ethnet frame is 1500 bytes</li>
+<li>consider the maximum length of Ethernet frame is 1500 bytes</li>
 </ul></li>
 </ul></li>
 <li>example
@@ -550,13 +552,13 @@
 
 <h2 id="routing">Routing</h2>
 
-<p><strong>Classfication overview</strong>
+<p><strong>Classification overview</strong>
 <figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-24%20%E4%B8%8B%E5%8D%882.42.29.png" alt=""></figure></p>
 
 <p><strong>Link-state routing</strong></p>
 
 <ul>
-<li>net topology, link costs known to all ndoes
+<li>net topology, link costs known to all nodes
 
 <ul>
 <li>via &quot;link state broadcast&quot;, each router knows its neighbours by configuration</li>
@@ -576,9 +578,9 @@
 <ul>
 <li>LS packet dissemination</li>
 <li>topology map at each other</li>
-<li>route comoputation using Dijkstra's algorithm</li>
+<li>route computation using Dijkstra's algorithm</li>
 </ul></li>
-<li>OSPF advertisment message carries one entry per neighbor</li>
+<li>OSPF advertisement message carries one entry per neighbour</li>
 <li>advertisement flooded to entire network
 
 <ul>
@@ -649,7 +651,7 @@
 <li>aggregate routers into regions, called &quot;autonomous systems&quot; (AS)
 
 <ul>
-<li>each AS is assigned a unique AS number (16 bits, but change to 32b bits today, due to shortage)</li>
+<li>each AS is assigned a unique AS number (16 bits, but change to 32 bits today, due to shortage)</li>
 <li>routers in same AS run same routing protocol
 
 <ul>
@@ -662,7 +664,7 @@
 <ul>
 <li>intra-AS sets entries for internal dests</li>
 <li>inter-AS &amp; intra-AS sets entries for external dests</li>
-<li>for multiple ASes, we can use hot potato routing (shorest way) or obey the policy (e.g. conten provider), etc.</li>
+<li>for multiple ASes, we can use hot potato routing (shorest way) or obey the policy (e.g. content provider), etc.</li>
 <li>two layers is enough, but in the future, it is hard to say</li>
 </ul></li>
 </ul></li>
@@ -741,7 +743,7 @@
 <li>elimination rules
 
 <ul>
-<li>local preference (LOCAL_PRER) value attribute: policy decision</li>
+<li>local preference (LOCAL_PREF) value attribute: policy decision</li>
 <li>shortest AS-PATH: AS hops rather than router hops</li>
 <li>closest NEXT-HOP router: hot potato routing</li>
 <li>additional criteria: backbone, Tier-1 ISP, etc.</li>
