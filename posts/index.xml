@@ -233,14 +233,14 @@
 <li>overview (dora)
 
 <ul>
-<li>host broadcasts &quot;DHCP <strong>d</strong>iscover&quot; msg <a href="due to lease timeout, just jump to the last two steps">optional</a>]
+<li>host broadcasts &quot;DHCP <strong>d</strong>iscover&quot; msg (optional, due to lease timeout, just jump to the last two steps)
 
 <ul>
 <li>broadcast</li>
 <li>src: 0.0.0.0 68</li>
 <li>dest: 255.255.255.255 67</li>
 </ul></li>
-<li>DHCP server responds with &quot;DHCP <strong>o</strong>ffer&quot; msg <a href="can be multiple, but only accept one">optional</a>]
+<li>DHCP server responds with &quot;DHCP <strong>o</strong>ffer&quot; msg (optional, can be multiple, but only accept one)
 
 <ul>
 <li>broadcast</li>
