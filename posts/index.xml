@@ -131,7 +131,7 @@
 <p><strong>IP: the Internet protocol</strong></p>
 
 <ul>
-<li>routhing protocols and ICMP all rely on IP, so IP is the &quot;only&quot; standard in the network layer</li>
+<li>routing protocols and ICMP all rely on IP, so IP is the &quot;only&quot; standard in the network layer</li>
 <li>datagram format
 
 <ul>
