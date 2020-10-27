@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 26 Oct 2020 16:26:43 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Oct 2020 14:25:27 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ICOM6045 Access Control</title>
+      <link>https://www.marshalgao.com/icom6045-access-control/</link>
+      <pubDate>Tue, 27 Oct 2020 14:25:27 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/icom6045-access-control/</guid>
+      <description>Introduction  access control: deals with the prevention and detection of unauthorized actions by users of a computer system indentification and authentication: stating who you are and proving the identification claim with credentials
+ username (identification) and password (authentication) other authentication techniques
+ something you know, e.g. password      group password criteria try to crack the passwords     A passwords consists of &amp;gt;= 6 characters, with at least 1 non-letter 30% easy to crack (passwords easy to remember)   B passwords based on passphrases 10% were cracked (passwords easy to remember)   C passwords consists of 8 randomly selected characters 10% were cracked (passwords difficult to remember)     something you have, e.</description>
+    </item>
+    
     <item>
       <title>互联网金融安全JD汇总(Tencent)</title>
       <link>https://www.marshalgao.com/%E4%BA%92%E8%81%94%E7%BD%91%E9%87%91%E8%9E%8D%E5%AE%89%E5%85%A8jd%E6%B1%87%E6%80%BBtencent/</link>
@@ -93,15 +104,6 @@
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 You can return the answer in any order.
 Example 1: Input: nums = [2,7,11,15], target = 9 Output: [0,1] Output: Because nums[0] + nums[1] == 9, we return [0, 1].</description>
-    </item>
-    
-    <item>
-      <title>Vlog 2 Quarantine Diary</title>
-      <link>https://www.marshalgao.com/vlog-2-quarantine-diary/</link>
-      <pubDate>Wed, 02 Sep 2020 14:12:35 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/vlog-2-quarantine-diary/</guid>
-      <description>   疫情期间赴港上学隔离14天的生活即将结束，刚刚上完第一节课，视频传传好，我要冲了，努力学习！ 再次感谢小刘同学提供的BGM，期望以后可以持续输出！ </description>
     </item>
     
   </channel>

@@ -6,8 +6,232 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Mon, 26 Oct 2020 16:26:43 +0800</lastBuildDate>
+        <lastBuildDate>Tue, 27 Oct 2020 14:25:27 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ICOM6045 Access Control</title>
+            <link>https://www.marshalgao.com/icom6045-access-control/</link>
+            <pubDate>Tue, 27 Oct 2020 14:25:27 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/icom6045-access-control/</guid>
+            <description>Introduction  access control: deals with the prevention and detection of unauthorized actions by users of a computer system indentification and authentication: stating who you are and proving the identification claim with credentials
+ username (identification) and password (authentication) other authentication techniques
+ something you know, e.g. password      group password criteria try to crack the passwords     A passwords consists of &amp;gt;= 6 characters, with at least 1 non-letter 30% easy to crack (passwords easy to remember)   B passwords based on passphrases 10% were cracked (passwords easy to remember)   C passwords consists of 8 randomly selected characters 10% were cracked (passwords difficult to remember)     something you have, e.</description>
+            <content type="html"><![CDATA[<h2 id="introduction">Introduction</h2>
+
+<ul>
+<li>access control: deals with the prevention and detection of unauthorized actions by users of a computer system</li>
+
+<li><p>indentification and authentication: stating who you are and proving the identification claim with credentials</p>
+
+<ul>
+<li>username (identification) and password (authentication)</li>
+
+<li><p>other authentication techniques</p>
+
+<ul>
+<li>something you know, e.g. password
+<br></li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th align="center">group</th>
+<th align="center">password criteria</th>
+<th align="center">try  to crack the passwords</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">A</td>
+<td align="center">passwords consists of &gt;= 6 characters, with at least 1 non-letter</td>
+<td align="center">30% easy to crack (passwords easy to remember)</td>
+</tr>
+
+<tr>
+<td align="center">B</td>
+<td align="center">passwords based on passphrases</td>
+<td align="center">10% were cracked (passwords easy to remember)</td>
+</tr>
+
+<tr>
+<td align="center">C</td>
+<td align="center">passwords consists of 8 randomly selected characters</td>
+<td align="center">10% were cracked (passwords difficult to remember)</td>
+</tr>
+</tbody>
+</table>
+
+<ul>
+<li>something you have, e.g. smartcard
+
+<ul>
+<li>using pin and card to verify identity</li>
+</ul></li>
+<li>something you are, e.g. biometric
+
+<ul>
+<li>enrollment/registration: recording of fingerprint info
+
+<ul>
+<li>fingerprint is captured by a device</li>
+<li>features are extracted and recorded in a database</li>
+</ul></li>
+<li>verification/identification: checking of a fingerprint
+
+<ul>
+<li>features are compared with those in database
+
+<ul>
+<li>known-subject matching: match with one stored fingerprint features record</li>
+<li>unknown-subject matching: match all records to find records with similar features (more on investigation,less popular)</li>
+</ul></li>
+<li>types of features
+
+<ul>
+<li>global features: patterns (aggregate characteristics of ridges)
+
+<ul>
+<li>arch: ridges enter from one side of the finger, rise in the center forming an arc, and then exit the other side</li>
+<li>loop: ridges enter from one side of a finger, form a curve, and tend to exit from the same side they enter</li>
+<li>whorl: ridges form circularly around a central point on the finger
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E5%9B%BE%E7%89%87%203.png" alt=""></figure></li>
+</ul></li>
+<li>local features: minutiae (difficult)
+
+<ul>
+<li>ridge ending</li>
+<li>bifurcation</li>
+<li>short ridge (or dot)
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E5%9B%BE%E7%89%87%205.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+<li>fingerprint minutiae matching
+
+<ul>
+<li>minutiae are extracted from the 2 fingerprints and stored as sets of points in the 2-dimensional plane</li>
+<li>each minutia is stored as a triplet {x,y, θ}, where (x,y) is the minutia is the location coordinate and θ is the minutia angle</li>
+<li>formulated as a “point pattern matching” problem and processed by pattern recognition algorithm
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E5%9B%BE%E7%89%87%206.png" alt=""></figure></li>
+</ul></li>
+<li>fingerprint scanner would check, e.g. iPhone
+
+<ul>
+<li>fingerprint, verify whether it is correct</li>
+<li>alive, the finger is alive, not just cut one from others (so artificial finger cannnot unlock)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+
+<li><p>definitions</p>
+
+<ul>
+<li>subject: a user</li>
+<li>credential: the required proof needed by the system to validate the identity of the user, e.g. the password</li>
+<li>principal: a name associated with a subject, e.g. username</li>
+<li>subject can have multiple names, e.g. different username on different machine</li>
+</ul></li>
+</ul></li>
+
+<li><p>authorization and access control: restriction on the ability of a subject to use a system or an object in that system</p></li>
+</ul>
+
+<h2 id="windows-authentication">Windows Authentication</h2>
+
+<ul>
+<li>username and password are used for authentication</li>
+<li>windows 2000 uses two methods
+
+<ul>
+<li>MSV1_0
+
+<ul>
+<li>stand-alone station</li>
+<li>simple
+
+<ul>
+<li>just username and hashed password</li>
+<li>do matching with SAM (security account manager)
+
+<ul>
+<li>match -&gt; success</li>
+<li>no match -&gt; fail</li>
+</ul></li>
+<li>SAM: the encrypted passwords are stored in the user accounts which are held in the SAM database
+
+<ul>
+<li>the SAM database is part of the registry</li>
+<li>a binary life, accessed using SAM APIs</li>
+<li>each password is hashed using a one-way function, i.e. password cannot be retrieved in plain form (if you forget your password, you lose it)</li>
+</ul></li>
+</ul></li>
+<li>CTRL+ALT+DEL
+
+<ul>
+<li>aka “secure attention key”: generates calls to low-level functions that cannot be duplicated by application programs</li>
+<li>invokes the Windows operating system logon screen</li>
+<li>provides a trusted path from the keyboard to the login process (winlogon.exe)</li>
+</ul></li>
+</ul></li>
+<li>Kerberos
+
+<ul>
+<li>network environment users</li>
+<li>KDC (key distribution center)
+
+<ul>
+<li>authenticates users at login and issues tickets which are valid for one session</li>
+<li>maintain a database of secrect keys of all users</li>
+<li>two components
+
+<ul>
+<li>AS (authentication server): aka. Kerberos server, verify who you are
+
+<ul>
+<li>a user presents an authenticating credential (e.g. password) to the authentication server</li>
+<li>AS returns a ticket to the user showing that the user has passed authentication</li>
+</ul></li>
+<li>TGS (ticket granting server): give you personal ticket, using this to access the resource (different people have different tickets, due to AS)
+
+<ul>
+<li>a users wants to access a resource R (e.g. a file), he sends his authenticated ticket and a request to use R to TGS</li>
+<li>the TGS returns 2 tickets to the user: one shows that the user’s access to R is authorized, the other is for the user to present to R in order to access R</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>Needham and Schroeder Protocol
+
+<ul>
+<li>a key exchange protocol used in Kerberos</li>
+<li>based on symmetric key crytography</li>
+<li>setting
+
+<ul>
+<li>Kab: session key between A and B</li>
+<li>Na, Nb: random numbers, avoid sending request again and again</li>
+<li><span  class="math">\(E_K(M)\)</span>: encrypt M using K
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-27%20%E4%B8%8B%E5%8D%885.22.17.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+<li>Kerberos Authentication Protocol initiating a Kerberos session
+
+<ul>
+<li>user U with password pw</li>
+<li>Kerberos server: store (U, pw)</li>
+<li><span  class="math">\(K_{K,tgs}\)</span>: the secret key shared between Kerbers server and TGS</li>
+<li><span  class="math">\(K_{a,tgs}\)</span>: the session key to be used between U and TGS</li>
+<li><span  class="math">\({Ticket}_{a,tgs}\)</span>: contains the session key <span  class="math">\(K_{a,tgs}\)</span> encrypted using <span  class="math">\(K_{K,tgs}\)</span>
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E5%9B%BE%E7%89%87%207.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>互联网金融安全JD汇总(Tencent)</title>
