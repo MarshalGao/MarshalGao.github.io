@@ -1366,28 +1366,150 @@
 
 <h2 id="modern-cryptography">Modern Cryptography</h2>
 
-<ul>
-<li>DES (Data Encryption Standard)
+<p><strong>DES (data encryption standard)</strong></p>
 
 <ul>
 <li>a block cipher with 56-bit key (64-bit including parity bits), 64-bit block
 
 <ul>
 <li>the reason for 64-bit: 64-bit is 8 bytes, each character uses 1 byte in the computer, 8 characters means we can use ascii code to represent</li>
-<li>parity bits: just like checksum, solving the nosie problem, but today we may not use this</li>
+<li>parity bits: just like checksum, solving the nosie problem, but today we may not use this
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-27%20%E4%B8%8A%E5%8D%889.54.30.png" alt=""></figure></li>
 </ul></li>
 <li>most commonly use block cipher
 
 <ul>
 <li>in 1990s, this method was not safe any more, then generate &quot;triple DES&quot; (1999) and AES (2001, use until now)</li>
+<li>3-DES
+
+<ul>
+<li>still use today, but someone thinks out of date</li>
+<li>use this method due to orginial DES hardware can be used (save money)
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/IMG_0019.jpg" alt=""></figure></li>
+</ul></li>
 </ul></li>
 <li>based on &quot;Feistel&quot; network structure
 
 <ul>
-<li>means for both encryption and decryptionn use the same hardware</li>
-<li>DES use this structure for 16 times, but using different subkey</li>
+<li>means for both encryption and decryptionn use the same hardware (box)</li>
+<li>DES use this structure for 16 times, but using different subkeys
+
+<ul>
+<li>method, ciphertext, etc. are public, but you cannot decrpyt it (due to lots of substitution and permutation)</li>
+</ul></li>
+<li>mathmatics
+
+<ul>
+<li><span  class="math">\(L_{i+1}=R_i\)</span></li>
+<li><span  class="math">\(R_{i+1}=L_i\bigoplus f(K_i,R_i)\)</span></li>
+<li>inverse is the same
+
+<ul>
+<li><span  class="math">\(R_i=L_{i+1}\)</span></li>
+<li><span  class="math">\(L_i=R_{i+1}\bigoplus f(K_i,L_{i+1})\)</span></li>
+</ul></li>
+<li>f function
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-27%20%E4%B8%8A%E5%8D%889.54.53.png" alt=""></figure>
+
+<ul>
+<li>S-Box
+
+<ul>
+<li>public</li>
+<li>fixed (6 bits -&gt; 4 bits)</li>
+<li>design criteria (early undisclosed)
+
+<ul>
+<li>the S-boxes were carefully tuned to increase resistance against differential cryptanalysis</li>
+<li>no S-box is a linear or affine function of its input: the 4 output bits cannot be expressed as a system of linear equations of the 6 input bits</li>
+<li>changing 1 bit in the input of an S-box results in changing at least 2 output bits: the S-boxes diffuse their information well throughout their outputs</li>
+<li>the S-boxes were chosen to minimize the difference between the number of 1s and 0s when any single input bit is held constant: holding a single bit constant as a 0 or 1 and changing the bits around it should not lead to disproportionately many 0s or 1s in the output
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-27%20%E4%B8%8A%E5%8D%8810.11.54.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+<li>P-Box
+
+<ul>
+<li>public</li>
+<li>fixed
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-27%20%E4%B8%8A%E5%8D%8810.12.12.png" alt=""></figure></li>
+</ul></li>
+<li>the only secret is the key, without it, you cannot decrypt the ciphertext
+
+<ul>
+<li>but it is not safe now, due to computing power (only <span  class="math">\(2^{56}\)</span> possible keys)</li>
+</ul></li>
+</ul></li>
+</ul></li>
 </ul></li>
 <li>designed to facilitate hardware implementation</li>
+</ul>
+
+<p><strong>AES (advanced encryption standard)</strong></p>
+
+<ul>
+<li>mandates a block size of 128 bits and a choice of key size from 128, 192, 256 bits (called AES-128, AES-192, AES-256)
+
+<ul>
+<li>using 128-bit key (16 bytes, 4 4-octet)
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-27%20%E4%B8%8A%E5%8D%8811.11.06.png" alt=""></figure></li>
+</ul></li>
+<li>diffusion and confusion
+
+<ul>
+<li>diffusion: by permutations in ShiftRows and MixColumns</li>
+<li>Confusion: by substitutions (S-Box) in SubBytes
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-27%20%E4%B8%8A%E5%8D%8811.11.22.png" alt=""></figure></li>
+</ul></li>
+</ul>
+
+<p><strong>Hash</strong></p>
+
+<ul>
+<li>cryptographic hash function
+
+<ul>
+<li>compression: for any size of input x, the output length of y = h(x) is small</li>
+<li>features
+
+<ul>
+<li>efficiency: easy to compute h(x) for any input x</li>
+<li>one-way: given any value y, it is computationally infeasible to find a value x such that h(x) = y</li>
+<li>collision resistance
+
+<ul>
+<li>given x and h(x), if is infeasible to find y ≠ x such that h(x) = h(y)</li>
+<li>it is infeasible to find x and y, with y ≠ x, such that h(x) = h(y)</li>
+</ul></li>
+</ul></li>
+<li>common hash functions: MD5, SHA-1, SHA-256
+
+<ul>
+<li>basic structure of SHA-1
+
+<ul>
+<li>split message into 512-bit blocks</li>
+<li>the former result would be the next input</li>
+<li>if the memory is spare, padding
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E5%9B%BE%E7%89%87%201.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>HMAC (hash message authentication code)
+
+<ul>
+<li>today, we use digital signature to verfity identity</li>
+<li>in old days, we uese HMAC to verify indentity
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/IMG_0020.jpg" alt=""></figure></li>
+<li>the use of a shared secret key that provides authentication in addition to integrity protection</li>
+<li>features
+
+<ul>
+<li>faster than encryption in software</li>
+<li>use of any hash function is permitted in any export product from US</li>
+<li>used in IPsec and TLS
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E5%9B%BE%E7%89%87%202.png" alt=""></figure></li>
+</ul></li>
 </ul></li>
 </ul>
 ]]></content>
