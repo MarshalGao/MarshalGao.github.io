@@ -6,8 +6,247 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Mon, 26 Oct 2020 16:26:43 +0800</lastBuildDate>
+        <lastBuildDate>Tue, 27 Oct 2020 17:37:28 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ECOM7121 Introduction</title>
+            <link>https://www.marshalgao.com/ecom7121-introduction/</link>
+            <pubDate>Tue, 27 Oct 2020 17:37:28 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/ecom7121-introduction/</guid>
+            <description>Strategy and Digital Dynamic Capabilities Two complementary strategy approaches
+ Porter&amp;rsquo;s industry-level competitive advantage analysis  industry contains lots of firms firms would compete with each other a firm want to be better, it should do better than the industry average example: mobile industry pre-2007  strategic recommendations to companies below the average  raise price through differentiation  can do something in design, e.g. Samsung and Armani   lower cost to improve profitability  it was not very easy to do because what you could do for cost was already being driven down as much as possible globally           firm-level dynamic capabilities analysis  start by the firm firms can actually disrupt, shape and transform entire industries example: Apple transformed mobile industry in 2008  by digital innovation (AppStore)  combining and collaborating have a company like Apple who can orchestrate that collaboration on a platform   apple provide a platform (inside) for developers (outside)      Dynamic digital capabilities</description>
+            <content type="html"><![CDATA[<h2 id="strategy-and-digital-dynamic-capabilities">Strategy and Digital Dynamic Capabilities</h2>
+<p><strong>Two complementary strategy approaches</strong></p>
+<ul>
+<li>Porter&rsquo;s industry-level competitive advantage analysis
+<ul>
+<li>industry contains lots of firms</li>
+<li>firms would compete with each other</li>
+<li>a firm want to be better, it should do better than the industry average</li>
+<li>example: mobile industry pre-2007
+<ul>
+<li>strategic recommendations to companies below the average
+<ul>
+<li>raise price through differentiation
+<ul>
+<li>can do something in design, e.g. Samsung and Armani</li>
+</ul>
+</li>
+<li>lower cost to improve profitability
+<ul>
+<li>it was not very easy to do because what you could do for cost was already being driven down as much as possible globally</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-29%20%E4%B8%8B%E5%8D%884.34.24.png" alt=""></p>
+<ul>
+<li>firm-level dynamic capabilities analysis
+<ul>
+<li>start by the firm</li>
+<li>firms can actually disrupt, shape and transform entire industries</li>
+<li>example: Apple transformed mobile industry in 2008
+<ul>
+<li>by digital innovation (AppStore)
+<ul>
+<li>combining and collaborating</li>
+<li>have a company like Apple who can orchestrate that collaboration on a platform</li>
+</ul>
+</li>
+<li>apple provide a platform (inside) for developers (outside)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-28%20%E4%B8%8A%E5%8D%8810.54.28.png" alt=""></p>
+<p><strong>Dynamic digital capabilities</strong></p>
+<ul>
+<li>definition
+<ul>
+<li>firm-level strategic ability to combine inside and outside digital competences to address volatile environments and periods of rapid change</li>
+</ul>
+</li>
+<li>four types
+<ul>
+<li>democratized innovation
+<ul>
+<li>user to user</li>
+<li>e.g. Wikipedia</li>
+</ul>
+</li>
+<li>crowdsourcing
+<ul>
+<li>user to company</li>
+<li>e.g. voting for your perference</li>
+</ul>
+</li>
+<li>platform innovation
+<ul>
+<li>company to user</li>
+<li>e.g. Apple, because it provided a platform</li>
+</ul>
+</li>
+<li>recombinant innovation
+<ul>
+<li>company to company</li>
+<li>e.g. Apple and Gracenote</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-29%20%E4%B8%8B%E5%8D%884.50.15.png" alt=""></p>
+<h2 id="from-pipelines-to-platforms">From Pipelines to Platforms</h2>
+<p><strong>History</strong></p>
+<ul>
+<li>cellphones transformed to smartphones
+<ul>
+<li>in 2008, the &ldquo;dumb cellphone&rdquo; became a smartphone with a networked platform of downloadable and shareable software apps</li>
+</ul>
+</li>
+</ul>
+<p><strong>The economies of physical vs. digital goods</strong></p>
+<ul>
+<li>the shift from physical to digital goods triggered a shift from demand-side economies to supply-side economies
+<ul>
+<li>supply-side scale
+<ul>
+<li>if the company makes a lot of cellphones, the cost would be lower</li>
+<li>e.g. Nokia</li>
+</ul>
+</li>
+<li>demand-side scale (or network effects)
+<ul>
+<li>the value to users actually increases with the network, rather than with manufacturing costs</li>
+<li>e.g. Apple</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-29%20%E4%B8%8B%E5%8D%885.44.41.png" alt=""></p>
+<p><strong>Revenues per cellphone vs. revenues per app user</strong></p>
+<ul>
+<li>revenues per cellphone became revenues per user, with billions of apps downloaded
+<ul>
+<li>examples
+<ul>
+<li>Nokia: per cell phone</li>
+<li>Apple: both iPhone and revenues generated from users (may not much money from per user, but the number of users is large)
+<ul>
+<li>ARPU: average revenue per user</li>
+<li>take 30% fee from developers</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-29%20%E4%B8%8B%E5%8D%886.01.39.png" alt=""></p>
+<ul>
+<li>digital mobile-enabled substitues in 2020
+<ul>
+<li>digital companies are more profitable because they are able to use demand-side economies, rather than supply-side economies
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-29%20%E4%B8%8B%E5%8D%886.09.28.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<p><strong>ABCD technologies</strong></p>
+<ul>
+<li>ABCD
+<ul>
+<li>AI</li>
+<li>blockchain</li>
+<li>cloud</li>
+<li>data</li>
+</ul>
+</li>
+<li>linear thinking in the past, but now is exponential thinking
+<ul>
+<li>exponential growth in digital goods = zero transaction costs + networks + crowds</li>
+<li>&ldquo;dumb cellphone&rdquo; value chain in 2007 was linear (as the first picture of this page)
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-30%20%E4%B8%8A%E5%8D%8810.21.08.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<h2 id="the-platform-ecosystem">The Platform Ecosystem</h2>
+<p><strong>Five-Forces and industry structual analysis</strong></p>
+<ul>
+<li>Porter’s Five-Forces industry structure assumes that the profitability of industry competitors is determined by suppliers and buyers in a linear
+value chain or pipeline.
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-30%20%E4%B8%8A%E5%8D%8810.48.45.png" alt=""></li>
+</ul>
+<p><strong>A platform is a nonlinear dynamic ecosystem</strong></p>
+<ul>
+<li>four types of platform ecosystem players and roles
+<ul>
+<li><strong>owners</strong> of the platform that control IP and governance</li>
+<li><strong>providers</strong> that serve as the platform interface with users</li>
+<li><strong>producers</strong> that create offerings on the platform</li>
+<li><strong>consumers</strong> that use those offerings</li>
+<li>example: Apple Appstore&rsquo;s platform ecosystem
+<ul>
+<li><strong>Apple = owners</strong> of the AppStore iOS platform that control IP and governance</li>
+<li><strong>Apple iPhone and iPad = providers</strong> that serve as the iOS platform interface with users</li>
+<li><strong>Apple iPhone iOS App Developer = producers</strong> that create offerings on the platform</li>
+<li><strong>consumers</strong> that use those offerings</li>
+<li>Apple&rsquo;s AppStore is a non-linear, dynamic and interactive ecosystem</li>
+<li>Apple orchestrates and facilitates the network and users and developers and receives 30% of the app developers' revenues for managing the AppStore</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ecosystem platforms like the AppStore and Google Play have created positive sum marketplaces and blue oceans out of traditional zero sum industries
+<ul>
+<li>where value is created for users, developer, providers and platform owners</li>
+<li>three types of games
+<ul>
+<li>positive sum: economic, financial or social rewards are created as a result of playing the game</li>
+<li>zero sum: the total rewards available from playing the game are independent of the procee of play</li>
+<li>negative sum: economic, financial or social rewards are destroyed as a result of playing the game</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-30%20%E4%B8%8A%E5%8D%8811.00.09.png" alt=""></p>
+<h2 id="ai-business-platforms">AI Business Platforms</h2>
+<p><strong>The Alibaba AI smart business process</strong></p>
+<ul>
+<li>overview
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-30%20%E4%B8%8B%E5%8D%884.05.11.png" alt=""></li>
+<li>a four-step process
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-30%20%E4%B8%8B%E5%8D%884.15.47.png" alt="">
+<ul>
+<li>examples
+<ul>
+<li>applying the AI smart business four-step process for Ant Financial Micro Loans
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-30%20%E4%B8%8B%E5%8D%884.18.16.png" alt=""></li>
+<li>applying the AI smart business four-step process for online bike sharing and sesame credit
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-30%20%E4%B8%8B%E5%8D%884.19.59.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Diagramming platforms on the business model canvas template</strong></p>
+<ul>
+<li>structure
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-30%20%E4%B8%8B%E5%8D%884.30.28.png" alt=""></li>
+<li>example: Apple iOS AppStore platform
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-30%20%E4%B8%8B%E5%8D%884.35.47.png" alt=""></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>互联网金融安全JD汇总(Tencent)</title>
