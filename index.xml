@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 27 Oct 2020 17:37:28 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Oct 2020 17:35:15 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM7121 The Crowd, How Users Create Value</title>
+      <link>https://www.marshalgao.com/ecom7121-the-crowd-how-users-create-value/</link>
+      <pubDate>Fri, 30 Oct 2020 17:35:15 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom7121-the-crowd-how-users-create-value/</guid>
+      <description>Google and Two-sided Freemium Business Models Two-sided markets
+ definition  markets where a platform has two distinct user groups that provide each other with network benefits aka. two-sided network   example  credit cards on the Visa and MasterCard platform (card holders &amp;lt;-&amp;gt; vendors)   can be multi-sided  example  HMOs (Health Management Organizations) (doctors &amp;lt;-&amp;gt; care facilities &amp;lt;-&amp;gt; patients)     cross-network effects are typically positive, same-side effects may be positive or negative   Freemium = Free + Premium</description>
+    </item>
+    
     <item>
       <title>ECOM7121 Introduction</title>
       <link>https://www.marshalgao.com/ecom7121-introduction/</link>
@@ -93,15 +103,6 @@
       <guid>https://www.marshalgao.com/icom6012-transport-layer/</guid>
       <description>Transport-layer Services Transport Services and Protocols
  Provide logical communication (actually accomplished by network layer) between app processes on different hosts  logical communication means a pair of hosts is not connected physically, but it seems that they are connected by channel   Transport protocols run in end systems  send side: breaks app messages into segments (if needed), passes to network layer  using segment header, including port number, to communicate with the socket of receiver  receive side: reassembles segemnts into messages, uses segement header (or port number) to pass to application layer  More than one transport protocol available to apps  Majority: TCP and UDP  TCP: reliable, in-order delivery  congestion control flow control connection setup  UDP: unreliable, unordered delivery  no-frills extension of &amp;quot;best-effort&amp;quot; IP   Others: SCTP and DCCP  These protocols are very limited, so we just ignore them.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://www.marshalgao.com/about/</link>
-      <pubDate>Sat, 10 Oct 2020 23:27:48 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/about/</guid>
-      <description>This is Marshal. Currently, I am studying for a master&#39;s degree at the University of Hong Kong. My idea for blogging came from the Team Rocket, including Pseudoyu and Misty. In the blog, I would record my relevant courses of Electronic Commerce and Internet Computing of HKU, my interesting codes of LeetCode, knowledge and perspective of product manager, my personal thoughts and ideas about the life and friendship and vlogs about personal life in Hong Kong.</description>
     </item>
     
   </channel>

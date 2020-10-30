@@ -6,8 +6,114 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Tue, 27 Oct 2020 17:37:28 +0800</lastBuildDate>
+        <lastBuildDate>Fri, 30 Oct 2020 17:35:15 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ECOM7121 The Crowd, How Users Create Value</title>
+            <link>https://www.marshalgao.com/ecom7121-the-crowd-how-users-create-value/</link>
+            <pubDate>Fri, 30 Oct 2020 17:35:15 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/ecom7121-the-crowd-how-users-create-value/</guid>
+            <description>Google and Two-sided Freemium Business Models Two-sided markets
+ definition  markets where a platform has two distinct user groups that provide each other with network benefits aka. two-sided network   example  credit cards on the Visa and MasterCard platform (card holders &amp;lt;-&amp;gt; vendors)   can be multi-sided  example  HMOs (Health Management Organizations) (doctors &amp;lt;-&amp;gt; care facilities &amp;lt;-&amp;gt; patients)     cross-network effects are typically positive, same-side effects may be positive or negative   Freemium = Free + Premium</description>
+            <content type="html"><![CDATA[<h2 id="google-and-two-sided-freemium-business-models">Google and Two-sided Freemium Business Models</h2>
+<p><strong>Two-sided markets</strong></p>
+<ul>
+<li>definition
+<ul>
+<li>markets where a platform has two distinct user groups that provide each other with network benefits</li>
+<li>aka. two-sided network</li>
+</ul>
+</li>
+<li>example
+<ul>
+<li>credit cards on the Visa and MasterCard platform (card holders &lt;-&gt; vendors)</li>
+</ul>
+</li>
+<li>can be multi-sided
+<ul>
+<li>example
+<ul>
+<li>HMOs (Health Management Organizations) (doctors &lt;-&gt; care facilities &lt;-&gt; patients)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>cross-network effects are typically positive, same-side effects may be positive or negative
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-30%20%E4%B8%8B%E5%8D%885.54.03.png" alt=""></li>
+</ul>
+<p><strong>Freemium = Free + Premium</strong></p>
+<ul>
+<li>definition
+<ul>
+<li>give your service away for free to acquire a lot of customers</li>
+<li>then offer premium price services or an enhanced version to make money or attract a premium-paying user group</li>
+</ul>
+</li>
+<li>examples
+<ul>
+<li>Dropbox (cloud storage)</li>
+<li>Linkedln (social media)</li>
+<li>NYTimes.com (print newspaper)</li>
+<li>Spotify (music streaming and downloading)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Two-sided freemium model</strong></p>
+<ul>
+<li>example
+<ul>
+<li>Google search (free searchers &amp; premium advertisers)
+<ul>
+<li>your clicks help to develop algorithms</li>
+<li>advertisers pay for best matching</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-30%20%E4%B8%8B%E5%8D%886.47.44.png" alt=""></p>
+<h2 id="flickr-photo-sharing-community-and-multiple-revenue-streams">Flickr (Photo Sharing Community) and Multiple Revenue Streams</h2>
+<p><strong>History</strong></p>
+<ul>
+<li>2005 marked the crossover between user generated content uploaded and downloaded data from static company websites
+<ul>
+<li>UGC: user generated content</li>
+<li>UGC &gt; downloaded data</li>
+</ul>
+</li>
+<li>2007 marked the start of the Mobile App Economy</li>
+</ul>
+<p><strong>Common ways to measure mobile businesses</strong></p>
+<ul>
+<li>ARPU: average revenue per user</li>
+<li>DAU: daily active user</li>
+<li>MAU: monthly active user</li>
+<li>DAU/MAU: currently user survival rate</li>
+<li>CPA: cost per action (user action after promotion)</li>
+<li>CAC: customer acquisition cost</li>
+<li>LTV: life time value (value from user)</li>
+</ul>
+<p><strong>Common digital and mobile revenue models</strong>
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-30%20%E4%B8%8B%E5%8D%888.41.47.png" alt=""></p>
+<p><strong>Flickr&rsquo;s business model and four digital revenue streams</strong></p>
+<ul>
+<li>business model
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-30%20%E4%B8%8B%E5%8D%889.12.35.png" alt=""></li>
+<li>mutiple RPU digital revenue streams
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-30%20%E4%B8%8B%E5%8D%889.13.35.png" alt=""></li>
+<li>four digital revenue streams
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-30%20%E4%B8%8B%E5%8D%889.13.07.png" alt=""></li>
+</ul>
+<p><strong>Flickr was compared to Shutterfly and Retail photo online print store</strong>
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-31%20%E4%B8%8A%E5%8D%8812.26.30.png" alt=""></p>
+<p><strong>The Digital Stone Soup fable is used to explain how digital businesses can generate multiple revenue streams and RPU from shared digital data while physical goods are &ldquo;depletive&rdquo;</strong></p>
+<ul>
+<li>the <a href="https://www.sohu.com/a/243252618_708491">Stone Soup</a> link</li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>ECOM7121 Introduction</title>
