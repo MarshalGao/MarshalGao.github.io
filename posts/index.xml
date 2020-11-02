@@ -6,8 +6,59 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Fri, 30 Oct 2020 17:35:15 +0800</lastBuildDate>
+        <lastBuildDate>Mon, 02 Nov 2020 21:02:03 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ECOM7121 Kiva Crowdfunding</title>
+            <link>https://www.marshalgao.com/ecom7121-kiva-crowdfunding/</link>
+            <pubDate>Mon, 02 Nov 2020 21:02:03 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/ecom7121-kiva-crowdfunding/</guid>
+            <description>Crowdfunding Crowdfunding platforms The key customers for the Kiva P2P micro-loan platform and the operation model
+  Business model canvas for Kiva Summary
+ crowdfunding platforms are two-sided platforms lenders make P2P loans to micro-entrepreneurs through the platform lenders are paid back over time local field partners select the micro-entrepreneurs to show case on the site and collect repayment for the loans Kiva has made more than $1B in mirco-loans, but has struggled to add mobile, social features  TinBox, TenCent, Ant Forest and Do-Good Social Mobile Apps Kiva compares to newer do-good social mobile apps TinBox</description>
+            <content type="html"><![CDATA[<h2 id="crowdfunding">Crowdfunding</h2>
+<p><strong>Crowdfunding platforms</strong>
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-11-02%20%E4%B8%8B%E5%8D%889.09.29.png" alt=""></p>
+<p><strong>The key customers for the Kiva P2P micro-loan platform and the operation model</strong></p>
+<div class="iframe-container">
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LOdEG1bO9Ak" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p><strong>Business model canvas for Kiva</strong>
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-11-02%20%E4%B8%8B%E5%8D%889.26.38.png" alt=""></p>
+<p><strong>Summary</strong></p>
+<ul>
+<li>crowdfunding platforms are two-sided platforms</li>
+<li>lenders make P2P loans to micro-entrepreneurs through the platform</li>
+<li>lenders are paid back over time</li>
+<li>local field partners select the micro-entrepreneurs to show case on the site and collect repayment for the loans</li>
+<li>Kiva has made more than $1B in mirco-loans, but has struggled to add mobile, social features</li>
+</ul>
+<h2 id="tinbox-tencent-ant-forest-and-do-good-social-mobile-apps">TinBox, TenCent, Ant Forest and Do-Good Social Mobile Apps</h2>
+<p><strong>Kiva compares to newer do-good social mobile apps</strong>
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-11-02%20%E4%B8%8B%E5%8D%889.36.23.png" alt=""></p>
+<p><strong>TinBox</strong></p>
+<ul>
+<li>user flow and template
+<ul>
+<li>if you want to know more information about TinBox, please clike <a href="https://www.philanthropicpeople.com/2015/04/14/charity-donation-app-tinbox-promotes-free-giving/">here</a>.
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-11-02%20%E4%B8%8B%E5%8D%889.48.58.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<div class="iframe-container">
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GXAbBqSdTww" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<ul>
+<li>make more social
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-11-02%20%E4%B8%8B%E5%8D%889.49.15.png" alt=""></li>
+</ul>
+<div class="iframe-container">
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DTZWL83Ex5Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+]]></content>
+        </item>
         
         <item>
             <title>ECOM7121 The Crowd, How Users Create Value</title>

@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 30 Oct 2020 17:35:15 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Nov 2020 21:02:03 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM7121 Kiva Crowdfunding</title>
+      <link>https://www.marshalgao.com/ecom7121-kiva-crowdfunding/</link>
+      <pubDate>Mon, 02 Nov 2020 21:02:03 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom7121-kiva-crowdfunding/</guid>
+      <description>Crowdfunding Crowdfunding platforms The key customers for the Kiva P2P micro-loan platform and the operation model
+  Business model canvas for Kiva Summary
+ crowdfunding platforms are two-sided platforms lenders make P2P loans to micro-entrepreneurs through the platform lenders are paid back over time local field partners select the micro-entrepreneurs to show case on the site and collect repayment for the loans Kiva has made more than $1B in mirco-loans, but has struggled to add mobile, social features  TinBox, TenCent, Ant Forest and Do-Good Social Mobile Apps Kiva compares to newer do-good social mobile apps TinBox</description>
+    </item>
+    
     <item>
       <title>ECOM7121 The Crowd, How Users Create Value</title>
       <link>https://www.marshalgao.com/ecom7121-the-crowd-how-users-create-value/</link>
@@ -98,18 +109,6 @@
       
       <guid>https://www.marshalgao.com/about/</guid>
       <description>This is Marshal. Currently, I am studying for a master&#39;s degree at the University of Hong Kong. My idea for blogging came from the Team Rocket, including Pseudoyu and Misty. In the blog, I would record my relevant courses of Electronic Commerce and Internet Computing of HKU, my interesting codes of LeetCode, knowledge and perspective of product manager, my personal thoughts and ideas about the life and friendship and vlogs about personal life in Hong Kong.</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[1] Two Sum</title>
-      <link>https://www.marshalgao.com/leetcode1-two-sum/</link>
-      <pubDate>Wed, 07 Oct 2020 18:24:14 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode1-two-sum/</guid>
-      <description>Question: Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
-You may assume that each input would have exactly one solution, and you may not use the same element twice.
-You can return the answer in any order.
-Example 1: Input: nums = [2,7,11,15], target = 9 Output: [0,1] Output: Because nums[0] + nums[1] == 9, we return [0, 1].</description>
     </item>
     
   </channel>
