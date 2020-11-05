@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 02 Nov 2020 21:02:03 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Nov 2020 00:45:23 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>互联网广告产品经理学习内容</title>
+      <link>https://www.marshalgao.com/%E4%BA%92%E8%81%94%E7%BD%91%E5%B9%BF%E5%91%8A%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%AD%A6%E4%B9%A0%E5%86%85%E5%AE%B9/</link>
+      <pubDate>Fri, 06 Nov 2020 00:45:23 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/%E4%BA%92%E8%81%94%E7%BD%91%E5%B9%BF%E5%91%8A%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%AD%A6%E4%B9%A0%E5%86%85%E5%AE%B9/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>ECOM7121 Kiva Crowdfunding</title>
       <link>https://www.marshalgao.com/ecom7121-kiva-crowdfunding/</link>
@@ -100,15 +109,6 @@
       <guid>https://www.marshalgao.com/icom6012-transport-layer/</guid>
       <description>Transport-layer Services Transport Services and Protocols
  Provide logical communication (actually accomplished by network layer) between app processes on different hosts  logical communication means a pair of hosts is not connected physically, but it seems that they are connected by channel   Transport protocols run in end systems  send side: breaks app messages into segments (if needed), passes to network layer  using segment header, including port number, to communicate with the socket of receiver  receive side: reassembles segemnts into messages, uses segement header (or port number) to pass to application layer  More than one transport protocol available to apps  Majority: TCP and UDP  TCP: reliable, in-order delivery  congestion control flow control connection setup  UDP: unreliable, unordered delivery  no-frills extension of &amp;quot;best-effort&amp;quot; IP   Others: SCTP and DCCP  These protocols are very limited, so we just ignore them.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://www.marshalgao.com/about/</link>
-      <pubDate>Sat, 10 Oct 2020 23:27:48 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/about/</guid>
-      <description>This is Marshal. Currently, I am studying for a master&#39;s degree at the University of Hong Kong. My idea for blogging came from the Team Rocket, including Pseudoyu and Misty. In the blog, I would record my relevant courses of Electronic Commerce and Internet Computing of HKU, my interesting codes of LeetCode, knowledge and perspective of product manager, my personal thoughts and ideas about the life and friendship and vlogs about personal life in Hong Kong.</description>
     </item>
     
   </channel>
