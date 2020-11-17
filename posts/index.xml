@@ -6,8 +6,183 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Mon, 16 Nov 2020 13:58:57 +0800</lastBuildDate>
+        <lastBuildDate>Tue, 17 Nov 2020 14:19:36 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Basic Advertising Knowledge</title>
+            <link>https://www.marshalgao.com/basic-advertising-knowledge/</link>
+            <pubDate>Tue, 17 Nov 2020 14:19:36 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/basic-advertising-knowledge/</guid>
+            <description>CRM (Customer Relationship Management)
+ 针对不同广告平台、渠道以及活动节点进行统一管控  例如，一拨人负责Google AD，一拨人负责ADS Manager。虽然同是投放广告，但是彼此之间的交流有限，相互之间成功或者失败的案例不能及时分享，上级领导也无法通过对比两个渠道的各节点ROI，调整推广投放的策略。   据企业的诉求搭建排重归因的机制  避免一笔订单二次收费，判断到底是哪个平台的推广促成了一笔交易。   丰富用户画像  一般CRM是给用户打标签，而广告CRM是给广告本身打标签。个人理解，这里应该指的是一种用户画像不断精准的过程，一种良性循环。   如何搭建  找准定位，任何产品都不例外  找准广告业务 确立系统边界，整合资源   找准需求（需求池）  业务支撑  业务迁移至线上，打造完整流程链路   精细运营  开辟业务新流程，拆分且管控各个工作节点   智慧管理  搭建数据驱动机制，自动化推荐     阶段目标的补充    CMS (Content Management System)
+ 后台业务子系统管理（管理优先：内容管理）  类似于零件生产环节，数据库的搭建   Portal系统（表现优先：模板管理）  类似于产品组装，连接前后台   前台发布（效率优先：发布管理）  分发代理，最终导向用户浏览器或者网页搜索系统   分类  框架型  不包含实现，只提供底层框架，需要二次开发   应用型  一个面向某种子功能的具体工具      ADX (Ad Exchange)</description>
+            <content type="html"><![CDATA[<p><strong>CRM (Customer Relationship Management)</strong></p>
+<ul>
+<li>针对不同广告平台、渠道以及活动节点进行统一管控
+<ul>
+<li>例如，一拨人负责Google AD，一拨人负责ADS Manager。虽然同是投放广告，但是彼此之间的交流有限，相互之间成功或者失败的案例不能及时分享，上级领导也无法通过对比两个渠道的各节点ROI，调整推广投放的策略。</li>
+</ul>
+</li>
+<li>据企业的诉求搭建排重归因的机制
+<ul>
+<li>避免一笔订单二次收费，判断到底是哪个平台的推广促成了一笔交易。</li>
+</ul>
+</li>
+<li>丰富用户画像
+<ul>
+<li>一般CRM是给用户打标签，而广告CRM是给广告本身打标签。个人理解，这里应该指的是一种用户画像不断精准的过程，一种良性循环。</li>
+</ul>
+</li>
+<li>如何搭建
+<ul>
+<li>找准定位，任何产品都不例外
+<ul>
+<li>找准广告业务</li>
+<li>确立系统边界，整合资源</li>
+</ul>
+</li>
+<li>找准需求（需求池）
+<ul>
+<li>业务支撑
+<ul>
+<li>业务迁移至线上，打造完整流程链路</li>
+</ul>
+</li>
+<li>精细运营
+<ul>
+<li>开辟业务新流程，拆分且管控各个工作节点</li>
+</ul>
+</li>
+<li>智慧管理
+<ul>
+<li>搭建数据驱动机制，自动化推荐</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>阶段目标的补充</li>
+</ul>
+</li>
+</ul>
+<p><strong>CMS (Content Management System)</strong></p>
+<ul>
+<li>后台业务子系统管理（管理优先：内容管理）
+<ul>
+<li>类似于零件生产环节，数据库的搭建</li>
+</ul>
+</li>
+<li>Portal系统（表现优先：模板管理）
+<ul>
+<li>类似于产品组装，连接前后台</li>
+</ul>
+</li>
+<li>前台发布（效率优先：发布管理）
+<ul>
+<li>分发代理，最终导向用户浏览器或者网页搜索系统</li>
+</ul>
+</li>
+<li>分类
+<ul>
+<li>框架型
+<ul>
+<li>不包含实现，只提供底层框架，需要二次开发</li>
+</ul>
+</li>
+<li>应用型
+<ul>
+<li>一个面向某种子功能的具体工具</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>ADX (Ad Exchange)</strong></p>
+<ul>
+<li>连接DSP (Demand Side Platform)和SSP (Supply Side Platform)</li>
+<li>通过SSP的流量，DSP可以获取目标客户</li>
+<li>由于ADX需要大量的用户数据支持，所以现阶段的运营商都是一些比较大的互联网企业
+<ul>
+<li>例如，Alibaba、Tencent、RightMedia（Yahoo）、DoubleClick（Google）</li>
+</ul>
+</li>
+</ul>
+<p><strong>智能投放</strong></p>
+<ul>
+<li>
+<p>步骤</p>
+<ul>
+<li>做创意（开车出行前汽车加油）</li>
+<li>选人群（出行选择路径）</li>
+<li>调出价（根据实际情况，调整路线方向和车速）
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/640.jpg" alt=""></li>
+</ul>
+</li>
+<li>
+<p>DC (Dynamic Creative, 动态创意)</p>
+<ul>
+<li>正常情况下，根据不同的元素组合，进行A/B测试，选择一个最优的</li>
+<li>而DC模式下，元素组合后全部上线，根据不同人群选择一个模式进行投放
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/641.jpg" alt=""></li>
+</ul>
+</li>
+<li>
+<p>人群的智能选择</p>
+<ul>
+<li>自动扩量
+<ul>
+<li>已经有一批十分明确的核心用户或老客户，向周边辐射</li>
+</ul>
+</li>
+<li>系统优选
+<ul>
+<li>面向比如快销品这一类，用户范围大，不明确的情况</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Tencent双出价模式</p>
+<ul>
+<li>双目标出价
+<ul>
+<li>有些客户，对浅层深层两个目标的成本都很关注</li>
+<li>这种情况下，系统努力的方向是让两个目标成本都能达成</li>
+</ul>
+</li>
+<li>两阶段出价
+<ul>
+<li>有些客户，在意的是主要是深层转化(比如付费)</li>
+<li>可是上来就优化深层目标，数据又太稀疏</li>
+<li>于是，可以让系统在初期先优化浅层目标(比如激活)以控制买量成本，在深层目标积累到一定数量以后，再切换优化目标，这就是两阶段出价
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/642.jpg" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>必要条件</p>
+<ul>
+<li>以完善的数据体系和强大的建模能力为支撑（有这种能力的平台少之又少）</li>
+<li>有服务大量效果客户的运营实践</li>
+</ul>
+</li>
+<li>
+<p>原文链接</p>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/angSVipEsTlfinL2Wq7lww">从腾讯广告看“智能投放”的产品趋势</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/ubSBP5tIPWlIu4wiSBtWVw">巨量引擎如何带动商业产品跃迁</a></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/yxEUa7oApL2m9-qCkyeJlQ">手游“正规军”正大举进入买量市场？</a></p>
+</li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>Getting to Know the Internet Advertising System</title>
@@ -17,7 +192,7 @@
             <guid>https://www.marshalgao.com/getting-to-know-the-internet-advertising-system/</guid>
             <description>互联网广告分类
  社交广告  QQ、微信   搜索广告  百度、Google   媒体广告  抖音、今日头条    广告计费方式
- CPA（每行动成本，Cost Per Action）  指按广告投放实际效果，即按回应的有效问卷或定单来计费，而不限广告投放量。CPA广告是网络中最常见的一种广告形式，当用户点击某个网站上的CPA广告后，这个站的站长就会获得相应的收入。   CPS（每销售成本，Cost Per Sale）  广告是网络广告的一种，广告主为规避广告费用风险，按照广告点击之后产生的实际销售笔数付给广告站点销售提成费用。   CPC（每点击成本，Cost Per Click）  以每点击一次计费。这样的方法加上点击率限制可以加强作弊的难度，网民的每一次点击就会为广告主带来真实的流量或是潜在的消费者，是网络比较成熟的国家常见的收费方式之一。   CPD（按天收费 ，Cost per day）  是广告合作的一种常见方式，相比当前比较流行的CPS，优势在于对合作的基础条件没有过高要求，容易促成双方合作；劣势在于其在长期合作中，不如CPS形式实时有效。   CPM（千人成本，Cost Per Mille）  是一种媒体或媒体排期表（SCHEDULING）送达1000人或”家庭”的成本计算单位。千人成本并非是广告主衡量媒体的唯一标准，只是为了对不同媒体进行衡量不得已而制定的一个相对指标。表现形式就是比如你在网站上投放了一个广告，然后有人打开你的网站看到了这个广告，那么就可以给您计费，也就是按照展示量给佣金。   CPE（每参与成本，Cost Per Engagement）  旨在评估用户与品牌之间参与程度的价值。多应用于社交媒体，例如链接点击、喜欢、转发和 “@回复” 等等。另外 CPE 也指用户浏览过广告后，在一定时间内（如一周）与品牌进行的互动。    广告投放机制  频次控制  根据平台不同，广告的频次不同。比如微信一天只有两条广告，而头条会有更多。   原生广告  让广告看起来不像广告，成为内容的一部分。   竞价  平台根据用户画像，筛选出适合投放的几种广告，并依靠竞价系统来进行选择。 竞价系统还会结合点击率（CTR）-&amp;gt; 点击率预估   自动化  智能出价、智能制作广告、落地页等 自动广告实验   数据  平台会手机用户的哪些数据用于广告的投放   互动性  互动广告是未来的一种趋势，比如微信和YouTube的广告。通过正反馈和负反馈，来不断完善广告系统。    广告提升营收方式</description>
+ CPA（每行动成本，Cost Per Action）  指按广告投放实际效果，即按回应的有效问卷或定单来计费，而不限广告投放量。CPA广告是网络中最常见的一种广告形式，当用户点击某个网站上的CPA广告后，这个站的站长就会获得相应的收入。   CPS（每销售成本，Cost Per Sale）  广告是网络广告的一种，广告主为规避广告费用风险，按照广告点击之后产生的实际销售笔数付给广告站点销售提成费用。   CPC（每点击成本，Cost Per Click）  以每点击一次计费。这样的方法加上点击率限制可以加强作弊的难度，网民的每一次点击就会为广告主带来真实的流量或是潜在的消费者，是网络比较成熟的国家常见的收费方式之一。 当前流行的广告系统主流的二价收费的方式。   CPD（按天收费 ，Cost Per Day）  是广告合作的一种常见方式，相比当前比较流行的CPS，优势在于对合作的基础条件没有过高要求，容易促成双方合作；劣势在于其在长期合作中，不如CPS形式实时有效。   CPM（千人成本，Cost Per Mille）  是一种媒体或媒体排期表（SCHEDULING）送达1000人或”家庭”的成本计算单位。千人成本并非是广告主衡量媒体的唯一标准，只是为了对不同媒体进行衡量不得已而制定的一个相对指标。表现形式就是比如你在网站上投放了一个广告，然后有人打开你的网站看到了这个广告，那么就可以给您计费，也就是按照展示量给佣金。   CPE（每参与成本，Cost Per Engagement）  旨在评估用户与品牌之间参与程度的价值。多应用于社交媒体，例如链接点击、喜欢、转发和 “@回复” 等等。另外 CPE 也指用户浏览过广告后，在一定时间内（如一周）与品牌进行的互动。   eCPM (Effective Cost Per Mille)  每一千次展示可以获得的广告收入。 当前流行的广告系统主流的一种竞价方式。   oCPA (Optimized Cost Per Action)  CPA的模式下是按照每转化一次进行收费，oCPA可以理解为在更为精准的投放模式下（特定某一群体），使得转化率更高，即与CPA相比更高的性价比以及转化率。   oCPM (Optimized Cost Per Mille)  CPM的模式下是按照每1000曝光进行收费，oCPM可以理解为采用更精准的点击率和转化率预估机制，将广告展现给最容易产生转化的用户，在获取流量的同时，提高转化率、降低转化成本，跑量提速更快。   一种比较有趣的阐述方式  details    广告投放机制  频次控制  根据平台不同，广告的频次不同。比如微信一天只有两条广告，而头条会有更多。   原生广告  让广告看起来不像广告，成为内容的一部分。   竞价  平台根据用户画像，筛选出适合投放的几种广告，并依靠竞价系统来进行选择。 竞价系统还会结合点击率（CTR）-&amp;gt; 点击率预估   自动化  智能出价、智能制作广告、落地页等 自动广告实验   数据  平台会手机用户的哪些数据用于广告的投放   互动性  互动广告是未来的一种趋势，比如微信和YouTube的广告。通过正反馈和负反馈，来不断完善广告系统。    广告提升营收方式</description>
             <content type="html"><![CDATA[<p><strong>互联网广告分类</strong></p>
 <ul>
 <li>社交广告
@@ -51,9 +226,10 @@
 <li>CPC（每点击成本，Cost Per Click）
 <ul>
 <li>以每点击一次计费。这样的方法加上点击率限制可以加强作弊的难度，网民的每一次点击就会为广告主带来真实的流量或是潜在的消费者，是网络比较成熟的国家常见的收费方式之一。</li>
+<li>当前流行的广告系统主流的二价收费的方式。</li>
 </ul>
 </li>
-<li>CPD（按天收费 ，Cost per day）
+<li>CPD（按天收费 ，Cost Per Day）
 <ul>
 <li>是广告合作的一种常见方式，相比当前比较流行的CPS，优势在于对合作的基础条件没有过高要求，容易促成双方合作；劣势在于其在长期合作中，不如CPS形式实时有效。</li>
 </ul>
@@ -66,6 +242,27 @@
 <li>CPE（每参与成本，Cost Per Engagement）
 <ul>
 <li>旨在评估用户与品牌之间参与程度的价值。多应用于社交媒体，例如链接点击、喜欢、转发和 “@回复” 等等。另外 CPE 也指用户浏览过广告后，在一定时间内（如一周）与品牌进行的互动。</li>
+</ul>
+</li>
+<li>eCPM (Effective Cost Per Mille)
+<ul>
+<li>每一千次展示可以获得的广告收入。</li>
+<li>当前流行的广告系统主流的一种竞价方式。</li>
+</ul>
+</li>
+<li>oCPA (Optimized Cost Per Action)
+<ul>
+<li>CPA的模式下是按照每转化一次进行收费，oCPA可以理解为在更为精准的投放模式下（特定某一群体），使得转化率更高，即与CPA相比更高的性价比以及转化率。</li>
+</ul>
+</li>
+<li>oCPM (Optimized Cost Per Mille)
+<ul>
+<li>CPM的模式下是按照每1000曝光进行收费，oCPM可以理解为采用更精准的点击率和转化率预估机制，将广告展现给最容易产生转化的用户，在获取流量的同时，提高转化率、降低转化成本，跑量提速更快。</li>
+</ul>
+</li>
+<li>一种比较有趣的阐述方式
+<ul>
+<li><a href="http://news.jstv.com/a/20170824/1503586851467.shtml">details</a></li>
 </ul>
 </li>
 </ul>

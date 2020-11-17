@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Marshal ">
+<meta name="description" content="CRM (Customer Relationship Management)
+ 针对不同广告平台、渠道以及活动节点进行统一管控  例如，一拨人负责Google AD，一拨人负责ADS Manager。虽然同是投放广告，但是彼此之间的交流有限，相互之间成功或者失败的案例不能及时分享，上级领导也无法通过对比两个渠道的各节点ROI，调整推广投放的策略。   据企业的诉求搭建排重归因的机制  避免一笔订单二次收费，判断到底是哪个平台的推广促成了一笔交易。   丰富用户画像  一般CRM是给用户打标签，而广告CRM是给广告本身打标签。个人理解，这里应该指的是一种用户画像不断精准的过程，一种良性循环。   如何搭建  找准定位，任何产品都不例外  找准广告业务 确立系统边界，整合资源   找准需求（需求池）  业务支撑  业务迁移至线上，打造完整流程链路   精细运营  开辟业务新流程，拆分且管控各个工作节点   智慧管理  搭建数据驱动机制，自动化推荐     阶段目标的补充    CMS (Content Management System)
+ 后台业务子系统管理（管理优先：内容管理）  类似于零件生产环节，数据库的搭建   Portal系统（表现优先：模板管理）  类似于产品组装，连接前后台   前台发布（效率优先：发布管理）  分发代理，最终导向用户浏览器或者网页搜索系统   分类  框架型  不包含实现，只提供底层框架，需要二次开发   应用型  一个面向某种子功能的具体工具      ADX (Ad Exchange)" />
+<meta name="keywords" content=", advertising product manager, basic knowledge" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://www.marshalgao.com/basic-advertising-knowledge/" />
+
+
+    <title>
+        
+            Basic Advertising Knowledge :: This is Marshal 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://www.marshalgao.com/main.bdf16375e88c9de5121e200285a015c4d181bcc9641cf97e05c5e46866f50161.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.marshalgao.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.marshalgao.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.marshalgao.com/favicon-16x16.png">
+    <link rel="manifest" href="https://www.marshalgao.com/site.webmanifest">
+    <link rel="mask-icon" href="https://www.marshalgao.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://www.marshalgao.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="Basic Advertising Knowledge">
+<meta itemprop="description" content="CRM (Customer Relationship Management)
+ 针对不同广告平台、渠道以及活动节点进行统一管控  例如，一拨人负责Google AD，一拨人负责ADS Manager。虽然同是投放广告，但是彼此之间的交流有限，相互之间成功或者失败的案例不能及时分享，上级领导也无法通过对比两个渠道的各节点ROI，调整推广投放的策略。   据企业的诉求搭建排重归因的机制  避免一笔订单二次收费，判断到底是哪个平台的推广促成了一笔交易。   丰富用户画像  一般CRM是给用户打标签，而广告CRM是给广告本身打标签。个人理解，这里应该指的是一种用户画像不断精准的过程，一种良性循环。   如何搭建  找准定位，任何产品都不例外  找准广告业务 确立系统边界，整合资源   找准需求（需求池）  业务支撑  业务迁移至线上，打造完整流程链路   精细运营  开辟业务新流程，拆分且管控各个工作节点   智慧管理  搭建数据驱动机制，自动化推荐     阶段目标的补充    CMS (Content Management System)
+ 后台业务子系统管理（管理优先：内容管理）  类似于零件生产环节，数据库的搭建   Portal系统（表现优先：模板管理）  类似于产品组装，连接前后台   前台发布（效率优先：发布管理）  分发代理，最终导向用户浏览器或者网页搜索系统   分类  框架型  不包含实现，只提供底层框架，需要二次开发   应用型  一个面向某种子功能的具体工具      ADX (Ad Exchange)">
+<meta itemprop="datePublished" content="2020-11-17T14:19:36+08:00" />
+<meta itemprop="dateModified" content="2020-11-17T14:19:36+08:00" />
+<meta itemprop="wordCount" content="83">
+<meta itemprop="image" content="https://www.marshalgao.com/"/>
+
+
+
+<meta itemprop="keywords" content="advertising product manager,basic knowledge," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.marshalgao.com/"/>
+
+<meta name="twitter:title" content="Basic Advertising Knowledge"/>
+<meta name="twitter:description" content="CRM (Customer Relationship Management)
+ 针对不同广告平台、渠道以及活动节点进行统一管控  例如，一拨人负责Google AD，一拨人负责ADS Manager。虽然同是投放广告，但是彼此之间的交流有限，相互之间成功或者失败的案例不能及时分享，上级领导也无法通过对比两个渠道的各节点ROI，调整推广投放的策略。   据企业的诉求搭建排重归因的机制  避免一笔订单二次收费，判断到底是哪个平台的推广促成了一笔交易。   丰富用户画像  一般CRM是给用户打标签，而广告CRM是给广告本身打标签。个人理解，这里应该指的是一种用户画像不断精准的过程，一种良性循环。   如何搭建  找准定位，任何产品都不例外  找准广告业务 确立系统边界，整合资源   找准需求（需求池）  业务支撑  业务迁移至线上，打造完整流程链路   精细运营  开辟业务新流程，拆分且管控各个工作节点   智慧管理  搭建数据驱动机制，自动化推荐     阶段目标的补充    CMS (Content Management System)
+ 后台业务子系统管理（管理优先：内容管理）  类似于零件生产环节，数据库的搭建   Portal系统（表现优先：模板管理）  类似于产品组装，连接前后台   前台发布（效率优先：发布管理）  分发代理，最终导向用户浏览器或者网页搜索系统   分类  框架型  不包含实现，只提供底层框架，需要二次开发   应用型  一个面向某种子功能的具体工具      ADX (Ad Exchange)"/>
+
+
+
+    <meta property="og:title" content="Basic Advertising Knowledge" />
+<meta property="og:description" content="CRM (Customer Relationship Management)
+ 针对不同广告平台、渠道以及活动节点进行统一管控  例如，一拨人负责Google AD，一拨人负责ADS Manager。虽然同是投放广告，但是彼此之间的交流有限，相互之间成功或者失败的案例不能及时分享，上级领导也无法通过对比两个渠道的各节点ROI，调整推广投放的策略。   据企业的诉求搭建排重归因的机制  避免一笔订单二次收费，判断到底是哪个平台的推广促成了一笔交易。   丰富用户画像  一般CRM是给用户打标签，而广告CRM是给广告本身打标签。个人理解，这里应该指的是一种用户画像不断精准的过程，一种良性循环。   如何搭建  找准定位，任何产品都不例外  找准广告业务 确立系统边界，整合资源   找准需求（需求池）  业务支撑  业务迁移至线上，打造完整流程链路   精细运营  开辟业务新流程，拆分且管控各个工作节点   智慧管理  搭建数据驱动机制，自动化推荐     阶段目标的补充    CMS (Content Management System)
+ 后台业务子系统管理（管理优先：内容管理）  类似于零件生产环节，数据库的搭建   Portal系统（表现优先：模板管理）  类似于产品组装，连接前后台   前台发布（效率优先：发布管理）  分发代理，最终导向用户浏览器或者网页搜索系统   分类  框架型  不包含实现，只提供底层框架，需要二次开发   应用型  一个面向某种子功能的具体工具      ADX (Ad Exchange)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.marshalgao.com/basic-advertising-knowledge/" />
+<meta property="og:image" content="https://www.marshalgao.com/"/>
+<meta property="article:published_time" content="2020-11-17T14:19:36+08:00" />
+<meta property="article:modified_time" content="2020-11-17T14:19:36+08:00" />
+
+
+
+
+    <meta property="article:section" content="Product Manager" />
+
+
+
+    <meta property="article:published_time" content="2020-11-17 14:19:36 &#43;0800 HKT" />
+
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://www.marshalgao.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://www.marshalgao.com/categories/hku">HKU</a></li><li><a href="https://www.marshalgao.com/categories/technology">TECH</a></li><li><a href="https://www.marshalgao.com/categories/product-manager">PM</a></li><li><a href="https://www.marshalgao.com/categories/life">LIFE</a></li><li><a href="https://www.marshalgao.com/about/">ABOUT</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        One minute
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://www.marshalgao.com/basic-advertising-knowledge/">Basic Advertising Knowledge</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <p><strong>CRM (Customer Relationship Management)</strong></p>
+<ul>
+<li>针对不同广告平台、渠道以及活动节点进行统一管控
+<ul>
+<li>例如，一拨人负责Google AD，一拨人负责ADS Manager。虽然同是投放广告，但是彼此之间的交流有限，相互之间成功或者失败的案例不能及时分享，上级领导也无法通过对比两个渠道的各节点ROI，调整推广投放的策略。</li>
+</ul>
+</li>
+<li>据企业的诉求搭建排重归因的机制
+<ul>
+<li>避免一笔订单二次收费，判断到底是哪个平台的推广促成了一笔交易。</li>
+</ul>
+</li>
+<li>丰富用户画像
+<ul>
+<li>一般CRM是给用户打标签，而广告CRM是给广告本身打标签。个人理解，这里应该指的是一种用户画像不断精准的过程，一种良性循环。</li>
+</ul>
+</li>
+<li>如何搭建
+<ul>
+<li>找准定位，任何产品都不例外
+<ul>
+<li>找准广告业务</li>
+<li>确立系统边界，整合资源</li>
+</ul>
+</li>
+<li>找准需求（需求池）
+<ul>
+<li>业务支撑
+<ul>
+<li>业务迁移至线上，打造完整流程链路</li>
+</ul>
+</li>
+<li>精细运营
+<ul>
+<li>开辟业务新流程，拆分且管控各个工作节点</li>
+</ul>
+</li>
+<li>智慧管理
+<ul>
+<li>搭建数据驱动机制，自动化推荐</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>阶段目标的补充</li>
+</ul>
+</li>
+</ul>
+<p><strong>CMS (Content Management System)</strong></p>
+<ul>
+<li>后台业务子系统管理（管理优先：内容管理）
+<ul>
+<li>类似于零件生产环节，数据库的搭建</li>
+</ul>
+</li>
+<li>Portal系统（表现优先：模板管理）
+<ul>
+<li>类似于产品组装，连接前后台</li>
+</ul>
+</li>
+<li>前台发布（效率优先：发布管理）
+<ul>
+<li>分发代理，最终导向用户浏览器或者网页搜索系统</li>
+</ul>
+</li>
+<li>分类
+<ul>
+<li>框架型
+<ul>
+<li>不包含实现，只提供底层框架，需要二次开发</li>
+</ul>
+</li>
+<li>应用型
+<ul>
+<li>一个面向某种子功能的具体工具</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>ADX (Ad Exchange)</strong></p>
+<ul>
+<li>连接DSP (Demand Side Platform)和SSP (Supply Side Platform)</li>
+<li>通过SSP的流量，DSP可以获取目标客户</li>
+<li>由于ADX需要大量的用户数据支持，所以现阶段的运营商都是一些比较大的互联网企业
+<ul>
+<li>例如，Alibaba、Tencent、RightMedia（Yahoo）、DoubleClick（Google）</li>
+</ul>
+</li>
+</ul>
+<p><strong>智能投放</strong></p>
+<ul>
+<li>
+<p>步骤</p>
+<ul>
+<li>做创意（开车出行前汽车加油）</li>
+<li>选人群（出行选择路径）</li>
+<li>调出价（根据实际情况，调整路线方向和车速）
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/640.jpg" alt=""></li>
+</ul>
+</li>
+<li>
+<p>DC (Dynamic Creative, 动态创意)</p>
+<ul>
+<li>正常情况下，根据不同的元素组合，进行A/B测试，选择一个最优的</li>
+<li>而DC模式下，元素组合后全部上线，根据不同人群选择一个模式进行投放
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/641.jpg" alt=""></li>
+</ul>
+</li>
+<li>
+<p>人群的智能选择</p>
+<ul>
+<li>自动扩量
+<ul>
+<li>已经有一批十分明确的核心用户或老客户，向周边辐射</li>
+</ul>
+</li>
+<li>系统优选
+<ul>
+<li>面向比如快销品这一类，用户范围大，不明确的情况</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Tencent双出价模式</p>
+<ul>
+<li>双目标出价
+<ul>
+<li>有些客户，对浅层深层两个目标的成本都很关注</li>
+<li>这种情况下，系统努力的方向是让两个目标成本都能达成</li>
+</ul>
+</li>
+<li>两阶段出价
+<ul>
+<li>有些客户，在意的是主要是深层转化(比如付费)</li>
+<li>可是上来就优化深层目标，数据又太稀疏</li>
+<li>于是，可以让系统在初期先优化浅层目标(比如激活)以控制买量成本，在深层目标积累到一定数量以后，再切换优化目标，这就是两阶段出价
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/642.jpg" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>必要条件</p>
+<ul>
+<li>以完善的数据体系和强大的建模能力为支撑（有这种能力的平台少之又少）</li>
+<li>有服务大量效果客户的运营实践</li>
+</ul>
+</li>
+<li>
+<p>原文链接</p>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/angSVipEsTlfinL2Wq7lww">从腾讯广告看“智能投放”的产品趋势</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/ubSBP5tIPWlIu4wiSBtWVw">巨量引擎如何带动商业产品跃迁</a></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/yxEUa7oApL2m9-qCkyeJlQ">手游“正规军”正大举进入买量市场？</a></p>
+</li>
+</ul>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/tags/advertising-product-manager/">advertising product manager</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/basic-knowledge/">basic knowledge</a></span>
+        
+    </p>
+
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/categories/product-manager/">Product Manager</a></span>
+        
+    </p>
+
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        83 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2020-11-17 14:19
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+
+          
+            <span class="button next">
+              <a href="https://www.marshalgao.com/getting-to-know-the-internet-advertising-system/">
+                <span class="button__text">Getting to Know the Internet Advertising System</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://www.marshalgao.com/">Marshal</a></span>
+            
+            
+                <span><a href="https://www.hku.hk" target="_blank" rel="noopener">The University of Hong Kong</a></span>
+            <span><a href="https://www.marshalgao.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Team Rocket: <a href="https://www.pseudoyu.com/" target="_blank" rel="noopener">Pseudoyu</a></span>
+            <span><a href="https://www.m1sty.com/" target="_blank" rel="noopener">Misty</a></span>
+          </div>
+    </div>
+</footer>
+
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://www.marshalgao.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>
