@@ -176,105 +176,20 @@ Public Key System Overview
         </item>
         
         <item>
-            <title>Basic Advertising Knowledge</title>
-            <link>https://www.marshalgao.com/basic-advertising-knowledge/</link>
+            <title>Intelligent Delivery of Advertising</title>
+            <link>https://www.marshalgao.com/intelligent-delivery-of-advertising/</link>
             <pubDate>Tue, 17 Nov 2020 14:19:36 +0800</pubDate>
             
-            <guid>https://www.marshalgao.com/basic-advertising-knowledge/</guid>
-            <description>CRM (Customer Relationship Management)
- 针对不同广告平台、渠道以及活动节点进行统一管控  例如，一拨人负责Google AD，一拨人负责ADS Manager。虽然同是投放广告，但是彼此之间的交流有限，相互之间成功或者失败的案例不能及时分享，上级领导也无法通过对比两个渠道的各节点ROI，调整推广投放的策略。   据企业的诉求搭建排重归因的机制  避免一笔订单二次收费，判断到底是哪个平台的推广促成了一笔交易。   丰富用户画像  一般CRM是给用户打标签，而广告CRM是给广告本身打标签。个人理解，这里应该指的是一种用户画像不断精准的过程，一种良性循环。   如何搭建  找准定位，任何产品都不例外  找准广告业务 确立系统边界，整合资源   找准需求（需求池）  业务支撑  业务迁移至线上，打造完整流程链路   精细运营  开辟业务新流程，拆分且管控各个工作节点   智慧管理  搭建数据驱动机制，自动化推荐     阶段目标的补充    CMS (Content Management System)
- 后台业务子系统管理（管理优先：内容管理）  类似于零件生产环节，数据库的搭建   Portal系统（表现优先：模板管理）  类似于产品组装，连接前后台   前台发布（效率优先：发布管理）  分发代理，最终导向用户浏览器或者网页搜索系统   分类  框架型  不包含实现，只提供底层框架，需要二次开发   应用型  一个面向某种子功能的具体工具      ADX (Ad Exchange)</description>
-            <content type="html"><![CDATA[<p><strong>CRM (Customer Relationship Management)</strong></p>
-<ul>
-<li>针对不同广告平台、渠道以及活动节点进行统一管控
-<ul>
-<li>例如，一拨人负责Google AD，一拨人负责ADS Manager。虽然同是投放广告，但是彼此之间的交流有限，相互之间成功或者失败的案例不能及时分享，上级领导也无法通过对比两个渠道的各节点ROI，调整推广投放的策略。</li>
-</ul>
-</li>
-<li>据企业的诉求搭建排重归因的机制
-<ul>
-<li>避免一笔订单二次收费，判断到底是哪个平台的推广促成了一笔交易。</li>
-</ul>
-</li>
-<li>丰富用户画像
-<ul>
-<li>一般CRM是给用户打标签，而广告CRM是给广告本身打标签。个人理解，这里应该指的是一种用户画像不断精准的过程，一种良性循环。</li>
-</ul>
-</li>
-<li>如何搭建
-<ul>
-<li>找准定位，任何产品都不例外
-<ul>
-<li>找准广告业务</li>
-<li>确立系统边界，整合资源</li>
-</ul>
-</li>
-<li>找准需求（需求池）
-<ul>
-<li>业务支撑
-<ul>
-<li>业务迁移至线上，打造完整流程链路</li>
-</ul>
-</li>
-<li>精细运营
-<ul>
-<li>开辟业务新流程，拆分且管控各个工作节点</li>
-</ul>
-</li>
-<li>智慧管理
-<ul>
-<li>搭建数据驱动机制，自动化推荐</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>阶段目标的补充</li>
-</ul>
-</li>
-</ul>
-<p><strong>CMS (Content Management System)</strong></p>
-<ul>
-<li>后台业务子系统管理（管理优先：内容管理）
-<ul>
-<li>类似于零件生产环节，数据库的搭建</li>
-</ul>
-</li>
-<li>Portal系统（表现优先：模板管理）
-<ul>
-<li>类似于产品组装，连接前后台</li>
-</ul>
-</li>
-<li>前台发布（效率优先：发布管理）
-<ul>
-<li>分发代理，最终导向用户浏览器或者网页搜索系统</li>
-</ul>
-</li>
-<li>分类
-<ul>
-<li>框架型
-<ul>
-<li>不包含实现，只提供底层框架，需要二次开发</li>
-</ul>
-</li>
-<li>应用型
-<ul>
-<li>一个面向某种子功能的具体工具</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><strong>ADX (Ad Exchange)</strong></p>
-<ul>
-<li>连接DSP (Demand Side Platform)和SSP (Supply Side Platform)</li>
-<li>通过SSP的流量，DSP可以获取目标客户</li>
-<li>由于ADX需要大量的用户数据支持，所以现阶段的运营商都是一些比较大的互联网企业
-<ul>
-<li>例如，Alibaba、Tencent、RightMedia（Yahoo）、DoubleClick（Google）</li>
-</ul>
-</li>
-</ul>
-<p><strong>智能投放</strong></p>
+            <guid>https://www.marshalgao.com/intelligent-delivery-of-advertising/</guid>
+            <description>智能投放（以腾讯广告为例）
+  步骤
+ 做创意（开车出行前汽车加油） 选人群（出行选择路径） 调出价（根据实际情况，调整路线方向和车速）     DC (Dynamic Creative, 动态创意)
+ 正常情况下，根据不同的元素组合，进行A/B测试，选择一个最优的 而DC模式下，元素组合后全部上线，根据不同人群选择一个模式进行投放     人群的智能选择
+ 自动扩量  已经有一批十分明确的核心用户或老客户，向周边辐射   系统优选  面向比如快销品这一类，用户范围大，不明确的情况      Tencent双出价模式
+ 双目标出价  有些客户，对浅层深层两个目标的成本都很关注 这种情况下，系统努力的方向是让两个目标成本都能达成   两阶段出价  有些客户，在意的是主要是深层转化(比如付费) 可是上来就优化深层目标，数据又太稀疏 于是，可以让系统在初期先优化浅层目标(比如激活)以控制买量成本，在深层目标积累到一定数量以后，再切换优化目标，这就是两阶段出价       必要条件
+ 以完善的数据体系和强大的建模能力为支撑（有这种能力的平台少之又少） 有服务大量效果客户的运营实践    原文链接
+ 从腾讯广告看“智能投放”的产品趋势    巨量引擎如何带动商业产品跃迁</description>
+            <content type="html"><![CDATA[<p><strong>智能投放（以腾讯广告为例）</strong></p>
 <ul>
 <li>
 <p>步骤</p>
@@ -539,6 +454,96 @@ Public Key System Overview
 <li>试验哪个位置比较适合广告接入等</li>
 </ul>
 </li>
+</ul>
+</li>
+</ul>
+<p><strong>CRM (Customer Relationship Management)</strong></p>
+<ul>
+<li>针对不同广告平台、渠道以及活动节点进行统一管控
+<ul>
+<li>例如，一拨人负责Google AD，一拨人负责ADS Manager。虽然同是投放广告，但是彼此之间的交流有限，相互之间成功或者失败的案例不能及时分享，上级领导也无法通过对比两个渠道的各节点ROI，调整推广投放的策略。</li>
+</ul>
+</li>
+<li>据企业的诉求搭建排重归因的机制
+<ul>
+<li>避免一笔订单二次收费，判断到底是哪个平台的推广促成了一笔交易。</li>
+</ul>
+</li>
+<li>丰富用户画像
+<ul>
+<li>一般CRM是给用户打标签，而广告CRM是给广告本身打标签。个人理解，这里应该指的是一种用户画像不断精准的过程，一种良性循环。</li>
+</ul>
+</li>
+<li>如何搭建
+<ul>
+<li>找准定位，任何产品都不例外
+<ul>
+<li>找准广告业务</li>
+<li>确立系统边界，整合资源</li>
+</ul>
+</li>
+<li>找准需求（需求池）
+<ul>
+<li>业务支撑
+<ul>
+<li>业务迁移至线上，打造完整流程链路</li>
+</ul>
+</li>
+<li>精细运营
+<ul>
+<li>开辟业务新流程，拆分且管控各个工作节点</li>
+</ul>
+</li>
+<li>智慧管理
+<ul>
+<li>搭建数据驱动机制，自动化推荐</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>阶段目标的补充</li>
+</ul>
+</li>
+</ul>
+<p><strong>CMS (Content Management System)</strong></p>
+<ul>
+<li>后台业务子系统管理（管理优先：内容管理）
+<ul>
+<li>类似于零件生产环节，数据库的搭建</li>
+</ul>
+</li>
+<li>Portal系统（表现优先：模板管理）
+<ul>
+<li>类似于产品组装，连接前后台</li>
+</ul>
+</li>
+<li>前台发布（效率优先：发布管理）
+<ul>
+<li>分发代理，最终导向用户浏览器或者网页搜索系统</li>
+</ul>
+</li>
+<li>分类
+<ul>
+<li>框架型
+<ul>
+<li>不包含实现，只提供底层框架，需要二次开发</li>
+</ul>
+</li>
+<li>应用型
+<ul>
+<li>一个面向某种子功能的具体工具</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>ADX (Ad Exchange)</strong></p>
+<ul>
+<li>连接DSP (Demand Side Platform)和SSP (Supply Side Platform)</li>
+<li>通过SSP的流量，DSP可以获取目标客户</li>
+<li>由于ADX需要大量的用户数据支持，所以现阶段的运营商都是一些比较大的互联网企业
+<ul>
+<li>例如，Alibaba、Tencent、RightMedia（Yahoo）、DoubleClick（Google）</li>
 </ul>
 </li>
 </ul>

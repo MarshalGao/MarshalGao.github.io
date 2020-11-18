@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>intelligent delivery on This is Marshal</title>
+    <link>https://www.marshalgao.com/tags/intelligent-delivery/</link>
+    <description>Recent content in intelligent delivery on This is Marshal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
+    <lastBuildDate>Tue, 17 Nov 2020 14:19:36 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/intelligent-delivery/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intelligent Delivery of Advertising</title>
+      <link>https://www.marshalgao.com/intelligent-delivery-of-advertising/</link>
+      <pubDate>Tue, 17 Nov 2020 14:19:36 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/intelligent-delivery-of-advertising/</guid>
+      <description>智能投放（以腾讯广告为例）
+  步骤
+ 做创意（开车出行前汽车加油） 选人群（出行选择路径） 调出价（根据实际情况，调整路线方向和车速）     DC (Dynamic Creative, 动态创意)
+ 正常情况下，根据不同的元素组合，进行A/B测试，选择一个最优的 而DC模式下，元素组合后全部上线，根据不同人群选择一个模式进行投放     人群的智能选择
+ 自动扩量  已经有一批十分明确的核心用户或老客户，向周边辐射   系统优选  面向比如快销品这一类，用户范围大，不明确的情况      Tencent双出价模式
+ 双目标出价  有些客户，对浅层深层两个目标的成本都很关注 这种情况下，系统努力的方向是让两个目标成本都能达成   两阶段出价  有些客户，在意的是主要是深层转化(比如付费) 可是上来就优化深层目标，数据又太稀疏 于是，可以让系统在初期先优化浅层目标(比如激活)以控制买量成本，在深层目标积累到一定数量以后，再切换优化目标，这就是两阶段出价       必要条件
+ 以完善的数据体系和强大的建模能力为支撑（有这种能力的平台少之又少） 有服务大量效果客户的运营实践    原文链接
+ 从腾讯广告看“智能投放”的产品趋势    巨量引擎如何带动商业产品跃迁</description>
+    </item>
+    
+  </channel>
+</rss>
