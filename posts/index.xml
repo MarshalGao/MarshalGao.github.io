@@ -6,8 +6,174 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Tue, 17 Nov 2020 14:19:36 +0800</lastBuildDate>
+        <lastBuildDate>Wed, 18 Nov 2020 09:43:16 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ICOM6045 Public Key Cryptography</title>
+            <link>https://www.marshalgao.com/icom6045-public-key-cryptography/</link>
+            <pubDate>Wed, 18 Nov 2020 09:43:16 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/icom6045-public-key-cryptography/</guid>
+            <description>Q: Why we need the public key system?
+A: Symmetric key system has the problem, which is key distribution.
+Public Key System Overview
+ each party has 2 keys (no key distribution)  public key (open to the public) private key (secret to the owner)  mathematically, it is difficult to find the private key according to the public key security strength depends on key length   usage  encryption digital signature (unforgeable, no encryption -&amp;gt; message is public)  verfiy the origin of a message (not tampered) verify the identity of the sender (non-repudiation) reslove any authentication issues between the sender and the receiver   how to bind the private key and public key  using public key infrastructure  pratical usage  encryption and signature can be used together combined with hash functions and symmetric key system  public key system depends on trap-door one-way function  examples  exponentiation:\(b = a^e\ mod\ p\) factorization:\(n = p\times q\)  RSA use this, except bitcoin (ECC) multiplication &amp;amp; factorization  e.</description>
+            <content type="html"><![CDATA[<p><strong>Q: Why we need the public key system?</strong></p>
+
+<p>A: Symmetric key system has the problem, which is key distribution.</p>
+
+<h2 id="public-key-system">Public Key System</h2>
+
+<p><strong>Overview</strong></p>
+
+<ul>
+<li>each party has 2 keys (no key distribution)
+
+<ul>
+<li>public key (open to the public)</li>
+<li>private key (secret to the owner)
+
+<ul>
+<li>mathematically, it is difficult to find the private key according to the public key</li>
+<li>security strength depends on key length</li>
+</ul></li>
+</ul></li>
+<li>usage
+
+<ul>
+<li>encryption</li>
+<li>digital signature (unforgeable, no encryption -&gt; message is public)
+
+<ul>
+<li>verfiy the origin of a message (not tampered)</li>
+<li>verify the identity of the sender (non-repudiation)</li>
+<li>reslove any authentication issues between the sender and the receiver</li>
+</ul></li>
+</ul></li>
+<li>how to bind the private key and public key
+
+<ul>
+<li>using public key infrastructure</li>
+</ul></li>
+<li>pratical usage
+
+<ul>
+<li>encryption and signature can be used together</li>
+<li>combined with hash functions and symmetric key system</li>
+</ul></li>
+<li>public key system depends on trap-door one-way function
+
+<ul>
+<li>examples
+
+<ul>
+<li>exponentiation:<span  class="math">\(b = a^e\ mod\ p\)</span></li>
+<li>factorization:<span  class="math">\(n = p\times q\)</span>
+
+<ul>
+<li>RSA use this, except bitcoin (ECC)</li>
+<li>multiplication &amp; factorization
+
+<ul>
+<li>e.g. <span  class="math">\(47\times 59=2773\)</span>, but if you just got the 2773, how to find prime factors</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>RSA Cryptosystem</strong></p>
+
+<ul>
+<li>used both in encryption and digital signature</li>
+<li>public key is (e, n) and private key is (d, n)</li>
+<li>encryption
+
+<ul>
+<li>encrypt a message m (&lt; n)
+
+<ul>
+<li>compute <span  class="math">\(c=m^e\ mod\ n\)</span></li>
+</ul></li>
+<li>decrypt a ciphertext c (&lt; n)
+
+<ul>
+<li>compute <span  class="math">\(m=c^d\ mod\ n\)</span></li>
+</ul></li>
+</ul></li>
+<li>digital signature
+
+<ul>
+<li>sign a message m (&lt; n)
+
+<ul>
+<li>compute <span  class="math">\(s=m^d\ mod\ n\)</span></li>
+</ul></li>
+<li>verify the signature s of a message m (&lt; n)
+
+<ul>
+<li>compute <span  class="math">\(m1=s^e\ mod\ n\)</span></li>
+<li>check if m1 == m?</li>
+</ul></li>
+</ul></li>
+<li>it is slow
+
+<ul>
+<li>because of too much exponentiation &amp; multiplication</li>
+<li>underlying methods are symmetric key (encryption) and hashing (digital signature)</li>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/IMG_0053.jpg" alt=""></figure></li>
+</ul></li>
+<li>why <span  class="math">\(M=M^{ed}\ mod\ n\)</span>
+
+<ul>
+<li>fermat's theorem
+
+<ul>
+<li><span  class="math">\(m^{p-1}\ mod\ p=1\)</span></li>
+</ul></li>
+<li>euler's generalization
+
+<ul>
+<li><span  class="math">\(m^{(p-1)(q-1)}\ mod\ n=1\)</span> (<span  class="math">\(n=p\times q\)</span>)</li>
+<li>-&gt; <span  class="math">\(m^{(p-1)\times(q-1)}\times m\ mod\ n=1\times m\)</span></li>
+<li>-&gt; <span  class="math">\(m^{(p-1)\times(q-1)+1}\ mod\ n=m\)</span></li>
+<li>-&gt; <span  class="math">\(e\times d=(p-1)\times(q-1)+1\)</span></li>
+<li>specific condition
+
+<ul>
+<li>if <span  class="math">\(e\times d=41\)</span>, how to find e and d
+
+<ul>
+<li>use modulus with n=40, i.e.
+
+<ul>
+<li><span  class="math">\(e\times d=41\ mod\ 40\)</span></li>
+<li><span  class="math">\(e\times d=1\ mod\ 40\)</span></li>
+<li>set e = 3</li>
+<li><span  class="math">\(3\times d=1\ mod\ 40\)</span></li>
+<li>use extended euclidean algorithm, we find d=27</li>
+<li><span  class="math">\(3\times 27=81=1\ mod\ 40\)</span></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>generation
+
+<ul>
+<li>generate 2 large primes q, q</li>
+<li>compute n (the modulus) = <span  class="math">\(p\times q\)</span></li>
+<li>compute <span  class="math">\(\psi(n)=(p-1)\times (q-1)\)</span></li>
+<li>generate e relatively prime to <span  class="math">\((p-1)\times (q-1)\)</span>, i.e. gcd(<span  class="math">\(\psi(n)\)</span>, e) = 1</li>
+<li>compute inverse of e: <span  class="math">\(d=e^{-1}\ mod\ ((p-1)\times(q-1))\)</span></li>
+<li>public key is (e, n) and private key is (d, n)</li>
+<li>1024-bit RSA means n has 1024 bits</li>
+</ul></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>Basic Advertising Knowledge</title>
