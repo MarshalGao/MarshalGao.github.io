@@ -5,9 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="Marshal ">
-<meta name="description" content="Q: Why we need the public key system?
-A: Symmetric key system has the problem, which is key distribution.
-Public Key System Overview
+<meta name="description" content="Public Key System Overview
  each party has 2 keys (no key distribution)  public key (open to the public) private key (secret to the owner)  mathematically, it is difficult to find the private key according to the public key security strength depends on key length   usage  encryption digital signature (unforgeable, no encryption -&amp;gt; message is public)  verfiy the origin of a message (not tampered) verify the identity of the sender (non-repudiation) reslove any authentication issues between the sender and the receiver   how to bind the private key and public key  using public key infrastructure  pratical usage  encryption and signature can be used together combined with hash functions and symmetric key system  public key system depends on trap-door one-way function  examples  exponentiation:\(b = a^e\ mod\ p\) factorization:\(n = p\times q\)  RSA use this, except bitcoin (ECC) multiplication &amp;amp; factorization  e." />
 <meta name="keywords" content=", icom6045, fundamentals of e-commerce security, public key cryptography" />
 <meta name="robots" content="noodp" />
@@ -45,13 +43,11 @@ Public Key System Overview
 
 
 <meta itemprop="name" content="ICOM6045 Public Key Cryptography">
-<meta itemprop="description" content="Q: Why we need the public key system?
-A: Symmetric key system has the problem, which is key distribution.
-Public Key System Overview
+<meta itemprop="description" content="Public Key System Overview
  each party has 2 keys (no key distribution)  public key (open to the public) private key (secret to the owner)  mathematically, it is difficult to find the private key according to the public key security strength depends on key length   usage  encryption digital signature (unforgeable, no encryption -&gt; message is public)  verfiy the origin of a message (not tampered) verify the identity of the sender (non-repudiation) reslove any authentication issues between the sender and the receiver   how to bind the private key and public key  using public key infrastructure  pratical usage  encryption and signature can be used together combined with hash functions and symmetric key system  public key system depends on trap-door one-way function  examples  exponentiation:\(b = a^e\ mod\ p\) factorization:\(n = p\times q\)  RSA use this, except bitcoin (ECC) multiplication &amp; factorization  e.">
 <meta itemprop="datePublished" content="2020-11-18T09:43:16+08:00" />
 <meta itemprop="dateModified" content="2020-11-18T09:43:16+08:00" />
-<meta itemprop="wordCount" content="390">
+<meta itemprop="wordCount" content="609">
 <meta itemprop="image" content="https://www.marshalgao.com/"/>
 
 
@@ -62,17 +58,13 @@ Public Key System Overview
 <meta name="twitter:image" content="https://www.marshalgao.com/"/>
 
 <meta name="twitter:title" content="ICOM6045 Public Key Cryptography"/>
-<meta name="twitter:description" content="Q: Why we need the public key system?
-A: Symmetric key system has the problem, which is key distribution.
-Public Key System Overview
+<meta name="twitter:description" content="Public Key System Overview
  each party has 2 keys (no key distribution)  public key (open to the public) private key (secret to the owner)  mathematically, it is difficult to find the private key according to the public key security strength depends on key length   usage  encryption digital signature (unforgeable, no encryption -&gt; message is public)  verfiy the origin of a message (not tampered) verify the identity of the sender (non-repudiation) reslove any authentication issues between the sender and the receiver   how to bind the private key and public key  using public key infrastructure  pratical usage  encryption and signature can be used together combined with hash functions and symmetric key system  public key system depends on trap-door one-way function  examples  exponentiation:\(b = a^e\ mod\ p\) factorization:\(n = p\times q\)  RSA use this, except bitcoin (ECC) multiplication &amp; factorization  e."/>
 
 
 
     <meta property="og:title" content="ICOM6045 Public Key Cryptography" />
-<meta property="og:description" content="Q: Why we need the public key system?
-A: Symmetric key system has the problem, which is key distribution.
-Public Key System Overview
+<meta property="og:description" content="Public Key System Overview
  each party has 2 keys (no key distribution)  public key (open to the public) private key (secret to the owner)  mathematically, it is difficult to find the private key according to the public key security strength depends on key length   usage  encryption digital signature (unforgeable, no encryption -&gt; message is public)  verfiy the origin of a message (not tampered) verify the identity of the sender (non-repudiation) reslove any authentication issues between the sender and the receiver   how to bind the private key and public key  using public key infrastructure  pratical usage  encryption and signature can be used together combined with hash functions and symmetric key system  public key system depends on trap-door one-way function  examples  exponentiation:\(b = a^e\ mod\ p\) factorization:\(n = p\times q\)  RSA use this, except bitcoin (ECC) multiplication &amp; factorization  e." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.marshalgao.com/icom6045-public-key-cryptography/" />
@@ -158,7 +150,7 @@ Public Key System Overview
           <circle cx="12" cy="12" r="10"></circle>
           <polyline points="12 6 12 12 16 14"></polyline>
         </svg>
-        2 minutes
+        3 minutes
 
         
       </p>
@@ -172,11 +164,7 @@ Public Key System Overview
       
 
       <div class="post-content">
-        <p><strong>Q: Why we need the public key system?</strong></p>
-
-<p>A: Symmetric key system has the problem, which is key distribution.</p>
-
-<h2 id="public-key-system">Public Key System</h2>
+        <h2 id="public-key-system">Public Key System</h2>
 
 <p><strong>Overview</strong></p>
 
@@ -324,7 +312,59 @@ Public Key System Overview
 <li>public key is (e, n) and private key is (d, n)</li>
 <li>1024-bit RSA means n has 1024 bits</li>
 </ul></li>
+<li>problems of implementing RSA
+
+<ul>
+<li>both encryption and decryption use exponentiation
+
+<ul>
+<li>use Square &amp; Multiply Exponentiation -&gt; faster</li>
+</ul></li>
+<li>in key generation, we need to compute inverse of e
+
+<ul>
+<li>use extended Euclid's Algorithm -&gt; more efficient</li>
+</ul></li>
+<li>in key generation, we need to generate 2 large primes p and q
+
+<ul>
+<li>use probabilistic algorithm -&gt; efficient to generate large prime number</li>
+</ul></li>
+</ul></li>
 </ul>
+
+<p><strong>Key exchange</strong></p>
+
+<ul>
+<li>using public key cryptography
+
+<ul>
+<li>A generate secret key (sk) randomly</li>
+<li>A uses B's public key to encrypt sk and sends the encrypted key to B</li>
+<li>B decrypted the encrypted sk using his private key</li>
+<li>both A and B has the secret key and data can then be encrypted using any block ciphers with sk</li>
+<li>but the secret key is generated by A, B has no control on the secret key</li>
+</ul></li>
+<li>Diffie-Hellman
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-11-19%20%E4%B8%8A%E5%8D%8811.23.55.png" alt=""></figure></li>
+</ul>
+
+<p><strong>Digital signature</strong></p>
+
+<ul>
+<li>using hashing together with public key cryptography
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/111901.png" alt=""></figure></li>
+</ul>
+
+<h2 id="public-key-communication-standard-pkcs">Public Key Communication Standard (PKCS)</h2>
+
+<p><strong>Q: Why we need the public key system?</strong></p>
+
+<p>A: Symmetric key system has the problem, which is key distribution.</p>
+
+<p><strong>Q: Can we break the RSA?</strong></p>
+
+<p>A: Because n is a large number generated by p and q, and this machinism use factorization, it is pretty difficult to break. To large extent, if you want to break, you need to try all the possiblities. Nowadays, we use may be 500 digits, so it is difficult to break. However, if you have the public key (e, n) and factor n, you can derive the private key.</p>
 
       </div>
     </article>
@@ -359,7 +399,7 @@ Public Key System Overview
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        390 Words
+        609 Words
       </p>
 
       <p>
@@ -387,6 +427,13 @@ Public Key System Overview
         </div>
 
         <div class="pagination__buttons">
+          
+            <span class="button previous">
+              <a href="https://www.marshalgao.com/report-of-cloud-computing-in-china/">
+                <span class="button__icon">←</span>
+                <span class="button__text">Report of Cloud Computing in China</span>
+              </a>
+            </span>
           
 
           

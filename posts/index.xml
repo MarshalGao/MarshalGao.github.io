@@ -6,8 +6,111 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Wed, 18 Nov 2020 09:43:16 +0800</lastBuildDate>
+        <lastBuildDate>Fri, 20 Nov 2020 00:03:13 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Report of Cloud Computing in China</title>
+            <link>https://www.marshalgao.com/report-of-cloud-computing-in-china/</link>
+            <pubDate>Fri, 20 Nov 2020 00:03:13 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/report-of-cloud-computing-in-china/</guid>
+            <description>一、概览
+云计算可以分为公有云、私有云以及混合云。公有云是指第三方提供商为用户提供可以部分可以使用的云服务，这类服务通常来说价格低廉。私有云是指第三方提供商根据相关企业的结构，进行定制的云服务，这类服务的价格较高。而混合云可以理解为是将公有云和私有云进行了融合。
+针对上述抽象的概念，以一个生活场景进行类比。当用户自己在家做饭需要购买食材以及锅碗，这就是“公有云”。当用户选择在饭店进行就餐，不需要繁杂的程序，这就是“私有云”。而用户选择将饭店的厨师请到家里来做饭，可以理解为“混合云”的场景。
+而云计算的服务类型，可以分为三类，分别是基础设施既服务（IaaS）、平台既服务（PaaS）、软件既服务（SaaS）。同样地，用生活场景进行类比。IaaS可以理解购买商品房，用户为毛坯房买单，后续房屋的用途以及装修风格由用户自己来决定。PaaS可以理解为租房，房东已经将房子装修好，但用户对房屋的使用目的有一定的限制。SaaS可以理解为酒店，用户只需要付费并享受服务即可，且不需要关心房屋的维修以及其他问题。
+二、云计算行业发展概况
+2.1 利好政策驱动行业发展
+随着云计算逐渐成为新型的信息基础设施，各国政府纷纷开始重视云计算行业的发展，并制定国家战略和行动计划，引导行业发展。
+2020，中国政府出台了多项政策鼓励云计算的发展。国家大力鼓励探索大数据、人工智能、云计算、数字孪生、5G、物联网和区块链等新一代数字技术应用和集成创新，并再一次明确了云计算在实现行业或企业数字化转型的重要地位。
+2.2 企业云计算应用率逐步提升
+根据中国信息通信研究院的云计算发展调查报告显示，2019年中国已经应用云计算的企业占比达到66.1%，同比增长7.5%。其中，企业应用公有云占比41.6%，同比增长5.2%。应用私有云的企业占比14.7%，同比小幅增长。同时，有9.8%的企业采用混合云，同比增长1.7%。
+2.3 公有云市场份额反超私有云
+按运营模式来看，2019年我国公有云的市场份额已经反超私有云，达689.3亿元。据中国信息通信研究院预测，至2023年，我国公有云和私有云市场规模将分别达到2307.2亿元和1446.8亿元。
+2.4 云计算行业未来发展
+在未来，我国云计算行业将继续保持高速发展的态势。一方面，企业应用云计算降本增效效果显著。根据调查显示，95%的企业认为使用云计算可以降低企业的IT成本。其中，超过10%的用户成本节约在一半以上。
+另一方面，当前全球数字经济发展迅猛，云计算已经成为企业数字化转型的必然选择和必经之路。根据中国信息通信研究院的数据显示，我国数字经济的总体规模已从2005年的2.62万亿元增长至2019年的35.84万亿元。数字经济总体规模占GDP的比重从2005年的14.2%提升至2019年的36.2%。由此可见，数字经济已经成为我国国民经济增长的重要动力。
+三、公有云发展概况
+3.1 市场规模
+Frost &amp;amp; Sullivan近日发布的中国公有云市场的调研报告显示，2020年第二季度中国公有云市场达到304.1亿元人民币，同比增长42.6%。其中阿里云、腾讯云、金山云、华为云以及天翼云共同跻身于中国云计算市场快速发展TOP 5厂商。
+在IaaS和IaaS + PaaS市场中，TOP 5厂商的市场份额分别占88.2%和88.3%。其中，腾讯云位列行业第二，收入增长主要来源于互联网公司以及公共服务领域客户的云服务用量增加。
+3.2 市场发展
+从细分市场来看，2019年，我国公有云市场仍然以IaaS服务为主，占比65.7%，同比增长3.8%。而SaaS服务的市场份额有一定减少，且纵观全球市场，我国的SaaS服务在未来仍具极大的发展空间。
+3.3 未来趋势
+纵观全球云计算行业发展，根据Gartner发布的数据，预计2021年全球公有云服务终端用户消费将达到3049亿美元，同比增长18%。同时，疫情更近一步的印证了云服务的价值，用户可以按需使用，随时扩展规模以达到成本效益、可持续性的发展以及企业数字化转型计划，而公有云服务的增加亦带动了云服务应用成为新常态。自疫情爆发以来，中小企业信息服务开销不断转向公有云，预计2024年云服务将占据全球企业信息技术开销的14.2%，而相比2020年该项仅占据9.1%。虽然目前SaaS服务市场份额仍然最大，预计2021年将达到1777亿美元，但PaaS的利润率正在不断上升。
+在中国，根据中国信息通信研究院发布的数据，2012-2019年，我国公有云市场规模基本保持40%以上的增长速度。在2019年，我国公有云市场规模达到689.3亿元，同比增长57.6%。同年，我国公有云市场规模超越私有云。
+随着后疫情时代的到来，5G商业化和智能产业化需求的不断提升，公有云服务将于众多行业融合，进一步推动企业数字化转型，同时为中国公有云市场注入新的活力。兼具互联网优势业务与传统企业深耕经验的云计算企业，能够叠加传统业务升级和新兴技术的势能，在市场上表现出不俗的发展潜力。公有云是未来的一个发展趋势，由于现如今大部分中小企业选择公有云的原因在于公有云自身的一些优势，比如按使用付费、价格相对低廉。而这一优势在云服务的长期发展来看，将会不断被放大。随着企业数字化转型的不断深入，公有云服务的价值将得以全面释放。
+四、私有云发展概况
+4.1 市场规模
+据统计，2019年中国私有云市场规模达645亿元，同比增长22.8%。预计在未来几年将保持持续平稳的增长，并有期望在2023市场规模达到1447亿元。
+4.2 市场发展
+4.2.1 硬件占主导地位
+在私有云市场中，硬件占据主要的市场份额，在2018年已经达到371亿元，占比70.6%。
+为了更好满足业务发展需要，迎合云计算市场的发展趋势，政府、金融、电信、交通、制造、能源等领域的企业或部门正在进行数字化转型，这为私有云带来了巨大的市场。2019年中国私有云市场规模达到817.4亿元，虽然硬件占据主导地位，但相比前几年而言，硬件市场规模在私有云市场中占比不断下降。相反地，软件作用凸显，其市场规模不断上升。2019年中国私有云软件市场规模达到129.9亿元，占私有云市场规模的15.9%。
+4.2.2 系用平台规模上升
+私有云系统平台是私有云的核心组成部分，其为数据中心云化和大型企业事业单位建立私有云提供了强有力的保障，并在私有云市场中的地位不断上升。2016-2019年，中国私有云系统平台市场规模逐年上升。在2019年，其市场规模已经达到27.4亿元，同比增长51.4%。虽然系统平台相关市场的占比超过30%，且仍然存在着巨大的增长空间。
+4.2.3 IaaS为主要产品
+2019年中国IaaS市场规模为21.5亿元，占私有云系统平台市场规模的78.3%。容器云平台为应用提供标准化的运行环境，其在2019年中国市场规模为5.9亿元，占私有云系统平台市场规模的21.7%。
+私有云系统平台发展具有明显的行业化集中态势。政府、金融和电信成为应用私有云的主要行业，2019年中国这三大行业的私有云使用占市场份额的67.1%。交通、教育、制造业、能源和医疗卫生也是中国应用私有云的重要行业，分别占市场份额的6.2%、5.5%、5.1%、3.6%和2.9%。
+4.3未来趋势
+私有云系统存在于防火墙之内，只为内部服务，优势是管理和控制方便。但与公有云相比，私有云的安全性更好，但成本过高。
+面临人脸识别、人工智能等新应用的出现，政企客户采用私有云的模式已经不能满足其需求，必须借助腾讯、阿里等公有云的服务。同时私有云的模式在面临互联网不可预测的访问、流量攻击时也面临较大的压力，必须将面向互联网的业务放在公有云。
+所以，将私有云定位为解决政企客户内部的应用服务，并引入公有云的PaaS人工智能服务、高流量安全保障的机制，实现混合云。这或许是更为有效的一种折中方案。</description>
+            <content type="html"><![CDATA[<p><strong>一、概览</strong></p>
+<p>云计算可以分为公有云、私有云以及混合云。公有云是指第三方提供商为用户提供可以部分可以使用的云服务，这类服务通常来说价格低廉。私有云是指第三方提供商根据相关企业的结构，进行定制的云服务，这类服务的价格较高。而混合云可以理解为是将公有云和私有云进行了融合。</p>
+<p>针对上述抽象的概念，以一个生活场景进行类比。当用户自己在家做饭需要购买食材以及锅碗，这就是“公有云”。当用户选择在饭店进行就餐，不需要繁杂的程序，这就是“私有云”。而用户选择将饭店的厨师请到家里来做饭，可以理解为“混合云”的场景。</p>
+<p>而云计算的服务类型，可以分为三类，分别是基础设施既服务（IaaS）、平台既服务（PaaS）、软件既服务（SaaS）。同样地，用生活场景进行类比。IaaS可以理解购买商品房，用户为毛坯房买单，后续房屋的用途以及装修风格由用户自己来决定。PaaS可以理解为租房，房东已经将房子装修好，但用户对房屋的使用目的有一定的限制。SaaS可以理解为酒店，用户只需要付费并享受服务即可，且不需要关心房屋的维修以及其他问题。</p>
+<p><strong>二、云计算行业发展概况</strong></p>
+<p><strong>2.1 利好政策驱动行业发展</strong></p>
+<p>随着云计算逐渐成为新型的信息基础设施，各国政府纷纷开始重视云计算行业的发展，并制定国家战略和行动计划，引导行业发展。</p>
+<p>2020，中国政府出台了多项政策鼓励云计算的发展。国家大力鼓励探索大数据、人工智能、云计算、数字孪生、5G、物联网和区块链等新一代数字技术应用和集成创新，并再一次明确了云计算在实现行业或企业数字化转型的重要地位。</p>
+<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112001.png" alt=""></p>
+<p><strong>2.2 企业云计算应用率逐步提升</strong></p>
+<p>根据中国信息通信研究院的云计算发展调查报告显示，2019年中国已经应用云计算的企业占比达到66.1%，同比增长7.5%。其中，企业应用公有云占比41.6%，同比增长5.2%。应用私有云的企业占比14.7%，同比小幅增长。同时，有9.8%的企业采用混合云，同比增长1.7%。</p>
+<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112002.png" alt=""></p>
+<p><strong>2.3 公有云市场份额反超私有云</strong></p>
+<p>按运营模式来看，2019年我国公有云的市场份额已经反超私有云，达689.3亿元。据中国信息通信研究院预测，至2023年，我国公有云和私有云市场规模将分别达到2307.2亿元和1446.8亿元。</p>
+<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112003.png" alt=""></p>
+<p><strong>2.4 云计算行业未来发展</strong></p>
+<p>在未来，我国云计算行业将继续保持高速发展的态势。一方面，企业应用云计算降本增效效果显著。根据调查显示，95%的企业认为使用云计算可以降低企业的IT成本。其中，超过10%的用户成本节约在一半以上。</p>
+<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112005.png" alt=""></p>
+<p>另一方面，当前全球数字经济发展迅猛，云计算已经成为企业数字化转型的必然选择和必经之路。根据中国信息通信研究院的数据显示，我国数字经济的总体规模已从2005年的2.62万亿元增长至2019年的35.84万亿元。数字经济总体规模占GDP的比重从2005年的14.2%提升至2019年的36.2%。由此可见，数字经济已经成为我国国民经济增长的重要动力。</p>
+<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112006.png" alt=""></p>
+<p><strong>三、公有云发展概况</strong></p>
+<p><strong>3.1 市场规模</strong></p>
+<p>Frost &amp; Sullivan近日发布的中国公有云市场的调研报告显示，2020年第二季度中国公有云市场达到304.1亿元人民币，同比增长42.6%。其中阿里云、腾讯云、金山云、华为云以及天翼云共同跻身于中国云计算市场快速发展TOP 5厂商。</p>
+<p>在IaaS和IaaS + PaaS市场中，TOP 5厂商的市场份额分别占88.2%和88.3%。其中，腾讯云位列行业第二，收入增长主要来源于互联网公司以及公共服务领域客户的云服务用量增加。</p>
+<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112007.png" alt=""></p>
+<p><strong>3.2 市场发展</strong></p>
+<p>从细分市场来看，2019年，我国公有云市场仍然以IaaS服务为主，占比65.7%，同比增长3.8%。而SaaS服务的市场份额有一定减少，且纵观全球市场，我国的SaaS服务在未来仍具极大的发展空间。</p>
+<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112008.png" alt=""></p>
+<p><strong>3.3 未来趋势</strong></p>
+<p>纵观全球云计算行业发展，根据Gartner发布的数据，预计2021年全球公有云服务终端用户消费将达到3049亿美元，同比增长18%。同时，疫情更近一步的印证了云服务的价值，用户可以按需使用，随时扩展规模以达到成本效益、可持续性的发展以及企业数字化转型计划，而公有云服务的增加亦带动了云服务应用成为新常态。自疫情爆发以来，中小企业信息服务开销不断转向公有云，预计2024年云服务将占据全球企业信息技术开销的14.2%，而相比2020年该项仅占据9.1%。虽然目前SaaS服务市场份额仍然最大，预计2021年将达到1777亿美元，但PaaS的利润率正在不断上升。</p>
+<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112009.png" alt=""></p>
+<p>在中国，根据中国信息通信研究院发布的数据，2012-2019年，我国公有云市场规模基本保持40%以上的增长速度。在2019年，我国公有云市场规模达到689.3亿元，同比增长57.6%。同年，我国公有云市场规模超越私有云。</p>
+<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112010.png" alt=""></p>
+<p>随着后疫情时代的到来，5G商业化和智能产业化需求的不断提升，公有云服务将于众多行业融合，进一步推动企业数字化转型，同时为中国公有云市场注入新的活力。兼具互联网优势业务与传统企业深耕经验的云计算企业，能够叠加传统业务升级和新兴技术的势能，在市场上表现出不俗的发展潜力。公有云是未来的一个发展趋势，由于现如今大部分中小企业选择公有云的原因在于公有云自身的一些优势，比如按使用付费、价格相对低廉。而这一优势在云服务的长期发展来看，将会不断被放大。随着企业数字化转型的不断深入，公有云服务的价值将得以全面释放。</p>
+<p><strong>四、私有云发展概况</strong></p>
+<p><strong>4.1 市场规模</strong></p>
+<p>据统计，2019年中国私有云市场规模达645亿元，同比增长22.8%。预计在未来几年将保持持续平稳的增长，并有期望在2023市场规模达到1447亿元。</p>
+<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112011.png" alt=""></p>
+<p><strong>4.2 市场发展</strong></p>
+<p>4.2.1 硬件占主导地位</p>
+<p>在私有云市场中，硬件占据主要的市场份额，在2018年已经达到371亿元，占比70.6%。</p>
+<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/nimg.ws.126.net1.jpg" alt=""></p>
+<p>为了更好满足业务发展需要，迎合云计算市场的发展趋势，政府、金融、电信、交通、制造、能源等领域的企业或部门正在进行数字化转型，这为私有云带来了巨大的市场。2019年中国私有云市场规模达到817.4亿元，虽然硬件占据主导地位，但相比前几年而言，硬件市场规模在私有云市场中占比不断下降。相反地，软件作用凸显，其市场规模不断上升。2019年中国私有云软件市场规模达到129.9亿元，占私有云市场规模的15.9%。</p>
+<p>4.2.2 系用平台规模上升</p>
+<p>私有云系统平台是私有云的核心组成部分，其为数据中心云化和大型企业事业单位建立私有云提供了强有力的保障，并在私有云市场中的地位不断上升。2016-2019年，中国私有云系统平台市场规模逐年上升。在2019年，其市场规模已经达到27.4亿元，同比增长51.4%。虽然系统平台相关市场的占比超过30%，且仍然存在着巨大的增长空间。</p>
+<p>4.2.3 IaaS为主要产品</p>
+<p>2019年中国IaaS市场规模为21.5亿元，占私有云系统平台市场规模的78.3%。容器云平台为应用提供标准化的运行环境，其在2019年中国市场规模为5.9亿元，占私有云系统平台市场规模的21.7%。</p>
+<p>私有云系统平台发展具有明显的行业化集中态势。政府、金融和电信成为应用私有云的主要行业，2019年中国这三大行业的私有云使用占市场份额的67.1%。交通、教育、制造业、能源和医疗卫生也是中国应用私有云的重要行业，分别占市场份额的6.2%、5.5%、5.1%、3.6%和2.9%。</p>
+<p><strong>4.3未来趋势</strong></p>
+<p>私有云系统存在于防火墙之内，只为内部服务，优势是管理和控制方便。但与公有云相比，私有云的安全性更好，但成本过高。</p>
+<p>面临人脸识别、人工智能等新应用的出现，政企客户采用私有云的模式已经不能满足其需求，必须借助腾讯、阿里等公有云的服务。同时私有云的模式在面临互联网不可预测的访问、流量攻击时也面临较大的压力，必须将面向互联网的业务放在公有云。</p>
+<p>所以，将私有云定位为解决政企客户内部的应用服务，并引入公有云的PaaS人工智能服务、高流量安全保障的机制，实现混合云。这或许是更为有效的一种折中方案。</p>
+<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/14ei17j5y7.jpg" alt=""></p>
+]]></content>
+        </item>
         
         <item>
             <title>ICOM6045 Public Key Cryptography</title>
@@ -15,15 +118,9 @@
             <pubDate>Wed, 18 Nov 2020 09:43:16 +0800</pubDate>
             
             <guid>https://www.marshalgao.com/icom6045-public-key-cryptography/</guid>
-            <description>Q: Why we need the public key system?
-A: Symmetric key system has the problem, which is key distribution.
-Public Key System Overview
+            <description>Public Key System Overview
  each party has 2 keys (no key distribution)  public key (open to the public) private key (secret to the owner)  mathematically, it is difficult to find the private key according to the public key security strength depends on key length   usage  encryption digital signature (unforgeable, no encryption -&amp;gt; message is public)  verfiy the origin of a message (not tampered) verify the identity of the sender (non-repudiation) reslove any authentication issues between the sender and the receiver   how to bind the private key and public key  using public key infrastructure  pratical usage  encryption and signature can be used together combined with hash functions and symmetric key system  public key system depends on trap-door one-way function  examples  exponentiation:\(b = a^e\ mod\ p\) factorization:\(n = p\times q\)  RSA use this, except bitcoin (ECC) multiplication &amp;amp; factorization  e.</description>
-            <content type="html"><![CDATA[<p><strong>Q: Why we need the public key system?</strong></p>
-
-<p>A: Symmetric key system has the problem, which is key distribution.</p>
-
-<h2 id="public-key-system">Public Key System</h2>
+            <content type="html"><![CDATA[<h2 id="public-key-system">Public Key System</h2>
 
 <p><strong>Overview</strong></p>
 
@@ -171,7 +268,59 @@ Public Key System Overview
 <li>public key is (e, n) and private key is (d, n)</li>
 <li>1024-bit RSA means n has 1024 bits</li>
 </ul></li>
+<li>problems of implementing RSA
+
+<ul>
+<li>both encryption and decryption use exponentiation
+
+<ul>
+<li>use Square &amp; Multiply Exponentiation -&gt; faster</li>
+</ul></li>
+<li>in key generation, we need to compute inverse of e
+
+<ul>
+<li>use extended Euclid's Algorithm -&gt; more efficient</li>
+</ul></li>
+<li>in key generation, we need to generate 2 large primes p and q
+
+<ul>
+<li>use probabilistic algorithm -&gt; efficient to generate large prime number</li>
+</ul></li>
+</ul></li>
 </ul>
+
+<p><strong>Key exchange</strong></p>
+
+<ul>
+<li>using public key cryptography
+
+<ul>
+<li>A generate secret key (sk) randomly</li>
+<li>A uses B's public key to encrypt sk and sends the encrypted key to B</li>
+<li>B decrypted the encrypted sk using his private key</li>
+<li>both A and B has the secret key and data can then be encrypted using any block ciphers with sk</li>
+<li>but the secret key is generated by A, B has no control on the secret key</li>
+</ul></li>
+<li>Diffie-Hellman
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-11-19%20%E4%B8%8A%E5%8D%8811.23.55.png" alt=""></figure></li>
+</ul>
+
+<p><strong>Digital signature</strong></p>
+
+<ul>
+<li>using hashing together with public key cryptography
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/111901.png" alt=""></figure></li>
+</ul>
+
+<h2 id="public-key-communication-standard-pkcs">Public Key Communication Standard (PKCS)</h2>
+
+<p><strong>Q: Why we need the public key system?</strong></p>
+
+<p>A: Symmetric key system has the problem, which is key distribution.</p>
+
+<p><strong>Q: Can we break the RSA?</strong></p>
+
+<p>A: Because n is a large number generated by p and q, and this machinism use factorization, it is pretty difficult to break. To large extent, if you want to break, you need to try all the possiblities. Nowadays, we use may be 500 digits, so it is difficult to break. However, if you have the public key (e, n) and factor n, you can derive the private key.</p>
 ]]></content>
         </item>
         
