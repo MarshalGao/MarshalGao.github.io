@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="Marshal ">
 <meta name="description" content="Public Key System Overview
- each party has 2 keys (no key distribution)  public key (open to the public) private key (secret to the owner)  mathematically, it is difficult to find the private key according to the public key security strength depends on key length   usage  encryption digital signature (unforgeable, no encryption -&amp;gt; message is public)  verfiy the origin of a message (not tampered) verify the identity of the sender (non-repudiation) reslove any authentication issues between the sender and the receiver   how to bind the private key and public key  using public key infrastructure  pratical usage  encryption and signature can be used together combined with hash functions and symmetric key system  public key system depends on trap-door one-way function  examples  exponentiation:\(b = a^e\ mod\ p\) factorization:\(n = p\times q\)  RSA use this, except bitcoin (ECC) multiplication &amp;amp; factorization  e." />
+ each party has 2 keys (no key distribution)  public key (open to the public) private key (secret to the owner)  mathematically, it is difficult to find the private key according to the public key security strength depends on key length   usage  encryption digital signature (unforgeable, no encryption -&amp;gt; message is public)  verfiy the origin of a message (not tampered) verify the identity of the sender (non-repudiation) reslove any authentication issues between the sender and the receiver   how to bind the private key and public key  using public key infrastructure  practical usage  encryption and signature can be used together combined with hash functions and symmetric key system  public key system depends on trap-door one-way function  examples  exponentiation:\(b = a^e\ mod\ p\) factorization:\(n = p\times q\)  RSA use this, except bitcoin (ECC) multiplication &amp;amp; factorization  e." />
 <meta name="keywords" content=", icom6045, fundamentals of e-commerce security, public key cryptography" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="#252627" />
@@ -44,10 +44,10 @@
 
 <meta itemprop="name" content="ICOM6045 Public Key Cryptography">
 <meta itemprop="description" content="Public Key System Overview
- each party has 2 keys (no key distribution)  public key (open to the public) private key (secret to the owner)  mathematically, it is difficult to find the private key according to the public key security strength depends on key length   usage  encryption digital signature (unforgeable, no encryption -&gt; message is public)  verfiy the origin of a message (not tampered) verify the identity of the sender (non-repudiation) reslove any authentication issues between the sender and the receiver   how to bind the private key and public key  using public key infrastructure  pratical usage  encryption and signature can be used together combined with hash functions and symmetric key system  public key system depends on trap-door one-way function  examples  exponentiation:\(b = a^e\ mod\ p\) factorization:\(n = p\times q\)  RSA use this, except bitcoin (ECC) multiplication &amp; factorization  e.">
+ each party has 2 keys (no key distribution)  public key (open to the public) private key (secret to the owner)  mathematically, it is difficult to find the private key according to the public key security strength depends on key length   usage  encryption digital signature (unforgeable, no encryption -&gt; message is public)  verfiy the origin of a message (not tampered) verify the identity of the sender (non-repudiation) reslove any authentication issues between the sender and the receiver   how to bind the private key and public key  using public key infrastructure  practical usage  encryption and signature can be used together combined with hash functions and symmetric key system  public key system depends on trap-door one-way function  examples  exponentiation:\(b = a^e\ mod\ p\) factorization:\(n = p\times q\)  RSA use this, except bitcoin (ECC) multiplication &amp; factorization  e.">
 <meta itemprop="datePublished" content="2020-11-18T09:43:16+08:00" />
 <meta itemprop="dateModified" content="2020-11-18T09:43:16+08:00" />
-<meta itemprop="wordCount" content="609">
+<meta itemprop="wordCount" content="965">
 <meta itemprop="image" content="https://www.marshalgao.com/"/>
 
 
@@ -59,13 +59,13 @@
 
 <meta name="twitter:title" content="ICOM6045 Public Key Cryptography"/>
 <meta name="twitter:description" content="Public Key System Overview
- each party has 2 keys (no key distribution)  public key (open to the public) private key (secret to the owner)  mathematically, it is difficult to find the private key according to the public key security strength depends on key length   usage  encryption digital signature (unforgeable, no encryption -&gt; message is public)  verfiy the origin of a message (not tampered) verify the identity of the sender (non-repudiation) reslove any authentication issues between the sender and the receiver   how to bind the private key and public key  using public key infrastructure  pratical usage  encryption and signature can be used together combined with hash functions and symmetric key system  public key system depends on trap-door one-way function  examples  exponentiation:\(b = a^e\ mod\ p\) factorization:\(n = p\times q\)  RSA use this, except bitcoin (ECC) multiplication &amp; factorization  e."/>
+ each party has 2 keys (no key distribution)  public key (open to the public) private key (secret to the owner)  mathematically, it is difficult to find the private key according to the public key security strength depends on key length   usage  encryption digital signature (unforgeable, no encryption -&gt; message is public)  verfiy the origin of a message (not tampered) verify the identity of the sender (non-repudiation) reslove any authentication issues between the sender and the receiver   how to bind the private key and public key  using public key infrastructure  practical usage  encryption and signature can be used together combined with hash functions and symmetric key system  public key system depends on trap-door one-way function  examples  exponentiation:\(b = a^e\ mod\ p\) factorization:\(n = p\times q\)  RSA use this, except bitcoin (ECC) multiplication &amp; factorization  e."/>
 
 
 
     <meta property="og:title" content="ICOM6045 Public Key Cryptography" />
 <meta property="og:description" content="Public Key System Overview
- each party has 2 keys (no key distribution)  public key (open to the public) private key (secret to the owner)  mathematically, it is difficult to find the private key according to the public key security strength depends on key length   usage  encryption digital signature (unforgeable, no encryption -&gt; message is public)  verfiy the origin of a message (not tampered) verify the identity of the sender (non-repudiation) reslove any authentication issues between the sender and the receiver   how to bind the private key and public key  using public key infrastructure  pratical usage  encryption and signature can be used together combined with hash functions and symmetric key system  public key system depends on trap-door one-way function  examples  exponentiation:\(b = a^e\ mod\ p\) factorization:\(n = p\times q\)  RSA use this, except bitcoin (ECC) multiplication &amp; factorization  e." />
+ each party has 2 keys (no key distribution)  public key (open to the public) private key (secret to the owner)  mathematically, it is difficult to find the private key according to the public key security strength depends on key length   usage  encryption digital signature (unforgeable, no encryption -&gt; message is public)  verfiy the origin of a message (not tampered) verify the identity of the sender (non-repudiation) reslove any authentication issues between the sender and the receiver   how to bind the private key and public key  using public key infrastructure  practical usage  encryption and signature can be used together combined with hash functions and symmetric key system  public key system depends on trap-door one-way function  examples  exponentiation:\(b = a^e\ mod\ p\) factorization:\(n = p\times q\)  RSA use this, except bitcoin (ECC) multiplication &amp; factorization  e." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.marshalgao.com/icom6045-public-key-cryptography/" />
 <meta property="og:image" content="https://www.marshalgao.com/"/>
@@ -150,7 +150,7 @@
           <circle cx="12" cy="12" r="10"></circle>
           <polyline points="12 6 12 12 16 14"></polyline>
         </svg>
-        3 minutes
+        5 minutes
 
         
       </p>
@@ -164,7 +164,9 @@
       
 
       <div class="post-content">
-        <h2 id="public-key-system">Public Key System</h2>
+        <p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Public%20Key%20Cryptography.png" alt=""></figure></p>
+
+<h2 id="public-key-system">Public Key System</h2>
 
 <p><strong>Overview</strong></p>
 
@@ -197,7 +199,7 @@
 <ul>
 <li>using public key infrastructure</li>
 </ul></li>
-<li>pratical usage
+<li>practical usage
 
 <ul>
 <li>encryption and signature can be used together</li>
@@ -224,7 +226,7 @@
 </ul></li>
 </ul>
 
-<p><strong>RSA Cryptosystem</strong></p>
+<p><strong>RSA cryptosystem</strong></p>
 
 <ul>
 <li>used both in encryption and digital signature</li>
@@ -358,6 +360,78 @@
 
 <h2 id="public-key-communication-standard-pkcs">Public Key Communication Standard (PKCS)</h2>
 
+<ul>
+<li>overview
+
+<ul>
+<li>group of public key cryptography standards, published by RSA lab (not a international standard, a industry standard)</li>
+<li>include both algorithm-specific and algorithm-independent implementation standards</li>
+<li>define an algorithm-independent syntax for digital signatures, digital envelopes (for encryption) and extended certificates</li>
+<li>two algorithms (RSA and Diffle-Hellman key exchange) are specified in details</li>
+<li>enable cryptographic algorithm implementers to conform to a standard syntax and achieve interoperability</li>
+</ul></li>
+<li>some standards
+
+<ul>
+<li>PKCS #1: RSA cryptography standard
+
+<ul>
+<li>fundamental building block for all public key cryptography</li>
+<li>defines a method for encrypting data using RSA</li>
+<li>includes RSA key generation, key syntax, the encryption and decryption processes, signature algorithms</li>
+</ul></li>
+<li>PKCS #5: password-based cryptography standard
+
+<ul>
+<li>defines how a password and a random number (salt) are to be mixed to together to form a symmetric key</li>
+</ul></li>
+<li>PKCS #7: cryptographic message syntax standard
+
+<ul>
+<li>specifies how to package information like signature algorithm, signer’s certificate, original message, signature bytes, … in a standard format</li>
+<li>allows senders to encode the objects and receivers to decode the information in a predictable, interoperable way, using independent implementation</li>
+<li>includes both signed data and enveloped data</li>
+</ul></li>
+<li>PKCS #8: private-key information syntax standard
+
+<ul>
+<li>provides standard definitions for encoding and decoding private keys either in a raw form or in an encrypted format</li>
+</ul></li>
+<li>PKCS #10: certification request syntax standard</li>
+<li>PKCS #12: personal information exchange syntax standard
+
+<ul>
+<li>a transfer syntax for personal identity information, including private keys, certificates, …</li>
+</ul></li>
+</ul></li>
+<li>signed message with PKCS #7 and S/MIME
+
+<ul>
+<li>MIME -&gt; email</li>
+<li>MD5 -&gt; hash</li>
+<li>RSA -&gt; digital signature</li>
+<li>email contains the algorithm, the message content, the signature as well as the public key
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112101.png" alt=""></figure>
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112102.png" alt=""></figure></li>
+</ul></li>
+<li>PKCS #7 signed data message
+
+<ul>
+<li>the same plaintext, generate different message digests (e.g., use SHA-256, MD5 at the same time), signing time, signature (e.g., RSA and other methods at the same time)
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112103.png" alt=""></figure></li>
+</ul></li>
+<li>PKCS #7 enveloped data message
+
+<ul>
+<li>the same encrypted content, different recipient information (different people have different private keys and public keys)
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112104.png" alt=""></figure></li>
+</ul></li>
+<li>PKCS #7 signed and enveloped data message
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112105.png" alt=""></figure></li>
+</ul>
+
+<h2 id="questions">Questions</h2>
+
 <p><strong>Q: Why we need the public key system?</strong></p>
 
 <p>A: Symmetric key system has the problem, which is key distribution.</p>
@@ -365,6 +439,10 @@
 <p><strong>Q: Can we break the RSA?</strong></p>
 
 <p>A: Because n is a large number generated by p and q, and this machinism use factorization, it is pretty difficult to break. To large extent, if you want to break, you need to try all the possiblities. Nowadays, we use may be 500 digits, so it is difficult to break. However, if you have the public key (e, n) and factor n, you can derive the private key.</p>
+
+<p><strong>Q: Can we use the private key to encrypt the message and use the public key to decrypt the message?</strong></p>
+
+<p>A: This process is digital signature, and the purpose is authentication and verification, not encryption and decryption.</p>
 
       </div>
     </article>
@@ -399,7 +477,7 @@
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        609 Words
+        965 Words
       </p>
 
       <p>
