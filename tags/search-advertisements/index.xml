@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>search advertisements on This is Marshal</title>
+    <link>https://www.marshalgao.com/tags/search-advertisements/</link>
+    <description>Recent content in search advertisements on This is Marshal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 21 Nov 2020 17:19:58 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/search-advertisements/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Search Ads Monetization</title>
+      <link>https://www.marshalgao.com/search-ads-monetization/</link>
+      <pubDate>Sat, 21 Nov 2020 17:19:58 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/search-ads-monetization/</guid>
+      <description>什么是搜索广告
+简单来书，当用户在搜索引擎上输入关键字进行查询，看到的广告。现如今，最为常见的就是置顶广告，比如Google，百度。可以将置顶广告理解为选女团的过程，经过层层筛选，最终选出合适的广告，按照顺序展示给用户。
+价格置顶的决策过程
+ 查询理解  查询清洗，忽略停止词  自动忽略或过滤掉一些在查询过程中没有意义的虚字，以此节省存储空间和提高搜索效率 分词，比如将【产品经理】分成【产品】和【经理】去进行查询 查询扩展（为了尽可能多的触达用户，给广告主自动拓展查询词，扩大广告主的采买流量）  精确匹配  【用户查询词】与【广告主投放关键词】完全匹配 例如，【用户查询词】为【产品】，【广告主投放关键词】必须是【产品】，才会触发广告  短语匹配  【用户查询词】完全包含【广告主投放关键词】 例如，【用户查询词】为【高级产品经理】，【广告主投放关键词】必须是【产品经理】，触发广告  广泛匹配  【用户查询词】与【广告主投放关键词】高度相关 例如，【用户查询词】为【销售代表】，【广告主投放关键词】必须是【销售经理】，触发广告     检索广告  在广告库里找到所有匹配用户查询词的广告，包括所有符合/部分符合 可以利用倒排索引进行相关权重计算，但工业界并不这么做 工业界会针对这些查询，有哪些广告被点击，把这些信息全部提取出来，然后进行人工标注。每个标签就会对应一个相关分，标签贴好后，就有一部分训练数据了，这个时候就可以做监督学习，或者用更多的feature来做监督学习  广告初滤  广告相关度低的需要过滤 广告出价低的需要过滤  广告排序，选择TOPK广告  根据广告本身质量排序 根据广告主的出价排序 排序分=广告质量分\(\times\)广告出价  广告质量分=0.8\(\times\)点击率+0.25\(\times\)相关度得分（但各家公司算法不公开，是商业机密，所以这里只是简单的一种表达式）   广告收费  按照第二高价来收费  可以确保拍卖人拍出心理价格 因为如果按出价收费，那买方往往为了保障自己的利益，出价往往要略低于心理价格 使用第二高价时买方可能以心理价格或略高于心理价格出价  实际应用中，是给买方提供一个价格区间，最大化保障买方利益，节省买方频繁登录系统，进行改价的时间成本   </description>
+    </item>
+    
+  </channel>
+</rss>
