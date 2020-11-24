@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>public key infrastructure on This is Marshal</title>
+    <link>https://www.marshalgao.com/tags/public-key-infrastructure/</link>
+    <description>Recent content in public key infrastructure on This is Marshal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
+    <lastBuildDate>Mon, 23 Nov 2020 14:10:48 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/public-key-infrastructure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ICOM6045 Public Key Infrastructure</title>
+      <link>https://www.marshalgao.com/icom6045-public-key-infrastructure/</link>
+      <pubDate>Mon, 23 Nov 2020 14:10:48 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/icom6045-public-key-infrastructure/</guid>
+      <description>PKI Overview
+ PKC &amp;amp; PKI  PKC is about math, but PKI is about binding a pair of key to one person   definition  PKI is a set of hardware, software, people, policies and procedures needed to create, manage, distribute, use, store, and revoke digital certificates PKI is an arrangement that binds public keys with respective user identities by means of a certificate authority (CA)  the binding is established through the registration and issuance process the PKI role that assures this binding is called the registration authority (RA): it ensures that the public key is bound to the individual to which it is assigned in a way that ensures non-repudiation   law for digital signature, e.</description>
+    </item>
+    
+  </channel>
+</rss>

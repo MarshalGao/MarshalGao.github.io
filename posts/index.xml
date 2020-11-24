@@ -6,8 +6,103 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Sat, 21 Nov 2020 17:19:58 +0800</lastBuildDate>
+        <lastBuildDate>Mon, 23 Nov 2020 14:10:48 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ICOM6045 Public Key Infrastructure</title>
+            <link>https://www.marshalgao.com/icom6045-public-key-infrastructure/</link>
+            <pubDate>Mon, 23 Nov 2020 14:10:48 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/icom6045-public-key-infrastructure/</guid>
+            <description>PKI Overview
+ PKC &amp;amp; PKI  PKC is about math, but PKI is about binding a pair of key to one person   definition  PKI is a set of hardware, software, people, policies and procedures needed to create, manage, distribute, use, store, and revoke digital certificates PKI is an arrangement that binds public keys with respective user identities by means of a certificate authority (CA)  the binding is established through the registration and issuance process the PKI role that assures this binding is called the registration authority (RA): it ensures that the public key is bound to the individual to which it is assigned in a way that ensures non-repudiation   law for digital signature, e.</description>
+            <content type="html"><![CDATA[<h2 id="pki">PKI</h2>
+<p><strong>Overview</strong></p>
+<ul>
+<li>PKC &amp; PKI
+<ul>
+<li>PKC is about math, but PKI is about binding a pair of key to one person</li>
+</ul>
+</li>
+<li>definition
+<ul>
+<li>PKI is a set of hardware, software, people, policies and procedures needed to create, manage, distribute, use, store, and revoke digital certificates</li>
+<li>PKI is an arrangement that binds public keys with respective user identities by means of a certificate authority (CA)
+<ul>
+<li>the binding is established through the registration and issuance process</li>
+<li>the PKI role that assures this binding is called the registration authority (RA): it ensures that the public key is bound to the individual to which it is assigned in a way that ensures non-repudiation</li>
+</ul>
+</li>
+<li>law for digital signature, e.g., ETO (Electronic Transaction Ordinance) in Hong Kong
+<ul>
+<li>PKI is always about digital signature</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>scenario
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112301.png" alt=""></li>
+</ul>
+<h2 id="public-key-certificate">Public Key Certificate</h2>
+<p><strong>Problems in PKC</strong></p>
+<ul>
+<li>private key
+<ul>
+<li>users have to keep in secret</li>
+</ul>
+</li>
+<li>public key
+<ul>
+<li>make sure everyone can get a correct copy (store in a public key certificate)</li>
+</ul>
+</li>
+<li>scenario
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112302.png" alt=""></li>
+</ul>
+<p><strong>Where is CA&rsquo;s public key?</strong></p>
+<ul>
+<li>mechanism
+<ul>
+<li>CA self signed (root certificate)
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112303.png" alt=""></li>
+</ul>
+</li>
+<li>intermediate certificate
+<ul>
+<li>purpose -&gt; purely security
+<ul>
+<li>everything in the whole trust model relies on root CA private key, so we use lock-it-out to protect it</li>
+<li>someone in the middle can balance the lock-it-out and usage</li>
+<li>use intermediate certificate, we can lock the root certificate and only use it a few times</li>
+<li>if the root cert does not work, the whole system would be crash. but if the intermediate cert does not work, we can revoke it and establish a new one</li>
+</ul>
+</li>
+<li>process
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/IMG_0056.jpg" alt=""></li>
+</ul>
+</li>
+</ul>
+<p><strong>Features</strong></p>
+<ul>
+<li>to associate a public-key value to a particular person, device, or entity</li>
+<li>used to facilitate distribution of public keys
+<ul>
+<li>user keeps his own private key</li>
+<li>user keeps his own PKC</li>
+<li>CA keeps all PKCs for all users</li>
+</ul>
+</li>
+<li>each PKC contains a public-key, and the certificate is signed by a “Certification Authority” or some “Intermediate Certification Authority”, which has confirmed the identity and other attributes of the holder of the corresponding private key</li>
+<li>assumption: everyone knows how to verify the CA’s digital signature (i.e. everyone knows CA’s public key)</li>
+</ul>
+<h2 id="questions">Questions</h2>
+<p><strong>Q: Why the definition of PKI is only about public keys?</strong></p>
+<p>A: The keys are always in pair. If you define the public key, the private key would also be defined.</p>
+<p><strong>Q: Do you need a law for encryption?</strong></p>
+<p>A: No, it just for confidentiality. Although encrpytion is important, it is not legally important. More importantly, digital signature is liable.</p>
+]]></content>
+        </item>
         
         <item>
             <title>Search Ads Monetization</title>
