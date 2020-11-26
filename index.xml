@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 23 Nov 2020 14:10:48 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Nov 2020 14:00:25 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How the Giant Engine Drives the Transition of Commercial Products</title>
+      <link>https://www.marshalgao.com/how-the-giant-engine-drives-the-transition-of-commercial-products/</link>
+      <pubDate>Thu, 26 Nov 2020 14:00:25 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/how-the-giant-engine-drives-the-transition-of-commercial-products/</guid>
+      <description>什么是巨量引擎
+巨量引擎是2019年字节跳动发布的一商业化营销服务品牌。在引擎大会2020现场，巨量引擎产品高级副总裁刘思齐表示：技术已经成为所有重要课题的底色，营销的“技术+”时代已经到来；基于“技术+”的主干，巨量引擎分享了对于产品、创意、内容、度量、转化等最新的思考。这些能力又将给行业带来哪些影响？在这些维度上，巨量引擎又将为行业带来哪些新的增长路径？
+巨量引擎的三阶跳
+ 内核搭建  内核搭建阶段指的是巨量引擎商业产品体系最初的3、4年时间 在这个阶段，字节跳动从0开始，基于字节跳动的推荐算法内核，完整地搭建出了一套贯穿从客户到用户的商业信息分发全过程，以及客户在整个推广周期内全交易流程的商业产品体系 它包含了整个巨量引擎商业产品围绕用户体验、交互效率、转化能力，再到人群识别、排序推荐的各个业务流程，还在其中建设了客户效率、素材创意、线索流转、效果度量等数百个模块   流量发展  字节跳动从今日头条再到抖音，成功复刻了自己快速增长的方法论，收割了几个亿级用户量的产品 牢牢把持住了用户的注意力，也成功抢占住了优势流量高地 至此，巨量引擎有了产品基础和流量实力   产品跃迁  营销语境下的内容生态  内容即营销 品牌要想要做好营销，实际上是需要探索如何去做好内容与营销的深度整合 对平台而言，也需要从商业内容的生产和分发两条线同时出发，共同完成营销目的  内容生产  做达人内容的星图平台负责承接专业的营销内容生产 全民任务这样的平台来聚合更分散的UGC内容生产——实现了生产的梳理整合   营销内容分发  字节跳动整个产品体系提供了自然流量、广告，以及Dou+等不同的渠道，给品牌不同性质、类型的内容更多的分发渠道选择   营销目的  基于内容的直接转化  无论是通过购物车直接形成购买交易的转化，还是通过转化组件实现下载跳转，又或是通过POI等为用户实现最终的到店，都是在服务商家的直接转化目的   商家提升品牌认知  譬如说通过品牌号来做内容聚合，通过品牌主页做互动，通过挑战赛来引导有品牌标识、品牌信息的UGC生产及传播，核心都是为了抢占用户心智         商业产品打造，从创意到分发，再到价值评估的工具手段   广告创新（产品创新）
+ 重点聚焦探索体验与价值的统一  巨量引擎目前已打造出Topview等好看的产品、试玩广告等好玩的产品、本地广告等好用的产品，完美的兼顾了用户体验与商业价值 用户体验带来用户价值，用户价值带来商业价值，用户对广告不那么反感了，自然更愿意接受企业的信息   服务创意生产者  巨量创意——巨量引擎旗下的视频创意生产全链条产品。它是巨量引擎官方指定的营销创意交流服务平台，通过展示、剖析大量的优秀广告创意来帮助字节系代理、达人、制作公司等快速提升广告制作技巧 帮助制作公司解决找创意、做创意、找作者等几重问题，整体上从创意和生产上优化创意内容的供给      创意生产及分发（获取流量）</description>
+    </item>
+    
     <item>
       <title>ICOM6045 Public Key Infrastructure</title>
       <link>https://www.marshalgao.com/icom6045-public-key-infrastructure/</link>
@@ -127,7 +140,7 @@ Frost &amp;amp; Sullivan近日发布的中国公有云市场的调研报告显�
  自动扩量  已经有一批十分明确的核心用户或老客户，向周边辐射   系统优选  面向比如快销品这一类，用户范围大，不明确的情况      Tencent双出价模式
  双目标出价  有些客户，对浅层深层两个目标的成本都很关注 这种情况下，系统努力的方向是让两个目标成本都能达成   两阶段出价  有些客户，在意的是主要是深层转化(比如付费) 可是上来就优化深层目标，数据又太稀疏 于是，可以让系统在初期先优化浅层目标(比如激活)以控制买量成本，在深层目标积累到一定数量以后，再切换优化目标，这就是两阶段出价       必要条件
  以完善的数据体系和强大的建模能力为支撑（有这种能力的平台少之又少） 有服务大量效果客户的运营实践    原文链接
- 从腾讯广告看“智能投放”的产品趋势    巨量引擎如何带动商业产品跃迁</description>
+ 从腾讯广告看“智能投放”的产品趋势    手游“正规军”正大举进入买量市场？</description>
     </item>
     
     <item>
@@ -148,16 +161,6 @@ Frost &amp;amp; Sullivan近日发布的中国公有云市场的调研报告显�
       
       <guid>https://www.marshalgao.com/to-c-introductory-lecture-of-tencent-lighthouse-program/</guid>
       <description>产品生产的过程 产品想法  面临的挑战  真实需求挑战 市场竞争挑战  竞品分析   可行性挑战  技术 资源 政策法规     应对挑战  产品分析  用户研究：了解用户真实需求 竞品分析：了解市场重的竞品   虚拟成本  团队能力 资源配置   产品定位  结合产品分析和虚拟成本   产品规划  结合多方因素的最终导向      用户研究  产品需求与用户需求  产品需求：功能解决方案（产品的功能） 用户需求：想要达到的目的（功能背后的原因） 不同用户的价值观、行为模式不同，对产品的需求存在差异 example &amp;ndash; 短视频分享  社交型用户（基本特征） 兴趣型用户（兴趣纬度） 媒体型用户（商业维度）     基本步骤  用研目标  产品经理提出 明确调研目标   定性调研  明确用户群、特征和需求点 观察法、日志法、访谈法   定量验证  验证定性调研的结论   结论整理  可用的指导     基本模版    目标用户群 主要特征 主要需求点 主要功能     用户群1      用户群2      &amp;hellip;&amp;hellip;         市场分析  宏观环境  政策法律 经济要素 社会与文化 科技要素   行业趋势  行业概览 子行业细分 未来趋势   竞品格局  竞品定位 差异与优势 未来趋势 方法  找竞品  习惯与方法   看竞品  看定位、概念 看亮点、差异 看数据、反馈   利用竞品树对市场进行细分  自身产品所在细分市场各个竞品为直接竞品 其他细分市场各个竞品为间接竞品或潜在竞品 example &amp;ndash; 竞品树        基本模版    细分市场 竞品名称 定位 亮点/优势 未来趋势     细分市场A 竞品1      细分市场B 竞品2      &amp;hellip;&amp;hellip; &amp;hellip;&amp;hellip;         产品定位  SWOT分析 通过分析不断明确产品的定位   产品规划  产品定位与产品规划  定位：是根据用户需求、市场机会和团队能力选择的切入点 规划：是朝着产品长期愿景前进选择的阶段性目标和发展路径    方法 (GPA)  先设立每个阶段的目标，再围绕每个阶段的目标做考虑需要的功能和优先级  阶段目标的设定  阶段目标符合产品定位和市场环境 目标的定义应该是可实现、可评估的 当前阶段的目标最为明确 后一阶段的目标，是基于前一段目标的达成后猜想 目标可能会随着团队内部、外部环境的改变而变化   可选方案与优先级评估的思考方向  预估的效果 当前资源的限制     基本模版    阶段目标 主要功能点 优先级     阶段一目标名称 功能点1 P0   阶段二目标名称 功能点2 P1   &amp;hellip;&amp;hellip; &amp;hellip;&amp;hellip; &amp;hellip;&amp;hellip;      BB Part 当发现的需求领域没有竞品，伪需求的概率非常大。当一个需求领域的解决方案或者是产品处于一个百花齐放的状态时，才是一个真正的风口。</description>
-    </item>
-    
-    <item>
-      <title>ECOM7121 The Social Graph</title>
-      <link>https://www.marshalgao.com/ecom7121-the-social-graph/</link>
-      <pubDate>Tue, 10 Nov 2020 00:24:12 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/ecom7121-the-social-graph/</guid>
-      <description>Facebook Paul Revenue and the Tipping Point
- Paul Revere&amp;rsquo;s famous midnight ride to rally support against the British in Concord, MA The British are coming&amp;hellip;word spread like wildfire, the colonists were mobilized Start of the American Revolution Why is Paul Revere remembered and not William Dawes?,  </description>
     </item>
     
   </channel>
