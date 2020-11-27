@@ -49,7 +49,7 @@
  something you know, e.g. password      group password criteria try to crack the passwords     A passwords consists of &gt;= 6 characters, with at least 1 non-letter 30% easy to crack (passwords easy to remember)   B passwords based on passphrases 10% were cracked (passwords easy to remember)   C passwords consists of 8 randomly selected characters 10% were cracked (passwords difficult to remember)     something you have, e.">
 <meta itemprop="datePublished" content="2020-10-23T14:25:27+08:00" />
 <meta itemprop="dateModified" content="2020-10-23T14:25:27+08:00" />
-<meta itemprop="wordCount" content="758">
+<meta itemprop="wordCount" content="1996">
 <meta itemprop="image" content="https://www.marshalgao.com/"/>
 
 
@@ -154,7 +154,7 @@
           <circle cx="12" cy="12" r="10"></circle>
           <polyline points="12 6 12 12 16 14"></polyline>
         </svg>
-        4 minutes
+        10 minutes
 
         
       </p>
@@ -377,7 +377,301 @@
 <li><span  class="math">\({Ticket}_{a,tgs}\)</span>: contains the session key <span  class="math">\(K_{a,tgs}\)</span> encrypted using <span  class="math">\(K_{K,tgs}\)</span>
 <figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E5%9B%BE%E7%89%87%207.png" alt=""></figure></li>
 </ul></li>
+<li>Kerberos Authentication Protocol access a file (after communicating with TGS)
+
+<ul>
+<li><span  class="math">\(Ticket_{a,F}\)</span> encrypted by <span  class="math">\(K_{F,tgs}\)</span>, contains
+
+<ul>
+<li>U's authenticated identity</li>
+<li>an identification of F</li>
+<li>access rights of F with respect to U</li>
+<li>the session key <span  class="math">\(K_{a,F}\)</span> for communication between file server and U</li>
+<li>an expiration date for the ticket</li>
 </ul></li>
+<li>do not need any public key cryptography, just ticket
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112704.png" alt=""></figure></li>
+</ul></li>
+<li>advantages
+
+<ul>
+<li>no password communicated on the network</li>
+<li>protected against spoofing using symmetric key encryption</li>
+<li>limited period of validity for each ticket: protect against brute force search</li>
+<li>timestamps to prevent replay attack</li>
+<li>mutual authentication</li>
+</ul></li>
+<li>some issues
+
+<ul>
+<li>requires continuous availability of a trusted TGS (centralized)</li>
+<li>requires a trusted relationship between TGS and every server</li>
+<li>requires timely transactions</li>
+<li>password guessing works</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>windows login
+
+<ul>
+<li>users are prompted for username and password</li>
+<li>username and password are gathered by the login process and passed on to the Local Security Authority (LSA) module</li>
+<li>the LSA calls the authentication package that compares the username and password against the values stored in SAM</li>
+<li>when a match is found, the SAM returns the user’s security ID (SID) and the security ID of any group the user belongs to</li>
+<li>the authentication package creates a login session and passes this session together with all SIDs back to the LSA</li>
+<li>the LSA creates a system access token (SAT), containing the user’s SIDs and user rights (privileges)</li>
+<li>the access token contains all relevant information about the capabilities of the authenticated user</li>
+<li>when deciding whether the user is allowed for a particular access, the access token will be consulted
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112705.png" alt=""></figure></li>
+</ul></li>
+</ul>
+
+<h2 id="access-control">Access Control</h2>
+
+<p><strong>Fundamental model (Lampson 1982)</strong></p>
+
+<ul>
+<li>using reference monitor
+
+<ul>
+<li>how to specify the control
+
+<ul>
+<li>what a subject is allowed to do: used in typical application system
+
+<ul>
+<li>e.g., user A is allowed to access database table T</li>
+</ul></li>
+<li>what may be done with an object: used by typical OS
+
+<ul>
+<li>e.g., file gcc is executable and accessible by everyone
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112706.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>Access rights</strong></p>
+
+<ul>
+<li>Bell-Lapadula security model
+
+<ul>
+<li>4 access rights
+
+<ul>
+<li>execute</li>
+<li>read</li>
+<li>append (blind write), e.g., transaction log</li>
+<li>write</li>
+</ul></li>
+<li>cannot access</li>
+</ul></li>
+<li>how to specify
+
+<ul>
+<li>access control matrix (not use)
+
+<ul>
+<li>can write zero bits in a file to achieve delete function, so there is no rights called &quot;delete&quot; or &quot;move&quot;</li>
+<li>too tedious
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112707.png" alt=""></figure></li>
+</ul></li>
+<li>capabilities (not use)
+
+<ul>
+<li>disadvantages
+
+<ul>
+<li>difficult to get an overview of who has permission to access a given object, e.g. who has read access to Fun.com</li>
+<li>difficult to revoke a capability: either the OS has to be given the task or users have to keep track of all the capabilities they passed on
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112708.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+<li>access control lists (windows use this)
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112709.png" alt=""></figure></li>
+<li>group
+
+<ul>
+<li>today, we often use the ACL and group together
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112710.png" alt=""></figure></li>
+</ul></li>
+<li>role-based access control
+
+<ul>
+<li>very common in application layer</li>
+<li>subjects derive their access rights from the role they are performing</li>
+<li>objects: each object can be accessed only through the procedures defined for the object</li>
+<li>roles
+
+<ul>
+<li>a role is a collection of application specific operations (procedures)</li>
+<li>roles are assigned to users</li>
+<li>a user can have more than one role and more than one user can have the same role</li>
+</ul></li>
+<li>some problems
+
+<ul>
+<li>possible violation of security policy due to role inheritance, automatic assumption of rules, unrestricted grants of privileges</li>
+<li>possible misconfiguration due to fuzzy nature of overlaps between roles:
+
+<ul>
+<li>assignment of users to multiple roles</li>
+<li>assignment of objects to multiple object-access groups</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h2 id="windows-access-control">Windows Access Control</h2>
+
+<p><strong>Domains</strong></p>
+
+<ul>
+<li>a domain is a collection of machines sharing user accounts database and security policy</li>
+<li>the master copy of the user accounts DB for the domain is held on a server called the primary domain controller (PDC), copy is held on a backup domain controller (BDC)</li>
+</ul>
+
+<p><strong>Workstation</strong></p>
+
+<ul>
+<li>can maintain their own local account DB and be a member of a domain at the same time
+
+<ul>
+<li>user can be a local user or a global user</li>
+<li>a user with a local and a global account will have 2 different security identifiers (2 SIDs)</li>
+<li>resources can be managed globally or locally, e.g., a local printer or a network printer</li>
+</ul></li>
+</ul>
+
+<p><strong>Windows Security Identifiers (SIDs)</strong></p>
+
+<ul>
+<li>every user, group and machine account has a unique security identification number (SID), used for discretionary access control (DAC)
+
+<ul>
+<li>DAC means you create a document, and you can control it
+
+<ul>
+<li>but if you are a general in military, the result may be opposite</li>
+</ul></li>
+</ul></li>
+<li>SID
+
+<ul>
+<li>constructed when the account is created</li>
+<li>fixed for the life time of the account</li>
+<li>pseudo-random inputs are used in its construction, i.e. delete an account and recreate it will not have the same SID, and access permissions will be different</li>
+<li>structure (S-R-I-S-S- … -RID)
+
+<ul>
+<li>R: revision number (currently 1)</li>
+<li>I: identifier authority (48-bit)</li>
+<li>S: 1-14 subauthority fields (32-bit)</li>
+<li>RID: relative 32-bit identifier, unique in authority’s name space</li>
+<li>typical principals with their SID
+
+<ul>
+<li>everyone (World): S-1-1-0</li>
+<li>system: S-1-5-18: the Windows on a machine runs locally as S-1-5-18</li>
+<li>administrator: S-1-5-21-&lt;local authority&gt;-500: a user account created during Windows installation</li>
+<li>administrators: S-1-5-32-544: built-in group with administrator privileges</li>
+<li>guest: S-15-21-&lt;authority&gt;-501</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>when a domain is created, a unique SID is constructed
+
+<ul>
+<li>when a workstation or a server joins a domain, it receives a SID that includes the domain’s SID</li>
+<li>copying the root directory and configuration files of one machine to another machine will make the 2 machines have identical SIDs, which violates the Windows security policy</li>
+</ul></li>
+<li>windows authorization model
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112711.png" alt=""></figure></li>
+<li>access to windows objects
+
+<ul>
+<li>each object has a security descriptor
+
+<ul>
+<li>the security ID of the owner of the object and the primary group SID</li>
+<li>a set of discretionary access control lists (ACLs): contains access control permissions</li>
+<li>a set of system access control list: contains auditing permissions, which control the audit messages to be generated</li>
+</ul></li>
+<li>an ACL is composed of multiple Access Control Entries (ACEs), each ACE is a permission</li>
+<li>an access control list entry (ACE) for a subject or group can be
+
+<ul>
+<li>AccessDenied: always listed first in an ACL</li>
+<li>AccessAllowed: a list of access permission</li>
+</ul></li>
+</ul></li>
+<li>windows access control checking algorithm
+
+<ul>
+<li>if no ACL exists, no checks are performed and access is granted</li>
+<li>if an ACL exists, then for each ACE, the subject’s SID in the SAT is compared with the SIDs in the ACE:
+
+<ul>
+<li>the ACE does not contain a matching SID, the ACE is skipped</li>
+<li>the ACE contains a matching ID specifying ‘AccessDenied’, no access is permitted, regardless of any conflicting AccessAllowed flags</li>
+<li>the ACE contains a matching SID specifying ‘AccessAllowed’, access is granted</li>
+</ul></li>
+<li>if no matching entry is found, access is denied</li>
+</ul></li>
+</ul>
+
+<h2 id="accountability">Accountability</h2>
+
+<p><strong>Overview</strong></p>
+
+<ul>
+<li>accountability requirements are the second set of security requirements defined in the Orange book (1985)</li>
+<li>accountability: the system knows who you are and what you’re doing
+
+<ul>
+<li>the system must be able to identify all users of the system</li>
+<li>the system must use information about your identity to decide whether you can access certain information</li>
+<li>the system must keep track of any security-related actions you take</li>
+</ul></li>
+<li>secure system uses your ID to maintain individual accountability, i.e. keep track of what you are doing in a system
+
+<ul>
+<li>e.g., if KPC repeatedly tries to access files he’s not authorized to view, the system will know</li>
+</ul></li>
+</ul>
+
+<p><strong>Requirements</strong></p>
+
+<ul>
+<li>identification and authentication
+
+<ul>
+<li>proof yourself to TCB (trusted computing base, mechanisms that enforce security in a system)</li>
+</ul></li>
+<li>trusted path
+
+<ul>
+<li>proof you connect to the correct institutions, i.e. authenticate the secure system</li>
+<li>in the past, we use particular key sequence</li>
+<li>today, we use public key certificate</li>
+</ul></li>
+<li>audit
+
+<ul>
+<li>the recording, examining and reviewing of security related activities in a trusted system</li>
+<li>typical events are
+
+<ul>
+<li>logons (successful or unsuccessful)</li>
+<li>logouts</li>
+<li>remote system accesses</li>
+<li>file opens, closes, renames, and deletions</li>
+<li>changes in privileges or security attributes</li>
+</ul></li>
+<li>auditing provides a way of determining whether and how an attack may take place</li>
 </ul></li>
 </ul>
 
@@ -414,7 +708,7 @@
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        758 Words
+        1996 Words
       </p>
 
       <p>
