@@ -2628,7 +2628,9 @@ value chain or pipeline.
             <description>Introduction  access control: deals with the prevention and detection of unauthorized actions by users of a computer system indentification and authentication: stating who you are and proving the identification claim with credentials
  username (identification) and password (authentication) other authentication techniques
  something you know, e.g. password      group password criteria try to crack the passwords     A passwords consists of &amp;gt;= 6 characters, with at least 1 non-letter 30% easy to crack (passwords easy to remember)   B passwords based on passphrases 10% were cracked (passwords easy to remember)   C passwords consists of 8 randomly selected characters 10% were cracked (passwords difficult to remember)     something you have, e.</description>
-            <content type="html"><![CDATA[<h2 id="introduction">Introduction</h2>
+            <content type="html"><![CDATA[<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Access%20Control.png" alt=""></figure></p>
+
+<h2 id="introduction">Introduction</h2>
 
 <ul>
 <li>access control: deals with the prevention and detection of unauthorized actions by users of a computer system</li>
