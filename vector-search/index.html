@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Marshal ">
+<meta name="description" content="获取最相似的节点
+计算机只是一个电子设备的集合体，它没法像人一样感知这个世界。怎样使得计算机也能认识这个世界呢？计算机只认识数字，它只能通过数字来量化这个世界，用一组数字来表示一个事物，这样的一组数字就是一个向量（Vector）。如果一个向量由n个数字组成，它就是一个n维向量。拿目前广泛使用的人脸识别技术来说，计算机从照片或视频中提取出人脸的图像，然后将人脸图像转换为128维或者更高维度的向量。
+在获取最相似的节点之前，来回顾一下高中的数学知识。在二维平面XY上有若干个点，A(1.0, 2.0)，B(1.0, 0.0)，C(0.0, 2.0)，试问A离谁比较近一些？
+
+根据欧几里得的数学公式\(\sqrt{(x_0 - x_1)^2 &#43; (y_0 - y_1)^2}\)可以计算出AB距离为2, AC距离为1,因此A离C更近一些。这就是一个最简单的向量检索，通过计算获知向量A离C更近，而AC距离更近意味着向量A和向量C更相似。
+相应的，对于高维向量，假设用A和B分别代表两个n维向量，它们之间的欧式距离计算公式就变成了\(\sqrt{(A_1 - A_2)^2 &#43; (A_2 - B_2)^2 &#43; ... &#43; (A_n - B_n)^2}\)
+回到人脸识别问题，假设我们已有一千万张人脸的向量数据，现在给定一张人脸，怎么在这一千万张人脸中找到与目标人脸最相似的人脸？根据上面的知识，我们只需要把这张人脸的向量和一千万张人脸向量分别计算欧氏距离，距离最小的就是最相似的。
+向量检索方法
+向量检索有两个基本参数，一个是n，意思是拿n条目标向量去数据库中做检索。另一个是k，意思是查找离目标向量最近的前k个向量，我们一般称为top-k。
+向量检索有两类方法 ：存在最近邻检索（Nearest Neighbor Search，NN）和近似最近邻检索（Approximate Nearest Neighbor Search，ANN）。NN最初是用目标向量和数据库向量逐条计算距离，结果最为精确，后来又产生了相关算法（比如KD-tree），使得搜索效率大为提高，但在应对海量高维度数据时显得力不从心。ANN则是在可接受的精度条件下通过把向量分簇建立索引，大幅提高搜索效率，这也大规模向量检索场景下所使用的主要方法。
+分簇索引
+打个比方，我们先给一个城市里所有的人按照职业做一个分类，比如工程师，律师，医生，等等。现在我要找一个人，他是Java程序员，那么我们掐指一算，只要在工程师队伍里找就十有八九能找到他，不需要再去其他队伍里找了。
+
+向量检索中典型的做法就是通过某种聚类算法把大批向量分成很多簇， 每个簇含有成百上千条向量，每个簇都有一个中心向量，当用户输入目标向量搜索时，系统先把目标向量和每个簇的中心向量做距离计算，挑选出距离比较近的几个簇，然后再把目标向量和这几个簇里的每一条向量做距离运算，最后得出距离最近的k条结果向量。
+下面将以一个散点图来进行更为直观的说明。假设在二维平面上有若干个向量（点）。
+
+通过聚类算法把它们分成若干个簇，簇的数量是可以指定的（这里以4为例），黑圈表示中心向量。
+
+加入要检索的目标向量，根据对比计算，我们发现它离黄色簇的中心最近，那么只需要将目标向量和黄色簇里每一个向量计算距离，就可以得到离目标向量最近的那个向量。
+
+当然，具体到实现环节会有很多种不同做法，有基于矢量量化的，基于图的，以及基于树的各种算法。
+面临的问题
+大规模向量检索的系统作为一个向量数据库，不但要能够支持海量数据的持久化，还要能快速地检索出用户需要的信息。生产环境中的向量维度一般起步就是128维，高一些的可达512维。我们可以算一下，对于512维度的向量，每条向量有512个数值，通常在计算机里这些数值是以float类型表示，这意味着每条向量将会占用2048字节，那么一亿条这样的向量就会用掉200GB。而生产环境中的向量数量有可能达到十亿甚至百亿的规模。
+根据使用的场景，可以分为静态库和增量库。静态库就是数据固定不变的，一旦完成数据导入，基本不会再接收新的数据，这种场景主要注重检索的性能；增量库在用户使用向量检索的过程中可能还伴随着持续的数据插入，需要考虑的问题要多一些，比如数据插入后多久可见，怎样兼顾检索效率和插入效率，如何保证宕机数据不丢失等等。
+目前，用于向量检索的最热门工具是Facebook开源的FAISS向量搜索库，另外，微软也开源了一个SPTAG库。用户可以无需深入了解向量聚类和向量相似性计算的算法，就能使用这些库实现简单的向量检索。但是这些只是最基础的工具库，其功能并不包括对向量数据的管理，不具备高可用性，缺乏监控手段，没有提供分布式方案，以及缺少各种语言版本的SDK等等，这也使得用户需要基于它们进行大量的开发才能满足生产环境的要求。" />
+<meta name="keywords" content=", advertising product manager, vector search" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://www.marshalgao.com/vector-search/" />
+
+
+    <title>
+        
+            Vector Search :: This is Marshal 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://www.marshalgao.com/main.bdf16375e88c9de5121e200285a015c4d181bcc9641cf97e05c5e46866f50161.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.marshalgao.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.marshalgao.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.marshalgao.com/favicon-16x16.png">
+    <link rel="manifest" href="https://www.marshalgao.com/site.webmanifest">
+    <link rel="mask-icon" href="https://www.marshalgao.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://www.marshalgao.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="Vector Search">
+<meta itemprop="description" content="获取最相似的节点
+计算机只是一个电子设备的集合体，它没法像人一样感知这个世界。怎样使得计算机也能认识这个世界呢？计算机只认识数字，它只能通过数字来量化这个世界，用一组数字来表示一个事物，这样的一组数字就是一个向量（Vector）。如果一个向量由n个数字组成，它就是一个n维向量。拿目前广泛使用的人脸识别技术来说，计算机从照片或视频中提取出人脸的图像，然后将人脸图像转换为128维或者更高维度的向量。
+在获取最相似的节点之前，来回顾一下高中的数学知识。在二维平面XY上有若干个点，A(1.0, 2.0)，B(1.0, 0.0)，C(0.0, 2.0)，试问A离谁比较近一些？
+
+根据欧几里得的数学公式\(\sqrt{(x_0 - x_1)^2 &#43; (y_0 - y_1)^2}\)可以计算出AB距离为2, AC距离为1,因此A离C更近一些。这就是一个最简单的向量检索，通过计算获知向量A离C更近，而AC距离更近意味着向量A和向量C更相似。
+相应的，对于高维向量，假设用A和B分别代表两个n维向量，它们之间的欧式距离计算公式就变成了\(\sqrt{(A_1 - A_2)^2 &#43; (A_2 - B_2)^2 &#43; ... &#43; (A_n - B_n)^2}\)
+回到人脸识别问题，假设我们已有一千万张人脸的向量数据，现在给定一张人脸，怎么在这一千万张人脸中找到与目标人脸最相似的人脸？根据上面的知识，我们只需要把这张人脸的向量和一千万张人脸向量分别计算欧氏距离，距离最小的就是最相似的。
+向量检索方法
+向量检索有两个基本参数，一个是n，意思是拿n条目标向量去数据库中做检索。另一个是k，意思是查找离目标向量最近的前k个向量，我们一般称为top-k。
+向量检索有两类方法 ：存在最近邻检索（Nearest Neighbor Search，NN）和近似最近邻检索（Approximate Nearest Neighbor Search，ANN）。NN最初是用目标向量和数据库向量逐条计算距离，结果最为精确，后来又产生了相关算法（比如KD-tree），使得搜索效率大为提高，但在应对海量高维度数据时显得力不从心。ANN则是在可接受的精度条件下通过把向量分簇建立索引，大幅提高搜索效率，这也大规模向量检索场景下所使用的主要方法。
+分簇索引
+打个比方，我们先给一个城市里所有的人按照职业做一个分类，比如工程师，律师，医生，等等。现在我要找一个人，他是Java程序员，那么我们掐指一算，只要在工程师队伍里找就十有八九能找到他，不需要再去其他队伍里找了。
+
+向量检索中典型的做法就是通过某种聚类算法把大批向量分成很多簇， 每个簇含有成百上千条向量，每个簇都有一个中心向量，当用户输入目标向量搜索时，系统先把目标向量和每个簇的中心向量做距离计算，挑选出距离比较近的几个簇，然后再把目标向量和这几个簇里的每一条向量做距离运算，最后得出距离最近的k条结果向量。
+下面将以一个散点图来进行更为直观的说明。假设在二维平面上有若干个向量（点）。
+
+通过聚类算法把它们分成若干个簇，簇的数量是可以指定的（这里以4为例），黑圈表示中心向量。
+
+加入要检索的目标向量，根据对比计算，我们发现它离黄色簇的中心最近，那么只需要将目标向量和黄色簇里每一个向量计算距离，就可以得到离目标向量最近的那个向量。
+
+当然，具体到实现环节会有很多种不同做法，有基于矢量量化的，基于图的，以及基于树的各种算法。
+面临的问题
+大规模向量检索的系统作为一个向量数据库，不但要能够支持海量数据的持久化，还要能快速地检索出用户需要的信息。生产环境中的向量维度一般起步就是128维，高一些的可达512维。我们可以算一下，对于512维度的向量，每条向量有512个数值，通常在计算机里这些数值是以float类型表示，这意味着每条向量将会占用2048字节，那么一亿条这样的向量就会用掉200GB。而生产环境中的向量数量有可能达到十亿甚至百亿的规模。
+根据使用的场景，可以分为静态库和增量库。静态库就是数据固定不变的，一旦完成数据导入，基本不会再接收新的数据，这种场景主要注重检索的性能；增量库在用户使用向量检索的过程中可能还伴随着持续的数据插入，需要考虑的问题要多一些，比如数据插入后多久可见，怎样兼顾检索效率和插入效率，如何保证宕机数据不丢失等等。
+目前，用于向量检索的最热门工具是Facebook开源的FAISS向量搜索库，另外，微软也开源了一个SPTAG库。用户可以无需深入了解向量聚类和向量相似性计算的算法，就能使用这些库实现简单的向量检索。但是这些只是最基础的工具库，其功能并不包括对向量数据的管理，不具备高可用性，缺乏监控手段，没有提供分布式方案，以及缺少各种语言版本的SDK等等，这也使得用户需要基于它们进行大量的开发才能满足生产环境的要求。">
+<meta itemprop="datePublished" content="2020-11-29T14:59:59+08:00" />
+<meta itemprop="dateModified" content="2020-11-29T14:59:59+08:00" />
+<meta itemprop="wordCount" content="49">
+<meta itemprop="image" content="https://www.marshalgao.com/"/>
+
+
+
+<meta itemprop="keywords" content="advertising product manager,vector search," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.marshalgao.com/"/>
+
+<meta name="twitter:title" content="Vector Search"/>
+<meta name="twitter:description" content="获取最相似的节点
+计算机只是一个电子设备的集合体，它没法像人一样感知这个世界。怎样使得计算机也能认识这个世界呢？计算机只认识数字，它只能通过数字来量化这个世界，用一组数字来表示一个事物，这样的一组数字就是一个向量（Vector）。如果一个向量由n个数字组成，它就是一个n维向量。拿目前广泛使用的人脸识别技术来说，计算机从照片或视频中提取出人脸的图像，然后将人脸图像转换为128维或者更高维度的向量。
+在获取最相似的节点之前，来回顾一下高中的数学知识。在二维平面XY上有若干个点，A(1.0, 2.0)，B(1.0, 0.0)，C(0.0, 2.0)，试问A离谁比较近一些？
+
+根据欧几里得的数学公式\(\sqrt{(x_0 - x_1)^2 &#43; (y_0 - y_1)^2}\)可以计算出AB距离为2, AC距离为1,因此A离C更近一些。这就是一个最简单的向量检索，通过计算获知向量A离C更近，而AC距离更近意味着向量A和向量C更相似。
+相应的，对于高维向量，假设用A和B分别代表两个n维向量，它们之间的欧式距离计算公式就变成了\(\sqrt{(A_1 - A_2)^2 &#43; (A_2 - B_2)^2 &#43; ... &#43; (A_n - B_n)^2}\)
+回到人脸识别问题，假设我们已有一千万张人脸的向量数据，现在给定一张人脸，怎么在这一千万张人脸中找到与目标人脸最相似的人脸？根据上面的知识，我们只需要把这张人脸的向量和一千万张人脸向量分别计算欧氏距离，距离最小的就是最相似的。
+向量检索方法
+向量检索有两个基本参数，一个是n，意思是拿n条目标向量去数据库中做检索。另一个是k，意思是查找离目标向量最近的前k个向量，我们一般称为top-k。
+向量检索有两类方法 ：存在最近邻检索（Nearest Neighbor Search，NN）和近似最近邻检索（Approximate Nearest Neighbor Search，ANN）。NN最初是用目标向量和数据库向量逐条计算距离，结果最为精确，后来又产生了相关算法（比如KD-tree），使得搜索效率大为提高，但在应对海量高维度数据时显得力不从心。ANN则是在可接受的精度条件下通过把向量分簇建立索引，大幅提高搜索效率，这也大规模向量检索场景下所使用的主要方法。
+分簇索引
+打个比方，我们先给一个城市里所有的人按照职业做一个分类，比如工程师，律师，医生，等等。现在我要找一个人，他是Java程序员，那么我们掐指一算，只要在工程师队伍里找就十有八九能找到他，不需要再去其他队伍里找了。
+
+向量检索中典型的做法就是通过某种聚类算法把大批向量分成很多簇， 每个簇含有成百上千条向量，每个簇都有一个中心向量，当用户输入目标向量搜索时，系统先把目标向量和每个簇的中心向量做距离计算，挑选出距离比较近的几个簇，然后再把目标向量和这几个簇里的每一条向量做距离运算，最后得出距离最近的k条结果向量。
+下面将以一个散点图来进行更为直观的说明。假设在二维平面上有若干个向量（点）。
+
+通过聚类算法把它们分成若干个簇，簇的数量是可以指定的（这里以4为例），黑圈表示中心向量。
+
+加入要检索的目标向量，根据对比计算，我们发现它离黄色簇的中心最近，那么只需要将目标向量和黄色簇里每一个向量计算距离，就可以得到离目标向量最近的那个向量。
+
+当然，具体到实现环节会有很多种不同做法，有基于矢量量化的，基于图的，以及基于树的各种算法。
+面临的问题
+大规模向量检索的系统作为一个向量数据库，不但要能够支持海量数据的持久化，还要能快速地检索出用户需要的信息。生产环境中的向量维度一般起步就是128维，高一些的可达512维。我们可以算一下，对于512维度的向量，每条向量有512个数值，通常在计算机里这些数值是以float类型表示，这意味着每条向量将会占用2048字节，那么一亿条这样的向量就会用掉200GB。而生产环境中的向量数量有可能达到十亿甚至百亿的规模。
+根据使用的场景，可以分为静态库和增量库。静态库就是数据固定不变的，一旦完成数据导入，基本不会再接收新的数据，这种场景主要注重检索的性能；增量库在用户使用向量检索的过程中可能还伴随着持续的数据插入，需要考虑的问题要多一些，比如数据插入后多久可见，怎样兼顾检索效率和插入效率，如何保证宕机数据不丢失等等。
+目前，用于向量检索的最热门工具是Facebook开源的FAISS向量搜索库，另外，微软也开源了一个SPTAG库。用户可以无需深入了解向量聚类和向量相似性计算的算法，就能使用这些库实现简单的向量检索。但是这些只是最基础的工具库，其功能并不包括对向量数据的管理，不具备高可用性，缺乏监控手段，没有提供分布式方案，以及缺少各种语言版本的SDK等等，这也使得用户需要基于它们进行大量的开发才能满足生产环境的要求。"/>
+
+
+
+    <meta property="og:title" content="Vector Search" />
+<meta property="og:description" content="获取最相似的节点
+计算机只是一个电子设备的集合体，它没法像人一样感知这个世界。怎样使得计算机也能认识这个世界呢？计算机只认识数字，它只能通过数字来量化这个世界，用一组数字来表示一个事物，这样的一组数字就是一个向量（Vector）。如果一个向量由n个数字组成，它就是一个n维向量。拿目前广泛使用的人脸识别技术来说，计算机从照片或视频中提取出人脸的图像，然后将人脸图像转换为128维或者更高维度的向量。
+在获取最相似的节点之前，来回顾一下高中的数学知识。在二维平面XY上有若干个点，A(1.0, 2.0)，B(1.0, 0.0)，C(0.0, 2.0)，试问A离谁比较近一些？
+
+根据欧几里得的数学公式\(\sqrt{(x_0 - x_1)^2 &#43; (y_0 - y_1)^2}\)可以计算出AB距离为2, AC距离为1,因此A离C更近一些。这就是一个最简单的向量检索，通过计算获知向量A离C更近，而AC距离更近意味着向量A和向量C更相似。
+相应的，对于高维向量，假设用A和B分别代表两个n维向量，它们之间的欧式距离计算公式就变成了\(\sqrt{(A_1 - A_2)^2 &#43; (A_2 - B_2)^2 &#43; ... &#43; (A_n - B_n)^2}\)
+回到人脸识别问题，假设我们已有一千万张人脸的向量数据，现在给定一张人脸，怎么在这一千万张人脸中找到与目标人脸最相似的人脸？根据上面的知识，我们只需要把这张人脸的向量和一千万张人脸向量分别计算欧氏距离，距离最小的就是最相似的。
+向量检索方法
+向量检索有两个基本参数，一个是n，意思是拿n条目标向量去数据库中做检索。另一个是k，意思是查找离目标向量最近的前k个向量，我们一般称为top-k。
+向量检索有两类方法 ：存在最近邻检索（Nearest Neighbor Search，NN）和近似最近邻检索（Approximate Nearest Neighbor Search，ANN）。NN最初是用目标向量和数据库向量逐条计算距离，结果最为精确，后来又产生了相关算法（比如KD-tree），使得搜索效率大为提高，但在应对海量高维度数据时显得力不从心。ANN则是在可接受的精度条件下通过把向量分簇建立索引，大幅提高搜索效率，这也大规模向量检索场景下所使用的主要方法。
+分簇索引
+打个比方，我们先给一个城市里所有的人按照职业做一个分类，比如工程师，律师，医生，等等。现在我要找一个人，他是Java程序员，那么我们掐指一算，只要在工程师队伍里找就十有八九能找到他，不需要再去其他队伍里找了。
+
+向量检索中典型的做法就是通过某种聚类算法把大批向量分成很多簇， 每个簇含有成百上千条向量，每个簇都有一个中心向量，当用户输入目标向量搜索时，系统先把目标向量和每个簇的中心向量做距离计算，挑选出距离比较近的几个簇，然后再把目标向量和这几个簇里的每一条向量做距离运算，最后得出距离最近的k条结果向量。
+下面将以一个散点图来进行更为直观的说明。假设在二维平面上有若干个向量（点）。
+
+通过聚类算法把它们分成若干个簇，簇的数量是可以指定的（这里以4为例），黑圈表示中心向量。
+
+加入要检索的目标向量，根据对比计算，我们发现它离黄色簇的中心最近，那么只需要将目标向量和黄色簇里每一个向量计算距离，就可以得到离目标向量最近的那个向量。
+
+当然，具体到实现环节会有很多种不同做法，有基于矢量量化的，基于图的，以及基于树的各种算法。
+面临的问题
+大规模向量检索的系统作为一个向量数据库，不但要能够支持海量数据的持久化，还要能快速地检索出用户需要的信息。生产环境中的向量维度一般起步就是128维，高一些的可达512维。我们可以算一下，对于512维度的向量，每条向量有512个数值，通常在计算机里这些数值是以float类型表示，这意味着每条向量将会占用2048字节，那么一亿条这样的向量就会用掉200GB。而生产环境中的向量数量有可能达到十亿甚至百亿的规模。
+根据使用的场景，可以分为静态库和增量库。静态库就是数据固定不变的，一旦完成数据导入，基本不会再接收新的数据，这种场景主要注重检索的性能；增量库在用户使用向量检索的过程中可能还伴随着持续的数据插入，需要考虑的问题要多一些，比如数据插入后多久可见，怎样兼顾检索效率和插入效率，如何保证宕机数据不丢失等等。
+目前，用于向量检索的最热门工具是Facebook开源的FAISS向量搜索库，另外，微软也开源了一个SPTAG库。用户可以无需深入了解向量聚类和向量相似性计算的算法，就能使用这些库实现简单的向量检索。但是这些只是最基础的工具库，其功能并不包括对向量数据的管理，不具备高可用性，缺乏监控手段，没有提供分布式方案，以及缺少各种语言版本的SDK等等，这也使得用户需要基于它们进行大量的开发才能满足生产环境的要求。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.marshalgao.com/vector-search/" />
+<meta property="og:image" content="https://www.marshalgao.com/"/>
+<meta property="article:published_time" content="2020-11-29T14:59:59+08:00" />
+<meta property="article:modified_time" content="2020-11-29T14:59:59+08:00" />
+
+
+
+
+    <meta property="article:section" content="Technology" />
+
+
+
+    <meta property="article:published_time" content="2020-11-29 14:59:59 &#43;0800 HKT" />
+
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css" integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.js" integrity="sha384-JiKN5O8x9Hhs/UE5cT5AAJqieYlOZbGT3CHws/y97o3ty4R7/O5poG9F3JoiOYw1" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://www.marshalgao.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://www.marshalgao.com/categories/hku">HKU</a></li><li><a href="https://www.marshalgao.com/categories/technology">TECH</a></li><li><a href="https://www.marshalgao.com/categories/product-manager">PM</a></li><li><a href="https://www.marshalgao.com/categories/life">LIFE</a></li><li><a href="https://www.marshalgao.com/about/">ABOUT</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        One minute
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://www.marshalgao.com/vector-search/">Vector Search</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <p><strong>获取最相似的节点</strong></p>
+
+<p>计算机只是一个电子设备的集合体，它没法像人一样感知这个世界。怎样使得计算机也能认识这个世界呢？计算机只认识数字，它只能通过数字来量化这个世界，用一组数字来表示一个事物，这样的一组数字就是一个向量（Vector）。如果一个向量由n个数字组成，它就是一个n维向量。拿目前广泛使用的人脸识别技术来说，计算机从照片或视频中提取出人脸的图像，然后将人脸图像转换为128维或者更高维度的向量。</p>
+
+<p>在获取最相似的节点之前，来回顾一下高中的数学知识。在二维平面XY上有若干个点，A(1.0, 2.0)，B(1.0, 0.0)，C(0.0, 2.0)，试问A离谁比较近一些？</p>
+
+<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-e39d87b703c4dcf7f0f214b689fbf1a8_1440w.jpg" alt=""></figure></p>
+
+<p>根据欧几里得的数学公式<span  class="math">\(\sqrt{(x_0 - x_1)^2 + (y_0 - y_1)^2}\)</span>可以计算出AB距离为2, AC距离为1,因此A离C更近一些。这就是一个最简单的向量检索，通过计算获知向量A离C更近，而AC距离更近意味着向量A和向量C更相似。</p>
+
+<p>相应的，对于高维向量，假设用A和B分别代表两个n维向量，它们之间的欧式距离计算公式就变成了<span  class="math">\(\sqrt{(A_1 - A_2)^2 + (A_2 - B_2)^2 + ... + (A_n - B_n)^2}\)</span></p>
+
+<p>回到人脸识别问题，假设我们已有一千万张人脸的向量数据，现在给定一张人脸，怎么在这一千万张人脸中找到与目标人脸最相似的人脸？根据上面的知识，我们只需要把这张人脸的向量和一千万张人脸向量分别计算欧氏距离，距离最小的就是最相似的。</p>
+
+<p><strong>向量检索方法</strong></p>
+
+<p>向量检索有两个基本参数，一个是n，意思是拿n条目标向量去数据库中做检索。另一个是k，意思是查找离目标向量最近的前k个向量，我们一般称为top-k。</p>
+
+<p>向量检索有两类方法 ：存在最近邻检索（Nearest Neighbor Search，NN）和近似最近邻检索（Approximate Nearest Neighbor Search，ANN）。NN最初是用目标向量和数据库向量逐条计算距离，结果最为精确，后来又产生了相关算法（比如KD-tree），使得搜索效率大为提高，但在应对海量高维度数据时显得力不从心。ANN则是在可接受的精度条件下通过把向量分簇建立索引，大幅提高搜索效率，这也大规模向量检索场景下所使用的主要方法。</p>
+
+<p><strong>分簇索引</strong></p>
+
+<p>打个比方，我们先给一个城市里所有的人按照职业做一个分类，比如工程师，律师，医生，等等。现在我要找一个人，他是Java程序员，那么我们掐指一算，只要在工程师队伍里找就十有八九能找到他，不需要再去其他队伍里找了。</p>
+
+<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112903.jpg" alt=""></figure></p>
+
+<p>向量检索中典型的做法就是通过某种聚类算法把大批向量分成很多簇， 每个簇含有成百上千条向量，每个簇都有一个中心向量，当用户输入目标向量搜索时，系统先把目标向量和每个簇的中心向量做距离计算，挑选出距离比较近的几个簇，然后再把目标向量和这几个簇里的每一条向量做距离运算，最后得出距离最近的k条结果向量。</p>
+
+<p>下面将以一个散点图来进行更为直观的说明。假设在二维平面上有若干个向量（点）。</p>
+
+<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-0b40121588f693beb5157d5f7caae745_1440w.jpg" alt=""></figure></p>
+
+<p>通过聚类算法把它们分成若干个簇，簇的数量是可以指定的（这里以4为例），黑圈表示中心向量。</p>
+
+<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-19ead11e5123e686fcb6611328d1a601_1440w.jpg" alt=""></figure></p>
+
+<p>加入要检索的目标向量，根据对比计算，我们发现它离黄色簇的中心最近，那么只需要将目标向量和黄色簇里每一个向量计算距离，就可以得到离目标向量最近的那个向量。</p>
+
+<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-6cc5bd36aea3f17e69d1da6551bd62c1_1440w.jpg" alt=""></figure></p>
+
+<p>当然，具体到实现环节会有很多种不同做法，有基于矢量量化的，基于图的，以及基于树的各种算法。</p>
+
+<p><strong>面临的问题</strong></p>
+
+<p>大规模向量检索的系统作为一个向量数据库，不但要能够支持海量数据的持久化，还要能快速地检索出用户需要的信息。生产环境中的向量维度一般起步就是128维，高一些的可达512维。我们可以算一下，对于512维度的向量，每条向量有512个数值，通常在计算机里这些数值是以float类型表示，这意味着每条向量将会占用2048字节，那么一亿条这样的向量就会用掉200GB。而生产环境中的向量数量有可能达到十亿甚至百亿的规模。</p>
+
+<p>根据使用的场景，可以分为静态库和增量库。静态库就是数据固定不变的，一旦完成数据导入，基本不会再接收新的数据，这种场景主要注重检索的性能；增量库在用户使用向量检索的过程中可能还伴随着持续的数据插入，需要考虑的问题要多一些，比如数据插入后多久可见，怎样兼顾检索效率和插入效率，如何保证宕机数据不丢失等等。</p>
+
+<p>目前，用于向量检索的最热门工具是Facebook开源的FAISS向量搜索库，另外，微软也开源了一个SPTAG库。用户可以无需深入了解向量聚类和向量相似性计算的算法，就能使用这些库实现简单的向量检索。但是这些只是最基础的工具库，其功能并不包括对向量数据的管理，不具备高可用性，缺乏监控手段，没有提供分布式方案，以及缺少各种语言版本的SDK等等，这也使得用户需要基于它们进行大量的开发才能满足生产环境的要求。</p>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/tags/advertising-product-manager/">advertising product manager</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/vector-search/">vector search</a></span>
+        
+    </p>
+
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/categories/technology/">Technology</a></span>
+        
+    </p>
+
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        49 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2020-11-29 14:59
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+
+          
+            <span class="button next">
+              <a href="https://www.marshalgao.com/information-stream-advertising-and-electronic-commerce/">
+                <span class="button__text">Information Stream Advertising and Electronic Commerce</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://www.marshalgao.com/">Marshal</a></span>
+            
+            
+                <span><a href="https://www.hku.hk" target="_blank" rel="noopener">The University of Hong Kong</a></span>
+            <span><a href="https://www.marshalgao.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Team Rocket: <a href="https://www.pseudoyu.com/" target="_blank" rel="noopener">Pseudoyu</a></span>
+            <span><a href="https://www.m1sty.com/" target="_blank" rel="noopener">Misty</a></span>
+          </div>
+    </div>
+</footer>
+
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://www.marshalgao.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>
