@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>communication network security on This is Marshal</title>
+    <link>https://www.marshalgao.com/tags/communication-network-security/</link>
+    <description>Recent content in communication network security on This is Marshal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
+    <lastBuildDate>Tue, 01 Dec 2020 11:19:35 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/communication-network-security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ICOM6045 Communication Network Security</title>
+      <link>https://www.marshalgao.com/icom6045-communication-network-security/</link>
+      <pubDate>Tue, 01 Dec 2020 11:19:35 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/icom6045-communication-network-security/</guid>
+      <description>Introduction Communication network
+ definition  an infrastructure for exchanging information in electronic form  a physical infrastructure: communication links (e.g., wires and cables) a logical infrastructure: protocols     types of information  voice documents photos video, etc   types of communication network  a public switched telephone network (circuit switching, lots of switches in the telephone network, single line, more expensive) a mobile telephone network the Internet (packet switching, sharing, much cheaper) a communication infrastructure (i.</description>
+    </item>
+    
+  </channel>
+</rss>
