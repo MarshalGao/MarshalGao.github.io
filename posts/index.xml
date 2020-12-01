@@ -308,7 +308,8 @@
             <guid>https://www.marshalgao.com/icom6045-communication-network-security/</guid>
             <description>Introduction Communication network
  definition  an infrastructure for exchanging information in electronic form  a physical infrastructure: communication links (e.g., wires and cables) a logical infrastructure: protocols     types of information  voice documents photos video, etc   types of communication network  a public switched telephone network (circuit switching, lots of switches in the telephone network, single line, more expensive) a mobile telephone network the Internet (packet switching, sharing, much cheaper) a communication infrastructure (i.</description>
-            <content type="html"><![CDATA[<h2 id="introduction">Introduction</h2>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Communication%20Network%20Security.png" alt=""></p>
+<h2 id="introduction">Introduction</h2>
 <p><strong>Communication network</strong></p>
 <ul>
 <li>definition
@@ -395,12 +396,14 @@
 <li>layer N-1 security services is transparent
 <ul>
 <li>the layer N protocol does not have to change
-<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120103.png" alt="">
-<strong>Security at the physical or data link layers</strong></li>
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120103.png" alt=""></li>
 </ul>
 </li>
 </ul>
 </li>
+</ul>
+<p><strong>Security at the physical or data link layers</strong></p>
+<ul>
 <li>advantage
 <ul>
 <li>provide secure point-to-point communication</li>
@@ -411,10 +414,12 @@
 <li>cannot extend protection across heterogeneous networks</li>
 <li>if link-level encryption is used, each link must be equipped on both ends with an encryption device</li>
 <li>additionally, a message must be decrypted at each intermediate node so that the higher-level protocols can read their control information, and then encrypted again</li>
-<li>key management is extremely complex, because the message is decrypted at each device, it is exposed to attacks at each intermediate node, which is a severe disadvantage
-<strong>Security at the internet layer</strong></li>
+<li>key management is extremely complex, because the message is decrypted at each device, it is exposed to attacks at each intermediate node, which is a severe disadvantage</li>
 </ul>
 </li>
+</ul>
+<p><strong>Security at the internet layer</strong></p>
+<ul>
 <li>advantages
 <ul>
 <li>it is transparent to users and applications: a single tunnel secures all communications between the devices, regardless of traffic type (TCP, UDP, SNMP) or applications (email, client-server, database)</li>
@@ -429,10 +434,12 @@
 </li>
 <li>example
 <ul>
-<li>VPN with IPsec
-<strong>Security at the transport layer</strong></li>
+<li>VPN with IPsec</li>
 </ul>
 </li>
+</ul>
+<p><strong>Security at the transport layer</strong></p>
+<ul>
 <li>advantages
 <ul>
 <li>no change to the OS (the key difference, compared with IPsec)</li>
@@ -447,13 +454,15 @@
 </li>
 <li>example
 <ul>
-<li>VPN tunnel using SSL
-<strong>Difference of VPN at transport layer and network layer</strong>
-<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120104.png" alt="">
-<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120105.png" alt="">
-<strong>Security at the application layer</strong></li>
+<li>VPN tunnel using SSL</li>
 </ul>
 </li>
+</ul>
+<p><strong>Difference of VPN at transport layer and network layer</strong>
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120104.png" alt="">
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120105.png" alt=""></p>
+<p><strong>Security at the application layer</strong></p>
+<ul>
 <li>advantages
 <ul>
 <li>it involves no changes in the operating system since only a secure application must be installed</li>
