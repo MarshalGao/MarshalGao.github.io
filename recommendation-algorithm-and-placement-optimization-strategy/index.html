@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Marshal ">
+<meta name="description" content="广告推荐算法（以今日头条为例）
+ 三个纬度变量输入  内容特征  为文章、图片、视频等内容进行画像，提取关键字、tag标签等实现语义识别，为以后推荐给用户做准备   用户特征  根据用户行为进行用户画像勾勒，多角度且具体   环境特征  比如获取你当前所在位置是否在旅游区，这个可以通过获取你实时位置来实现，然后与你之前经常出现的所在地进行对比等方式确认当前状态，是在家还是在旅游     内容干预  可以量化的指标可以体现一些具体信息，但是完全靠这个并不全面，比如刷评论、转发等情况，可能就会迷惑后台计算机的分析，纯粹靠这些数据进行推荐是有问题的  比如当前社会热点，虽然你的文章很热，但是热点已过，也不会因为文章的点击率大而继续给你推送   需要人工对这些数据内容进行维护设置，以完善推荐机制   因地制宜与算法实验平台  因地制宜  不同推荐场景需要不同的模型架构，比如小视频，是短时投入，客户会很少计较时间成本，所以关键的推荐机制可能并不是你的用户画像特征，而是根据视频的点击率进行推荐，点击率越大的视频肯定越容易吸引用户的兴趣 文章需要投入时间成本较高，精准投送要求会比较高，所以各类内容推荐算法会根据不同的特点进行不一样的推荐机制，需要不断尝试优化   算法实验平台  比如第一种算法投入测试，推送10000条信息，实际点击有效率是50%，相当于一条测试数据 后面再对其他多种算法测试，最终选取点击率最高的算法进行应用     四类特征相互作用  相关性特征  用户画像与内容画像的匹配   环境特征 热度特征  当用户第一次注册登录头条（冷启动阶段），没有用户画像 根据当前社会热点呀、文章阅读量高低排名等一些能代表普遍群体感受的指标进行推送选择   协同特征  通过你的行为、画像、环境等各类指标进行模型分析后，适合推荐给你的文章太少（算法越推越窄） 可以寻找跟你特征相同的用户，比如跟你同一个年龄段、同一个性别、同一个地区等相似用户的兴趣给你进行推荐，可以作为一个推荐的补充，以实现比较好的推荐效果     基于召回策略，缩小推荐内容库，减少计算推荐成本  如果每一次的推荐都依赖这个最大的模型，成本确实太高，所以需要简化 召回  对符合条件的结果进行排序，以决定给你推荐文章的顺序   推荐算法是否有效取决于召回率  比如，所有可供推荐的文章库里共有40篇文章与你的用户画像相关，实际通过推荐算法推荐给你了20篇，但实际上有10篇是你真正喜欢的文章，则召回率就是10/40=0." />
+<meta name="keywords" content=", advertising product manager, recommendation algorithm, placement optimization strategy, programmatic advertising, accurate advertising" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://www.marshalgao.com/recommendation-algorithm-and-placement-optimization-strategy/" />
+
+
+    <title>
+        
+            Recommendation Algorithm and Placement Optimization Strategy :: This is Marshal 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://www.marshalgao.com/main.bdf16375e88c9de5121e200285a015c4d181bcc9641cf97e05c5e46866f50161.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.marshalgao.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.marshalgao.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.marshalgao.com/favicon-16x16.png">
+    <link rel="manifest" href="https://www.marshalgao.com/site.webmanifest">
+    <link rel="mask-icon" href="https://www.marshalgao.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://www.marshalgao.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="Recommendation Algorithm and Placement Optimization Strategy">
+<meta itemprop="description" content="广告推荐算法（以今日头条为例）
+ 三个纬度变量输入  内容特征  为文章、图片、视频等内容进行画像，提取关键字、tag标签等实现语义识别，为以后推荐给用户做准备   用户特征  根据用户行为进行用户画像勾勒，多角度且具体   环境特征  比如获取你当前所在位置是否在旅游区，这个可以通过获取你实时位置来实现，然后与你之前经常出现的所在地进行对比等方式确认当前状态，是在家还是在旅游     内容干预  可以量化的指标可以体现一些具体信息，但是完全靠这个并不全面，比如刷评论、转发等情况，可能就会迷惑后台计算机的分析，纯粹靠这些数据进行推荐是有问题的  比如当前社会热点，虽然你的文章很热，但是热点已过，也不会因为文章的点击率大而继续给你推送   需要人工对这些数据内容进行维护设置，以完善推荐机制   因地制宜与算法实验平台  因地制宜  不同推荐场景需要不同的模型架构，比如小视频，是短时投入，客户会很少计较时间成本，所以关键的推荐机制可能并不是你的用户画像特征，而是根据视频的点击率进行推荐，点击率越大的视频肯定越容易吸引用户的兴趣 文章需要投入时间成本较高，精准投送要求会比较高，所以各类内容推荐算法会根据不同的特点进行不一样的推荐机制，需要不断尝试优化   算法实验平台  比如第一种算法投入测试，推送10000条信息，实际点击有效率是50%，相当于一条测试数据 后面再对其他多种算法测试，最终选取点击率最高的算法进行应用     四类特征相互作用  相关性特征  用户画像与内容画像的匹配   环境特征 热度特征  当用户第一次注册登录头条（冷启动阶段），没有用户画像 根据当前社会热点呀、文章阅读量高低排名等一些能代表普遍群体感受的指标进行推送选择   协同特征  通过你的行为、画像、环境等各类指标进行模型分析后，适合推荐给你的文章太少（算法越推越窄） 可以寻找跟你特征相同的用户，比如跟你同一个年龄段、同一个性别、同一个地区等相似用户的兴趣给你进行推荐，可以作为一个推荐的补充，以实现比较好的推荐效果     基于召回策略，缩小推荐内容库，减少计算推荐成本  如果每一次的推荐都依赖这个最大的模型，成本确实太高，所以需要简化 召回  对符合条件的结果进行排序，以决定给你推荐文章的顺序   推荐算法是否有效取决于召回率  比如，所有可供推荐的文章库里共有40篇文章与你的用户画像相关，实际通过推荐算法推荐给你了20篇，但实际上有10篇是你真正喜欢的文章，则召回率就是10/40=0.">
+<meta itemprop="datePublished" content="2020-12-02T14:40:52+08:00" />
+<meta itemprop="dateModified" content="2020-12-02T14:40:52+08:00" />
+<meta itemprop="wordCount" content="143">
+<meta itemprop="image" content="https://www.marshalgao.com/"/>
+
+
+
+<meta itemprop="keywords" content="advertising product manager,recommendation algorithm,placement optimization strategy,programmatic advertising,accurate advertising," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.marshalgao.com/"/>
+
+<meta name="twitter:title" content="Recommendation Algorithm and Placement Optimization Strategy"/>
+<meta name="twitter:description" content="广告推荐算法（以今日头条为例）
+ 三个纬度变量输入  内容特征  为文章、图片、视频等内容进行画像，提取关键字、tag标签等实现语义识别，为以后推荐给用户做准备   用户特征  根据用户行为进行用户画像勾勒，多角度且具体   环境特征  比如获取你当前所在位置是否在旅游区，这个可以通过获取你实时位置来实现，然后与你之前经常出现的所在地进行对比等方式确认当前状态，是在家还是在旅游     内容干预  可以量化的指标可以体现一些具体信息，但是完全靠这个并不全面，比如刷评论、转发等情况，可能就会迷惑后台计算机的分析，纯粹靠这些数据进行推荐是有问题的  比如当前社会热点，虽然你的文章很热，但是热点已过，也不会因为文章的点击率大而继续给你推送   需要人工对这些数据内容进行维护设置，以完善推荐机制   因地制宜与算法实验平台  因地制宜  不同推荐场景需要不同的模型架构，比如小视频，是短时投入，客户会很少计较时间成本，所以关键的推荐机制可能并不是你的用户画像特征，而是根据视频的点击率进行推荐，点击率越大的视频肯定越容易吸引用户的兴趣 文章需要投入时间成本较高，精准投送要求会比较高，所以各类内容推荐算法会根据不同的特点进行不一样的推荐机制，需要不断尝试优化   算法实验平台  比如第一种算法投入测试，推送10000条信息，实际点击有效率是50%，相当于一条测试数据 后面再对其他多种算法测试，最终选取点击率最高的算法进行应用     四类特征相互作用  相关性特征  用户画像与内容画像的匹配   环境特征 热度特征  当用户第一次注册登录头条（冷启动阶段），没有用户画像 根据当前社会热点呀、文章阅读量高低排名等一些能代表普遍群体感受的指标进行推送选择   协同特征  通过你的行为、画像、环境等各类指标进行模型分析后，适合推荐给你的文章太少（算法越推越窄） 可以寻找跟你特征相同的用户，比如跟你同一个年龄段、同一个性别、同一个地区等相似用户的兴趣给你进行推荐，可以作为一个推荐的补充，以实现比较好的推荐效果     基于召回策略，缩小推荐内容库，减少计算推荐成本  如果每一次的推荐都依赖这个最大的模型，成本确实太高，所以需要简化 召回  对符合条件的结果进行排序，以决定给你推荐文章的顺序   推荐算法是否有效取决于召回率  比如，所有可供推荐的文章库里共有40篇文章与你的用户画像相关，实际通过推荐算法推荐给你了20篇，但实际上有10篇是你真正喜欢的文章，则召回率就是10/40=0."/>
+
+
+
+    <meta property="og:title" content="Recommendation Algorithm and Placement Optimization Strategy" />
+<meta property="og:description" content="广告推荐算法（以今日头条为例）
+ 三个纬度变量输入  内容特征  为文章、图片、视频等内容进行画像，提取关键字、tag标签等实现语义识别，为以后推荐给用户做准备   用户特征  根据用户行为进行用户画像勾勒，多角度且具体   环境特征  比如获取你当前所在位置是否在旅游区，这个可以通过获取你实时位置来实现，然后与你之前经常出现的所在地进行对比等方式确认当前状态，是在家还是在旅游     内容干预  可以量化的指标可以体现一些具体信息，但是完全靠这个并不全面，比如刷评论、转发等情况，可能就会迷惑后台计算机的分析，纯粹靠这些数据进行推荐是有问题的  比如当前社会热点，虽然你的文章很热，但是热点已过，也不会因为文章的点击率大而继续给你推送   需要人工对这些数据内容进行维护设置，以完善推荐机制   因地制宜与算法实验平台  因地制宜  不同推荐场景需要不同的模型架构，比如小视频，是短时投入，客户会很少计较时间成本，所以关键的推荐机制可能并不是你的用户画像特征，而是根据视频的点击率进行推荐，点击率越大的视频肯定越容易吸引用户的兴趣 文章需要投入时间成本较高，精准投送要求会比较高，所以各类内容推荐算法会根据不同的特点进行不一样的推荐机制，需要不断尝试优化   算法实验平台  比如第一种算法投入测试，推送10000条信息，实际点击有效率是50%，相当于一条测试数据 后面再对其他多种算法测试，最终选取点击率最高的算法进行应用     四类特征相互作用  相关性特征  用户画像与内容画像的匹配   环境特征 热度特征  当用户第一次注册登录头条（冷启动阶段），没有用户画像 根据当前社会热点呀、文章阅读量高低排名等一些能代表普遍群体感受的指标进行推送选择   协同特征  通过你的行为、画像、环境等各类指标进行模型分析后，适合推荐给你的文章太少（算法越推越窄） 可以寻找跟你特征相同的用户，比如跟你同一个年龄段、同一个性别、同一个地区等相似用户的兴趣给你进行推荐，可以作为一个推荐的补充，以实现比较好的推荐效果     基于召回策略，缩小推荐内容库，减少计算推荐成本  如果每一次的推荐都依赖这个最大的模型，成本确实太高，所以需要简化 召回  对符合条件的结果进行排序，以决定给你推荐文章的顺序   推荐算法是否有效取决于召回率  比如，所有可供推荐的文章库里共有40篇文章与你的用户画像相关，实际通过推荐算法推荐给你了20篇，但实际上有10篇是你真正喜欢的文章，则召回率就是10/40=0." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.marshalgao.com/recommendation-algorithm-and-placement-optimization-strategy/" />
+<meta property="og:image" content="https://www.marshalgao.com/"/>
+<meta property="article:published_time" content="2020-12-02T14:40:52+08:00" />
+<meta property="article:modified_time" content="2020-12-02T14:40:52+08:00" />
+
+
+
+
+    <meta property="article:section" content="Product Manager" />
+
+
+
+    <meta property="article:published_time" content="2020-12-02 14:40:52 &#43;0800 HKT" />
+
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://www.marshalgao.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://www.marshalgao.com/categories/hku">HKU</a></li><li><a href="https://www.marshalgao.com/categories/technology">TECH</a></li><li><a href="https://www.marshalgao.com/categories/product-manager">PM</a></li><li><a href="https://www.marshalgao.com/categories/life">LIFE</a></li><li><a href="https://www.marshalgao.com/about/">ABOUT</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        One minute
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://www.marshalgao.com/recommendation-algorithm-and-placement-optimization-strategy/">Recommendation Algorithm and Placement Optimization Strategy</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <p><strong>广告推荐算法（以今日头条为例）</strong></p>
+<ul>
+<li>三个纬度变量输入
+<ul>
+<li>内容特征
+<ul>
+<li>为文章、图片、视频等内容进行画像，提取关键字、tag标签等实现语义识别，为以后推荐给用户做准备</li>
+</ul>
+</li>
+<li>用户特征
+<ul>
+<li>根据用户行为进行用户画像勾勒，多角度且具体</li>
+</ul>
+</li>
+<li>环境特征
+<ul>
+<li>比如获取你当前所在位置是否在旅游区，这个可以通过获取你实时位置来实现，然后与你之前经常出现的所在地进行对比等方式确认当前状态，是在家还是在旅游</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>内容干预
+<ul>
+<li>可以量化的指标可以体现一些具体信息，但是完全靠这个并不全面，比如刷评论、转发等情况，可能就会迷惑后台计算机的分析，纯粹靠这些数据进行推荐是有问题的
+<ul>
+<li>比如当前社会热点，虽然你的文章很热，但是热点已过，也不会因为文章的点击率大而继续给你推送</li>
+</ul>
+</li>
+<li>需要人工对这些数据内容进行维护设置，以完善推荐机制</li>
+</ul>
+</li>
+<li>因地制宜与算法实验平台
+<ul>
+<li>因地制宜
+<ul>
+<li>不同推荐场景需要不同的模型架构，比如小视频，是短时投入，客户会很少计较时间成本，所以关键的推荐机制可能并不是你的用户画像特征，而是根据视频的点击率进行推荐，点击率越大的视频肯定越容易吸引用户的兴趣</li>
+<li>文章需要投入时间成本较高，精准投送要求会比较高，所以各类内容推荐算法会根据不同的特点进行不一样的推荐机制，需要不断尝试优化</li>
+</ul>
+</li>
+<li>算法实验平台
+<ul>
+<li>比如第一种算法投入测试，推送10000条信息，实际点击有效率是50%，相当于一条测试数据</li>
+<li>后面再对其他多种算法测试，最终选取点击率最高的算法进行应用</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>四类特征相互作用
+<ul>
+<li>相关性特征
+<ul>
+<li>用户画像与内容画像的匹配</li>
+</ul>
+</li>
+<li>环境特征</li>
+<li>热度特征
+<ul>
+<li>当用户第一次注册登录头条（冷启动阶段），没有用户画像</li>
+<li>根据当前社会热点呀、文章阅读量高低排名等一些能代表普遍群体感受的指标进行推送选择</li>
+</ul>
+</li>
+<li>协同特征
+<ul>
+<li>通过你的行为、画像、环境等各类指标进行模型分析后，适合推荐给你的文章太少（算法越推越窄）</li>
+<li>可以寻找跟你特征相同的用户，比如跟你同一个年龄段、同一个性别、同一个地区等相似用户的兴趣给你进行推荐，可以作为一个推荐的补充，以实现比较好的推荐效果</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>基于召回策略，缩小推荐内容库，减少计算推荐成本
+<ul>
+<li>如果每一次的推荐都依赖这个最大的模型，成本确实太高，所以需要简化</li>
+<li>召回
+<ul>
+<li>对符合条件的结果进行排序，以决定给你推荐文章的顺序</li>
+</ul>
+</li>
+<li>推荐算法是否有效取决于召回率
+<ul>
+<li>比如，所有可供推荐的文章库里共有40篇文章与你的用户画像相关，实际通过推荐算法推荐给你了20篇，但实际上有10篇是你真正喜欢的文章，则召回率就是10/40=0.25，精度是10/20=0.5</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>文本特征
+<ul>
+<li>避免推荐文章重复，借助文本特征可以筛选哪些文章说的是一个事儿</li>
+<li>没有文本特征，推荐引擎无法工作</li>
+<li>文本特征颗粒度越细，冷启动能力越强
+<ul>
+<li>头条用sina微博账号、微信账号登录时的授权，分析你曾经关注的微博账号、微信公账号信息等，作为冷启动时的用户画像数据</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>隐式语义特征
+<ul>
+<li>反应一个公司的自然语言处理（NLP）能力</li>
+<li>学习大量文章，实现语义关联
+<ul>
+<li>比如，apple和苹果，电脑和计算机</li>
+<li>当搜索apple时，apple和苹果的文章都会被推荐</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>用户自然标签之外的考量
+<ul>
+<li>过滤噪声
+<ul>
+<li>过滤停留时间短的点击，打击标题党</li>
+</ul>
+</li>
+<li>惩罚热点
+<ul>
+<li>用户在热门文章上的动作做降权处理，不能代表用户画像</li>
+</ul>
+</li>
+<li>时间衰减
+<ul>
+<li>一年前喜欢看的文章特征，相对于前几天喜欢的文章特征，以前几天的特征为准作为推送依据</li>
+</ul>
+</li>
+<li>惩罚展现
+<ul>
+<li>文章推荐给100个人，没人看，文章特征权重就会降低</li>
+<li>后续可能重新进行文章画像，也可能打入冷宫</li>
+</ul>
+</li>
+<li>全局背景
+<ul>
+<li>文章被个别人点赞、转发、评论，但大部分人没看，依然不会被大批量推荐</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>流式计算框架
+<ul>
+<li>批量处理
+<ul>
+<li>一般大数据处理工作，比如这里面说的批量计算用户标签，会选择业务量小的时间点进行批量处理，比如在凌晨，这样可以减少数据处理给业务带来的压力，统一更新用户的标签，但这里存在的一个问题便是无法及时更新用户的标签</li>
+</ul>
+</li>
+<li>流式框架
+<ul>
+<li>基本做到实时数据处理，基本在用户查看文章动作10分钟后就能对你的标签进行更新，提高用户体验</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>综合评估
+<ul>
+<li>不能单单看点击率、留存、收入、互动等单一因素</li>
+<li>需要对多个因素，结合其有效期限进行分析
+<ul>
+<li>比如点击率有效期是比较短的，一篇文章在发布第一天点击率高则系统会疯狂推送，但是第二天可能点击率仍然比较高，但是跟一些热点性的因素相比，或者跟其他人写的新文章这个新鲜因素相比，这个点击率有效性就比较差了，可能就不会再次大批量推送</li>
+</ul>
+</li>
+<li>具体指标的权重应该怎么设置比较好则需要通过不同的实验来判断</li>
+</ul>
+</li>
+<li>A/B Test
+<ul>
+<li>如果算法在概要阶段就是最好的，就没有测试的概念了</li>
+<li>由于算法优劣的不确定性，只有测试才能暴露出来</li>
+<li>一个强大的实验平台，可以实现每天数百个实验同时在线，高效管理和分配实验流量，降低实验分析成本，提高算法迭代效率</li>
+</ul>
+</li>
+<li>内容安全机制
+<ul>
+<li>人工审核</li>
+<li>技术识别
+<ul>
+<li>风险识别技术</li>
+<li>鉴黄模型</li>
+<li>低俗模型</li>
+<li>谩骂模型</li>
+<li>泛低质内容识别技术</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>优化广告投放策略</strong></p>
+<ul>
+<li>程序化广告（俗称精准投放）一般分为三个阶段
+<ul>
+<li>前期测试阶段
+<ul>
+<li>检查广告投放准备阶段的各项工作是否已调通</li>
+<li>验证广告提案阶段制定的媒体策略是否合理</li>
+<li>媒体投放效果是否达到预期</li>
+<li>在测试数据的基础上，对不同渠道、媒体、广告位等划分等级，以便更好分配预算</li>
+</ul>
+</li>
+<li>策略优化阶段
+<ul>
+<li>在前期测试阶段的优化调整基础上，进一步对媒体进行优化，并结合广告提案阶段制定的人群策略和创意策略，不断调优</li>
+<li>快速筛选出最优组合（媒体+人群+创意），使广告效果达到平稳变化趋势</li>
+</ul>
+</li>
+<li>稳定放量阶段
+<ul>
+<li>达到平稳效果后，按照投放预算进行加量投放</li>
+<li>在RTB（Real Time Bidding）竞价模式下，流量的量级和价格根据市场竞争的激烈程度会有所不同，执行人员要能够及时发现问题并作出应对策略</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>优化方法论
+<ul>
+<li>曝光
+<ul>
+<li>媒体优化
+<ul>
+<li>根据媒体人群匹配度、媒体重合度和媒体饱和度做最优媒体组合</li>
+<li>媒体匹配度是指媒体中能覆盖到的目标人群的比率</li>
+<li>媒体重合度是指多个媒体之间的目标人群重合的比率</li>
+<li>媒体饱和度是指该媒体中已投放覆盖到的目标人群占该媒体的总目标人群的比率</li>
+</ul>
+</li>
+<li>创意优化
+<ul>
+<li>广告匹配度在一定程度上决定着广告投放效果</li>
+<li>广告创意贴合广告诉求</li>
+</ul>
+</li>
+<li>频次调整
+<ul>
+<li>根据不同曝光频次的人群数据找到最优值，设置合理的频次控制</li>
+</ul>
+</li>
+<li>人群调整
+<ul>
+<li>根据目标受众的投放量级及转化效果，相应增加或减少人群标签的投放</li>
+</ul>
+</li>
+<li>可见曝光优化
+<ul>
+<li>根据广告可视度的投放数据进行优化，分析不同广告位、地区、时间、浏览器等维度的可视度数据，过滤可见度较低的广告位，将广告位与活动各项设置条件进行调优，形成最佳组合</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>点击
+<ul>
+<li>点击率优化
+<ul>
+<li>细分关联不同定向维度的点击率情况，找出异常点，分析原因，并进行调整优化</li>
+</ul>
+</li>
+<li>点击到达率优化
+<ul>
+<li>点击到达率的高低取决于网络情况和落地页加载速度</li>
+<li>网络异常时会导致用户点击广告后无法正常跳转</li>
+<li>Landing Page 页面加载时间太长，有可能导致用户没耐心等待加载完毕就关闭页面，甚至可能统计代码还未被触发，用户就已关闭页面</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>转化
+<ul>
+<li>页面内容优化
+<ul>
+<li>页面内容的编排设计决定着用户的转化意愿</li>
+<li>内容要与创意匹配，这是最基本的要求</li>
+</ul>
+</li>
+<li>转化体验优化
+<ul>
+<li>注册步骤的繁简也很重要</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>算法优化原理
+<ul>
+<li>活动设置
+<ul>
+<li>广告活动中设置的预算、频次、投放速度及定向条件等，这是系统出价决策的首要判断条件</li>
+</ul>
+</li>
+<li>特征分析
+<ul>
+<li>用户维度
+<ul>
+<li>主要依据用户行为及次数/金额，以及性别、年龄等基础属性</li>
+</ul>
+</li>
+<li>广告位维度
+<ul>
+<li>主要依据流量的环境，包括页面可视度、页面广告位数量、屏次等</li>
+</ul>
+</li>
+<li>创意维度
+<ul>
+<li>主要依据内容风格、元件布局、落地页、行业类别等</li>
+</ul>
+</li>
+<li>地域维度
+<ul>
+<li>主要依据当前用户位置、商圈等</li>
+</ul>
+</li>
+<li>时间维度
+<ul>
+<li>主要依据具体时间、是否节假日等</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>历史数据和实时数据
+<ul>
+<li>特征分析必须基于历史数据和实时数据进行不断学习、优化</li>
+<li>数据除了单一维度的用户、创意、广告位外，还需要对它们进行交叉分析，比如某个创意素材效果好，可能仅限于吸引了某一类特征用户</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/tags/advertising-product-manager/">advertising product manager</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/recommendation-algorithm/">recommendation algorithm</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/placement-optimization-strategy/">placement optimization strategy</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/programmatic-advertising/">programmatic advertising</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/accurate-advertising/">accurate advertising</a></span>
+        
+    </p>
+
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/categories/product-manager/">Product Manager</a></span>
+        
+    </p>
+
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        143 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2020-12-02 14:40
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+
+          
+            <span class="button next">
+              <a href="https://www.marshalgao.com/icom6045-internet-layer-security/">
+                <span class="button__text">ICOM6045 Internet Layer Security</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://www.marshalgao.com/">Marshal</a></span>
+            
+            
+                <span><a href="https://www.hku.hk" target="_blank" rel="noopener">The University of Hong Kong</a></span>
+            <span><a href="https://www.marshalgao.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Team Rocket: <a href="https://www.pseudoyu.com/" target="_blank" rel="noopener">Pseudoyu</a></span>
+            <span><a href="https://www.m1sty.com/" target="_blank" rel="noopener">Misty</a></span>
+          </div>
+    </div>
+</footer>
+
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://www.marshalgao.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>

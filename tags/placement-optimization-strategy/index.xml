@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>placement optimization strategy on This is Marshal</title>
+    <link>https://www.marshalgao.com/tags/placement-optimization-strategy/</link>
+    <description>Recent content in placement optimization strategy on This is Marshal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 02 Dec 2020 14:40:52 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/placement-optimization-strategy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recommendation Algorithm and Placement Optimization Strategy</title>
+      <link>https://www.marshalgao.com/recommendation-algorithm-and-placement-optimization-strategy/</link>
+      <pubDate>Wed, 02 Dec 2020 14:40:52 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/recommendation-algorithm-and-placement-optimization-strategy/</guid>
+      <description>广告推荐算法（以今日头条为例）
+ 三个纬度变量输入  内容特征  为文章、图片、视频等内容进行画像，提取关键字、tag标签等实现语义识别，为以后推荐给用户做准备   用户特征  根据用户行为进行用户画像勾勒，多角度且具体   环境特征  比如获取你当前所在位置是否在旅游区，这个可以通过获取你实时位置来实现，然后与你之前经常出现的所在地进行对比等方式确认当前状态，是在家还是在旅游     内容干预  可以量化的指标可以体现一些具体信息，但是完全靠这个并不全面，比如刷评论、转发等情况，可能就会迷惑后台计算机的分析，纯粹靠这些数据进行推荐是有问题的  比如当前社会热点，虽然你的文章很热，但是热点已过，也不会因为文章的点击率大而继续给你推送   需要人工对这些数据内容进行维护设置，以完善推荐机制   因地制宜与算法实验平台  因地制宜  不同推荐场景需要不同的模型架构，比如小视频，是短时投入，客户会很少计较时间成本，所以关键的推荐机制可能并不是你的用户画像特征，而是根据视频的点击率进行推荐，点击率越大的视频肯定越容易吸引用户的兴趣 文章需要投入时间成本较高，精准投送要求会比较高，所以各类内容推荐算法会根据不同的特点进行不一样的推荐机制，需要不断尝试优化   算法实验平台  比如第一种算法投入测试，推送10000条信息，实际点击有效率是50%，相当于一条测试数据 后面再对其他多种算法测试，最终选取点击率最高的算法进行应用     四类特征相互作用  相关性特征  用户画像与内容画像的匹配   环境特征 热度特征  当用户第一次注册登录头条（冷启动阶段），没有用户画像 根据当前社会热点呀、文章阅读量高低排名等一些能代表普遍群体感受的指标进行推送选择   协同特征  通过你的行为、画像、环境等各类指标进行模型分析后，适合推荐给你的文章太少（算法越推越窄） 可以寻找跟你特征相同的用户，比如跟你同一个年龄段、同一个性别、同一个地区等相似用户的兴趣给你进行推荐，可以作为一个推荐的补充，以实现比较好的推荐效果     基于召回策略，缩小推荐内容库，减少计算推荐成本  如果每一次的推荐都依赖这个最大的模型，成本确实太高，所以需要简化 召回  对符合条件的结果进行排序，以决定给你推荐文章的顺序   推荐算法是否有效取决于召回率  比如，所有可供推荐的文章库里共有40篇文章与你的用户画像相关，实际通过推荐算法推荐给你了20篇，但实际上有10篇是你真正喜欢的文章，则召回率就是10/40=0.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -7,7 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 01 Dec 2020 16:06:01 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Dec 2020 14:40:52 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recommendation Algorithm and Placement Optimization Strategy</title>
+      <link>https://www.marshalgao.com/recommendation-algorithm-and-placement-optimization-strategy/</link>
+      <pubDate>Wed, 02 Dec 2020 14:40:52 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/recommendation-algorithm-and-placement-optimization-strategy/</guid>
+      <description>广告推荐算法（以今日头条为例）
+ 三个纬度变量输入  内容特征  为文章、图片、视频等内容进行画像，提取关键字、tag标签等实现语义识别，为以后推荐给用户做准备   用户特征  根据用户行为进行用户画像勾勒，多角度且具体   环境特征  比如获取你当前所在位置是否在旅游区，这个可以通过获取你实时位置来实现，然后与你之前经常出现的所在地进行对比等方式确认当前状态，是在家还是在旅游     内容干预  可以量化的指标可以体现一些具体信息，但是完全靠这个并不全面，比如刷评论、转发等情况，可能就会迷惑后台计算机的分析，纯粹靠这些数据进行推荐是有问题的  比如当前社会热点，虽然你的文章很热，但是热点已过，也不会因为文章的点击率大而继续给你推送   需要人工对这些数据内容进行维护设置，以完善推荐机制   因地制宜与算法实验平台  因地制宜  不同推荐场景需要不同的模型架构，比如小视频，是短时投入，客户会很少计较时间成本，所以关键的推荐机制可能并不是你的用户画像特征，而是根据视频的点击率进行推荐，点击率越大的视频肯定越容易吸引用户的兴趣 文章需要投入时间成本较高，精准投送要求会比较高，所以各类内容推荐算法会根据不同的特点进行不一样的推荐机制，需要不断尝试优化   算法实验平台  比如第一种算法投入测试，推送10000条信息，实际点击有效率是50%，相当于一条测试数据 后面再对其他多种算法测试，最终选取点击率最高的算法进行应用     四类特征相互作用  相关性特征  用户画像与内容画像的匹配   环境特征 热度特征  当用户第一次注册登录头条（冷启动阶段），没有用户画像 根据当前社会热点呀、文章阅读量高低排名等一些能代表普遍群体感受的指标进行推送选择   协同特征  通过你的行为、画像、环境等各类指标进行模型分析后，适合推荐给你的文章太少（算法越推越窄） 可以寻找跟你特征相同的用户，比如跟你同一个年龄段、同一个性别、同一个地区等相似用户的兴趣给你进行推荐，可以作为一个推荐的补充，以实现比较好的推荐效果     基于召回策略，缩小推荐内容库，减少计算推荐成本  如果每一次的推荐都依赖这个最大的模型，成本确实太高，所以需要简化 召回  对符合条件的结果进行排序，以决定给你推荐文章的顺序   推荐算法是否有效取决于召回率  比如，所有可供推荐的文章库里共有40篇文章与你的用户画像相关，实际通过推荐算法推荐给你了20篇，但实际上有10篇是你真正喜欢的文章，则召回率就是10/40=0.</description>
+    </item>
+    
+    <item>
+      <title>ICOM6045 Internet Layer Security</title>
+      <link>https://www.marshalgao.com/icom6045-internet-layer-security/</link>
+      <pubDate>Wed, 02 Dec 2020 09:45:42 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/icom6045-internet-layer-security/</guid>
+      <description>Overview Firewall
+ definition  a firewall is a combination of hardware and software that isolates an organization’s internal network from the Internet, allowing some packets to pass and blocking others   functions  firewall can also provide segmentation between internal resources in the simplest form, firewall control access to, from and between networks within the organization and the internet   scenario  the home router would have the functions of firewall, but it is only a little    DMZ (Demilitarized Zone)</description>
+    </item>
+    
     <item>
       <title>Brand Advertising vs Performance Advertising</title>
       <link>https://www.marshalgao.com/brand-advertising-vs-performance-advertising/</link>
@@ -127,29 +147,6 @@
 巨量引擎的三阶跳
  内核搭建  内核搭建阶段指的是巨量引擎商业产品体系最初的3、4年时间 在这个阶段，字节跳动从0开始，基于字节跳动的推荐算法内核，完整地搭建出了一套贯穿从客户到用户的商业信息分发全过程，以及客户在整个推广周期内全交易流程的商业产品体系 它包含了整个巨量引擎商业产品围绕用户体验、交互效率、转化能力，再到人群识别、排序推荐的各个业务流程，还在其中建设了客户效率、素材创意、线索流转、效果度量等数百个模块   流量发展  字节跳动从今日头条再到抖音，成功复刻了自己快速增长的方法论，收割了几个亿级用户量的产品 牢牢把持住了用户的注意力，也成功抢占住了优势流量高地 至此，巨量引擎有了产品基础和流量实力   产品跃迁  营销语境下的内容生态  内容即营销 品牌要想要做好营销，实际上是需要探索如何去做好内容与营销的深度整合 对平台而言，也需要从商业内容的生产和分发两条线同时出发，共同完成营销目的  内容生产  做达人内容的星图平台负责承接专业的营销内容生产 全民任务这样的平台来聚合更分散的UGC内容生产——实现了生产的梳理整合   营销内容分发  字节跳动整个产品体系提供了自然流量、广告，以及Dou+等不同的渠道，给品牌不同性质、类型的内容更多的分发渠道选择   营销目的  基于内容的直接转化  无论是通过购物车直接形成购买交易的转化，还是通过转化组件实现下载跳转，又或是通过POI等为用户实现最终的到店，都是在服务商家的直接转化目的   商家提升品牌认知  譬如说通过品牌号来做内容聚合，通过品牌主页做互动，通过挑战赛来引导有品牌标识、品牌信息的UGC生产及传播，核心都是为了抢占用户心智         商业产品打造，从创意到分发，再到价值评估的工具手段   广告创新（产品创新）
  重点聚焦探索体验与价值的统一  巨量引擎目前已打造出Topview等好看的产品、试玩广告等好玩的产品、本地广告等好用的产品，完美的兼顾了用户体验与商业价值 用户体验带来用户价值，用户价值带来商业价值，用户对广告不那么反感了，自然更愿意接受企业的信息   服务创意生产者  巨量创意——巨量引擎旗下的视频创意生产全链条产品。它是巨量引擎官方指定的营销创意交流服务平台，通过展示、剖析大量的优秀广告创意来帮助字节系代理、达人、制作公司等快速提升广告制作技巧 帮助制作公司解决找创意、做创意、找作者等几重问题，整体上从创意和生产上优化创意内容的供给      创意生产及分发（获取流量）</description>
-    </item>
-    
-    <item>
-      <title>ICOM6045 Public Key Infrastructure</title>
-      <link>https://www.marshalgao.com/icom6045-public-key-infrastructure/</link>
-      <pubDate>Mon, 23 Nov 2020 14:10:48 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/icom6045-public-key-infrastructure/</guid>
-      <description>PKI Overview
- PKC &amp;amp; PKI  PKC is about math, but PKI is about binding a pair of key to one person   definition  PKI is a set of hardware, software, people, policies and procedures needed to create, manage, distribute, use, store, and revoke digital certificates PKI is an arrangement that binds public keys with respective user identities by means of a certificate authority (CA)  the binding is established through the registration and issuance process the PKI role that assures this binding is called the registration authority (RA): it ensures that the public key is bound to the individual to which it is assigned in a way that ensures non-repudiation   law for digital signature, e.</description>
-    </item>
-    
-    <item>
-      <title>Search Ads Monetization</title>
-      <link>https://www.marshalgao.com/search-ads-monetization/</link>
-      <pubDate>Sat, 21 Nov 2020 17:19:58 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/search-ads-monetization/</guid>
-      <description>什么是搜索广告
-简单来书，当用户在搜索引擎上输入关键字进行查询，看到的广告。现如今，最为常见的就是置顶广告，比如Google，百度。可以将置顶广告理解为选女团的过程，经过层层筛选，最终选出合适的广告，按照顺序展示给用户。那么Google是如何优化自己的推荐算法的呢？根据Amy Shuen的一篇文章，Google利用跟踪用户上网记录（cookie）以及点击反馈来不断优化自己的推荐算法。
-价格置顶的决策过程
- 查询理解  查询清洗，忽略停止词  自动忽略或过滤掉一些在查询过程中没有意义的虚字，以此节省存储空间和提高搜索效率 分词，比如将【产品经理】分成【产品】和【经理】去进行查询 查询扩展（为了尽可能多的触达用户，给广告主自动拓展查询词，扩大广告主的采买流量）  精确匹配  【用户查询词】与【广告主投放关键词】完全匹配 例如，【用户查询词】为【产品】，【广告主投放关键词】必须是【产品】，才会触发广告  短语匹配  【用户查询词】完全包含【广告主投放关键词】 例如，【用户查询词】为【高级产品经理】，【广告主投放关键词】必须是【产品经理】，触发广告  广泛匹配  【用户查询词】与【广告主投放关键词】高度相关 例如，【用户查询词】为【销售代表】，【广告主投放关键词】必须是【销售经理】，触发广告     检索广告  在广告库里找到所有匹配用户查询词的广告，包括所有符合/部分符合 可以利用倒排索引进行相关权重计算，但工业界并不这么做 工业界会针对这些查询，有哪些广告被点击，把这些信息全部提取出来，然后进行人工标注。每个标签就会对应一个相关分，标签贴好后，就有一部分训练数据了，这个时候就可以做监督学习，或者用更多的feature来做监督学习  广告初滤  广告相关度低的需要过滤 广告出价低的需要过滤  广告排序，选择TOPK广告  根据广告本身质量排序 根据广告主的出价排序 排序分=广告质量分\(\times\)广告出价  广告质量分=0.8\(\times\)点击率+0.25\(\times\)相关度得分（但各家公司算法不公开，是商业机密，所以这里只是简单的一种表达式）   广告收费  按照第二高价来收费  可以确保拍卖人拍出心理价格 因为如果按出价收费，那买方往往为了保障自己的利益，出价往往要略低于心理价格 使用第二高价时买方可能以心理价格或略高于心理价格出价  实际应用中，是给买方提供一个价格区间，最大化保障买方利益，节省买方频繁登录系统，进行改价的时间成本   展示广告
- 定义  指的是投放在第三方网站上的视觉广告 基于用户行为和人口统计等因素，以个人或群体为目标  优点适用场景对比  搜索广告  当顾客去谷歌或必应搜索“best running shoe for men over 40”时，顾客的意图可能是要研究或购买跑鞋 搜索广告“拉动”了顾客，顾客已经有意向要买跑鞋，这则广告只是简单地显示了这一意图 搜索广告可针对客户意向，这意味着搜索广告可能更适合作为广告基础，而不是促销或事件的方式 如果搜索广告匹配如“all shoes on sale”（所有打折鞋）那样的关键词，那就没什么意义了，因为这个宽泛的搜索可能与顾客的意图不匹配 策略  购买搜索广告，以作为更广泛基础的一部分 优先关注你的最高转化率的产品 使用单个关键词广告组，这样你的广告文案才能精确匹配顾客意图 为每个广告组创建一个优化的登陆页面  优化的登陆页面可能会给你的广告一个更高的质量分数，这意味着你可以用相对较低的价格获得更好的广告位 一个相关的登陆页也可提高转化率    展示广告  一个潜在的顾客正在阅读一篇关于四十多岁男性健康的文章 这篇文章页面包括一个推广跑步的展示广告，该广告可以帮他找到最舒适的跑鞋 读者关注的是这篇文章，但广告把他引导到了一个优化的登陆页面，目的是让他相信，跑步会改善他的健康状况，而一双特别的鞋子会使跑步更舒适 展示广告试图在最佳时机向合适的人展示正确的信息 展示广告可能总是被当成是一种干扰，但如果时机恰当且内容相关，它可能变成一种积极的干扰，可能激发顾客购买并取悦顾客 策略  再营销广告  顾客看了没买，给予二次推荐（相似产品也可） 同搜索广告一样，是基础性的，这意味着电商企业可能需要一直都运行着这个广告 再营销广告需要使用到一个能够跟踪站点访问者的广告网络  促销与优惠  一家全场都打折的跑鞋网店，可能会希望使用展示广告来推广他们的促销活动 或者，这家网店可能刚刚推出了新系列跑鞋，并希望向潜在客户推广 如何定位潜在客户  网站用户构成统计：向拥有购买倾向用户群的网站投放展示广告 网页主题：根据特定网页的主题投放展示广告 关键词：在一个给定的网页内，根据关键词投放展示广告 类似顾客：针对与你的顾客相似的用户投放展示广告      展示广告能推广特定优惠活动，但电商企业可能不会一直使用它 相反，这类广告在特定的时间内投放，可完成特定的目标  </description>
     </item>
     
   </channel>

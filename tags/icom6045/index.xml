@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 01 Dec 2020 11:19:35 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/icom6045/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Dec 2020 09:45:42 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/icom6045/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ICOM6045 Internet Layer Security</title>
+      <link>https://www.marshalgao.com/icom6045-internet-layer-security/</link>
+      <pubDate>Wed, 02 Dec 2020 09:45:42 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/icom6045-internet-layer-security/</guid>
+      <description>Overview Firewall
+ definition  a firewall is a combination of hardware and software that isolates an organization’s internal network from the Internet, allowing some packets to pass and blocking others   functions  firewall can also provide segmentation between internal resources in the simplest form, firewall control access to, from and between networks within the organization and the internet   scenario  the home router would have the functions of firewall, but it is only a little    DMZ (Demilitarized Zone)</description>
+    </item>
+    
     <item>
       <title>ICOM6045 Communication Network Security</title>
       <link>https://www.marshalgao.com/icom6045-communication-network-security/</link>
