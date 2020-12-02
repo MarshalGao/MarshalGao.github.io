@@ -47,7 +47,7 @@
  definition  a firewall is a combination of hardware and software that isolates an organization’s internal network from the Internet, allowing some packets to pass and blocking others   functions  firewall can also provide segmentation between internal resources in the simplest form, firewall control access to, from and between networks within the organization and the internet   scenario  the home router would have the functions of firewall, but it is only a little    DMZ (Demilitarized Zone)">
 <meta itemprop="datePublished" content="2020-12-02T09:45:42+08:00" />
 <meta itemprop="dateModified" content="2020-12-02T09:45:42+08:00" />
-<meta itemprop="wordCount" content="430">
+<meta itemprop="wordCount" content="916">
 <meta itemprop="image" content="https://www.marshalgao.com/"/>
 
 
@@ -145,7 +145,7 @@
           <circle cx="12" cy="12" r="10"></circle>
           <polyline points="12 6 12 12 16 14"></polyline>
         </svg>
-        3 minutes
+        5 minutes
 
         
       </p>
@@ -159,7 +159,8 @@
       
 
       <div class="post-content">
-        <h2 id="overview">Overview</h2>
+        <p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Internet%20Layer%20Security.png" alt=""></p>
+<h2 id="overview">Overview</h2>
 <p><strong>Firewall</strong></p>
 <ul>
 <li>definition
@@ -235,6 +236,7 @@
 <li>packet filtering – network layer
 <ul>
 <li>a multi-ported IP router that applies a set of rules to each incoming/outgoing IP packet and decides whether it is to be forwarded or not</li>
+<li>nowadays, almost home routers can do this</li>
 </ul>
 </li>
 <li>proxy gateway – also known as application layer gateway, proxy server
@@ -269,10 +271,134 @@
 </li>
 <li>example
 <img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120203.png" alt=""></li>
+<li>problem
+<ul>
+<li>IP fragmentation
+<ul>
+<li>a TCP segment or a UDP datagram is too big to fit into one packet
+<ul>
+<li>port numbers and TCP ACK flag can be obtained from the first fragment only</li>
+<li>impossible to filter except the first packet</li>
+<li>need to introduce states into packet filters</li>
+</ul>
+</li>
+<li>commercial firewalls
+<ul>
+<li>support packet filter per connection and service</li>
+<li>support actions other than “permit” and “deny”, such as user authentication and encryption, e.g. “perform FTP connection between any IP address and 123.14.6.23 if user authentication is successful”</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>only control access based on source and destination information, do not monitor state of communication and application information
+<ul>
+<li>e.g. unable to limit certain users to use some services such as telnet</li>
+</ul>
+</li>
+<li>managing filtering rules is cumbersome, leading to simple mistakes
+<ul>
+<li>such as giving access right to threatening packets</li>
+</ul>
+</li>
+<li>having a poorly configured firewall is worse than having no firewall at all because it gives you a false sense of security</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>filtering based on IP addresses
+<ul>
+<li>example
 <img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120205.png" alt=""></li>
+</ul>
+</li>
+<li>filtering based on IP addresses and port numbers
+<ul>
+<li>inbound and outbound connection
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120206.png" alt=""></li>
+<li>example
+<ul>
+<li>rule 3 and rule 4 are in pair, but rule 4 is not secure
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120207.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>filtering with ACK flag
+<ul>
+<li>example
+<ul>
+<li>rule 1 starts the connection</li>
+<li>rule 2 is a trust packet</li>
+<li>rule 4 should apply only to established connections that are initiated by an internal client (no trust packets)
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120208.png" alt=""></li>
+</ul>
+</li>
+<li>problem -&gt; FTP problem
+<ul>
+<li>FTP uses multiple ports
+<ul>
+<li>client (random port) initiates FTP connect to port 21 of the FTP server</li>
+<li>FTP data transfer on port 20, initiated by the FTP server to the client (another random port)
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120209.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Proxy gateway</strong></p>
+<ul>
+<li>TCP 3-way handshake
+<ul>
+<li>client to server: (SYN flag, SeqNumC)</li>
+<li>server to client: (SYN/ACK flag, AckNumS=SeqNumC+1, SeqNumS)</li>
+<li>client to server: (ACK flag, AckNumC=SeqNumS+1)</li>
+</ul>
+</li>
+<li>SYN flooding
+<ul>
+<li>send TCP connection requests faster than a system can process them</li>
+<li>exhaust states in the TCP/IP stack (only two handshakes, the third one may wait until timeout)</li>
+<li>cannot use packet filtering, because each request is compliant</li>
+</ul>
+</li>
+<li>mechanism
+<ul>
+<li>proxy gateway completes the 3-way handshake, if the process is finished, the client would be connected to the real server</li>
+<li>passive gateway (not widely used)
+<ul>
+<li>similar to gateway mechanism except it does not send the ACK immediately, but with a shorter timeout period</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>stateful packet filter (NAT)
+<ul>
+<li>a medium translate the public IP address to the private IP address (dynamic), achieving the gateway function</li>
+<li>binding through not common used port numbers</li>
+<li>problems
+<ul>
+<li>when port number cannot be changed, e.g. service supported by a server</li>
+<li>when an external server must distinguish between clients based on their IP addresses, e.g. peer-to-peer application</li>
+</ul>
+</li>
+<li>methods in handling incoming requests in NAT
+<ul>
+<li>application level gateways</li>
+<li>static port forwarding</li>
+<li>Universal Plug and Play (UPnP)</li>
+<li>Internet Gateway Device (IGD) protocol</li>
+<li>Traversal Using Relays around NAT (TURN)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Socket secure</strong></p>
+<ul>
+<li>sockets sits at layer 5, which can handle several request types, including HTTP, HTTPS, POP3, SMTP and FTP</li>
+<li>it can be used for email, web browsing, peer-to-peer sharing, file transfers and more</li>
 </ul>
 <h2 id="questions">Questions</h2>
 <p><strong>Q: Why some companies purchase firewall software rather than UTM?</strong></p>
@@ -311,7 +437,7 @@
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        430 Words
+        916 Words
       </p>
 
       <p>
