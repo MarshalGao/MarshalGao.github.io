@@ -6,8 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="Marshal ">
 <meta name="description" content="Host-Based Intrusion Detection Motivations and basis
- motivations  collection of information about intrusion techniques that can be used to strengthen the intrusion prevention facility   basis  the behavior of intruders differs from that of a legitimate user in a quantifiable way    Profiles of behavior of intruders and authorized users
- example  good or bad detection  confusion matrix  intrusion detection     Intruders and intrusions" />
+ motivations  collection of information about intrusion techniques that can be used to strengthen the intrusion prevention facility  basis  the behavior of intruders differs from that of a legitimate user in a quantifiable way   Profiles of behavior of intruders and authorized users
+ example  good or bad detection  confusion matrix   intrusion detection     Intruders and intrusions" />
 <meta name="keywords" content=", icom6045, fundamentals of e-commerce security, application layer security" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="#252627" />
@@ -45,11 +45,11 @@
 
 <meta itemprop="name" content="ICOM6045 Application Layer Security">
 <meta itemprop="description" content="Host-Based Intrusion Detection Motivations and basis
- motivations  collection of information about intrusion techniques that can be used to strengthen the intrusion prevention facility   basis  the behavior of intruders differs from that of a legitimate user in a quantifiable way    Profiles of behavior of intruders and authorized users
- example  good or bad detection  confusion matrix  intrusion detection     Intruders and intrusions">
+ motivations  collection of information about intrusion techniques that can be used to strengthen the intrusion prevention facility  basis  the behavior of intruders differs from that of a legitimate user in a quantifiable way   Profiles of behavior of intruders and authorized users
+ example  good or bad detection  confusion matrix   intrusion detection     Intruders and intrusions">
 <meta itemprop="datePublished" content="2020-12-03T10:19:57+08:00" />
 <meta itemprop="dateModified" content="2020-12-03T10:19:57+08:00" />
-<meta itemprop="wordCount" content="139">
+<meta itemprop="wordCount" content="549">
 <meta itemprop="image" content="https://www.marshalgao.com/"/>
 
 
@@ -61,15 +61,15 @@
 
 <meta name="twitter:title" content="ICOM6045 Application Layer Security"/>
 <meta name="twitter:description" content="Host-Based Intrusion Detection Motivations and basis
- motivations  collection of information about intrusion techniques that can be used to strengthen the intrusion prevention facility   basis  the behavior of intruders differs from that of a legitimate user in a quantifiable way    Profiles of behavior of intruders and authorized users
- example  good or bad detection  confusion matrix  intrusion detection     Intruders and intrusions"/>
+ motivations  collection of information about intrusion techniques that can be used to strengthen the intrusion prevention facility  basis  the behavior of intruders differs from that of a legitimate user in a quantifiable way   Profiles of behavior of intruders and authorized users
+ example  good or bad detection  confusion matrix   intrusion detection     Intruders and intrusions"/>
 
 
 
     <meta property="og:title" content="ICOM6045 Application Layer Security" />
 <meta property="og:description" content="Host-Based Intrusion Detection Motivations and basis
- motivations  collection of information about intrusion techniques that can be used to strengthen the intrusion prevention facility   basis  the behavior of intruders differs from that of a legitimate user in a quantifiable way    Profiles of behavior of intruders and authorized users
- example  good or bad detection  confusion matrix  intrusion detection     Intruders and intrusions" />
+ motivations  collection of information about intrusion techniques that can be used to strengthen the intrusion prevention facility  basis  the behavior of intruders differs from that of a legitimate user in a quantifiable way   Profiles of behavior of intruders and authorized users
+ example  good or bad detection  confusion matrix   intrusion detection     Intruders and intrusions" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.marshalgao.com/icom6045-application-layer-security/" />
 <meta property="og:image" content="https://www.marshalgao.com/"/>
@@ -92,6 +92,11 @@
 
 
 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css" integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.js" integrity="sha384-JiKN5O8x9Hhs/UE5cT5AAJqieYlOZbGT3CHws/y97o3ty4R7/O5poG9F3JoiOYw1" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
 
     </head>
 
@@ -149,7 +154,7 @@
           <circle cx="12" cy="12" r="10"></circle>
           <polyline points="12 6 12 12 16 14"></polyline>
         </svg>
-        One minute
+        3 minutes
 
         
       </p>
@@ -163,51 +168,223 @@
       
 
       <div class="post-content">
-        <h2 id="host-based-intrusion-detection">Host-Based Intrusion Detection</h2>
+        <h2 id="hostbased-intrusion-detection">Host-Based Intrusion Detection</h2>
+
 <p><strong>Motivations and basis</strong></p>
+
 <ul>
 <li>motivations
+
 <ul>
 <li>collection of information about intrusion techniques that can be used to strengthen the intrusion prevention facility</li>
-</ul>
-</li>
+</ul></li>
 <li>basis
+
 <ul>
 <li>the behavior of intruders differs from that of a legitimate user in a quantifiable way</li>
+</ul></li>
 </ul>
-</li>
-</ul>
+
 <p><strong>Profiles of behavior of intruders and authorized users</strong></p>
+
 <ul>
 <li>example
-<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120301.png" alt=""></li>
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120301.png" alt=""></figure></li>
 <li>good or bad detection
-<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120304.png" alt=""></li>
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120304.png" alt=""></figure></li>
 <li>confusion matrix
-<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120302.png" alt="">
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120302.png" alt=""></figure>
+
 <ul>
 <li>intrusion detection
-<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120305.png" alt="">
-<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120303.png" alt=""></li>
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120305.png" alt=""></figure>
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120303.png" alt=""></figure></li>
+</ul></li>
 </ul>
-</li>
-</ul>
+
 <p><strong>Intruders and intrusions</strong></p>
+
 <ul>
 <li>intruders
+
 <ul>
 <li>masquerader: an unauthorized principal who penetrates the OS’s access controls to gain a legitimate user’s permission</li>
 <li>misfeasor: a legitimate user who either access resources for which he is not authorized, or misuses access to resources that he is authorized to access</li>
 <li>clandestine user: an individual who seizes supervisory control of the OS and uses it to evade auditing</li>
-</ul>
-</li>
+</ul></li>
 <li>examples of intrusions:
+
 <ul>
 <li>attempts to copy password file regularly</li>
 <li>suspicious RPC requests periodically</li>
 <li>multiple attempts to connect to nonexistent “bait” machines</li>
+</ul></li>
 </ul>
-</li>
+
+<p><strong>Intrustion detection methods</strong></p>
+
+<ul>
+<li>audit records
+
+<ul>
+<li>typical audit record
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120306.png" alt=""></figure></li>
+</ul></li>
+<li>statistical intrusion detection
+
+<ul>
+<li>3 methods
+
+<ul>
+<li>anomaly detection
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120307.png" alt=""></figure></li>
+<li>threshold detection
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120308.png" alt=""></figure></li>
+<li>coorelation methods (using more than one variables to find relationship)
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120309.png" alt=""></figure></li>
+</ul></li>
+<li>variables
+
+<ul>
+<li>counter
+
+<ul>
+<li>a count of certain event types over a period of time</li>
+<li>e.g. number of password failure</li>
+</ul></li>
+<li>gauge
+
+<ul>
+<li>measure the current value of some entities</li>
+<li>e.g. number of logical connections assigned to a user application, number of messages generated by a process</li>
+</ul></li>
+<li>interval timer
+
+<ul>
+<li>length of time between 2 events</li>
+<li>e.g. time between successive logins to an account</li>
+</ul></li>
+<li>resource utilization
+
+<ul>
+<li>quantity of resources consumed in a specified period</li>
+<li>e.g. number of pages printed by a user session</li>
+</ul></li>
+</ul></li>
+<li>measurements
+
+<ul>
+<li>mean and standard deviation
+
+<ul>
+<li>average and variability</li>
+<li>intruders belongs to 0.15% in 3 sd condition (both sides are 0.3%)
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120310.png" alt=""></figure></li>
+<li>new observation <span  class="math">\(x_{n+1}\)</span> is defined to be abnormal if it falls outside a confidence interval that is d standard deviations from the mean for some parameter d: <span  class="math">\(mean + d \times stdev\)</span></li>
+<li>by Chebyshev's inequality, the probability of a value falling outside this interval is at most <span  class="math">\(\frac{1}{d^2}\)</span>
+
+<ul>
+<li>example
+
+<ul>
+<li>assume mean = 10, stdev = 3, d = 7, observe = 32</li>
+<li><span  class="math">\(mean + d \times stdev = 31\)</span></li>
+<li><span  class="math">\(p(observe = 32) < \frac{1}{7^2} = 0.02\)</span></li>
+<li>only 2% -&gt; normal user, 98% -&gt; intruder</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>multivariate analysis
+
+<ul>
+<li>measure the correlation</li>
+<li>two variables, e.g. using time and access number to do intrustion detection</li>
+<li><span  class="math">\(r = \frac{\displaystyle \sum_i{(x_i-\overline{x})(y_i-\overline{y})}}{{\sqrt{\displaystyle \sum_i({x_i-\overline{x}})^2}}{\sqrt{\displaystyle \sum_i({y_i-\overline{y}})^2}}}\)</span>
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120311.png" alt=""></figure></li>
+</ul></li>
+<li>markov process
+
+<ul>
+<li>measure the transition among states</li>
+<li>e.g. transition between certain commands
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120312.png" alt=""></figure></li>
+</ul></li>
+<li>time series
+
+<ul>
+<li>focus on time intervals, looking for sequence of events that happen too rapidly or too slowly
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120313.png" alt=""></figure></li>
+</ul></li>
+<li>operational
+
+<ul>
+<li>based on a judgment of what is considered abnormal, instead of based on past records</li>
+<li>e.g. large number of login attempts in a short period of time</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>Comparison of host and network based IDS</strong>
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120314.png" alt=""></figure></p>
+
+<h2 id="security-testing">Security Testing</h2>
+
+<p><strong>Overview</strong></p>
+
+<ul>
+<li>common testing only tests the application function, using some cases and scenarios</li>
+<li>security requirements for a system
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120315.png" alt=""></figure></li>
+</ul>
+
+<p><strong>Simple security requirement (old days)</strong></p>
+
+<ul>
+<li>security requirement
+
+<ul>
+<li>authentication: the application should use password to authenticate the user</li>
+</ul></li>
+<li>test cases
+
+<ul>
+<li>login successful
+
+<ul>
+<li>user login with a valid password</li>
+</ul></li>
+<li>login failure
+
+<ul>
+<li>user fails to login with an invalid passwords</li>
+</ul></li>
+<li>multiple login failure</li>
+<li>password change</li>
+</ul></li>
+<li>it is not sufficient</li>
+</ul>
+
+<p><strong>Real security testing (nowadays)</strong></p>
+
+<ul>
+<li>security testing
+
+<ul>
+<li>checking that some features appears to fail, e.g.
+
+<ul>
+<li>the tester is able to spoof another user’s identity</li>
+<li>the tester can tamper the data</li>
+<li>the tester can view data he should not have access to</li>
+<li>the tester can deny service to other users</li>
+</ul></li>
+</ul></li>
+<li>example
+
+<ul>
+<li>SQL injection</li>
+</ul></li>
 </ul>
 
       </div>
@@ -243,7 +420,7 @@
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        139 Words
+        549 Words
       </p>
 
       <p>
