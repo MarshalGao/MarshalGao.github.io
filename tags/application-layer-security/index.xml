@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>application layer security on This is Marshal</title>
+    <link>https://www.marshalgao.com/tags/application-layer-security/</link>
+    <description>Recent content in application layer security on This is Marshal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 03 Dec 2020 10:19:57 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/application-layer-security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ICOM6045 Application Layer Security</title>
+      <link>https://www.marshalgao.com/icom6045-application-layer-security/</link>
+      <pubDate>Thu, 03 Dec 2020 10:19:57 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/icom6045-application-layer-security/</guid>
+      <description>Host-Based Intrusion Detection Motivations and basis
+ motivations  collection of information about intrusion techniques that can be used to strengthen the intrusion prevention facility   basis  the behavior of intruders differs from that of a legitimate user in a quantifiable way    Profiles of behavior of intruders and authorized users
+ example  good or bad detection  confusion matrix  intrusion detection     Intruders and intrusions</description>
+    </item>
+    
+  </channel>
+</rss>
