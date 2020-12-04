@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>web security on This is Marshal</title>
+    <link>https://www.marshalgao.com/tags/web-security/</link>
+    <description>Recent content in web security on This is Marshal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 04 Dec 2020 20:50:32 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/web-security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ICOM6045 Web Security - SSL/TLS</title>
+      <link>https://www.marshalgao.com/icom6045-web-security-ssl/tls/</link>
+      <pubDate>Fri, 04 Dec 2020 20:50:32 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/icom6045-web-security-ssl/tls/</guid>
+      <description>HTTP Basics HTTP messages
+ HTTP messages are requests sent from clients to servers, and responses from servers to clients HTTP message structure  start line 0 or more headers, each header contains field name, colon, field value optional message body   HTTP request  start line: request method  GET HEAD POST PUT DELETE     HTTP response  start line: status line, contains  HTTP version used by the server status code  200 -&amp;gt; ok 404 -&amp;gt; not found 401 -&amp;gt; unauthorized 403 -&amp;gt; forbidden   reason phrase      HTTP cache security issues</description>
+    </item>
+    
+  </channel>
+</rss>

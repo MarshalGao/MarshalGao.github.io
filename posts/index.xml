@@ -6,8 +6,126 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Fri, 04 Dec 2020 16:25:08 +0800</lastBuildDate>
+        <lastBuildDate>Fri, 04 Dec 2020 20:50:32 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ICOM6045 Web Security - SSL/TLS</title>
+            <link>https://www.marshalgao.com/icom6045-web-security-ssl/tls/</link>
+            <pubDate>Fri, 04 Dec 2020 20:50:32 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/icom6045-web-security-ssl/tls/</guid>
+            <description>HTTP Basics HTTP messages
+ HTTP messages are requests sent from clients to servers, and responses from servers to clients HTTP message structure  start line 0 or more headers, each header contains field name, colon, field value optional message body   HTTP request  start line: request method  GET HEAD POST PUT DELETE     HTTP response  start line: status line, contains  HTTP version used by the server status code  200 -&amp;gt; ok 404 -&amp;gt; not found 401 -&amp;gt; unauthorized 403 -&amp;gt; forbidden   reason phrase      HTTP cache security issues</description>
+            <content type="html"><![CDATA[<h2 id="http-basics">HTTP Basics</h2>
+<p><strong>HTTP messages</strong></p>
+<ul>
+<li>HTTP messages are requests sent from clients to servers, and responses from servers to clients</li>
+<li>HTTP message structure
+<ul>
+<li>start line</li>
+<li>0 or more headers, each header contains field name, colon, field value</li>
+<li>optional message body</li>
+</ul>
+</li>
+<li>HTTP request
+<ul>
+<li>start line: request method
+<ul>
+<li>GET</li>
+<li>HEAD</li>
+<li>POST</li>
+<li>PUT</li>
+<li>DELETE</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>HTTP response
+<ul>
+<li>start line: status line, contains
+<ul>
+<li>HTTP version used by the server</li>
+<li>status code
+<ul>
+<li>200 -&gt; ok</li>
+<li>404 -&gt; not found</li>
+<li>401 -&gt; unauthorized</li>
+<li>403 -&gt; forbidden</li>
+</ul>
+</li>
+<li>reason phrase</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>HTTP cache security issues</strong></p>
+<ul>
+<li>a cache is a local store which may be created and maintained by a client, a proxy or a gateway</li>
+<li>cache control can be implemented by setting in header “cache-control”</li>
+<li>sensitive information may be cached, e.g. password and payment receipt</li>
+<li>dishonest proxy may cache “everything”</li>
+</ul>
+<h2 id="http-authentication">HTTP Authentication</h2>
+<p><strong>HTTP basic authentication</strong></p>
+<ul>
+<li>mechanism
+<ul>
+<li>use username and password in a dialog</li>
+<li>fail -&gt; send 401 status code</li>
+</ul>
+</li>
+<li>problems
+<ul>
+<li>username and password are BASE64-encoded and sent with every request, which can be intercept and read (no encryption)
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120404.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<p><strong>Form-based authentication</strong></p>
+<ul>
+<li>mechanism
+<ul>
+<li>use a standard HTML page to request the username and password (instead of the pop-up dialog box in HTTP basic authentication)</li>
+<li>the password is sent in plain text from the client to the server</li>
+<li>after a password is sent, a cookie is typically passed back-and-forth between the client and the server to indicate that the client is already authenticated: the cookie can be intercepted</li>
+</ul>
+</li>
+</ul>
+<p><strong>HTTPS mutual authentication</strong></p>
+<ul>
+<li>strongest form of authentication</li>
+<li>client is required to have a private key and a corresponding certificate to be authenticated</li>
+<li>the server only allows clients that have a certificate that has been authorized to access the given resource</li>
+<li>in order for each user to have a certificate, he should obtain one from the CA (e.g. verisign), or establish your own CA to issue certificates</li>
+<li>not a popular approach</li>
+</ul>
+<p><strong>HTTP digest authentication</strong></p>
+<ul>
+<li>use message digest to exchange information proving that the user knows their password without sending the password itself
+<ul>
+<li>the server creates a nonce, a random value that is unique, e.g. the client IP address + timestamp + random data</li>
+<li>the server sends the nonce to the client</li>
+<li>the client hashes the nonce together with its username and password</li>
+<li>the client sends the hash back to the server</li>
+<li>the server then computes the hash with the username, password and nonce</li>
+<li>the server compares the two hashes
+<ul>
+<li>if they match, the client is given access to the protected resource</li>
+<li>if not match, access is denied</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>function of timestamp
+<ul>
+<li>to avoid replay attack</li>
+</ul>
+</li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>Media Management Platform (Take E-Commerce as An Example)</title>

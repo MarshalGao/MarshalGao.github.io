@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Marshal ">
+<meta name="description" content="HTTP Basics HTTP messages
+ HTTP messages are requests sent from clients to servers, and responses from servers to clients HTTP message structure  start line 0 or more headers, each header contains field name, colon, field value optional message body   HTTP request  start line: request method  GET HEAD POST PUT DELETE     HTTP response  start line: status line, contains  HTTP version used by the server status code  200 -&amp;gt; ok 404 -&amp;gt; not found 401 -&amp;gt; unauthorized 403 -&amp;gt; forbidden   reason phrase      HTTP cache security issues" />
+<meta name="keywords" content=", icom6045, fundamentals of e-commerce security, web security, ssl, tls" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://www.marshalgao.com/icom6045-web-security-ssl/tls/" />
+
+
+    <title>
+        
+            ICOM6045 Web Security - SSL/TLS :: This is Marshal 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://www.marshalgao.com/main.bdf16375e88c9de5121e200285a015c4d181bcc9641cf97e05c5e46866f50161.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.marshalgao.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.marshalgao.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.marshalgao.com/favicon-16x16.png">
+    <link rel="manifest" href="https://www.marshalgao.com/site.webmanifest">
+    <link rel="mask-icon" href="https://www.marshalgao.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://www.marshalgao.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="ICOM6045 Web Security - SSL/TLS">
+<meta itemprop="description" content="HTTP Basics HTTP messages
+ HTTP messages are requests sent from clients to servers, and responses from servers to clients HTTP message structure  start line 0 or more headers, each header contains field name, colon, field value optional message body   HTTP request  start line: request method  GET HEAD POST PUT DELETE     HTTP response  start line: status line, contains  HTTP version used by the server status code  200 -&gt; ok 404 -&gt; not found 401 -&gt; unauthorized 403 -&gt; forbidden   reason phrase      HTTP cache security issues">
+<meta itemprop="datePublished" content="2020-12-04T20:50:32+08:00" />
+<meta itemprop="dateModified" content="2020-12-04T20:50:32+08:00" />
+<meta itemprop="wordCount" content="417">
+<meta itemprop="image" content="https://www.marshalgao.com/"/>
+
+
+
+<meta itemprop="keywords" content="icom6045,fundamentals of e-commerce security,web security,ssl,tls," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.marshalgao.com/"/>
+
+<meta name="twitter:title" content="ICOM6045 Web Security - SSL/TLS"/>
+<meta name="twitter:description" content="HTTP Basics HTTP messages
+ HTTP messages are requests sent from clients to servers, and responses from servers to clients HTTP message structure  start line 0 or more headers, each header contains field name, colon, field value optional message body   HTTP request  start line: request method  GET HEAD POST PUT DELETE     HTTP response  start line: status line, contains  HTTP version used by the server status code  200 -&gt; ok 404 -&gt; not found 401 -&gt; unauthorized 403 -&gt; forbidden   reason phrase      HTTP cache security issues"/>
+
+
+
+    <meta property="og:title" content="ICOM6045 Web Security - SSL/TLS" />
+<meta property="og:description" content="HTTP Basics HTTP messages
+ HTTP messages are requests sent from clients to servers, and responses from servers to clients HTTP message structure  start line 0 or more headers, each header contains field name, colon, field value optional message body   HTTP request  start line: request method  GET HEAD POST PUT DELETE     HTTP response  start line: status line, contains  HTTP version used by the server status code  200 -&gt; ok 404 -&gt; not found 401 -&gt; unauthorized 403 -&gt; forbidden   reason phrase      HTTP cache security issues" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.marshalgao.com/icom6045-web-security-ssl/tls/" />
+<meta property="og:image" content="https://www.marshalgao.com/"/>
+<meta property="article:published_time" content="2020-12-04T20:50:32+08:00" />
+<meta property="article:modified_time" content="2020-12-04T20:50:32+08:00" />
+
+
+
+
+    <meta property="article:section" content="HKU" />
+
+
+
+    <meta property="article:published_time" content="2020-12-04 20:50:32 &#43;0800 HKT" />
+
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://www.marshalgao.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://www.marshalgao.com/categories/hku">HKU</a></li><li><a href="https://www.marshalgao.com/categories/technology">TECH</a></li><li><a href="https://www.marshalgao.com/categories/product-manager">PM</a></li><li><a href="https://www.marshalgao.com/categories/life">LIFE</a></li><li><a href="https://www.marshalgao.com/about/">ABOUT</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        2 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://www.marshalgao.com/icom6045-web-security-ssl/tls/">ICOM6045 Web Security - SSL/TLS</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <h2 id="http-basics">HTTP Basics</h2>
+<p><strong>HTTP messages</strong></p>
+<ul>
+<li>HTTP messages are requests sent from clients to servers, and responses from servers to clients</li>
+<li>HTTP message structure
+<ul>
+<li>start line</li>
+<li>0 or more headers, each header contains field name, colon, field value</li>
+<li>optional message body</li>
+</ul>
+</li>
+<li>HTTP request
+<ul>
+<li>start line: request method
+<ul>
+<li>GET</li>
+<li>HEAD</li>
+<li>POST</li>
+<li>PUT</li>
+<li>DELETE</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>HTTP response
+<ul>
+<li>start line: status line, contains
+<ul>
+<li>HTTP version used by the server</li>
+<li>status code
+<ul>
+<li>200 -&gt; ok</li>
+<li>404 -&gt; not found</li>
+<li>401 -&gt; unauthorized</li>
+<li>403 -&gt; forbidden</li>
+</ul>
+</li>
+<li>reason phrase</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>HTTP cache security issues</strong></p>
+<ul>
+<li>a cache is a local store which may be created and maintained by a client, a proxy or a gateway</li>
+<li>cache control can be implemented by setting in header “cache-control”</li>
+<li>sensitive information may be cached, e.g. password and payment receipt</li>
+<li>dishonest proxy may cache “everything”</li>
+</ul>
+<h2 id="http-authentication">HTTP Authentication</h2>
+<p><strong>HTTP basic authentication</strong></p>
+<ul>
+<li>mechanism
+<ul>
+<li>use username and password in a dialog</li>
+<li>fail -&gt; send 401 status code</li>
+</ul>
+</li>
+<li>problems
+<ul>
+<li>username and password are BASE64-encoded and sent with every request, which can be intercept and read (no encryption)
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120404.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<p><strong>Form-based authentication</strong></p>
+<ul>
+<li>mechanism
+<ul>
+<li>use a standard HTML page to request the username and password (instead of the pop-up dialog box in HTTP basic authentication)</li>
+<li>the password is sent in plain text from the client to the server</li>
+<li>after a password is sent, a cookie is typically passed back-and-forth between the client and the server to indicate that the client is already authenticated: the cookie can be intercepted</li>
+</ul>
+</li>
+</ul>
+<p><strong>HTTPS mutual authentication</strong></p>
+<ul>
+<li>strongest form of authentication</li>
+<li>client is required to have a private key and a corresponding certificate to be authenticated</li>
+<li>the server only allows clients that have a certificate that has been authorized to access the given resource</li>
+<li>in order for each user to have a certificate, he should obtain one from the CA (e.g. verisign), or establish your own CA to issue certificates</li>
+<li>not a popular approach</li>
+</ul>
+<p><strong>HTTP digest authentication</strong></p>
+<ul>
+<li>use message digest to exchange information proving that the user knows their password without sending the password itself
+<ul>
+<li>the server creates a nonce, a random value that is unique, e.g. the client IP address + timestamp + random data</li>
+<li>the server sends the nonce to the client</li>
+<li>the client hashes the nonce together with its username and password</li>
+<li>the client sends the hash back to the server</li>
+<li>the server then computes the hash with the username, password and nonce</li>
+<li>the server compares the two hashes
+<ul>
+<li>if they match, the client is given access to the protected resource</li>
+<li>if not match, access is denied</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>function of timestamp
+<ul>
+<li>to avoid replay attack</li>
+</ul>
+</li>
+</ul>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/tags/icom6045/">icom6045</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/fundamentals-of-e-commerce-security/">fundamentals of e-commerce security</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/web-security/">web security</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/ssl/">ssl</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/tls/">tls</a></span>
+        
+    </p>
+
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/categories/hku/">HKU</a></span>
+        
+    </p>
+
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        417 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2020-12-04 20:50
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+
+          
+            <span class="button next">
+              <a href="https://www.marshalgao.com/media-management-platform-take-e-commerce-as-an-example/">
+                <span class="button__text">Media Management Platform (Take E-Commerce as An Example)</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://www.marshalgao.com/">Marshal</a></span>
+            
+            
+                <span><a href="https://www.hku.hk" target="_blank" rel="noopener">The University of Hong Kong</a></span>
+            <span><a href="https://www.marshalgao.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Team Rocket: <a href="https://www.pseudoyu.com/" target="_blank" rel="noopener">Pseudoyu</a></span>
+            <span><a href="https://www.m1sty.com/" target="_blank" rel="noopener">Misty</a></span>
+          </div>
+    </div>
+</footer>
+
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://www.marshalgao.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>

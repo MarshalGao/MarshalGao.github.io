@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 03 Dec 2020 10:19:57 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/hku/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Dec 2020 20:50:32 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/hku/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ICOM6045 Web Security - SSL/TLS</title>
+      <link>https://www.marshalgao.com/icom6045-web-security-ssl/tls/</link>
+      <pubDate>Fri, 04 Dec 2020 20:50:32 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/icom6045-web-security-ssl/tls/</guid>
+      <description>HTTP Basics HTTP messages
+ HTTP messages are requests sent from clients to servers, and responses from servers to clients HTTP message structure  start line 0 or more headers, each header contains field name, colon, field value optional message body   HTTP request  start line: request method  GET HEAD POST PUT DELETE     HTTP response  start line: status line, contains  HTTP version used by the server status code  200 -&amp;gt; ok 404 -&amp;gt; not found 401 -&amp;gt; unauthorized 403 -&amp;gt; forbidden   reason phrase      HTTP cache security issues</description>
+    </item>
+    
     <item>
       <title>ICOM6045 Application Layer Security</title>
       <link>https://www.marshalgao.com/icom6045-application-layer-security/</link>
@@ -97,16 +107,6 @@
       <description>Crowdfunding Crowdfunding platforms The key customers for the Kiva P2P micro-loan platform and the operation model
   Business model canvas for Kiva Summary
  crowdfunding platforms are two-sided platforms lenders make P2P loans to micro-entrepreneurs through the platform lenders are paid back over time local field partners select the micro-entrepreneurs to show case on the site and collect repayment for the loans Kiva has made more than $1B in mirco-loans, but has struggled to add mobile, social features  TinBox, TenCent, Ant Forest and Do-Good Social Mobile Apps Kiva compares to newer do-good social mobile apps TinBox</description>
-    </item>
-    
-    <item>
-      <title>ECOM7121 The Crowd, How Users Create Value</title>
-      <link>https://www.marshalgao.com/ecom7121-the-crowd-how-users-create-value/</link>
-      <pubDate>Fri, 30 Oct 2020 17:35:15 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/ecom7121-the-crowd-how-users-create-value/</guid>
-      <description>Google and Two-sided Freemium Business Models Two-sided markets
- definition  markets where a platform has two distinct user groups that provide each other with network benefits aka. two-sided network   example  credit cards on the Visa and MasterCard platform (card holders &amp;lt;-&amp;gt; vendors)   can be multi-sided  example  HMOs (Health Management Organizations) (doctors &amp;lt;-&amp;gt; care facilities &amp;lt;-&amp;gt; patients)     cross-network effects are typically positive, same-side effects may be positive or negative   Freemium = Free + Premium</description>
     </item>
     
   </channel>

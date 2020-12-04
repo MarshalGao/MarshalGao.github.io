@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 04 Dec 2020 16:25:08 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Dec 2020 20:50:32 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ICOM6045 Web Security - SSL/TLS</title>
+      <link>https://www.marshalgao.com/icom6045-web-security-ssl/tls/</link>
+      <pubDate>Fri, 04 Dec 2020 20:50:32 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/icom6045-web-security-ssl/tls/</guid>
+      <description>HTTP Basics HTTP messages
+ HTTP messages are requests sent from clients to servers, and responses from servers to clients HTTP message structure  start line 0 or more headers, each header contains field name, colon, field value optional message body   HTTP request  start line: request method  GET HEAD POST PUT DELETE     HTTP response  start line: status line, contains  HTTP version used by the server status code  200 -&amp;gt; ok 404 -&amp;gt; not found 401 -&amp;gt; unauthorized 403 -&amp;gt; forbidden   reason phrase      HTTP cache security issues</description>
+    </item>
+    
     <item>
       <title>Media Management Platform (Take E-Commerce as An Example)</title>
       <link>https://www.marshalgao.com/media-management-platform-take-e-commerce-as-an-example/</link>
@@ -112,18 +122,6 @@
  社会未来最大成本 -&amp;gt; 顾客的认知成本 品牌立足要从客户自身出发，从顾客心理认知出发，从而建立顾客认知，变成企业的最重要无形资产 纯线上的投放效果是有限的  信息大爆炸，消费者看的多，阈值提高，信息具有短效性 传播变难、触达弱化、人群分散 消费者可以轻易跳过品牌预设的信息，使企业劳心费神铺排的各类广告营销活动变成“打水漂”      广告投放的本质是什么？—— 触达消费者，完成对消费者的认知教育
  无线上或线下之争，关键在于“找到人”的能力，以及传播的效率 Questmobile显示，2020年一季度全国增长的移动端互联网用户数量仅为0.41%，但是投入流量大战的企业和个体数量增长了近八成，线上流量竞争已经白热化 益普索Ipsos发布的《2019年中国国内流行广告语受众调研报告》中数据显示，流行广告语通过主流媒体电梯、互联网及电视等进行传播，更容易被人们记住 对于没有互联网基因的产品，大量投入线上广告意义不大，而正确的做法应该是：精准分析用户数据，合理规划投放策略  例如，天鹅到家采用电梯广告（高频且强制的触达），实现了每投放1元，有0.5元的ROI（Return On Investment） 但0.5元只是短期效果，从中长期来看，将有3倍，也就是1.5元的ROI 两者相加，才能更精准地反映出整个的投放在中长期对销售，对整个品牌建设的拉动      线上和线下的界限是什么？—— 越来越模糊，未来只有数字化与非数字化之分
  以前看报纸，看电视，看到的都是同一个广告，这是“人找广告” 现在打开APP，每个人刷到的广告都是不一样的，会根据每个人的购物兴趣、生活习性、社交习惯等推送不同的广告，这是“广告找人” 数字化大潮下，分众这样的楼宇电梯媒体，也拥有了互联网基因  自今年9月起，分众在智能屏领域已逐步向授权代理商开放DSP系统 帮助代理商实现在线精准选楼和选择时间，以及在线投放和监测，为生活服务类实体终端开启了基于地理位置的在线LBS屏幕广告服务   所谓营销，都是在不同的场景中对消费者种草，然后割草完成转化  在现在电视、互联网等流量都遭遇瓶颈的大环境下，分众是一个可以快速提升到达率的媒体 过去太重视线上的人群，但分众是真正能把人流从线上引到线下，从线下引到线上的媒体，是一个真正的数字化线下媒体 线下流量的开发对于整个营销来说是一个非常好的流量入口，这也是一个非常高效的割草闭环，给品牌提供了高ROI保障      品牌和流量哪个更重要？—— 媒体投资要有长线思维，构建核心品牌资产</description>
-    </item>
-    
-    <item>
-      <title>To B Product Landing</title>
-      <link>https://www.marshalgao.com/to-b-product-landing/</link>
-      <pubDate>Tue, 01 Dec 2020 13:49:22 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/to-b-product-landing/</guid>
-      <description>北极星指标
- 项目落地之前，找准产品的核心目标 -&amp;gt; 可以为产品指明方向的核心数据指标  滴滴B端 -&amp;gt; 司机接单次数 SaaS -&amp;gt; 使用商家的数量 广告 -&amp;gt; 转化率   毫无意义的例子  装修的老板搞社群运营 即便社群很活跃，但由于社交的高频性，不会有人每个月来找他装修 徒增成本开销    转化全流程
- 获取客户 -&amp;gt; 付费转化 -&amp;gt; 客户服务（不同类别的B端产品会有所不同） 以营销类SaaS为例  公司通过组建地推团队开始进行地面覆盖，拉新获客 地面覆盖以后，就是转化，转化商家开始注册、使用公司的SAAS产品 商家使用公司产品的过程中，开始给商家培训，并解答商家在使用产品过程中的各种问题 商家免费使用产品一段时间以后，开始引导商家付费 商家付费以后，给商家提供各种服务支持 商家使用产品的过程中，感觉不错，到了续费期后，商家再次付款购买企业服务    业务模式
- 平台型业务  项目的核心业务逻辑是企业帮助连接供需两端需求这样类型的业务，比如美团（连接商家与用户）、淘宝（商家或个人与用户） 获取客户 -&amp;gt; 客户服务 -&amp;gt; 付费转化 以美团为例  获取客户  线上：线索获取、内容传播、广告投放等 线下：地推、大会、分销商、线下活动等   客户服务  通过线上或者电话沟通的方式让商家开始用，并提供运营指导，帮助商家通过平台赚到钱 通过用户下一单返利10元，交易满100返20等激励方式 通过成立美团大学、线下培训等客户成长体系搭建方式，来提高客户的活跃和留存 在客户服务环节的核心目标就是帮助客户成功，让客户在平台上赚到钱   付费转化  提点：平台交易抽成 广告：对流量进行变现，需要销售人员的跟进 第三方买单：销售去拓展愿意买单的第三方       工具型业务  给企业提供可以高效解决企业明确需求产品的业务，比如钉钉（办公）、腾讯云（云计算） 获取客户 -&amp;gt; 客户服务 -&amp;gt; 付费转化 以钉钉为例  获取客户  线上：品牌传播、广告等 线下：大客户销售等   客户服务  通过客服部门帮助客户解决使用工具过程中的各种问题，以及帮助客户更好使用工具，提升客户团队协作的效率问题   付费转化  类型  免费+增值服务，比如：腾讯会议 试用期结束后付费，比如：office   方式  试用期结束后，直接线上转化，通过转化策略产品化的思路进行线上转化 如果线上转化没成功，通过后台数据查看，过了某个时间点，就可以销售跟进直接转化         硬件型业务  企业提供实体硬件的业务，比如大屏幕硬件、自动洗碗机、景区检票闸机 获取客户并付费转化 -&amp;gt; 客户服务  购买妙控键盘，虽然Apple提供14天无理由退换，但这只是它的一项服务，属于客户服务的范畴 但在14天使用期间，用户已经付了钱，对于Apple而言，已经完成了客户获取、付费转化 换言之，购买是一手交钱一手交货的行为，获客和付费同时发生   以景区检票闸机为例  获取客户并付费转化  线上：百度SEO，电商网站售卖等，当在线上获得销售线索以后，接下来由销售跟进，进行客户转化，卖出硬件，获取收入 线下：直销，发展分销商销售、线下活动、参加行业会展等方式获客，并把硬件直接卖给客户，获取收入   客户服务  有的硬件企业会有自己的安装、调试，维护团队进行服务跟进 有的硬件企业会和产业链的其它服务商对接，让其它服务商来进行后期的客户服务       服务型业务  给企业提供的业务当中，需要有人力来完成服务的业务叫服务型业务，比如广告公司提供的广告服务，人力外包公司提供的人力资源服务 两种转化逻辑  获取客户 -&amp;gt; 付费转化 -&amp;gt; 客户服务  人力资源服务 代运营服务   获取客户 -&amp;gt; 客户服务 -&amp;gt; 付费转化  垂直领域营销类SAAS解决方案综合服务商，这些服务商需要先想办法帮客户成功赚到钱以后，再从营业额中分佣     以餐饮营销类SaaS为例  获取客户  线上：活动、品牌推广、SEO等 线下：渠道、分销、BD等   客户服务  提供整体的服务+产品解决方案 培训商家如何使用产品 帮助商家做好用户运营，帮助商家做好用户增长，最终帮助商家实现业务增长   付费转化 （具体商家，具体分析）  软硬件的基础费和服务费 按帮助卖出商品销售额来提点        </description>
     </item>
     
   </channel>
