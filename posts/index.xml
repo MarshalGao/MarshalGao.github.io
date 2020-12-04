@@ -379,7 +379,9 @@
             <description>Host-Based Intrusion Detection Motivations and basis
  motivations  collection of information about intrusion techniques that can be used to strengthen the intrusion prevention facility  basis  the behavior of intruders differs from that of a legitimate user in a quantifiable way   Profiles of behavior of intruders and authorized users
  example  good or bad detection  confusion matrix   intrusion detection     Intruders and intrusions</description>
-            <content type="html"><![CDATA[<h2 id="hostbased-intrusion-detection">Host-Based Intrusion Detection</h2>
+            <content type="html"><![CDATA[<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Application%20Layer%20Security.png" alt=""></figure></p>
+
+<h2 id="hostbased-intrusion-detection">Host-Based Intrusion Detection</h2>
 
 <p><strong>Motivations and basis</strong></p>
 
@@ -591,10 +593,93 @@
 <li>the tester can deny service to other users</li>
 </ul></li>
 </ul></li>
-<li>example
+<li>state spaces view
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120401.png" alt=""></figure></li>
+<li>approaches
+
+<ul>
+<li>attack testing
+
+<ul>
+<li>pretend to be an attacker for testing</li>
+<li>examples
 
 <ul>
 <li>SQL injection</li>
+<li>cross-site scripting</li>
+<li>unexpected input</li>
+</ul></li>
+<li>hacking is more difficult than testing</li>
+</ul></li>
+<li>Howard and LeBlanc by Microsoft
+
+<ul>
+<li>identify the component interfaces (using data flow analysis and threat model)</li>
+<li>rank the interfaces by potential vulnerability</li>
+<li>construct test cases according to well known security problems (STRIDE)<br>
+
+<ul>
+<li>spoofing identity
+
+<ul>
+<li>client spoofing
+
+<ul>
+<li>allows an attacker to pose as another user</li>
+<li>e.g. insecure basic HTTP authentication</li>
+</ul></li>
+<li>server spoofing
+
+<ul>
+<li>allows a rogue server to pose as a valid server</li>
+<li>e.g. DNS spoofing</li>
+</ul></li>
+</ul></li>
+<li>tampering with data
+
+<ul>
+<li>malicious modification of data</li>
+<li>examples
+
+<ul>
+<li>change data in a file with weak ACL (everyone)</li>
+<li>unauthorized update of data in the database</li>
+</ul></li>
+</ul></li>
+<li>repudiation
+
+<ul>
+<li>user denies performing an action while the other party cannot prove the existence of the action</li>
+<li>e.g. cutomers purchase goods online</li>
+</ul></li>
+<li>information disclosure
+
+<ul>
+<li>someone in the middle, just listening</li>
+<li>the exposure of information to individuals who are not supposed to have access to it</li>
+<li>examples
+
+<ul>
+<li>read a file in a shared file system without the corresponding access right</li>
+<li>read data in transit between 2 computers, such as the username/password using basic HTTP authentication</li>
+</ul></li>
+</ul></li>
+<li>denial of service
+
+<ul>
+<li>denies service to valid users</li>
+<li>e.g. a web server temporarily unavailable or unusable</li>
+</ul></li>
+<li>elevation of privilege
+
+<ul>
+<li>an unprivileged user gains privileged access and thereby has sufficient access to compromise or destroy an entire system</li>
+<li>e.g. Trojan runs with “root” privileges and open a backdoor for the hacker</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>penetration test —— a security service
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120402.png" alt=""></figure></li>
 </ul></li>
 </ul>
 ]]></content>
