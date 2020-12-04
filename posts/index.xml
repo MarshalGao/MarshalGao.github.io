@@ -2725,7 +2725,8 @@
             <guid>https://www.marshalgao.com/icom6045-public-key-infrastructure/</guid>
             <description>PKI Overview
  PKC &amp;amp; PKI  PKC is about math, but PKI is about binding a pair of key to one person   definition  PKI is a set of hardware, software, people, policies and procedures needed to create, manage, distribute, use, store, and revoke digital certificates PKI is an arrangement that binds public keys with respective user identities by means of a certificate authority (CA)  the binding is established through the registration and issuance process the PKI role that assures this binding is called the registration authority (RA): it ensures that the public key is bound to the individual to which it is assigned in a way that ensures non-repudiation   law for digital signature, e.</description>
-            <content type="html"><![CDATA[<h2 id="pki">PKI</h2>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Public%20Key%20Infrastructure.png" alt=""></p>
+<h2 id="pki">PKI</h2>
 <p><strong>Overview</strong></p>
 <ul>
 <li>PKC &amp; PKI
@@ -2810,27 +2811,6 @@
 <li>verfication of user id before issuing the PKC</li>
 </ul>
 </li>
-<li>procedures (digital signature and encryption)
-<ul>
-<li>when B receives a message from A signed by A’s private key
-<ul>
-<li>B gets the public key of CA (in the CA certificate)</li>
-<li>B gets A’s PKC (inside the message from A, a directory service, or … )</li>
-<li>B verifies A’s PKC by CA’s public key, then extracts A’s public key from the PKC</li>
-<li>B can verify A’s digital signature, by A’s public key</li>
-<li>B is called a “relying party”</li>
-</ul>
-</li>
-<li>when A wants to send an encrypted message to B
-<ul>
-<li>A gets the public key of CA</li>
-<li>A gets B’s PKC</li>
-<li>A verifies B’s PKC by CA’s public key, then extracts B’s public key</li>
-<li>A encrypts the message using B’s public key</li>
-</ul>
-</li>
-</ul>
-</li>
 </ul>
 <p><strong>Validity period</strong></p>
 <ul>
@@ -2865,9 +2845,89 @@
 <li>each PKC contains a public-key, and the certificate is signed by a “Certification Authority” or some “Intermediate Certification Authority”, which has confirmed the identity and other attributes of the holder of the corresponding private key</li>
 <li>assumption: everyone knows how to verify the CA’s digital signature (i.e. everyone knows CA’s public key)</li>
 </ul>
-<h2 id="key-management">Key Management</h2>
+<p><strong>Certificate distribution</strong></p>
 <ul>
-<li>certificate request
+<li>certificates are digitally signed</li>
+<li>directory service
+<ul>
+<li>a data base of (valid and update) certificates</li>
+<li>ISO standard: X.500</li>
+<li>proprietary directory service such as Microsoft Exchange, Lotus Notes, Novell NDS</li>
+<li>internet Lightweight Directory Access Protocol (LDAP)</li>
+</ul>
+</li>
+<li>certificates can be distributed through insecure channels such as email (S/MIME and MOSS) or WWW
+<ul>
+<li>protected by the digital signature of CA</li>
+</ul>
+</li>
+</ul>
+<p><strong>Certificate revocation</strong></p>
+<ul>
+<li>reasons
+<ul>
+<li>detected or suspected key compromise</li>
+<li>change of data (e.g. subject name)</li>
+<li>change of relationship between subject and CA (e.g. employee quitting a job from an organization which uses the current CA)</li>
+</ul>
+</li>
+<li>who can revoke
+<ul>
+<li>the subject</li>
+<li>the CA</li>
+<li>an authorized third party</li>
+</ul>
+</li>
+<li>CRL (Certificate Revocation List)
+<ul>
+<li>a time-stamped list of revoked certs, digitally signed by the CA, available to all users</li>
+<li>each revoked cert is identified by a certificate serial number</li>
+<li>users of public key certificates should checks a “suitably-recent” CRL
+<ul>
+<li>problem: what is “suitably-recent”?</li>
+</ul>
+</li>
+<li>CRL will not contain certificates that are expired</li>
+<li>CRLs are distributed regularly, e.g. hourly, daily, etc.</li>
+<li>CRLs are digitally signed, thus can be sent via unprotected channels</li>
+</ul>
+</li>
+</ul>
+<p><strong>Procedures</strong></p>
+<ul>
+<li>digital signature
+<ul>
+<li>verify the digital signature with signer’s public key in signer’s PKC</li>
+<li>verify signer’s PKC using CA’s public key in the root cert</li>
+<li>confirm the signer’s PKC is not yet expired</li>
+<li>check the signer’s PKC is not yet revoked (using the CRL)</li>
+<li>check the digital signature of the CRL</li>
+<li>extract the signer&rsquo;s public key</li>
+<li>use signer&rsquo;s public key to verify</li>
+</ul>
+</li>
+<li>encryption
+<ul>
+<li>verify the receiver&rsquo;s public key in receiver&rsquo;s PKC</li>
+<li>verify the receiver&rsquo;s PKC using CA&rsquo;s public ket in the root cert</li>
+<li>confirm the receiver&rsquo;s PKC is not yet expired</li>
+<li>check the receiver&rsquo;s PKC is not yet revoked (using the CRL)</li>
+<li>check the digital signature of the CRL</li>
+<li>extract the receiver&rsquo;s public key</li>
+<li>use the receiver&rsquo;s public key to encrypt the message</li>
+</ul>
+</li>
+</ul>
+<p><strong>Certification path</strong></p>
+<ul>
+<li>the certificate chain is a list of certificates used to authenticate an entity</li>
+<li>the chain begins with the certificate of that entity, and each certificate in the chain is signed by the entity identified by the next certificate in the chain</li>
+<li>the chain terminates with a root CA certificate: a certificate signed by the CA itself</li>
+<li>the signatures of all certificates in the chain must be verified until the root CA certificate is reached</li>
+<li>the number of levels is depend on the number of intermediate CAs</li>
+</ul>
+<h2 id="key-management">Key Management</h2>
+<p><strong>Certificate request</strong></p>
 <ul>
 <li>scenario
 <ul>
@@ -2876,8 +2936,7 @@
 </ul>
 </li>
 </ul>
-</li>
-<li>common system in key-pair generation
+<p><strong>Common system in key-pair generation</strong></p>
 <ul>
 <li>key-pair holder system
 <ul>
@@ -2895,8 +2954,7 @@
 </ul>
 </li>
 </ul>
-</li>
-<li>certificate generation steps
+<p><strong>Certificate generation steps</strong></p>
 <ul>
 <li>CA is presented with the required certificate content information from the “applicant”</li>
 <li>CA verifies the accuracy of the information</li>
@@ -2905,8 +2963,7 @@
 <li>a copy of certificate may be submitted to some directory services</li>
 <li>CA records the certificate generation process in the audit journal</li>
 </ul>
-</li>
-<li>RA
+<p><strong>RA</strong></p>
 <ul>
 <li>supporting role to CA: support subject authentication</li>
 <li>RA does not issue certificates</li>
@@ -2920,27 +2977,25 @@
 </ul>
 </li>
 </ul>
-</li>
-<li>private key protection
+<p><strong>Private key protection</strong></p>
 <ul>
 <li>stored in a tamper-resistant hardware token, e.g. smart card, PCMCIA card</li>
 <li>stored in encrypted date file, with authentication control by PIN, the encryption key is derived from the PIN</li>
 <li>hardware token is more expensive and more secure</li>
 </ul>
-</li>
-<li>backup
+<p><strong>Backup</strong></p>
 <ul>
 <li>for digital signature, private key should not be backup (someone may sign the document on behalf of you)
 <ul>
 <li>if it is lost, apply a new one</li>
 </ul>
 </li>
-<li>for encryption, private key can be stored for a short time in some cases
+<li>for encryption, private key can be stored for a short time or periodically in some cases
 <ul>
 <li>if your private key is lost, new arrival documents should be decrypted</li>
 </ul>
 </li>
-<li>solution
+<li>solutions
 <ul>
 <li>use two sets of key</li>
 <li>for digital signature
@@ -2952,8 +3007,6 @@
 <ul>
 <li>decryption private key should be archived properly (false)</li>
 <li>public key certificates are usually archived</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
