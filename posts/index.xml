@@ -6,8 +6,84 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Thu, 03 Dec 2020 16:26:03 +0800</lastBuildDate>
+        <lastBuildDate>Fri, 04 Dec 2020 16:25:08 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Media Management Platform (Take E-Commerce as An Example)</title>
+            <link>https://www.marshalgao.com/media-management-platform-take-e-commerce-as-an-example/</link>
+            <pubDate>Fri, 04 Dec 2020 16:25:08 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/media-management-platform-take-e-commerce-as-an-example/</guid>
+            <description>电商中大部分的页面还是写死的，但在一些大型活动节，商家可以自己定制化活动页面。但数量十分有限，因为平台要考虑算法运算效率以及加载速度等诸多因素。而活动的促销页面类似于广告中的落地页。通过媒体管理平台或者内容管理平台（CMS）进行页面动态配置。后文将以电商为例说明页面动态配置的逻辑。
+基础组件
+组件是动态页面的基础，提供给用户编辑具体展示的信息。有许多类型的组件：图片轮播、ICON、优惠券等，每种组件都可以有多个不同的样式，选择内部展示的内容或者自定义。用的最常见的就是链接，组件显示样式虽然多样，但是点击之后通往的页面选择库却是共通的。例如：新的活动页面、商品详情页、商品聚合页、购物车、客服等等。
+基础组件的定义和解析是自定义页面的核心，不同的组件有不同的功能，表示不同类型的内容。每个组件都需要单独设计，定义其规则和样式。 例如ICON、图片轮播就是简单的图片展示，商品排名对应的算法较为复杂，需要实时去取动态排名。
+位置+内容
+有了组件之后，用户在设置或者系统在解析的时候，首先要确定组件在自定义页面中的位置。位置可以称为“楼层”，每个页面的各楼层可以定义名称、设置背景、配置内容，目前最主流的交互是拖动组件到相应的位置，设置内容之后实时预览，自定义页面动态可视化。
+动态页面
+对于整个动态页面，需要定义生效时间、结束时间、活动页面名称等基础信息。设置之后可生成相应的链接进行预览。
+动态页面是由不同的组件内容构成，首先按照各组件位置去解析，然后再去解析组件的内容（样式、图片/商品、背景、链接等）。按照上图的反向流程走，就能解析出对应的自定义页面内容。
+首页设置也是相同，类似自定义页面，可动态设置首页内容，动态添加自定义组件。目前绝大部分电商首页都是动态配置，有着丰富的自定义内容。</description>
+            <content type="html"><![CDATA[<p>电商中大部分的页面还是写死的，但在一些大型活动节，商家可以自己定制化活动页面。但数量十分有限，因为平台要考虑算法运算效率以及加载速度等诸多因素。而活动的促销页面类似于广告中的落地页。通过媒体管理平台或者内容管理平台（CMS）进行页面动态配置。后文将以电商为例说明页面动态配置的逻辑。</p>
+<p><strong>基础组件</strong></p>
+<p>组件是动态页面的基础，提供给用户编辑具体展示的信息。有许多类型的组件：图片轮播、ICON、优惠券等，每种组件都可以有多个不同的样式，选择内部展示的内容或者自定义。用的最常见的就是链接，组件显示样式虽然多样，但是点击之后通往的页面选择库却是共通的。例如：新的活动页面、商品详情页、商品聚合页、购物车、客服等等。</p>
+<p>基础组件的定义和解析是自定义页面的核心，不同的组件有不同的功能，表示不同类型的内容。每个组件都需要单独设计，定义其规则和样式。 例如ICON、图片轮播就是简单的图片展示，商品排名对应的算法较为复杂，需要实时去取动态排名。</p>
+<p><strong>位置+内容</strong></p>
+<p>有了组件之后，用户在设置或者系统在解析的时候，首先要确定组件在自定义页面中的位置。位置可以称为“楼层”，每个页面的各楼层可以定义名称、设置背景、配置内容，目前最主流的交互是拖动组件到相应的位置，设置内容之后实时预览，自定义页面动态可视化。</p>
+<p><strong>动态页面</strong></p>
+<p>对于整个动态页面，需要定义生效时间、结束时间、活动页面名称等基础信息。设置之后可生成相应的链接进行预览。</p>
+<p>动态页面是由不同的组件内容构成，首先按照各组件位置去解析，然后再去解析组件的内容（样式、图片/商品、背景、链接等）。按照上图的反向流程走，就能解析出对应的自定义页面内容。</p>
+<p>首页设置也是相同，类似自定义页面，可动态设置首页内容，动态添加自定义组件。目前绝大部分电商首页都是动态配置，有着丰富的自定义内容。</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Advertising Scheduling System</title>
+            <link>https://www.marshalgao.com/advertising-scheduling-system/</link>
+            <pubDate>Fri, 04 Dec 2020 15:56:27 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/advertising-scheduling-system/</guid>
+            <description>广告学中的排期方式
+ 持续式排期  不受任何条件影响，一年四季持续投放 广告持续性强 简单 比如日常快销产品的投放   起伏式排期  广告期和无广告期交替出现 挑选一年中对产品销售影响最大的时段进行投放 比如羽绒服广告   脉冲式排期  持续式排期和起伏式排期的结合 全年持续投放，但一直维持较低水平 需求量旺盛时，加大投放 比如饮料广告（夏季大量投放，但全年投放）   集中式排期  在同一媒介或平台集中投放 一般集中于季节或者节日 比如双十一的电商广告投放    BB Part
+广告排期可以简单理解为对广告档期的编排。在腾讯的智能投放体系中，先通过创意创造出广告，在寻找目标人群，实现精准投放。但投放的过程中必然会涉及到排期，所以广告排期其实也是只能投放闭环中的一节。而且，对于广告学重的排期系统，是需要后续监播和反馈，但这一过程在智能投放闭环中，被迁移到了投放结果分析或报告产出的环节。互联网广告的排期会结合出价、内容、创意等要素综合考虑，一定程度上超越了传统广告学的排期概念。</description>
+            <content type="html"><![CDATA[<p><strong>广告学中的排期方式</strong></p>
+<ul>
+<li>持续式排期
+<ul>
+<li>不受任何条件影响，一年四季持续投放</li>
+<li>广告持续性强</li>
+<li>简单</li>
+<li>比如日常快销产品的投放</li>
+</ul>
+</li>
+<li>起伏式排期
+<ul>
+<li>广告期和无广告期交替出现</li>
+<li>挑选一年中对产品销售影响最大的时段进行投放</li>
+<li>比如羽绒服广告</li>
+</ul>
+</li>
+<li>脉冲式排期
+<ul>
+<li>持续式排期和起伏式排期的结合</li>
+<li>全年持续投放，但一直维持较低水平</li>
+<li>需求量旺盛时，加大投放</li>
+<li>比如饮料广告（夏季大量投放，但全年投放）</li>
+</ul>
+</li>
+<li>集中式排期
+<ul>
+<li>在同一媒介或平台集中投放</li>
+<li>一般集中于季节或者节日</li>
+<li>比如双十一的电商广告投放</li>
+</ul>
+</li>
+</ul>
+<p><strong>BB Part</strong></p>
+<p>广告排期可以简单理解为对广告档期的编排。在腾讯的智能投放体系中，先通过创意创造出广告，在寻找目标人群，实现精准投放。但投放的过程中必然会涉及到排期，所以广告排期其实也是只能投放闭环中的一节。而且，对于广告学重的排期系统，是需要后续监播和反馈，但这一过程在智能投放闭环中，被迁移到了投放结果分析或报告产出的环节。互联网广告的排期会结合出价、内容、创意等要素综合考虑，一定程度上超越了传统广告学的排期概念。</p>
+]]></content>
+        </item>
         
         <item>
             <title>Traffic Conversion</title>
@@ -2677,7 +2753,7 @@
 <img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112301.png" alt=""></li>
 </ul>
 <h2 id="public-key-certificate">Public Key Certificate</h2>
-<p><strong>Problems in PKC</strong></p>
+<p><strong>Problems in public key cryptography</strong></p>
 <ul>
 <li>private key
 <ul>
@@ -2692,11 +2768,13 @@
 <li>scenario
 <img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112302.png" alt=""></li>
 </ul>
-<p><strong>Where is CA&rsquo;s public key?</strong></p>
+<p><strong>CA&rsquo;s public key</strong></p>
 <ul>
-<li>mechanism
+<li>root certificate
 <ul>
-<li>CA self signed (root certificate)
+<li>CA&rsquo;s public key is stored in a special PKC</li>
+<li>CA self signed</li>
+<li>assumption: root certificates are correct
 <img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112303.png" alt=""></li>
 </ul>
 </li>
@@ -2714,6 +2792,65 @@
 <img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/IMG_0056.jpg" alt=""></li>
 </ul>
 </li>
+<li>certificates can be distributed without any protection
+<ul>
+<li>no confidentiality needed</li>
+<li>the certificate contains a digital signature which provides authenticity and integrity</li>
+</ul>
+</li>
+<li>a large population of users can participate in a PKI, every user only need to know CA&rsquo;s public key</li>
+<li>usually more secure than a normal user key
+<ul>
+<li>normal user -&gt; 1024 bits</li>
+<li>CA -&gt; 2048 bits</li>
+</ul>
+</li>
+<li>CA is responsible for subject authentication
+<ul>
+<li>verfication of user id before issuing the PKC</li>
+</ul>
+</li>
+<li>procedures (digital signature and encryption)
+<ul>
+<li>when B receives a message from A signed by A’s private key
+<ul>
+<li>B gets the public key of CA (in the CA certificate)</li>
+<li>B gets A’s PKC (inside the message from A, a directory service, or … )</li>
+<li>B verifies A’s PKC by CA’s public key, then extracts A’s public key from the PKC</li>
+<li>B can verify A’s digital signature, by A’s public key</li>
+<li>B is called a “relying party”</li>
+</ul>
+</li>
+<li>when A wants to send an encrypted message to B
+<ul>
+<li>A gets the public key of CA</li>
+<li>A gets B’s PKC</li>
+<li>A verifies B’s PKC by CA’s public key, then extracts B’s public key</li>
+<li>A encrypts the message using B’s public key</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Validity period</strong></p>
+<ul>
+<li>PKC format
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120403.png" alt=""></li>
+<li>a certificate has a life time (just as keys)
+<ul>
+<li>a certificate contains start date/time and expiration date/time</li>
+<li>expired certificate are only used to verify signature on a old document (e.g. for auditing purpose)</li>
+<li>a new certificate should be issued to the subscriber when his/her old certificate is expired</li>
+<li>in event of suspected key compromise, a new certificate should be issued, and the old certificate should be “revoked” prior to its expiry date</li>
+</ul>
+</li>
+<li>verify digital signature
+<ul>
+<li>verify the digital signature with signer’s public key in signer’s PKC</li>
+<li>verify signer’s PKC using CA’s public key in the root cert</li>
+<li>confirm the signer’s PKC is not yet expired</li>
+</ul>
+</li>
 </ul>
 <p><strong>Features</strong></p>
 <ul>
@@ -2727,6 +2864,100 @@
 </li>
 <li>each PKC contains a public-key, and the certificate is signed by a “Certification Authority” or some “Intermediate Certification Authority”, which has confirmed the identity and other attributes of the holder of the corresponding private key</li>
 <li>assumption: everyone knows how to verify the CA’s digital signature (i.e. everyone knows CA’s public key)</li>
+</ul>
+<h2 id="key-management">Key Management</h2>
+<ul>
+<li>certificate request
+<ul>
+<li>scenario
+<ul>
+<li>Alice generates her own key pair</li>
+<li>Alice brings the public key to the CA and some signed request showing that she knows the private key</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>common system in key-pair generation
+<ul>
+<li>key-pair holder system
+<ul>
+<li>private key owner performs the generation</li>
+<li>private key never goes to other places</li>
+<li>best for non-repudiation requirement</li>
+</ul>
+</li>
+<li>central system
+<ul>
+<li>private key has to be transported to the owner</li>
+<li>key-pair generated in central Registration Authority (RA) associated with CA, RA generates a key on behalf of an end-user</li>
+<li>central site specialized in key generation, more resources, better algorithm, stronger control, etc.</li>
+<li>related functions like key archival can provided</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>certificate generation steps
+<ul>
+<li>CA is presented with the required certificate content information from the “applicant”</li>
+<li>CA verifies the accuracy of the information</li>
+<li>the certificate is created, and signed by a signing device using the CA’s private key</li>
+<li>a copy of the certificate is sent to the subscriber</li>
+<li>a copy of certificate may be submitted to some directory services</li>
+<li>CA records the certificate generation process in the audit journal</li>
+</ul>
+</li>
+<li>RA
+<ul>
+<li>supporting role to CA: support subject authentication</li>
+<li>RA does not issue certificates</li>
+<li>key functions of RA
+<ul>
+<li>registering, de-registering, and changing attributes of subscribers</li>
+<li>authenticating subscribers (most common and useful function)</li>
+<li>authorizing requests for key-pair or certificate generation, or recovering backed up keys</li>
+<li>accepting and authorizing requests for certificate suspension or revocation</li>
+<li>physically delivering tokens to the authorized users, and recovering obsolete tokens from users</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>private key protection
+<ul>
+<li>stored in a tamper-resistant hardware token, e.g. smart card, PCMCIA card</li>
+<li>stored in encrypted date file, with authentication control by PIN, the encryption key is derived from the PIN</li>
+<li>hardware token is more expensive and more secure</li>
+</ul>
+</li>
+<li>backup
+<ul>
+<li>for digital signature, private key should not be backup (someone may sign the document on behalf of you)
+<ul>
+<li>if it is lost, apply a new one</li>
+</ul>
+</li>
+<li>for encryption, private key can be stored for a short time in some cases
+<ul>
+<li>if your private key is lost, new arrival documents should be decrypted</li>
+</ul>
+</li>
+<li>solution
+<ul>
+<li>use two sets of key</li>
+<li>for digital signature
+<ul>
+<li>the public key certificate together with the stored public key for digital signature verification should be properly archived</li>
+</ul>
+</li>
+<li>for encryption
+<ul>
+<li>decryption private key should be archived properly (false)</li>
+<li>public key certificates are usually archived</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h2 id="questions">Questions</h2>
 <p><strong>Q: Why the definition of PKI is only about public keys?</strong></p>

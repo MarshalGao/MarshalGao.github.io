@@ -47,7 +47,7 @@
  PKC &amp; PKI  PKC is about math, but PKI is about binding a pair of key to one person   definition  PKI is a set of hardware, software, people, policies and procedures needed to create, manage, distribute, use, store, and revoke digital certificates PKI is an arrangement that binds public keys with respective user identities by means of a certificate authority (CA)  the binding is established through the registration and issuance process the PKI role that assures this binding is called the registration authority (RA): it ensures that the public key is bound to the individual to which it is assigned in a way that ensures non-repudiation   law for digital signature, e.">
 <meta itemprop="datePublished" content="2020-11-23T14:10:48+08:00" />
 <meta itemprop="dateModified" content="2020-11-23T14:10:48+08:00" />
-<meta itemprop="wordCount" content="401">
+<meta itemprop="wordCount" content="1085">
 <meta itemprop="image" content="https://www.marshalgao.com/"/>
 
 
@@ -145,7 +145,7 @@
           <circle cx="12" cy="12" r="10"></circle>
           <polyline points="12 6 12 12 16 14"></polyline>
         </svg>
-        2 minutes
+        6 minutes
 
         
       </p>
@@ -187,7 +187,7 @@
 <img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112301.png" alt=""></li>
 </ul>
 <h2 id="public-key-certificate">Public Key Certificate</h2>
-<p><strong>Problems in PKC</strong></p>
+<p><strong>Problems in public key cryptography</strong></p>
 <ul>
 <li>private key
 <ul>
@@ -202,11 +202,13 @@
 <li>scenario
 <img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112302.png" alt=""></li>
 </ul>
-<p><strong>Where is CA&rsquo;s public key?</strong></p>
+<p><strong>CA&rsquo;s public key</strong></p>
 <ul>
-<li>mechanism
+<li>root certificate
 <ul>
-<li>CA self signed (root certificate)
+<li>CA&rsquo;s public key is stored in a special PKC</li>
+<li>CA self signed</li>
+<li>assumption: root certificates are correct
 <img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112303.png" alt=""></li>
 </ul>
 </li>
@@ -224,6 +226,65 @@
 <img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/IMG_0056.jpg" alt=""></li>
 </ul>
 </li>
+<li>certificates can be distributed without any protection
+<ul>
+<li>no confidentiality needed</li>
+<li>the certificate contains a digital signature which provides authenticity and integrity</li>
+</ul>
+</li>
+<li>a large population of users can participate in a PKI, every user only need to know CA&rsquo;s public key</li>
+<li>usually more secure than a normal user key
+<ul>
+<li>normal user -&gt; 1024 bits</li>
+<li>CA -&gt; 2048 bits</li>
+</ul>
+</li>
+<li>CA is responsible for subject authentication
+<ul>
+<li>verfication of user id before issuing the PKC</li>
+</ul>
+</li>
+<li>procedures (digital signature and encryption)
+<ul>
+<li>when B receives a message from A signed by A’s private key
+<ul>
+<li>B gets the public key of CA (in the CA certificate)</li>
+<li>B gets A’s PKC (inside the message from A, a directory service, or … )</li>
+<li>B verifies A’s PKC by CA’s public key, then extracts A’s public key from the PKC</li>
+<li>B can verify A’s digital signature, by A’s public key</li>
+<li>B is called a “relying party”</li>
+</ul>
+</li>
+<li>when A wants to send an encrypted message to B
+<ul>
+<li>A gets the public key of CA</li>
+<li>A gets B’s PKC</li>
+<li>A verifies B’s PKC by CA’s public key, then extracts B’s public key</li>
+<li>A encrypts the message using B’s public key</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Validity period</strong></p>
+<ul>
+<li>PKC format
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120403.png" alt=""></li>
+<li>a certificate has a life time (just as keys)
+<ul>
+<li>a certificate contains start date/time and expiration date/time</li>
+<li>expired certificate are only used to verify signature on a old document (e.g. for auditing purpose)</li>
+<li>a new certificate should be issued to the subscriber when his/her old certificate is expired</li>
+<li>in event of suspected key compromise, a new certificate should be issued, and the old certificate should be “revoked” prior to its expiry date</li>
+</ul>
+</li>
+<li>verify digital signature
+<ul>
+<li>verify the digital signature with signer’s public key in signer’s PKC</li>
+<li>verify signer’s PKC using CA’s public key in the root cert</li>
+<li>confirm the signer’s PKC is not yet expired</li>
+</ul>
+</li>
 </ul>
 <p><strong>Features</strong></p>
 <ul>
@@ -237,6 +298,100 @@
 </li>
 <li>each PKC contains a public-key, and the certificate is signed by a “Certification Authority” or some “Intermediate Certification Authority”, which has confirmed the identity and other attributes of the holder of the corresponding private key</li>
 <li>assumption: everyone knows how to verify the CA’s digital signature (i.e. everyone knows CA’s public key)</li>
+</ul>
+<h2 id="key-management">Key Management</h2>
+<ul>
+<li>certificate request
+<ul>
+<li>scenario
+<ul>
+<li>Alice generates her own key pair</li>
+<li>Alice brings the public key to the CA and some signed request showing that she knows the private key</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>common system in key-pair generation
+<ul>
+<li>key-pair holder system
+<ul>
+<li>private key owner performs the generation</li>
+<li>private key never goes to other places</li>
+<li>best for non-repudiation requirement</li>
+</ul>
+</li>
+<li>central system
+<ul>
+<li>private key has to be transported to the owner</li>
+<li>key-pair generated in central Registration Authority (RA) associated with CA, RA generates a key on behalf of an end-user</li>
+<li>central site specialized in key generation, more resources, better algorithm, stronger control, etc.</li>
+<li>related functions like key archival can provided</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>certificate generation steps
+<ul>
+<li>CA is presented with the required certificate content information from the “applicant”</li>
+<li>CA verifies the accuracy of the information</li>
+<li>the certificate is created, and signed by a signing device using the CA’s private key</li>
+<li>a copy of the certificate is sent to the subscriber</li>
+<li>a copy of certificate may be submitted to some directory services</li>
+<li>CA records the certificate generation process in the audit journal</li>
+</ul>
+</li>
+<li>RA
+<ul>
+<li>supporting role to CA: support subject authentication</li>
+<li>RA does not issue certificates</li>
+<li>key functions of RA
+<ul>
+<li>registering, de-registering, and changing attributes of subscribers</li>
+<li>authenticating subscribers (most common and useful function)</li>
+<li>authorizing requests for key-pair or certificate generation, or recovering backed up keys</li>
+<li>accepting and authorizing requests for certificate suspension or revocation</li>
+<li>physically delivering tokens to the authorized users, and recovering obsolete tokens from users</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>private key protection
+<ul>
+<li>stored in a tamper-resistant hardware token, e.g. smart card, PCMCIA card</li>
+<li>stored in encrypted date file, with authentication control by PIN, the encryption key is derived from the PIN</li>
+<li>hardware token is more expensive and more secure</li>
+</ul>
+</li>
+<li>backup
+<ul>
+<li>for digital signature, private key should not be backup (someone may sign the document on behalf of you)
+<ul>
+<li>if it is lost, apply a new one</li>
+</ul>
+</li>
+<li>for encryption, private key can be stored for a short time in some cases
+<ul>
+<li>if your private key is lost, new arrival documents should be decrypted</li>
+</ul>
+</li>
+<li>solution
+<ul>
+<li>use two sets of key</li>
+<li>for digital signature
+<ul>
+<li>the public key certificate together with the stored public key for digital signature verification should be properly archived</li>
+</ul>
+</li>
+<li>for encryption
+<ul>
+<li>decryption private key should be archived properly (false)</li>
+<li>public key certificates are usually archived</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h2 id="questions">Questions</h2>
 <p><strong>Q: Why the definition of PKI is only about public keys?</strong></p>
@@ -277,7 +432,7 @@
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        401 Words
+        1085 Words
       </p>
 
       <p>
