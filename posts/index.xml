@@ -6,8 +6,80 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Sat, 05 Dec 2020 19:58:49 +0800</lastBuildDate>
+        <lastBuildDate>Sat, 05 Dec 2020 22:23:35 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ICOM6045 Mobile Code Security</title>
+            <link>https://www.marshalgao.com/icom6045-mobile-code-security/</link>
+            <pubDate>Sat, 05 Dec 2020 22:23:35 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/icom6045-mobile-code-security/</guid>
+            <description>Mobile Code Security Mobile code
+ dynamically downloadable executable content is referred to as mobile code includes platform-independent executable content which is transferred over a communication network, crossing different security perimeters, and is automatically executed upon arrival at the destination host examples are Java applets, ActiveX controls, JavaScript, Safe-Tcl, servlet “browser helper applications” and plug-ins  download from store download on demand    Mechanisms
+ code signing least privileges code monitoring: resources usage monitoring mobile code runtime environment  memory model partition the memory into safe and unsafe regions safety check ensure every memory access refers to a safe memory location, e.</description>
+            <content type="html"><![CDATA[<h2 id="mobile-code-security">Mobile Code Security</h2>
+<p><strong>Mobile code</strong></p>
+<ul>
+<li>dynamically downloadable executable content is referred to as mobile code</li>
+<li>includes platform-independent executable content which is transferred over a communication network, crossing different security perimeters, and is automatically executed upon arrival at the destination host</li>
+<li>examples are Java applets, ActiveX controls, JavaScript, Safe-Tcl, servlet</li>
+<li>“browser helper applications” and plug-ins
+<ul>
+<li>download from store</li>
+<li>download on demand</li>
+</ul>
+</li>
+</ul>
+<p><strong>Mechanisms</strong></p>
+<ul>
+<li>code signing</li>
+<li>least privileges</li>
+<li>code monitoring: resources usage monitoring</li>
+<li>mobile code runtime environment
+<ul>
+<li>memory model partition the memory into safe and unsafe regions</li>
+<li>safety check ensure every memory access refers to a safe memory location, e.g. Java type safety</li>
+<li>resource access control by security manager, e.g. Java access controller</li>
+</ul>
+</li>
+<li>proof-carrying code: the proof that a piece of mobile code adheres to a safety policy is encoded and transmitted together with the code</li>
+</ul>
+<p><strong>Java safety</strong></p>
+<ul>
+<li>safety denotes absence of undesirable behavior that can cause system hazards, e.g.
+<ul>
+<li>Java manages memory by reference and does not allow pointer arithmetic</li>
+<li>Java provides “final” modifier, which disables overriding class or method</li>
+<li>Java supports automatic memory management, which prevents memory leak and covert channel</li>
+</ul>
+</li>
+<li>Java is a strongly typed language
+<ul>
+<li>an object must always be accessed in the same way and illegal casting is impossible, e.g. an integer cannot be casted to a pointer and access anywhere in the system</li>
+<li>static type checking by bytecode verifier protects against forget pointers, access restriction violation, stack overflows, …</li>
+<li>dynamic type checking ensure no array bound overflows or type incompatibilities</li>
+</ul>
+</li>
+<li>Java applet execution
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120522.png" alt=""></li>
+<li>Java 2 security model
+<ul>
+<li>using digital signature
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120523.png" alt=""></li>
+<li>run-time access control
+<ul>
+<li>stack check
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120524.png" alt=""></li>
+<li>enable privilege
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120525.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>ICOM6045 Web Security - More Examples</title>
