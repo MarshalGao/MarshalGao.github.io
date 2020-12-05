@@ -47,7 +47,7 @@
  HTTP messages are requests sent from clients to servers, and responses from servers to clients HTTP message structure  start line 0 or more headers, each header contains field name, colon, field value optional message body   HTTP request  start line: request method  GET HEAD POST PUT DELETE     HTTP response  start line: status line, contains  HTTP version used by the server status code  200 -&gt; ok 404 -&gt; not found 401 -&gt; unauthorized 403 -&gt; forbidden   reason phrase      HTTP cache security issues">
 <meta itemprop="datePublished" content="2020-12-04T20:50:32+08:00" />
 <meta itemprop="dateModified" content="2020-12-04T20:50:32+08:00" />
-<meta itemprop="wordCount" content="417">
+<meta itemprop="wordCount" content="1391">
 <meta itemprop="image" content="https://www.marshalgao.com/"/>
 
 
@@ -145,7 +145,7 @@
           <circle cx="12" cy="12" r="10"></circle>
           <polyline points="12 6 12 12 16 14"></polyline>
         </svg>
-        2 minutes
+        7 minutes
 
         
       </p>
@@ -159,7 +159,8 @@
       
 
       <div class="post-content">
-        <h2 id="http-basics">HTTP Basics</h2>
+        <p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/TLS.png" alt=""></p>
+<h2 id="http-basics">HTTP Basics</h2>
 <p><strong>HTTP messages</strong></p>
 <ul>
 <li>HTTP messages are requests sent from clients to servers, and responses from servers to clients</li>
@@ -266,6 +267,233 @@
 </ul>
 </li>
 </ul>
+<h2 id="ssltls">SSL/TLS</h2>
+<p><strong>TLS (Transport Layer Security)</strong></p>
+<ul>
+<li>overview
+<ul>
+<li>a security protocol on top of TCP that replaces the widely used SSL</li>
+<li>applications use TLS should be extended with the corresponding functions calls (TLS programming library)</li>
+<li>TLS v1.0 developed from SSLv3</li>
+<li>TLS and SSLv3 are very similar, but different enough to ensure NOT inoperable, e.g. SSL uses MD5 and TLS uses HMAC, but TLS can “back down” to SSLv3</li>
+<li>TLS provides data integrity, data confidentiality, and peer entity authentication</li>
+</ul>
+</li>
+<li>TLS encrypted packet
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120501.png" alt="">
+<ul>
+<li>TLS record protocol
+<ul>
+<li>uses for encapsulation of higher level protocols</li>
+<li>takes messages to be transmitted, fragments data into manageable blocks, applies a MAC, encrypts and transmits
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120503.png" alt=""></li>
+</ul>
+</li>
+<li>TLS handshake protocol
+<ul>
+<li>for the client and the server to authenticate each other and negotiate an encryption algorithm and cryptographic keys before the application-level data is transmitted</li>
+<li>consists of the following 3 protocols
+<ul>
+<li>handshake protocol: the client and the server agree on a protocol version, select cryptographic algorithm, optionally authenticate each other, and generate shared secret key</li>
+<li>change cipher protocol: a single message sent by both the client and the server to notify the receiver that the subsequent message will be protected with the agreed security parameters</li>
+<li>alert protocol: various alert messages for notifying the receiver that the connection will be closed, or that an error condition has occurred</li>
+</ul>
+</li>
+<li>3 authentication modes
+<ul>
+<li>server authentication only
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120504.png" alt=""></li>
+<li>authentication of both parties (mutual or client/server authentication)
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120505.png" alt=""></li>
+<li>total anonymity
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120506.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>HTTP with SSL/TLS</strong></p>
+<ul>
+<li>HTTP transaction
+<ul>
+<li>SSL/TLS suits HTTP since it can provide some protections if only one side of the communication is authenticated</li>
+<li>HTTPS signals the browser to use an added encryption layer of SSL/TLS to protect the traffic, which provides a secure channel over an insecure network
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120507.png" alt=""></li>
+</ul>
+</li>
+<li>trust
+<ul>
+<li>user
+<ul>
+<li>trust browser</li>
+<li>trust CA</li>
+<li>trust SSL/TLS protocol and it is good</li>
+</ul>
+</li>
+<li>website
+<ul>
+<li>provide a valid certificate</li>
+<li>the certificate correctly identifies the website</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>HTTP procedure
+<ul>
+<li>the browser requests a document with a special URL which commences https, instead of http</li>
+<li>the browser recognizes the TLS request, and establishes a connection through TCP port 443 to the TLS code on the server</li>
+<li>the browser then initiates the TLS handshake phase, using the TLS record protocol as a carrier</li>
+<li>following the handshake, both browser and the server have a shared secret master key</li>
+<li>from the master key, both browser and the server can generate other session keys, which are used to encrypt the session data
+<ul>
+<li>the browser may use for a long time, use this mechanism to change the session key periodically</li>
+<li>becasue the browser and server also trust the master key</li>
+</ul>
+</li>
+<li>the requested document is then encrypted with the session key and then the sent from the server to the client</li>
+</ul>
+</li>
+<li>limitations
+<ul>
+<li>SSL mixed content problem
+<ul>
+<li>a webpage has HTTP and HTTPS contents</li>
+<li>data unprotected by SSL may be seen by intermediate routers</li>
+<li>in many cases this is still safe</li>
+<li>but, attack code in non-SSL data can be dangerous</li>
+</ul>
+</li>
+<li>SSL protection
+<ul>
+<li>SSL provides secure encryption in the two points (browser and server)
+<ul>
+<li>no intermediate routers or processes can see the content transmitted between the browser and the server</li>
+</ul>
+</li>
+<li>the two endpoints can still leak information
+<ul>
+<li>e.g. attack the information before the client or server&rsquo;s encryption</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>heartbleed problem
+<ul>
+<li>due to OpenSSL
+<ul>
+<li>did not check for invalid user input</li>
+<li>did not check for buffer over-read</li>
+</ul>
+</li>
+<li>scenario
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120508.png" alt="">
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120509.png" alt=""></li>
+<li>an attacker can request that a running TLS server hand over a relatively large slice (up to 64KB) of its private memory space.</li>
+<li>this private memory space can potentially store
+<ul>
+<li>long-term server private key</li>
+<li>TLS session keys</li>
+<li>confidential data like passwords</li>
+<li>session ticket keys</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="ipsec">IPsec</h2>
+<p><strong>Implementation</strong></p>
+<ul>
+<li>IPsec provides transport security for all users of IP, without changing the interface to IP, i.e. upper layer protocols need not be modified to invoke security and need not be aware that their traffic is protected at the IP layer</li>
+<li>IPsec provides host-to-host security, but not user-to-user or application-to-application security</li>
+</ul>
+<p><strong>IP security protocol</strong></p>
+<ul>
+<li>network layer security
+<ul>
+<li>provides secrecy by encrypting all IP datagrams (e.g. TCP/UDP segments, ICMP messages)</li>
+<li>transparent to applications above the IP layer</li>
+</ul>
+</li>
+<li>source authentication
+<ul>
+<li>able to authenticate the IP source addresses, to prevent spoofing IP addresses</li>
+</ul>
+</li>
+<li>2 principle protocols
+<ul>
+<li>Authentication Header (AH) protocol: provides authentication and integrity for packet sources
+<ul>
+<li>not used now, because no encryption, only authentication</li>
+<li>existing reason
+<ul>
+<li>in the 1990s, export restrictions on encryption algorithms required “exported” products to provide an authentication-only mechanism</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Encapsulation Security Payload (ESP) protocol: provides authentication and integrity for packet sources, and confidentiality using AES</li>
+</ul>
+</li>
+<li>services
+<ul>
+<li>indirect access control support</li>
+<li>connectionless integrity</li>
+<li>data origin authentication</li>
+<li>protection against replaying/reordering of IP packets</li>
+<li>confidentiality</li>
+<li>limited traffic flow confidentiality</li>
+</ul>
+</li>
+<li>key components
+<ul>
+<li>security protocols (AH, ESP)</li>
+<li>security association (SA)</li>
+<li>algorithm for authentication and encryption</li>
+<li>key management (IKE)</li>
+</ul>
+</li>
+<li>modes
+<ul>
+<li>transport mode
+<ul>
+<li>protection is afforded from host-to-host and host-to-gateway</li>
+<li>uses the original IP header (not encrypted): protects the packet payload</li>
+<li>an upper-layer protocol frame, e.g. TCP or UDP frame, is encapsulated within the ESP</li>
+<li>both hosts have to IPsec aware
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120510.png" alt=""></li>
+</ul>
+</li>
+<li>tunnel mode
+<ul>
+<li>supports gateway-to-gateway and host-to-gateway connections, rarely used for host-to-host connection</li>
+<li>uses IPsec header: protects both the original IP header and the payload, more difficult for attackers to identify targets</li>
+<li>the whole IP packet is treated as a new payload of an outer IP packet, the original inner IP packet is encapsulated within the outer IP packet</li>
+<li>end hosts need not be IPsec aware
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120511.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>SA (Security Association)
+<ul>
+<li>specifies the manners in which packets are protected, includes cryptographic algorithms, keys, IV, lifetimes, sequence numbers and the mode</li>
+<li>before sending secured data packets from the source to the destination, the source and network hosts handshake and create a network-layer logical connection, called security association</li>
+<li>for two-way communication between a sender and a receiver, 2 SAs are required</li>
+<li>an SA is a 3-tuple
+<ul>
+<li>a security protocol (AH or ESP) identifier</li>
+<li>the source IP address</li>
+<li>a 32-bit connection identifier called the Security Parameter Index (SPI): all datagrams in the SA will have the same SPI
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120513.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
       </div>
     </article>
@@ -302,7 +530,7 @@
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        417 Words
+        1391 Words
       </p>
 
       <p>
