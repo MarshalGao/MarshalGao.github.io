@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Marshal ">
+<meta name="description" content="Man-In-The-Browser Attack  schematic diagram  medium  the trojan works by utilizing prevalent tools/plugins to enhance browser capabilities  Browser Helper Objects (BHO) extensions user scripts   spam email virus downloaded from malicious website free software downloaded from malicious website or forum   hard to detect by virus scanning software example - attack bank account to stole money  infect your browser waiting for you to login to your Internet banking account redirect you to the “hacker’s” server capture your username/password and the one-time password (to login) pretend the one-time password is not correct and ask you to input the second one-time password (transfer money) crash the victim&amp;rsquo;s browser in order to have more time use 2 one-time passwords to transfer money to another account in another country    Cross Site Forgery Request (CSFR)  threats from server to client general key idea  after client authenticated to a server, the authentication info is stored in client (usually as cookie) (e." />
+<meta name="keywords" content=", icom6045, fundamentals of e-commerce security, web security, examples, case study" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://www.marshalgao.com/icom6045-web-security-more-examples/" />
+
+
+    <title>
+        
+            ICOM6045 Web Security - More Examples :: This is Marshal 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://www.marshalgao.com/main.bdf16375e88c9de5121e200285a015c4d181bcc9641cf97e05c5e46866f50161.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.marshalgao.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.marshalgao.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.marshalgao.com/favicon-16x16.png">
+    <link rel="manifest" href="https://www.marshalgao.com/site.webmanifest">
+    <link rel="mask-icon" href="https://www.marshalgao.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://www.marshalgao.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="ICOM6045 Web Security - More Examples">
+<meta itemprop="description" content="Man-In-The-Browser Attack  schematic diagram  medium  the trojan works by utilizing prevalent tools/plugins to enhance browser capabilities  Browser Helper Objects (BHO) extensions user scripts   spam email virus downloaded from malicious website free software downloaded from malicious website or forum   hard to detect by virus scanning software example - attack bank account to stole money  infect your browser waiting for you to login to your Internet banking account redirect you to the “hacker’s” server capture your username/password and the one-time password (to login) pretend the one-time password is not correct and ask you to input the second one-time password (transfer money) crash the victim&rsquo;s browser in order to have more time use 2 one-time passwords to transfer money to another account in another country    Cross Site Forgery Request (CSFR)  threats from server to client general key idea  after client authenticated to a server, the authentication info is stored in client (usually as cookie) (e.">
+<meta itemprop="datePublished" content="2020-12-05T19:58:49+08:00" />
+<meta itemprop="dateModified" content="2020-12-05T19:58:49+08:00" />
+<meta itemprop="wordCount" content="631">
+<meta itemprop="image" content="https://www.marshalgao.com/"/>
+
+
+
+<meta itemprop="keywords" content="icom6045,fundamentals of e-commerce security,web security,examples,case study," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.marshalgao.com/"/>
+
+<meta name="twitter:title" content="ICOM6045 Web Security - More Examples"/>
+<meta name="twitter:description" content="Man-In-The-Browser Attack  schematic diagram  medium  the trojan works by utilizing prevalent tools/plugins to enhance browser capabilities  Browser Helper Objects (BHO) extensions user scripts   spam email virus downloaded from malicious website free software downloaded from malicious website or forum   hard to detect by virus scanning software example - attack bank account to stole money  infect your browser waiting for you to login to your Internet banking account redirect you to the “hacker’s” server capture your username/password and the one-time password (to login) pretend the one-time password is not correct and ask you to input the second one-time password (transfer money) crash the victim&rsquo;s browser in order to have more time use 2 one-time passwords to transfer money to another account in another country    Cross Site Forgery Request (CSFR)  threats from server to client general key idea  after client authenticated to a server, the authentication info is stored in client (usually as cookie) (e."/>
+
+
+
+    <meta property="og:title" content="ICOM6045 Web Security - More Examples" />
+<meta property="og:description" content="Man-In-The-Browser Attack  schematic diagram  medium  the trojan works by utilizing prevalent tools/plugins to enhance browser capabilities  Browser Helper Objects (BHO) extensions user scripts   spam email virus downloaded from malicious website free software downloaded from malicious website or forum   hard to detect by virus scanning software example - attack bank account to stole money  infect your browser waiting for you to login to your Internet banking account redirect you to the “hacker’s” server capture your username/password and the one-time password (to login) pretend the one-time password is not correct and ask you to input the second one-time password (transfer money) crash the victim&rsquo;s browser in order to have more time use 2 one-time passwords to transfer money to another account in another country    Cross Site Forgery Request (CSFR)  threats from server to client general key idea  after client authenticated to a server, the authentication info is stored in client (usually as cookie) (e." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.marshalgao.com/icom6045-web-security-more-examples/" />
+<meta property="og:image" content="https://www.marshalgao.com/"/>
+<meta property="article:published_time" content="2020-12-05T19:58:49+08:00" />
+<meta property="article:modified_time" content="2020-12-05T19:58:49+08:00" />
+
+
+
+
+    <meta property="article:section" content="HKU" />
+
+
+
+    <meta property="article:published_time" content="2020-12-05 19:58:49 &#43;0800 HKT" />
+
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://www.marshalgao.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://www.marshalgao.com/categories/hku">HKU</a></li><li><a href="https://www.marshalgao.com/categories/technology">TECH</a></li><li><a href="https://www.marshalgao.com/categories/product-manager">PM</a></li><li><a href="https://www.marshalgao.com/categories/life">LIFE</a></li><li><a href="https://www.marshalgao.com/about/">ABOUT</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        3 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://www.marshalgao.com/icom6045-web-security-more-examples/">ICOM6045 Web Security - More Examples</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Web%20Security%20-%20More%20Examples.png" alt=""></p>
+<h2 id="man-in-the-browser-attack">Man-In-The-Browser Attack</h2>
+<ul>
+<li>schematic diagram
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120514.png" alt=""></li>
+<li>medium
+<ul>
+<li>the trojan works by utilizing prevalent tools/plugins to enhance browser capabilities
+<ul>
+<li>Browser Helper Objects (BHO)</li>
+<li>extensions</li>
+<li>user scripts</li>
+</ul>
+</li>
+<li>spam email</li>
+<li>virus downloaded from malicious website</li>
+<li>free software downloaded from malicious website or forum</li>
+</ul>
+</li>
+<li>hard to detect by virus scanning software</li>
+<li>example - attack bank account to stole money
+<ul>
+<li>infect your browser</li>
+<li>waiting for you to login to your Internet banking account</li>
+<li>redirect you to the “hacker’s” server</li>
+<li>capture your username/password and the one-time password (to login)</li>
+<li>pretend the one-time password is not correct and ask you to input the second one-time password (transfer money)</li>
+<li>crash the victim&rsquo;s browser in order to have more time</li>
+<li>use 2 one-time passwords to transfer money to another account in another country</li>
+</ul>
+</li>
+</ul>
+<h2 id="cross-site-forgery-request-csfr">Cross Site Forgery Request (CSFR)</h2>
+<ul>
+<li>threats from server to client</li>
+<li>general key idea
+<ul>
+<li>after client authenticated to a server, the authentication info is stored in client (usually as cookie) (e.g. user login bank website)</li>
+<li>by attracting/cheating the user to click a malicious link, user will visit the hacker site, to let the hacker site do the following
+<ul>
+<li>hacker site to create a ‘faked request’, and let the user to send the ‘faked request’ to the server, to carry out a ‘faked transaction’ (like money transfer)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>framework
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120515.png" alt=""></li>
+</ul>
+<h2 id="captcha-case">CAPTCHA Case</h2>
+<ul>
+<li>full name
+<ul>
+<li>completely automated public turing test to tell computers and humans apart</li>
+</ul>
+</li>
+<li>automatically generate challenges which intends to
+<ul>
+<li>provide a problem easy enough for all humans to solve</li>
+<li>the problem cannot be solved by a computer program currently, unless it is specially designed to circumvent specific CAPTCHA systems</li>
+<li>e.g. a human user can read distorted text while bots cannot</li>
+</ul>
+</li>
+<li>purposes
+<ul>
+<li>is usually used to protect websites against bots which abuse the websites</li>
+</ul>
+</li>
+<li>positions
+<ul>
+<li>at a login form to prevent dictionary attack</li>
+<li>before account registration</li>
+<li>before showing an e-mail on a personal website to avoid spammers getting your e-mail address when they crawl the web to look for valid e-mail addresses</li>
+</ul>
+</li>
+<li>implementations
+<ul>
+<li>rely on visual perception (more than distorted text)
+<ul>
+<li>identifying an object that does not belong in a particular set of objects</li>
+<li>locating the center of a distorted image</li>
+<li>identifying distorted shapes</li>
+<li>3D CAPTCHA, etc</li>
+</ul>
+</li>
+<li>provide an audio version of the CAPTCHA for accessibility reasons</li>
+</ul>
+</li>
+<li>human attack
+<ul>
+<li>some companies will provide a plug-in for your program</li>
+<li>when you program sees a CAPTCHA request, the picture will send to the company, and the company will have a group of humans to “enter” the answer for you</li>
+</ul>
+</li>
+</ul>
+<h2 id="spyware---tracking-cookies">Spyware - Tracking Cookies</h2>
+<ul>
+<li>online advertising
+<ul>
+<li>data collection using tracking cookies</li>
+<li>example
+<ul>
+<li>first site
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120516.png" alt=""></li>
+<li>second site
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120517.png" alt=""></li>
+</ul>
+</li>
+<li>ad.com know
+<ul>
+<li>I have been to first.com and another.com</li>
+<li>the time I visit first.com and another.com</li>
+<li>other information: languages, character sets, ..</li>
+<li>IP addresses</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>visitor tracking
+<ul>
+<li>tracking web site visitor using cookies, spam mail and web bug</li>
+<li>example
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120518.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<h2 id="sql-injection">SQL Injection</h2>
+<ul>
+<li>mechanism
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120519.png" alt=""></li>
+<li>example
+<ul>
+<li>suppose user = “ <strong>' or 1=1 &ndash;</strong> ” (URL encoded)</li>
+<li>then scripts does ok = execute(SELECT … WHERE user= ' <strong>' or 1=1  &ndash;</strong> …)
+<ul>
+<li>the “<strong>&ndash;</strong>” causes rest of line to be ignored</li>
+<li>now ok.EOF is always false and login succeeds</li>
+</ul>
+</li>
+<li>the bad news
+<ul>
+<li>easy login to many sites this way
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120520.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>key problem
+<ul>
+<li>no input check, just like heartbleed</li>
+</ul>
+</li>
+</ul>
+<h2 id="cross-site-scripting-css">Cross Site Scripting (CSS)</h2>
+<ul>
+<li>definition
+<ul>
+<li>security defect in a web-based application that allows user data (e.g. cookies) to be disclosed to a malicious third party
+<ul>
+<li>“cross-site” means the cookie is transferred from a client computer accessing a valid, but vulnerable, web-server site to the attacker’s site</li>
+</ul>
+</li>
+<li>popular languages that create cross-site scripting problem: scripting languages or technologies that are used to build a web site</li>
+</ul>
+</li>
+<li>session hijacking
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120521.png" alt=""></li>
+<li>attack string
+<ul>
+<li>simple test string</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">script</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">alert</span>(<span style="color:#960050;background-color:#1e0010">“</span><span style="color:#a6e22e">XSS</span><span style="color:#960050;background-color:#1e0010">”</span>);<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/script&gt;		       show an alert</span>
+<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">script</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">alert</span>(document.<span style="color:#a6e22e">cookie</span>);<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/script&gt;	show the user’s cookie</span>
+</code></pre></div><ul>
+<li>insert attack string</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#960050;background-color:#1e0010">‘</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">script</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">alert</span>(<span style="color:#960050;background-color:#1e0010">“</span><span style="color:#a6e22e">XSS</span><span style="color:#960050;background-color:#1e0010">”</span>);<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/script&gt;  close out the quote of another tag</span>
+</code></pre></div><ul>
+<li>more complex attack string</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#e6db74">&#39;;alert(String.fromCharCode(88,83,83))//\&#39;;alert(String.fromCharCode(88,83,83))//&#34;;alert(String.fromCharCode(88,83,83))//\&#34;;alert(String.fromCharCode(88,83,83))//--&gt;&lt;/SCRIPT&gt;&#34;&gt;&#39;</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#a6e22e">SCRIPT</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">alert</span>(String.<span style="color:#a6e22e">fromCharCode</span>(<span style="color:#ae81ff">88</span>,<span style="color:#ae81ff">83</span>,<span style="color:#ae81ff">83</span>))<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/SCRIPT&gt;</span>
+<span style="color:#e6db74">&#39;&#39;</span>;<span style="color:#f92672">!--</span><span style="color:#e6db74">&#34;&lt;XSS&gt;=&amp;{()}
+</span><span style="color:#e6db74">&lt;IMG SRC=&#34;</span><span style="color:#a6e22e">javascript</span><span style="color:#f92672">:</span><span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#39;XSS&#39;</span>);<span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#f92672">&gt;</span>
+</code></pre></div></li>
+<li>key problem
+<ul>
+<li>no input check</li>
+</ul>
+</li>
+</ul>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/tags/icom6045/">icom6045</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/fundamentals-of-e-commerce-security/">fundamentals of e-commerce security</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/web-security/">web security</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/examples/">examples</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/case-study/">case study</a></span>
+        
+    </p>
+
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/categories/hku/">HKU</a></span>
+        
+    </p>
+
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        631 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2020-12-05 19:58
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+
+          
+            <span class="button next">
+              <a href="https://www.marshalgao.com/is-there-a-ceiling-for-tencents-advertising-growth/">
+                <span class="button__text">Is There A Ceiling for Tencent&#39;s Advertising Growth</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://www.marshalgao.com/">Marshal</a></span>
+            
+            
+                <span><a href="https://www.hku.hk" target="_blank" rel="noopener">The University of Hong Kong</a></span>
+            <span><a href="https://www.marshalgao.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Team Rocket: <a href="https://www.pseudoyu.com/" target="_blank" rel="noopener">Pseudoyu</a></span>
+            <span><a href="https://www.m1sty.com/" target="_blank" rel="noopener">Misty</a></span>
+          </div>
+    </div>
+</footer>
+
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://www.marshalgao.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>

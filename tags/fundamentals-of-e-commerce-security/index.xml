@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 04 Dec 2020 20:50:32 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/fundamentals-of-e-commerce-security/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Dec 2020 19:58:49 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/fundamentals-of-e-commerce-security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ICOM6045 Web Security - More Examples</title>
+      <link>https://www.marshalgao.com/icom6045-web-security-more-examples/</link>
+      <pubDate>Sat, 05 Dec 2020 19:58:49 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/icom6045-web-security-more-examples/</guid>
+      <description>Man-In-The-Browser Attack  schematic diagram  medium  the trojan works by utilizing prevalent tools/plugins to enhance browser capabilities  Browser Helper Objects (BHO) extensions user scripts   spam email virus downloaded from malicious website free software downloaded from malicious website or forum   hard to detect by virus scanning software example - attack bank account to stole money  infect your browser waiting for you to login to your Internet banking account redirect you to the “hacker’s” server capture your username/password and the one-time password (to login) pretend the one-time password is not correct and ask you to input the second one-time password (transfer money) crash the victim&amp;rsquo;s browser in order to have more time use 2 one-time passwords to transfer money to another account in another country    Cross Site Forgery Request (CSFR)  threats from server to client general key idea  after client authenticated to a server, the authentication info is stored in client (usually as cookie) (e.</description>
+    </item>
+    
     <item>
       <title>ICOM6045 Web Security - SSL/TLS</title>
       <link>https://www.marshalgao.com/icom6045-web-security-ssl/tls/</link>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>web security on This is Marshal</title>
-    <link>https://www.marshalgao.com/tags/web-security/</link>
-    <description>Recent content in web security on This is Marshal</description>
+    <title>examples on This is Marshal</title>
+    <link>https://www.marshalgao.com/tags/examples/</link>
+    <description>Recent content in examples on This is Marshal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 05 Dec 2020 19:58:49 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/web-security/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Dec 2020 19:58:49 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/examples/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ICOM6045 Web Security - More Examples</title>
       <link>https://www.marshalgao.com/icom6045-web-security-more-examples/</link>
@@ -15,16 +15,6 @@
       
       <guid>https://www.marshalgao.com/icom6045-web-security-more-examples/</guid>
       <description>Man-In-The-Browser Attack  schematic diagram  medium  the trojan works by utilizing prevalent tools/plugins to enhance browser capabilities  Browser Helper Objects (BHO) extensions user scripts   spam email virus downloaded from malicious website free software downloaded from malicious website or forum   hard to detect by virus scanning software example - attack bank account to stole money  infect your browser waiting for you to login to your Internet banking account redirect you to the “hacker’s” server capture your username/password and the one-time password (to login) pretend the one-time password is not correct and ask you to input the second one-time password (transfer money) crash the victim&amp;rsquo;s browser in order to have more time use 2 one-time passwords to transfer money to another account in another country    Cross Site Forgery Request (CSFR)  threats from server to client general key idea  after client authenticated to a server, the authentication info is stored in client (usually as cookie) (e.</description>
-    </item>
-    
-    <item>
-      <title>ICOM6045 Web Security - SSL/TLS</title>
-      <link>https://www.marshalgao.com/icom6045-web-security-ssl/tls/</link>
-      <pubDate>Fri, 04 Dec 2020 20:50:32 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/icom6045-web-security-ssl/tls/</guid>
-      <description>HTTP Basics HTTP messages
- HTTP messages are requests sent from clients to servers, and responses from servers to clients HTTP message structure  start line 0 or more headers, each header contains field name, colon, field value optional message body   HTTP request  start line: request method  GET HEAD POST PUT DELETE     HTTP response  start line: status line, contains  HTTP version used by the server status code  200 -&amp;gt; ok 404 -&amp;gt; not found 401 -&amp;gt; unauthorized 403 -&amp;gt; forbidden   reason phrase      HTTP cache security issues</description>
     </item>
     
   </channel>

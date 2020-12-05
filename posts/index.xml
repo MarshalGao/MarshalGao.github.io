@@ -6,8 +6,250 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Fri, 04 Dec 2020 20:50:32 +0800</lastBuildDate>
+        <lastBuildDate>Sat, 05 Dec 2020 19:58:49 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ICOM6045 Web Security - More Examples</title>
+            <link>https://www.marshalgao.com/icom6045-web-security-more-examples/</link>
+            <pubDate>Sat, 05 Dec 2020 19:58:49 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/icom6045-web-security-more-examples/</guid>
+            <description>Man-In-The-Browser Attack  schematic diagram  medium  the trojan works by utilizing prevalent tools/plugins to enhance browser capabilities  Browser Helper Objects (BHO) extensions user scripts   spam email virus downloaded from malicious website free software downloaded from malicious website or forum   hard to detect by virus scanning software example - attack bank account to stole money  infect your browser waiting for you to login to your Internet banking account redirect you to the “hacker’s” server capture your username/password and the one-time password (to login) pretend the one-time password is not correct and ask you to input the second one-time password (transfer money) crash the victim&amp;rsquo;s browser in order to have more time use 2 one-time passwords to transfer money to another account in another country    Cross Site Forgery Request (CSFR)  threats from server to client general key idea  after client authenticated to a server, the authentication info is stored in client (usually as cookie) (e.</description>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Web%20Security%20-%20More%20Examples.png" alt=""></p>
+<h2 id="man-in-the-browser-attack">Man-In-The-Browser Attack</h2>
+<ul>
+<li>schematic diagram
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120514.png" alt=""></li>
+<li>medium
+<ul>
+<li>the trojan works by utilizing prevalent tools/plugins to enhance browser capabilities
+<ul>
+<li>Browser Helper Objects (BHO)</li>
+<li>extensions</li>
+<li>user scripts</li>
+</ul>
+</li>
+<li>spam email</li>
+<li>virus downloaded from malicious website</li>
+<li>free software downloaded from malicious website or forum</li>
+</ul>
+</li>
+<li>hard to detect by virus scanning software</li>
+<li>example - attack bank account to stole money
+<ul>
+<li>infect your browser</li>
+<li>waiting for you to login to your Internet banking account</li>
+<li>redirect you to the “hacker’s” server</li>
+<li>capture your username/password and the one-time password (to login)</li>
+<li>pretend the one-time password is not correct and ask you to input the second one-time password (transfer money)</li>
+<li>crash the victim&rsquo;s browser in order to have more time</li>
+<li>use 2 one-time passwords to transfer money to another account in another country</li>
+</ul>
+</li>
+</ul>
+<h2 id="cross-site-forgery-request-csfr">Cross Site Forgery Request (CSFR)</h2>
+<ul>
+<li>threats from server to client</li>
+<li>general key idea
+<ul>
+<li>after client authenticated to a server, the authentication info is stored in client (usually as cookie) (e.g. user login bank website)</li>
+<li>by attracting/cheating the user to click a malicious link, user will visit the hacker site, to let the hacker site do the following
+<ul>
+<li>hacker site to create a ‘faked request’, and let the user to send the ‘faked request’ to the server, to carry out a ‘faked transaction’ (like money transfer)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>framework
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120515.png" alt=""></li>
+</ul>
+<h2 id="captcha-case">CAPTCHA Case</h2>
+<ul>
+<li>full name
+<ul>
+<li>completely automated public turing test to tell computers and humans apart</li>
+</ul>
+</li>
+<li>automatically generate challenges which intends to
+<ul>
+<li>provide a problem easy enough for all humans to solve</li>
+<li>the problem cannot be solved by a computer program currently, unless it is specially designed to circumvent specific CAPTCHA systems</li>
+<li>e.g. a human user can read distorted text while bots cannot</li>
+</ul>
+</li>
+<li>purposes
+<ul>
+<li>is usually used to protect websites against bots which abuse the websites</li>
+</ul>
+</li>
+<li>positions
+<ul>
+<li>at a login form to prevent dictionary attack</li>
+<li>before account registration</li>
+<li>before showing an e-mail on a personal website to avoid spammers getting your e-mail address when they crawl the web to look for valid e-mail addresses</li>
+</ul>
+</li>
+<li>implementations
+<ul>
+<li>rely on visual perception (more than distorted text)
+<ul>
+<li>identifying an object that does not belong in a particular set of objects</li>
+<li>locating the center of a distorted image</li>
+<li>identifying distorted shapes</li>
+<li>3D CAPTCHA, etc</li>
+</ul>
+</li>
+<li>provide an audio version of the CAPTCHA for accessibility reasons</li>
+</ul>
+</li>
+<li>human attack
+<ul>
+<li>some companies will provide a plug-in for your program</li>
+<li>when you program sees a CAPTCHA request, the picture will send to the company, and the company will have a group of humans to “enter” the answer for you</li>
+</ul>
+</li>
+</ul>
+<h2 id="spyware---tracking-cookies">Spyware - Tracking Cookies</h2>
+<ul>
+<li>online advertising
+<ul>
+<li>data collection using tracking cookies</li>
+<li>example
+<ul>
+<li>first site
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120516.png" alt=""></li>
+<li>second site
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120517.png" alt=""></li>
+</ul>
+</li>
+<li>ad.com know
+<ul>
+<li>I have been to first.com and another.com</li>
+<li>the time I visit first.com and another.com</li>
+<li>other information: languages, character sets, ..</li>
+<li>IP addresses</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>visitor tracking
+<ul>
+<li>tracking web site visitor using cookies, spam mail and web bug</li>
+<li>example
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120518.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<h2 id="sql-injection">SQL Injection</h2>
+<ul>
+<li>mechanism
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120519.png" alt=""></li>
+<li>example
+<ul>
+<li>suppose user = “ <strong>' or 1=1 &ndash;</strong> ” (URL encoded)</li>
+<li>then scripts does ok = execute(SELECT … WHERE user= ' <strong>' or 1=1  &ndash;</strong> …)
+<ul>
+<li>the “<strong>&ndash;</strong>” causes rest of line to be ignored</li>
+<li>now ok.EOF is always false and login succeeds</li>
+</ul>
+</li>
+<li>the bad news
+<ul>
+<li>easy login to many sites this way
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120520.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>key problem
+<ul>
+<li>no input check, just like heartbleed</li>
+</ul>
+</li>
+</ul>
+<h2 id="cross-site-scripting-css">Cross Site Scripting (CSS)</h2>
+<ul>
+<li>definition
+<ul>
+<li>security defect in a web-based application that allows user data (e.g. cookies) to be disclosed to a malicious third party
+<ul>
+<li>“cross-site” means the cookie is transferred from a client computer accessing a valid, but vulnerable, web-server site to the attacker’s site</li>
+</ul>
+</li>
+<li>popular languages that create cross-site scripting problem: scripting languages or technologies that are used to build a web site</li>
+</ul>
+</li>
+<li>session hijacking
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120521.png" alt=""></li>
+<li>attack string
+<ul>
+<li>simple test string</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">script</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">alert</span>(<span style="color:#960050;background-color:#1e0010">“</span><span style="color:#a6e22e">XSS</span><span style="color:#960050;background-color:#1e0010">”</span>);<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/script&gt;		       show an alert</span>
+<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">script</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">alert</span>(document.<span style="color:#a6e22e">cookie</span>);<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/script&gt;	show the user’s cookie</span>
+</code></pre></div><ul>
+<li>insert attack string</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#960050;background-color:#1e0010">‘</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">script</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">alert</span>(<span style="color:#960050;background-color:#1e0010">“</span><span style="color:#a6e22e">XSS</span><span style="color:#960050;background-color:#1e0010">”</span>);<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/script&gt;  close out the quote of another tag</span>
+</code></pre></div><ul>
+<li>more complex attack string</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#e6db74">&#39;;alert(String.fromCharCode(88,83,83))//\&#39;;alert(String.fromCharCode(88,83,83))//&#34;;alert(String.fromCharCode(88,83,83))//\&#34;;alert(String.fromCharCode(88,83,83))//--&gt;&lt;/SCRIPT&gt;&#34;&gt;&#39;</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#a6e22e">SCRIPT</span><span style="color:#f92672">&gt;</span><span style="color:#a6e22e">alert</span>(String.<span style="color:#a6e22e">fromCharCode</span>(<span style="color:#ae81ff">88</span>,<span style="color:#ae81ff">83</span>,<span style="color:#ae81ff">83</span>))<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/SCRIPT&gt;</span>
+<span style="color:#e6db74">&#39;&#39;</span>;<span style="color:#f92672">!--</span><span style="color:#e6db74">&#34;&lt;XSS&gt;=&amp;{()}
+</span><span style="color:#e6db74">&lt;IMG SRC=&#34;</span><span style="color:#a6e22e">javascript</span><span style="color:#f92672">:</span><span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#39;XSS&#39;</span>);<span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#f92672">&gt;</span>
+</code></pre></div></li>
+<li>key problem
+<ul>
+<li>no input check</li>
+</ul>
+</li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Is There A Ceiling for Tencent&#39;s Advertising Growth</title>
+            <link>https://www.marshalgao.com/is-there-a-ceiling-for-tencents-advertising-growth/</link>
+            <pubDate>Sat, 05 Dec 2020 14:28:19 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/is-there-a-ceiling-for-tencents-advertising-growth/</guid>
+            <description>现如今，在双十一、618，商家除了在电商平台排兵布阵，同时也需要社区电商和社交电商的支持。
+数据显示，中国社交电商的总零售额在2019年已经达到2万亿，增速高达63%。在这其中，微信小程序的GMV高达8000亿，同比增长超160%，在整个社交电商大盘中的占比为四成。社交电商的快速扩张，短期看不到尽头。截止今年8月，小程序商品交易GMV同比增长115%，品牌商家自营GMV同比增长210%。
+腾讯虽然没有做电商平台的基因，但交易不等于电商，线上交易也不等于平台电商。通过将广告和零售双向打通实现战略层面的整体升维，既用广告促进商品交易，又用一站式转化效果吸引更多企业的广告投放，进而形成双向循环。换言之，腾讯在做的是线上交易可能产生的各种模式创新，比如借助短视频、直播和微信群等生态内场景直连交易。
+品牌直营的机会
+以美国为例的西方国家，线上交易的主力军是品牌直营渠道，每个品牌会建立自己的网站进行销售，建立起品牌与客户的直接联系，这就是DTC（Direct To Customer）。而在中国，80%以上的电商都是基于电商平台完成的，由于在消费者和品牌之间有一层电商品牌，无法做到真正的DTC。
+在中国，影响DTC的因素很多。比如企业自身是否能独立获得可观的稳定流量？是否有在线支付及物流等基础设施的支撑？是否有技术实力支撑品牌更好地展示产品、讲好故事？因为这些问题，是的中国的电商交易一直处于中心化的格局。但这个格局在当下也不一定令品牌们满意，他们开始思考一些新的问题：流量增长会不会遭遇瓶颈？交易成本会不会越来越高？以及，我有没有途径更加直接地面对顾客？
+C端消费者的购物心态在发生着巨大的变化，在追求大牌、比货比价的同时，他们更希望享受到附加功能、服务体验以及多样化的购买。例如，今年7月，耐克借助小程序完成了一轮新品首发，从开屏广告、朋友圈广告引流，再到邀请明星参与直播，再到后端领券转化和用户沉淀，最终获得97万观看量、5.2万条评论互动和34万用户点赞。最近，微信的群直播可以理解为在这一战略进行布局谋划。
+DTC除了可以更好的让商家与用户进行沟通，同时还可以减少商家的成本，对于买卖双方来说是共赢的。腾讯曾提出过“公私域联动”的概念，公域指的是腾讯庞大的生态，私域指的是小程序、公众号、微信群这类能够反复触达用户的场景，而广告将成为联动公私域的介质。通过广告将庞大的公域流量引向不同品牌的商家私域，最终依靠小程序等场景实现品牌直营的本土化改造。最终实现商家与客户的直接联系。
+930变革后的猛进
+930变革是腾讯内部的一次事业群或者说是组织架构的调整，其目的是让企业从消费互联网向产业互联网升级。换言之，就是在to C业务的基础之上，开始拓展to B业务。最终的结果是，腾讯广告和腾讯智慧零售开始被腾讯赋予更多期待，他们是离消费者更近的那块拼图，也决定着广告主和腾讯本身能否通过这块拼图获得持续成长。
+但合并并不意味着更多的流量必然会带来更多的收益。在互联网生态中，流量充足并不必然意味着更强的变现能力。变现至少受两个环节影响：首先，流量是否能够变现，这取决于消费者的态度；其次，流量的商业价值能在多大程度上释放，这又取决于平台方的能力。
+让流量无限贴近交易
+腾讯的AMS加快了广告产品的迭代速度，将分散的投放端口整合到了同一个投放平台，强化了对商品数据的理解以实现人货间的最优匹配。另外，腾讯广告还借助技术手段将触角伸向其他环节，例如通过选品中台为快消客户的产品研发提供来自消费数据侧的参考等等。
+长久以来，广告销售采用的是以广告位资源为中心的批量交易模式，但除此，更应该加强对不同垂直类行业和交易场景的理解。广告平台在品牌直营领域，需要做好的是商业服务平台，提升广告主的ROI，而不仅仅是广告的售卖。由此形成的良性循环，会让更多的广告主青睐商业服务平台，从一定程度上将吃掉一部分电商份额。通过广告作为媒介，将公私域连接起来，实现品牌直营才是最终的目的。
+原文链接
+ 突围电商,腾讯广告的增长有没有上限？  </description>
+            <content type="html"><![CDATA[<p>现如今，在双十一、618，商家除了在电商平台排兵布阵，同时也需要社区电商和社交电商的支持。</p>
+<p>数据显示，中国社交电商的总零售额在2019年已经达到2万亿，增速高达63%。在这其中，微信小程序的GMV高达8000亿，同比增长超160%，在整个社交电商大盘中的占比为四成。社交电商的快速扩张，短期看不到尽头。截止今年8月，小程序商品交易GMV同比增长115%，品牌商家自营GMV同比增长210%。</p>
+<p>腾讯虽然没有做电商平台的基因，但交易不等于电商，线上交易也不等于平台电商。通过将广告和零售双向打通实现战略层面的整体升维，既用广告促进商品交易，又用一站式转化效果吸引更多企业的广告投放，进而形成双向循环。换言之，腾讯在做的是线上交易可能产生的各种模式创新，比如借助短视频、直播和微信群等生态内场景直连交易。</p>
+<p><strong>品牌直营的机会</strong></p>
+<p>以美国为例的西方国家，线上交易的主力军是品牌直营渠道，每个品牌会建立自己的网站进行销售，建立起品牌与客户的直接联系，这就是DTC（Direct To Customer）。而在中国，80%以上的电商都是基于电商平台完成的，由于在消费者和品牌之间有一层电商品牌，无法做到真正的DTC。</p>
+<p>在中国，影响DTC的因素很多。比如企业自身是否能独立获得可观的稳定流量？是否有在线支付及物流等基础设施的支撑？是否有技术实力支撑品牌更好地展示产品、讲好故事？因为这些问题，是的中国的电商交易一直处于中心化的格局。但这个格局在当下也不一定令品牌们满意，他们开始思考一些新的问题：流量增长会不会遭遇瓶颈？交易成本会不会越来越高？以及，我有没有途径更加直接地面对顾客？</p>
+<p>C端消费者的购物心态在发生着巨大的变化，在追求大牌、比货比价的同时，他们更希望享受到附加功能、服务体验以及多样化的购买。例如，今年7月，耐克借助小程序完成了一轮新品首发，从开屏广告、朋友圈广告引流，再到邀请明星参与直播，再到后端领券转化和用户沉淀，最终获得97万观看量、5.2万条评论互动和34万用户点赞。最近，微信的群直播可以理解为在这一战略进行布局谋划。</p>
+<p>DTC除了可以更好的让商家与用户进行沟通，同时还可以减少商家的成本，对于买卖双方来说是共赢的。腾讯曾提出过“公私域联动”的概念，公域指的是腾讯庞大的生态，私域指的是小程序、公众号、微信群这类能够反复触达用户的场景，而广告将成为联动公私域的介质。通过广告将庞大的公域流量引向不同品牌的商家私域，最终依靠小程序等场景实现品牌直营的本土化改造。最终实现商家与客户的直接联系。</p>
+<p><strong>930变革后的猛进</strong></p>
+<p>930变革是腾讯内部的一次事业群或者说是组织架构的调整，其目的是让企业从消费互联网向产业互联网升级。换言之，就是在to C业务的基础之上，开始拓展to B业务。最终的结果是，腾讯广告和腾讯智慧零售开始被腾讯赋予更多期待，他们是离消费者更近的那块拼图，也决定着广告主和腾讯本身能否通过这块拼图获得持续成长。</p>
+<p>但合并并不意味着更多的流量必然会带来更多的收益。在互联网生态中，流量充足并不必然意味着更强的变现能力。变现至少受两个环节影响：首先，流量是否能够变现，这取决于消费者的态度；其次，流量的商业价值能在多大程度上释放，这又取决于平台方的能力。</p>
+<p><strong>让流量无限贴近交易</strong></p>
+<p>腾讯的AMS加快了广告产品的迭代速度，将分散的投放端口整合到了同一个投放平台，强化了对商品数据的理解以实现人货间的最优匹配。另外，腾讯广告还借助技术手段将触角伸向其他环节，例如通过选品中台为快消客户的产品研发提供来自消费数据侧的参考等等。</p>
+<p>长久以来，广告销售采用的是以广告位资源为中心的批量交易模式，但除此，更应该加强对不同垂直类行业和交易场景的理解。广告平台在品牌直营领域，需要做好的是商业服务平台，提升广告主的ROI，而不仅仅是广告的售卖。由此形成的良性循环，会让更多的广告主青睐商业服务平台，从一定程度上将吃掉一部分电商份额。通过广告作为媒介，将公私域连接起来，实现品牌直营才是最终的目的。</p>
+<p><strong>原文链接</strong></p>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/4OXqAzRjkBPvDhnu1uy9Mw">突围电商,腾讯广告的增长有没有上限？</a></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>ICOM6045 Web Security - SSL/TLS</title>

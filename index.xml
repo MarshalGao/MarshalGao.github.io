@@ -7,7 +7,40 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 04 Dec 2020 20:50:32 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Dec 2020 19:58:49 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ICOM6045 Web Security - More Examples</title>
+      <link>https://www.marshalgao.com/icom6045-web-security-more-examples/</link>
+      <pubDate>Sat, 05 Dec 2020 19:58:49 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/icom6045-web-security-more-examples/</guid>
+      <description>Man-In-The-Browser Attack  schematic diagram  medium  the trojan works by utilizing prevalent tools/plugins to enhance browser capabilities  Browser Helper Objects (BHO) extensions user scripts   spam email virus downloaded from malicious website free software downloaded from malicious website or forum   hard to detect by virus scanning software example - attack bank account to stole money  infect your browser waiting for you to login to your Internet banking account redirect you to the “hacker’s” server capture your username/password and the one-time password (to login) pretend the one-time password is not correct and ask you to input the second one-time password (transfer money) crash the victim&amp;rsquo;s browser in order to have more time use 2 one-time passwords to transfer money to another account in another country    Cross Site Forgery Request (CSFR)  threats from server to client general key idea  after client authenticated to a server, the authentication info is stored in client (usually as cookie) (e.</description>
+    </item>
+    
+    <item>
+      <title>Is There A Ceiling for Tencent&#39;s Advertising Growth</title>
+      <link>https://www.marshalgao.com/is-there-a-ceiling-for-tencents-advertising-growth/</link>
+      <pubDate>Sat, 05 Dec 2020 14:28:19 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/is-there-a-ceiling-for-tencents-advertising-growth/</guid>
+      <description>现如今，在双十一、618，商家除了在电商平台排兵布阵，同时也需要社区电商和社交电商的支持。
+数据显示，中国社交电商的总零售额在2019年已经达到2万亿，增速高达63%。在这其中，微信小程序的GMV高达8000亿，同比增长超160%，在整个社交电商大盘中的占比为四成。社交电商的快速扩张，短期看不到尽头。截止今年8月，小程序商品交易GMV同比增长115%，品牌商家自营GMV同比增长210%。
+腾讯虽然没有做电商平台的基因，但交易不等于电商，线上交易也不等于平台电商。通过将广告和零售双向打通实现战略层面的整体升维，既用广告促进商品交易，又用一站式转化效果吸引更多企业的广告投放，进而形成双向循环。换言之，腾讯在做的是线上交易可能产生的各种模式创新，比如借助短视频、直播和微信群等生态内场景直连交易。
+品牌直营的机会
+以美国为例的西方国家，线上交易的主力军是品牌直营渠道，每个品牌会建立自己的网站进行销售，建立起品牌与客户的直接联系，这就是DTC（Direct To Customer）。而在中国，80%以上的电商都是基于电商平台完成的，由于在消费者和品牌之间有一层电商品牌，无法做到真正的DTC。
+在中国，影响DTC的因素很多。比如企业自身是否能独立获得可观的稳定流量？是否有在线支付及物流等基础设施的支撑？是否有技术实力支撑品牌更好地展示产品、讲好故事？因为这些问题，是的中国的电商交易一直处于中心化的格局。但这个格局在当下也不一定令品牌们满意，他们开始思考一些新的问题：流量增长会不会遭遇瓶颈？交易成本会不会越来越高？以及，我有没有途径更加直接地面对顾客？
+C端消费者的购物心态在发生着巨大的变化，在追求大牌、比货比价的同时，他们更希望享受到附加功能、服务体验以及多样化的购买。例如，今年7月，耐克借助小程序完成了一轮新品首发，从开屏广告、朋友圈广告引流，再到邀请明星参与直播，再到后端领券转化和用户沉淀，最终获得97万观看量、5.2万条评论互动和34万用户点赞。最近，微信的群直播可以理解为在这一战略进行布局谋划。
+DTC除了可以更好的让商家与用户进行沟通，同时还可以减少商家的成本，对于买卖双方来说是共赢的。腾讯曾提出过“公私域联动”的概念，公域指的是腾讯庞大的生态，私域指的是小程序、公众号、微信群这类能够反复触达用户的场景，而广告将成为联动公私域的介质。通过广告将庞大的公域流量引向不同品牌的商家私域，最终依靠小程序等场景实现品牌直营的本土化改造。最终实现商家与客户的直接联系。
+930变革后的猛进
+930变革是腾讯内部的一次事业群或者说是组织架构的调整，其目的是让企业从消费互联网向产业互联网升级。换言之，就是在to C业务的基础之上，开始拓展to B业务。最终的结果是，腾讯广告和腾讯智慧零售开始被腾讯赋予更多期待，他们是离消费者更近的那块拼图，也决定着广告主和腾讯本身能否通过这块拼图获得持续成长。
+但合并并不意味着更多的流量必然会带来更多的收益。在互联网生态中，流量充足并不必然意味着更强的变现能力。变现至少受两个环节影响：首先，流量是否能够变现，这取决于消费者的态度；其次，流量的商业价值能在多大程度上释放，这又取决于平台方的能力。
+让流量无限贴近交易
+腾讯的AMS加快了广告产品的迭代速度，将分散的投放端口整合到了同一个投放平台，强化了对商品数据的理解以实现人货间的最优匹配。另外，腾讯广告还借助技术手段将触角伸向其他环节，例如通过选品中台为快消客户的产品研发提供来自消费数据侧的参考等等。
+长久以来，广告销售采用的是以广告位资源为中心的批量交易模式，但除此，更应该加强对不同垂直类行业和交易场景的理解。广告平台在品牌直营领域，需要做好的是商业服务平台，提升广告主的ROI，而不仅仅是广告的售卖。由此形成的良性循环，会让更多的广告主青睐商业服务平台，从一定程度上将吃掉一部分电商份额。通过广告作为媒介，将公私域连接起来，实现品牌直营才是最终的目的。
+原文链接
+ 突围电商,腾讯广告的增长有没有上限？  </description>
+    </item>
+    
     <item>
       <title>ICOM6045 Web Security - SSL/TLS</title>
       <link>https://www.marshalgao.com/icom6045-web-security-ssl/tls/</link>
@@ -98,30 +131,6 @@
       <guid>https://www.marshalgao.com/recommendation-algorithm-and-placement-optimization-strategy/</guid>
       <description>广告推荐算法（以今日头条为例）
  三个纬度变量输入  内容特征  为文章、图片、视频等内容进行画像，提取关键字、tag标签等实现语义识别，为以后推荐给用户做准备   用户特征  根据用户行为进行用户画像勾勒，多角度且具体   环境特征  比如获取你当前所在位置是否在旅游区，这个可以通过获取你实时位置来实现，然后与你之前经常出现的所在地进行对比等方式确认当前状态，是在家还是在旅游     内容干预  可以量化的指标可以体现一些具体信息，但是完全靠这个并不全面，比如刷评论、转发等情况，可能就会迷惑后台计算机的分析，纯粹靠这些数据进行推荐是有问题的  比如当前社会热点，虽然你的文章很热，但是热点已过，也不会因为文章的点击率大而继续给你推送   需要人工对这些数据内容进行维护设置，以完善推荐机制   因地制宜与算法实验平台  因地制宜  不同推荐场景需要不同的模型架构，比如小视频，是短时投入，客户会很少计较时间成本，所以关键的推荐机制可能并不是你的用户画像特征，而是根据视频的点击率进行推荐，点击率越大的视频肯定越容易吸引用户的兴趣 文章需要投入时间成本较高，精准投送要求会比较高，所以各类内容推荐算法会根据不同的特点进行不一样的推荐机制，需要不断尝试优化   算法实验平台  比如第一种算法投入测试，推送10000条信息，实际点击有效率是50%，相当于一条测试数据 后面再对其他多种算法测试，最终选取点击率最高的算法进行应用     四类特征相互作用  相关性特征  用户画像与内容画像的匹配   环境特征 热度特征  当用户第一次注册登录头条（冷启动阶段），没有用户画像 根据当前社会热点呀、文章阅读量高低排名等一些能代表普遍群体感受的指标进行推送选择   协同特征  通过你的行为、画像、环境等各类指标进行模型分析后，适合推荐给你的文章太少（算法越推越窄） 可以寻找跟你特征相同的用户，比如跟你同一个年龄段、同一个性别、同一个地区等相似用户的兴趣给你进行推荐，可以作为一个推荐的补充，以实现比较好的推荐效果     基于召回策略，缩小推荐内容库，减少计算推荐成本  如果每一次的推荐都依赖这个最大的模型，成本确实太高，所以需要简化 召回  对符合条件的结果进行排序，以决定给你推荐文章的顺序   推荐算法是否有效取决于召回率  比如，所有可供推荐的文章库里共有40篇文章与你的用户画像相关，实际通过推荐算法推荐给你了20篇，但实际上有10篇是你真正喜欢的文章，则召回率就是10/40=0.</description>
-    </item>
-    
-    <item>
-      <title>ICOM6045 Internet Layer Security</title>
-      <link>https://www.marshalgao.com/icom6045-internet-layer-security/</link>
-      <pubDate>Wed, 02 Dec 2020 09:45:42 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/icom6045-internet-layer-security/</guid>
-      <description>Overview Firewall
- definition  a firewall is a combination of hardware and software that isolates an organization’s internal network from the Internet, allowing some packets to pass and blocking others   functions  firewall can also provide segmentation between internal resources in the simplest form, firewall control access to, from and between networks within the organization and the internet   scenario  the home router would have the functions of firewall, but it is only a little    DMZ (Demilitarized Zone)</description>
-    </item>
-    
-    <item>
-      <title>Brand Advertising vs Performance Advertising</title>
-      <link>https://www.marshalgao.com/brand-advertising-vs-performance-advertising/</link>
-      <pubDate>Tue, 01 Dec 2020 16:06:01 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/brand-advertising-vs-performance-advertising/</guid>
-      <description>流量投放手段
- 品牌广告  着重于“抓品牌”，以树立产品品牌形象，提高品牌的市场占有率为直接目的   效果广告  着重于“抓流量”，消耗多少钱，有多少点击量，多少下载量和注册量，都可以监控且用数据来展示出来，只需要为可衡量的结果付费   案例  Adidas全球媒介总监Simon Peel指出阿迪77%的预算在效果，23%在品牌，过度投资了数字和效果渠道，进而牺牲了品牌建设    营销效能最大化思考维度/投放维度
-  企业盈利的本质是什么？—— 是消费者的认知转化所带来的销售收入
- 社会未来最大成本 -&amp;gt; 顾客的认知成本 品牌立足要从客户自身出发，从顾客心理认知出发，从而建立顾客认知，变成企业的最重要无形资产 纯线上的投放效果是有限的  信息大爆炸，消费者看的多，阈值提高，信息具有短效性 传播变难、触达弱化、人群分散 消费者可以轻易跳过品牌预设的信息，使企业劳心费神铺排的各类广告营销活动变成“打水漂”      广告投放的本质是什么？—— 触达消费者，完成对消费者的认知教育
- 无线上或线下之争，关键在于“找到人”的能力，以及传播的效率 Questmobile显示，2020年一季度全国增长的移动端互联网用户数量仅为0.41%，但是投入流量大战的企业和个体数量增长了近八成，线上流量竞争已经白热化 益普索Ipsos发布的《2019年中国国内流行广告语受众调研报告》中数据显示，流行广告语通过主流媒体电梯、互联网及电视等进行传播，更容易被人们记住 对于没有互联网基因的产品，大量投入线上广告意义不大，而正确的做法应该是：精准分析用户数据，合理规划投放策略  例如，天鹅到家采用电梯广告（高频且强制的触达），实现了每投放1元，有0.5元的ROI（Return On Investment） 但0.5元只是短期效果，从中长期来看，将有3倍，也就是1.5元的ROI 两者相加，才能更精准地反映出整个的投放在中长期对销售，对整个品牌建设的拉动      线上和线下的界限是什么？—— 越来越模糊，未来只有数字化与非数字化之分
- 以前看报纸，看电视，看到的都是同一个广告，这是“人找广告” 现在打开APP，每个人刷到的广告都是不一样的，会根据每个人的购物兴趣、生活习性、社交习惯等推送不同的广告，这是“广告找人” 数字化大潮下，分众这样的楼宇电梯媒体，也拥有了互联网基因  自今年9月起，分众在智能屏领域已逐步向授权代理商开放DSP系统 帮助代理商实现在线精准选楼和选择时间，以及在线投放和监测，为生活服务类实体终端开启了基于地理位置的在线LBS屏幕广告服务   所谓营销，都是在不同的场景中对消费者种草，然后割草完成转化  在现在电视、互联网等流量都遭遇瓶颈的大环境下，分众是一个可以快速提升到达率的媒体 过去太重视线上的人群，但分众是真正能把人流从线上引到线下，从线下引到线上的媒体，是一个真正的数字化线下媒体 线下流量的开发对于整个营销来说是一个非常好的流量入口，这也是一个非常高效的割草闭环，给品牌提供了高ROI保障      品牌和流量哪个更重要？—— 媒体投资要有长线思维，构建核心品牌资产</description>
     </item>
     
   </channel>
