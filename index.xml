@@ -7,7 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 05 Dec 2020 22:23:35 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Dec 2020 16:24:41 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advertising Creativity and Internet Thinking</title>
+      <link>https://www.marshalgao.com/advertising-creativity-and-internet-thinking/</link>
+      <pubDate>Sun, 06 Dec 2020 16:24:41 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/advertising-creativity-and-internet-thinking/</guid>
+      <description>广告主最终的效果取决于两方面，一方面是广告创意，另一方面则是广告的精准投放。广告的精准投放需要依靠庞大的数据来勾勒出精准的用户画像，同时对推荐算法的技术也有着十分高的要求。当广告投放逐渐做到“千人千面”的今天，广告创意就会对最终的效果产生至关重要的影响。而且，在同等情况下，更好的创意会让广告主的广告在RTB中赢得优势。
+互联网的广告创意与传统电视广告不同，需要具备互联网思维。其中，最重要的就是人与广告之间的联系，也就是互联网思维里提到的“连接”。这种“连接”可以分为两种，一种是主动的“连接”，另一种是被动的“连接”。
+主动的“连接”可以理解为从产品本身出发，以产品为第一视角，讲述产品的核心理念与价值取向，产品是主角。同时，这类广告对用户的划分会更加粗糙，旨在表明自身产品应用场景之多，强行建立起产品与用户的联系。例如，中国移动4G以“和”为主题的创意广告。
+  被动的“连接“可以理解为从产品的目标用户出发，以用户为第一视角，表明产品与用户的生活息息相关，产品仅仅是一个配角，用户才是真的主角。这一类广告对用户的划分会更为精细，因为同一类用户承担了主角的重任。这种广告产品与人的联系是被动的，如果观看者同时是产品的目标用户，会很容易产生情感共鸣，用户不由自主被动地与产品建立起了连接。例如，支付宝十周年的创意广告。
+  综上所述，广告创意与对互联网广告的最终效果会起到至关重要的作用，短期内依靠精准投放带来得营效是不长久的，真正利用内容完成品牌的定位和口碑建设才是长久的。</description>
+    </item>
+    
+    <item>
+      <title>The Logical Relationship of Advertising System</title>
+      <link>https://www.marshalgao.com/the-logical-relationship-of-advertising-system/</link>
+      <pubDate>Sun, 06 Dec 2020 14:20:55 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/the-logical-relationship-of-advertising-system/</guid>
+      <description>本文将从宏观角度理清广告系统中DSP、SSP、DMP、ADX、RTB等概念的逻辑与关系。
+ 广告主  希望为自己的品牌提供曝光，增加营销的商家或个人   代理商  不擅长或无经验的广告主  使用代理商代办   擅长且有经验的广告主  不使代理商，直接与DSP沟通     DSP  相当于面向广告主的前端产品 但有的DSP自身不带数据，则需要与DMP进行合作 虽然在DSP上广告主已经设定好了一切需求，但真正进行广告投放时，会利用DMP与正在浏览的用户进行画像比对   DMP  整理分散的数据，构建用户画像 大多数情况下利用所有浏览器的cookie 但在Fackbook上还使用了其自身的CRM   SSP  相当于提供流量、广告位的企业前端 汇聚了很多的Publisher Publisher在SSP上管理自己的广告位   Publisher  流量的实际拥有者 可以是网页，又可以是免费型的App 可以加入到SSP   RTB  不是平台，也不是DSP的一部分 是一种技术概念，采取oCPA以及oCPM等方式    Ad Network  由于互联网广告的碎片性质，导致广告主需要与不同的Publisher进行谈判 Ad Network整合了相应的Publisher，方便广告主   ADX  由于Ad network之间可能存在互相符合用户画像的流量，所以要对Ad Network进行整合 ADX最终整合了Ad Network以及更多的Publisher 引入RTB技术   简化流程   现如今，每一个广告联盟对应一个DSP，所以ADX连接的DSP和SSP并不一定是一对一的关系，可能会存在更复杂的情况。</description>
+    </item>
+    
     <item>
       <title>ICOM6045 Mobile Code Security</title>
       <link>https://www.marshalgao.com/icom6045-mobile-code-security/</link>
@@ -112,26 +135,6 @@ DTC除了可以更好的让商家与用户进行沟通，同时还可以减少�
       <description>定义
  移动互联网广告是通过移动设备（手机、PSP、平板电脑等）访问移动App或移动网页时显示的广告 大致分类  Web广告  基于html框架 显示在浏览器 网站开发者获益 市场份额小   App广告  基于OS框架 显示在App内 主流形式      类型
  抛开Web广告，可将互联网广告分为  按App所属行业  搜索广告 电商广告 门户或新闻广告 垂直广告（即竖屏视频） 视频广告（即横屏视频）   按广告自身属性（与广告主投放位置直接相关）  开屏广告  出现在App启动加载时，又叫启动页广告 尺寸大（App内最大的广告） 可跳过 可见性高、广告效果好   横幅广告  网络广告最早采用的形式 以文字、图片等富媒体形式 展示在App首页、发现页、专题详情页等页面的顶部（含下拉刷新）、底部或者中部 尺寸小 位置偏（照顾用户体验，避免误触） 支持轮播（动态展示不同广告主的文字链和图片） 难以吸引用户注意力，广告可见性差，广告效果差   插屏广告  又叫触发式广告 在用户做出相应操作（如开启、暂停、过关、跳转、退出）后 弹出以图片、动图、视频等为表现形式的半屏或者全屏广告 曝光性强，吸引用户注意力 容易引起用户反感（打断用户正常App的操作） 影响用户体验，广告可见性一般，广告效果一般   贴片广告  将广告内容贴入视频之中 视频贴片  将5s-60s不等的横版视频广告，添加至视频播放前、视频播放中或视频播放后这三个位置   创可贴  将图片/动图等元素放在正在播放的视频中 可结合剧情设计，尺寸小的特点，使得用户体验更好，广告可见性更高、广告效果更好   整体广告效果和视频类型和质量相关较为密切，一般以传统采买、竞标的交易模式   信息流广告  出现于有内容产出的App，是与App的日常内容（如一则资讯、动态、图片、视频）融为一体的广告形式 延展性、可玩性最强的广告位，目前可记录的形式就有数十种，文字链，小图、组图、大图、竖版视频等等 由于原生性、内容性较强，信息流广告能够最大限度地保护用户体验，还能形成二次传播，广告效果优于大多数广告位   搜索广告  也是触发式广告 用户搜索关键词后，在搜索联想、搜索结果中出现广告 一般为广告主的App/商品，或者是带有推广性质的内容，以信息流的形式呈现 一般是应用商店，电商，搜索工具类的主流广告位，近年来，大型社交、资讯类也在加快布局 转化效果最强的广告位，能够形成用户搜索 -&amp;gt; 广告引导 -&amp;gt; 完成转化（下载/下单）的环路 但想提供搜索广告的App，需要一定的搜索基数以及口碑（用户信赖度），所以目前在移动广告中，是应用门槛最高的广告位   激励广告  利用激励让用户接受广告或做出指定行为比如下载APP、观看视频等 分为积分墙和激励视频两种形式  前者用户可以完成指定操作获取积分，并兑换奖励 后者则让用户完成指定操作，获取权益，比如游戏复活，新增特权等   互惠互利 点击成本低，广告效果好        策略</description>
-    </item>
-    
-    <item>
-      <title>ICOM6045 Application Layer Security</title>
-      <link>https://www.marshalgao.com/icom6045-application-layer-security/</link>
-      <pubDate>Thu, 03 Dec 2020 10:19:57 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/icom6045-application-layer-security/</guid>
-      <description>Host-Based Intrusion Detection Motivations and basis
- motivations  collection of information about intrusion techniques that can be used to strengthen the intrusion prevention facility  basis  the behavior of intruders differs from that of a legitimate user in a quantifiable way   Profiles of behavior of intruders and authorized users
- example  good or bad detection  confusion matrix   intrusion detection     Intruders and intrusions</description>
-    </item>
-    
-    <item>
-      <title>ECOM6013 Introduction to E-Commerce Technology</title>
-      <link>https://www.marshalgao.com/ecom6013-introduction-to-e-commerce-technology/</link>
-      <pubDate>Wed, 02 Dec 2020 22:55:46 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/ecom6013-introduction-to-e-commerce-technology/</guid>
-      <description></description>
     </item>
     
   </channel>
