@@ -6345,7 +6345,7 @@ value chain or pipeline.
 
 <ul>
 <li>known-subject matching: match with one stored fingerprint features record</li>
-<li>unknown-subject matching: match all records to find records with similar features (more on investigation,less popular)</li>
+<li>unknown-subject matching: match all records to find records with similar features (more on investigation, less popular)</li>
 </ul></li>
 <li>types of features
 
@@ -6371,7 +6371,7 @@ value chain or pipeline.
 
 <ul>
 <li>minutiae are extracted from the 2 fingerprints and stored as sets of points in the 2-dimensional plane</li>
-<li>each minutia is stored as a triplet {x,y, θ}, where (x,y) is the minutia is the location coordinate and θ is the minutia angle</li>
+<li>each minutia is stored as a triplet {x, y, θ}, where (x, y) is the minutia is the location coordinate and θ is the minutia angle</li>
 <li>formulated as a “point pattern matching” problem and processed by pattern recognition algorithm
 <figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E5%9B%BE%E7%89%87%206.png" alt=""></figure></li>
 </ul></li>
@@ -6682,7 +6682,7 @@ value chain or pipeline.
 <li>typical principals with their SID
 
 <ul>
-<li>everyone (World): S-1-1-0</li>
+<li>everyone (world): S-1-1-0</li>
 <li>system: S-1-5-18: the Windows on a machine runs locally as S-1-5-18</li>
 <li>administrator: S-1-5-21-&lt;local authority&gt;-500: a user account created during Windows installation</li>
 <li>administrators: S-1-5-32-544: built-in group with administrator privileges</li>
@@ -8043,7 +8043,7 @@ value chain or pipeline.
 
 <ul>
 <li>diffusion: by permutations in ShiftRows and MixColumns</li>
-<li>Confusion: by substitutions (S-Box) in SubBytes
+<li>confusion: by substitutions (S-Box) in SubBytes
 <figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-10-27%20%E4%B8%8A%E5%8D%8811.11.22.png" alt=""></figure></li>
 </ul></li>
 </ul>
