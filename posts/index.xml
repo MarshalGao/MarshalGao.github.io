@@ -18,7 +18,8 @@
             <description>Mobile Code Security Mobile code
  dynamically downloadable executable content is referred to as mobile code includes platform-independent executable content which is transferred over a communication network, crossing different security perimeters, and is automatically executed upon arrival at the destination host examples are Java applets, ActiveX controls, JavaScript, Safe-Tcl, servlet “browser helper applications” and plug-ins  download from store download on demand    Mechanisms
  code signing least privileges code monitoring: resources usage monitoring mobile code runtime environment  memory model partition the memory into safe and unsafe regions safety check ensure every memory access refers to a safe memory location, e.</description>
-            <content type="html"><![CDATA[<h2 id="mobile-code-security">Mobile Code Security</h2>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Mobile%20Code%20Security.png" alt=""></p>
+<h2 id="mobile-code-security">Mobile Code Security</h2>
 <p><strong>Mobile code</strong></p>
 <ul>
 <li>dynamically downloadable executable content is referred to as mobile code</li>
@@ -73,6 +74,209 @@
 <img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120524.png" alt=""></li>
 <li>enable privilege
 <img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120525.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Java signed applet (code signing)</strong></p>
+<ul>
+<li>definition
+<ul>
+<li>there is a program (or a piece of code) sent from the Web server to the client (i.e. the browser)</li>
+</ul>
+</li>
+<li>using the PKI and the browser technology</li>
+<li>example
+<ul>
+<li>signed applet - Java applet with ‘digital signature’</li>
+<li>treat the applet as a ‘document’ from server to client</li>
+<li>the applet has a digital signature attached to it
+<ul>
+<li>the “applet + digital_signature” is a signed applet
+<ul>
+<li>when the server creates this applet, the server will put in this digital_signature as well</li>
+<li>only the server (which holds a “private key”) can create this digital_signature</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>client will verify the digital signature</li>
+<li>if the verification process is ok, client will allow the applet to execute</li>
+<li>result: only applet from trusted server will be executed</li>
+</ul>
+</li>
+<li>yes or no answer
+<ul>
+<li>&ldquo;yes” means
+<ul>
+<li>the Web server (s1) providing the signed applet, is a valid customer of one of the CAs. So s1 is a good guy, and your PC or browser can execute this signed applet</li>
+<li>but you still have to look into the certificate details to see exactly who s1 is</li>
+</ul>
+</li>
+<li>“no” means
+<ul>
+<li>the Web server (s1) providing the signed applet, is not a valid customer of anyone of the known CAs</li>
+<li>the browser let you decide whether to execute the signed applet or not</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>ActiveX controls</strong></p>
+<ul>
+<li>definition
+<ul>
+<li>Microsoft’s collection of technologies and protocols for downloading executable code over the internet</li>
+<li>based on a technology that was not originally developed with network security issues in mind</li>
+<li>something “between” a plug-in and a Java applet: extend browser functionality and allow automatically downloaded with a web page</li>
+</ul>
+</li>
+<li>types
+<ul>
+<li>native machine code: most dangerous type</li>
+<li>Java bytecode: usually run inside the Java sandbox</li>
+<li>a mixture of native code and bytecode</li>
+</ul>
+</li>
+<li>authenticode
+<ul>
+<li>ActiveX controls can be digitally signed using authenticode, Microsoft’s digital signature technology using public key certificate</li>
+<li>a native code ActiveX control’s signature is checked only once: if the signature is valid and the signer is trusted, the control is downloaded</li>
+<li>a Java bytecode ActiveX control’s signature is also checked at downloading</li>
+<li>the actual access permissions are determined at runtime</li>
+</ul>
+</li>
+<li>procedure in IE
+<ul>
+<li>when IE downloads potentially dangerous content, it checks to see whether the code is digitally signed with a trusted certificate</li>
+<li>depending on your browser security setting (high, medium, medium-low, low, or custom) for the zone the content is originating from and the success or failure of the authenticode verification process, the browser determines whether or not to automatically run the content</li>
+<li>when prompted to allow or deny signed content, the user is allowed to inspect the signer’s digital certificate</li>
+</ul>
+</li>
+</ul>
+<p><strong>JavaScript</strong></p>
+<ul>
+<li>definition and advantages
+<ul>
+<li>JavaScript provides a means of commanding the browser, including its graphical elements, from an HTML file</li>
+<li>JavaScript is inherently more secure than Java applets because it cannot directly access the file system or open network connections (sandbox)</li>
+<li>JavaScript are permitted to access only to data in the current document or closely related document (from the same site)</li>
+<li>no access is granted to the local file system, memory space of other running programs, etc</li>
+</ul>
+</li>
+<li>JavaScript security
+<ul>
+<li>principle
+<ul>
+<li>there is no reason to trust randomly encountered code, and should treat them as hostile</li>
+</ul>
+</li>
+<li>security issues
+<ul>
+<li>it has access to all user information in the browser -&gt; potential privacy violation</li>
+<li>DoS attacks are possible by opening a large number of windows until the browser freezes</li>
+</ul>
+</li>
+<li>access control management: “same origin policy”
+<ul>
+<li>scripts from one web site do not have access to information such as usernames, passwords, or cookies sent to another site</li>
+<li>e.g. using the handle returned by window.open(), the browser performs the same origin check</li>
+<li>verifying that the URL of the document in the target window has the same origin as the document containing the calling script</li>
+<li>2 documents has the same origin if they were loaded from the same server using the same protocol and port</li>
+<li>example
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120601.png" alt=""></li>
+</ul>
+</li>
+<li>external script
+<ul>
+<li>externally linked scripts are considered part of the page they are embedded in, and thus can be linked in from other domain</li>
+<li>e.g. the page at <a href="http://www.somesite.com/index.html">http://www.somesite.com/index.html</a> could include the following script:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">“</span><span style="color:#a6e22e">text</span><span style="color:#f92672">/</span><span style="color:#a6e22e">javascript</span><span style="color:#960050;background-color:#1e0010">”</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#a6e22e">http</span><span style="color:#f92672">:</span><span style="color:#75715e">//www.example.com/scripts/somescript.js&gt;&lt;/script&gt;
+</span></code></pre></div><ul>
+<li>this script will load and work as expected</li>
+</ul>
+</li>
+<li>the linked scripts are considered part of the page they are linked into</li>
+<li>for the above example, if somescript.js tries access another window, it is considered to have come from <a href="http://www.somesite.com">http://www.somesite.com</a> and subject to the some origin check</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Summary</strong>
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120602.png" alt=""></p>
+<h2 id="security-of-mobile-application">Security of Mobile Application</h2>
+<p><strong>Mobile apps</strong></p>
+<ul>
+<li>a mobile app is a computer program designed to run on a mobile device such as a phone/tablet or watch</li>
+<li>apps that are not preinstalled are available through distribution platforms app stores</li>
+</ul>
+<p><strong>Risks</strong></p>
+<ul>
+<li>malicious behavior</li>
+<li>dangerous behavior</li>
+<li>moderate risk behavior</li>
+</ul>
+<p><strong>Security requirement for mobile apps</strong></p>
+<ul>
+<li>traditional server-side requirement (much more than this in mobile security)
+<ul>
+<li>IT system security architecture</li>
+<li>website security architecture</li>
+</ul>
+</li>
+<li>mobile client-side requirement
+<ul>
+<li>a device which can access to the system</li>
+<li>contains
+<ul>
+<li>enabling authorized functionality</li>
+<li>preventing unauthorized functionality</li>
+<li>limiting permissions</li>
+<li>protecting sensitive data</li>
+<li>securing app code dependencies (e.g. heartbleed)</li>
+<li>testing app updates</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>mobile app requirement
+<ul>
+<li>understanding mobile platforms (e.g. iOS and Android)
+<ul>
+<li>development APIs and security framework </li>
+<li>application permissions model (e.g. location, camera, microphone)</li>
+</ul>
+</li>
+<li>data management and data storage 
+<ul>
+<li>shared data</li>
+<li>protected data</li>
+<li>handle personal data and cache</li>
+<li>data classification
+<ul>
+<li>what data should keep on the device and what data should send back to the server</li>
+</ul>
+</li>
+<li>data removal</li>
+</ul>
+</li>
+<li>protecting network communications 
+<ul>
+<li>apps can communicate with the services though different media, e.g. WiFi or 4G</li>
+<li>how the apps interacts with the server</li>
+<li>certificate, key and trust services</li>
+</ul>
+</li>
+<li>risk assessment 
+<ul>
+<li>does the app expose sensitive information of your backend system architecture
+<ul>
+<li>e.g. password of the database, admin account</li>
+</ul>
+</li>
+<li>can someone extract and modify your App to perform malicious actions</li>
 </ul>
 </li>
 </ul>
