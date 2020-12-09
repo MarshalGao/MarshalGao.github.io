@@ -7,14 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 02 Dec 2020 22:55:46 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/ecom6013/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Dec 2020 17:16:56 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/ecom6013/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM6013 Internet and E-Commerce Infrastructure</title>
+      <link>https://www.marshalgao.com/ecom6013-internet-and-e-commerce-infrastructure/</link>
+      <pubDate>Wed, 09 Dec 2020 17:16:56 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom6013-internet-and-e-commerce-infrastructure/</guid>
+      <description>The Internet: Technology Background Internet and world wide web
+ internet  interconnected network of thousands of networks and hundreds of millions of computers links businesses, educational institutions, government agencies, and individuals   world wide web (web)  one of the internet&amp;rsquo;s most popular services provides access to billions, possibly trillions, of web pages    The evolution of the internet
+ innovation phase (1961 - 1974)  creation of fundamental building blocks   institutionalization phase (1975 - 1995)  large institutions provide funding and legitimization   commercialization phase (1995 - present)  private corporations take over, expand internet backbone and local service    Key technology concepts</description>
+    </item>
+    
     <item>
       <title>ECOM6013 Introduction to E-Commerce Technology</title>
       <link>https://www.marshalgao.com/ecom6013-introduction-to-e-commerce-technology/</link>
       <pubDate>Wed, 02 Dec 2020 22:55:46 +0800</pubDate>
       
       <guid>https://www.marshalgao.com/ecom6013-introduction-to-e-commerce-technology/</guid>
-      <description></description>
+      <description>E-Commerce and Data Science E-commerce is largely and exercise in understanding the clients
+ containing their capabilities, desires, etc. matching clients with technologies and goals exploring scalability chanllenges of new markets  E-Commerce vs E-Business E-commerce
+ definition  usually  use of internet and/or web to transact business   generally  refer to any networked commerce activity   formally  digitally enabled commercial transactions between and among organizations and individuals     traditional e-commerce  features  passive consumer sales-force driven fixed prices information asymmetry     current e-commerce  reason of importance  e-commerce technology is different, more powerful than previous technologies e-commerce bringing fundamental changes to commerce   features  ubiquity global reach universal standards information richness interactivity information density personalization/customization social technology   trends  new business models based on social technologies, consumer-generated content, and services (e.</description>
     </item>
     
   </channel>

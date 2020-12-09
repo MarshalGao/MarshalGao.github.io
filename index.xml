@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 06 Dec 2020 16:24:41 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Dec 2020 17:16:56 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM6013 Internet and E-Commerce Infrastructure</title>
+      <link>https://www.marshalgao.com/ecom6013-internet-and-e-commerce-infrastructure/</link>
+      <pubDate>Wed, 09 Dec 2020 17:16:56 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom6013-internet-and-e-commerce-infrastructure/</guid>
+      <description>The Internet: Technology Background Internet and world wide web
+ internet  interconnected network of thousands of networks and hundreds of millions of computers links businesses, educational institutions, government agencies, and individuals   world wide web (web)  one of the internet&amp;rsquo;s most popular services provides access to billions, possibly trillions, of web pages    The evolution of the internet
+ innovation phase (1961 - 1974)  creation of fundamental building blocks   institutionalization phase (1975 - 1995)  large institutions provide funding and legitimization   commercialization phase (1995 - present)  private corporations take over, expand internet backbone and local service    Key technology concepts</description>
+    </item>
+    
     <item>
       <title>Advertising Creativity and Internet Thinking</title>
       <link>https://www.marshalgao.com/advertising-creativity-and-internet-thinking/</link>
@@ -52,7 +63,7 @@
     </item>
     
     <item>
-      <title>Is There A Ceiling for Tencent&#39;s Advertising Growth</title>
+      <title>Is There a Ceiling for Tencent&#39;s Advertising Growth</title>
       <link>https://www.marshalgao.com/is-there-a-ceiling-for-tencents-advertising-growth/</link>
       <pubDate>Sat, 05 Dec 2020 14:28:19 +0800</pubDate>
       
@@ -86,7 +97,7 @@ DTC除了可以更好的让商家与用户进行沟通，同时还可以减少�
     </item>
     
     <item>
-      <title>Media Management Platform (Take E-Commerce as An Example)</title>
+      <title>Media Management Platform (Take E-Commerce as an Example)</title>
       <link>https://www.marshalgao.com/media-management-platform-take-e-commerce-as-an-example/</link>
       <pubDate>Fri, 04 Dec 2020 16:25:08 +0800</pubDate>
       
@@ -124,17 +135,6 @@ DTC除了可以更好的让商家与用户进行沟通，同时还可以减少�
  获客方式 落地页设计 转化分析 流量承接  获客方式
  准确性  目标客户是否正确 客户需求是否真实 垃圾流量的比例 刷单是否存在 场景  在做保险投放的时候，我们通过搜索关键词竞价，假如关键词是“高性价比 重疾险” 那么可能有两类人都会搜索这个关键词，一类是想了解重疾险，并且有意愿购买的人，这是潜在的目标用户，还有一部分是保险代理人，他们可能会了解市面上新出来的重疾险产品，想去代理这些产品，这类人并不是目标用户     可追溯性  是否可统计来源 是否链路连续性 数据是否准确 分期过程是否正确 场景  如果要衡量转化效果，投放广告必须是可追溯的 广告曝光数，点击数，广告落地页浏览数，停留时间，页面的点击数，每个环节的数据都有了，才能分析出具体哪个环节影响转化 线下广告不具备可追溯性，因为曝光数和点击数是缺失的 还有一部分广告形式，比如公众号推文中嵌入二维码，虽然有文章阅读数，但是阅读文章不代表能够看到文章底部的二维码广告，很有可能用户阅读到一半就关闭了，所以一般公众号软文推广的可追溯性比较差     竞争程度  行业竞争程度 渠道同质性 广告平台的限制 渠道本身的特性 场景  对于信息流类广告，很多公司都会竞争，如果你进入的比较晚，就需要考虑之前竞品公司投放广告的目标人群，能做到差异化是最好的 在做保险业务的时候，选了几个公众号投放，有些公众号一个月内会接好多互联网保险公司的软文，如果你这个时候再去投，转化效果就非常差      落地页设计
  基本要素  品牌标识和logo 品牌文案 引导文案 产品卖点 信任背书 产品案例 期望的信息输入框（期望的用户行为） 用户的使用评价 已有的销量 官方的FAQ   落地页的开发和设计，需要结合产品、UED、技术、运营、BI等部门一起协作，同时对不同版本的落地页进行测试，以此来确定那个版本的落地页的转化效果最好 广告的推广转化效果由创意和投放两方决定，自身质量就是创意，即落地页，多重视都不过分，而投放只是一种机遇，一种手段  类比茅台发展史    转化分析</description>
-    </item>
-    
-    <item>
-      <title>Internet Mobile Advertising</title>
-      <link>https://www.marshalgao.com/internet-mobile-advertising/</link>
-      <pubDate>Thu, 03 Dec 2020 14:23:20 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/internet-mobile-advertising/</guid>
-      <description>定义
- 移动互联网广告是通过移动设备（手机、PSP、平板电脑等）访问移动App或移动网页时显示的广告 大致分类  Web广告  基于html框架 显示在浏览器 网站开发者获益 市场份额小   App广告  基于OS框架 显示在App内 主流形式      类型
- 抛开Web广告，可将互联网广告分为  按App所属行业  搜索广告 电商广告 门户或新闻广告 垂直广告（即竖屏视频） 视频广告（即横屏视频）   按广告自身属性（与广告主投放位置直接相关）  开屏广告  出现在App启动加载时，又叫启动页广告 尺寸大（App内最大的广告） 可跳过 可见性高、广告效果好   横幅广告  网络广告最早采用的形式 以文字、图片等富媒体形式 展示在App首页、发现页、专题详情页等页面的顶部（含下拉刷新）、底部或者中部 尺寸小 位置偏（照顾用户体验，避免误触） 支持轮播（动态展示不同广告主的文字链和图片） 难以吸引用户注意力，广告可见性差，广告效果差   插屏广告  又叫触发式广告 在用户做出相应操作（如开启、暂停、过关、跳转、退出）后 弹出以图片、动图、视频等为表现形式的半屏或者全屏广告 曝光性强，吸引用户注意力 容易引起用户反感（打断用户正常App的操作） 影响用户体验，广告可见性一般，广告效果一般   贴片广告  将广告内容贴入视频之中 视频贴片  将5s-60s不等的横版视频广告，添加至视频播放前、视频播放中或视频播放后这三个位置   创可贴  将图片/动图等元素放在正在播放的视频中 可结合剧情设计，尺寸小的特点，使得用户体验更好，广告可见性更高、广告效果更好   整体广告效果和视频类型和质量相关较为密切，一般以传统采买、竞标的交易模式   信息流广告  出现于有内容产出的App，是与App的日常内容（如一则资讯、动态、图片、视频）融为一体的广告形式 延展性、可玩性最强的广告位，目前可记录的形式就有数十种，文字链，小图、组图、大图、竖版视频等等 由于原生性、内容性较强，信息流广告能够最大限度地保护用户体验，还能形成二次传播，广告效果优于大多数广告位   搜索广告  也是触发式广告 用户搜索关键词后，在搜索联想、搜索结果中出现广告 一般为广告主的App/商品，或者是带有推广性质的内容，以信息流的形式呈现 一般是应用商店，电商，搜索工具类的主流广告位，近年来，大型社交、资讯类也在加快布局 转化效果最强的广告位，能够形成用户搜索 -&amp;gt; 广告引导 -&amp;gt; 完成转化（下载/下单）的环路 但想提供搜索广告的App，需要一定的搜索基数以及口碑（用户信赖度），所以目前在移动广告中，是应用门槛最高的广告位   激励广告  利用激励让用户接受广告或做出指定行为比如下载APP、观看视频等 分为积分墙和激励视频两种形式  前者用户可以完成指定操作获取积分，并兑换奖励 后者则让用户完成指定操作，获取权益，比如游戏复活，新增特权等   互惠互利 点击成本低，广告效果好        策略</description>
     </item>
     
   </channel>

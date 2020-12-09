@@ -6,8 +6,606 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Sun, 06 Dec 2020 16:24:41 +0800</lastBuildDate>
+        <lastBuildDate>Wed, 09 Dec 2020 17:16:56 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ECOM6013 Internet and E-Commerce Infrastructure</title>
+            <link>https://www.marshalgao.com/ecom6013-internet-and-e-commerce-infrastructure/</link>
+            <pubDate>Wed, 09 Dec 2020 17:16:56 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/ecom6013-internet-and-e-commerce-infrastructure/</guid>
+            <description>The Internet: Technology Background Internet and world wide web
+ internet  interconnected network of thousands of networks and hundreds of millions of computers links businesses, educational institutions, government agencies, and individuals   world wide web (web)  one of the internet&amp;rsquo;s most popular services provides access to billions, possibly trillions, of web pages    The evolution of the internet
+ innovation phase (1961 - 1974)  creation of fundamental building blocks   institutionalization phase (1975 - 1995)  large institutions provide funding and legitimization   commercialization phase (1995 - present)  private corporations take over, expand internet backbone and local service    Key technology concepts</description>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Internet%20and%20E-Commerce%20Infrastructure.png" alt=""></p>
+<h2 id="the-internet-technology-background">The Internet: Technology Background</h2>
+<p><strong>Internet and world wide web</strong></p>
+<ul>
+<li>internet
+<ul>
+<li>interconnected network of thousands of networks and hundreds of millions of computers</li>
+<li>links businesses, educational institutions, government agencies, and individuals</li>
+</ul>
+</li>
+<li>world wide web (web)
+<ul>
+<li>one of the internet&rsquo;s most popular services</li>
+<li>provides access to billions, possibly trillions, of web pages</li>
+</ul>
+</li>
+</ul>
+<p><strong>The evolution of the internet</strong></p>
+<ul>
+<li>innovation phase (1961 - 1974)
+<ul>
+<li>creation of fundamental building blocks</li>
+</ul>
+</li>
+<li>institutionalization phase (1975 - 1995)
+<ul>
+<li>large institutions provide funding and legitimization</li>
+</ul>
+</li>
+<li>commercialization phase (1995 - present)
+<ul>
+<li>private corporations take over, expand internet backbone and local service</li>
+</ul>
+</li>
+</ul>
+<p><strong>Key technology concepts</strong></p>
+<ul>
+<li>internet defined as network that
+<ul>
+<li>uses IP addressing</li>
+<li>supports TCP/IP</li>
+<li>provides services to users, in manner similar to telephone system</li>
+</ul>
+</li>
+<li>packet switching
+<ul>
+<li>slices digital messages into packets</li>
+<li>sends packets along different communication paths as they become available</li>
+<li>reassembles packets once they arrive at destination</li>
+<li>use routers
+<ul>
+<li>special purpose computers that interconnect the computer networks that make up the internet and route packets</li>
+<li>routing algorithms ensure packets take the best available path toward their destination</li>
+</ul>
+</li>
+<li>less expensive, wasteful than circuit-switching</li>
+</ul>
+</li>
+<li>TCP/IP communication protocol
+<ul>
+<li>transmission control protocol (TCP)
+<ul>
+<li>establishes connections among sending and receiving web computers</li>
+<li>handles assembly of packets at point of transmission, and reassembly at receiving end</li>
+</ul>
+</li>
+<li>internet protocol (IP)
+<ul>
+<li>provides the internet&rsquo;s addressing scheme</li>
+</ul>
+</li>
+<li>4 TCP/IP layers
+<ul>
+<li>network interface layer
+<ul>
+<li>e.g. ethernet, token ring, frame relay, ATM, bluetooth, WiFi</li>
+</ul>
+</li>
+<li>internet layer
+<ul>
+<li>e.g. IP</li>
+</ul>
+</li>
+<li>transport layer
+<ul>
+<li>e.g. TCP, UDP</li>
+</ul>
+</li>
+<li>application layer
+<ul>
+<li>e.g. HTTP, Telnet, FTP, SMTP, BGP</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ISO, a reference model, has 7 layers</li>
+<li>internet addresses (IP)
+<ul>
+<li>IPv4
+<ul>
+<li>32-bit number</li>
+<li>four sets of numbers marked off by periods
+<ul>
+<li>class C address: network identified by first 3 sets, computer identified by last set</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>IPv6
+<ul>
+<li>128-bit addresses</li>
+<li>able to handle up to 1 quadrillion addresses (IPv4 can handle only 4 billion)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>domain names
+<ul>
+<li>IP address expressed in natural language</li>
+</ul>
+</li>
+<li>domain name system (DNS)
+<ul>
+<li>allow numeric IP addresses to be expressed in natural language</li>
+</ul>
+</li>
+<li>uniform resource locator (URL)
+<ul>
+<li>address used by web browser to identify location of content on the web
+<ul>
+<li>e.g. <a href="https://www.ecom-icom.hku.hk">https://www.ecom-icom.hku.hk</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>dynamic host configuration protocol (DHCP)
+<ul>
+<li>port number
+<ul>
+<li>for client: 68</li>
+<li>for server: 67</li>
+</ul>
+</li>
+<li>usually, we do not have a fixed IP address</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>other internet protocols and utility programs
+<ul>
+<li>internet protocols
+<ul>
+<li>HTTP</li>
+<li>email: SMTP, POP3, IMAP</li>
+<li>FTP, Telnet, SSL/TLS</li>
+</ul>
+</li>
+<li>utility programs
+<ul>
+<li>ping</li>
+<li>tracert</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>client/server computing
+<ul>
+<li>powerful personal computers (clients) connected in network with one or more servers</li>
+<li>servers perform common functions for the clients
+<ul>
+<li>storing files</li>
+<li>software applications</li>
+<li>access to printers, etc.</li>
+</ul>
+</li>
+<li>cloud computing model
+<ul>
+<li>firms and individuals obtain computing power and software over internet</li>
+<li>services
+<ul>
+<li>infrastructure as a service (IaaS)</li>
+<li>software as a service (SaaS)</li>
+<li>platform as a service (PaaS)</li>
+</ul>
+</li>
+<li>public, private, and hybrid clouds</li>
+<li>radically reduces costs of
+<ul>
+<li>building and operating web sites</li>
+<li>infrastructure, IT support</li>
+<li>hardware, software</li>
+</ul>
+</li>
+<li>drawbacks
+<ul>
+<li>security risks</li>
+<li>shifts responsibility for storage and control to providers</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>The mobile platform</strong></p>
+<ul>
+<li>primary internet access is now through
+<ul>
+<li>tablets supplement PCs for mobile situations</li>
+<li>smartphones are a disruptive technology
+<ul>
+<li>new processors and operating systems</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>mobile apps
+<ul>
+<li>use of mobile apps has exploded
+<ul>
+<li>most popular entertainment media, over TV</li>
+<li>always present shopping tool</li>
+<li>almost all top 100 brands have an app</li>
+</ul>
+</li>
+<li>platforms
+<ul>
+<li>iOS</li>
+<li>Android</li>
+</ul>
+</li>
+<li>app marketplaces
+<ul>
+<li>Google Play</li>
+<li>Apple&rsquo;s App Store</li>
+<li>Amazon&rsquo;s Appstore</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="internet-infrastructure">Internet Infrastructure</h2>
+<p><strong>The reason of internet growth has boomed without disruption</strong></p>
+<ul>
+<li>client/server computing model</li>
+<li>hourglass, layer architecture
+<ul>
+<li>network technology substrate</li>
+<li>transport services and representation standards</li>
+<li>middleware services</li>
+<li>applications
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-09%20%E4%B8%8B%E5%8D%889.08.34.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<p><strong>Architecture</strong></p>
+<ul>
+<li>internet network architecture
+<ul>
+<li>internet backbone
+<ul>
+<li>comprised of fiber-optic cable: hundreds of glass strands that use light to transmit data
+<ul>
+<li>faster speed and greater bandwidth</li>
+<li>thinner, lighter cables</li>
+<li>less interference</li>
+<li>better data security</li>
+</ul>
+</li>
+<li>tier 1 internet service provider or transit ISPs</li>
+<li>numerous private networks physically connected to each other</li>
+<li>undersea fiber optics, satellite links
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-09%20%E4%B8%8B%E5%8D%889.22.03.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>3 tiers internet
+<ul>
+<li>internet exchange points (IXPs)
+<ul>
+<li>regional hubs where tier 1 ISPs physically connect with one another and with regional tier 2 ISPs</li>
+<li>tier 2 ISPs provide tier 3 ISPs with internet access</li>
+<li>originally called network access points (NAPs) or metropolitan area exchanges (MAEs)</li>
+<li>e.g. HKIX</li>
+</ul>
+</li>
+<li>tier 3 ISPs
+<ul>
+<li>retail providers
+<ul>
+<li>lease internet access to home owners, small businesses</li>
+<li>large providers
+<ul>
+<li>Comcast, AT&amp;T, Verizon in US</li>
+<li>PCCW, Hutchison Telecom, HK Broadband in HK</li>
+</ul>
+</li>
+<li>smaller local providers in most countries</li>
+</ul>
+</li>
+<li>services
+<ul>
+<li>narrowband</li>
+<li>broadband</li>
+<li>digital subscriber line (DSL)</li>
+<li>cable internet</li>
+<li>satellite internet
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-09%20%E4%B8%8B%E5%8D%889.22.13.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="area-networks-and-internet-access">Area Networks and Internet Access</h2>
+<p><strong>Campus/corporate area networks</strong></p>
+<ul>
+<li>local area networks operating within single organization
+<ul>
+<li>e.g. HKU, Microsoft Corporation</li>
+</ul>
+</li>
+<li>lease internet access directly from regional and national carriers</li>
+</ul>
+<p><strong>Internet access</strong></p>
+<ul>
+<li>mobile internet access
+<ul>
+<li>two basic types of wireless intetnet access
+<ul>
+<li>telephone-based
+<ul>
+<li>e.g. mobile phones, smartphones</li>
+</ul>
+</li>
+<li>computer network-based
+<ul>
+<li>e.g. wireless local area network (WLAN) - based internet access
+<ul>
+<li>WiFi (various IEEE 802.11 standards)
+<ul>
+<li>high-speed, fixed broadband wireless LAN (WLAN)</li>
+<li>wireless access point (hot spots)</li>
+<li>limited range but inexpensive</li>
+</ul>
+</li>
+<li>Zigbee (for IoT), Bluetooth, BLE</li>
+<li>LoRaWan -&gt; low power WAN</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>telephone-based wireless internet access
+<ul>
+<li>currently based on 3G and 4G technologies</li>
+<li>5G will provide higher bandwidth with speeds reaching 10 Gbps or more, with much lower latency</li>
+</ul>
+</li>
+<li>intranets
+<ul>
+<li>TCP/IP network located within a single organization for communications and processing</li>
+<li>used by private and government organizations for internal networks</li>
+<li>all internet applications can be used in private intranets</li>
+</ul>
+</li>
+<li>the internet of things (IoT)
+<ul>
+<li>objects connected via sensors/RFID (Radio Frequency Identification) to the internet</li>
+<li>smart things</li>
+<li>interoperability issues and standards</li>
+<li>security and privacy concerns</li>
+</ul>
+</li>
+<li>limitations and the current internet
+<ul>
+<li>bandwidth limitations
+<ul>
+<li>slow peak-hour service</li>
+</ul>
+</li>
+<li>quality of service limitations
+<ul>
+<li>latency</li>
+</ul>
+</li>
+<li>network architecture limitations
+<ul>
+<li>identical requests are processed individually</li>
+</ul>
+</li>
+<li>wired internet
+<ul>
+<li>copper and expensive fiber-optic cables</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>governance
+<ul>
+<li>Internet Corporation for Assigned Names and Numbers (ICANN)</li>
+<li>Internet Engineering Task Force (IETF)</li>
+<li>Internet Research Task Force (IRTF)</li>
+<li>Internet Engineering Steering Group (IESG)</li>
+<li>Internet Architecture Board (IAB)</li>
+<li>Internet Society (ISOC)</li>
+<li>Internet Governance Forum (IGF)</li>
+<li>World Wide Web Consortium (W3C)</li>
+<li>Internet Network Operators Groups (NOGs)</li>
+</ul>
+</li>
+</ul>
+<h2 id="the-web">The Web</h2>
+<p><strong>Hypertext</strong></p>
+<ul>
+<li>text formatted with embedded links
+<ul>
+<li>links connect documents to one another, and to other objects such as sound, video, or animation files</li>
+</ul>
+</li>
+<li>uses Hypertext Transfer Protocol (HTTP) and URLs to locate resources on the web</li>
+</ul>
+<p><strong>Markup languages</strong></p>
+<ul>
+<li>Hypertext Markup Language (HTML)
+<ul>
+<li>fixed set of pre-defined markup &ldquo;tags&rdquo; used to format text</li>
+<li>controls look and feel of web pages</li>
+<li>used in conjunction with Cascading Style Sheets (CSS)</li>
+<li>HTML5, the new version</li>
+</ul>
+</li>
+<li>eXtensible Markup Language (XML)
+<ul>
+<li>designed to describe data and information</li>
+<li>tags used are defined by user</li>
+</ul>
+</li>
+</ul>
+<p><strong>Web servers and web clients</strong></p>
+<ul>
+<li>web server software
+<ul>
+<li>enables a computer to deliver web pages to clients on a network that request this service by sending an HTTP request</li>
+<li>basic capabilities
+<ul>
+<li>security services</li>
+<li>FTP</li>
+<li>search engine</li>
+<li>data capture</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>web server
+<ul>
+<li>may refer to either web server software or physical server</li>
+<li>specialized servers
+<ul>
+<li>database servers</li>
+<li>ad servers</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>web client
+<ul>
+<li>any computing device attached to the internet that is capable of making HTTP requests and displaying HTML pages</li>
+</ul>
+</li>
+</ul>
+<p><strong>The internet and web</strong></p>
+<ul>
+<li>features on which the foundations of e-commerce are built
+<ul>
+<li>communication tools
+<ul>
+<li>email</li>
+<li>messaging applications, e.g. instant messaging</li>
+<li>online message boards</li>
+<li>internet telephony, e.g. Voice Over Internet Protocol (VOIP)</li>
+<li>video conferencing, video chatting, telepresence</li>
+</ul>
+</li>
+<li>search engines
+<ul>
+<li>identify web pages that match queries based on one or more techniques
+<ul>
+<li>keyword indexes</li>
+<li>page ranking</li>
+</ul>
+</li>
+<li>also serve as
+<ul>
+<li>shopping tools</li>
+<li>advertising vehicles (search engine marketing)</li>
+<li>tool within e-commerce sites</li>
+</ul>
+</li>
+<li>procedure of Google
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-09%20%E4%B8%8B%E5%8D%8810.33.25.png" alt="">
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-09%20%E4%B8%8B%E5%8D%8810.33.38.png" alt=""></li>
+</ul>
+</li>
+<li>downloadable and streaming media
+<ul>
+<li>downloads
+<ul>
+<li>growth in broadband connections enables large media file downloads</li>
+</ul>
+</li>
+<li>streaming technologies
+<ul>
+<li>enables music, video, and other large files to be sent to users in chunks so that the file can play uninterrupted</li>
+</ul>
+</li>
+<li>podcasting</li>
+<li>explosion in online video viewing</li>
+</ul>
+</li>
+<li>web 2.0 applications and services
+<ul>
+<li>base on demand of users</li>
+<li>online social networks
+<ul>
+<li>services that support communication among networks of friends, peers</li>
+</ul>
+</li>
+<li>blogs
+<ul>
+<li>personal web page of chronological entries</li>
+<li>enable web page publishing with no knowledge of HTML</li>
+</ul>
+</li>
+<li>wikis
+<ul>
+<li>enables doucuments to be written collectively and collaboratively</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>virtual reality and augmented reality
+<ul>
+<li>VR
+<ul>
+<li>immersing users within virtual world</li>
+<li>typically uses head-mounted display (HMD)</li>
+<li>e.g. Oculus Rift, Vive, PlayStation VR</li>
+</ul>
+</li>
+<li>AR
+<ul>
+<li>overplaying virtual objects over the real world, via mobile devices or HMDs</li>
+<li>e.g. Pokémon GO</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>intelligent digital assistants
+<ul>
+<li>computer search engine using
+<ul>
+<li>natural language</li>
+<li>conversational interface, verbal commands</li>
+<li>situational awareness</li>
+</ul>
+</li>
+<li>can handle requests for appointments, flights, routes, event scheduling, and more
+<ul>
+<li>e.g. Apple&rsquo;s Siri, Amazon Alexa, Google Assistant</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="additional-reading">Additional Reading</h2>
+<ul>
+<li>Difference Between HTML &amp; HTML5 -&gt; <a href="https://www.difference.wiki/html-vs-html5/">details</a></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>Advertising Creativity and Internet Thinking</title>
@@ -221,13 +819,13 @@
 <ul>
 <li>&ldquo;yes” means
 <ul>
-<li>the Web server (s1) providing the signed applet, is a valid customer of one of the CAs. So s1 is a good guy, and your PC or browser can execute this signed applet</li>
+<li>the web server (s1) providing the signed applet, is a valid customer of one of the CAs. So s1 is a good guy, and your PC or browser can execute this signed applet</li>
 <li>but you still have to look into the certificate details to see exactly who s1 is</li>
 </ul>
 </li>
 <li>“no” means
 <ul>
-<li>the Web server (s1) providing the signed applet, is not a valid customer of anyone of the known CAs</li>
+<li>the web server (s1) providing the signed applet, is not a valid customer of anyone of the known CAs</li>
 <li>the browser let you decide whether to execute the signed applet or not</li>
 </ul>
 </li>
@@ -596,7 +1194,7 @@
         </item>
         
         <item>
-            <title>Is There A Ceiling for Tencent&#39;s Advertising Growth</title>
+            <title>Is There a Ceiling for Tencent&#39;s Advertising Growth</title>
             <link>https://www.marshalgao.com/is-there-a-ceiling-for-tencents-advertising-growth/</link>
             <pubDate>Sat, 05 Dec 2020 14:28:19 +0800</pubDate>
             
@@ -877,7 +1475,7 @@ DTC除了可以更好的让商家与用户进行沟通，同时还可以减少�
 <li>scenario
 <img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120508.png" alt="">
 <img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120509.png" alt=""></li>
-<li>an attacker can request that a running TLS server hand over a relatively large slice (up to 64KB) of its private memory space.</li>
+<li>an attacker can request that a running TLS server hand over a relatively large slice (up to 64KB) of its private memory space</li>
 <li>this private memory space can potentially store
 <ul>
 <li>long-term server private key</li>
@@ -985,7 +1583,7 @@ DTC除了可以更好的让商家与用户进行沟通，同时还可以减少�
         </item>
         
         <item>
-            <title>Media Management Platform (Take E-Commerce as An Example)</title>
+            <title>Media Management Platform (Take E-Commerce as an Example)</title>
             <link>https://www.marshalgao.com/media-management-platform-take-e-commerce-as-an-example/</link>
             <pubDate>Fri, 04 Dec 2020 16:25:08 +0800</pubDate>
             
@@ -1742,8 +2340,179 @@ DTC除了可以更好的让商家与用户进行沟通，同时还可以减少�
             <pubDate>Wed, 02 Dec 2020 22:55:46 +0800</pubDate>
             
             <guid>https://www.marshalgao.com/ecom6013-introduction-to-e-commerce-technology/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
+            <description>E-Commerce and Data Science E-commerce is largely and exercise in understanding the clients
+ containing their capabilities, desires, etc. matching clients with technologies and goals exploring scalability chanllenges of new markets  E-Commerce vs E-Business E-commerce
+ definition  usually  use of internet and/or web to transact business   generally  refer to any networked commerce activity   formally  digitally enabled commercial transactions between and among organizations and individuals     traditional e-commerce  features  passive consumer sales-force driven fixed prices information asymmetry     current e-commerce  reason of importance  e-commerce technology is different, more powerful than previous technologies e-commerce bringing fundamental changes to commerce   features  ubiquity global reach universal standards information richness interactivity information density personalization/customization social technology   trends  new business models based on social technologies, consumer-generated content, and services (e.</description>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Introduction%20to%20E-Commerce%20Technology.png" alt=""></p>
+<h2 id="e-commerce-and-data-science">E-Commerce and Data Science</h2>
+<p><strong>E-commerce is largely and exercise in understanding the clients</strong></p>
+<ul>
+<li>containing their capabilities, desires, etc.</li>
+<li>matching clients with technologies and goals</li>
+<li>exploring scalability</li>
+<li>chanllenges of new markets</li>
+</ul>
+<h2 id="e-commerce-vs-e-business">E-Commerce vs E-Business</h2>
+<p><strong>E-commerce</strong></p>
+<ul>
+<li>definition
+<ul>
+<li>usually
+<ul>
+<li>use of internet and/or web to transact business</li>
+</ul>
+</li>
+<li>generally
+<ul>
+<li>refer to any networked commerce activity</li>
+</ul>
+</li>
+<li>formally
+<ul>
+<li>digitally enabled commercial transactions between and among organizations and individuals</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>traditional e-commerce
+<ul>
+<li>features
+<ul>
+<li>passive consumer</li>
+<li>sales-force driven</li>
+<li>fixed prices</li>
+<li>information asymmetry</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>current e-commerce
+<ul>
+<li>reason of importance
+<ul>
+<li>e-commerce technology is different, more powerful than previous technologies</li>
+<li>e-commerce bringing fundamental changes to commerce</li>
+</ul>
+</li>
+<li>features
+<ul>
+<li>ubiquity</li>
+<li>global reach</li>
+<li>universal standards</li>
+<li>information richness</li>
+<li>interactivity</li>
+<li>information density</li>
+<li>personalization/customization</li>
+<li>social technology</li>
+</ul>
+</li>
+<li>trends
+<ul>
+<li>new business models based on social technologies, consumer-generated content, and services (e.g., innovative payment systems)</li>
+<li>broadband and wireless access continue to grow</li>
+<li>mobile e-commerce is booming</li>
+<li>traditional media losing subscribers</li>
+<li>e-commerce has traditionally been early adopters (and influencers) of new technologies</li>
+<li>local-based, augmented reality (AR) and AI technologies &amp; applications now beginning to mature</li>
+</ul>
+</li>
+<li>types
+<ul>
+<li>classified by market relationship
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/120801.png" alt=""></li>
+<li>classified by technology used
+<ul>
+<li>peer-to-peer (P2P)</li>
+<li>mobile commerce (m-commerce)</li>
+<li>online-to-offline (O2O)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>organizing themes and trends
+<ul>
+<li>technology
+<ul>
+<li>development and mastery of digital computing and communications technology</li>
+<li>mobile platform has made mobile e-commerce reality and affordable smartphones plus 5G will make more impact</li>
+</ul>
+</li>
+<li>business
+<ul>
+<li>new technologies present businesses with new ways of organizing production and transacting business</li>
+<li>all forms of e-commerce show very strong growth and Covid-19 amplifies this</li>
+</ul>
+</li>
+<li>society
+<ul>
+<li>intellectual property, individual privacy, public welfare policy</li>
+<li>increased online social interaction and sharing, but we begin to see the negative impacts of social media</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>relevant academic disciplines
+<ul>
+<li>technical approach
+<ul>
+<li>computer science</li>
+<li>management science</li>
+<li>information systems</li>
+<li>electrical &amp; electronic engineering</li>
+</ul>
+</li>
+<li>behavioral approach
+<ul>
+<li>information systems</li>
+<li>economics</li>
+<li>marketing</li>
+<li>management</li>
+<li>finance/accounting</li>
+<li>sociology</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>E-business</strong></p>
+<ul>
+<li>digital enablement of transactions and processes within a firm, involving information systems under firm&rsquo;s control</li>
+<li>does not include commercial transactions involving an exchange of value across organizational boundaries</li>
+</ul>
+<h2 id="potential-limitations-and-predictions-for-the-future">Potential Limitations and Predictions for the Future</h2>
+<p><strong>Potential limitations on the growth of B2C e-commerce</strong></p>
+<ul>
+<li>expensive technology</li>
+<li>sophisticated skill set</li>
+<li>persistent cultural attraction of physical markets and traditional shopping experiences</li>
+<li>persistent global inequality limiting access to telephones and computers</li>
+<li>saturation and ceiling effects</li>
+<li>de-globalization and trade war</li>
+</ul>
+<p><strong>Predictions/questions/challenges for the future</strong></p>
+<ul>
+<li>technology will propagate through all commercial activity</li>
+<li>prices will rise to cover the real cost of doing business</li>
+<li>e-commerce margins and profits will rise to levels more typical of all retailers</li>
+<li>cast of players will change
+<ul>
+<li>traditional fortune 500 companies will play dominant role</li>
+<li>new startup ventures will emerge with new products, services</li>
+</ul>
+</li>
+<li>number of successful pure online stores will remain smaller than integrated offline/online stores</li>
+<li>growth of regulatory activity worldwide</li>
+<li>influence of cost of energy</li>
+</ul>
+<h2 id="additional-reading">Additional Reading</h2>
+<ul>
+<li>Global Ecommerce - 11 Growth Trends and Statistics -&gt; <a href="https://www.shopify.com/enterprise/global-ecommerce-statistics">details</a></li>
+<li>What Is the Future of Ecommerce? 10 Insights on the Evolution of an Industry -&gt; <a href="../articles/The-Future-of-Ecommerce-in-2019-10-Insights-from-the-Leaders-Data.pdf">details</a></li>
+<li>Facebook, Covid and Misinformation - The Peril of Social Media -&gt; <a href="https://secure.avaaz.org/campaign/en/facebook_threat_health/">details</a></li>
+</ul>
+]]></content>
         </item>
         
         <item>
@@ -3134,7 +3903,7 @@ DTC除了可以更好的让商家与用户进行沟通，同时还可以减少�
         </item>
         
         <item>
-            <title>Relationship among Traffic, Design, Operation and Marketing</title>
+            <title>Relationship Among Traffic, Design, Operation and Marketing</title>
             <link>https://www.marshalgao.com/relationship-among-traffic-design-operation-and-marketing/</link>
             <pubDate>Sat, 28 Nov 2020 13:50:45 +0800</pubDate>
             
