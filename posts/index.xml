@@ -6,8 +6,639 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Wed, 09 Dec 2020 17:16:56 +0800</lastBuildDate>
+        <lastBuildDate>Thu, 10 Dec 2020 20:35:34 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Comparison Between Different DSPs</title>
+            <link>https://www.marshalgao.com/comparison-between-different-dsps/</link>
+            <pubDate>Thu, 10 Dec 2020 20:35:34 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/comparison-between-different-dsps/</guid>
+            <description>由于目前国内外的广告投放平台众多，本文将腾讯广告、巨量引擎、百度信息流、新浪微博以及阿里妈妈广告投放平台进行对比，分析其内在流量类型以及投放测策略。
+腾讯广告
+腾讯广告依赖于社交流量，凭借QQ和微信两大社交平台，基本可以实现对全网用户的覆盖。除此，腾讯自身产品丰富，包括腾讯新闻、腾讯视频、微信朋友圈、公众号、QQ空间等，由此提供了非常多的流量媒体接口以及投放场景，这对于原生广告和信息流广告来说是十分重要的。
+腾讯广告的流量由于是以社交为基础的，所以具备大而广的特点，且流量具有通用性，不会涉及模式兼容性的问题。同时，社交意味着极高的用户覆盖率以及用户粘性。从数据统计上来看，用户整体偏年轻化，适合做品牌宣传。而社交行为数据的积累，可以让用户画像更为精准，投放更准确，转化率比较可观。但在实际投放时，需要结合自身产品的用户群体，选择适当的媒体场景进行投放。
+巨量引擎
+巨量引擎是字节跳动旗下的营销平台，由于字节跳动拥有的产品众多，比如今日头条、抖音、懂车帝等。流量具备大而广的特点，深入不同的领域，虽然不像腾讯具备流量通用性，但在大多数领域都可以找到合适的投放媒体。
+例如今日头条，作为目前国内咨询类信息流中最大的平台、一款基于数据挖掘的推荐引擎产品，其受众十分广泛，且行业覆盖率高。最重要的是，其拥有业界公认的最强人工智能算法。同时，其oCPM、CPA系统算法效果较好。在流量方面，用户每日使用时长超过76分钟，同时可以5秒快速推广，10s更新用户模型，所以广告的投放十分精准。但也由于其应用场景，使得最终的展现点击量比较大，转化率不是特别高。
+再如抖音，用户十分活跃，在大数据上表现有明显的优势。而且其用户平均在线时长、广告曝光率较高，产品推送十分多元化。用户整体偏年轻化，活跃度和记忆度高，所以十分适合新品牌的品牌推广。由于其是一个内容分享平台，所以对广告的素材要求较高，同时也存在行业要求限制，比如游戏、生活、App、电商等泛流的产品投放效果较好。
+百度信息流
+百度的流量依托于搜索引擎，其主要是在旗下各大平台咨询流中穿插展现原生广告。由于其扎实的搜索基础，内容定向精准，转化率很高。但流量来源复杂，流量和成本较为不稳定。与此同时，在搜索广告领域，需要产品掌握好关键词，关键词词包是影响流量的重要因素，只有掌控好关键词，才能将产品精准投放到目标用户。百度的用户覆盖面很广，所以也是适合绝大多数产品投放的。
+新浪微博
+新浪微博是基于用户兴趣和开放关系的以移动使用为主的社交媒体平台，超级粉丝通（微博“粉丝通”）是基于用户属性和社交关系将企业广告精准地传递给粉丝和潜在粉丝的营销产品。它会根据用户属性和社交关系将信息精准的投放给目标人群。其商业化成熟，女性用户居多，偏年轻化，粉丝群体活跃，容易受舆论影响。说到底，新浪微博是一种更为宽泛的社交平台，其用户量巨大，日活高，并且具有多种广告形式，通过移动社交实现原生传播。但也是基于此，其行业趋向化明显。例如，生活类产品(例食品、服装等)、地区类产品(例摄影等)、游戏、APP、美妆等偏向女性化产品在新浪微博投放后的转化率很高。
+阿里妈妈
+阿里旗下虽然有淘宝、天猫、饿了么等，但归根结底，其流量依赖于电商，或者说流量依赖于交易行为，由此使得流量场景特征明显，通用性不高。而反观腾讯、字节流量的通用性，可以看出对于阿里妈妈需要具有不同的投放策略。由于电商的流量基本都被阿里囊括，所以采用原生的方式，在产品所属的生态链上投放，就会具有很高的转化率，但如果跨生态投放，效果将会大打折扣。其实，生态更适合做其他生态的搜索广告，用户搜索时带着需求来的，不会受到场景的影响。回到搜索广告的本质，其确实具备投放精准，转化率高的特点。</description>
+            <content type="html"><![CDATA[<p>由于目前国内外的广告投放平台众多，本文将腾讯广告、巨量引擎、百度信息流、新浪微博以及阿里妈妈广告投放平台进行对比，分析其内在流量类型以及投放测策略。</p>
+<p><strong>腾讯广告</strong></p>
+<p>腾讯广告依赖于社交流量，凭借QQ和微信两大社交平台，基本可以实现对全网用户的覆盖。除此，腾讯自身产品丰富，包括腾讯新闻、腾讯视频、微信朋友圈、公众号、QQ空间等，由此提供了非常多的流量媒体接口以及投放场景，这对于原生广告和信息流广告来说是十分重要的。</p>
+<p>腾讯广告的流量由于是以社交为基础的，所以具备大而广的特点，且流量具有通用性，不会涉及模式兼容性的问题。同时，社交意味着极高的用户覆盖率以及用户粘性。从数据统计上来看，用户整体偏年轻化，适合做品牌宣传。而社交行为数据的积累，可以让用户画像更为精准，投放更准确，转化率比较可观。但在实际投放时，需要结合自身产品的用户群体，选择适当的媒体场景进行投放。</p>
+<p><strong>巨量引擎</strong></p>
+<p>巨量引擎是字节跳动旗下的营销平台，由于字节跳动拥有的产品众多，比如今日头条、抖音、懂车帝等。流量具备大而广的特点，深入不同的领域，虽然不像腾讯具备流量通用性，但在大多数领域都可以找到合适的投放媒体。</p>
+<p>例如今日头条，作为目前国内咨询类信息流中最大的平台、一款基于数据挖掘的推荐引擎产品，其受众十分广泛，且行业覆盖率高。最重要的是，其拥有业界公认的最强人工智能算法。同时，其oCPM、CPA系统算法效果较好。在流量方面，用户每日使用时长超过76分钟，同时可以5秒快速推广，10s更新用户模型，所以广告的投放十分精准。但也由于其应用场景，使得最终的展现点击量比较大，转化率不是特别高。</p>
+<p>再如抖音，用户十分活跃，在大数据上表现有明显的优势。而且其用户平均在线时长、广告曝光率较高，产品推送十分多元化。用户整体偏年轻化，活跃度和记忆度高，所以十分适合新品牌的品牌推广。由于其是一个内容分享平台，所以对广告的素材要求较高，同时也存在行业要求限制，比如游戏、生活、App、电商等泛流的产品投放效果较好。</p>
+<p><strong>百度信息流</strong></p>
+<p>百度的流量依托于搜索引擎，其主要是在旗下各大平台咨询流中穿插展现原生广告。由于其扎实的搜索基础，内容定向精准，转化率很高。但流量来源复杂，流量和成本较为不稳定。与此同时，在搜索广告领域，需要产品掌握好关键词，关键词词包是影响流量的重要因素，只有掌控好关键词，才能将产品精准投放到目标用户。百度的用户覆盖面很广，所以也是适合绝大多数产品投放的。</p>
+<p><strong>新浪微博</strong></p>
+<p>新浪微博是基于用户兴趣和开放关系的以移动使用为主的社交媒体平台，超级粉丝通（微博“粉丝通”）是基于用户属性和社交关系将企业广告精准地传递给粉丝和潜在粉丝的营销产品。它会根据用户属性和社交关系将信息精准的投放给目标人群。其商业化成熟，女性用户居多，偏年轻化，粉丝群体活跃，容易受舆论影响。说到底，新浪微博是一种更为宽泛的社交平台，其用户量巨大，日活高，并且具有多种广告形式，通过移动社交实现原生传播。但也是基于此，其行业趋向化明显。例如，生活类产品(例食品、服装等)、地区类产品(例摄影等)、游戏、APP、美妆等偏向女性化产品在新浪微博投放后的转化率很高。</p>
+<p><strong>阿里妈妈</strong></p>
+<p>阿里旗下虽然有淘宝、天猫、饿了么等，但归根结底，其流量依赖于电商，或者说流量依赖于交易行为，由此使得流量场景特征明显，通用性不高。而反观腾讯、字节流量的通用性，可以看出对于阿里妈妈需要具有不同的投放策略。由于电商的流量基本都被阿里囊括，所以采用原生的方式，在产品所属的生态链上投放，就会具有很高的转化率，但如果跨生态投放，效果将会大打折扣。其实，生态更适合做其他生态的搜索广告，用户搜索时带着需求来的，不会受到场景的影响。回到搜索广告的本质，其确实具备投放精准，转化率高的特点。</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>ECOM6013 E-Commerce Presence</title>
+            <link>https://www.marshalgao.com/ecom6013-e-commerce-presence/</link>
+            <pubDate>Thu, 10 Dec 2020 09:54:36 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/ecom6013-e-commerce-presence/</guid>
+            <description>Basic Knowledge of E-Commerce Presence Imagine your e-commerce presence
+ what is the idea  your mission target audience intended market space strategic analysis marketing matrix development timeline preliminary budget   where is the money  business model revenue model   who and where is the target audience  demographics lifestyle consumption patterns   characterize the marketplace  size growth demographics structure   where is the content coming from know yourself - SWOT analysis  develop an e-commerce presence map  develop a timeline: milestones  how much will this cost  e.</description>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/E-Commerce%20Presence.png" alt=""></p>
+<h2 id="basic-knowledge-of-e-commerce-presence">Basic Knowledge of E-Commerce Presence</h2>
+<p><strong>Imagine your e-commerce presence</strong></p>
+<ul>
+<li>what is the idea
+<ul>
+<li>your mission</li>
+<li>target audience</li>
+<li>intended market space</li>
+<li>strategic analysis</li>
+<li>marketing matrix</li>
+<li>development timeline</li>
+<li>preliminary budget</li>
+</ul>
+</li>
+<li>where is the money
+<ul>
+<li>business model</li>
+<li>revenue model</li>
+</ul>
+</li>
+<li>who and where is the target audience
+<ul>
+<li>demographics</li>
+<li>lifestyle</li>
+<li>consumption patterns</li>
+</ul>
+</li>
+<li>characterize the marketplace
+<ul>
+<li>size</li>
+<li>growth</li>
+<li>demographics</li>
+<li>structure</li>
+</ul>
+</li>
+<li>where is the content coming from</li>
+<li>know yourself - SWOT analysis
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-10%20%E4%B8%8A%E5%8D%8810.15.02.png" alt=""></li>
+<li>develop an e-commerce presence map
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-10%20%E4%B8%8A%E5%8D%8810.15.14.png" alt=""></li>
+<li>develop a timeline: milestones
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-10%20%E4%B8%8A%E5%8D%8810.19.30.png" alt=""></li>
+<li>how much will this cost
+<ul>
+<li>e.g. US estimate, different in other countries</li>
+<li>small website: up to US$5000</li>
+<li>small setup: US$25,000 to US$50,000</li>
+<li>large corporate website: US$100,000+ to millions</li>
+</ul>
+</li>
+</ul>
+<p><strong>Building an e-commerce site</strong></p>
+<ul>
+<li>a systematic approach
+<ul>
+<li>most important management challenges
+<ul>
+<li>developing a clear understanding of business objectives</li>
+<li>knowing how to choose the right technology to achieve those objectives</li>
+</ul>
+</li>
+<li>main factors to consider
+<ul>
+<li>management</li>
+<li>hardware architecture</li>
+<li>software</li>
+<li>design</li>
+<li>telecommunications</li>
+<li>human resources</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>the systems development life cycle
+<ul>
+<li>methodology for understanding business objectives of a system and designing an appropriate solution</li>
+<li>five major steps
+<ul>
+<li>system analysis/planning
+<ul>
+<li>business objectives
+<ul>
+<li>list of capabilities you want your site to have</li>
+</ul>
+</li>
+<li>system functionalities
+<ul>
+<li>list of information system capabilities needed to achieve business objectives</li>
+</ul>
+</li>
+<li>information requirements
+<ul>
+<li>information elements that system must produce in order to achieve business objectives</li>
+</ul>
+</li>
+<li>example
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-10%20%E4%B8%8A%E5%8D%8811.28.15.png" alt=""></li>
+<li>consideration for quality
+<ul>
+<li>navigation</li>
+<li>accessibility, e.g. payment</li>
+<li>scalability</li>
+<li>reliability</li>
+<li>maintainability</li>
+<li>usability</li>
+<li>compatibility and interoperability</li>
+<li>security</li>
+<li>readability</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>system design
+<ul>
+<li>definition
+<ul>
+<li>description of main components of a system and their relationship to one another</li>
+</ul>
+</li>
+<li>2 components
+<ul>
+<li>logical design
+<ul>
+<li>data flow diagrams, processing functions, databases
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-10%20%E4%B8%8A%E5%8D%8811.38.04.png" alt=""></li>
+</ul>
+</li>
+<li>physical design
+<ul>
+<li>specifies actual physical, software components, models, etc.
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-10%20%E4%B8%8A%E5%8D%8811.38.19.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>building the system
+<ul>
+<li>building
+<ul>
+<li>build own</li>
+<li>outsourcing
+<ul>
+<li>requires team with diverse skill set</li>
+<li>choice of software tools</li>
+<li>both risks and possible benefits</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>hosting
+<ul>
+<li>host own</li>
+<li>outsourcing
+<ul>
+<li>hosting company responsible for ensuring site is accessible 24/7, for monthly fee</li>
+<li>firm purchases or leases web server (with control over its operation), but server is located at vendor&rsquo;s facility (co-location)
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-10%20%E4%B8%8A%E5%8D%8811.45.45.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>testing
+<ul>
+<li>unit testing</li>
+<li>system testing</li>
+<li>acceptance testing</li>
+<li>A/B testing (split testing)</li>
+<li>multivariate testing</li>
+</ul>
+</li>
+<li>implementation -&gt; the first step, a circle
+<ul>
+<li>maintenance
+<ul>
+<li>systems break down unpredictably</li>
+<li>maintenance is ongoing</li>
+<li>maintenance costs are similar to development costs</li>
+<li>benchmarking</li>
+</ul>
+</li>
+<li>optimization
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-10%20%E4%B8%8A%E5%8D%8811.53.28.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>best practices
+<ul>
+<li>continuous availability 99%</li>
+<li>design for scalability</li>
+<li>build in management for end-to-end delivery</li>
+<li>plan for growth</li>
+<li>design system for high-speed performance</li>
+<li>understand and optimize workload on system</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="web-site-architecture">Web Site Architecture</h2>
+<p><strong>Simple vs multi-tiered</strong></p>
+<ul>
+<li>system architecture
+<ul>
+<li>arrangement of software, machinery, and tasks in an information system needed to achieve a specific functionality</li>
+</ul>
+</li>
+<li>two-tier
+<ul>
+<li>web server and database server
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-10%20%E4%B8%8B%E5%8D%883.28.12.png" alt=""></li>
+</ul>
+</li>
+<li>multi-tier
+<ul>
+<li>web application servers</li>
+<li>backend, legacy databases
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-10%20%E4%B8%8B%E5%8D%883.28.19.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<p><strong>Useful tools</strong></p>
+<ul>
+<li>web server software examples
+<ul>
+<li>Apache
+<ul>
+<li>leading web server software</li>
+<li>works with UNIX, Linux operating systems</li>
+<li>reliable, stable, part of open software community</li>
+</ul>
+</li>
+<li>Microsoft&rsquo;s Internet Information Server (IIS)
+<ul>
+<li>second major web server software</li>
+<li>windows-based</li>
+<li>integrated, easy-to-use</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>basic functionality
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-10%20%E4%B8%8B%E5%8D%884.00.33.png" alt=""></li>
+<li>site management tools
+<ul>
+<li>basic tools included in all web servers
+<ul>
+<li>verfify that links on pages are still valid</li>
+<li>identify orphan files (no links to the page)</li>
+</ul>
+</li>
+<li>third-party software for advanced management
+<ul>
+<li>monitor customer purchases</li>
+<li>marketing campaign effectiveness</li>
+<li>keep track of hit counts and other statistics</li>
+<li>e.g. Webtrends Analytics 10</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>dynamic page generation tools
+<ul>
+<li>dynamic page generation
+<ul>
+<li>contents stored in database and fetched when needed</li>
+</ul>
+</li>
+<li>common tools
+<ul>
+<li>CGI, ASP, JSP, ODBC, JDBC</li>
+</ul>
+</li>
+<li>advantages
+<ul>
+<li>lower menu costs</li>
+<li>permits easy online market segmentation</li>
+<li>enables cost-fee price discrimination</li>
+<li>enables content management system (CMS)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>personalization tools
+<ul>
+<li>personalization
+<ul>
+<li>ability to treat people based on personal preferences and prior history with site</li>
+</ul>
+</li>
+<li>customization
+<ul>
+<li>ability to change the product to better fit the needs of the customer</li>
+</ul>
+</li>
+<li>cookies
+<ul>
+<li>primary method to achieve personalization</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Choosing software</strong></p>
+<ul>
+<li>web application servers
+<ul>
+<li>provide specific business functionality required for a website</li>
+<li>type of middleware
+<ul>
+<li>isolate business applications from Web servers and databases</li>
+</ul>
+</li>
+<li>single-function applications being replaced by integrated software tools that combine all functionality needed for e-commerce site</li>
+</ul>
+</li>
+<li>e-commerce merchant server software
+<ul>
+<li>provides basic functionality for sales
+<ul>
+<li>online catalog
+<ul>
+<li>list of products available on website</li>
+</ul>
+</li>
+<li>shopping cart
+<ul>
+<li>allows shoppers to set aside, review, edit selections, and then make purchase</li>
+</ul>
+</li>
+<li>credit card processing
+<ul>
+<li>typically works in conjunction with shopping cart</li>
+<li>verifies card and puts through credit to company’s account at checkout</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>merchant server software packages
+<ul>
+<li>also called e-commerce software platform</li>
+<li>integrated environment that includes most of functionality needed
+<ul>
+<li>shopping card</li>
+<li>merchandise display</li>
+<li>order management</li>
+</ul>
+</li>
+<li>different options for different-sized businesses
+<ul>
+<li>small and medium-sized businesses
+<ul>
+<li>Yahoo Small Business</li>
+<li>open-source solutions</li>
+</ul>
+</li>
+<li>did-range
+<ul>
+<li>IBM Web Sphere Commerce Express</li>
+<li>Sitecore Experience Commerce</li>
+</ul>
+</li>
+<li>high-end
+<ul>
+<li>IBM Web Sphere Professional/Enterprise</li>
+<li>SAP Hybris</li>
+<li>Oracle ATG Web Commerce</li>
+</ul>
+</li>
+<li>many now also available as cloud-based SaaS solutions</li>
+<li>key factors in selecting a package
+<ul>
+<li>functionality</li>
+<li>support for different business models, including m-commerce</li>
+<li>business process modeling tools</li>
+<li>visual site management and reporting</li>
+<li>performance and scalability</li>
+<li>connectivity to existing business systems</li>
+<li>compliance with standards</li>
+<li>global and multicultural capability</li>
+<li>local sales tax and shipping rules</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Choosing hardware</strong></p>
+<ul>
+<li>hardware platform
+<ul>
+<li>underlying computing equipment needed for e-commerce functionality</li>
+</ul>
+</li>
+<li>objective
+<ul>
+<li>enough platform capacity to meet peak demand without wasting money</li>
+</ul>
+</li>
+<li>important to understand the factors that affect speed, capacity, and scalability of a site</li>
+<li>right-sizing hardware platform
+<ul>
+<li>the demand side
+<ul>
+<li>customer demand
+<ul>
+<li>most important factor affecting speed of site</li>
+</ul>
+</li>
+<li>factors in overall demand
+<ul>
+<li>number of simultaneous users in peak periods</li>
+<li>nature of customer requests (user profile)</li>
+<li>type of content (dynamic versus static Web pages)</li>
+<li>required security</li>
+<li>number of items in inventory</li>
+<li>number of page requests</li>
+<li>speed of legacy applications</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>the supply side
+<ul>
+<li>scalability
+<ul>
+<li>ability of site to increase in size as demand warrants</li>
+</ul>
+</li>
+<li>ways to scale hardware
+<ul>
+<li>vertically
+<ul>
+<li>increase processing power of individual components</li>
+</ul>
+</li>
+<li>horizontally
+<ul>
+<li>employ multiple computers to share workload</li>
+</ul>
+</li>
+<li>improve processing architecture</li>
+<li>outsource hosting, use content delivery network
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-10%20%E4%B8%8B%E5%8D%884.32.27.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Improvement</strong></p>
+<ul>
+<li>some factors may annoy customers
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-10%20%E4%B8%8B%E5%8D%884.32.44.png" alt=""></li>
+<li>improving the processing architecture
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-10%20%E4%B8%8B%E5%8D%884.32.36.png" alt=""></li>
+<li>8 most important factors in successful e-commerce site design
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-10%20%E4%B8%8B%E5%8D%884.32.51.png" alt=""></li>
+<li>the information policy set
+<ul>
+<li>privacy policy
+<ul>
+<li>set of public statements declaring how site will treat customers’ personal information that is gathered by site</li>
+</ul>
+</li>
+<li>accessibility rules
+<ul>
+<li>set of design objectives that ensure users with disabilities can effectively access site</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="mobile-website-and-mobile-applications">Mobile Website and Mobile Applications</h2>
+<p><strong>Types of m-commerce software</strong></p>
+<ul>
+<li>mobile website
+<ul>
+<li>responsive web design</li>
+</ul>
+</li>
+<li>mobile web app
+<ul>
+<li>can be used in browsers on mobile phone</li>
+<li>the speed is faster than mobile website, but slower than native apps</li>
+<li>rely on OS, screen size, finger navigation, etc.</li>
+<li>can use camera and other components of mobile phone</li>
+</ul>
+</li>
+<li>native app</li>
+<li>hybrid app
+<ul>
+<li>runs inside native container</li>
+<li>app distribution</li>
+<li>based on HTML5, CSS, JavaScript</li>
+</ul>
+</li>
+</ul>
+<p><strong>Planning and building a mobile persence</strong></p>
+<ul>
+<li>identify business objectives, system functionality, and information requirements</li>
+<li>must consider when developing
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-10%20%E4%B8%8B%E5%8D%885.11.02.png" alt=""></li>
+<li>choice
+<ul>
+<li>mobile website or mobile web app
+<ul>
+<li>less expensive</li>
+</ul>
+</li>
+<li>native app
+<ul>
+<li>can use device hardware, available offline</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>design considerations
+<ul>
+<li>platform constraints
+<ul>
+<li>graphics, file sizes</li>
+</ul>
+</li>
+<li>mobile first design
+<ul>
+<li>desktop website design after mobile design</li>
+</ul>
+</li>
+<li>responsive web design (RWD)
+<ul>
+<li>CSS site adjusts layout of site according to device screen resolutions</li>
+</ul>
+</li>
+<li>adaptive web design (AWD)
+<ul>
+<li>server delivers different templates or versions of site optimized for device</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>performance and cost considerations
+<ul>
+<li>mobile first design
+<ul>
+<li>most efficient</li>
+</ul>
+</li>
+<li>mobile website
+<ul>
+<li>resizing existing website for mobile access is least expensive</li>
+</ul>
+</li>
+<li>mobile web app
+<ul>
+<li>can utilize browser API</li>
+</ul>
+</li>
+<li>native app
+<ul>
+<li>most expensive</li>
+<li>requires more programming</li>
+</ul>
+</li>
+<li>progressive web app (PWA)
+<ul>
+<li>latest and likey to become most popular (more later)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>system analysis
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-10%20%E4%B8%8B%E5%8D%885.10.55.png" alt=""></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>ECOM6013 Internet and E-Commerce Infrastructure</title>
@@ -4266,11 +4897,11 @@ DTC除了可以更好的让商家与用户进行沟通，同时还可以减少�
         </item>
         
         <item>
-            <title>How the Giant Engine Drives the Transition of Commercial Products</title>
-            <link>https://www.marshalgao.com/how-the-giant-engine-drives-the-transition-of-commercial-products/</link>
+            <title>How the Ocean Engine Drives the Transition of Commercial Products</title>
+            <link>https://www.marshalgao.com/how-the-ocean-engine-drives-the-transition-of-commercial-products/</link>
             <pubDate>Thu, 26 Nov 2020 14:00:25 +0800</pubDate>
             
-            <guid>https://www.marshalgao.com/how-the-giant-engine-drives-the-transition-of-commercial-products/</guid>
+            <guid>https://www.marshalgao.com/how-the-ocean-engine-drives-the-transition-of-commercial-products/</guid>
             <description>什么是巨量引擎
 巨量引擎是2019年字节跳动发布的一商业化营销服务品牌。在引擎大会2020现场，巨量引擎产品高级副总裁刘思齐表示：技术已经成为所有重要课题的底色，营销的“技术+”时代已经到来；基于“技术+”的主干，巨量引擎分享了对于产品、创意、内容、度量、转化等最新的思考。这些能力又将给行业带来哪些影响？在这些维度上，巨量引擎又将为行业带来哪些新的增长路径？
 巨量引擎的三阶跳

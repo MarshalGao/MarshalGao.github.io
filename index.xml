@@ -7,7 +7,39 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 09 Dec 2020 17:16:56 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Dec 2020 20:35:34 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Comparison Between Different DSPs</title>
+      <link>https://www.marshalgao.com/comparison-between-different-dsps/</link>
+      <pubDate>Thu, 10 Dec 2020 20:35:34 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/comparison-between-different-dsps/</guid>
+      <description>由于目前国内外的广告投放平台众多，本文将腾讯广告、巨量引擎、百度信息流、新浪微博以及阿里妈妈广告投放平台进行对比，分析其内在流量类型以及投放测策略。
+腾讯广告
+腾讯广告依赖于社交流量，凭借QQ和微信两大社交平台，基本可以实现对全网用户的覆盖。除此，腾讯自身产品丰富，包括腾讯新闻、腾讯视频、微信朋友圈、公众号、QQ空间等，由此提供了非常多的流量媒体接口以及投放场景，这对于原生广告和信息流广告来说是十分重要的。
+腾讯广告的流量由于是以社交为基础的，所以具备大而广的特点，且流量具有通用性，不会涉及模式兼容性的问题。同时，社交意味着极高的用户覆盖率以及用户粘性。从数据统计上来看，用户整体偏年轻化，适合做品牌宣传。而社交行为数据的积累，可以让用户画像更为精准，投放更准确，转化率比较可观。但在实际投放时，需要结合自身产品的用户群体，选择适当的媒体场景进行投放。
+巨量引擎
+巨量引擎是字节跳动旗下的营销平台，由于字节跳动拥有的产品众多，比如今日头条、抖音、懂车帝等。流量具备大而广的特点，深入不同的领域，虽然不像腾讯具备流量通用性，但在大多数领域都可以找到合适的投放媒体。
+例如今日头条，作为目前国内咨询类信息流中最大的平台、一款基于数据挖掘的推荐引擎产品，其受众十分广泛，且行业覆盖率高。最重要的是，其拥有业界公认的最强人工智能算法。同时，其oCPM、CPA系统算法效果较好。在流量方面，用户每日使用时长超过76分钟，同时可以5秒快速推广，10s更新用户模型，所以广告的投放十分精准。但也由于其应用场景，使得最终的展现点击量比较大，转化率不是特别高。
+再如抖音，用户十分活跃，在大数据上表现有明显的优势。而且其用户平均在线时长、广告曝光率较高，产品推送十分多元化。用户整体偏年轻化，活跃度和记忆度高，所以十分适合新品牌的品牌推广。由于其是一个内容分享平台，所以对广告的素材要求较高，同时也存在行业要求限制，比如游戏、生活、App、电商等泛流的产品投放效果较好。
+百度信息流
+百度的流量依托于搜索引擎，其主要是在旗下各大平台咨询流中穿插展现原生广告。由于其扎实的搜索基础，内容定向精准，转化率很高。但流量来源复杂，流量和成本较为不稳定。与此同时，在搜索广告领域，需要产品掌握好关键词，关键词词包是影响流量的重要因素，只有掌控好关键词，才能将产品精准投放到目标用户。百度的用户覆盖面很广，所以也是适合绝大多数产品投放的。
+新浪微博
+新浪微博是基于用户兴趣和开放关系的以移动使用为主的社交媒体平台，超级粉丝通（微博“粉丝通”）是基于用户属性和社交关系将企业广告精准地传递给粉丝和潜在粉丝的营销产品。它会根据用户属性和社交关系将信息精准的投放给目标人群。其商业化成熟，女性用户居多，偏年轻化，粉丝群体活跃，容易受舆论影响。说到底，新浪微博是一种更为宽泛的社交平台，其用户量巨大，日活高，并且具有多种广告形式，通过移动社交实现原生传播。但也是基于此，其行业趋向化明显。例如，生活类产品(例食品、服装等)、地区类产品(例摄影等)、游戏、APP、美妆等偏向女性化产品在新浪微博投放后的转化率很高。
+阿里妈妈
+阿里旗下虽然有淘宝、天猫、饿了么等，但归根结底，其流量依赖于电商，或者说流量依赖于交易行为，由此使得流量场景特征明显，通用性不高。而反观腾讯、字节流量的通用性，可以看出对于阿里妈妈需要具有不同的投放策略。由于电商的流量基本都被阿里囊括，所以采用原生的方式，在产品所属的生态链上投放，就会具有很高的转化率，但如果跨生态投放，效果将会大打折扣。其实，生态更适合做其他生态的搜索广告，用户搜索时带着需求来的，不会受到场景的影响。回到搜索广告的本质，其确实具备投放精准，转化率高的特点。</description>
+    </item>
+    
+    <item>
+      <title>ECOM6013 E-Commerce Presence</title>
+      <link>https://www.marshalgao.com/ecom6013-e-commerce-presence/</link>
+      <pubDate>Thu, 10 Dec 2020 09:54:36 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom6013-e-commerce-presence/</guid>
+      <description>Basic Knowledge of E-Commerce Presence Imagine your e-commerce presence
+ what is the idea  your mission target audience intended market space strategic analysis marketing matrix development timeline preliminary budget   where is the money  business model revenue model   who and where is the target audience  demographics lifestyle consumption patterns   characterize the marketplace  size growth demographics structure   where is the content coming from know yourself - SWOT analysis  develop an e-commerce presence map  develop a timeline: milestones  how much will this cost  e.</description>
+    </item>
+    
     <item>
       <title>ECOM6013 Internet and E-Commerce Infrastructure</title>
       <link>https://www.marshalgao.com/ecom6013-internet-and-e-commerce-infrastructure/</link>
@@ -112,29 +144,6 @@ DTC除了可以更好的让商家与用户进行沟通，同时还可以减少�
 对于整个动态页面，需要定义生效时间、结束时间、活动页面名称等基础信息。设置之后可生成相应的链接进行预览。
 动态页面是由不同的组件内容构成，首先按照各组件位置去解析，然后再去解析组件的内容（样式、图片/商品、背景、链接等）。按照上图的反向流程走，就能解析出对应的自定义页面内容。
 首页设置也是相同，类似自定义页面，可动态设置首页内容，动态添加自定义组件。目前绝大部分电商首页都是动态配置，有着丰富的自定义内容。</description>
-    </item>
-    
-    <item>
-      <title>Advertising Scheduling System</title>
-      <link>https://www.marshalgao.com/advertising-scheduling-system/</link>
-      <pubDate>Fri, 04 Dec 2020 15:56:27 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/advertising-scheduling-system/</guid>
-      <description>广告学中的排期方式
- 持续式排期  不受任何条件影响，一年四季持续投放 广告持续性强 简单 比如日常快销产品的投放   起伏式排期  广告期和无广告期交替出现 挑选一年中对产品销售影响最大的时段进行投放 比如羽绒服广告   脉冲式排期  持续式排期和起伏式排期的结合 全年持续投放，但一直维持较低水平 需求量旺盛时，加大投放 比如饮料广告（夏季大量投放，但全年投放）   集中式排期  在同一媒介或平台集中投放 一般集中于季节或者节日 比如双十一的电商广告投放    BB Part
-广告排期可以简单理解为对广告档期的编排。在腾讯的智能投放体系中，先通过创意创造出广告，在寻找目标人群，实现精准投放。但投放的过程中必然会涉及到排期，所以广告排期其实也是只能投放闭环中的一节。而且，对于广告学重的排期系统，是需要后续监播和反馈，但这一过程在智能投放闭环中，被迁移到了投放结果分析或报告产出的环节。互联网广告的排期会结合出价、内容、创意等要素综合考虑，一定程度上超越了传统广告学的排期概念。</description>
-    </item>
-    
-    <item>
-      <title>Traffic Conversion</title>
-      <link>https://www.marshalgao.com/traffic-conversion/</link>
-      <pubDate>Thu, 03 Dec 2020 16:26:03 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/traffic-conversion/</guid>
-      <description>影响流量转化的因素
- 获客方式 落地页设计 转化分析 流量承接  获客方式
- 准确性  目标客户是否正确 客户需求是否真实 垃圾流量的比例 刷单是否存在 场景  在做保险投放的时候，我们通过搜索关键词竞价，假如关键词是“高性价比 重疾险” 那么可能有两类人都会搜索这个关键词，一类是想了解重疾险，并且有意愿购买的人，这是潜在的目标用户，还有一部分是保险代理人，他们可能会了解市面上新出来的重疾险产品，想去代理这些产品，这类人并不是目标用户     可追溯性  是否可统计来源 是否链路连续性 数据是否准确 分期过程是否正确 场景  如果要衡量转化效果，投放广告必须是可追溯的 广告曝光数，点击数，广告落地页浏览数，停留时间，页面的点击数，每个环节的数据都有了，才能分析出具体哪个环节影响转化 线下广告不具备可追溯性，因为曝光数和点击数是缺失的 还有一部分广告形式，比如公众号推文中嵌入二维码，虽然有文章阅读数，但是阅读文章不代表能够看到文章底部的二维码广告，很有可能用户阅读到一半就关闭了，所以一般公众号软文推广的可追溯性比较差     竞争程度  行业竞争程度 渠道同质性 广告平台的限制 渠道本身的特性 场景  对于信息流类广告，很多公司都会竞争，如果你进入的比较晚，就需要考虑之前竞品公司投放广告的目标人群，能做到差异化是最好的 在做保险业务的时候，选了几个公众号投放，有些公众号一个月内会接好多互联网保险公司的软文，如果你这个时候再去投，转化效果就非常差      落地页设计
- 基本要素  品牌标识和logo 品牌文案 引导文案 产品卖点 信任背书 产品案例 期望的信息输入框（期望的用户行为） 用户的使用评价 已有的销量 官方的FAQ   落地页的开发和设计，需要结合产品、UED、技术、运营、BI等部门一起协作，同时对不同版本的落地页进行测试，以此来确定那个版本的落地页的转化效果最好 广告的推广转化效果由创意和投放两方决定，自身质量就是创意，即落地页，多重视都不过分，而投放只是一种机遇，一种手段  类比茅台发展史    转化分析</description>
     </item>
     
   </channel>
