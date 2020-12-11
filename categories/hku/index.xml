@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 10 Dec 2020 09:54:36 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/hku/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Dec 2020 23:33:40 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/hku/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM6013 Mobile Technology &amp; M-Commerce</title>
+      <link>https://www.marshalgao.com/ecom6013-mobile-technology-m-commerce/</link>
+      <pubDate>Thu, 10 Dec 2020 23:33:40 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom6013-mobile-technology-m-commerce/</guid>
+      <description>Mobile Technology Basic principle
+ 3 division methods  fundamental mobility: cellphones  cell handover     Future and issues
+ 5G - the future  issues with mobile access to e-commerce web sites  efficiency of mobile device web clients broad new range of contextual/accessibility issues, e.g. fingerprint, wearable devices screen size – all over the place, unpredictable interactivity client-side processing requirements bandwidth issues    M-Commerce Overview</description>
+    </item>
+    
     <item>
       <title>ECOM6013 E-Commerce Presence</title>
       <link>https://www.marshalgao.com/ecom6013-e-commerce-presence/</link>
@@ -99,16 +110,6 @@
       <guid>https://www.marshalgao.com/icom6045-communication-network-security/</guid>
       <description>Introduction Communication network
  definition  an infrastructure for exchanging information in electronic form  a physical infrastructure: communication links (e.g., wires and cables) a logical infrastructure: protocols     types of information  voice documents photos video, etc   types of communication network  a public switched telephone network (circuit switching, lots of switches in the telephone network, single line, more expensive) a mobile telephone network the Internet (packet switching, sharing, much cheaper) a communication infrastructure (i.</description>
-    </item>
-    
-    <item>
-      <title>ICOM6045 Public Key Infrastructure</title>
-      <link>https://www.marshalgao.com/icom6045-public-key-infrastructure/</link>
-      <pubDate>Mon, 23 Nov 2020 14:10:48 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/icom6045-public-key-infrastructure/</guid>
-      <description>PKI Overview
- PKC &amp;amp; PKI  PKC is about math, but PKI is about binding a pair of key to one person   definition  PKI is a set of hardware, software, people, policies and procedures needed to create, manage, distribute, use, store, and revoke digital certificates PKI is an arrangement that binds public keys with respective user identities by means of a certificate authority (CA)  the binding is established through the registration and issuance process the PKI role that assures this binding is called the registration authority (RA): it ensures that the public key is bound to the individual to which it is assigned in a way that ensures non-repudiation   law for digital signature, e.</description>
     </item>
     
   </channel>

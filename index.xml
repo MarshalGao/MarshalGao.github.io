@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 10 Dec 2020 20:35:34 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Dec 2020 23:33:40 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM6013 Mobile Technology &amp; M-Commerce</title>
+      <link>https://www.marshalgao.com/ecom6013-mobile-technology-m-commerce/</link>
+      <pubDate>Thu, 10 Dec 2020 23:33:40 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom6013-mobile-technology-m-commerce/</guid>
+      <description>Mobile Technology Basic principle
+ 3 division methods  fundamental mobility: cellphones  cell handover     Future and issues
+ 5G - the future  issues with mobile access to e-commerce web sites  efficiency of mobile device web clients broad new range of contextual/accessibility issues, e.g. fingerprint, wearable devices screen size – all over the place, unpredictable interactivity client-side processing requirements bandwidth issues    M-Commerce Overview</description>
+    </item>
+    
     <item>
       <title>Comparison Between Different DSPs</title>
       <link>https://www.marshalgao.com/comparison-between-different-dsps/</link>
@@ -126,24 +137,6 @@ DTC除了可以更好的让商家与用户进行沟通，同时还可以减少�
       <guid>https://www.marshalgao.com/icom6045-web-security-ssl/tls/</guid>
       <description>HTTP Basics HTTP messages
  HTTP messages are requests sent from clients to servers, and responses from servers to clients HTTP message structure  start line 0 or more headers, each header contains field name, colon, field value optional message body   HTTP request  start line: request method  GET HEAD POST PUT DELETE     HTTP response  start line: status line, contains  HTTP version used by the server status code  200 -&amp;gt; ok 404 -&amp;gt; not found 401 -&amp;gt; unauthorized 403 -&amp;gt; forbidden   reason phrase      HTTP cache security issues</description>
-    </item>
-    
-    <item>
-      <title>Media Management Platform (Take E-Commerce as an Example)</title>
-      <link>https://www.marshalgao.com/media-management-platform-take-e-commerce-as-an-example/</link>
-      <pubDate>Fri, 04 Dec 2020 16:25:08 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/media-management-platform-take-e-commerce-as-an-example/</guid>
-      <description>电商中大部分的页面还是写死的，但在一些大型活动节，商家可以自己定制化活动页面。但数量十分有限，因为平台要考虑算法运算效率以及加载速度等诸多因素。而活动的促销页面类似于广告中的落地页。通过媒体管理平台或者内容管理平台（CMS）进行页面动态配置。后文将以电商为例说明页面动态配置的逻辑。
-基础组件
-组件是动态页面的基础，提供给用户编辑具体展示的信息。有许多类型的组件：图片轮播、ICON、优惠券等，每种组件都可以有多个不同的样式，选择内部展示的内容或者自定义。用的最常见的就是链接，组件显示样式虽然多样，但是点击之后通往的页面选择库却是共通的。例如：新的活动页面、商品详情页、商品聚合页、购物车、客服等等。
-基础组件的定义和解析是自定义页面的核心，不同的组件有不同的功能，表示不同类型的内容。每个组件都需要单独设计，定义其规则和样式。 例如ICON、图片轮播就是简单的图片展示，商品排名对应的算法较为复杂，需要实时去取动态排名。
-位置+内容
-有了组件之后，用户在设置或者系统在解析的时候，首先要确定组件在自定义页面中的位置。位置可以称为“楼层”，每个页面的各楼层可以定义名称、设置背景、配置内容，目前最主流的交互是拖动组件到相应的位置，设置内容之后实时预览，自定义页面动态可视化。
-动态页面
-对于整个动态页面，需要定义生效时间、结束时间、活动页面名称等基础信息。设置之后可生成相应的链接进行预览。
-动态页面是由不同的组件内容构成，首先按照各组件位置去解析，然后再去解析组件的内容（样式、图片/商品、背景、链接等）。按照上图的反向流程走，就能解析出对应的自定义页面内容。
-首页设置也是相同，类似自定义页面，可动态设置首页内容，动态添加自定义组件。目前绝大部分电商首页都是动态配置，有着丰富的自定义内容。</description>
     </item>
     
   </channel>
