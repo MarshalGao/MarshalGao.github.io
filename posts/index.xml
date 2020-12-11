@@ -6,8 +6,683 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Thu, 10 Dec 2020 23:33:40 +0800</lastBuildDate>
+        <lastBuildDate>Fri, 11 Dec 2020 21:58:22 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ECOM6013 E-Commerce Payment Systems</title>
+            <link>https://www.marshalgao.com/ecom6013-e-commerce-payment-systems/</link>
+            <pubDate>Fri, 11 Dec 2020 21:58:22 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/ecom6013-e-commerce-payment-systems/</guid>
+            <description>Overview Security, trust, and e-commerce
+ e-commerce (by definition) means transfer of value which can be  resources information payments entertainment   all of these types of value are desirable and therefore subject to theft perhaps, none more than payments (which drives commerce) it is all about money  Payment system stakeholders&#39; priorities
+ consumers  low-risk, low-cost, refutable, convenience, reliability   merchants  low-risk, low-cost, irrefutable, secure, reliable   financial intermediaries  secure, low-risk, maximizing profit   government regulators  security, trust, protecting participants and enforcing reporting    Types of payment system</description>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/E-Commerce%20Payment%20Systems.png" alt=""></p>
+<h2 id="overview">Overview</h2>
+<p><strong>Security, trust, and e-commerce</strong></p>
+<ul>
+<li>e-commerce (by definition) means transfer of value which can be
+<ul>
+<li>resources</li>
+<li>information</li>
+<li>payments</li>
+<li>entertainment</li>
+</ul>
+</li>
+<li>all of these types of value are desirable and therefore subject to theft</li>
+<li>perhaps, none more than payments (which drives commerce)</li>
+<li>it is all about money</li>
+</ul>
+<p><strong>Payment system stakeholders' priorities</strong></p>
+<ul>
+<li>consumers
+<ul>
+<li>low-risk, low-cost, refutable, convenience, reliability</li>
+</ul>
+</li>
+<li>merchants
+<ul>
+<li>low-risk, low-cost, irrefutable, secure, reliable</li>
+</ul>
+</li>
+<li>financial intermediaries
+<ul>
+<li>secure, low-risk, maximizing profit</li>
+</ul>
+</li>
+<li>government regulators
+<ul>
+<li>security, trust, protecting participants and enforcing reporting</li>
+</ul>
+</li>
+</ul>
+<p><strong>Types of payment system</strong></p>
+<ul>
+<li>cash
+<ul>
+<li>most common form of payment in terms of number of transactions (changing quickly)</li>
+<li>instantly convertible into other forms of value without intermediation</li>
+</ul>
+</li>
+<li>cheque transfer
+<ul>
+<li>second most common payment form in the United States in terms of number of transactions; costly and slowly diminishing in most part of the world</li>
+</ul>
+</li>
+<li>credit card
+<ul>
+<li>credit card associations</li>
+<li>issuing banks</li>
+<li>processing centers</li>
+</ul>
+</li>
+<li>stored value
+<ul>
+<li>funds deposited into account, from which funds are paid out or withdrawn as needed, e.g., debit cards, gift certificates, Octopus</li>
+<li>peer-to-peer payment systems (e.g. payme.com)</li>
+</ul>
+</li>
+<li>accumulating balance
+<ul>
+<li>accounts that accumulate expenditures and to which consumers make periodic payments</li>
+<li>e.g., utility, phone, standing accounts of trusted businesses</li>
+<li>often either with a large deposit, or prepaid
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-11%20%E4%B8%8B%E5%8D%8811.10.01.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<h2 id="payment-systems">Payment Systems</h2>
+<p><strong>B2C payment systems</strong></p>
+<ul>
+<li>credit cards
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-11%20%E4%B8%8B%E5%8D%8811.13.48.png" alt=""></li>
+<li>financial cybermediaries
+<ul>
+<li>on internet-based company that makes it easy for one person to pay another person or organization over the internet</li>
+<li>e.g., Alipay, PayPal, WeChat Pay, Octopus, Obopay</li>
+</ul>
+</li>
+<li>electronic checks</li>
+<li>electronic bill presentment and payment</li>
+<li>smart cards</li>
+<li>mobile payment</li>
+</ul>
+<p><strong>E-commerce payment systems</strong></p>
+<ul>
+<li>credit cards
+<ul>
+<li>limitations of online credit card payment
+<ul>
+<li>security, merchant risk</li>
+<li>cost</li>
+<li>social equity</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>debit cards</li>
+<li>digital wallets
+<ul>
+<li>emulates functionality of wallet by authenticating consumer, storing and transferring value, and securing payment process from consumer to merchant</li>
+<li>early efforts to popularize failed</li>
+</ul>
+</li>
+<li>digital cash
+<ul>
+<li>value storage and exchange using tokens</li>
+<li>most early examples have disappeared</li>
+<li>protocols and practices too complex</li>
+</ul>
+</li>
+<li>digital checking
+<ul>
+<li>extends functionality of existing checking accounts for use online</li>
+</ul>
+</li>
+<li>online stored value systems
+<ul>
+<li>based on value stored in a consumer’s bank, checking, or credit card account</li>
+<li>PayPal, Alipay, WeChat Pay</li>
+<li>smart cards
+<ul>
+<li>plastic card (the size of a credit card) that contains an embedded chip on which digital information can be stored and updated
+<ul>
+<li>debit cards are an implementation</li>
+</ul>
+</li>
+<li>contact -&gt; use card reader</li>
+<li>contactless
+<ul>
+<li>e.g., EZPass, Octopus card (Hong Kong)</li>
+<li>Radio Frequency ID (RFID)</li>
+<li>Near Field Communications (NFC)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>B2B payment systems</strong></p>
+<ul>
+<li>for business customers
+<ul>
+<li>make large purchases</li>
+<li>will not pay with credit card or financial cybermediary</li>
+<li>use financial Electronic Data Interchange (EDI) (but on its way out)</li>
+<li>pay for many purchases at once (perhaps the end of the month)</li>
+<li>likely that cloud-based payment gateway (or other Internet-based technology) will eventually take over completely</li>
+<li>Faster Payment System (FPS) (if local in Hong Kong)</li>
+</ul>
+</li>
+</ul>
+<p><strong>The future</strong></p>
+<ul>
+<li>they are attempts to export existing payment systems that work in traditional commerce to e-commerce</li>
+<li>sometimes problems with existing payment systems are magnified when moved to the online world (e.g. credit card theft)</li>
+<li>what is needed is a payment/financial system designed for the online world</li>
+<li>these are defined as cybercurrencies or digital currency</li>
+</ul>
+<h2 id="additional-reading">Additional Reading</h2>
+<ul>
+<li>Is WeChat Pay Taking Over Alipay? -&gt; <a href="../articles/Is%20WeChat%20Pay%20Taking%20Over%20Alipay?.pdf">details</a></li>
+<li>Payments-Trends 2018 (by Capgemini) -&gt; <a href="../articles/Payments-trends_2018%20Capgemini.pdf">details</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>ECOM6013 Internet and E-Commerce Security</title>
+            <link>https://www.marshalgao.com/ecom6013-internet-and-e-commerce-security/</link>
+            <pubDate>Fri, 11 Dec 2020 19:37:01 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/ecom6013-internet-and-e-commerce-security/</guid>
+            <description>Overview Good e-commerce security
+ to achieve highest degree of security, one needs  new technologies organizational policies and procedures industry standards and government laws    other factors  cost of security versus potential loss security often breaks at weakest link    Different perspectives between customers and merchants Basic E-Commerce Security The tension between security and other values
+ security vs ease of use  the more security measures added, the more difficult a site is to use, and the slower it becomes   security vs desire of individuals to act anonymously  use of technology by criminals to plan crimes or threaten nation-state    Basic security issues and landscape</description>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/121101.png" alt=""></p>
+<h2 id="overview">Overview</h2>
+<p><strong>Good e-commerce security</strong></p>
+<ul>
+<li>to achieve highest degree of security, one needs
+<ul>
+<li>new technologies</li>
+<li>organizational policies and procedures</li>
+<li>industry standards and government laws
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-11%20%E4%B8%8B%E5%8D%887.43.42.png" alt=""></li>
+</ul>
+</li>
+<li>other factors
+<ul>
+<li>cost of security versus potential loss</li>
+<li>security often breaks at weakest link</li>
+</ul>
+</li>
+</ul>
+<p><strong>Different perspectives between customers and merchants</strong>
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-11%20%E4%B8%8B%E5%8D%887.45.53.png" alt=""></p>
+<h2 id="basic-e-commerce-security">Basic E-Commerce Security</h2>
+<p><strong>The tension between security and other values</strong></p>
+<ul>
+<li>security vs ease of use
+<ul>
+<li>the more security measures added, the more difficult a site is to use, and the slower it becomes</li>
+</ul>
+</li>
+<li>security vs desire of individuals to act anonymously
+<ul>
+<li>use of technology by criminals to plan crimes or threaten nation-state</li>
+</ul>
+</li>
+</ul>
+<p><strong>Basic security issues and landscape</strong></p>
+<ul>
+<li>e-commerce security requirements (4A + N)
+<ul>
+<li>authentication</li>
+<li>authorization</li>
+<li>auditing</li>
+<li>availability</li>
+<li>nonrepudiation</li>
+</ul>
+</li>
+<li>risk
+<ul>
+<li>the probability that a vulnerability will be known and used</li>
+<li>3 key points of vulnerability
+<ul>
+<li>client</li>
+<li>server</li>
+<li>communication pipeline (network channels)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>social engineering
+<ul>
+<li>a type of nontechnical attack that uses some plan or stories to trick users into revealing information or performing an action that compromises a computer or network</li>
+</ul>
+</li>
+<li>spam
+<ul>
+<li>the electronic equivalent of junk mail or calls</li>
+</ul>
+</li>
+</ul>
+<p><strong>Threats and solutions for the e-commerce today</strong></p>
+<ul>
+<li>threats
+<ul>
+<li>money thefts</li>
+<li>identity thefts</li>
+<li>malware</li>
+</ul>
+</li>
+<li>solutions
+<ul>
+<li>authentication</li>
+<li>intrusion checking</li>
+<li>firewalls</li>
+<li>education</li>
+</ul>
+</li>
+<li>scenario in e-commerce transaction
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-11%20%E4%B8%8B%E5%8D%887.57.27.png" alt=""></li>
+<li>most common security examples
+<ul>
+<li>malicious code
+<ul>
+<li>viruses</li>
+<li>worms</li>
+<li>ransomeware</li>
+<li>trojan horses</li>
+<li>backdoors</li>
+<li>bots, botnets</li>
+</ul>
+</li>
+<li>unwanted programs
+<ul>
+<li>browser parasites
+<ul>
+<li>monitor and change user’s browser</li>
+</ul>
+</li>
+<li>adware
+<ul>
+<li>used to call pop-up ads</li>
+</ul>
+</li>
+<li>spyware
+<ul>
+<li>tracks user’s keystrokes, emails, instant message</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>phishing
+<ul>
+<li>deceptive online attempt to obtain confidential information</li>
+<li>social engineering, e-mail scams, spoofing legitimate web sites</li>
+<li>used for identity fraud and theft</li>
+</ul>
+</li>
+<li>hacking and cybervandalism
+<ul>
+<li>hackers vs crackers</li>
+<li>cybervandalism: intentionally disrupting, defacing, destroying web site</li>
+<li>hacktivism</li>
+</ul>
+</li>
+<li>data breach
+<ul>
+<li>organization loses control over corporate information to outsiders</li>
+<li>leading causes
+<ul>
+<li>hacking</li>
+<li>unauthorized access</li>
+<li>employee error/negligence</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>credit card fraud/theft
+<ul>
+<li>fear of stolen credit card information deters online purchases</li>
+<li>hackers target corporate servers; use data to establish credit under false identity</li>
+<li>online companies at higher risk than offline</li>
+</ul>
+</li>
+<li>spoofing: misrepresenting self by using fake e-mail address</li>
+<li>pharming: spoofing a web site
+<ul>
+<li>redirecting a URL to a new, fake web site</li>
+</ul>
+</li>
+<li>spam/junk websites
+<ul>
+<li>offer collection of advertisements for other sites, which may contain malicious code</li>
+</ul>
+</li>
+<li>denial of service (DoS) attack
+<ul>
+<li>hackers flood site with useless traffic to overwhelm network</li>
+</ul>
+</li>
+<li>distributed denial of service (DDoS) attack
+<ul>
+<li>hackers use multiple computers to attack target network</li>
+</ul>
+</li>
+<li>sniffing
+<ul>
+<li>eavesdropping program that monitors information traveling over a network (to get to “weak spots”)</li>
+</ul>
+</li>
+<li>insider jobs
+<ul>
+<li>single largest financial threat</li>
+<li>poorly designed security policy and server/client software</li>
+</ul>
+</li>
+<li>social network issues
+<ul>
+<li>social networks an environment for
+<ul>
+<li>viruses, site takeovers, identity fraud, malware-loaded apps, click hijacking, phishing, spam</li>
+</ul>
+</li>
+<li>manual sharing scams
+<ul>
+<li>sharing of files that link to malicious sites</li>
+</ul>
+</li>
+<li>fake offerings, fake Like buttons, and fake apps</li>
+</ul>
+</li>
+<li>mobile platform issues
+<ul>
+<li>little public awareness of mobile device vulnerabilities</li>
+</ul>
+</li>
+<li>cloud security issues
+<ul>
+<li>DDoS attacks</li>
+<li>infrastructure scanning</li>
+<li>lower-tech phishing attacks yield passwords and access</li>
+<li>use of cloud storage to connect linked accounts</li>
+<li>lack of encryption and strong security procedures</li>
+</ul>
+</li>
+<li>IoT security issues</li>
+<li>challenging environment to protect</li>
+<li>vast quantity of interconnected links</li>
+<li>near identical devices with long service lives</li>
+<li>many devices have no upgrade features</li>
+<li>little visibility into workings, data, or security</li>
+</ul>
+</li>
+</ul>
+<p><strong>Assurance model and defense objectives</strong></p>
+<ul>
+<li>CIA security triad
+<ul>
+<li>confidentiality</li>
+<li>integrity</li>
+<li>availability</li>
+</ul>
+</li>
+<li>technology solutions
+<ul>
+<li>protecting internet communications
+<ul>
+<li>cryptography</li>
+</ul>
+</li>
+<li>securing channels of communication
+<ul>
+<li>SSL, TLS, VPNs, Wi-Fi</li>
+</ul>
+</li>
+<li>protecting networks
+<ul>
+<li>firewalls, proxy servers, IDS</li>
+</ul>
+</li>
+<li>protecting servers and clients
+<ul>
+<li>OS security, anti-virus software</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>basic concept of user authentication
+<ul>
+<li>something you know
+<ul>
+<li>password, PIN, “motherʼs maiden name”, OTP</li>
+</ul>
+</li>
+<li>something you have
+<ul>
+<li>physical key, token, magnetic card, smartcard</li>
+</ul>
+</li>
+<li>something you are
+<ul>
+<li>fingerprint, voice, retina, iris</li>
+</ul>
+</li>
+<li>best to use two or three of the above, that is why we now have 2 factors authentication (2FA)</li>
+</ul>
+</li>
+<li>encryption
+<ul>
+<li>transforms data into cipher text readable only by sender and receiver</li>
+<li>secures stored information and information transmission</li>
+<li>provides 4 of 6 key dimensions of e-commerce security
+<ul>
+<li>authentication</li>
+<li>confidentiality</li>
+<li>message integrity</li>
+<li>nonrepudiation</li>
+</ul>
+</li>
+<li>types
+<ul>
+<li>symmetric key cryptography
+<ul>
+<li>sender and receiver use same digital key to encrypt and decrypt message</li>
+<li>requires different set of keys for each transaction</li>
+<li>strength of encryption
+<ul>
+<li>length of binary key used to encrypt data</li>
+</ul>
+</li>
+<li>data encryption standard (DES, 1977)
+<ul>
+<li>triple DES encryption algorithm, 56-bit encryption key, 64 bits/block</li>
+</ul>
+</li>
+<li>advanced encryption standard (AES, 2000)
+<ul>
+<li>most widely used symmetric key algorithm</li>
+<li>uses 128-, 192-, and 256-bit encryption keys, 128-bits/block</li>
+</ul>
+</li>
+<li>other standards use keys with up to 2,048 bits</li>
+</ul>
+</li>
+<li>public key encryption
+<ul>
+<li>uses two mathematically related digital keys
+<ul>
+<li>public key (widely disseminated)</li>
+<li>private key (kept secret by owner)</li>
+</ul>
+</li>
+<li>both keys used to encrypt and decrypt message</li>
+<li>once key used to encrypt message, same key cannot be used to decrypt message</li>
+<li>sender uses recipient’s public key to encrypt message</li>
+<li>recipient uses his/her private key to decrypt it</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>usage
+<ul>
+<li>public key encryption using digital signature and hash digests
+<ul>
+<li>hash function
+<ul>
+<li>mathematical algorithm (e.g. MD5 and SHA-1) that produces fixed-length number called message or hash digest</li>
+</ul>
+</li>
+<li>sender applies hash function to the message and then encrypts the message and the hash digest with recipient’s public key</li>
+<li>sender then encrypts the whole package with sender’s private key — creating digital signature — for authenticity, nonrepudiation</li>
+<li>recipient first uses sender’s public key to authenticate the message and then the recipient’s private key to decrypt the hash digest and the message</li>
+</ul>
+</li>
+<li>digital envelopes
+<ul>
+<li>addresses weaknesses of
+<ul>
+<li>public key encryption
+<ul>
+<li>computationally slow, decreased transmission speed, increased processing time</li>
+</ul>
+</li>
+<li>symmetric key encryption
+<ul>
+<li>insecure transmission lines</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>uses symmetric key encryption to encrypt document (much more efficient computationally)</li>
+<li>uses public key encryption to encrypt and send symmetric key</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>limits
+<ul>
+<li>does not protect storage of private key
+<ul>
+<li>PKI not effective against insiders, employees</li>
+<li>protection of private keys by individuals may be haphazard</li>
+</ul>
+</li>
+<li>no guarantee that verifying computer of merchant is secure</li>
+<li>CAs are unregulated, self-selecting organizations</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>digital certificates and PKI
+<ul>
+<li>digital certificate includes
+<ul>
+<li>name of subject/company</li>
+<li>subject’s public key</li>
+<li>digital certificate serial number</li>
+<li>expiration date, issuance date</li>
+<li>digital signature of certification authority (trusted third party institution) that issues certificate</li>
+</ul>
+</li>
+<li>PKI
+<ul>
+<li>CAs and digital certificate procedures that are accepted by all parties</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>securing channles of communication
+<ul>
+<li>SSL/TLS
+<ul>
+<li>establishes a secure, negotiated client-server session in which URL of requested document, along with contents, is encrypted
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-11%20%E4%B8%8B%E5%8D%889.27.37.png" alt=""></li>
+</ul>
+</li>
+<li>S-HTTP
+<ul>
+<li>provides a secure message-oriented communications protocol designed for use in conjunction with HTTP</li>
+</ul>
+</li>
+<li>virtual private network (VPN)
+<ul>
+<li>allows remote users to securely access internal network via the internet, using point-to-point tunneling protocol (PPTP)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>protecting networks
+<ul>
+<li>firewall
+<ul>
+<li>hardware or software that filters packets</li>
+<li>prevents some packets from entering the network based on security policy</li>
+<li>2 main methods
+<ul>
+<li>packet filters</li>
+<li>application gateways</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>proxy servers (proxies)
+<ul>
+<li>software servers that handle all communications originating from or being sent to the internet</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>protecting servers and clients
+<ul>
+<li>operating system security enhancements
+<ul>
+<li>upgrades, patches</li>
+</ul>
+</li>
+<li>anti-virus software
+<ul>
+<li>easiest and least expensive way to prevent threats to system integrity</li>
+<li>requires daily updates</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>managing risk includes
+<ul>
+<li>technology</li>
+<li>effective management policies</li>
+<li>public laws and active enforcement</li>
+</ul>
+</li>
+<li>a security plan: management policies
+<ul>
+<li>risk assessment</li>
+<li>security policy</li>
+<li>implementation plan
+<ul>
+<li>security organization</li>
+<li>access controls</li>
+<li>authentication procedures, including biometrics</li>
+<li>authorization policies, authorization management systems</li>
+</ul>
+</li>
+<li>security audit
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-11%20%E4%B8%8B%E5%8D%889.47.37.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<h2 id="additional-reading">Additional Reading</h2>
+<ul>
+<li>WSJ - Yahoo Data Breach Report (2019) -&gt; <a href="../articles/WSJ%20-%20Yahoo%20Data%20Breach%20Report%20(2019).pdf">details</a></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>ECOM6013 Mobile Technology &amp; M-Commerce</title>

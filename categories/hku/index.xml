@@ -7,7 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 10 Dec 2020 23:33:40 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/hku/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Dec 2020 21:58:22 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/hku/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM6013 E-Commerce Payment Systems</title>
+      <link>https://www.marshalgao.com/ecom6013-e-commerce-payment-systems/</link>
+      <pubDate>Fri, 11 Dec 2020 21:58:22 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom6013-e-commerce-payment-systems/</guid>
+      <description>Overview Security, trust, and e-commerce
+ e-commerce (by definition) means transfer of value which can be  resources information payments entertainment   all of these types of value are desirable and therefore subject to theft perhaps, none more than payments (which drives commerce) it is all about money  Payment system stakeholders&#39; priorities
+ consumers  low-risk, low-cost, refutable, convenience, reliability   merchants  low-risk, low-cost, irrefutable, secure, reliable   financial intermediaries  secure, low-risk, maximizing profit   government regulators  security, trust, protecting participants and enforcing reporting    Types of payment system</description>
+    </item>
+    
+    <item>
+      <title>ECOM6013 Internet and E-Commerce Security</title>
+      <link>https://www.marshalgao.com/ecom6013-internet-and-e-commerce-security/</link>
+      <pubDate>Fri, 11 Dec 2020 19:37:01 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom6013-internet-and-e-commerce-security/</guid>
+      <description>Overview Good e-commerce security
+ to achieve highest degree of security, one needs  new technologies organizational policies and procedures industry standards and government laws    other factors  cost of security versus potential loss security often breaks at weakest link    Different perspectives between customers and merchants Basic E-Commerce Security The tension between security and other values
+ security vs ease of use  the more security measures added, the more difficult a site is to use, and the slower it becomes   security vs desire of individuals to act anonymously  use of technology by criminals to plan crimes or threaten nation-state    Basic security issues and landscape</description>
+    </item>
+    
     <item>
       <title>ECOM6013 Mobile Technology &amp; M-Commerce</title>
       <link>https://www.marshalgao.com/ecom6013-mobile-technology-m-commerce/</link>
@@ -90,26 +112,6 @@
       <description>E-Commerce and Data Science E-commerce is largely and exercise in understanding the clients
  containing their capabilities, desires, etc. matching clients with technologies and goals exploring scalability chanllenges of new markets  E-Commerce vs E-Business E-commerce
  definition  usually  use of internet and/or web to transact business   generally  refer to any networked commerce activity   formally  digitally enabled commercial transactions between and among organizations and individuals     traditional e-commerce  features  passive consumer sales-force driven fixed prices information asymmetry     current e-commerce  reason of importance  e-commerce technology is different, more powerful than previous technologies e-commerce bringing fundamental changes to commerce   features  ubiquity global reach universal standards information richness interactivity information density personalization/customization social technology   trends  new business models based on social technologies, consumer-generated content, and services (e.</description>
-    </item>
-    
-    <item>
-      <title>ICOM6045 Internet Layer Security</title>
-      <link>https://www.marshalgao.com/icom6045-internet-layer-security/</link>
-      <pubDate>Wed, 02 Dec 2020 09:45:42 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/icom6045-internet-layer-security/</guid>
-      <description>Overview Firewall
- definition  a firewall is a combination of hardware and software that isolates an organization’s internal network from the Internet, allowing some packets to pass and blocking others   functions  firewall can also provide segmentation between internal resources in the simplest form, firewall control access to, from and between networks within the organization and the internet   scenario  the home router would have the functions of firewall, but it is only a little    DMZ (Demilitarized Zone)</description>
-    </item>
-    
-    <item>
-      <title>ICOM6045 Communication Network Security</title>
-      <link>https://www.marshalgao.com/icom6045-communication-network-security/</link>
-      <pubDate>Tue, 01 Dec 2020 11:19:35 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/icom6045-communication-network-security/</guid>
-      <description>Introduction Communication network
- definition  an infrastructure for exchanging information in electronic form  a physical infrastructure: communication links (e.g., wires and cables) a logical infrastructure: protocols     types of information  voice documents photos video, etc   types of communication network  a public switched telephone network (circuit switching, lots of switches in the telephone network, single line, more expensive) a mobile telephone network the Internet (packet switching, sharing, much cheaper) a communication infrastructure (i.</description>
     </item>
     
   </channel>

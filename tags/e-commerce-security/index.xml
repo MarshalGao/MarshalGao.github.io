@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>e-commerce security on This is Marshal</title>
+    <link>https://www.marshalgao.com/tags/e-commerce-security/</link>
+    <description>Recent content in e-commerce security on This is Marshal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 11 Dec 2020 19:37:01 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/e-commerce-security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM6013 Internet and E-Commerce Security</title>
+      <link>https://www.marshalgao.com/ecom6013-internet-and-e-commerce-security/</link>
+      <pubDate>Fri, 11 Dec 2020 19:37:01 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom6013-internet-and-e-commerce-security/</guid>
+      <description>Overview Good e-commerce security
+ to achieve highest degree of security, one needs  new technologies organizational policies and procedures industry standards and government laws    other factors  cost of security versus potential loss security often breaks at weakest link    Different perspectives between customers and merchants Basic E-Commerce Security The tension between security and other values
+ security vs ease of use  the more security measures added, the more difficult a site is to use, and the slower it becomes   security vs desire of individuals to act anonymously  use of technology by criminals to plan crimes or threaten nation-state    Basic security issues and landscape</description>
+    </item>
+    
+  </channel>
+</rss>
