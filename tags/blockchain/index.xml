@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blockchain on This is Marshal</title>
+    <link>https://www.marshalgao.com/tags/blockchain/</link>
+    <description>Recent content in blockchain on This is Marshal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 12 Dec 2020 10:13:49 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/blockchain/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM6013 Blockchain and Cybercurrency</title>
+      <link>https://www.marshalgao.com/ecom6013-blockchain-and-cybercurrency/</link>
+      <pubDate>Sat, 12 Dec 2020 10:13:49 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom6013-blockchain-and-cybercurrency/</guid>
+      <description>Overview Traditional types of money
+ token money  represented by a physical object (token) such as a banknote, coin, traveler’s check, etc without that token the value is lost no intermediary is required for spending but requires faith in the issuer, usually a government or a bank   notational money  represented by a notation/entry in a ledger, passbook, or database (e.g., a bank account) notational money cannot be lost (in theory) requires an intermediary (bank or clearing house) for spending requires faith in the maintainer of the ledger   hybrid money  requires both a token and a ledger account (e.</description>
+    </item>
+    
+  </channel>
+</rss>

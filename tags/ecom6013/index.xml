@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 11 Dec 2020 21:58:22 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/ecom6013/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Dec 2020 10:13:49 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/ecom6013/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM6013 Blockchain and Cybercurrency</title>
+      <link>https://www.marshalgao.com/ecom6013-blockchain-and-cybercurrency/</link>
+      <pubDate>Sat, 12 Dec 2020 10:13:49 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom6013-blockchain-and-cybercurrency/</guid>
+      <description>Overview Traditional types of money
+ token money  represented by a physical object (token) such as a banknote, coin, traveler’s check, etc without that token the value is lost no intermediary is required for spending but requires faith in the issuer, usually a government or a bank   notational money  represented by a notation/entry in a ledger, passbook, or database (e.g., a bank account) notational money cannot be lost (in theory) requires an intermediary (bank or clearing house) for spending requires faith in the maintainer of the ledger   hybrid money  requires both a token and a ledger account (e.</description>
+    </item>
+    
     <item>
       <title>ECOM6013 E-Commerce Payment Systems</title>
       <link>https://www.marshalgao.com/ecom6013-e-commerce-payment-systems/</link>
@@ -31,11 +41,11 @@
     </item>
     
     <item>
-      <title>ECOM6013 Mobile Technology &amp; M-Commerce</title>
-      <link>https://www.marshalgao.com/ecom6013-mobile-technology-m-commerce/</link>
+      <title>ECOM6013 Mobile Technology and M-Commerce</title>
+      <link>https://www.marshalgao.com/ecom6013-mobile-technology-and-m-commerce/</link>
       <pubDate>Thu, 10 Dec 2020 23:33:40 +0800</pubDate>
       
-      <guid>https://www.marshalgao.com/ecom6013-mobile-technology-m-commerce/</guid>
+      <guid>https://www.marshalgao.com/ecom6013-mobile-technology-and-m-commerce/</guid>
       <description>Mobile Technology Basic principle
  3 division methods  fundamental mobility: cellphones  cell handover     Future and issues
  5G - the future  issues with mobile access to e-commerce web sites  efficiency of mobile device web clients broad new range of contextual/accessibility issues, e.g. fingerprint, wearable devices screen size – all over the place, unpredictable interactivity client-side processing requirements bandwidth issues    M-Commerce Overview</description>

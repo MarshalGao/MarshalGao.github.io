@@ -6,8 +6,270 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Fri, 11 Dec 2020 21:58:22 +0800</lastBuildDate>
+        <lastBuildDate>Sat, 12 Dec 2020 10:13:49 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ECOM6013 Blockchain and Cybercurrency</title>
+            <link>https://www.marshalgao.com/ecom6013-blockchain-and-cybercurrency/</link>
+            <pubDate>Sat, 12 Dec 2020 10:13:49 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/ecom6013-blockchain-and-cybercurrency/</guid>
+            <description>Overview Traditional types of money
+ token money  represented by a physical object (token) such as a banknote, coin, traveler’s check, etc without that token the value is lost no intermediary is required for spending but requires faith in the issuer, usually a government or a bank   notational money  represented by a notation/entry in a ledger, passbook, or database (e.g., a bank account) notational money cannot be lost (in theory) requires an intermediary (bank or clearing house) for spending requires faith in the maintainer of the ledger   hybrid money  requires both a token and a ledger account (e.</description>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Blockchain%20and%20Cybercurrency.png" alt=""></p>
+<h2 id="overview">Overview</h2>
+<p><strong>Traditional types of money</strong></p>
+<ul>
+<li>token money
+<ul>
+<li>represented by a physical object (token) such as a banknote, coin, traveler’s check, etc</li>
+<li>without that token the value is lost</li>
+<li>no intermediary is required for spending</li>
+<li>but requires faith in the issuer, usually a government or a bank</li>
+</ul>
+</li>
+<li>notational money
+<ul>
+<li>represented by a notation/entry in a ledger, passbook, or database (e.g., a bank account)</li>
+<li>notational money cannot be lost (in theory)</li>
+<li>requires an intermediary (bank or clearing house) for spending</li>
+<li>requires faith in the maintainer of the ledger</li>
+</ul>
+</li>
+<li>hybrid money
+<ul>
+<li>requires both a token and a ledger account (e.g., personal check, stored value card, gift card)</li>
+<li>can be lost and requires faith in the issuer</li>
+<li>requires an intermediary (bank or clearing house) for spending</li>
+</ul>
+</li>
+</ul>
+<p><strong>Virtual money</strong></p>
+<ul>
+<li>features
+<ul>
+<li>no token</li>
+<li>no ledger</li>
+<li>no issuer, no government backing (or supervision)</li>
+<li>no intermediary required for spending</li>
+<li>but there do exist some problems</li>
+</ul>
+</li>
+<li>digital money
+<ul>
+<li>the money is just a string of bytes (data) stored on a device (computer, mobile phone)</li>
+<li>device failure means the money/value is gone</li>
+<li>device intrusion means the money can be stolen (just like any other data)</li>
+<li>good reason to backup devices (trust?)</li>
+</ul>
+</li>
+<li>cybercurrency
+<ul>
+<li>an internet-based form of currency or medium of exchange distinct from physical (such as banknotes and coins) that exhibits properFes similar to physical currencies, but allows for instantaneous transactions and borderless transfer-of-ownership</li>
+<li>the most influential cybercurrency by far at this time is Bitcoin</li>
+<li>the key technology behind Bitcoin is Blockchain</li>
+</ul>
+</li>
+</ul>
+<h2 id="bitcoin-and-blockchain">Bitcoin and Blockchain</h2>
+<p><strong>Bitcoin</strong></p>
+<ul>
+<li>definition
+<ul>
+<li>designed for the “online society” using internet technologies and ideas</li>
+<li>decentralized and independent of national currencies</li>
+<li>excellent for anonymous transactions (like hard currency but unlike credit cards)</li>
+<li>excellent for e-commerce –&gt; online exchange, no specific currency, micro-payments, etc</li>
+<li>easily convertible to national currencies (only when the market trust still exists)</li>
+</ul>
+</li>
+<li>important notes
+<ul>
+<li>distinguish the difference between Blockchain technology and Bitcoin – Bitcoin is an important example application of Blockchain</li>
+</ul>
+</li>
+<li>5 elements of Bitcoin
+<ul>
+<li>currency
+<ul>
+<li>send units of value, convertible, divisible (challenged by its volatility)</li>
+</ul>
+</li>
+<li>commodity
+<ul>
+<li>scarcity stores wealth, market fluctuates with speculation (limited to 21 million, we are closed to the limit)</li>
+</ul>
+</li>
+<li>brand
+<ul>
+<li>marketing message, commodity and sharing knowledge</li>
+</ul>
+</li>
+<li>protocol
+<ul>
+<li>decentralized trust via distributed ledger</li>
+</ul>
+</li>
+<li>technology
+<ul>
+<li>Blockchain</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>how to get Bitcoin
+<ul>
+<li>sell something</li>
+<li>salary (?)</li>
+<li>use a Bitcoin exchange (including Bitcoin ATMs)</li>
+<li>Bitcoin “mining”
+<ul>
+<li>there will never be more than 21 million BTC (2<em>50</em>210,000)</li>
+<li>divisible into units as small as 1/100 millionth of a BTC (micropayments)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Bitcoin and encryption technologies
+<ul>
+<li>hash functions – one way hashing using SHA-256 which produces 256 bit hashes</li>
+<li>public-private key (asymmetric) encryption
+<ul>
+<li>everyone has a public-private key pair</li>
+<li>ensures end-to-end security, non-repudiation, etc</li>
+</ul>
+</li>
+<li>digital signatures</li>
+<li>all of these technologies are mature and trusted</li>
+</ul>
+</li>
+<li>characteristics
+<ul>
+<li>no physical object, not even a character string</li>
+<li>“Bitcoin” refers to the protocol, “bitcoin” refers to the value
+<ul>
+<li>Bitcoin protocol
+<ul>
+<li>Bitcoin was invented in 2008 by an anonymous person (maybe a team) call Satoshi Nakamoto allegedly in Japan (but likely in the Silicon Valley)</li>
+<li>the Bitcoin protocol for generating and exchanging Bitcoin is implemented in publicly available, open source software – this has led to other cybercurrencies – called “forks”</li>
+<li>anyone can obtain and run a Bitcoin client</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>“a chain of digitally signed transaction records leading from the original owner to the current owner” – similar to the chain of land deeds</li>
+<li>transaction records contain
+<ul>
+<li>hashes that are difficult to break</li>
+<li>virtual owner IDs (addresses)
+<ul>
+<li>Bitcoin addresses
+<ul>
+<li>Bitcoin software generates addresses of 25-44 characters for users, e.g., 1BBsbEq8Q29JpQr4jygjPof7F7uphqyUCQ</li>
+<li>the address is actually an elliptic curve public key, a 44 character key is as secure as a 7000-bit RSA key</li>
+<li>to send Bitcoins, user specifies a receiving address (public) and amount and then initiates the transaction</li>
+<li>to receive Bitcoins, only an address (public) is needed</li>
+<li>addresses are not directly registered to users, and there can be a different address for each transaction if desired</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>there is no Bitcoin registry, no central authority</li>
+<li>Bitcoin Blockchains are broadcast to everyone, and anyone can verify them (crowdsourcing)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Blockchain</strong></p>
+<ul>
+<li>analogy: land deeds
+<ul>
+<li>land ownership is defined by a “chain of title”, a sequence of deeds leading from the original owner to the present owner</li>
+<li>deeds are recorded in the land registry</li>
+<li>ownership is established by searching the registry</li>
+<li>the land registry is, in effect, a ledger holder</li>
+<li>if the registry is altered, ownership can be lost</li>
+<li>double-selling is prevented by timestamps
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-12%20%E4%B8%8A%E5%8D%8810.45.56.png" alt=""></li>
+</ul>
+</li>
+<li>a distributed registry
+<ul>
+<li>suppose all deeds are made available to thousands of nodes on a decentralized public network</li>
+<li>if the deeds are genuine and the network members agree on the chain of title, then we can tell who owns a piece of property</li>
+<li>ask the network and count the responses – if a majority say that someone is the owner, then they are</li>
+<li>there must be enough honest members that false responses cannot dominate (or give them a reward for being honest)</li>
+<li>the registry is not (by definition) under a centralized control</li>
+</ul>
+</li>
+</ul>
+<p><strong>Challenges and the future trend</strong></p>
+<ul>
+<li>possible vulnerabilities
+<ul>
+<li>no way to reverse a transaction without the payee’s cooperation</li>
+<li>software bugs</li>
+<li>bank robbery by hackers</li>
+<li>malware attacks against wallets</li>
+<li>government attempts to control</li>
+<li>competing digital currencies easy to make (fork) – Auroracoin, Dogecoin, Namecoin, Primecoin, etc. – imitation is flattery</li>
+</ul>
+</li>
+<li>challenges for Bitcoin
+<ul>
+<li>scalability – currently, bitcoin can process approximately 4.6 transactions per second, compared with 1,700 transactions per second that Visa can process worldwide (old number, likely fewer transaction)</li>
+<li>time to solve a block (mine one bit-coin) takes approximately 10 mins, no matter how many people are actively mining (part of the bitcoin algorithm) – always limit its speed of processing</li>
+<li>it takes 120 exahashes/s to solve a new block in bit-coin in early 2020 (1 exa=quitillion=1018)
+<ul>
+<li>exahashes/s
+<ul>
+<li>calculation force unit</li>
+<li>the number of times the miner completes the hash calculation in a unit time</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>the bitcoin network is estimated to consume about 343 megawatts of power in total (about 1/3 of all homes in San Jose, or 285,000 homes in US, 2018 figure, assuming most efficient ASIC can use 1W to solve 1 gigahash per second)</li>
+<li>in August 2018, it was estimated bitcoin mining is responsible for 1% of world’s energy consumption (by a US Senate Committee)</li>
+<li>this makes transaction of fractions of bitcoin (smallest unit is 1/100 millionth = 1 Satoshi) meaningless and highly inefficient</li>
+</ul>
+</li>
+<li>possible future of Bitcoin/virtual currencies
+<ul>
+<li>social
+<ul>
+<li>for the world’s unbanked, there is no choice</li>
+<li>for small businesses, freelancers and startups in developing nations, there is no choice (at present, but is changing fast)</li>
+<li>&ldquo;from stones ➜ precious metals ➜ paper ➜ bytes” – inevitable development of “money”</li>
+<li>distributed trust is still trust</li>
+</ul>
+</li>
+<li>economic/political
+<ul>
+<li>a future with digital currencies and decentralized stores is likely to be positive – some people trust math over people (how sad)</li>
+<li>national adoption of decentralized currencies may bring political transparency and economic neutrality</li>
+<li>developing nations seeking to curb corruption and break free of economic dependence on other countries could see potential in these technologies</li>
+<li>what next? – come Central Bank Digital Currency (CBDC)
+<ul>
+<li>China has announced it has launched its own CBDC and is experimenting in 4 cities within China</li>
+<li>plan to do it across China in 1-2 years</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="additional-reading">Additional Reading</h2>
+<ul>
+<li>Bitcoin Original Paper (Satoshi Nakamoto, 2009) -&gt; <a href="../articles/Bitcoin%20Original%20Paper%20(Satoshi%20Nakamoto,%202009).pdf">details</a></li>
+<li>UK Govt - Distributed Ledger Technology (White Paper) -&gt; <a href="../articles/UK%20Govt%20-%20Distributed-Ledger-Technology.pdf">details</a></li>
+<li>A Survey of Research on Retail Central Bank Digital Currency - IMF (Working Paper, June 2020) -&gt; <a href="../articles/Central%20Bank%20Digital%20Currency%20-%20IMF.pdf">details</a></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>ECOM6013 E-Commerce Payment Systems</title>
@@ -685,11 +947,11 @@
         </item>
         
         <item>
-            <title>ECOM6013 Mobile Technology &amp; M-Commerce</title>
-            <link>https://www.marshalgao.com/ecom6013-mobile-technology-m-commerce/</link>
+            <title>ECOM6013 Mobile Technology and M-Commerce</title>
+            <link>https://www.marshalgao.com/ecom6013-mobile-technology-and-m-commerce/</link>
             <pubDate>Thu, 10 Dec 2020 23:33:40 +0800</pubDate>
             
-            <guid>https://www.marshalgao.com/ecom6013-mobile-technology-m-commerce/</guid>
+            <guid>https://www.marshalgao.com/ecom6013-mobile-technology-and-m-commerce/</guid>
             <description>Mobile Technology Basic principle
  3 division methods  fundamental mobility: cellphones  cell handover     Future and issues
  5G - the future  issues with mobile access to e-commerce web sites  efficiency of mobile device web clients broad new range of contextual/accessibility issues, e.g. fingerprint, wearable devices screen size – all over the place, unpredictable interactivity client-side processing requirements bandwidth issues    M-Commerce Overview</description>
