@@ -6,8 +6,156 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Sat, 12 Dec 2020 10:13:49 +0800</lastBuildDate>
+        <lastBuildDate>Sat, 12 Dec 2020 20:27:32 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ECOM6013 Emerging and Disruptive Technologies, IoT and AI</title>
+            <link>https://www.marshalgao.com/ecom6013-emerging-and-disruptive-technologies-iot-and-ai/</link>
+            <pubDate>Sat, 12 Dec 2020 20:27:32 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/ecom6013-emerging-and-disruptive-technologies-iot-and-ai/</guid>
+            <description>Disruptive Technologies E-commerce is evolving
+ the technologies will either evolve or have a limited lifespan a challenge is to determine what new technologies are relevant and what they might contribute to the future especially of e-commerce definition of technology  the application of science, math, engineering, art, and other fields of knowledge to create tools and implementations deemed useful by a society    Adoption of disruptive technologies</description>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Emerging%20and%20Disruptive%20Technologies%2C%20IoT%20and%20AI.png" alt=""></p>
+<h2 id="disruptive-technologies">Disruptive Technologies</h2>
+<p><strong>E-commerce is evolving</strong></p>
+<ul>
+<li>the technologies will either evolve or have a limited lifespan</li>
+<li>a challenge is to determine what new technologies are relevant and what they might contribute to the future especially of e-commerce</li>
+<li>definition of technology
+<ul>
+<li>the application of science, math, engineering, art, and other fields of knowledge to create tools and implementations deemed useful by a society</li>
+</ul>
+</li>
+</ul>
+<p><strong>Adoption of disruptive technologies</strong></p>
+<ul>
+<li>a new disruptive technology
+<ul>
+<li>initially underperforms the dominant one along the dimensions mainstream customers in major markets have historically valued</li>
+<li>has other features a few fringe (and generally new) customers value</li>
+</ul>
+</li>
+<li>products based on disruptive technologies are typically
+<ul>
+<li>cheaper</li>
+<li>simpler</li>
+<li>smaller</li>
+<li>more convenient than those established on the dominant technology</li>
+</ul>
+</li>
+<li>the most profitable customers generally do not want and initially cannot use products based on disruptive technologies</li>
+<li>first commercialized in engaging or insignificant markets</li>
+<li>incumbents conclude that investment is not a rational financial decision</li>
+<li>the new disruptive technology
+<ul>
+<li>steadily improves in performance</li>
+<li>until it meets the standards of performance demanded by the mainstream market</li>
+</ul>
+</li>
+<li>finally
+<ul>
+<li>the new technology displaces the dominant one</li>
+<li>the new entrant displaces the dominant one in the mainstream market</li>
+</ul>
+</li>
+<li>example
+<ul>
+<li>Barnes &amp; Noble (1873) (MC: $0.475B) vs Amazon (1995) (MC: $878B) - only 0.06%
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-12%20%E4%B8%8B%E5%8D%888.58.45.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<p><strong>Development path and current technology</strong></p>
+<ul>
+<li>the long nose of innovation
+<ul>
+<li>the bulk of innovation is low-amplitude and takes place over a long period</li>
+<li>technologists should focus on refining existing technologies as much as on creation new ones</li>
+<li>therefore, most technology likely to have an impact in the next five years is already at least 15 years old and unrecognized</li>
+<li>examples: IoT and AI
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-12%20%E4%B8%8B%E5%8D%888.55.18.png" alt=""></li>
+</ul>
+</li>
+<li>current technology landscape
+<ul>
+<li>internet connecting the whole world at low cost</li>
+<li>cheap, small, dense data storage – hence big data possible</li>
+<li>high speed networks; ubiquitous WiFi and mobile network</li>
+<li>access to almost unlimited processing power at low cost</li>
+<li>Moore’s law leads to cheap, small processors and sensors
+<ul>
+<li>embedded systems</li>
+<li>smart devices</li>
+</ul>
+</li>
+<li>advancements in energy efficiency – yet more innovation needed</li>
+<li>a good example of disruptive technology is Internet of Things (IoT) and Artificial Intelligence (AI)</li>
+</ul>
+</li>
+<li>disruptive digital technologies
+<ul>
+<li>technologies which offer opportunities for business for new products and services for customers and can transform internal business processes</li>
+<li>a technology that changes the bases of competition by changing the performance metrics along which firms compete</li>
+<li>technology based on customer needs that drive customers to seek certain benefits in the products they use and form the basis for customer choices between competing products</li>
+<li>for IoT, we have the capability to fully connect and integrate a wide diversity of devices and objects into the online environment and interact with them</li>
+<li>for AI, we have Big Data and powerful cloud processing power to support it</li>
+</ul>
+</li>
+</ul>
+<h2 id="iot">IoT</h2>
+<p><strong>IoT &ldquo;worlds&rdquo;</strong></p>
+<ul>
+<li>tagging world
+<ul>
+<li>is about identifying things</li>
+<li>identifiers such as RFIDs are attached to things (e.g., packages) to enable their automatic identification and tracking</li>
+<li>based on ID, the information about things can be accessed from a database or from the web</li>
+</ul>
+</li>
+<li>sensors world
+<ul>
+<li>is about sensing things</li>
+<li>“second hand” access to the properties of things, that can be perceived from the outside using a variety of available sensors</li>
+</ul>
+</li>
+<li>embedded systems world
+<ul>
+<li>is about reading things</li>
+<li>“first-hand” access to data possessed by things</li>
+<li>e.g., industrial machines or home electronics, already embedded with some processing and data storage capabilities</li>
+</ul>
+</li>
+</ul>
+<p><strong>IoT strategic areas</strong></p>
+<ul>
+<li>transport (e.g., smart cars, smart traffic)</li>
+<li>energy</li>
+<li>healthcare</li>
+<li>agriculture</li>
+<li>buildings</li>
+<li>smart city</li>
+</ul>
+<p><strong>4-stages of IoT architecture</strong>
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/4_stage_iot_solutions_architecture_1.jpg" alt=""></p>
+<h2 id="ai">AI</h2>
+<p><strong>Neural networks</strong></p>
+<ul>
+<li>neurons
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-12%20%E4%B8%8B%E5%8D%889.17.05.png" alt=""></li>
+<li>example
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-12%20%E4%B8%8B%E5%8D%889.19.07.png" alt=""></li>
+</ul>
+<h2 id="additional-reading">Additional Reading</h2>
+<ul>
+<li>How to Design an IoT-Ready Infrastructure - The 4-Stage Architecture -&gt; <a href="https://techbeacon.com/enterprise-it/4-stages-iot-architecture">details</a></li>
+<li>Gartner IoT Trends 2020 -&gt; <a href="https://www.mobileappdaily.com/internet-of-things-technologies-trends">details</a></li>
+<li>The Neural Network Zoo -&gt; <a href="https://www.asimovinstitute.org/neural-network-zoo/">details</a></li>
+<li>AI &amp; Life in 2030 (AI100 Report, 2016 Stanford) -&gt; <a href="../articles/ai100report10032016fnl_singles.pdf">details</a></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>ECOM6013 Blockchain and Cybercurrency</title>

@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 12 Dec 2020 10:13:49 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Dec 2020 20:27:32 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM6013 Emerging and Disruptive Technologies, IoT and AI</title>
+      <link>https://www.marshalgao.com/ecom6013-emerging-and-disruptive-technologies-iot-and-ai/</link>
+      <pubDate>Sat, 12 Dec 2020 20:27:32 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom6013-emerging-and-disruptive-technologies-iot-and-ai/</guid>
+      <description>Disruptive Technologies E-commerce is evolving
+ the technologies will either evolve or have a limited lifespan a challenge is to determine what new technologies are relevant and what they might contribute to the future especially of e-commerce definition of technology  the application of science, math, engineering, art, and other fields of knowledge to create tools and implementations deemed useful by a society    Adoption of disruptive technologies</description>
+    </item>
+    
     <item>
       <title>ECOM6013 Blockchain and Cybercurrency</title>
       <link>https://www.marshalgao.com/ecom6013-blockchain-and-cybercurrency/</link>
@@ -115,17 +125,6 @@
       <guid>https://www.marshalgao.com/the-logical-relationship-of-advertising-system/</guid>
       <description>本文将从宏观角度理清广告系统中DSP、SSP、DMP、ADX、RTB等概念的逻辑与关系。
  广告主  希望为自己的品牌提供曝光，增加营销的商家或个人   代理商  不擅长或无经验的广告主  使用代理商代办   擅长且有经验的广告主  不使代理商，直接与DSP沟通     DSP  相当于面向广告主的前端产品 但有的DSP自身不带数据，则需要与DMP进行合作 虽然在DSP上广告主已经设定好了一切需求，但真正进行广告投放时，会利用DMP与正在浏览的用户进行画像比对   DMP  整理分散的数据，构建用户画像 大多数情况下利用所有浏览器的cookie 但在Fackbook上还使用了其自身的CRM   SSP  相当于提供流量、广告位的企业前端 汇聚了很多的Publisher Publisher在SSP上管理自己的广告位   Publisher  流量的实际拥有者 可以是网页，又可以是免费型的App 可以加入到SSP   RTB  不是平台，也不是DSP的一部分 是一种技术概念，采取oCPA以及oCPM等方式    Ad Network  由于互联网广告的碎片性质，导致广告主需要与不同的Publisher进行谈判 Ad Network整合了相应的Publisher，方便广告主   ADX  由于Ad network之间可能存在互相符合用户画像的流量，所以要对Ad Network进行整合 ADX最终整合了Ad Network以及更多的Publisher 引入RTB技术   简化流程   现如今，每一个广告联盟对应一个DSP，所以ADX连接的DSP和SSP并不一定是一对一的关系，可能会存在更复杂的情况。</description>
-    </item>
-    
-    <item>
-      <title>ICOM6045 Mobile Code Security</title>
-      <link>https://www.marshalgao.com/icom6045-mobile-code-security/</link>
-      <pubDate>Sat, 05 Dec 2020 22:23:35 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/icom6045-mobile-code-security/</guid>
-      <description>Mobile Code Security Mobile code
- dynamically downloadable executable content is referred to as mobile code includes platform-independent executable content which is transferred over a communication network, crossing different security perimeters, and is automatically executed upon arrival at the destination host examples are Java applets, ActiveX controls, JavaScript, Safe-Tcl, servlet “browser helper applications” and plug-ins  download from store download on demand    Mechanisms
- code signing least privileges code monitoring: resources usage monitoring mobile code runtime environment  memory model partition the memory into safe and unsafe regions safety check ensure every memory access refers to a safe memory location, e.</description>
     </item>
     
   </channel>
