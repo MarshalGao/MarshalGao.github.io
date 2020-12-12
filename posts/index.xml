@@ -6,8 +6,90 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Sat, 12 Dec 2020 20:27:32 +0800</lastBuildDate>
+        <lastBuildDate>Sat, 12 Dec 2020 21:44:03 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ECOM6013 Technologies and E-Commerce Trends</title>
+            <link>https://www.marshalgao.com/ecom6013-technologies-and-e-commerce-trends/</link>
+            <pubDate>Sat, 12 Dec 2020 21:44:03 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/ecom6013-technologies-and-e-commerce-trends/</guid>
+            <description>Emerging Technology Trends Gartner hype cycle for emerging technologies, 2019 Gartner hype cycle for emerging technologies, 2020 The top 10 strategic technologies for 2020
+The Gartner top 10 strategic technology trends for 2020 highlight trends that will drive significant disruption and opportunity over the next five to 10 years.
+These trends have a profound impact on the people and the spaces they inhabit, rather than building a technology stack and then exploring the potential applications, organizations must consider the business and human contexts first.</description>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Technologies%20and%20E-Commerce%20Trends.png" alt=""></p>
+<h2 id="emerging-technology-trends">Emerging Technology Trends</h2>
+<p><strong>Gartner hype cycle for emerging technologies, 2019</strong>
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-12%20%E4%B8%8B%E5%8D%8810.57.11.png" alt=""></p>
+<p><strong>Gartner hype cycle for emerging technologies, 2020</strong>
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2020-12-12%20%E4%B8%8B%E5%8D%8810.57.30.png" alt=""></p>
+<p><strong>The top 10 strategic technologies for 2020</strong></p>
+<p>The Gartner top 10 strategic technology trends for 2020 highlight trends that will drive significant disruption and opportunity over the next five to 10 years.</p>
+<p>These trends have a profound impact on the people and the spaces they inhabit, rather than building a technology stack and then exploring the potential applications, organizations must consider the business and human contexts first.</p>
+<p><strong>Hyberautomation has 4 key implications</strong></p>
+<ul>
+<li>shifting scope
+<ul>
+<li>the scope of automation shifts from individual discrete tasks to knowledge work that drives more dynamic experiences and, ultimately, better business outcomes</li>
+</ul>
+</li>
+<li>evolving technology
+<ul>
+<li>the technologies required to support hyberautomation will evolve to support a broad range of business scope and incorporate more ML</li>
+</ul>
+</li>
+<li>increasing agility
+<ul>
+<li>as needs (and threats) evolve, organizations will need to be more agile to respond</li>
+</ul>
+</li>
+<li>engage the workforce
+<ul>
+<li>the workforce must be fully engaged, and perhaps more importantly, fully integrated, to capture the full value of hyberautomation</li>
+</ul>
+</li>
+</ul>
+<p><strong>RPA</strong></p>
+<ul>
+<li>by 2022, application integrations delivered with robotic process automation (RPA) will grow by 40% year over year</li>
+<li>although automation utilizes a complex, overlapping, ultimately complementary range of tools and technologies, there are 2 components
+<ul>
+<li>RPA - connects legacy systems</li>
+<li>intelligent business process management suites (iBPMSs) - manage long-running processes</li>
+</ul>
+</li>
+</ul>
+<p><strong>5 key takeaway for e-commerce in 2009 in US</strong></p>
+<ul>
+<li>we still have huge potential in e-commerce (only 15% of total retail sales in US in 2019, was 13% last year) growing @ 12.4% per year (compared with 2% for Brick-and-Mortar sales growth)</li>
+<li>social media is now mostly multimedia (photos and videos) (multimedia content is a must now)</li>
+<li>technology rules – 7 out of 10 most valuable companies in the world are tech companies (other 3 are Berkshire Hathaway, Visa and Johnson &amp; Johnson)</li>
+<li>move from computer to mobile devices – 3.8 billion on internet and most now use mobile devices – mobile first for e-commerce presence</li>
+<li>digital ad is gaining importance – also use freemium to attract customer, then keep them using appropriate engagement</li>
+</ul>
+<p><strong>Top 10 takeaway from the SCMP China internet report 2020</strong></p>
+<ul>
+<li>people are spending more time online during the pandemic</li>
+<li>office apps boom as millions work from home</li>
+<li>more people are seeing doctors online&hellip;</li>
+<li>&hellip; and going to school online</li>
+<li>China is trying to reduce its dependency on US components</li>
+<li>2020 is the year of 5G</li>
+<li>shopping is giving a boost to live streaming</li>
+<li>there are plenty of online video platforms, but few paying users</li>
+<li>China is making huge strides in self-driving cars</li>
+<li>China smartphones gain global market share</li>
+</ul>
+<h2 id="additional-reading">Additional Reading</h2>
+<ul>
+<li>Top 10 Strategic Technology Trends 2020 (Gartner) -&gt; <a href="../articles/top-tech-trends-2020-ebook.pdf">details</a></li>
+<li>5 Key Trends in E-Commerce in 2019 According to Mary Meeker -&gt; <a href="https://www.inc.com/don-reisinger/5-major-takeaways-from-2019-mary-meeker-internet-trends-report.html">details</a></li>
+<li>Internet Trends 2019 by Mary Meeker -&gt; <a href="../articles/Internet_Trends_2019.pdf">details</a></li>
+<li>The Top 10 Takeaways From the China Internet Report 2020 (SCMP) -&gt; <a href="../articles/The%20top%2010%20takeaways%20from%20the%20China%20Internet%20Report%202020%20(SCMP).pdf">details</a></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>ECOM6013 Emerging and Disruptive Technologies, IoT and AI</title>
