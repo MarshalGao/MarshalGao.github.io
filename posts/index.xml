@@ -1771,7 +1771,7 @@ These trends have a profound impact on the people and the spaces they inhabit, r
 <li>provide specific business functionality required for a website</li>
 <li>type of middleware
 <ul>
-<li>isolate business applications from Web servers and databases</li>
+<li>isolate business applications from web servers and databases</li>
 </ul>
 </li>
 <li>single-function applications being replaced by integrated software tools that combine all functionality needed for e-commerce site</li>
@@ -1819,7 +1819,7 @@ These trends have a profound impact on the people and the spaces they inhabit, r
 <li>open-source solutions</li>
 </ul>
 </li>
-<li>did-range
+<li>mid-range
 <ul>
 <li>IBM Web Sphere Commerce Express</li>
 <li>Sitecore Experience Commerce</li>
@@ -1877,7 +1877,7 @@ These trends have a profound impact on the people and the spaces they inhabit, r
 <ul>
 <li>number of simultaneous users in peak periods</li>
 <li>nature of customer requests (user profile)</li>
-<li>type of content (dynamic versus static Web pages)</li>
+<li>type of content (dynamic versus static web pages)</li>
 <li>required security</li>
 <li>number of items in inventory</li>
 <li>number of page requests</li>
@@ -2146,7 +2146,7 @@ These trends have a profound impact on the people and the spaces they inhabit, r
 </li>
 </ul>
 </li>
-<li>ISO, a reference model, has 7 layers</li>
+<li>OSI, a reference model, has 7 layers</li>
 <li>internet addresses (IP)
 <ul>
 <li>IPv4
@@ -2381,7 +2381,7 @@ These trends have a profound impact on the people and the spaces they inhabit, r
 <ul>
 <li>mobile internet access
 <ul>
-<li>two basic types of wireless intetnet access
+<li>two basic types of wireless internet access
 <ul>
 <li>telephone-based
 <ul>
