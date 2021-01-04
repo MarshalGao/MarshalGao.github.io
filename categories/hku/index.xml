@@ -94,6 +94,19 @@ These trends have a profound impact on the people and the spaces they inhabit, r
     </item>
     
     <item>
+      <title>ECOM7121 Autonomous Cars and Smart Mobility</title>
+      <link>https://www.marshalgao.com/ecom7121-autonomous-cars-and-smart-mobility/</link>
+      <pubDate>Tue, 08 Dec 2020 16:46:07 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom7121-autonomous-cars-and-smart-mobility/</guid>
+      <description>Technologies and Waymo Overview
+ Waymo was the first robo-taxi in US a quick history of autonomous vehicles  history of driverless or automated cars the DARPA grand challenge levels of automation achieved    Driverless car technologies
+ radar cameras lidar light detection and ranging onboard computers  Impact of driverless vehicles
+ benefits risks disruption  Who does Waymo compete with
+ GM Cruise — originally from Ycombinator as a retrofit rooftop unit Audi — the Audi A8 had the highest degree of autonomy in a production vehicle Tesla — no LiDar, frontrunner until March 2018 accident killing a pedestrian in Tempe, AZ Baidu Didi  Self-Driving Cars and the Smart City Examples of self-driving</description>
+    </item>
+    
+    <item>
       <title>ICOM6045 Mobile Code Security</title>
       <link>https://www.marshalgao.com/icom6045-mobile-code-security/</link>
       <pubDate>Sat, 05 Dec 2020 22:23:35 +0800</pubDate>
@@ -102,15 +115,6 @@ These trends have a profound impact on the people and the spaces they inhabit, r
       <description>Mobile Code Security Mobile code
  dynamically downloadable executable content is referred to as mobile code includes platform-independent executable content which is transferred over a communication network, crossing different security perimeters, and is automatically executed upon arrival at the destination host examples are Java applets, ActiveX controls, JavaScript, Safe-Tcl, servlet “browser helper applications” and plug-ins  download from store download on demand    Mechanisms
  code signing least privileges code monitoring: resources usage monitoring mobile code runtime environment  memory model partition the memory into safe and unsafe regions safety check ensure every memory access refers to a safe memory location, e.</description>
-    </item>
-    
-    <item>
-      <title>ICOM6045 Web Security - More Examples</title>
-      <link>https://www.marshalgao.com/icom6045-web-security-more-examples/</link>
-      <pubDate>Sat, 05 Dec 2020 19:58:49 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/icom6045-web-security-more-examples/</guid>
-      <description>Man-In-The-Browser Attack  schematic diagram  medium  the trojan works by utilizing prevalent tools/plugins to enhance browser capabilities  Browser Helper Objects (BHO) extensions user scripts   spam email virus downloaded from malicious website free software downloaded from malicious website or forum   hard to detect by virus scanning software example - attack bank account to stole money  infect your browser waiting for you to login to your Internet banking account redirect you to the “hacker’s” server capture your username/password and the one-time password (to login) pretend the one-time password is not correct and ask you to input the second one-time password (transfer money) crash the victim&amp;rsquo;s browser in order to have more time use 2 one-time passwords to transfer money to another account in another country    Cross Site Forgery Request (CSFR)  threats from server to client general key idea  after client authenticated to a server, the authentication info is stored in client (usually as cookie) (e.</description>
     </item>
     
   </channel>

@@ -7,15 +7,57 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 10 Nov 2020 00:24:12 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/dynamic-digital-capabilities/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Dec 2020 16:46:07 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/dynamic-digital-capabilities/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM7121 Autonomous Cars and Smart Mobility</title>
+      <link>https://www.marshalgao.com/ecom7121-autonomous-cars-and-smart-mobility/</link>
+      <pubDate>Tue, 08 Dec 2020 16:46:07 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom7121-autonomous-cars-and-smart-mobility/</guid>
+      <description>Technologies and Waymo Overview
+ Waymo was the first robo-taxi in US a quick history of autonomous vehicles  history of driverless or automated cars the DARPA grand challenge levels of automation achieved    Driverless car technologies
+ radar cameras lidar light detection and ranging onboard computers  Impact of driverless vehicles
+ benefits risks disruption  Who does Waymo compete with
+ GM Cruise — originally from Ycombinator as a retrofit rooftop unit Audi — the Audi A8 had the highest degree of autonomy in a production vehicle Tesla — no LiDar, frontrunner until March 2018 accident killing a pedestrian in Tempe, AZ Baidu Didi  Self-Driving Cars and the Smart City Examples of self-driving</description>
+    </item>
+    
+    <item>
+      <title>ECOM7121 Mobile Smart Cities, IoT, Big Data Systems</title>
+      <link>https://www.marshalgao.com/ecom7121-mobile-smart-cities-iot-big-data-systems/</link>
+      <pubDate>Tue, 01 Dec 2020 14:58:01 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom7121-mobile-smart-cities-iot-big-data-systems/</guid>
+      <description>Smart Cities 7 Dimensions Scenario Planning Smart city
+ definition  a crowd-sourced innovation concept that came out of IBM’s Innovation Jams a city full of smart, innovative, creative knowledge workers in a area similar to Silicon Valley a sustainable “greener” city a densely populated urban environment with ubiquitous and pervasive computing technology infrastructure cities that use advanced IT and mobile technology to solve urban problems cities that use AI Data-driven Smart Cloud SaaS government services and IoT infrastructure   major growth  unprecedented scale of urban problems  traffic pollution overcrowding infrastructure breakdowns emergency and disaster prevention    7 dimensions</description>
+    </item>
+    
+    <item>
+      <title>ECOM7121 AI Smart City Innovation Lab</title>
+      <link>https://www.marshalgao.com/ecom7121-ai-smart-city-innovation-lab/</link>
+      <pubDate>Tue, 24 Nov 2020 14:21:18 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom7121-ai-smart-city-innovation-lab/</guid>
+      <description>Raising Cash for Your Venture  bootstrapping vs external capital debt vs equity equity investors — angels, super-angels, VCs, strategic investors crowdfunding and JOBS act of 2012 three kinds of crowdfunding  non-equity rewards crowdfunding i.e. Kickstarter SEC-registered crowdfunding i.e. AngelList, Wefunding regulation D crowdfunding — 2000 investor limit   accelerators i.e. Ycombinator, StartupsHK  Crowdfunding Platforms  overview  discovery, auction, timing deadlines, peer champions  does it work   Smart City Overview </description>
+    </item>
+    
+    <item>
+      <title>ECOM7121 Digital and Network Economics</title>
+      <link>https://www.marshalgao.com/ecom7121-digital-and-network-economics/</link>
+      <pubDate>Tue, 17 Nov 2020 11:10:59 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom7121-digital-and-network-economics/</guid>
+      <description>Network Effects  function  one way to create competitive &amp;ldquo;moats&amp;rdquo; in the digital world   categories  direct network effects -&amp;gt; more searchers, better search indirect network effects -&amp;gt; more apps, more smartphone buyers cross-network effects -&amp;gt; more searchers, more advertisers (e.g., keywords monetize the &amp;ldquo;long tail&amp;rdquo; of advertising) social network effects -&amp;gt; social influence &amp;amp; local effects demand-side network effects -&amp;gt; exclusivity, dynamic pricing, limited access, keyword auctions   example  power laws  n is the number of network links tips: remember to multiply each link&amp;rsquo;s worth    PlentyofFish  business model analysis  itself  free online dating site runs website and writes the love doctor quiz   adsense  Google Adsense Publisher Blogging for money volunteers contribute to community advertisers pay for access to community for related products   ad-based revenue  PPC and keyword pricing 70% to publisher and 30% to Google money/week or money/year, low fixed costs     canvas  social media monetization  RPU - average revenue per user CAC - cost to acquire a customer LTV - lifetime value of user    what can drive the balance  summary  PlentyofFish and “free online dating” changes the customer relationship to a “community platform”— with users contributing time and self-policing PlentyofFish makes money on a free dating service through Google’s Adsense program PlentyofFish is very profitable, and Google Adsense pays Marcus Fried $1M a month &amp;amp; costs are very low we can calculate RPU—revenue per user—on a free or freemium service by taking $1M divided by monthly active users in the community Lui Mama, the livestreaming Chinese pig farmer is also very profitable, but is “gift” not ad-supported    Updating Dating  some examples - profile, matching, monetization  Coffee meets Bagel - Facebook, bagels/beans OKCupid - questionnaire, suggestions Jiayuan – user data, proof of employment Dating Ring - human &amp;amp; algorithmic matches Hurry Date - 4 minute exchanges   monetization strategies  user engagement vs high quality/seriousness pros and cons of  subscription pay per message     summary  major shift in past 20 years to online dating younger adults have newer experience and expectations of mobile dating Tinder gamified the industry by fun “swiping” online dating is big in China dating apps address key “market failure” issues and monetization differently    Additional Reading  Secret of Googlenomics: Data-Fueled Recipe Brews Profitability -&amp;gt; details HBR Case: PlentyofFish -&amp;gt; details HBR Case: Updating Dating -&amp;gt; details  </description>
+    </item>
+    
     <item>
       <title>ECOM7121 The Social Graph</title>
       <link>https://www.marshalgao.com/ecom7121-the-social-graph/</link>
       <pubDate>Tue, 10 Nov 2020 00:24:12 +0800</pubDate>
       
       <guid>https://www.marshalgao.com/ecom7121-the-social-graph/</guid>
-      <description>Facebook Paul Revenue and the Tipping Point
- Paul Revere&amp;rsquo;s famous midnight ride to rally support against the British in Concord, MA The British are coming&amp;hellip;word spread like wildfire, the colonists were mobilized Start of the American Revolution Why is Paul Revere remembered and not William Dawes?,  </description>
+      <description>Facebook Social network analysis
+ explaining video     should consider individuals also consider the connection among individuals  Activation of social groups compared to phone P2P pairs
+ Reed&#39;s law: the green line  the value of large networks, particularly social networks, grows exponentially with the size of the network (\(2^n\)) reason  the number of possible sub-groups of network participants grows much more rapidly than either the number of participants &#39;N&#39; (Sarnoff&#39;s law), or the number of possible pair connections (Metcalfe&#39;s law) (N squared)     Business model</description>
     </item>
     
     <item>
