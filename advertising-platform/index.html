@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Marshal ">
+<meta name="description" content="在线广告市场结构
+ 广告主：金主爸爸，有广告联盟和广告主两种形式 广告平台：提供流量分发的能力，与此同时也提供广告创意，广告素材服务，如百度推广、腾讯广告等 媒体：流量提供方，互联网公司是现在世界上最大的媒体 消费者：C端用户，广告和流量的使用者 关系图   广告系统模块规划
+ 广告投放系统：广告投放系统承担了广告内容管理和广告流量分发的功能，承前启后，是广告系统的核心部分 商户后台系统：用于广告主和广告联盟商自主接入的管理平台，主要包含广告需求承接和广告效果数据、广告费用的展示 运营后台系统：广告平台方的运营后台，主要用于广告审核、广告主管理和其他管理功能 广告素材设计系统：用于制作广告创意，根据广告位的要求支持不同尺寸、不同投放环境的创意设计 数据统计系统：用于广告效果数据收集和分析 关系图   广告需求模型设计
+ 站在广告主的立场，至少分为广告主-投放计划-广告素材（创意）  广告主：广告的需求方，是广告效果和广告计费统一的收口方，广告主名下的广告投放计划所产生的成本均计入广告主的整体费用 投放计划：广告主名下往往由很多广告需求，我们将每个定制的广告需求称为投放计划 广告素材（创意）：广告投放最小颗粒是广告素材（创意），每一个投放计划都可能包含多个广告素材的投放。广告计费的也是根据广告素材的曝光、点击、展示时长等计费方式的数值进行计算的。常用的广告创意有横幅广告（banner），文字链广告，视频广告，嵌入式社交广告、sdk嵌入式移动广告等   广告主同时需要对广告的投放目标、投放时间、投放的定向和预算等进行配置 关系图   广告投放模型的建立
+ 结合广告主的需求，将素材进行精准投放 结合计费模式 关系图   设计有效的广告投放流程——以CPM竞价为例
+ 请求广告：一般采用广告组件或者sdk等方式嵌入在广告位中，广告组件可以根据广告位的用户属性等信息向广告投放系统请求广告资源 匹配广告位：按照广告位的不同， 广告系统需要选择符合当前广告位投放目标的广告需求池 匹配投放计划：将广告位的用户属性等信息与大数据标签系统进行匹配，获取对应的用户画像标签，根据标签来和广告投放计划的定向需求进行匹配，并通过竞价选取对应的投放计划 匹配广告创意：由于符合条件每个投放计划可能有多个广告素材，因此需要根据实时的广告效果来对广告素材进行评估，并选择转化率更高的广告素材进行投放 广告数据统计：在达成统计要求后，统计广告效果数据，如曝光量、点击量等 投放流程图   " />
+<meta name="keywords" content=", advertising product manager, daily learning, advertising platform" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://www.marshalgao.com/advertising-platform/" />
+
+
+    <title>
+        
+            Advertising Platform :: This Is Marshal 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://www.marshalgao.com/main.bdf16375e88c9de5121e200285a015c4d181bcc9641cf97e05c5e46866f50161.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.marshalgao.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.marshalgao.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.marshalgao.com/favicon-16x16.png">
+    <link rel="manifest" href="https://www.marshalgao.com/site.webmanifest">
+    <link rel="mask-icon" href="https://www.marshalgao.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://www.marshalgao.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="Advertising Platform">
+<meta itemprop="description" content="在线广告市场结构
+ 广告主：金主爸爸，有广告联盟和广告主两种形式 广告平台：提供流量分发的能力，与此同时也提供广告创意，广告素材服务，如百度推广、腾讯广告等 媒体：流量提供方，互联网公司是现在世界上最大的媒体 消费者：C端用户，广告和流量的使用者 关系图   广告系统模块规划
+ 广告投放系统：广告投放系统承担了广告内容管理和广告流量分发的功能，承前启后，是广告系统的核心部分 商户后台系统：用于广告主和广告联盟商自主接入的管理平台，主要包含广告需求承接和广告效果数据、广告费用的展示 运营后台系统：广告平台方的运营后台，主要用于广告审核、广告主管理和其他管理功能 广告素材设计系统：用于制作广告创意，根据广告位的要求支持不同尺寸、不同投放环境的创意设计 数据统计系统：用于广告效果数据收集和分析 关系图   广告需求模型设计
+ 站在广告主的立场，至少分为广告主-投放计划-广告素材（创意）  广告主：广告的需求方，是广告效果和广告计费统一的收口方，广告主名下的广告投放计划所产生的成本均计入广告主的整体费用 投放计划：广告主名下往往由很多广告需求，我们将每个定制的广告需求称为投放计划 广告素材（创意）：广告投放最小颗粒是广告素材（创意），每一个投放计划都可能包含多个广告素材的投放。广告计费的也是根据广告素材的曝光、点击、展示时长等计费方式的数值进行计算的。常用的广告创意有横幅广告（banner），文字链广告，视频广告，嵌入式社交广告、sdk嵌入式移动广告等   广告主同时需要对广告的投放目标、投放时间、投放的定向和预算等进行配置 关系图   广告投放模型的建立
+ 结合广告主的需求，将素材进行精准投放 结合计费模式 关系图   设计有效的广告投放流程——以CPM竞价为例
+ 请求广告：一般采用广告组件或者sdk等方式嵌入在广告位中，广告组件可以根据广告位的用户属性等信息向广告投放系统请求广告资源 匹配广告位：按照广告位的不同， 广告系统需要选择符合当前广告位投放目标的广告需求池 匹配投放计划：将广告位的用户属性等信息与大数据标签系统进行匹配，获取对应的用户画像标签，根据标签来和广告投放计划的定向需求进行匹配，并通过竞价选取对应的投放计划 匹配广告创意：由于符合条件每个投放计划可能有多个广告素材，因此需要根据实时的广告效果来对广告素材进行评估，并选择转化率更高的广告素材进行投放 广告数据统计：在达成统计要求后，统计广告效果数据，如曝光量、点击量等 投放流程图   ">
+<meta itemprop="datePublished" content="2021-01-04T20:11:52+08:00" />
+<meta itemprop="dateModified" content="2021-01-04T20:11:52+08:00" />
+<meta itemprop="wordCount" content="32">
+<meta itemprop="image" content="https://www.marshalgao.com/"/>
+
+
+
+<meta itemprop="keywords" content="advertising product manager,daily learning,advertising platform," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.marshalgao.com/"/>
+
+<meta name="twitter:title" content="Advertising Platform"/>
+<meta name="twitter:description" content="在线广告市场结构
+ 广告主：金主爸爸，有广告联盟和广告主两种形式 广告平台：提供流量分发的能力，与此同时也提供广告创意，广告素材服务，如百度推广、腾讯广告等 媒体：流量提供方，互联网公司是现在世界上最大的媒体 消费者：C端用户，广告和流量的使用者 关系图   广告系统模块规划
+ 广告投放系统：广告投放系统承担了广告内容管理和广告流量分发的功能，承前启后，是广告系统的核心部分 商户后台系统：用于广告主和广告联盟商自主接入的管理平台，主要包含广告需求承接和广告效果数据、广告费用的展示 运营后台系统：广告平台方的运营后台，主要用于广告审核、广告主管理和其他管理功能 广告素材设计系统：用于制作广告创意，根据广告位的要求支持不同尺寸、不同投放环境的创意设计 数据统计系统：用于广告效果数据收集和分析 关系图   广告需求模型设计
+ 站在广告主的立场，至少分为广告主-投放计划-广告素材（创意）  广告主：广告的需求方，是广告效果和广告计费统一的收口方，广告主名下的广告投放计划所产生的成本均计入广告主的整体费用 投放计划：广告主名下往往由很多广告需求，我们将每个定制的广告需求称为投放计划 广告素材（创意）：广告投放最小颗粒是广告素材（创意），每一个投放计划都可能包含多个广告素材的投放。广告计费的也是根据广告素材的曝光、点击、展示时长等计费方式的数值进行计算的。常用的广告创意有横幅广告（banner），文字链广告，视频广告，嵌入式社交广告、sdk嵌入式移动广告等   广告主同时需要对广告的投放目标、投放时间、投放的定向和预算等进行配置 关系图   广告投放模型的建立
+ 结合广告主的需求，将素材进行精准投放 结合计费模式 关系图   设计有效的广告投放流程——以CPM竞价为例
+ 请求广告：一般采用广告组件或者sdk等方式嵌入在广告位中，广告组件可以根据广告位的用户属性等信息向广告投放系统请求广告资源 匹配广告位：按照广告位的不同， 广告系统需要选择符合当前广告位投放目标的广告需求池 匹配投放计划：将广告位的用户属性等信息与大数据标签系统进行匹配，获取对应的用户画像标签，根据标签来和广告投放计划的定向需求进行匹配，并通过竞价选取对应的投放计划 匹配广告创意：由于符合条件每个投放计划可能有多个广告素材，因此需要根据实时的广告效果来对广告素材进行评估，并选择转化率更高的广告素材进行投放 广告数据统计：在达成统计要求后，统计广告效果数据，如曝光量、点击量等 投放流程图   "/>
+
+
+
+    <meta property="og:title" content="Advertising Platform" />
+<meta property="og:description" content="在线广告市场结构
+ 广告主：金主爸爸，有广告联盟和广告主两种形式 广告平台：提供流量分发的能力，与此同时也提供广告创意，广告素材服务，如百度推广、腾讯广告等 媒体：流量提供方，互联网公司是现在世界上最大的媒体 消费者：C端用户，广告和流量的使用者 关系图   广告系统模块规划
+ 广告投放系统：广告投放系统承担了广告内容管理和广告流量分发的功能，承前启后，是广告系统的核心部分 商户后台系统：用于广告主和广告联盟商自主接入的管理平台，主要包含广告需求承接和广告效果数据、广告费用的展示 运营后台系统：广告平台方的运营后台，主要用于广告审核、广告主管理和其他管理功能 广告素材设计系统：用于制作广告创意，根据广告位的要求支持不同尺寸、不同投放环境的创意设计 数据统计系统：用于广告效果数据收集和分析 关系图   广告需求模型设计
+ 站在广告主的立场，至少分为广告主-投放计划-广告素材（创意）  广告主：广告的需求方，是广告效果和广告计费统一的收口方，广告主名下的广告投放计划所产生的成本均计入广告主的整体费用 投放计划：广告主名下往往由很多广告需求，我们将每个定制的广告需求称为投放计划 广告素材（创意）：广告投放最小颗粒是广告素材（创意），每一个投放计划都可能包含多个广告素材的投放。广告计费的也是根据广告素材的曝光、点击、展示时长等计费方式的数值进行计算的。常用的广告创意有横幅广告（banner），文字链广告，视频广告，嵌入式社交广告、sdk嵌入式移动广告等   广告主同时需要对广告的投放目标、投放时间、投放的定向和预算等进行配置 关系图   广告投放模型的建立
+ 结合广告主的需求，将素材进行精准投放 结合计费模式 关系图   设计有效的广告投放流程——以CPM竞价为例
+ 请求广告：一般采用广告组件或者sdk等方式嵌入在广告位中，广告组件可以根据广告位的用户属性等信息向广告投放系统请求广告资源 匹配广告位：按照广告位的不同， 广告系统需要选择符合当前广告位投放目标的广告需求池 匹配投放计划：将广告位的用户属性等信息与大数据标签系统进行匹配，获取对应的用户画像标签，根据标签来和广告投放计划的定向需求进行匹配，并通过竞价选取对应的投放计划 匹配广告创意：由于符合条件每个投放计划可能有多个广告素材，因此需要根据实时的广告效果来对广告素材进行评估，并选择转化率更高的广告素材进行投放 广告数据统计：在达成统计要求后，统计广告效果数据，如曝光量、点击量等 投放流程图   " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.marshalgao.com/advertising-platform/" />
+<meta property="og:image" content="https://www.marshalgao.com/"/>
+<meta property="article:published_time" content="2021-01-04T20:11:52+08:00" />
+<meta property="article:modified_time" content="2021-01-04T20:11:52+08:00" />
+
+
+
+
+    <meta property="article:section" content="Product Manager" />
+
+
+
+    <meta property="article:published_time" content="2021-01-04 20:11:52 &#43;0800 HKT" />
+
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://www.marshalgao.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://www.marshalgao.com/categories/hku">HKU</a></li><li><a href="https://www.marshalgao.com/categories/technology">TECH</a></li><li><a href="https://www.marshalgao.com/categories/product-manager">PM</a></li><li><a href="https://www.marshalgao.com/categories/life">LIFE</a></li><li><a href="https://www.marshalgao.com/about/">ABOUT</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        One minute
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://www.marshalgao.com/advertising-platform/">Advertising Platform</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <p><strong>在线广告市场结构</strong></p>
+<ul>
+<li>广告主：金主爸爸，有广告联盟和广告主两种形式</li>
+<li>广告平台：提供流量分发的能力，与此同时也提供广告创意，广告素材服务，如百度推广、腾讯广告等</li>
+<li>媒体：流量提供方，互联网公司是现在世界上最大的媒体</li>
+<li>消费者：C端用户，广告和流量的使用者</li>
+<li>关系图
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-7e2130dca12e44f1acba27c3beeea732_1440w.jpg" alt=""></li>
+</ul>
+<p><strong>广告系统模块规划</strong></p>
+<ul>
+<li>广告投放系统：广告投放系统承担了广告内容管理和广告流量分发的功能，承前启后，是广告系统的核心部分</li>
+<li>商户后台系统：用于广告主和广告联盟商自主接入的管理平台，主要包含广告需求承接和广告效果数据、广告费用的展示</li>
+<li>运营后台系统：广告平台方的运营后台，主要用于广告审核、广告主管理和其他管理功能</li>
+<li>广告素材设计系统：用于制作广告创意，根据广告位的要求支持不同尺寸、不同投放环境的创意设计</li>
+<li>数据统计系统：用于广告效果数据收集和分析</li>
+<li>关系图
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-ffa3f7e77a1be9ee683afcc08cda4391_r.jpg" alt=""></li>
+</ul>
+<p><strong>广告需求模型设计</strong></p>
+<ul>
+<li>站在广告主的立场，至少分为<strong>广告主-投放计划-广告素材（创意）</strong>
+<ul>
+<li>广告主：广告的需求方，是广告效果和广告计费统一的收口方，广告主名下的广告投放计划所产生的成本均计入广告主的整体费用</li>
+<li>投放计划：广告主名下往往由很多广告需求，我们将每个定制的广告需求称为投放计划</li>
+<li>广告素材（创意）：广告投放最小颗粒是广告素材（创意），每一个投放计划都可能包含多个广告素材的投放。广告计费的也是根据广告素材的曝光、点击、展示时长等计费方式的数值进行计算的。常用的广告创意有横幅广告（banner），文字链广告，视频广告，嵌入式社交广告、sdk嵌入式移动广告等</li>
+</ul>
+</li>
+<li>广告主同时需要对广告的投放目标、投放时间、投放的定向和预算等进行配置</li>
+<li>关系图
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-804cb20a4ba428f69c540084465c4742_1440w.jpg" alt=""></li>
+</ul>
+<p><strong>广告投放模型的建立</strong></p>
+<ul>
+<li>结合广告主的需求，将素材进行精准投放</li>
+<li>结合计费模式</li>
+<li>关系图
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-f70eba6ec50d711bc0649518aa209f5c_1440w.jpg" alt=""></li>
+</ul>
+<p><strong>设计有效的广告投放流程——以CPM竞价为例</strong></p>
+<ul>
+<li>请求广告：一般采用广告组件或者sdk等方式嵌入在广告位中，广告组件可以根据广告位的用户属性等信息向广告投放系统请求广告资源</li>
+<li>匹配广告位：按照广告位的不同， 广告系统需要选择符合当前广告位投放目标的广告需求池</li>
+<li>匹配投放计划：将广告位的用户属性等信息与大数据标签系统进行匹配，获取对应的用户画像标签，根据标签来和广告投放计划的定向需求进行匹配，并通过竞价选取对应的投放计划</li>
+<li>匹配广告创意：由于符合条件每个投放计划可能有多个广告素材，因此需要根据实时的广告效果来对广告素材进行评估，并选择转化率更高的广告素材进行投放</li>
+<li>广告数据统计：在达成统计要求后，统计广告效果数据，如曝光量、点击量等</li>
+<li>投放流程图
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-2b96f508f1bd08bc313c53693cd2409c_1440w.jpg" alt=""></li>
+</ul>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/tags/advertising-product-manager/">advertising product manager</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/daily-learning/">daily learning</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/advertising-platform/">advertising platform</a></span>
+        
+    </p>
+
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/categories/product-manager/">Product Manager</a></span>
+        
+    </p>
+
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        32 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2021-01-04 20:11
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+
+          
+            <span class="button next">
+              <a href="https://www.marshalgao.com/ignore-the-past-and-embrace-the-future/">
+                <span class="button__text">Ignore the Past and Embrace the Future</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020-2021</span>
+            
+                <span><a href="https://www.marshalgao.com/">Marshal</a></span>
+            
+            
+                <span><a href="https://www.hku.hk" target="_blank" rel="noopener">The University of Hong Kong</a></span>
+            <span><a href="https://www.marshalgao.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Team Rocket: <a href="https://www.pseudoyu.com/" target="_blank" rel="noopener">Pseudoyu</a></span>
+            <span><a href="https://www.m1sty.com/" target="_blank" rel="noopener">Misty</a></span>
+          </div>
+    </div>
+</footer>
+
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://www.marshalgao.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>
