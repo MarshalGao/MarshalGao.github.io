@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 02 Dec 2020 14:40:52 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/programmatic-advertising/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Jan 2021 12:02:50 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/programmatic-advertising/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Programmatic Advertising</title>
+      <link>https://www.marshalgao.com/programmatic-advertising/</link>
+      <pubDate>Tue, 05 Jan 2021 12:02:50 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/programmatic-advertising/</guid>
+      <description>定义
+程序化广告是指广告主通过数字平台从受众的匹配的角度由程序自动化完成展示类广告的采买和投放，并实时反馈投放分析的一种广告投放方式，实现了整个数字广告的自动化。
+四大特点
+ 数字平台  程序化广告是通过数字平台（DSP和ADX）进行投放 -&amp;gt; 最基本的特点 通过媒体方的广告投放平台进行投放，不算程序化广告，因为不经过DSP  例如，微信朋友圈广告（只有展示和不展示，并不涉及投放的选择）   场景类比  买菜的人（DSP）在菜市场（ADX）寻找摆摊的菜贩子（SSP）     受众角度  通过与用户画像（标签）进行匹配，做到广告的“千人千面“，实现精准营销 传统广告  购买广告位，并在一段展示时间内付费 目标流量的不明确，过于宽泛   程序化广告  购买受众流量 目标流量明确且精准 问题与挑战  品牌安全问题  品牌广告不应出现在暴力、色情等网站 例如，YouTube恐怖分子宣传视频出现某公司的广告       传统广告 vs 程序化广告    程序自动化  根据媒体主（SSP）竞价请求提供的信息，依据广告策略和算法自动完成对每次展示的竞价决策（是否出价、出价多少） 返回为毫秒级别，速度快 不需人为干涉，十分高效 有些已经实现自动优化功能，例如动态创意优化   展示类广告  程序化广告只在展示类广告存在 在线广告可以分为两种  搜索类广告 展示类广告  banner 信息流 背投 视频贴片        品牌方如何投放程序化广告</description>
+    </item>
+    
     <item>
       <title>Recommendation Algorithm and Placement Optimization Strategy</title>
       <link>https://www.marshalgao.com/recommendation-algorithm-and-placement-optimization-strategy/</link>

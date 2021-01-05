@@ -6,8 +6,146 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Mon, 04 Jan 2021 20:11:52 +0800</lastBuildDate>
+        <lastBuildDate>Tue, 05 Jan 2021 12:02:50 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Programmatic Advertising</title>
+            <link>https://www.marshalgao.com/programmatic-advertising/</link>
+            <pubDate>Tue, 05 Jan 2021 12:02:50 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/programmatic-advertising/</guid>
+            <description>定义
+程序化广告是指广告主通过数字平台从受众的匹配的角度由程序自动化完成展示类广告的采买和投放，并实时反馈投放分析的一种广告投放方式，实现了整个数字广告的自动化。
+四大特点
+ 数字平台  程序化广告是通过数字平台（DSP和ADX）进行投放 -&amp;gt; 最基本的特点 通过媒体方的广告投放平台进行投放，不算程序化广告，因为不经过DSP  例如，微信朋友圈广告（只有展示和不展示，并不涉及投放的选择）   场景类比  买菜的人（DSP）在菜市场（ADX）寻找摆摊的菜贩子（SSP）     受众角度  通过与用户画像（标签）进行匹配，做到广告的“千人千面“，实现精准营销 传统广告  购买广告位，并在一段展示时间内付费 目标流量的不明确，过于宽泛   程序化广告  购买受众流量 目标流量明确且精准 问题与挑战  品牌安全问题  品牌广告不应出现在暴力、色情等网站 例如，YouTube恐怖分子宣传视频出现某公司的广告       传统广告 vs 程序化广告    程序自动化  根据媒体主（SSP）竞价请求提供的信息，依据广告策略和算法自动完成对每次展示的竞价决策（是否出价、出价多少） 返回为毫秒级别，速度快 不需人为干涉，十分高效 有些已经实现自动优化功能，例如动态创意优化   展示类广告  程序化广告只在展示类广告存在 在线广告可以分为两种  搜索类广告 展示类广告  banner 信息流 背投 视频贴片        品牌方如何投放程序化广告</description>
+            <content type="html"><![CDATA[<p><strong>定义</strong></p>
+<p>程序化广告是指广告主通过数字平台从受众的匹配的角度由程序自动化完成展示类广告的采买和投放，并实时反馈投放分析的一种广告投放方式，实现了整个数字广告的自动化。</p>
+<p><strong>四大特点</strong></p>
+<ul>
+<li>数字平台
+<ul>
+<li>程序化广告是通过数字平台（DSP和ADX）进行投放 -&gt; 最基本的特点</li>
+<li>通过媒体方的广告投放平台进行投放，不算程序化广告，因为不经过DSP
+<ul>
+<li>例如，微信朋友圈广告（只有展示和不展示，并不涉及投放的选择）</li>
+</ul>
+</li>
+<li>场景类比
+<ul>
+<li>买菜的人（DSP）在菜市场（ADX）寻找摆摊的菜贩子（SSP）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>受众角度
+<ul>
+<li>通过与用户画像（标签）进行匹配，做到广告的“千人千面“，实现精准营销</li>
+<li>传统广告
+<ul>
+<li>购买广告位，并在一段展示时间内付费</li>
+<li>目标流量的不明确，过于宽泛</li>
+</ul>
+</li>
+<li>程序化广告
+<ul>
+<li>购买受众流量</li>
+<li>目标流量明确且精准</li>
+<li>问题与挑战
+<ul>
+<li>品牌安全问题
+<ul>
+<li>品牌广告不应出现在暴力、色情等网站</li>
+<li>例如，YouTube恐怖分子宣传视频出现某公司的广告</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>传统广告 vs 程序化广告
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/KuWKc3fYPh1QxX6DTwoB_%E5%89%AF%E6%9C%AC.png" alt=""></li>
+</ul>
+</li>
+<li>程序自动化
+<ul>
+<li>根据媒体主（SSP）竞价请求提供的信息，依据广告策略和算法自动完成对每次展示的竞价决策（是否出价、出价多少）</li>
+<li>返回为毫秒级别，速度快</li>
+<li>不需人为干涉，十分高效</li>
+<li>有些已经实现自动优化功能，例如动态创意优化</li>
+</ul>
+</li>
+<li>展示类广告
+<ul>
+<li>程序化广告只在展示类广告存在</li>
+<li>在线广告可以分为两种
+<ul>
+<li>搜索类广告</li>
+<li>展示类广告
+<ul>
+<li>banner</li>
+<li>信息流</li>
+<li>背投</li>
+<li>视频贴片</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>品牌方如何投放程序化广告</strong></p>
+<ul>
+<li>
+<p>品牌广告考核指标</p>
+<ul>
+<li>广告效果
+<ul>
+<li>衡量用户活跃度和对广告的接受度</li>
+<li>传播效果利用曝光度衡量</li>
+<li>心理效果利用用户的行为效果进行间接评估</li>
+<li>行为效果可以从落地页、网站、APP访问以及用户互动角度进行考核</li>
+</ul>
+</li>
+<li>成本收益
+<ul>
+<li>衡量广告投放整体消耗、各渠道等纬度的性价比</li>
+</ul>
+</li>
+<li>投放保障
+<ul>
+<li>一般是衡量广告投放的真实性和安全性</li>
+<li>用于保障广告效果以及成本收益</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>品牌安全</p>
+</li>
+<li>
+<p>透明程序化</p>
+<ul>
+<li>将成为品牌广告购买的大趋势</li>
+<li>进行程序化广告投放时，应在不同环节采取相应的透明措施</li>
+</ul>
+</li>
+<li>
+<p>第三方技术服务供应商</p>
+<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/6w9GRo52Vok21NCyopB3.jpg" alt=""></p>
+</li>
+<li>
+<p>采用RTB (Real Time Bidding) + PDB (Programmatic Direct Buying) 与传统投放相比的优势</p>
+<ul>
+<li>品牌广告主一般有排期购买优质流量和控制预算的需求</li>
+<li>RTB可以随时挑量，但买的是库存流量，价格、质量以及能买到的展示量级都无法确保</li>
+<li>PDB可以采购优先流量，确保排期，但是有限的订单流量可能无法满足投放的KPI</li>
+<li>两者的结合投放，在保证优势的前提下，还可以互相补充</li>
+</ul>
+</li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>Advertising Platform</title>
@@ -8046,7 +8184,8 @@ Frost &amp;amp; Sullivan近日发布的中国公有云市场的调研报告显�
             
             <guid>https://www.marshalgao.com/intelligent-delivery-of-advertising/</guid>
             <description>智能投放（以腾讯广告为例）
- 步骤  做创意（开车出行前汽车加油） 选人群（出行选择路径） 调出价（根据实际情况，调整路线方向和车速）    DC (Dynamic Creative, 动态创意)  正常情况下，根据不同的元素组合，进行A/B测试，选择一个最优的 而DC模式下，元素组合后全部上线，根据不同人群选择一个模式进行投放    人群的智能选择  自动扩量  已经有一批十分明确的核心用户或老客户，向周边辐射   系统优选  面向比如快销品这一类，用户范围大，不明确的情况     Tencent双出价模式  双目标出价  有些客户，对浅层深层两个目标的成本都很关注 这种情况下，系统努力的方向是让两个目标成本都能达成   两阶段出价  有些客户，在意的是主要是深层转化(比如付费) 可是上来就优化深层目标，数据又太稀疏 于是，可以让系统在初期先优化浅层目标(比如激活)以控制买量成本，在深层目标积累到一定数量以后，再切换优化目标，这就是两阶段出价      必要条件  以完善的数据体系和强大的建模能力为支撑（有这种能力的平台少之又少） 有服务大量效果客户的运营实践    原文链接 * 从腾讯广告看“智能投放”的产品趋势</description>
+ 步骤  做创意（开车出行前汽车加油） 选人群（出行选择路径） 调出价（根据实际情况，调整路线方向和车速）    DC (Dynamic Creative, 动态创意)  正常情况下，根据不同的元素组合，进行A/B测试，选择一个最优的 而DC模式下，元素组合后全部上线，根据不同人群选择一个模式进行投放    人群的智能选择  自动扩量  已经有一批十分明确的核心用户或老客户，向周边辐射   系统优选  面向比如快销品这一类，用户范围大，不明确的情况     Tencent双出价模式  双目标出价  有些客户，对浅层深层两个目标的成本都很关注 这种情况下，系统努力的方向是让两个目标成本都能达成   两阶段出价  有些客户，在意的是主要是深层转化(比如付费) 可是上来就优化深层目标，数据又太稀疏 于是，可以让系统在初期先优化浅层目标(比如激活)以控制买量成本，在深层目标积累到一定数量以后，再切换优化目标，这就是两阶段出价      必要条件  以完善的数据体系和强大的建模能力为支撑（有这种能力的平台少之又少） 有服务大量效果客户的运营实践    原文链接
+ 从腾讯广告看“智能投放”的产品趋势  </description>
             <content type="html"><![CDATA[<p><strong>智能投放（以腾讯广告为例）</strong></p>
 <ul>
 <li>步骤
@@ -8103,8 +8242,10 @@ Frost &amp;amp; Sullivan近日发布的中国公有云市场的调研报告显�
 </ul>
 </li>
 </ul>
-<p><strong>原文链接</strong>
-* <a href="https://mp.weixin.qq.com/s/angSVipEsTlfinL2Wq7lww">从腾讯广告看“智能投放”的产品趋势</a></p>
+<p><strong>原文链接</strong></p>
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/angSVipEsTlfinL2Wq7lww">从腾讯广告看“智能投放”的产品趋势</a></li>
+</ul>
 ]]></content>
         </item>
         
