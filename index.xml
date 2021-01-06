@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 05 Jan 2021 15:49:08 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jan 2021 09:17:43 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM7123 Understanding Smart City</title>
+      <link>https://www.marshalgao.com/ecom7123-understanding-smart-city/</link>
+      <pubDate>Wed, 06 Jan 2021 09:17:43 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom7123-understanding-smart-city/</guid>
+      <description>Overview Difficulties and challenges
+ our world is increasing challenged  urbanization ageing population social conflict inequality loss of nature pollution energy crisis climate change natural disaster resource depletion    Basic understanding
+ definition of smart city  no official definition basically  the use of ICT (Information and Communications Technology) to improve the quality of life and city services, making the city more livable     ultimate goals  enhance quality of life  key indicators  health time and convenience safety cost of living jobs social connectedness and civic participation environmental quality     foster sustainable growth   leverage on technologies for better city management  IoT (data collection) big data (much data) AI (data analysis and prediction) above three technologies are based on GIS (Geographic Information System)    Building a Smart City Countries developing smart city initiatives with their own goals</description>
+    </item>
+    
     <item>
       <title>Integration and Link</title>
       <link>https://www.marshalgao.com/integration-and-link/</link>
@@ -112,17 +123,6 @@ These trends have a profound impact on the people and the spaces they inhabit, r
       <guid>https://www.marshalgao.com/ecom6013-blockchain-and-cybercurrency/</guid>
       <description>Overview Traditional types of money
  token money  represented by a physical object (token) such as a banknote, coin, traveler’s check, etc without that token the value is lost no intermediary is required for spending but requires faith in the issuer, usually a government or a bank   notational money  represented by a notation/entry in a ledger, passbook, or database (e.g., a bank account) notational money cannot be lost (in theory) requires an intermediary (bank or clearing house) for spending requires faith in the maintainer of the ledger   hybrid money  requires both a token and a ledger account (e.</description>
-    </item>
-    
-    <item>
-      <title>ECOM6013 E-Commerce Payment Systems</title>
-      <link>https://www.marshalgao.com/ecom6013-e-commerce-payment-systems/</link>
-      <pubDate>Fri, 11 Dec 2020 21:58:22 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/ecom6013-e-commerce-payment-systems/</guid>
-      <description>Overview Security, trust, and e-commerce
- e-commerce (by definition) means transfer of value which can be  resources information payments entertainment   all of these types of value are desirable and therefore subject to theft perhaps, none more than payments (which drives commerce) it is all about money  Payment system stakeholders&#39; priorities
- consumers  low-risk, low-cost, refutable, convenience, reliability   merchants  low-risk, low-cost, irrefutable, secure, reliable   financial intermediaries  secure, low-risk, maximizing profit   government regulators  security, trust, protecting participants and enforcing reporting    Types of payment system</description>
     </item>
     
   </channel>

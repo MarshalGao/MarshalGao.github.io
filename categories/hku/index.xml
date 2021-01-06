@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 12 Dec 2020 21:44:03 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/hku/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jan 2021 09:17:43 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/hku/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM7123 Understanding Smart City</title>
+      <link>https://www.marshalgao.com/ecom7123-understanding-smart-city/</link>
+      <pubDate>Wed, 06 Jan 2021 09:17:43 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom7123-understanding-smart-city/</guid>
+      <description>Overview Difficulties and challenges
+ our world is increasing challenged  urbanization ageing population social conflict inequality loss of nature pollution energy crisis climate change natural disaster resource depletion    Basic understanding
+ definition of smart city  no official definition basically  the use of ICT (Information and Communications Technology) to improve the quality of life and city services, making the city more livable     ultimate goals  enhance quality of life  key indicators  health time and convenience safety cost of living jobs social connectedness and civic participation environmental quality     foster sustainable growth   leverage on technologies for better city management  IoT (data collection) big data (much data) AI (data analysis and prediction) above three technologies are based on GIS (Geographic Information System)    Building a Smart City Countries developing smart city initiatives with their own goals</description>
+    </item>
+    
     <item>
       <title>ECOM6013 Technologies and E-Commerce Trends</title>
       <link>https://www.marshalgao.com/ecom6013-technologies-and-e-commerce-trends/</link>
@@ -104,17 +115,6 @@ These trends have a profound impact on the people and the spaces they inhabit, r
  radar cameras lidar light detection and ranging onboard computers  Impact of driverless vehicles
  benefits risks disruption  Who does Waymo compete with
  GM Cruise — originally from Ycombinator as a retrofit rooftop unit Audi — the Audi A8 had the highest degree of autonomy in a production vehicle Tesla — no LiDar, frontrunner until March 2018 accident killing a pedestrian in Tempe, AZ Baidu Didi  Self-Driving Cars and the Smart City Examples of self-driving</description>
-    </item>
-    
-    <item>
-      <title>ICOM6045 Mobile Code Security</title>
-      <link>https://www.marshalgao.com/icom6045-mobile-code-security/</link>
-      <pubDate>Sat, 05 Dec 2020 22:23:35 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/icom6045-mobile-code-security/</guid>
-      <description>Mobile Code Security Mobile code
- dynamically downloadable executable content is referred to as mobile code includes platform-independent executable content which is transferred over a communication network, crossing different security perimeters, and is automatically executed upon arrival at the destination host examples are Java applets, ActiveX controls, JavaScript, Safe-Tcl, servlet “browser helper applications” and plug-ins  download from store download on demand    Mechanisms
- code signing least privileges code monitoring: resources usage monitoring mobile code runtime environment  memory model partition the memory into safe and unsafe regions safety check ensure every memory access refers to a safe memory location, e.</description>
     </item>
     
   </channel>
