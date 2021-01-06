@@ -6,15 +6,156 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Wed, 06 Jan 2021 09:17:43 +0800</lastBuildDate>
+        <lastBuildDate>Wed, 06 Jan 2021 16:35:38 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
-            <title>ECOM7123 Understanding Smart City</title>
-            <link>https://www.marshalgao.com/ecom7123-understanding-smart-city/</link>
+            <title>Development Model</title>
+            <link>https://www.marshalgao.com/development-model/</link>
+            <pubDate>Wed, 06 Jan 2021 16:35:38 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/development-model/</guid>
+            <description>5种常见开发模式
+ 瀑布式开发  典型的预见性方法 自上而下 上一阶段结束，下一阶段执行，不可回溯 优点  预先计划 便于确定预期的开发成本和时间   缺点  无法预知未来 环环相扣，一环出问题，满盘皆输 测试发现问题，开发没法及时解决（开发此时可能已经处于下一个项目的研发中）   适合场景  具有明确定义和不变需求的中小型项目，比如小型公司网站开发 需要严格控制流程，预算和时间表可预测的项目，比如政府类项目 必须遵守多个规章制度的项目，比如医疗软件 使用了业内熟悉的成熟的技术方案的项目      增量和迭代开发  增量开发  项目切割成子模块（相对独立） 横向开发 可以顺序进行，也可以并行进行 如果研发资源有限，需要进行子模块的排序 如果研发资源充足，那么在设计阶段PM任务量较大    迭代开发  项目切割成子任务（以上一次迭代为基础进行） 纵向开发 项目初期不需要完整的规范，在开发过程中可以对需求进行少量更改，但需求根本和主体不能改变 每次迭代需要留下清晰的文档    优点  如果失败，只是一小部分的失败，降低损失，软件容易成功 也可以根据上线版本的用户反馈，结合完成下一次迭代方案   缺点  沟通或文档的不清晰，会导致后期融合出现问题   适合场景  大型关键企业应用程序，最好由松散耦合的部分组成，比如微服务或web服务类     看板开发  属于敏捷开发的一种（scrum也是其中一种） 自下而上（与瀑布式开发对比） 后道工序需要时，给前道工序发信号，前道工序才启动任务 用户需求为原动力 优点  没有明显的迭代过程，可以随时加入新需求 即来即增加，即变即更新 团队中的人可以清楚看到所有任务的负责人以及进度等 透明度高有助于准确估计最要紧的任务，项目组越来越自动化 站立会 —— 每人交代已完成的任务和遇到的问题（对于复杂问题会有专项讨论） 遇到问题，立刻停下来解决   缺点  不利于思维的发散   适合场景  要求处理目标用户前期反馈的新项目 业务要求不能被清晰地转换成产品需求的中型定制化项目      极限编程（XP）  属于敏捷开发的一种 与看板开发相比，更注重快速解决问题 团队人数少，人人平等，畅所欲言 优点  没有总体设计，设计过程贯穿始终 只要满足需求，通过测试即可（因为满足需求后，后期会有迭代版本）   缺点  对团队要求高 由于过程不拘泥于形式，后期文档在完整性上会有所欠缺 项目组成员流动会带来巨大问题   适合场景  要求处理目标用户前期反馈的新项目 业务要求不能被清晰地转换成产品需求的中型定制化项目 经常发生变化的项目、紧急上线任务和封闭开发等      从操作灵活性和用户参与度进行对比 </description>
+            <content type="html"><![CDATA[<p><strong>5种常见开发模式</strong></p>
+<ul>
+<li>瀑布式开发
+<ul>
+<li>典型的预见性方法</li>
+<li>自上而下</li>
+<li>上一阶段结束，下一阶段执行，不可回溯</li>
+<li>优点
+<ul>
+<li>预先计划</li>
+<li>便于确定预期的开发成本和时间</li>
+</ul>
+</li>
+<li>缺点
+<ul>
+<li>无法预知未来</li>
+<li>环环相扣，一环出问题，满盘皆输</li>
+<li>测试发现问题，开发没法及时解决（开发此时可能已经处于下一个项目的研发中）</li>
+</ul>
+</li>
+<li>适合场景
+<ul>
+<li>具有明确定义和不变需求的中小型项目，比如小型公司网站开发</li>
+<li>需要严格控制流程，预算和时间表可预测的项目，比如政府类项目</li>
+<li>必须遵守多个规章制度的项目，比如医疗软件</li>
+<li>使用了业内熟悉的成熟的技术方案的项目
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Fc8f56VThJnXOgTiUkhc.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>增量和迭代开发
+<ul>
+<li>增量开发
+<ul>
+<li>项目切割成子模块（相对独立）</li>
+<li>横向开发</li>
+<li>可以顺序进行，也可以并行进行</li>
+<li>如果研发资源有限，需要进行子模块的排序</li>
+<li>如果研发资源充足，那么在设计阶段PM任务量较大
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Q523Z0xbygTKC8iHzPyv.png" alt=""></li>
+</ul>
+</li>
+<li>迭代开发
+<ul>
+<li>项目切割成子任务（以上一次迭代为基础进行）</li>
+<li>纵向开发</li>
+<li>项目初期不需要完整的规范，在开发过程中可以对需求进行少量更改，但需求根本和主体不能改变</li>
+<li>每次迭代需要留下清晰的文档
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/S5vQKKpMK3wBibWoSXW9.png" alt=""></li>
+</ul>
+</li>
+<li>优点
+<ul>
+<li>如果失败，只是一小部分的失败，降低损失，软件容易成功</li>
+<li>也可以根据上线版本的用户反馈，结合完成下一次迭代方案</li>
+</ul>
+</li>
+<li>缺点
+<ul>
+<li>沟通或文档的不清晰，会导致后期融合出现问题</li>
+</ul>
+</li>
+<li>适合场景
+<ul>
+<li>大型关键企业应用程序，最好由松散耦合的部分组成，比如微服务或web服务类</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>看板开发
+<ul>
+<li>属于敏捷开发的一种（scrum也是其中一种）</li>
+<li>自下而上（与瀑布式开发对比）</li>
+<li>后道工序需要时，给前道工序发信号，前道工序才启动任务</li>
+<li>用户需求为原动力</li>
+<li>优点
+<ul>
+<li>没有明显的迭代过程，可以随时加入新需求</li>
+<li>即来即增加，即变即更新</li>
+<li>团队中的人可以清楚看到所有任务的负责人以及进度等</li>
+<li>透明度高有助于准确估计最要紧的任务，项目组越来越自动化</li>
+<li>站立会 —— 每人交代已完成的任务和遇到的问题（对于复杂问题会有专项讨论）</li>
+<li>遇到问题，立刻停下来解决</li>
+</ul>
+</li>
+<li>缺点
+<ul>
+<li>不利于思维的发散</li>
+</ul>
+</li>
+<li>适合场景
+<ul>
+<li>要求处理目标用户前期反馈的新项目</li>
+<li>业务要求不能被清晰地转换成产品需求的中型定制化项目
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/GrlnJOXwxm4Oe6fmHsFN.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>极限编程（XP）
+<ul>
+<li>属于敏捷开发的一种</li>
+<li>与看板开发相比，更注重快速解决问题</li>
+<li>团队人数少，人人平等，畅所欲言</li>
+<li>优点
+<ul>
+<li>没有总体设计，设计过程贯穿始终</li>
+<li>只要满足需求，通过测试即可（因为满足需求后，后期会有迭代版本）</li>
+</ul>
+</li>
+<li>缺点
+<ul>
+<li>对团队要求高</li>
+<li>由于过程不拘泥于形式，后期文档在完整性上会有所欠缺</li>
+<li>项目组成员流动会带来巨大问题</li>
+</ul>
+</li>
+<li>适合场景
+<ul>
+<li>要求处理目标用户前期反馈的新项目</li>
+<li>业务要求不能被清晰地转换成产品需求的中型定制化项目</li>
+<li>经常发生变化的项目、紧急上线任务和封闭开发等</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>从操作灵活性和用户参与度进行对比</strong>
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/8AbkkSIVjuXxDy1xwd00.png" alt=""></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>ECOM7123 Understanding the Concept of Smart City</title>
+            <link>https://www.marshalgao.com/ecom7123-understanding-the-concept-of-smart-city/</link>
             <pubDate>Wed, 06 Jan 2021 09:17:43 +0800</pubDate>
             
-            <guid>https://www.marshalgao.com/ecom7123-understanding-smart-city/</guid>
+            <guid>https://www.marshalgao.com/ecom7123-understanding-the-concept-of-smart-city/</guid>
             <description>Overview Difficulties and challenges
  our world is increasing challenged  urbanization ageing population social conflict inequality loss of nature pollution energy crisis climate change natural disaster resource depletion    Basic understanding
  definition of smart city  no official definition basically  the use of ICT (Information and Communications Technology) to improve the quality of life and city services, making the city more livable     ultimate goals  enhance quality of life  key indicators  health time and convenience safety cost of living jobs social connectedness and civic participation environmental quality     foster sustainable growth   leverage on technologies for better city management  IoT (data collection) big data (much data) AI (data analysis and prediction) above three technologies are based on GIS (Geographic Information System)    Building a Smart City Countries developing smart city initiatives with their own goals</description>
@@ -689,7 +830,8 @@
  广告投放系统：广告投放系统承担了广告内容管理和广告流量分发的功能，承前启后，是广告系统的核心部分 商户后台系统：用于广告主和广告联盟商自主接入的管理平台，主要包含广告需求承接和广告效果数据、广告费用的展示 运营后台系统：广告平台方的运营后台，主要用于广告审核、广告主管理和其他管理功能 广告素材设计系统：用于制作广告创意，根据广告位的要求支持不同尺寸、不同投放环境的创意设计 数据统计系统：用于广告效果数据收集和分析 关系图   广告需求模型设计
  站在广告主的立场，至少分为广告主-投放计划-广告素材（创意）  广告主：广告的需求方，是广告效果和广告计费统一的收口方，广告主名下的广告投放计划所产生的成本均计入广告主的整体费用 投放计划：广告主名下往往由很多广告需求，我们将每个定制的广告需求称为投放计划 广告素材（创意）：广告投放最小颗粒是广告素材（创意），每一个投放计划都可能包含多个广告素材的投放。广告计费的也是根据广告素材的曝光、点击、展示时长等计费方式的数值进行计算的。常用的广告创意有横幅广告（banner），文字链广告，视频广告，嵌入式社交广告、sdk嵌入式移动广告等   广告主同时需要对广告的投放目标、投放时间、投放的定向和预算等进行配置 关系图   广告投放模型的建立
  结合广告主的需求，将素材进行精准投放 结合计费模式 关系图   设计有效的广告投放流程——以CPM竞价为例
- 请求广告：一般采用广告组件或者sdk等方式嵌入在广告位中，广告组件可以根据广告位的用户属性等信息向广告投放系统请求广告资源 匹配广告位：按照广告位的不同， 广告系统需要选择符合当前广告位投放目标的广告需求池 匹配投放计划：将广告位的用户属性等信息与大数据标签系统进行匹配，获取对应的用户画像标签，根据标签来和广告投放计划的定向需求进行匹配，并通过竞价选取对应的投放计划 匹配广告创意：由于符合条件每个投放计划可能有多个广告素材，因此需要根据实时的广告效果来对广告素材进行评估，并选择转化率更高的广告素材进行投放 广告数据统计：在达成统计要求后，统计广告效果数据，如曝光量、点击量等 投放流程图   </description>
+ 请求广告：一般采用广告组件或者sdk等方式嵌入在广告位中，广告组件可以根据广告位的用户属性等信息向广告投放系统请求广告资源 匹配广告位：按照广告位的不同， 广告系统需要选择符合当前广告位投放目标的广告需求池 匹配投放计划：将广告位的用户属性等信息与大数据标签系统进行匹配，获取对应的用户画像标签，根据标签来和广告投放计划的定向需求进行匹配，并通过竞价选取对应的投放计划 匹配广告创意：由于符合条件每个投放计划可能有多个广告素材，因此需要根据实时的广告效果来对广告素材进行评估，并选择转化率更高的广告素材进行投放 广告数据统计：在达成统计要求后，统计广告效果数据，如曝光量、点击量等 投放流程图   广告投放策略系统
+ 需求点  广告运营需要一直关注投放效果，不断调整投放，控制成本，同时保证效率   名词解释  自动化的广告盯盘工具   组成部分  数据项  前段数据  浏览量、点击量 前期更注重前段数据，因为没有一定曝光，何谈转化   后端数据  App下载量、注册成本 一定程度上取决于广告素材是否吸引用户，完成转化   当前段数据达到一个阈值之后，辅以后段指标进行验证   逻辑判断条件和数值  利用大于、小于或是介于两者之间来出发投放策略调整   条件组合  同时满足 - and 任意满足 - or 例如  当消耗和成本不符合预算时，需要降低预算  「消耗」&amp;gt; XX元，且「转化成本」&amp;gt; XX元 -&amp;gt; 降低预算   广告渡过冷启动阶段，需要提高预算，加速冲量  「曝光量」&amp;gt; XX，且「转化数」&amp;gt;= XX -&amp;gt; 提高预算       执行动作  当广告达到条件预设值后，需要对广告执行相应的操作  调整预算  有预算封顶值   调整出价 更换定向包 暂停广告   可以设置包含多个动作的复杂任务，实现触发     补充  策略系统搭建完成后，需要考虑接口的并发  不同媒介对接口的分钟调用和日调用都是有限制的，从而影响拉取广告数据的频率   例如  1h拉取一次 -&amp;gt; 策略机制形同虚设      </description>
             <content type="html"><![CDATA[<p><strong>在线广告市场结构</strong></p>
 <ul>
 <li>广告主：金主爸爸，有广告联盟和广告主两种形式</li>
@@ -738,6 +880,96 @@
 <li>广告数据统计：在达成统计要求后，统计广告效果数据，如曝光量、点击量等</li>
 <li>投放流程图
 <img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-2b96f508f1bd08bc313c53693cd2409c_1440w.jpg" alt=""></li>
+</ul>
+<p><strong>广告投放策略系统</strong></p>
+<ul>
+<li>需求点
+<ul>
+<li>广告运营需要一直关注投放效果，不断调整投放，控制成本，同时保证效率</li>
+</ul>
+</li>
+<li>名词解释
+<ul>
+<li>自动化的广告盯盘工具</li>
+</ul>
+</li>
+<li>组成部分
+<ul>
+<li>数据项
+<ul>
+<li>前段数据
+<ul>
+<li>浏览量、点击量</li>
+<li>前期更注重前段数据，因为没有一定曝光，何谈转化</li>
+</ul>
+</li>
+<li>后端数据
+<ul>
+<li>App下载量、注册成本</li>
+<li>一定程度上取决于广告素材是否吸引用户，完成转化</li>
+</ul>
+</li>
+<li>当前段数据达到一个阈值之后，辅以后段指标进行验证</li>
+</ul>
+</li>
+<li>逻辑判断条件和数值
+<ul>
+<li>利用大于、小于或是介于两者之间来出发投放策略调整</li>
+</ul>
+</li>
+<li>条件组合
+<ul>
+<li>同时满足 - and</li>
+<li>任意满足 - or</li>
+<li>例如
+<ul>
+<li>当消耗和成本不符合预算时，需要降低预算
+<ul>
+<li>「消耗」&gt; XX元，且「转化成本」&gt; XX元 -&gt; 降低预算</li>
+</ul>
+</li>
+<li>广告渡过冷启动阶段，需要提高预算，加速冲量
+<ul>
+<li>「曝光量」&gt; XX，且「转化数」&gt;= XX -&gt; 提高预算</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>执行动作
+<ul>
+<li>当广告达到条件预设值后，需要对广告执行相应的操作
+<ul>
+<li>调整预算
+<ul>
+<li>有预算封顶值</li>
+</ul>
+</li>
+<li>调整出价</li>
+<li>更换定向包</li>
+<li>暂停广告</li>
+</ul>
+</li>
+<li>可以设置包含多个动作的复杂任务，实现触发</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>补充
+<ul>
+<li>策略系统搭建完成后，需要考虑接口的并发
+<ul>
+<li>不同媒介对接口的分钟调用和日调用都是有限制的，从而影响拉取广告数据的频率</li>
+</ul>
+</li>
+<li>例如
+<ul>
+<li>1h拉取一次 -&gt; 策略机制形同虚设</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 ]]></content>
         </item>

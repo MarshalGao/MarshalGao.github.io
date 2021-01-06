@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Marshal ">
+<meta name="description" content="5种常见开发模式
+ 瀑布式开发  典型的预见性方法 自上而下 上一阶段结束，下一阶段执行，不可回溯 优点  预先计划 便于确定预期的开发成本和时间   缺点  无法预知未来 环环相扣，一环出问题，满盘皆输 测试发现问题，开发没法及时解决（开发此时可能已经处于下一个项目的研发中）   适合场景  具有明确定义和不变需求的中小型项目，比如小型公司网站开发 需要严格控制流程，预算和时间表可预测的项目，比如政府类项目 必须遵守多个规章制度的项目，比如医疗软件 使用了业内熟悉的成熟的技术方案的项目      增量和迭代开发  增量开发  项目切割成子模块（相对独立） 横向开发 可以顺序进行，也可以并行进行 如果研发资源有限，需要进行子模块的排序 如果研发资源充足，那么在设计阶段PM任务量较大    迭代开发  项目切割成子任务（以上一次迭代为基础进行） 纵向开发 项目初期不需要完整的规范，在开发过程中可以对需求进行少量更改，但需求根本和主体不能改变 每次迭代需要留下清晰的文档    优点  如果失败，只是一小部分的失败，降低损失，软件容易成功 也可以根据上线版本的用户反馈，结合完成下一次迭代方案   缺点  沟通或文档的不清晰，会导致后期融合出现问题   适合场景  大型关键企业应用程序，最好由松散耦合的部分组成，比如微服务或web服务类     看板开发  属于敏捷开发的一种（scrum也是其中一种） 自下而上（与瀑布式开发对比） 后道工序需要时，给前道工序发信号，前道工序才启动任务 用户需求为原动力 优点  没有明显的迭代过程，可以随时加入新需求 即来即增加，即变即更新 团队中的人可以清楚看到所有任务的负责人以及进度等 透明度高有助于准确估计最要紧的任务，项目组越来越自动化 站立会 —— 每人交代已完成的任务和遇到的问题（对于复杂问题会有专项讨论） 遇到问题，立刻停下来解决   缺点  不利于思维的发散   适合场景  要求处理目标用户前期反馈的新项目 业务要求不能被清晰地转换成产品需求的中型定制化项目      极限编程（XP）  属于敏捷开发的一种 与看板开发相比，更注重快速解决问题 团队人数少，人人平等，畅所欲言 优点  没有总体设计，设计过程贯穿始终 只要满足需求，通过测试即可（因为满足需求后，后期会有迭代版本）   缺点  对团队要求高 由于过程不拘泥于形式，后期文档在完整性上会有所欠缺 项目组成员流动会带来巨大问题   适合场景  要求处理目标用户前期反馈的新项目 业务要求不能被清晰地转换成产品需求的中型定制化项目 经常发生变化的项目、紧急上线任务和封闭开发等      从操作灵活性和用户参与度进行对比 " />
+<meta name="keywords" content=", advertising product manager, daily learning, development model" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://www.marshalgao.com/development-model/" />
+
+
+    <title>
+        
+            Development Model :: This Is Marshal 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://www.marshalgao.com/main.bdf16375e88c9de5121e200285a015c4d181bcc9641cf97e05c5e46866f50161.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.marshalgao.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.marshalgao.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.marshalgao.com/favicon-16x16.png">
+    <link rel="manifest" href="https://www.marshalgao.com/site.webmanifest">
+    <link rel="mask-icon" href="https://www.marshalgao.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://www.marshalgao.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="Development Model">
+<meta itemprop="description" content="5种常见开发模式
+ 瀑布式开发  典型的预见性方法 自上而下 上一阶段结束，下一阶段执行，不可回溯 优点  预先计划 便于确定预期的开发成本和时间   缺点  无法预知未来 环环相扣，一环出问题，满盘皆输 测试发现问题，开发没法及时解决（开发此时可能已经处于下一个项目的研发中）   适合场景  具有明确定义和不变需求的中小型项目，比如小型公司网站开发 需要严格控制流程，预算和时间表可预测的项目，比如政府类项目 必须遵守多个规章制度的项目，比如医疗软件 使用了业内熟悉的成熟的技术方案的项目      增量和迭代开发  增量开发  项目切割成子模块（相对独立） 横向开发 可以顺序进行，也可以并行进行 如果研发资源有限，需要进行子模块的排序 如果研发资源充足，那么在设计阶段PM任务量较大    迭代开发  项目切割成子任务（以上一次迭代为基础进行） 纵向开发 项目初期不需要完整的规范，在开发过程中可以对需求进行少量更改，但需求根本和主体不能改变 每次迭代需要留下清晰的文档    优点  如果失败，只是一小部分的失败，降低损失，软件容易成功 也可以根据上线版本的用户反馈，结合完成下一次迭代方案   缺点  沟通或文档的不清晰，会导致后期融合出现问题   适合场景  大型关键企业应用程序，最好由松散耦合的部分组成，比如微服务或web服务类     看板开发  属于敏捷开发的一种（scrum也是其中一种） 自下而上（与瀑布式开发对比） 后道工序需要时，给前道工序发信号，前道工序才启动任务 用户需求为原动力 优点  没有明显的迭代过程，可以随时加入新需求 即来即增加，即变即更新 团队中的人可以清楚看到所有任务的负责人以及进度等 透明度高有助于准确估计最要紧的任务，项目组越来越自动化 站立会 —— 每人交代已完成的任务和遇到的问题（对于复杂问题会有专项讨论） 遇到问题，立刻停下来解决   缺点  不利于思维的发散   适合场景  要求处理目标用户前期反馈的新项目 业务要求不能被清晰地转换成产品需求的中型定制化项目      极限编程（XP）  属于敏捷开发的一种 与看板开发相比，更注重快速解决问题 团队人数少，人人平等，畅所欲言 优点  没有总体设计，设计过程贯穿始终 只要满足需求，通过测试即可（因为满足需求后，后期会有迭代版本）   缺点  对团队要求高 由于过程不拘泥于形式，后期文档在完整性上会有所欠缺 项目组成员流动会带来巨大问题   适合场景  要求处理目标用户前期反馈的新项目 业务要求不能被清晰地转换成产品需求的中型定制化项目 经常发生变化的项目、紧急上线任务和封闭开发等      从操作灵活性和用户参与度进行对比 ">
+<meta itemprop="datePublished" content="2021-01-06T16:35:38+08:00" />
+<meta itemprop="dateModified" content="2021-01-06T16:35:38+08:00" />
+<meta itemprop="wordCount" content="71">
+<meta itemprop="image" content="https://www.marshalgao.com/"/>
+
+
+
+<meta itemprop="keywords" content="advertising product manager,daily learning,development model," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.marshalgao.com/"/>
+
+<meta name="twitter:title" content="Development Model"/>
+<meta name="twitter:description" content="5种常见开发模式
+ 瀑布式开发  典型的预见性方法 自上而下 上一阶段结束，下一阶段执行，不可回溯 优点  预先计划 便于确定预期的开发成本和时间   缺点  无法预知未来 环环相扣，一环出问题，满盘皆输 测试发现问题，开发没法及时解决（开发此时可能已经处于下一个项目的研发中）   适合场景  具有明确定义和不变需求的中小型项目，比如小型公司网站开发 需要严格控制流程，预算和时间表可预测的项目，比如政府类项目 必须遵守多个规章制度的项目，比如医疗软件 使用了业内熟悉的成熟的技术方案的项目      增量和迭代开发  增量开发  项目切割成子模块（相对独立） 横向开发 可以顺序进行，也可以并行进行 如果研发资源有限，需要进行子模块的排序 如果研发资源充足，那么在设计阶段PM任务量较大    迭代开发  项目切割成子任务（以上一次迭代为基础进行） 纵向开发 项目初期不需要完整的规范，在开发过程中可以对需求进行少量更改，但需求根本和主体不能改变 每次迭代需要留下清晰的文档    优点  如果失败，只是一小部分的失败，降低损失，软件容易成功 也可以根据上线版本的用户反馈，结合完成下一次迭代方案   缺点  沟通或文档的不清晰，会导致后期融合出现问题   适合场景  大型关键企业应用程序，最好由松散耦合的部分组成，比如微服务或web服务类     看板开发  属于敏捷开发的一种（scrum也是其中一种） 自下而上（与瀑布式开发对比） 后道工序需要时，给前道工序发信号，前道工序才启动任务 用户需求为原动力 优点  没有明显的迭代过程，可以随时加入新需求 即来即增加，即变即更新 团队中的人可以清楚看到所有任务的负责人以及进度等 透明度高有助于准确估计最要紧的任务，项目组越来越自动化 站立会 —— 每人交代已完成的任务和遇到的问题（对于复杂问题会有专项讨论） 遇到问题，立刻停下来解决   缺点  不利于思维的发散   适合场景  要求处理目标用户前期反馈的新项目 业务要求不能被清晰地转换成产品需求的中型定制化项目      极限编程（XP）  属于敏捷开发的一种 与看板开发相比，更注重快速解决问题 团队人数少，人人平等，畅所欲言 优点  没有总体设计，设计过程贯穿始终 只要满足需求，通过测试即可（因为满足需求后，后期会有迭代版本）   缺点  对团队要求高 由于过程不拘泥于形式，后期文档在完整性上会有所欠缺 项目组成员流动会带来巨大问题   适合场景  要求处理目标用户前期反馈的新项目 业务要求不能被清晰地转换成产品需求的中型定制化项目 经常发生变化的项目、紧急上线任务和封闭开发等      从操作灵活性和用户参与度进行对比 "/>
+
+
+
+    <meta property="og:title" content="Development Model" />
+<meta property="og:description" content="5种常见开发模式
+ 瀑布式开发  典型的预见性方法 自上而下 上一阶段结束，下一阶段执行，不可回溯 优点  预先计划 便于确定预期的开发成本和时间   缺点  无法预知未来 环环相扣，一环出问题，满盘皆输 测试发现问题，开发没法及时解决（开发此时可能已经处于下一个项目的研发中）   适合场景  具有明确定义和不变需求的中小型项目，比如小型公司网站开发 需要严格控制流程，预算和时间表可预测的项目，比如政府类项目 必须遵守多个规章制度的项目，比如医疗软件 使用了业内熟悉的成熟的技术方案的项目      增量和迭代开发  增量开发  项目切割成子模块（相对独立） 横向开发 可以顺序进行，也可以并行进行 如果研发资源有限，需要进行子模块的排序 如果研发资源充足，那么在设计阶段PM任务量较大    迭代开发  项目切割成子任务（以上一次迭代为基础进行） 纵向开发 项目初期不需要完整的规范，在开发过程中可以对需求进行少量更改，但需求根本和主体不能改变 每次迭代需要留下清晰的文档    优点  如果失败，只是一小部分的失败，降低损失，软件容易成功 也可以根据上线版本的用户反馈，结合完成下一次迭代方案   缺点  沟通或文档的不清晰，会导致后期融合出现问题   适合场景  大型关键企业应用程序，最好由松散耦合的部分组成，比如微服务或web服务类     看板开发  属于敏捷开发的一种（scrum也是其中一种） 自下而上（与瀑布式开发对比） 后道工序需要时，给前道工序发信号，前道工序才启动任务 用户需求为原动力 优点  没有明显的迭代过程，可以随时加入新需求 即来即增加，即变即更新 团队中的人可以清楚看到所有任务的负责人以及进度等 透明度高有助于准确估计最要紧的任务，项目组越来越自动化 站立会 —— 每人交代已完成的任务和遇到的问题（对于复杂问题会有专项讨论） 遇到问题，立刻停下来解决   缺点  不利于思维的发散   适合场景  要求处理目标用户前期反馈的新项目 业务要求不能被清晰地转换成产品需求的中型定制化项目      极限编程（XP）  属于敏捷开发的一种 与看板开发相比，更注重快速解决问题 团队人数少，人人平等，畅所欲言 优点  没有总体设计，设计过程贯穿始终 只要满足需求，通过测试即可（因为满足需求后，后期会有迭代版本）   缺点  对团队要求高 由于过程不拘泥于形式，后期文档在完整性上会有所欠缺 项目组成员流动会带来巨大问题   适合场景  要求处理目标用户前期反馈的新项目 业务要求不能被清晰地转换成产品需求的中型定制化项目 经常发生变化的项目、紧急上线任务和封闭开发等      从操作灵活性和用户参与度进行对比 " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.marshalgao.com/development-model/" />
+<meta property="og:image" content="https://www.marshalgao.com/"/>
+<meta property="article:published_time" content="2021-01-06T16:35:38+08:00" />
+<meta property="article:modified_time" content="2021-01-06T16:35:38+08:00" />
+
+
+
+
+    <meta property="article:section" content="Product Manager" />
+
+
+
+    <meta property="article:published_time" content="2021-01-06 16:35:38 &#43;0800 HKT" />
+
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://www.marshalgao.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://www.marshalgao.com/categories/hku">HKU</a></li><li><a href="https://www.marshalgao.com/categories/technology">TECH</a></li><li><a href="https://www.marshalgao.com/categories/product-manager">PM</a></li><li><a href="https://www.marshalgao.com/categories/life">LIFE</a></li><li><a href="https://www.marshalgao.com/about/">ABOUT</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        One minute
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://www.marshalgao.com/development-model/">Development Model</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <p><strong>5种常见开发模式</strong></p>
+<ul>
+<li>瀑布式开发
+<ul>
+<li>典型的预见性方法</li>
+<li>自上而下</li>
+<li>上一阶段结束，下一阶段执行，不可回溯</li>
+<li>优点
+<ul>
+<li>预先计划</li>
+<li>便于确定预期的开发成本和时间</li>
+</ul>
+</li>
+<li>缺点
+<ul>
+<li>无法预知未来</li>
+<li>环环相扣，一环出问题，满盘皆输</li>
+<li>测试发现问题，开发没法及时解决（开发此时可能已经处于下一个项目的研发中）</li>
+</ul>
+</li>
+<li>适合场景
+<ul>
+<li>具有明确定义和不变需求的中小型项目，比如小型公司网站开发</li>
+<li>需要严格控制流程，预算和时间表可预测的项目，比如政府类项目</li>
+<li>必须遵守多个规章制度的项目，比如医疗软件</li>
+<li>使用了业内熟悉的成熟的技术方案的项目
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Fc8f56VThJnXOgTiUkhc.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>增量和迭代开发
+<ul>
+<li>增量开发
+<ul>
+<li>项目切割成子模块（相对独立）</li>
+<li>横向开发</li>
+<li>可以顺序进行，也可以并行进行</li>
+<li>如果研发资源有限，需要进行子模块的排序</li>
+<li>如果研发资源充足，那么在设计阶段PM任务量较大
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Q523Z0xbygTKC8iHzPyv.png" alt=""></li>
+</ul>
+</li>
+<li>迭代开发
+<ul>
+<li>项目切割成子任务（以上一次迭代为基础进行）</li>
+<li>纵向开发</li>
+<li>项目初期不需要完整的规范，在开发过程中可以对需求进行少量更改，但需求根本和主体不能改变</li>
+<li>每次迭代需要留下清晰的文档
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/S5vQKKpMK3wBibWoSXW9.png" alt=""></li>
+</ul>
+</li>
+<li>优点
+<ul>
+<li>如果失败，只是一小部分的失败，降低损失，软件容易成功</li>
+<li>也可以根据上线版本的用户反馈，结合完成下一次迭代方案</li>
+</ul>
+</li>
+<li>缺点
+<ul>
+<li>沟通或文档的不清晰，会导致后期融合出现问题</li>
+</ul>
+</li>
+<li>适合场景
+<ul>
+<li>大型关键企业应用程序，最好由松散耦合的部分组成，比如微服务或web服务类</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>看板开发
+<ul>
+<li>属于敏捷开发的一种（scrum也是其中一种）</li>
+<li>自下而上（与瀑布式开发对比）</li>
+<li>后道工序需要时，给前道工序发信号，前道工序才启动任务</li>
+<li>用户需求为原动力</li>
+<li>优点
+<ul>
+<li>没有明显的迭代过程，可以随时加入新需求</li>
+<li>即来即增加，即变即更新</li>
+<li>团队中的人可以清楚看到所有任务的负责人以及进度等</li>
+<li>透明度高有助于准确估计最要紧的任务，项目组越来越自动化</li>
+<li>站立会 —— 每人交代已完成的任务和遇到的问题（对于复杂问题会有专项讨论）</li>
+<li>遇到问题，立刻停下来解决</li>
+</ul>
+</li>
+<li>缺点
+<ul>
+<li>不利于思维的发散</li>
+</ul>
+</li>
+<li>适合场景
+<ul>
+<li>要求处理目标用户前期反馈的新项目</li>
+<li>业务要求不能被清晰地转换成产品需求的中型定制化项目
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/GrlnJOXwxm4Oe6fmHsFN.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>极限编程（XP）
+<ul>
+<li>属于敏捷开发的一种</li>
+<li>与看板开发相比，更注重快速解决问题</li>
+<li>团队人数少，人人平等，畅所欲言</li>
+<li>优点
+<ul>
+<li>没有总体设计，设计过程贯穿始终</li>
+<li>只要满足需求，通过测试即可（因为满足需求后，后期会有迭代版本）</li>
+</ul>
+</li>
+<li>缺点
+<ul>
+<li>对团队要求高</li>
+<li>由于过程不拘泥于形式，后期文档在完整性上会有所欠缺</li>
+<li>项目组成员流动会带来巨大问题</li>
+</ul>
+</li>
+<li>适合场景
+<ul>
+<li>要求处理目标用户前期反馈的新项目</li>
+<li>业务要求不能被清晰地转换成产品需求的中型定制化项目</li>
+<li>经常发生变化的项目、紧急上线任务和封闭开发等</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>从操作灵活性和用户参与度进行对比</strong>
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/8AbkkSIVjuXxDy1xwd00.png" alt=""></p>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/tags/advertising-product-manager/">advertising product manager</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/daily-learning/">daily learning</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/development-model/">development model</a></span>
+        
+    </p>
+
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/categories/product-manager/">Product Manager</a></span>
+        
+    </p>
+
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        71 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2021-01-06 16:35
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+
+          
+            <span class="button next">
+              <a href="https://www.marshalgao.com/ecom7123-understanding-the-concept-of-smart-city/">
+                <span class="button__text">ECOM7123 Understanding the Concept of Smart City</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020-2021</span>
+            
+                <span><a href="https://www.marshalgao.com/">Marshal</a></span>
+            
+            
+                <span><a href="https://www.hku.hk" target="_blank" rel="noopener">The University of Hong Kong</a></span>
+            <span><a href="https://www.marshalgao.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Team Rocket: <a href="https://www.pseudoyu.com/" target="_blank" rel="noopener">Pseudoyu</a></span>
+            <span><a href="https://www.m1sty.com/" target="_blank" rel="noopener">Misty</a></span>
+          </div>
+    </div>
+</footer>
+
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://www.marshalgao.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>
