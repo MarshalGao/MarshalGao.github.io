@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 06 Jan 2021 09:17:43 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/hku/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Jan 2021 09:44:07 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/hku/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM7123 Smart Mobility</title>
+      <link>https://www.marshalgao.com/ecom7123-smart-mobility/</link>
+      <pubDate>Thu, 07 Jan 2021 09:44:07 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom7123-smart-mobility/</guid>
+      <description>Overview Mobility
+ definition  mobility describes the ability of people and goods to move around an area, and in doing so to access the essential facilities, communities &amp;amp; other destinations that are required to support a decent quality of life &amp;amp; a buoyant economy mobility incorporates the transport infrastructure &amp;amp; services that facilitate these interactions   challenges of urban mobility  overview  congestion energy crisis pollution climate change   details  increasing demand for travel in city centers, suburbs &amp;amp; between the two areas increasing demand for improved intercity mobility requiring faster &amp;amp; more direct connectivity between destinations increasing city traffic, pollution, waste production &amp;amp; CO2 emission      Smart Mobility Goals</description>
+    </item>
+    
     <item>
       <title>ECOM7123 Understanding the Concept of Smart City</title>
       <link>https://www.marshalgao.com/ecom7123-understanding-the-concept-of-smart-city/</link>
@@ -102,19 +112,6 @@ These trends have a profound impact on the people and the spaces they inhabit, r
       <description>The Internet: Technology Background Internet and world wide web
  internet  interconnected network of thousands of networks and hundreds of millions of computers links businesses, educational institutions, government agencies, and individuals   world wide web (web)  one of the internet&amp;rsquo;s most popular services provides access to billions, possibly trillions, of web pages    The evolution of the internet
  innovation phase (1961 - 1974)  creation of fundamental building blocks   institutionalization phase (1975 - 1995)  large institutions provide funding and legitimization   commercialization phase (1995 - present)  private corporations take over, expand internet backbone and local service    Key technology concepts</description>
-    </item>
-    
-    <item>
-      <title>ECOM7121 Autonomous Cars and Smart Mobility</title>
-      <link>https://www.marshalgao.com/ecom7121-autonomous-cars-and-smart-mobility/</link>
-      <pubDate>Tue, 08 Dec 2020 16:46:07 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/ecom7121-autonomous-cars-and-smart-mobility/</guid>
-      <description>Technologies and Waymo Overview
- Waymo was the first robo-taxi in US a quick history of autonomous vehicles  history of driverless or automated cars the DARPA grand challenge levels of automation achieved    Driverless car technologies
- radar cameras lidar light detection and ranging onboard computers  Impact of driverless vehicles
- benefits risks disruption  Who does Waymo compete with
- GM Cruise — originally from Ycombinator as a retrofit rooftop unit Audi — the Audi A8 had the highest degree of autonomy in a production vehicle Tesla — no LiDar, frontrunner until March 2018 accident killing a pedestrian in Tempe, AZ Baidu Didi  Self-Driving Cars and the Smart City Examples of self-driving</description>
     </item>
     
   </channel>
