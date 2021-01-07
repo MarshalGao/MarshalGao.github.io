@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 06 Jan 2021 16:35:38 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/product-manager/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Jan 2021 15:51:48 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/product-manager/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data Analysis</title>
+      <link>https://www.marshalgao.com/data-analysis/</link>
+      <pubDate>Thu, 07 Jan 2021 15:51:48 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/data-analysis/</guid>
+      <description>定性分析与定量分析
+ 定性分析  对事物性质的归纳 对问题的一种假设   定量分析  对事物数量的统计 对问题的一种验证   数据基础  访谈（定性） 问卷（定量） &amp;hellip;   闭环  定性假设 -&amp;gt; 定量验证 -&amp;gt; 结论 -&amp;gt; 定性假设   区别   定性分析步骤
+ 转录  文本是最方便处理的形式，首先需要将获得的录音、现场笔记等资料转录为可读的文本   编码  是对资料进行简化、提炼、初步分析的过程 常见方法  归纳法  基于扎根理论，在开始分析之前并不预设编码系统，而是在分析资料的过程中逐步地、自下而上地形成编码系统，从而能够实现从原始资料中提炼出理论和规律   演绎法  根据已有的理论和假设，预先设定一套编码系统，在资料分析的过程中直接使用这套系统中的代码进行标记   综合方法  融合了归纳法和演绎法，不预设代码系统，但是为代码预先创建一套基本的说明系统，限定代码的规则和范围 在资料分析的过程中，根据资料本身的属性和说明系统的要求，产生代码       资料展示  使用可读性更强或者逻辑关系更加清晰的形式展示信息，资料展示的过程也是对资料进行进一步分析的过程 常见方法  矩阵表  类似于表格 了解事件的流程和关联，或者用于个案间的比较   网状图  类似于变量与变量之间的关系网 强调多个变量或者元素之间的关系   脉络图  将群体按照社会体系进行划分，找出内在联系，类似于人际关系脉络 描绘所处的情境、社会体系等，在相关脉络中深入理解人的行为   决策图  类似于流程图 思考和决策的关键节点和流程   认知图  类似于日常的笔记作图，随意关系指代 非层级的网状图，包括很多节点及其联系，表现人们的认知模式   散点图  利用坐标系展现所有所有点（即每一个案例） 根据两个或者多个维度，展示所有个案的情况。       引出结论  从资料中提炼出规律、模式、解释、因果、命题等，并在提炼的过程中快速验证    定量分析步骤</description>
+    </item>
+    
     <item>
       <title>Development Model</title>
       <link>https://www.marshalgao.com/development-model/</link>
@@ -141,17 +152,6 @@ DTC除了可以更好的让商家与用户进行沟通，同时还可以减少�
 对于整个动态页面，需要定义生效时间、结束时间、活动页面名称等基础信息。设置之后可生成相应的链接进行预览。
 动态页面是由不同的组件内容构成，首先按照各组件位置去解析，然后再去解析组件的内容（样式、图片/商品、背景、链接等）。按照上图的反向流程走，就能解析出对应的自定义页面内容。
 首页设置也是相同，类似自定义页面，可动态设置首页内容，动态添加自定义组件。目前绝大部分电商首页都是动态配置，有着丰富的自定义内容。</description>
-    </item>
-    
-    <item>
-      <title>Advertising Scheduling System</title>
-      <link>https://www.marshalgao.com/advertising-scheduling-system/</link>
-      <pubDate>Fri, 04 Dec 2020 15:56:27 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/advertising-scheduling-system/</guid>
-      <description>广告学中的排期方式
- 持续式排期  不受任何条件影响，一年四季持续投放 广告持续性强 简单 比如日常快销产品的投放   起伏式排期  广告期和无广告期交替出现 挑选一年中对产品销售影响最大的时段进行投放 比如羽绒服广告   脉冲式排期  持续式排期和起伏式排期的结合 全年持续投放，但一直维持较低水平 需求量旺盛时，加大投放 比如饮料广告（夏季大量投放，但全年投放）   集中式排期  在同一媒介或平台集中投放 一般集中于季节或者节日 比如双十一的电商广告投放    BB Part
-广告排期可以简单理解为对广告档期的编排。在腾讯的智能投放体系中，先通过创意创造出广告，在寻找目标人群，实现精准投放。但投放的过程中必然会涉及到排期，所以广告排期其实也是只能投放闭环中的一节。而且，对于广告学重的排期系统，是需要后续监播和反馈，但这一过程在智能投放闭环中，被迁移到了投放结果分析或报告产出的环节。互联网广告的排期会结合出价、内容、创意等要素综合考虑，一定程度上超越了传统广告学的排期概念。</description>
     </item>
     
   </channel>

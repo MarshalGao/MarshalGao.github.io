@@ -6,8 +6,157 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Thu, 07 Jan 2021 09:44:07 +0800</lastBuildDate>
+        <lastBuildDate>Thu, 07 Jan 2021 15:51:48 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Data Analysis</title>
+            <link>https://www.marshalgao.com/data-analysis/</link>
+            <pubDate>Thu, 07 Jan 2021 15:51:48 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/data-analysis/</guid>
+            <description>定性分析与定量分析
+ 定性分析  对事物性质的归纳 对问题的一种假设   定量分析  对事物数量的统计 对问题的一种验证   数据基础  访谈（定性） 问卷（定量） &amp;hellip;   闭环  定性假设 -&amp;gt; 定量验证 -&amp;gt; 结论 -&amp;gt; 定性假设   区别   定性分析步骤
+ 转录  文本是最方便处理的形式，首先需要将获得的录音、现场笔记等资料转录为可读的文本   编码  是对资料进行简化、提炼、初步分析的过程 常见方法  归纳法  基于扎根理论，在开始分析之前并不预设编码系统，而是在分析资料的过程中逐步地、自下而上地形成编码系统，从而能够实现从原始资料中提炼出理论和规律   演绎法  根据已有的理论和假设，预先设定一套编码系统，在资料分析的过程中直接使用这套系统中的代码进行标记   综合方法  融合了归纳法和演绎法，不预设代码系统，但是为代码预先创建一套基本的说明系统，限定代码的规则和范围 在资料分析的过程中，根据资料本身的属性和说明系统的要求，产生代码       资料展示  使用可读性更强或者逻辑关系更加清晰的形式展示信息，资料展示的过程也是对资料进行进一步分析的过程 常见方法  矩阵表  类似于表格 了解事件的流程和关联，或者用于个案间的比较   网状图  类似于变量与变量之间的关系网 强调多个变量或者元素之间的关系   脉络图  将群体按照社会体系进行划分，找出内在联系，类似于人际关系脉络 描绘所处的情境、社会体系等，在相关脉络中深入理解人的行为   决策图  类似于流程图 思考和决策的关键节点和流程   认知图  类似于日常的笔记作图，随意关系指代 非层级的网状图，包括很多节点及其联系，表现人们的认知模式   散点图  利用坐标系展现所有所有点（即每一个案例） 根据两个或者多个维度，展示所有个案的情况。       引出结论  从资料中提炼出规律、模式、解释、因果、命题等，并在提炼的过程中快速验证    定量分析步骤</description>
+            <content type="html"><![CDATA[<p><strong>定性分析与定量分析</strong></p>
+<ul>
+<li>定性分析
+<ul>
+<li>对事物性质的归纳</li>
+<li>对问题的一种假设</li>
+</ul>
+</li>
+<li>定量分析
+<ul>
+<li>对事物数量的统计</li>
+<li>对问题的一种验证</li>
+</ul>
+</li>
+<li>数据基础
+<ul>
+<li>访谈（定性）</li>
+<li>问卷（定量）</li>
+<li>&hellip;</li>
+</ul>
+</li>
+<li>闭环
+<ul>
+<li>定性假设 -&gt; 定量验证 -&gt; 结论 -&gt; 定性假设</li>
+</ul>
+</li>
+<li>区别
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-01-07%20%E4%B8%8B%E5%8D%884.35.20.png" alt=""></li>
+</ul>
+<p><strong>定性分析步骤</strong></p>
+<ul>
+<li>转录
+<ul>
+<li>文本是最方便处理的形式，首先需要将获得的录音、现场笔记等资料转录为可读的文本</li>
+</ul>
+</li>
+<li>编码
+<ul>
+<li>是对资料进行简化、提炼、初步分析的过程</li>
+<li>常见方法
+<ul>
+<li>归纳法
+<ul>
+<li>基于扎根理论，在开始分析之前并不预设编码系统，而是在分析资料的过程中逐步地、自下而上地形成编码系统，从而能够实现从原始资料中提炼出理论和规律</li>
+</ul>
+</li>
+<li>演绎法
+<ul>
+<li>根据已有的理论和假设，预先设定一套编码系统，在资料分析的过程中直接使用这套系统中的代码进行标记</li>
+</ul>
+</li>
+<li>综合方法
+<ul>
+<li>融合了归纳法和演绎法，不预设代码系统，但是为代码预先创建一套基本的说明系统，限定代码的规则和范围</li>
+<li>在资料分析的过程中，根据资料本身的属性和说明系统的要求，产生代码</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>资料展示
+<ul>
+<li>使用可读性更强或者逻辑关系更加清晰的形式展示信息，资料展示的过程也是对资料进行进一步分析的过程</li>
+<li>常见方法
+<ul>
+<li>矩阵表
+<ul>
+<li>类似于表格</li>
+<li>了解事件的流程和关联，或者用于个案间的比较</li>
+</ul>
+</li>
+<li>网状图
+<ul>
+<li>类似于变量与变量之间的关系网</li>
+<li>强调多个变量或者元素之间的关系</li>
+</ul>
+</li>
+<li>脉络图
+<ul>
+<li>将群体按照社会体系进行划分，找出内在联系，类似于人际关系脉络</li>
+<li>描绘所处的情境、社会体系等，在相关脉络中深入理解人的行为</li>
+</ul>
+</li>
+<li>决策图
+<ul>
+<li>类似于流程图</li>
+<li>思考和决策的关键节点和流程</li>
+</ul>
+</li>
+<li>认知图
+<ul>
+<li>类似于日常的笔记作图，随意关系指代</li>
+<li>非层级的网状图，包括很多节点及其联系，表现人们的认知模式</li>
+</ul>
+</li>
+<li>散点图
+<ul>
+<li>利用坐标系展现所有所有点（即每一个案例）</li>
+<li>根据两个或者多个维度，展示所有个案的情况。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>引出结论
+<ul>
+<li>从资料中提炼出规律、模式、解释、因果、命题等，并在提炼的过程中快速验证</li>
+</ul>
+</li>
+</ul>
+<p><strong>定量分析步骤</strong></p>
+<ul>
+<li>量化阶段
+<ul>
+<li>完成预期数据的收集</li>
+</ul>
+</li>
+<li>分析阶段
+<ul>
+<li>一般分析框架
+<ul>
+<li>数据集的选取</li>
+<li>数据预处理</li>
+<li>特征工程</li>
+<li>建立分析模型</li>
+<li>模型验证</li>
+<li>发布分析结果</li>
+</ul>
+</li>
+<li>第2、3、4步将会是一个循环往复的过程，模型所得的结果达不到预期时，就必须回到第3步去调整或者更换模型，预先处理好的数据此时可能就需要重新准备</li>
+</ul>
+</li>
+</ul>
+<p><strong>BB Part</strong></p>
+<p>定性与定量分析各有优缺点，常常协同使用。个人感觉在PM领域，主要用来简单分析数据进而获得需求。定性更注重个例（可以理解为每个个体都会有创造性），而定量更注重最终的因果关系，两种方法都是对的，即便分析结果可能相反。所以，需要根据具体功能具体分析，以获取最真实的需求点。</p>
+]]></content>
+        </item>
         
         <item>
             <title>ECOM7123 Smart Mobility</title>
@@ -9886,10 +10035,12 @@ Frost &amp;amp; Sullivan近日发布的中国公有云市场的调研报告显�
             <pubDate>Tue, 10 Nov 2020 13:50:47 +0800</pubDate>
             
             <guid>https://www.marshalgao.com/to-c-introductory-lecture-of-tencent-lighthouse-program/</guid>
-            <description>产品生产的过程 产品想法  面临的挑战  真实需求挑战 市场竞争挑战  竞品分析   可行性挑战  技术 资源 政策法规     应对挑战  产品分析  用户研究：了解用户真实需求 竞品分析：了解市场重的竞品   虚拟成本  团队能力 资源配置   产品定位  结合产品分析和虚拟成本   产品规划  结合多方因素的最终导向      用户研究  产品需求与用户需求  产品需求：功能解决方案（产品的功能） 用户需求：想要达到的目的（功能背后的原因） 不同用户的价值观、行为模式不同，对产品的需求存在差异 example &amp;ndash; 短视频分享  社交型用户（基本特征） 兴趣型用户（兴趣纬度） 媒体型用户（商业维度）     基本步骤  用研目标  产品经理提出 明确调研目标   定性调研  明确用户群、特征和需求点 观察法、日志法、访谈法   定量验证  验证定性调研的结论   结论整理  可用的指导     基本模版    目标用户群 主要特征 主要需求点 主要功能     用户群1      用户群2      &amp;hellip;&amp;hellip;         市场分析  宏观环境  政策法律 经济要素 社会与文化 科技要素   行业趋势  行业概览 子行业细分 未来趋势   竞品格局  竞品定位 差异与优势 未来趋势 方法  找竞品  习惯与方法   看竞品  看定位、概念 看亮点、差异 看数据、反馈   利用竞品树对市场进行细分  自身产品所在细分市场各个竞品为直接竞品 其他细分市场各个竞品为间接竞品或潜在竞品 example &amp;ndash; 竞品树        基本模版    细分市场 竞品名称 定位 亮点/优势 未来趋势     细分市场A 竞品1      细分市场B 竞品2      &amp;hellip;&amp;hellip; &amp;hellip;&amp;hellip;         产品定位  SWOT分析 通过分析不断明确产品的定位   产品规划  产品定位与产品规划  定位：是根据用户需求、市场机会和团队能力选择的切入点 规划：是朝着产品长期愿景前进选择的阶段性目标和发展路径    方法 (GPA)  先设立每个阶段的目标，再围绕每个阶段的目标做考虑需要的功能和优先级  阶段目标的设定  阶段目标符合产品定位和市场环境 目标的定义应该是可实现、可评估的 当前阶段的目标最为明确 后一阶段的目标，是基于前一段目标的达成后猜想 目标可能会随着团队内部、外部环境的改变而变化   可选方案与优先级评估的思考方向  预估的效果 当前资源的限制     基本模版    阶段目标 主要功能点 优先级     阶段一目标名称 功能点1 P0   阶段二目标名称 功能点2 P1   &amp;hellip;&amp;hellip; &amp;hellip;&amp;hellip; &amp;hellip;&amp;hellip;      BB Part 当发现的需求领域没有竞品，伪需求的概率非常大。当一个需求领域的解决方案或者是产品处于一个百花齐放的状态时，才是一个真正的风口。</description>
-            <content type="html"><![CDATA[<h4 id="产品生产的过程">产品生产的过程</h4>
-<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/IMG_0046.jpg" alt=""></p>
-<h4 id="产品想法">产品想法</h4>
+            <description>产品生产的过程 产品想法
+ 面临的挑战  真实需求挑战 市场竞争挑战  竞品分析   可行性挑战  技术 资源 政策法规     应对挑战  产品分析  用户研究：了解用户真实需求 竞品分析：了解市场重的竞品   虚拟成本  团队能力 资源配置   产品定位  结合产品分析和虚拟成本   产品规划  结合多方因素的最终导向      用户研究
+ 产品需求与用户需求  产品需求：功能解决方案（产品的功能） 用户需求：想要达到的目的（功能背后的原因） 不同用户的价值观、行为模式不同，对产品的需求存在差异 example &amp;ndash; 短视频分享  社交型用户（基本特征） 兴趣型用户（兴趣纬度） 媒体型用户（商业维度）     基本步骤  用研目标  产品经理提出 明确调研目标   定性调研  明确用户群、特征和需求点 观察法、日志法、访谈法   定量验证  验证定性调研的结论   结论整理  可用的指导     基本模版    目标用户群 主要特征 主要需求点 主要功能     用户群1      用户群2      &amp;hellip;&amp;hellip;         市场分析</description>
+            <content type="html"><![CDATA[<p><strong>产品生产的过程</strong>
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/IMG_0046.jpg" alt=""></p>
+<p><strong>产品想法</strong></p>
 <ul>
 <li>面临的挑战
 <ul>
@@ -9935,7 +10086,7 @@ Frost &amp;amp; Sullivan近日发布的中国公有云市场的调研报告显�
 </ul>
 </li>
 </ul>
-<h4 id="用户研究">用户研究</h4>
+<p><strong>用户研究</strong></p>
 <ul>
 <li>产品需求与用户需求
 <ul>
@@ -10010,7 +10161,7 @@ Frost &amp;amp; Sullivan近日发布的中国公有云市场的调研报告显�
 </table>
 </li>
 </ul>
-<h4 id="市场分析">市场分析</h4>
+<p><strong>市场分析</strong></p>
 <ul>
 <li>宏观环境
 <ul>
@@ -10095,13 +10246,13 @@ Frost &amp;amp; Sullivan近日发布的中国公有云市场的调研报告显�
 </table>
 </li>
 </ul>
-<h4 id="产品定位">产品定位</h4>
+<p><strong>产品定位</strong></p>
 <ul>
 <li>SWOT分析</li>
 <li>通过分析不断明确产品的定位
 <img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/IMG_0048.jpg" alt=""></li>
 </ul>
-<h4 id="产品规划">产品规划</h4>
+<p><strong>产品规划</strong></p>
 <ul>
 <li>产品定位与产品规划
 <ul>
@@ -10160,9 +10311,9 @@ Frost &amp;amp; Sullivan近日发布的中国公有云市场的调研报告显�
 </table>
 </li>
 </ul>
-<h4 id="bb-part">BB Part</h4>
+<p><strong>BB Part</strong></p>
 <p>当发现的需求领域没有竞品，伪需求的概率非常大。当一个需求领域的解决方案或者是产品处于一个百花齐放的状态时，才是一个真正的风口。</p>
-<h4 id="推荐阅读">推荐阅读</h4>
+<p><strong>推荐阅读</strong></p>
 <ul>
 <li>《Don&rsquo;t make me think》</li>
 <li>《101 Design Methods》</li>
@@ -10381,11 +10532,12 @@ Frost &amp;amp; Sullivan近日发布的中国公有云市场的调研报告显�
             <pubDate>Sat, 07 Nov 2020 00:25:03 +0800</pubDate>
             
             <guid>https://www.marshalgao.com/axure-attachments/</guid>
-            <description>各事件简要介绍 各动作简要介绍 </description>
-            <content type="html"><![CDATA[<h4 id="各事件简要介绍">各事件简要介绍</h4>
+            <description>各事件简要介绍
+各动作简要介绍</description>
+            <content type="html"><![CDATA[<p><strong>各事件简要介绍</strong></p>
 <p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/IMG_00391.JPG" alt=""></p>
 <p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/IMG_0040.JPG" alt=""></p>
-<h4 id="各动作简要介绍">各动作简要介绍</h4>
+<p><strong>各动作简要介绍</strong></p>
 <p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/IMG_0041.JPG" alt=""></p>
 <p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/IMG_0042.JPG" alt=""></p>
 ]]></content>
