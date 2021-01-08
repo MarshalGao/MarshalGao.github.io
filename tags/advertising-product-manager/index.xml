@@ -7,7 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 07 Jan 2021 15:51:48 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/advertising-product-manager/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Jan 2021 16:37:07 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/advertising-product-manager/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode[176] Second Highest Salary</title>
+      <link>https://www.marshalgao.com/leetcode176-second-highest-salary/</link>
+      <pubDate>Fri, 08 Jan 2021 16:37:07 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode176-second-highest-salary/</guid>
+      <description>Question Write a SQL query to get the second highest salary from the Employee table.
++----+--------+ | Id | Salary | +----+--------+ | 1 | 100 | | 2 | 200 | | 3 | 300 | +----+--------+  For example, given the above Employee table, the query should return 200 as the second highest salary. If there is no second highest salary, then the query should return null.
++---------------------+ | SecondHighestSalary | +---------------------+ | 200 | +---------------------+  SQL Schema Create table If Not Exists Employee (Id int, Salary int) Truncate table Employee insert into Employee (Id, Salary) values (&#39;1&#39;, &#39;100&#39;) insert into Employee (Id, Salary) values (&#39;2&#39;, &#39;200&#39;) insert into Employee (Id, Salary) values (&#39;3&#39;, &#39;300&#39;)  My Interesting Code SELECT MAX(Salary) AS SecondHighestSalary FROM Employee WHERE Salary &amp;lt; (SELECT MAX(Salary) FROM Employee) My Perspective This question is also simple.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[175] Combine Two Tables</title>
+      <link>https://www.marshalgao.com/leetcode175-combine-two-tables/</link>
+      <pubDate>Fri, 08 Jan 2021 16:21:38 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode175-combine-two-tables/</guid>
+      <description>Question Table: Person
++-------------+---------+ | Column Name | Type | +-------------+---------+ | AddressId | int | | PersonId | int | | City | varchar | | State | varchar | +-------------+---------+ PersonId is the primary key column for this table.  Table: Address
++-------------+---------+ | Column Name | Type | +-------------+---------+ | AddressId | int | | PersonId | int | | City | varchar | | State | varchar | +-------------+---------+ AddressId is the primary key column for this table.</description>
+    </item>
+    
     <item>
       <title>Data Analysis</title>
       <link>https://www.marshalgao.com/data-analysis/</link>
@@ -110,48 +132,6 @@
       <guid>https://www.marshalgao.com/the-logical-relationship-of-advertising-system/</guid>
       <description>本文将从宏观角度理清广告系统中DSP、SSP、DMP、ADX、RTB等概念的逻辑与关系。
  广告主  希望为自己的品牌提供曝光，增加营销的商家或个人   代理商  不擅长或无经验的广告主  使用代理商代办   擅长且有经验的广告主  不使代理商，直接与DSP沟通     DSP  相当于面向广告主的前端产品 但有的DSP自身不带数据，则需要与DMP进行合作 虽然在DSP上广告主已经设定好了一切需求，但真正进行广告投放时，会利用DMP与正在浏览的用户进行画像比对   DMP  整理分散的数据，构建用户画像 大多数情况下利用所有浏览器的cookie 但在Fackbook上还使用了其自身的CRM   SSP  相当于提供流量、广告位的企业前端 汇聚了很多的Publisher Publisher在SSP上管理自己的广告位   Publisher  流量的实际拥有者 可以是网页，又可以是免费型的App 可以加入到SSP   RTB  不是平台，也不是DSP的一部分 是一种技术概念，采取oCPA以及oCPM等方式    Ad Network  由于互联网广告的碎片性质，导致广告主需要与不同的Publisher进行谈判 Ad Network整合了相应的Publisher，方便广告主   ADX  由于Ad network之间可能存在互相符合用户画像的流量，所以要对Ad Network进行整合 ADX最终整合了Ad Network以及更多的Publisher 引入RTB技术   简化流程   现如今，每一个广告联盟对应一个DSP，所以ADX连接的DSP和SSP并不一定是一对一的关系，可能会存在更复杂的情况。</description>
-    </item>
-    
-    <item>
-      <title>Is There a Ceiling for Tencent&#39;s Advertising Growth</title>
-      <link>https://www.marshalgao.com/is-there-a-ceiling-for-tencents-advertising-growth/</link>
-      <pubDate>Sat, 05 Dec 2020 14:28:19 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/is-there-a-ceiling-for-tencents-advertising-growth/</guid>
-      <description>现如今，在双十一、618，商家除了在电商平台排兵布阵，同时也需要社区电商和社交电商的支持。
-数据显示，中国社交电商的总零售额在2019年已经达到2万亿，增速高达63%。在这其中，微信小程序的GMV高达8000亿，同比增长超160%，在整个社交电商大盘中的占比为四成。社交电商的快速扩张，短期看不到尽头。截止今年8月，小程序商品交易GMV同比增长115%，品牌商家自营GMV同比增长210%。
-腾讯虽然没有做电商平台的基因，但交易不等于电商，线上交易也不等于平台电商。通过将广告和零售双向打通实现战略层面的整体升维，既用广告促进商品交易，又用一站式转化效果吸引更多企业的广告投放，进而形成双向循环。换言之，腾讯在做的是线上交易可能产生的各种模式创新，比如借助短视频、直播和微信群等生态内场景直连交易。
-品牌直营的机会
-以美国为例的西方国家，线上交易的主力军是品牌直营渠道，每个品牌会建立自己的网站进行销售，建立起品牌与客户的直接联系，这就是DTC（Direct To Customer）。而在中国，80%以上的电商都是基于电商平台完成的，由于在消费者和品牌之间有一层电商品牌，无法做到真正的DTC。
-在中国，影响DTC的因素很多。比如企业自身是否能独立获得可观的稳定流量？是否有在线支付及物流等基础设施的支撑？是否有技术实力支撑品牌更好地展示产品、讲好故事？因为这些问题，是的中国的电商交易一直处于中心化的格局。但这个格局在当下也不一定令品牌们满意，他们开始思考一些新的问题：流量增长会不会遭遇瓶颈？交易成本会不会越来越高？以及，我有没有途径更加直接地面对顾客？
-C端消费者的购物心态在发生着巨大的变化，在追求大牌、比货比价的同时，他们更希望享受到附加功能、服务体验以及多样化的购买。例如，今年7月，耐克借助小程序完成了一轮新品首发，从开屏广告、朋友圈广告引流，再到邀请明星参与直播，再到后端领券转化和用户沉淀，最终获得97万观看量、5.2万条评论互动和34万用户点赞。最近，微信的群直播可以理解为在这一战略进行布局谋划。
-DTC除了可以更好的让商家与用户进行沟通，同时还可以减少商家的成本，对于买卖双方来说是共赢的。腾讯曾提出过“公私域联动”的概念，公域指的是腾讯庞大的生态，私域指的是小程序、公众号、微信群这类能够反复触达用户的场景，而广告将成为联动公私域的介质。通过广告将庞大的公域流量引向不同品牌的商家私域，最终依靠小程序等场景实现品牌直营的本土化改造。最终实现商家与客户的直接联系。
-930变革后的猛进
-930变革是腾讯内部的一次事业群或者说是组织架构的调整，其目的是让企业从消费互联网向产业互联网升级。换言之，就是在to C业务的基础之上，开始拓展to B业务。最终的结果是，腾讯广告和腾讯智慧零售开始被腾讯赋予更多期待，他们是离消费者更近的那块拼图，也决定着广告主和腾讯本身能否通过这块拼图获得持续成长。
-但合并并不意味着更多的流量必然会带来更多的收益。在互联网生态中，流量充足并不必然意味着更强的变现能力。变现至少受两个环节影响：首先，流量是否能够变现，这取决于消费者的态度；其次，流量的商业价值能在多大程度上释放，这又取决于平台方的能力。
-让流量无限贴近交易
-腾讯的AMS加快了广告产品的迭代速度，将分散的投放端口整合到了同一个投放平台，强化了对商品数据的理解以实现人货间的最优匹配。另外，腾讯广告还借助技术手段将触角伸向其他环节，例如通过选品中台为快消客户的产品研发提供来自消费数据侧的参考等等。
-长久以来，广告销售采用的是以广告位资源为中心的批量交易模式，但除此，更应该加强对不同垂直类行业和交易场景的理解。广告平台在品牌直营领域，需要做好的是商业服务平台，提升广告主的ROI，而不仅仅是广告的售卖。由此形成的良性循环，会让更多的广告主青睐商业服务平台，从一定程度上将吃掉一部分电商份额。通过广告作为媒介，将公私域连接起来，实现品牌直营才是最终的目的。
-原文链接
- 突围电商,腾讯广告的增长有没有上限？  </description>
-    </item>
-    
-    <item>
-      <title>Media Management Platform (Take E-Commerce as an Example)</title>
-      <link>https://www.marshalgao.com/media-management-platform-take-e-commerce-as-an-example/</link>
-      <pubDate>Fri, 04 Dec 2020 16:25:08 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/media-management-platform-take-e-commerce-as-an-example/</guid>
-      <description>电商中大部分的页面还是写死的，但在一些大型活动节，商家可以自己定制化活动页面。但数量十分有限，因为平台要考虑算法运算效率以及加载速度等诸多因素。而活动的促销页面类似于广告中的落地页。通过媒体管理平台或者内容管理平台（CMS）进行页面动态配置。后文将以电商为例说明页面动态配置的逻辑。
-基础组件
-组件是动态页面的基础，提供给用户编辑具体展示的信息。有许多类型的组件：图片轮播、ICON、优惠券等，每种组件都可以有多个不同的样式，选择内部展示的内容或者自定义。用的最常见的就是链接，组件显示样式虽然多样，但是点击之后通往的页面选择库却是共通的。例如：新的活动页面、商品详情页、商品聚合页、购物车、客服等等。
-基础组件的定义和解析是自定义页面的核心，不同的组件有不同的功能，表示不同类型的内容。每个组件都需要单独设计，定义其规则和样式。 例如ICON、图片轮播就是简单的图片展示，商品排名对应的算法较为复杂，需要实时去取动态排名。
-位置+内容
-有了组件之后，用户在设置或者系统在解析的时候，首先要确定组件在自定义页面中的位置。位置可以称为“楼层”，每个页面的各楼层可以定义名称、设置背景、配置内容，目前最主流的交互是拖动组件到相应的位置，设置内容之后实时预览，自定义页面动态可视化。
-动态页面
-对于整个动态页面，需要定义生效时间、结束时间、活动页面名称等基础信息。设置之后可生成相应的链接进行预览。
-动态页面是由不同的组件内容构成，首先按照各组件位置去解析，然后再去解析组件的内容（样式、图片/商品、背景、链接等）。按照上图的反向流程走，就能解析出对应的自定义页面内容。
-首页设置也是相同，类似自定义页面，可动态设置首页内容，动态添加自定义组件。目前绝大部分电商首页都是动态配置，有着丰富的自定义内容。</description>
     </item>
     
   </channel>

@@ -7,7 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 29 Nov 2020 14:59:59 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Jan 2021 16:37:07 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode[176] Second Highest Salary</title>
+      <link>https://www.marshalgao.com/leetcode176-second-highest-salary/</link>
+      <pubDate>Fri, 08 Jan 2021 16:37:07 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode176-second-highest-salary/</guid>
+      <description>Question Write a SQL query to get the second highest salary from the Employee table.
++----+--------+ | Id | Salary | +----+--------+ | 1 | 100 | | 2 | 200 | | 3 | 300 | +----+--------+  For example, given the above Employee table, the query should return 200 as the second highest salary. If there is no second highest salary, then the query should return null.
++---------------------+ | SecondHighestSalary | +---------------------+ | 200 | +---------------------+  SQL Schema Create table If Not Exists Employee (Id int, Salary int) Truncate table Employee insert into Employee (Id, Salary) values (&#39;1&#39;, &#39;100&#39;) insert into Employee (Id, Salary) values (&#39;2&#39;, &#39;200&#39;) insert into Employee (Id, Salary) values (&#39;3&#39;, &#39;300&#39;)  My Interesting Code SELECT MAX(Salary) AS SecondHighestSalary FROM Employee WHERE Salary &amp;lt; (SELECT MAX(Salary) FROM Employee) My Perspective This question is also simple.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[175] Combine Two Tables</title>
+      <link>https://www.marshalgao.com/leetcode175-combine-two-tables/</link>
+      <pubDate>Fri, 08 Jan 2021 16:21:38 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode175-combine-two-tables/</guid>
+      <description>Question Table: Person
++-------------+---------+ | Column Name | Type | +-------------+---------+ | AddressId | int | | PersonId | int | | City | varchar | | State | varchar | +-------------+---------+ PersonId is the primary key column for this table.  Table: Address
++-------------+---------+ | Column Name | Type | +-------------+---------+ | AddressId | int | | PersonId | int | | City | varchar | | State | varchar | +-------------+---------+ AddressId is the primary key column for this table.</description>
+    </item>
+    
     <item>
       <title>Vector Search</title>
       <link>https://www.marshalgao.com/vector-search/</link>
@@ -47,10 +69,10 @@
       <pubDate>Wed, 07 Oct 2020 18:24:14 +0800</pubDate>
       
       <guid>https://www.marshalgao.com/leetcode1-two-sum/</guid>
-      <description>Question: Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+      <description>Question Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 You can return the answer in any order.
-Example 1: Input: nums = [2,7,11,15], target = 9 Output: [0,1] Output: Because nums[0] + nums[1] == 9, we return [0, 1].</description>
+Example 1 Input: nums = [2,7,11,15], target = 9 Output: [0,1] Output: Because nums[0] + nums[1] == 9, we return [0, 1].</description>
     </item>
     
   </channel>

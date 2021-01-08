@@ -6,8 +6,97 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Fri, 08 Jan 2021 09:20:54 +0800</lastBuildDate>
+        <lastBuildDate>Fri, 08 Jan 2021 16:37:07 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>LeetCode[176] Second Highest Salary</title>
+            <link>https://www.marshalgao.com/leetcode176-second-highest-salary/</link>
+            <pubDate>Fri, 08 Jan 2021 16:37:07 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/leetcode176-second-highest-salary/</guid>
+            <description>Question Write a SQL query to get the second highest salary from the Employee table.
++----+--------+ | Id | Salary | +----+--------+ | 1 | 100 | | 2 | 200 | | 3 | 300 | +----+--------+  For example, given the above Employee table, the query should return 200 as the second highest salary. If there is no second highest salary, then the query should return null.
++---------------------+ | SecondHighestSalary | +---------------------+ | 200 | +---------------------+  SQL Schema Create table If Not Exists Employee (Id int, Salary int) Truncate table Employee insert into Employee (Id, Salary) values (&#39;1&#39;, &#39;100&#39;) insert into Employee (Id, Salary) values (&#39;2&#39;, &#39;200&#39;) insert into Employee (Id, Salary) values (&#39;3&#39;, &#39;300&#39;)  My Interesting Code SELECT MAX(Salary) AS SecondHighestSalary FROM Employee WHERE Salary &amp;lt; (SELECT MAX(Salary) FROM Employee) My Perspective This question is also simple.</description>
+            <content type="html"><![CDATA[<h2 id="question">Question</h2>
+<p>Write a SQL query to get the second highest salary from the Employee table.</p>
+<pre><code>+----+--------+
+| Id | Salary |
++----+--------+
+| 1  | 100    |
+| 2  | 200    |
+| 3  | 300    |
++----+--------+
+</code></pre>
+<p>For example, given the above Employee table, the query should return 200 as the second highest salary. If there is no second highest salary, then the query should return null.</p>
+<pre><code>+---------------------+
+| SecondHighestSalary |
++---------------------+
+| 200                 |
++---------------------+
+</code></pre>
+<h2 id="sql-schema">SQL Schema</h2>
+<pre><code>Create table If Not Exists Employee (Id int, Salary int)
+Truncate table Employee
+insert into Employee (Id, Salary) values ('1', '100')
+insert into Employee (Id, Salary) values ('2', '200')
+insert into Employee (Id, Salary) values ('3', '300')
+</code></pre>
+<h2 id="my-interesting-code">My Interesting Code</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">MAX</span>(Salary) <span style="color:#66d9ef">AS</span> SecondHighestSalary
+<span style="color:#66d9ef">FROM</span> Employee 
+<span style="color:#66d9ef">WHERE</span> Salary <span style="color:#f92672">&lt;</span> (<span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">MAX</span>(Salary) <span style="color:#66d9ef">FROM</span> Employee)
+</code></pre></div><h2 id="my-perspective">My Perspective</h2>
+<p>This question is also simple. If you want to find the second highest salary, you can find the highest salary first. Then you can traverse the whole table again, but you need to make all the value are less than the highest salary (regardless of equality). Finally, the maximum of these numbers is the answer.</p>
+<p>By the way, if you use MAX function, the column name is MAX(Salary). You can use &ldquo;AS&rdquo; to address this problem.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>LeetCode[175] Combine Two Tables</title>
+            <link>https://www.marshalgao.com/leetcode175-combine-two-tables/</link>
+            <pubDate>Fri, 08 Jan 2021 16:21:38 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/leetcode175-combine-two-tables/</guid>
+            <description>Question Table: Person
++-------------+---------+ | Column Name | Type | +-------------+---------+ | AddressId | int | | PersonId | int | | City | varchar | | State | varchar | +-------------+---------+ PersonId is the primary key column for this table.  Table: Address
++-------------+---------+ | Column Name | Type | +-------------+---------+ | AddressId | int | | PersonId | int | | City | varchar | | State | varchar | +-------------+---------+ AddressId is the primary key column for this table.</description>
+            <content type="html"><![CDATA[<h2 id="question">Question</h2>
+<p>Table: Person</p>
+<pre><code>+-------------+---------+
+| Column Name | Type    |
++-------------+---------+
+| AddressId   | int     |
+| PersonId    | int     |
+| City        | varchar |
+| State       | varchar |
++-------------+---------+
+PersonId is the primary key column for this table.
+</code></pre>
+<p>Table: Address</p>
+<pre><code>+-------------+---------+
+| Column Name | Type    |
++-------------+---------+
+| AddressId   | int     |
+| PersonId    | int     |
+| City        | varchar |
+| State       | varchar |
++-------------+---------+
+AddressId is the primary key column for this table.
+</code></pre>
+<p>Write a SQL query for a report that provides the following information for each person in the Person table, regardless if there is an address for each of those people:</p>
+<pre><code>FirstName, LastName, City, State
+</code></pre>
+<h2 id="my-interesting-code">My Interesting Code</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> Person.FirstName, Person.LastName, Address.City, Address.<span style="color:#66d9ef">State</span>
+<span style="color:#66d9ef">FROM</span> Person
+<span style="color:#66d9ef">LEFT</span> <span style="color:#66d9ef">JOIN</span> Address
+<span style="color:#66d9ef">ON</span> Person.PersonId<span style="color:#f92672">=</span>Address.PersonId;
+</code></pre></div><h2 id="my-perspective">My Perspective</h2>
+<p>This question is simple, but you need to distinguish the differences among left join, right join, and inner join.</p>
+<p>Also, there is a useful link, and I think it can help you. (chinese version) -&gt; <a href="https://www.cnblogs.com/wgphp/p/8183812.html">details</a></p>
+]]></content>
+        </item>
         
         <item>
             <title>ECOM7123 Open Data &amp; Spatial Data Infrastructure (SDI)</title>
@@ -14299,11 +14388,11 @@ value chain or pipeline.
             <pubDate>Wed, 07 Oct 2020 18:24:14 +0800</pubDate>
             
             <guid>https://www.marshalgao.com/leetcode1-two-sum/</guid>
-            <description>Question: Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+            <description>Question Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 You can return the answer in any order.
-Example 1: Input: nums = [2,7,11,15], target = 9 Output: [0,1] Output: Because nums[0] + nums[1] == 9, we return [0, 1].</description>
-            <content type="html"><![CDATA[<h2 id="question">Question:</h2>
+Example 1 Input: nums = [2,7,11,15], target = 9 Output: [0,1] Output: Because nums[0] + nums[1] == 9, we return [0, 1].</description>
+            <content type="html"><![CDATA[<h2 id="question">Question</h2>
 
 <p align="justify">Given an array of integers <b>nums</b> and an integer <b>target</b>, return <i>indices of the two numbers such that they add up to <b>target</b></i>.</p>
 
@@ -14311,17 +14400,17 @@ Example 1: Input: nums = [2,7,11,15], target = 9 Output: [0,1] Output: Because n
 
 <p>You can return the answer in any order.</p>
 
-<h2 id="example-1">Example 1:</h2>
+<h2 id="example-1">Example 1</h2>
 <pre><code>Input: nums = [2,7,11,15], target = 9
 Output: [0,1]
 Output: Because nums[0] + nums[1] == 9, we return [0, 1].</code></pre>
-<h2 id="example-2">Example 2:</h2>
+<h2 id="example-2">Example 2</h2>
 <pre><code>Input: nums = [3,2,4], target = 6
 Output: [1,2] </code></pre>
-<h2 id="example-3">Example 3:</h2>
+<h2 id="example-3">Example 3</h2>
 <pre><code>Input: nums = [3,3], target = 6
 Output: [0,1]</code></pre>
-<h2 id="constraints">Constraints:</h2>
+<h2 id="constraints">Constraints</h2>
 
 <ul>
 <li>2 <span  class="math">\(\leq\)</span> nums.length <span  class="math">\(\leq 10^5\)</span></li>
@@ -14330,7 +14419,7 @@ Output: [0,1]</code></pre>
 <li><strong>Only one valid answer exists.</strong></li>
 </ul>
 
-<h2 id="my-interesting-code">My Interesting Code:</h2>
+<h2 id="my-interesting-code">My Interesting Code</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>(object):
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">twoSum</span>(self, nums, target):
         <span style="color:#e6db74">&#34;&#34;&#34;
