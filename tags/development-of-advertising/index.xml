@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>development of advertising on This Is Marshal</title>
+    <link>https://www.marshalgao.com/tags/development-of-advertising/</link>
+    <description>Recent content in development of advertising on This Is Marshal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 08 Jan 2021 17:35:12 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/development-of-advertising/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Needs and Development of Internet Advertising</title>
+      <link>https://www.marshalgao.com/the-needs-and-development-of-internet-advertising/</link>
+      <pubDate>Fri, 08 Jan 2021 17:35:12 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/the-needs-and-development-of-internet-advertising/</guid>
+      <description>纵观互联网广告行业的发展历程
+ 门户时代互联网广告（广告主仍然偏爱传统流量） 搜索广告的出现 （比如谷歌、百度、阿里妈妈） 信息流广告的革命性改变（比如Facebook，今日头条，腾讯社交广告）  以广告主、媒体方的发展及需求为主线，理解行业的发展变化
+ 持续面临的问题  广告主  更愿意为效果付费，而非展现 期望更精准地获得流量 不知怎么更好地做投放决策   媒体方  大媒体及小媒体都希望尽可能卖出更多流量 媒体需要提高单个流量的变现效率 媒体期望降低链条的交易成本     基于面临问题进行的行业转变  由仅支持按曝光计费变为可选择按效果计费  早期以CPT、CPM等曝光类方式计费 搜索引擎率先推出了按点击付费的方式  平衡广告主和媒体的利益 媒体侧重给广告更多有效的点击 广告主负责将点击转化   按转化计费方式的出现（由于落地页由媒体方提供和负责，其很难监控转化数据、优化转化效率，所以推出这种计费方式的媒体不多）  填写表单 下单 下载等     由粗糙的定向投放变为精细化定向投放  人物画像的出现 定向采买的实现 DMP对数据的高度整合，使广告被投向不同的媒体平台 近些年，也会通过广告与用户的互动来实现召回，减少不必要的曝光   小媒体由不能获益变为能获得广告收益  早期卖的流量比较粗，只有大的媒体和核心广告位比较抢手 越来越多的小媒体拥有小流量，单看流量自身，其对广告主是十分有价值的 整合大小媒体，出现了广告联盟  大媒体可以正常获客 小媒体可以售卖自身流量 广告主可以获得更多的有效流量，且没有增加成本     由提前锁定部分媒体的流量资源，变为实时竞价多个媒体的流量资源  互联网广告早期的交易方式是广告主提前出价，与媒体约定采买的量，媒体预留展示机会给广告主  对于广告主，他们期望在媒体选择、预算分配及出价方案上有一定的灵活性，也期望能降低决策成本、同时让购买的流量尽可能多地有价值 对于媒体方，这种方式容易让其错失一些更愿意出高价的潜在客户，也容易在流量波动的情况下不能灵活调整售卖策略，同时中小媒体在前述方式下也难获得交易机会   实时竞价的出现  将每个流量视作独立的售卖单位 可以单独售卖、多人竞价、实时交易 实现方式  DSP、SSP、ADX、DMP的结合 SSP是为媒体方服务的，负责和ADX对接，接入SSP的媒体，在广告位有单个流量到来时，可发起广告请求，向ADX询问是否有合适的广告可展现 ADX是为DSP和SSP服务的，起到衔接、匹配的作用，它接收到SSP的请求后，将广告流量信息传递给DSP，询问它们的出价，DSP响应后返回相应的广告创意及出价 DSP是为广告主服务的，负责和ADX对接，若干广告主将预算、创意、出价、流量要求等提交给DSP，DSP负责具体投放决策 DMP提供数据服务，帮助广告主更准确地了解每个流量，帮助其决策       由按流量统一出价变为按流量差异化出价  主要针对的是点击计费的场景 按照传统的点击计费逻辑，广告主为每个点击付出的成本大体是相近的 追求效果的广告主通常按下载、填写表单等实际转化来核算成本 由于每个点击的实际转化率波动大、再加上客户在短时间获得的点击量较小，这就导致按上述计费方式换算的转化成本不稳定，客户的成本和预算不太可控，安全感较低 由于出价是固定的，对于那些转化率更高的流量，客户没办法在控制总预算的前提下临时调整出价以竞争到展现广告的机会 oCPC的诞生  客户设定转化出价（例如一个下载平均20元），对于每一个流量，系统可根据预估的转化率调整点击出价，使转化成本相对稳定 按照这个逻辑，系统可对预估转化率高的流量提高出价，预估转化率低流量降低出价        </description>
+    </item>
+    
+  </channel>
+</rss>

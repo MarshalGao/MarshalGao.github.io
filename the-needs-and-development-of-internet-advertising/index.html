@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Marshal ">
+<meta name="description" content="纵观互联网广告行业的发展历程
+ 门户时代互联网广告（广告主仍然偏爱传统流量） 搜索广告的出现 （比如谷歌、百度、阿里妈妈） 信息流广告的革命性改变（比如Facebook，今日头条，腾讯社交广告）  以广告主、媒体方的发展及需求为主线，理解行业的发展变化
+ 持续面临的问题  广告主  更愿意为效果付费，而非展现 期望更精准地获得流量 不知怎么更好地做投放决策   媒体方  大媒体及小媒体都希望尽可能卖出更多流量 媒体需要提高单个流量的变现效率 媒体期望降低链条的交易成本     基于面临问题进行的行业转变  由仅支持按曝光计费变为可选择按效果计费  早期以CPT、CPM等曝光类方式计费 搜索引擎率先推出了按点击付费的方式  平衡广告主和媒体的利益 媒体侧重给广告更多有效的点击 广告主负责将点击转化   按转化计费方式的出现（由于落地页由媒体方提供和负责，其很难监控转化数据、优化转化效率，所以推出这种计费方式的媒体不多）  填写表单 下单 下载等     由粗糙的定向投放变为精细化定向投放  人物画像的出现 定向采买的实现 DMP对数据的高度整合，使广告被投向不同的媒体平台 近些年，也会通过广告与用户的互动来实现召回，减少不必要的曝光   小媒体由不能获益变为能获得广告收益  早期卖的流量比较粗，只有大的媒体和核心广告位比较抢手 越来越多的小媒体拥有小流量，单看流量自身，其对广告主是十分有价值的 整合大小媒体，出现了广告联盟  大媒体可以正常获客 小媒体可以售卖自身流量 广告主可以获得更多的有效流量，且没有增加成本     由提前锁定部分媒体的流量资源，变为实时竞价多个媒体的流量资源  互联网广告早期的交易方式是广告主提前出价，与媒体约定采买的量，媒体预留展示机会给广告主  对于广告主，他们期望在媒体选择、预算分配及出价方案上有一定的灵活性，也期望能降低决策成本、同时让购买的流量尽可能多地有价值 对于媒体方，这种方式容易让其错失一些更愿意出高价的潜在客户，也容易在流量波动的情况下不能灵活调整售卖策略，同时中小媒体在前述方式下也难获得交易机会   实时竞价的出现  将每个流量视作独立的售卖单位 可以单独售卖、多人竞价、实时交易 实现方式  DSP、SSP、ADX、DMP的结合 SSP是为媒体方服务的，负责和ADX对接，接入SSP的媒体，在广告位有单个流量到来时，可发起广告请求，向ADX询问是否有合适的广告可展现 ADX是为DSP和SSP服务的，起到衔接、匹配的作用，它接收到SSP的请求后，将广告流量信息传递给DSP，询问它们的出价，DSP响应后返回相应的广告创意及出价 DSP是为广告主服务的，负责和ADX对接，若干广告主将预算、创意、出价、流量要求等提交给DSP，DSP负责具体投放决策 DMP提供数据服务，帮助广告主更准确地了解每个流量，帮助其决策       由按流量统一出价变为按流量差异化出价  主要针对的是点击计费的场景 按照传统的点击计费逻辑，广告主为每个点击付出的成本大体是相近的 追求效果的广告主通常按下载、填写表单等实际转化来核算成本 由于每个点击的实际转化率波动大、再加上客户在短时间获得的点击量较小，这就导致按上述计费方式换算的转化成本不稳定，客户的成本和预算不太可控，安全感较低 由于出价是固定的，对于那些转化率更高的流量，客户没办法在控制总预算的前提下临时调整出价以竞争到展现广告的机会 oCPC的诞生  客户设定转化出价（例如一个下载平均20元），对于每一个流量，系统可根据预估的转化率调整点击出价，使转化成本相对稳定 按照这个逻辑，系统可对预估转化率高的流量提高出价，预估转化率低流量降低出价        " />
+<meta name="keywords" content=", advertising product manager, daily learning, needs of internet advertising, development of advertising" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://www.marshalgao.com/the-needs-and-development-of-internet-advertising/" />
+
+
+    <title>
+        
+            The Needs and Development of Internet Advertising :: This Is Marshal 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://www.marshalgao.com/main.bdf16375e88c9de5121e200285a015c4d181bcc9641cf97e05c5e46866f50161.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.marshalgao.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.marshalgao.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.marshalgao.com/favicon-16x16.png">
+    <link rel="manifest" href="https://www.marshalgao.com/site.webmanifest">
+    <link rel="mask-icon" href="https://www.marshalgao.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://www.marshalgao.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="The Needs and Development of Internet Advertising">
+<meta itemprop="description" content="纵观互联网广告行业的发展历程
+ 门户时代互联网广告（广告主仍然偏爱传统流量） 搜索广告的出现 （比如谷歌、百度、阿里妈妈） 信息流广告的革命性改变（比如Facebook，今日头条，腾讯社交广告）  以广告主、媒体方的发展及需求为主线，理解行业的发展变化
+ 持续面临的问题  广告主  更愿意为效果付费，而非展现 期望更精准地获得流量 不知怎么更好地做投放决策   媒体方  大媒体及小媒体都希望尽可能卖出更多流量 媒体需要提高单个流量的变现效率 媒体期望降低链条的交易成本     基于面临问题进行的行业转变  由仅支持按曝光计费变为可选择按效果计费  早期以CPT、CPM等曝光类方式计费 搜索引擎率先推出了按点击付费的方式  平衡广告主和媒体的利益 媒体侧重给广告更多有效的点击 广告主负责将点击转化   按转化计费方式的出现（由于落地页由媒体方提供和负责，其很难监控转化数据、优化转化效率，所以推出这种计费方式的媒体不多）  填写表单 下单 下载等     由粗糙的定向投放变为精细化定向投放  人物画像的出现 定向采买的实现 DMP对数据的高度整合，使广告被投向不同的媒体平台 近些年，也会通过广告与用户的互动来实现召回，减少不必要的曝光   小媒体由不能获益变为能获得广告收益  早期卖的流量比较粗，只有大的媒体和核心广告位比较抢手 越来越多的小媒体拥有小流量，单看流量自身，其对广告主是十分有价值的 整合大小媒体，出现了广告联盟  大媒体可以正常获客 小媒体可以售卖自身流量 广告主可以获得更多的有效流量，且没有增加成本     由提前锁定部分媒体的流量资源，变为实时竞价多个媒体的流量资源  互联网广告早期的交易方式是广告主提前出价，与媒体约定采买的量，媒体预留展示机会给广告主  对于广告主，他们期望在媒体选择、预算分配及出价方案上有一定的灵活性，也期望能降低决策成本、同时让购买的流量尽可能多地有价值 对于媒体方，这种方式容易让其错失一些更愿意出高价的潜在客户，也容易在流量波动的情况下不能灵活调整售卖策略，同时中小媒体在前述方式下也难获得交易机会   实时竞价的出现  将每个流量视作独立的售卖单位 可以单独售卖、多人竞价、实时交易 实现方式  DSP、SSP、ADX、DMP的结合 SSP是为媒体方服务的，负责和ADX对接，接入SSP的媒体，在广告位有单个流量到来时，可发起广告请求，向ADX询问是否有合适的广告可展现 ADX是为DSP和SSP服务的，起到衔接、匹配的作用，它接收到SSP的请求后，将广告流量信息传递给DSP，询问它们的出价，DSP响应后返回相应的广告创意及出价 DSP是为广告主服务的，负责和ADX对接，若干广告主将预算、创意、出价、流量要求等提交给DSP，DSP负责具体投放决策 DMP提供数据服务，帮助广告主更准确地了解每个流量，帮助其决策       由按流量统一出价变为按流量差异化出价  主要针对的是点击计费的场景 按照传统的点击计费逻辑，广告主为每个点击付出的成本大体是相近的 追求效果的广告主通常按下载、填写表单等实际转化来核算成本 由于每个点击的实际转化率波动大、再加上客户在短时间获得的点击量较小，这就导致按上述计费方式换算的转化成本不稳定，客户的成本和预算不太可控，安全感较低 由于出价是固定的，对于那些转化率更高的流量，客户没办法在控制总预算的前提下临时调整出价以竞争到展现广告的机会 oCPC的诞生  客户设定转化出价（例如一个下载平均20元），对于每一个流量，系统可根据预估的转化率调整点击出价，使转化成本相对稳定 按照这个逻辑，系统可对预估转化率高的流量提高出价，预估转化率低流量降低出价        ">
+<meta itemprop="datePublished" content="2021-01-08T17:35:12+08:00" />
+<meta itemprop="dateModified" content="2021-01-08T17:35:12+08:00" />
+<meta itemprop="wordCount" content="60">
+<meta itemprop="image" content="https://www.marshalgao.com/"/>
+
+
+
+<meta itemprop="keywords" content="advertising product manager,daily learning,needs of internet advertising,development of advertising," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.marshalgao.com/"/>
+
+<meta name="twitter:title" content="The Needs and Development of Internet Advertising"/>
+<meta name="twitter:description" content="纵观互联网广告行业的发展历程
+ 门户时代互联网广告（广告主仍然偏爱传统流量） 搜索广告的出现 （比如谷歌、百度、阿里妈妈） 信息流广告的革命性改变（比如Facebook，今日头条，腾讯社交广告）  以广告主、媒体方的发展及需求为主线，理解行业的发展变化
+ 持续面临的问题  广告主  更愿意为效果付费，而非展现 期望更精准地获得流量 不知怎么更好地做投放决策   媒体方  大媒体及小媒体都希望尽可能卖出更多流量 媒体需要提高单个流量的变现效率 媒体期望降低链条的交易成本     基于面临问题进行的行业转变  由仅支持按曝光计费变为可选择按效果计费  早期以CPT、CPM等曝光类方式计费 搜索引擎率先推出了按点击付费的方式  平衡广告主和媒体的利益 媒体侧重给广告更多有效的点击 广告主负责将点击转化   按转化计费方式的出现（由于落地页由媒体方提供和负责，其很难监控转化数据、优化转化效率，所以推出这种计费方式的媒体不多）  填写表单 下单 下载等     由粗糙的定向投放变为精细化定向投放  人物画像的出现 定向采买的实现 DMP对数据的高度整合，使广告被投向不同的媒体平台 近些年，也会通过广告与用户的互动来实现召回，减少不必要的曝光   小媒体由不能获益变为能获得广告收益  早期卖的流量比较粗，只有大的媒体和核心广告位比较抢手 越来越多的小媒体拥有小流量，单看流量自身，其对广告主是十分有价值的 整合大小媒体，出现了广告联盟  大媒体可以正常获客 小媒体可以售卖自身流量 广告主可以获得更多的有效流量，且没有增加成本     由提前锁定部分媒体的流量资源，变为实时竞价多个媒体的流量资源  互联网广告早期的交易方式是广告主提前出价，与媒体约定采买的量，媒体预留展示机会给广告主  对于广告主，他们期望在媒体选择、预算分配及出价方案上有一定的灵活性，也期望能降低决策成本、同时让购买的流量尽可能多地有价值 对于媒体方，这种方式容易让其错失一些更愿意出高价的潜在客户，也容易在流量波动的情况下不能灵活调整售卖策略，同时中小媒体在前述方式下也难获得交易机会   实时竞价的出现  将每个流量视作独立的售卖单位 可以单独售卖、多人竞价、实时交易 实现方式  DSP、SSP、ADX、DMP的结合 SSP是为媒体方服务的，负责和ADX对接，接入SSP的媒体，在广告位有单个流量到来时，可发起广告请求，向ADX询问是否有合适的广告可展现 ADX是为DSP和SSP服务的，起到衔接、匹配的作用，它接收到SSP的请求后，将广告流量信息传递给DSP，询问它们的出价，DSP响应后返回相应的广告创意及出价 DSP是为广告主服务的，负责和ADX对接，若干广告主将预算、创意、出价、流量要求等提交给DSP，DSP负责具体投放决策 DMP提供数据服务，帮助广告主更准确地了解每个流量，帮助其决策       由按流量统一出价变为按流量差异化出价  主要针对的是点击计费的场景 按照传统的点击计费逻辑，广告主为每个点击付出的成本大体是相近的 追求效果的广告主通常按下载、填写表单等实际转化来核算成本 由于每个点击的实际转化率波动大、再加上客户在短时间获得的点击量较小，这就导致按上述计费方式换算的转化成本不稳定，客户的成本和预算不太可控，安全感较低 由于出价是固定的，对于那些转化率更高的流量，客户没办法在控制总预算的前提下临时调整出价以竞争到展现广告的机会 oCPC的诞生  客户设定转化出价（例如一个下载平均20元），对于每一个流量，系统可根据预估的转化率调整点击出价，使转化成本相对稳定 按照这个逻辑，系统可对预估转化率高的流量提高出价，预估转化率低流量降低出价        "/>
+
+
+
+    <meta property="og:title" content="The Needs and Development of Internet Advertising" />
+<meta property="og:description" content="纵观互联网广告行业的发展历程
+ 门户时代互联网广告（广告主仍然偏爱传统流量） 搜索广告的出现 （比如谷歌、百度、阿里妈妈） 信息流广告的革命性改变（比如Facebook，今日头条，腾讯社交广告）  以广告主、媒体方的发展及需求为主线，理解行业的发展变化
+ 持续面临的问题  广告主  更愿意为效果付费，而非展现 期望更精准地获得流量 不知怎么更好地做投放决策   媒体方  大媒体及小媒体都希望尽可能卖出更多流量 媒体需要提高单个流量的变现效率 媒体期望降低链条的交易成本     基于面临问题进行的行业转变  由仅支持按曝光计费变为可选择按效果计费  早期以CPT、CPM等曝光类方式计费 搜索引擎率先推出了按点击付费的方式  平衡广告主和媒体的利益 媒体侧重给广告更多有效的点击 广告主负责将点击转化   按转化计费方式的出现（由于落地页由媒体方提供和负责，其很难监控转化数据、优化转化效率，所以推出这种计费方式的媒体不多）  填写表单 下单 下载等     由粗糙的定向投放变为精细化定向投放  人物画像的出现 定向采买的实现 DMP对数据的高度整合，使广告被投向不同的媒体平台 近些年，也会通过广告与用户的互动来实现召回，减少不必要的曝光   小媒体由不能获益变为能获得广告收益  早期卖的流量比较粗，只有大的媒体和核心广告位比较抢手 越来越多的小媒体拥有小流量，单看流量自身，其对广告主是十分有价值的 整合大小媒体，出现了广告联盟  大媒体可以正常获客 小媒体可以售卖自身流量 广告主可以获得更多的有效流量，且没有增加成本     由提前锁定部分媒体的流量资源，变为实时竞价多个媒体的流量资源  互联网广告早期的交易方式是广告主提前出价，与媒体约定采买的量，媒体预留展示机会给广告主  对于广告主，他们期望在媒体选择、预算分配及出价方案上有一定的灵活性，也期望能降低决策成本、同时让购买的流量尽可能多地有价值 对于媒体方，这种方式容易让其错失一些更愿意出高价的潜在客户，也容易在流量波动的情况下不能灵活调整售卖策略，同时中小媒体在前述方式下也难获得交易机会   实时竞价的出现  将每个流量视作独立的售卖单位 可以单独售卖、多人竞价、实时交易 实现方式  DSP、SSP、ADX、DMP的结合 SSP是为媒体方服务的，负责和ADX对接，接入SSP的媒体，在广告位有单个流量到来时，可发起广告请求，向ADX询问是否有合适的广告可展现 ADX是为DSP和SSP服务的，起到衔接、匹配的作用，它接收到SSP的请求后，将广告流量信息传递给DSP，询问它们的出价，DSP响应后返回相应的广告创意及出价 DSP是为广告主服务的，负责和ADX对接，若干广告主将预算、创意、出价、流量要求等提交给DSP，DSP负责具体投放决策 DMP提供数据服务，帮助广告主更准确地了解每个流量，帮助其决策       由按流量统一出价变为按流量差异化出价  主要针对的是点击计费的场景 按照传统的点击计费逻辑，广告主为每个点击付出的成本大体是相近的 追求效果的广告主通常按下载、填写表单等实际转化来核算成本 由于每个点击的实际转化率波动大、再加上客户在短时间获得的点击量较小，这就导致按上述计费方式换算的转化成本不稳定，客户的成本和预算不太可控，安全感较低 由于出价是固定的，对于那些转化率更高的流量，客户没办法在控制总预算的前提下临时调整出价以竞争到展现广告的机会 oCPC的诞生  客户设定转化出价（例如一个下载平均20元），对于每一个流量，系统可根据预估的转化率调整点击出价，使转化成本相对稳定 按照这个逻辑，系统可对预估转化率高的流量提高出价，预估转化率低流量降低出价        " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.marshalgao.com/the-needs-and-development-of-internet-advertising/" />
+<meta property="og:image" content="https://www.marshalgao.com/"/>
+<meta property="article:published_time" content="2021-01-08T17:35:12+08:00" />
+<meta property="article:modified_time" content="2021-01-08T17:35:12+08:00" />
+
+
+
+
+    <meta property="article:section" content="Product Manager" />
+
+
+
+    <meta property="article:published_time" content="2021-01-08 17:35:12 &#43;0800 HKT" />
+
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://www.marshalgao.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://www.marshalgao.com/categories/hku">HKU</a></li><li><a href="https://www.marshalgao.com/categories/technology">TECH</a></li><li><a href="https://www.marshalgao.com/categories/product-manager">PM</a></li><li><a href="https://www.marshalgao.com/categories/life">LIFE</a></li><li><a href="https://www.marshalgao.com/about/">ABOUT</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        One minute
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://www.marshalgao.com/the-needs-and-development-of-internet-advertising/">The Needs and Development of Internet Advertising</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <p><strong>纵观互联网广告行业的发展历程</strong></p>
+<ul>
+<li>门户时代互联网广告（广告主仍然偏爱传统流量）</li>
+<li>搜索广告的出现 （比如谷歌、百度、阿里妈妈）</li>
+<li>信息流广告的革命性改变（比如Facebook，今日头条，腾讯社交广告）</li>
+</ul>
+<p><strong>以广告主、媒体方的发展及需求为主线，理解行业的发展变化</strong></p>
+<ul>
+<li>持续面临的问题
+<ul>
+<li>广告主
+<ul>
+<li>更愿意为效果付费，而非展现</li>
+<li>期望更精准地获得流量</li>
+<li>不知怎么更好地做投放决策</li>
+</ul>
+</li>
+<li>媒体方
+<ul>
+<li>大媒体及小媒体都希望尽可能卖出更多流量</li>
+<li>媒体需要提高单个流量的变现效率</li>
+<li>媒体期望降低链条的交易成本</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>基于面临问题进行的行业转变
+<ul>
+<li>由仅支持按曝光计费变为可选择按效果计费
+<ul>
+<li>早期以CPT、CPM等曝光类方式计费</li>
+<li>搜索引擎率先推出了按点击付费的方式
+<ul>
+<li>平衡广告主和媒体的利益</li>
+<li>媒体侧重给广告更多有效的点击</li>
+<li>广告主负责将点击转化</li>
+</ul>
+</li>
+<li>按转化计费方式的出现（由于落地页由媒体方提供和负责，其很难监控转化数据、优化转化效率，所以推出这种计费方式的媒体不多）
+<ul>
+<li>填写表单</li>
+<li>下单</li>
+<li>下载等</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>由粗糙的定向投放变为精细化定向投放
+<ul>
+<li>人物画像的出现</li>
+<li>定向采买的实现</li>
+<li>DMP对数据的高度整合，使广告被投向不同的媒体平台</li>
+<li>近些年，也会通过广告与用户的互动来实现召回，减少不必要的曝光</li>
+</ul>
+</li>
+<li>小媒体由不能获益变为能获得广告收益
+<ul>
+<li>早期卖的流量比较粗，只有大的媒体和核心广告位比较抢手</li>
+<li>越来越多的小媒体拥有小流量，单看流量自身，其对广告主是十分有价值的</li>
+<li>整合大小媒体，出现了广告联盟
+<ul>
+<li>大媒体可以正常获客</li>
+<li>小媒体可以售卖自身流量</li>
+<li>广告主可以获得更多的有效流量，且没有增加成本</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>由提前锁定部分媒体的流量资源，变为实时竞价多个媒体的流量资源
+<ul>
+<li>互联网广告早期的交易方式是广告主提前出价，与媒体约定采买的量，媒体预留展示机会给广告主
+<ul>
+<li>对于广告主，他们期望在媒体选择、预算分配及出价方案上有一定的灵活性，也期望能降低决策成本、同时让购买的流量尽可能多地有价值</li>
+<li>对于媒体方，这种方式容易让其错失一些更愿意出高价的潜在客户，也容易在流量波动的情况下不能灵活调整售卖策略，同时中小媒体在前述方式下也难获得交易机会</li>
+</ul>
+</li>
+<li>实时竞价的出现
+<ul>
+<li>将每个流量视作独立的售卖单位</li>
+<li>可以单独售卖、多人竞价、实时交易</li>
+<li>实现方式
+<ul>
+<li>DSP、SSP、ADX、DMP的结合</li>
+<li>SSP是为媒体方服务的，负责和ADX对接，接入SSP的媒体，在广告位有单个流量到来时，可发起广告请求，向ADX询问是否有合适的广告可展现</li>
+<li>ADX是为DSP和SSP服务的，起到衔接、匹配的作用，它接收到SSP的请求后，将广告流量信息传递给DSP，询问它们的出价，DSP响应后返回相应的广告创意及出价</li>
+<li>DSP是为广告主服务的，负责和ADX对接，若干广告主将预算、创意、出价、流量要求等提交给DSP，DSP负责具体投放决策</li>
+<li>DMP提供数据服务，帮助广告主更准确地了解每个流量，帮助其决策</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>由按流量统一出价变为按流量差异化出价
+<ul>
+<li>主要针对的是点击计费的场景</li>
+<li>按照传统的点击计费逻辑，广告主为每个点击付出的成本大体是相近的</li>
+<li>追求效果的广告主通常按下载、填写表单等实际转化来核算成本</li>
+<li>由于每个点击的实际转化率波动大、再加上客户在短时间获得的点击量较小，这就导致按上述计费方式换算的转化成本不稳定，客户的成本和预算不太可控，安全感较低</li>
+<li>由于出价是固定的，对于那些转化率更高的流量，客户没办法在控制总预算的前提下临时调整出价以竞争到展现广告的机会</li>
+<li>oCPC的诞生
+<ul>
+<li>客户设定转化出价（例如一个下载平均20元），对于每一个流量，系统可根据预估的转化率调整点击出价，使转化成本相对稳定</li>
+<li>按照这个逻辑，系统可对预估转化率高的流量提高出价，预估转化率低流量降低出价</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/tags/advertising-product-manager/">advertising product manager</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/daily-learning/">daily learning</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/needs-of-internet-advertising/">needs of internet advertising</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/development-of-advertising/">development of advertising</a></span>
+        
+    </p>
+
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/categories/product-manager/">Product Manager</a></span>
+        
+    </p>
+
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        60 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2021-01-08 17:35
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+
+          
+            <span class="button next">
+              <a href="https://www.marshalgao.com/leetcode176-second-highest-salary/">
+                <span class="button__text">LeetCode[176] Second Highest Salary</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020-2021</span>
+            
+                <span><a href="https://www.marshalgao.com/">Marshal</a></span>
+            
+            
+                <span><a href="https://www.hku.hk" target="_blank" rel="noopener">The University of Hong Kong</a></span>
+            <span><a href="https://www.marshalgao.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Team Rocket: <a href="https://www.pseudoyu.com/" target="_blank" rel="noopener">Pseudoyu</a></span>
+            <span><a href="https://www.m1sty.com/" target="_blank" rel="noopener">Misty</a></span>
+          </div>
+    </div>
+</footer>
+
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://www.marshalgao.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>
