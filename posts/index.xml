@@ -6,8 +6,364 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Thu, 07 Jan 2021 15:51:48 +0800</lastBuildDate>
+        <lastBuildDate>Fri, 08 Jan 2021 09:20:54 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ECOM7123 Open Data &amp; Spatial Data Infrastructure (SDI)</title>
+            <link>https://www.marshalgao.com/ecom7123-open-data-spatial-data-infrastructure-sdi/</link>
+            <pubDate>Fri, 08 Jan 2021 09:20:54 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/ecom7123-open-data-spatial-data-infrastructure-sdi/</guid>
+            <description>Data in Smart Cities Overview
+ real time data  collected from  devices sensor network IoT   sources  parking spaces city trash bins vehicles energy turbines, etc.     data: existing in different forms  data in cloud  pay for actual usage centralized &amp;amp; remote management accessible in different locations   big data  large and complex data sets difficult to be handled by traditional technologies like relational database requires new technologies and processing applications like Hadoop to deal with   spatial data  80% of data generated in our daily lives are spatial data identifies the geographic location of features and boundaries on earth     value of data in developing smart city  to understand where, when, how and why to support policy-making to optimize operations to enable smart apps and services    Future</description>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Open%20Data%20and%20Spatial%20Data%20Infrastructure%20(SDI).png" alt=""></p>
+<h2 id="data-in-smart-cities">Data in Smart Cities</h2>
+<p><strong>Overview</strong></p>
+<ul>
+<li>real time data
+<ul>
+<li>collected from
+<ul>
+<li>devices</li>
+<li>sensor network</li>
+<li>IoT</li>
+</ul>
+</li>
+<li>sources
+<ul>
+<li>parking spaces</li>
+<li>city trash bins</li>
+<li>vehicles</li>
+<li>energy turbines, etc.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>data: existing in different forms
+<ul>
+<li>data in cloud
+<ul>
+<li>pay for actual usage</li>
+<li>centralized &amp; remote management</li>
+<li>accessible in different locations</li>
+</ul>
+</li>
+<li>big data
+<ul>
+<li>large and complex data sets</li>
+<li>difficult to be handled by traditional technologies like relational database</li>
+<li>requires new technologies and processing applications like Hadoop to deal with</li>
+</ul>
+</li>
+<li>spatial data
+<ul>
+<li>80% of data generated in our daily lives are spatial data</li>
+<li>identifies the geographic location of features and boundaries on earth</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>value of data in developing smart city
+<ul>
+<li>to understand where, when, how and why</li>
+<li>to support policy-making</li>
+<li>to optimize operations</li>
+<li>to enable smart apps and services</li>
+</ul>
+</li>
+</ul>
+<p><strong>Future</strong></p>
+<ul>
+<li>stimulating innovation</li>
+<li>revolutionizing business models</li>
+<li>creating new jobs</li>
+<li>improve quality of life</li>
+</ul>
+<h2 id="open-data">Open Data</h2>
+<p><strong>Overview</strong></p>
+<ul>
+<li>definition
+<ul>
+<li>refers to information that can be freely used, modified, &amp; shared by anyone for any purpose</li>
+<li>it must be available under an open licence &amp; provided in a convenient and modifiable form that is machine readable</li>
+<li>is not just about sharing data</li>
+<li>it is also about using it in innovative ways, such as creating apps and solutions with it and helping stakeholders make data-driven decisions</li>
+<li>setting up an open data site allows citizens, government employees, developers, startups, and more, to launch new solutions and applications almost immediately</li>
+</ul>
+</li>
+<li>8 principles of open data
+<ul>
+<li>complete</li>
+<li>primary</li>
+<li>timely</li>
+<li>accessible</li>
+<li>machine processable</li>
+<li>non-discriminatory</li>
+<li>non-proprietary</li>
+<li>license-free</li>
+</ul>
+</li>
+</ul>
+<p><strong>Advantages and disadvantages</strong></p>
+<ul>
+<li>advantages
+<ul>
+<li>individual
+<ul>
+<li>make more informed decisions &amp; new services</li>
+</ul>
+</li>
+<li>business
+<ul>
+<li>cost-effective resource to combine with proprietary databases</li>
+</ul>
+</li>
+<li>government
+<ul>
+<li>increase transparency &amp; collaboration</li>
+<li>direct improved city planning &amp; job creation</li>
+<li>driving economy</li>
+</ul>
+</li>
+<li>global
+<ul>
+<li>location-based open data could suggest sustainable solutions to address the problems</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>disadvantages
+<ul>
+<li>privacy concerns</li>
+<li>lose control over confidential information</li>
+<li>expense of creating and curating an open data portal</li>
+<li>data must be machine-readable</li>
+<li>constant updating and promotion</li>
+<li>effort must be spent engaging the community</li>
+</ul>
+</li>
+</ul>
+<p><strong>Aggregate information</strong></p>
+<ul>
+<li>definition
+<ul>
+<li>collective data that relates to a group or category of services or customers, from which individual customer identities &amp; characteristics have been removed</li>
+</ul>
+</li>
+<li>function
+<ul>
+<li>to utilize these data can promote efficiency and create opportunities to the community</li>
+</ul>
+</li>
+<li>key points
+<ul>
+<li>using crowdsourcing</li>
+<li>a serious limitation - the data mainly depends on the number of service subscribers, and cannot be comprehensive</li>
+<li>government open data + aggregate information -&gt; form complete pictures of relevant fields</li>
+</ul>
+</li>
+</ul>
+<p><strong>The roadmap for open data infrastructure - 10 key steps</strong></p>
+<ul>
+<li>understand &amp; advocate</li>
+<li>resource &amp; govern</li>
+<li>align &amp; integrate</li>
+<li>create &amp; commit</li>
+<li>secure &amp; protect</li>
+<li>build capcity</li>
+<li>prioritise &amp; crowdsource</li>
+<li>connect &amp; communicate</li>
+<li>maintain &amp; sustain</li>
+<li>listen, adjust &amp; share</li>
+</ul>
+<h2 id="spatial-data-infrastructure-sdi">Spatial Data Infrastructure (SDI)</h2>
+<p><strong>Overview</strong></p>
+<ul>
+<li>data is &ldquo;new oil&rdquo;</li>
+<li>spatial data sharing as a smart city infrastructure</li>
+<li>definition
+<ul>
+<li>the term Spatial Data Infrastructure was coined in 1993 by the U.S. National Research Council to denote a framework of technologies, policies and institutional arrangements that together facilitate the creation, exchange, and use of geospatial data and related information resources across an information-sharing community</li>
+<li>such a framework can be implemented narrowly to enable the sharing of geospatial information within an organization or more broadly for use at a national, regional, or global level</li>
+<li>in all cases, an SDI will provide an institutionally sanctioned, automated means for posting, discovering, evaluating, and exchanging geospatial information by participating information producers and users</li>
+<li>SDI extends a GIS by ensuring geospatial data and standards are used to create authoritative datasets and polices that support it</li>
+</ul>
+</li>
+<li>IGIF (The Integrated Geospatial Information Framework)
+<ul>
+<li>note: geospatial information is a nation&rsquo;s &ldquo;digital currency&rdquo; for evidence-based decision-making
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-01-08%20%E4%B8%8A%E5%8D%8810.50.16.png" alt=""></li>
+</ul>
+</li>
+<li>what is behind to build a SDI
+<ul>
+<li>policy &amp; institutional framework</li>
+<li>data &amp; technical standard</li>
+<li>technologies &amp; applications</li>
+<li>people &amp; sharing</li>
+</ul>
+</li>
+<li>summary
+<ul>
+<li>SDI provide government departments as well as public and private organisations with an information infrastructure to share spatial data, supporting smart city applications</li>
+</ul>
+</li>
+</ul>
+<p><strong>CSDI (Common Spatial Data Infrastructure)</strong></p>
+<ul>
+<li>framework
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-01-08%20%E4%B8%8A%E5%8D%8810.58.29.png" alt=""></li>
+<li>importance
+<ul>
+<li>better city planning &amp; management</li>
+<li>unlock the wealth of existing knowledge &amp; boost the economy</li>
+<li>make right and agile decisions</li>
+</ul>
+</li>
+<li>potential applications
+<ul>
+<li>COP (Common Operation Picture) - online operations dashboard
+<ul>
+<li>provides a central location to access a suite of maps and applications for the various groups within the Emergency Operations Center (EOC)</li>
+<li>the applications support focused workflows and allow each group to contribute to a common operational dataset through a shared services catalog</li>
+</ul>
+</li>
+<li>risk assessment</li>
+<li>pattern and hotspots analysis</li>
+<li>route planning &amp; navigation</li>
+<li>spatial market research</li>
+</ul>
+</li>
+</ul>
+<p><strong>Spatial data management</strong></p>
+<ul>
+<li>backbone technology
+<ul>
+<li>GIS (provides the location platform)
+<ul>
+<li>integrating people, processes, things, and data about them</li>
+<li>system of engagement</li>
+<li>system of record</li>
+<li>system of insight</li>
+<li>using the power of where to integrate everything</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>SDI around the world - examples</strong></p>
+<ul>
+<li>GeoPlatform</li>
+<li>INSPIRE Geoportal (EU)</li>
+<li>OneMap (Singapore)</li>
+<li>The SDG (Sustainable Development Goals) Hub (UN)</li>
+<li>Los Angeles GeoHub
+<ul>
+<li>success factors
+<ul>
+<li>explorable data</li>
+<li>includes map and operational data</li>
+<li>opens data internally and externally</li>
+<li>launches apps for immediate use</li>
+<li>provides context of issues through story maps</li>
+<li>offers training and developer resources</li>
+<li>leverages a larger ecosystem</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>map-centric city dashboard
+<ul>
+<li>contents
+<ul>
+<li>provide at-a-glance views of KPI</li>
+<li>interactive (trigger response in other elements)</li>
+<li>support real-time data feeds</li>
+<li>data display includes a map or spatial context</li>
+<li>share with others</li>
+</ul>
+</li>
+<li>key usage pattern
+<ul>
+<li>monitor and manage operations/assets
+<ul>
+<li>IoT</li>
+<li>COP</li>
+</ul>
+</li>
+<li>event management
+<ul>
+<li>situational awareness</li>
+<li>emergency management</li>
+</ul>
+</li>
+<li>executive summaries
+<ul>
+<li>visualize &amp; compare</li>
+<li>reporting dashboard</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>CSDI readiness to map-sensitive dashboard</li>
+<li>a map is worth a thousand words (such as the period of Covid-19)</li>
+</ul>
+</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p><strong>Begin with smart response</strong></p>
+<ul>
+<li>a smart future begins with a smart response to changes and challenges</li>
+<li>a smart response begins with the adoption of essential technologies which generate large volume of real-time spatial data in open format</li>
+</ul>
+<p><strong>To enable public engagement</strong></p>
+<ul>
+<li>for citizens
+<ul>
+<li>to voluntarily collect information about surroundings and share with the community</li>
+</ul>
+</li>
+<li>for government
+<ul>
+<li>use SDI to aggregate the data to identify hot spots of services</li>
+<li>to inform citizens and seek their approval when drafting development plans for the future</li>
+</ul>
+</li>
+</ul>
+<p><strong>To build a hub of innovation</strong></p>
+<ul>
+<li>SDI and open data strategy creates the infrastructure for information sharing, solution creation, and innovation</li>
+<li>data and initiatives in SDI can be actionable and reusable by different communities in the city</li>
+<li>a hub of innovation can be built together by government departments, NGOs, startups, academia, businesses, and citizens</li>
+</ul>
+<p><strong>An open and smarter future</strong></p>
+<ul>
+<li>open data and SDI bring more collaboration and transparency by enabling citizens, businesses, NGOs, academia and government departments working together</li>
+<li>a Smart City enabled by open data and SDI is a place where people feel safe, healthy, happy and motivated to improve</li>
+</ul>
+<p><strong>SDI is an enabling technology</strong></p>
+<ul>
+<li>today&rsquo;s government &amp; communities need collaboration
+<ul>
+<li>people</li>
+<li>process</li>
+<li>data</li>
+<li>technology</li>
+</ul>
+</li>
+<li>example
+<ul>
+<li>3D Singapore Sandbox @ GeoWorks</li>
+</ul>
+</li>
+</ul>
+<h2 id="additional-reading">Additional Reading</h2>
+<ul>
+<li>Open Data and Spatial Data Infrastructure -&gt; <a href="../articles/HKU%20Lecture%20on%20SDI%202021%20CW%20Tsoi%20v1.0%20all.pdf">details</a></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>Data Analysis</title>

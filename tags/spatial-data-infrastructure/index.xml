@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>spatial data infrastructure on This Is Marshal</title>
+    <link>https://www.marshalgao.com/tags/spatial-data-infrastructure/</link>
+    <description>Recent content in spatial data infrastructure on This Is Marshal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 08 Jan 2021 09:20:54 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/spatial-data-infrastructure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM7123 Open Data &amp; Spatial Data Infrastructure (SDI)</title>
+      <link>https://www.marshalgao.com/ecom7123-open-data-spatial-data-infrastructure-sdi/</link>
+      <pubDate>Fri, 08 Jan 2021 09:20:54 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom7123-open-data-spatial-data-infrastructure-sdi/</guid>
+      <description>Data in Smart Cities Overview
+ real time data  collected from  devices sensor network IoT   sources  parking spaces city trash bins vehicles energy turbines, etc.     data: existing in different forms  data in cloud  pay for actual usage centralized &amp;amp; remote management accessible in different locations   big data  large and complex data sets difficult to be handled by traditional technologies like relational database requires new technologies and processing applications like Hadoop to deal with   spatial data  80% of data generated in our daily lives are spatial data identifies the geographic location of features and boundaries on earth     value of data in developing smart city  to understand where, when, how and why to support policy-making to optimize operations to enable smart apps and services    Future</description>
+    </item>
+    
+  </channel>
+</rss>
