@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 08 Jan 2021 17:35:12 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Jan 2021 09:23:37 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM7123 IoT, Big Data Analytics and AI</title>
+      <link>https://www.marshalgao.com/ecom7123-iot-big-data-analytics-and-ai/</link>
+      <pubDate>Sat, 09 Jan 2021 09:23:37 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom7123-iot-big-data-analytics-and-ai/</guid>
+      <description>IoT Overview
+ features  everything is connected tying together the physical, digital and analytic worlds   connectivity and the &amp;ldquo;any&amp;rdquo; dimension  IoT allows people &amp;amp; things to be connected anytime at anyplace with anything and anyone using any network and any service     Evolution Characteristics
+ dynamic changes heterogeneity things-related services inter-connectivity enormous scale  Architecture
+ sensor and identification layer  information generation lowest abstraction layer with sensors we are creating digital nervous system incorporated to measure physical quantities interconnects the physical and digital world collects and process the real time information examples  barcode &amp;amp; QR code RFID smartphone sensor     network construction layer  information transmission robust and high performance network infrastructure supports the communication requirements for latency, bandwidth or security allows multiple organizations to share and use the same network independently examples  telecommunication systems (e.</description>
+    </item>
+    
     <item>
       <title>The Needs and Development of Internet Advertising</title>
       <link>https://www.marshalgao.com/the-needs-and-development-of-internet-advertising/</link>
@@ -102,18 +114,6 @@
       <description>整合 vs 链路
  区别  整合是为了占据消费者心智 链路是为了驱动消费者行为   整合营销  在不同的地方，用同一个声音说话 整合各类营销资源，保持统一的声音和形象 将户外广告、公共关系、SEM（引擎营销）、内容营销、终端促销等看成一个整体，让不同的传播活动去共同打造统一的品牌形象 问题  信息碎片化程度超过了预期，无法有效整合所有的媒介 数字营销在不断进步，广告对消费者的影响周期缩短了  以往的广告和卖场是分离的，企业将广告信息浓缩在海报、电视广告中，目的是为了消费者在现在商场购物时，想到这个品牌 数字营销的广告和卖场是一体的，所见即所购，比如直播带货 广告不再是一种心智占领（整合），而是一种行为诱导（链路）   营销的潜台词是效果而不是品牌  由于每一笔广告的ROI，导致越来越多的广告主在意效果 效果广告注重消费者从看到广告到购买商品的整个行为链条 -&amp;gt; 链路       链路  链路在整合之余，更关注不同步骤的广告活动对消费行为的影响 在空间维度之外，加入了时间维度 驱动消费者行为决策   案例对比  蒙牛赞助《超级女声》，利用的就是整合营销，全方位的宣传 蒙牛赞助《创造营》，利用的就是链路  通过购买蒙牛产品进行投票 驱动了购买行为      链路法则
  互联网传播广告模型——AISAS法则  内容  Attention（注意） Interest（兴趣） Search（搜索） Action（购买） Share（分享）   使用范围  适合一些高决策力的产品，例如：汽车、手机、房产（价格高，需要深思熟虑）     增长黑客AARRR理论  传统企业营销目标是“卖货”，而互联网企业的目标是“获客” 由于移动互联网的发展，“拉新”代替了“品牌知名度”，“留存”代替了“复购” 内容  Acquisition（获取） Activation（激活） Retention（留存） Revenue（付费） Refer（推荐）   该理论提倡“去广告化”，“老用户带新用户” 前期广告的钱用来用户补贴和技术搭建，屡试不爽 案例  饿了么、滴滴、拼多多、美团      链路原则</description>
-    </item>
-    
-    <item>
-      <title>Programmatic Advertising</title>
-      <link>https://www.marshalgao.com/programmatic-advertising/</link>
-      <pubDate>Tue, 05 Jan 2021 12:02:50 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/programmatic-advertising/</guid>
-      <description>定义
-程序化广告是指广告主通过数字平台从受众的匹配的角度由程序自动化完成展示类广告的采买和投放，并实时反馈投放分析的一种广告投放方式，实现了整个数字广告的自动化。
-四大特点
- 数字平台  程序化广告是通过数字平台（DSP和ADX）进行投放 -&amp;gt; 最基本的特点 通过媒体方的广告投放平台进行投放，不算程序化广告，因为不经过DSP  例如，微信朋友圈广告（只有展示和不展示，并不涉及投放的选择）   场景类比  买菜的人（DSP）在菜市场（ADX）寻找摆摊的菜贩子（SSP）     受众角度  通过与用户画像（标签）进行匹配，做到广告的“千人千面“，实现精准营销 传统广告  购买广告位，并在一段展示时间内付费 目标流量的不明确，过于宽泛   程序化广告  购买受众流量 目标流量明确且精准 问题与挑战  品牌安全问题  品牌广告不应出现在暴力、色情等网站 例如，YouTube恐怖分子宣传视频出现某公司的广告       传统广告 vs 程序化广告    程序自动化  根据媒体主（SSP）竞价请求提供的信息，依据广告策略和算法自动完成对每次展示的竞价决策（是否出价、出价多少） 返回为毫秒级别，速度快 不需人为干涉，十分高效 有些已经实现自动优化功能，例如动态创意优化   展示类广告  程序化广告只在展示类广告存在 在线广告可以分为两种  搜索类广告 展示类广告  banner 信息流 背投 视频贴片        品牌方如何投放程序化广告</description>
     </item>
     
   </channel>

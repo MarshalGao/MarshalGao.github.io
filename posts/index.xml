@@ -6,8 +6,365 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Fri, 08 Jan 2021 17:35:12 +0800</lastBuildDate>
+        <lastBuildDate>Sat, 09 Jan 2021 09:23:37 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ECOM7123 IoT, Big Data Analytics and AI</title>
+            <link>https://www.marshalgao.com/ecom7123-iot-big-data-analytics-and-ai/</link>
+            <pubDate>Sat, 09 Jan 2021 09:23:37 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/ecom7123-iot-big-data-analytics-and-ai/</guid>
+            <description>IoT Overview
+ features  everything is connected tying together the physical, digital and analytic worlds   connectivity and the &amp;ldquo;any&amp;rdquo; dimension  IoT allows people &amp;amp; things to be connected anytime at anyplace with anything and anyone using any network and any service     Evolution Characteristics
+ dynamic changes heterogeneity things-related services inter-connectivity enormous scale  Architecture
+ sensor and identification layer  information generation lowest abstraction layer with sensors we are creating digital nervous system incorporated to measure physical quantities interconnects the physical and digital world collects and process the real time information examples  barcode &amp;amp; QR code RFID smartphone sensor     network construction layer  information transmission robust and high performance network infrastructure supports the communication requirements for latency, bandwidth or security allows multiple organizations to share and use the same network independently examples  telecommunication systems (e.</description>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/IoT%2C%20Big%20Data%20Analytics%20and%20AI.png" alt=""></p>
+<h2 id="iot">IoT</h2>
+<p><strong>Overview</strong></p>
+<ul>
+<li>features
+<ul>
+<li>everything is connected</li>
+<li>tying together the physical, digital and analytic worlds</li>
+</ul>
+</li>
+<li>connectivity and the &ldquo;any&rdquo; dimension
+<ul>
+<li>IoT allows people &amp; things to be connected <strong>anytime</strong> at <strong>anyplace</strong> with <strong>anything</strong> and <strong>anyone</strong> using <strong>any network</strong> and <strong>any service</strong>
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-01-09%20%E4%B8%8A%E5%8D%889.30.42.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<p><strong>Evolution</strong>
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-01-09%20%E4%B8%8A%E5%8D%889.37.05.png" alt=""></p>
+<p><strong>Characteristics</strong></p>
+<ul>
+<li>dynamic changes</li>
+<li>heterogeneity</li>
+<li>things-related services</li>
+<li>inter-connectivity</li>
+<li>enormous scale</li>
+</ul>
+<p><strong>Architecture</strong></p>
+<ul>
+<li>sensor and identification layer
+<ul>
+<li>information generation</li>
+<li>lowest abstraction layer</li>
+<li>with sensors we are creating digital nervous system</li>
+<li>incorporated to measure physical quantities</li>
+<li>interconnects the physical and digital world</li>
+<li>collects and process the real time information</li>
+<li>examples
+<ul>
+<li>barcode &amp; QR code</li>
+<li>RFID</li>
+<li>smartphone sensor</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>network construction layer
+<ul>
+<li>information transmission</li>
+<li>robust and high performance network infrastructure</li>
+<li>supports the communication requirements for latency, bandwidth or security</li>
+<li>allows multiple organizations to share and use the same network independently</li>
+<li>examples
+<ul>
+<li>telecommunication systems (e.g., GSM, UMTS, LTE)</li>
+<li>WLAN</li>
+<li>short range (e.g., bluetooth)</li>
+<li>NB-IoT (Narrowband Internet of Things) &amp; LoRa (Long Range Radio)
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-01-09%20%E4%B8%8A%E5%8D%889.53.41.png" alt=""></li>
+<li>satellite systems</li>
+<li>broadcast systems</li>
+<li>fixed wireless access</li>
+<li>SNs (Sensor Networks)
+<ul>
+<li>consist of a certain number of sensing nodes communicating in a wireless multi-hop fashion</li>
+<li>SNs generally exist without IoT but IoT cannot exist without SNs</li>
+<li>applications
+<ul>
+<li>environmental monitoring</li>
+<li>agriculture</li>
+<li>medical care</li>
+<li>event detection</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>5G
+<ul>
+<li>dramatically increase
+<ul>
+<li>speed of data transfer</li>
+<li>response time</li>
+<li>capacity for billions of devices to be connected</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>management layer
+<ul>
+<li>information processing</li>
+<li>capturing of periodic sensory data</li>
+<li>data analytics</li>
+<li>streaming analytics (process real time data)</li>
+<li>ensures security and privacy of data</li>
+</ul>
+</li>
+<li>integrated application layer
+<ul>
+<li>information application</li>
+<li>provides a user interface for using IoT</li>
+<li>different applications for various sectors like transportation, healthcare, agriculture, supply chains, government, retail, etc.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Challenges</strong></p>
+<ul>
+<li>lack of standardization</li>
+<li>addressing issues</li>
+<li>new network traffic patterns to handle</li>
+<li>device level energy issues</li>
+<li>security concerns</li>
+<li>privacy issues</li>
+</ul>
+<p><strong>Summary</strong></p>
+<ul>
+<li>with billions of devices connected, vast amount of data can be generated</li>
+<li>data sharing/exchange among the devices will generate new data as well</li>
+<li>data analytics is necessary to analyze the data to acquire insights and trends</li>
+</ul>
+<h2 id="big-data">Big Data</h2>
+<p><strong>Overview</strong></p>
+<ul>
+<li>sources
+<ul>
+<li>users</li>
+<li>applications</li>
+<li>systems</li>
+<li>sensors</li>
+</ul>
+</li>
+<li>structure
+<ul>
+<li>unstructured
+<ul>
+<li>data that has no inherent structure and is usually stored as different types of files</li>
+<li>e.g., PDFs, images</li>
+</ul>
+</li>
+<li>quasi-structured
+<ul>
+<li>textual data with erratic formats that can be formatted with effort and software tools</li>
+<li>e.g., clickstream data</li>
+</ul>
+</li>
+<li>semi-structured
+<ul>
+<li>textual data files with an apparent pattern, enabling analysis</li>
+<li>e.g., spreadsheets and XML files</li>
+</ul>
+</li>
+<li>structured
+<ul>
+<li>data having a defined data model, format, structure</li>
+<li>e.g., database</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>tradition data vs big data
+<ul>
+<li>traditional data
+<ul>
+<li>large scale</li>
+<li>highly centralized</li>
+<li>structured
+<ul>
+<li>files</li>
+<li>records</li>
+<li>databases</li>
+</ul>
+</li>
+<li>sequential</li>
+<li>indexed</li>
+<li>processing transactions</li>
+</ul>
+</li>
+<li>big data
+<ul>
+<li>massive scale</li>
+<li>highly distributed</li>
+<li>unstructured
+<ul>
+<li>emails</li>
+<li>audio/video</li>
+<li>blogs, etc.</li>
+</ul>
+</li>
+<li>random</li>
+<li>looking for patterns and relationships</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Characteristics</strong></p>
+<ul>
+<li>volume
+<ul>
+<li>the vast amounts of data generated every second</li>
+</ul>
+</li>
+<li>velocity
+<ul>
+<li>the speed at which new data is generated and the speed at which data moves around</li>
+</ul>
+</li>
+<li>veracity
+<ul>
+<li>the messiness or trustworthiness of the data</li>
+</ul>
+</li>
+<li>variety
+<ul>
+<li>the different types of data can now be used</li>
+</ul>
+</li>
+<li>value
+<ul>
+<li>having access to big data is no good unless we can turn it into value</li>
+</ul>
+</li>
+</ul>
+<p><strong>Types</strong></p>
+<ul>
+<li>activity data</li>
+<li>conversation data</li>
+<li>photo &amp; video image data</li>
+<li>sensors data from IoT devices</li>
+<li>real time data</li>
+<li>spatial data</li>
+<li>spatiotemporal data
+<ul>
+<li>is an extension of spatial database</li>
+<li>captures spatial and temporal aspects of data and deals with geometry changing over time and location of objects moving over invariant geometry</li>
+</ul>
+</li>
+</ul>
+<p><strong>Big data and location</strong></p>
+<ul>
+<li>all IoT sensors have loactions
+<ul>
+<li>the most common IoT sensors in smartphones - GPS receiver</li>
+<li>all posts, photos and messages are tagged with phone or IP locations in social media</li>
+</ul>
+</li>
+<li>geospatial big data analytics
+<ul>
+<li>requires new science of spatial statistics</li>
+<li>GIS as a tool for spatial statistical analysis
+<ul>
+<li>aggregate data</li>
+<li>join data</li>
+<li>summarize data</li>
+<li>calculate data</li>
+<li>find hot spots</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Issues</strong></p>
+<ul>
+<li>data privacy</li>
+<li>data security</li>
+<li>data discrimination</li>
+<li>data accuracy</li>
+<li>data existence</li>
+</ul>
+<h2 id="ai">AI</h2>
+<p><strong>Overview</strong></p>
+<ul>
+<li>relationship
+<ul>
+<li>IoT is the &ldquo;senses&rdquo; (connect devices and collect data)</li>
+<li>big data is the &ldquo;fuel&rdquo; (capture, storage, analysis of data)</li>
+<li>AI is the &ldquo;brain&rdquo; (data-based learning, analytics, automation)</li>
+</ul>
+</li>
+<li>AI &amp; ML &amp; DL
+<ul>
+<li>AI
+<ul>
+<li>board definition</li>
+<li>building machines that learn &amp; think like people</li>
+</ul>
+</li>
+<li>ML
+<ul>
+<li>ability to learn &amp; improve its performance without human interaction</li>
+</ul>
+</li>
+<li>DL
+<ul>
+<li>solve any problem which requires &ldquo;thought&rdquo;</li>
+<li>feed a lot of data</li>
+<li>learn from its mistakes</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Development</strong></p>
+<ul>
+<li>basic (weak AI)
+<ul>
+<li>specialize in a certain scope</li>
+</ul>
+</li>
+<li>advanced (strong AI)
+<ul>
+<li>think &amp; operate like a human being</li>
+</ul>
+</li>
+<li>super advanced (Artificial Superintelligence)
+<ul>
+<li>smarter than the best human brains</li>
+</ul>
+</li>
+</ul>
+<p><strong>The rules for success</strong></p>
+<ul>
+<li>computing power</li>
+<li>data</li>
+<li>algorithms and architecture</li>
+</ul>
+<p><strong>8 ways AI will transform our cities smarter by 2030</strong></p>
+<ul>
+<li>transportation</li>
+<li>education</li>
+<li>healthcare</li>
+<li>public safety</li>
+<li>home &amp; service robots</li>
+<li>employment &amp; workplace</li>
+<li>entertainment</li>
+<li>low-resource communities</li>
+</ul>
+<h2 id="additional-reading">Additional Reading</h2>
+<ul>
+<li>Water Supplies in Hong Kong -&gt; <a href="../articles/Guest%20Lecture%20Presentation%20Slides_WSD_2021_issued.pdf">details</a></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>The Needs and Development of Internet Advertising</title>

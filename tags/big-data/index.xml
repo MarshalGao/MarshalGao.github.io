@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 01 Dec 2020 14:58:01 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/big-data/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Jan 2021 09:23:37 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/big-data/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM7123 IoT, Big Data Analytics and AI</title>
+      <link>https://www.marshalgao.com/ecom7123-iot-big-data-analytics-and-ai/</link>
+      <pubDate>Sat, 09 Jan 2021 09:23:37 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom7123-iot-big-data-analytics-and-ai/</guid>
+      <description>IoT Overview
+ features  everything is connected tying together the physical, digital and analytic worlds   connectivity and the &amp;ldquo;any&amp;rdquo; dimension  IoT allows people &amp;amp; things to be connected anytime at anyplace with anything and anyone using any network and any service     Evolution Characteristics
+ dynamic changes heterogeneity things-related services inter-connectivity enormous scale  Architecture
+ sensor and identification layer  information generation lowest abstraction layer with sensors we are creating digital nervous system incorporated to measure physical quantities interconnects the physical and digital world collects and process the real time information examples  barcode &amp;amp; QR code RFID smartphone sensor     network construction layer  information transmission robust and high performance network infrastructure supports the communication requirements for latency, bandwidth or security allows multiple organizations to share and use the same network independently examples  telecommunication systems (e.</description>
+    </item>
+    
     <item>
       <title>ECOM7121 Mobile Smart Cities, IoT, Big Data Systems</title>
       <link>https://www.marshalgao.com/ecom7121-mobile-smart-cities-iot-big-data-systems/</link>
