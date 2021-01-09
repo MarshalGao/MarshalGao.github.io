@@ -6,8 +6,111 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Sat, 09 Jan 2021 09:23:37 +0800</lastBuildDate>
+        <lastBuildDate>Sat, 09 Jan 2021 16:18:31 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>LeetCode[178] Rank Scores</title>
+            <link>https://www.marshalgao.com/leetcode178-rank-scores/</link>
+            <pubDate>Sat, 09 Jan 2021 16:18:31 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/leetcode178-rank-scores/</guid>
+            <description>Question Write a SQL query to rank scores. If there is a tie between two scores, both should have the same ranking. Note that after a tie, the next ranking number should be the next consecutive integer value. In other words, there should be no &amp;ldquo;holes&amp;rdquo; between ranks.
++----+-------+ | Id | Score | +----+-------+ | 1 | 3.50 | | 2 | 3.65 | | 3 | 4.00 | | 4 | 3.</description>
+            <content type="html"><![CDATA[<h2 id="question">Question</h2>
+<p>Write a SQL query to rank scores. If there is a tie between two scores, both should have the same ranking. Note that after a tie, the next ranking number should be the next consecutive integer value. In other words, there should be no &ldquo;holes&rdquo; between ranks.</p>
+<pre><code>+----+-------+
+| Id | Score |
++----+-------+
+| 1  | 3.50  |
+| 2  | 3.65  |
+| 3  | 4.00  |
+| 4  | 3.85  |
+| 5  | 4.00  |
+| 6  | 3.65  |
++----+-------+
+</code></pre>
+<p>For example, given the above Scores table, your query should generate the following report (order by highest score):</p>
+<pre><code>+-------+---------+
+| score | Rank    |
++-------+---------+
+| 4.00  | 1       |
+| 4.00  | 1       |
+| 3.85  | 2       |
+| 3.65  | 3       |
+| 3.65  | 3       |
+| 3.50  | 4       |
++-------+---------+
+</code></pre>
+<p><strong>Important Note:</strong> For MySQL solutions, to escape reserved words used as column names, you can use an apostrophe before and after the keyword. For example <strong>&lsquo;Rank&rsquo;</strong>.</p>
+<h2 id="sql-schema">SQL Schema</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">Create</span> <span style="color:#66d9ef">table</span> <span style="color:#66d9ef">If</span> <span style="color:#66d9ef">Not</span> <span style="color:#66d9ef">Exists</span> Scores (Id int, Score DECIMAL(<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">2</span>))
+<span style="color:#66d9ef">Truncate</span> <span style="color:#66d9ef">table</span> Scores
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Scores (Id, Score) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;1&#39;</span>, <span style="color:#e6db74">&#39;3.5&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Scores (Id, Score) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;2&#39;</span>, <span style="color:#e6db74">&#39;3.65&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Scores (Id, Score) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;3&#39;</span>, <span style="color:#e6db74">&#39;4.0&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Scores (Id, Score) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;4&#39;</span>, <span style="color:#e6db74">&#39;3.85&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Scores (Id, Score) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;5&#39;</span>, <span style="color:#e6db74">&#39;4.0&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Scores (Id, Score) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;6&#39;</span>, <span style="color:#e6db74">&#39;3.65&#39;</span>)
+</code></pre></div><h2 id="my-interesting-code">My Interesting Code</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> Score, dense_rank() over(<span style="color:#66d9ef">order</span> <span style="color:#66d9ef">by</span> Score <span style="color:#66d9ef">desc</span>) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Rank&#39;</span>
+<span style="color:#66d9ef">from</span> Scores
+</code></pre></div><h2 id="my-perspective">My Perspective</h2>
+<p>For this question, we should rank the socres and then use &ldquo;dense_rank()&rdquo; to index the score according to the question.</p>
+<p>Also, there is a useful link, and I think it can help you. (chinese version)</p>
+<ul>
+<li><a href="https://www.cnblogs.com/lizongyan/p/13820701.htmlx">useful link</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>LeetCode[177] Nth Highest Salary</title>
+            <link>https://www.marshalgao.com/leetcode177-nth-highest-salary/</link>
+            <pubDate>Sat, 09 Jan 2021 16:06:13 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/leetcode177-nth-highest-salary/</guid>
+            <description>Question Write a SQL query to get the nth highest salary from the Employee table.
++----+--------+ | Id | Salary | +----+--------+ | 1 | 100 | | 2 | 200 | | 3 | 300 | +----+--------+  For example, given the above Employee table, the nth highest salary where n = 2 is 200. If there is no nth highest salary, then the query should return null.
++------------------------+ | getNthHighestSalary(2) | +------------------------+ | 200 | +------------------------+  My Interesting Code CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT BEGIN set N = N - 1; RETURN ( select distinct Salary as getNthHighestSalary from Employee order by Salary desc limit N, 1 ); END My Perspective For this question, firstly, you can order the salary.</description>
+            <content type="html"><![CDATA[<h2 id="question">Question</h2>
+<p>Write a SQL query to get the nth highest salary from the Employee table.</p>
+<pre><code>+----+--------+
+| Id | Salary |
++----+--------+
+| 1  | 100    |
+| 2  | 200    |
+| 3  | 300    |
++----+--------+
+</code></pre>
+<p>For example, given the above Employee table, the nth highest salary where n = 2 is 200. If there is no nth highest salary, then the query should return null.</p>
+<pre><code>+------------------------+
+| getNthHighestSalary(2) |
++------------------------+
+| 200                    |
++------------------------+
+</code></pre>
+<h2 id="my-interesting-code">My Interesting Code</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">FUNCTION</span> getNthHighestSalary(N INT) <span style="color:#66d9ef">RETURNS</span> INT
+<span style="color:#66d9ef">BEGIN</span>
+  <span style="color:#66d9ef">set</span> N <span style="color:#f92672">=</span> N <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>;
+  <span style="color:#66d9ef">RETURN</span> (
+      <span style="color:#66d9ef">select</span> <span style="color:#66d9ef">distinct</span> Salary <span style="color:#66d9ef">as</span> getNthHighestSalary
+      <span style="color:#66d9ef">from</span> Employee 
+      <span style="color:#66d9ef">order</span> <span style="color:#66d9ef">by</span> Salary <span style="color:#66d9ef">desc</span>
+      <span style="color:#66d9ef">limit</span> N, <span style="color:#ae81ff">1</span>
+  );
+<span style="color:#66d9ef">END</span>
+</code></pre></div><h2 id="my-perspective">My Perspective</h2>
+<p>For this question, firstly, you can order the salary. Then using &ldquo;limit&rdquo; to get the result. By the way, &ldquo;limit N, 1&rdquo; means that you pass the first N values, and get the next one value.</p>
+<p>This question is not pretty difficult, but it also consumed much time. I was confused by the value of N. In fact, the value of N in &ldquo;limit N, 1&rdquo; is N - 1, but how to deal with this? You can use &ldquo;set N = N - 1&rdquo; before the &ldquo;RETURN&rdquo;.</p>
+<p>Also, there are two useful links, and I think they can help you. (chinese version)</p>
+<ul>
+<li><a href="https://www.runoob.com/sql/sql-orderby.html">useful link 1</a></li>
+<li><a href="https://blog.csdn.net/csdn265/article/details/80387342">useful link 2</a></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>ECOM7123 IoT, Big Data Analytics and AI</title>
@@ -497,7 +600,7 @@
             <guid>https://www.marshalgao.com/leetcode176-second-highest-salary/</guid>
             <description>Question Write a SQL query to get the second highest salary from the Employee table.
 +----+--------+ | Id | Salary | +----+--------+ | 1 | 100 | | 2 | 200 | | 3 | 300 | +----+--------+  For example, given the above Employee table, the query should return 200 as the second highest salary. If there is no second highest salary, then the query should return null.
-+---------------------+ | SecondHighestSalary | +---------------------+ | 200 | +---------------------+  SQL Schema Create table If Not Exists Employee (Id int, Salary int) Truncate table Employee insert into Employee (Id, Salary) values (&#39;1&#39;, &#39;100&#39;) insert into Employee (Id, Salary) values (&#39;2&#39;, &#39;200&#39;) insert into Employee (Id, Salary) values (&#39;3&#39;, &#39;300&#39;)  My Interesting Code SELECT MAX(Salary) AS SecondHighestSalary FROM Employee WHERE Salary &amp;lt; (SELECT MAX(Salary) FROM Employee) My Perspective This question is also simple.</description>
++---------------------+ | SecondHighestSalary | +---------------------+ | 200 | +---------------------+  SQL Schema Create table If Not Exists Employee (Id int, Salary int) Truncate table Employee insert into Employee (Id, Salary) values (&amp;#39;1&amp;#39;, &amp;#39;100&amp;#39;) insert into Employee (Id, Salary) values (&amp;#39;2&amp;#39;, &amp;#39;200&amp;#39;) insert into Employee (Id, Salary) values (&amp;#39;3&amp;#39;, &amp;#39;300&amp;#39;) My Interesting Code select max(Salary) as SecondHighestSalary from Employee where Salary &amp;lt; (select max(Salary) from Employee) My Perspective This question is also simple.</description>
             <content type="html"><![CDATA[<h2 id="question">Question</h2>
 <p>Write a SQL query to get the second highest salary from the Employee table.</p>
 <pre><code>+----+--------+
@@ -516,19 +619,18 @@
 +---------------------+
 </code></pre>
 <h2 id="sql-schema">SQL Schema</h2>
-<pre><code>Create table If Not Exists Employee (Id int, Salary int)
-Truncate table Employee
-insert into Employee (Id, Salary) values ('1', '100')
-insert into Employee (Id, Salary) values ('2', '200')
-insert into Employee (Id, Salary) values ('3', '300')
-</code></pre>
-<h2 id="my-interesting-code">My Interesting Code</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">MAX</span>(Salary) <span style="color:#66d9ef">AS</span> SecondHighestSalary
-<span style="color:#66d9ef">FROM</span> Employee 
-<span style="color:#66d9ef">WHERE</span> Salary <span style="color:#f92672">&lt;</span> (<span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">MAX</span>(Salary) <span style="color:#66d9ef">FROM</span> Employee)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">Create</span> <span style="color:#66d9ef">table</span> <span style="color:#66d9ef">If</span> <span style="color:#66d9ef">Not</span> <span style="color:#66d9ef">Exists</span> Employee (Id int, Salary int)
+<span style="color:#66d9ef">Truncate</span> <span style="color:#66d9ef">table</span> Employee
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Employee (Id, Salary) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;1&#39;</span>, <span style="color:#e6db74">&#39;100&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Employee (Id, Salary) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;2&#39;</span>, <span style="color:#e6db74">&#39;200&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Employee (Id, Salary) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;3&#39;</span>, <span style="color:#e6db74">&#39;300&#39;</span>)
+</code></pre></div><h2 id="my-interesting-code">My Interesting Code</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> <span style="color:#66d9ef">max</span>(Salary) <span style="color:#66d9ef">as</span> SecondHighestSalary
+<span style="color:#66d9ef">from</span> Employee 
+<span style="color:#66d9ef">where</span> Salary <span style="color:#f92672">&lt;</span> (<span style="color:#66d9ef">select</span> <span style="color:#66d9ef">max</span>(Salary) <span style="color:#66d9ef">from</span> Employee)
 </code></pre></div><h2 id="my-perspective">My Perspective</h2>
 <p>This question is also simple. If you want to find the second highest salary, you can find the highest salary first. Then you can traverse the whole table again, but you need to make all the value are less than the highest salary (regardless of equality). Finally, the maximum of these numbers is the answer.</p>
-<p>By the way, if you use MAX function, the column name is MAX(Salary). You can use &ldquo;AS&rdquo; to address this problem.</p>
+<p>By the way, if you use &ldquo;max&rdquo; function, the column name is &ldquo;max(Salary)&rdquo;. You can use &ldquo;as&rdquo; to address this problem.</p>
 ]]></content>
         </item>
         
@@ -567,14 +669,24 @@ AddressId is the primary key column for this table.
 <p>Write a SQL query for a report that provides the following information for each person in the Person table, regardless if there is an address for each of those people:</p>
 <pre><code>FirstName, LastName, City, State
 </code></pre>
-<h2 id="my-interesting-code">My Interesting Code</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> Person.FirstName, Person.LastName, Address.City, Address.<span style="color:#66d9ef">State</span>
-<span style="color:#66d9ef">FROM</span> Person
-<span style="color:#66d9ef">LEFT</span> <span style="color:#66d9ef">JOIN</span> Address
-<span style="color:#66d9ef">ON</span> Person.PersonId<span style="color:#f92672">=</span>Address.PersonId;
+<h2 id="sql-schema">SQL Schema</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">Create</span> <span style="color:#66d9ef">table</span> Person (PersonId int, FirstName varchar(<span style="color:#ae81ff">255</span>), LastName varchar(<span style="color:#ae81ff">255</span>))
+<span style="color:#66d9ef">Create</span> <span style="color:#66d9ef">table</span> Address (AddressId int, PersonId int, City varchar(<span style="color:#ae81ff">255</span>), <span style="color:#66d9ef">State</span> varchar(<span style="color:#ae81ff">255</span>))
+<span style="color:#66d9ef">Truncate</span> <span style="color:#66d9ef">table</span> Person
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Person (PersonId, LastName, FirstName) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;1&#39;</span>, <span style="color:#e6db74">&#39;Wang&#39;</span>, <span style="color:#e6db74">&#39;Allen&#39;</span>)
+<span style="color:#66d9ef">Truncate</span> <span style="color:#66d9ef">table</span> Address
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Address (AddressId, PersonId, City, <span style="color:#66d9ef">State</span>) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;1&#39;</span>, <span style="color:#e6db74">&#39;2&#39;</span>, <span style="color:#e6db74">&#39;New York City&#39;</span>, <span style="color:#e6db74">&#39;New York&#39;</span>)
+</code></pre></div><h2 id="my-interesting-code">My Interesting Code</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> Person.FirstName, Person.LastName, Address.City, Address.<span style="color:#66d9ef">State</span>
+<span style="color:#66d9ef">from</span> Person
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Address
+<span style="color:#66d9ef">on</span> Person.PersonId<span style="color:#f92672">=</span>Address.PersonId;
 </code></pre></div><h2 id="my-perspective">My Perspective</h2>
 <p>This question is simple, but you need to distinguish the differences among left join, right join, and inner join.</p>
-<p>Also, there is a useful link, and I think it can help you. (chinese version) -&gt; <a href="https://www.cnblogs.com/wgphp/p/8183812.html">details</a></p>
+<p>Also, there is a useful link, and I think it can help you. (chinese version)</p>
+<ul>
+<li><a href="https://www.cnblogs.com/wgphp/p/8183812.html">useful link</a></li>
+</ul>
 ]]></content>
         </item>
         

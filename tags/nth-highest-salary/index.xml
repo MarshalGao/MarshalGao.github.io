@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nth highest salary on This Is Marshal</title>
+    <link>https://www.marshalgao.com/tags/nth-highest-salary/</link>
+    <description>Recent content in nth highest salary on This Is Marshal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 09 Jan 2021 16:06:13 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/nth-highest-salary/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode[177] Nth Highest Salary</title>
+      <link>https://www.marshalgao.com/leetcode177-nth-highest-salary/</link>
+      <pubDate>Sat, 09 Jan 2021 16:06:13 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode177-nth-highest-salary/</guid>
+      <description>Question Write a SQL query to get the nth highest salary from the Employee table.
++----+--------+ | Id | Salary | +----+--------+ | 1 | 100 | | 2 | 200 | | 3 | 300 | +----+--------+  For example, given the above Employee table, the nth highest salary where n = 2 is 200. If there is no nth highest salary, then the query should return null.
++------------------------+ | getNthHighestSalary(2) | +------------------------+ | 200 | +------------------------+  My Interesting Code CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT BEGIN set N = N - 1; RETURN ( select distinct Salary as getNthHighestSalary from Employee order by Salary desc limit N, 1 ); END My Perspective For this question, firstly, you can order the salary.</description>
+    </item>
+    
+  </channel>
+</rss>

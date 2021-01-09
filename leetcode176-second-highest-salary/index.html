@@ -7,8 +7,8 @@
 <meta name="author" content="Marshal ">
 <meta name="description" content="Question Write a SQL query to get the second highest salary from the Employee table.
 &#43;----&#43;--------&#43; | Id | Salary | &#43;----&#43;--------&#43; | 1 | 100 | | 2 | 200 | | 3 | 300 | &#43;----&#43;--------&#43;  For example, given the above Employee table, the query should return 200 as the second highest salary. If there is no second highest salary, then the query should return null.
-&#43;---------------------&#43; | SecondHighestSalary | &#43;---------------------&#43; | 200 | &#43;---------------------&#43;  SQL Schema Create table If Not Exists Employee (Id int, Salary int) Truncate table Employee insert into Employee (Id, Salary) values (&#39;1&#39;, &#39;100&#39;) insert into Employee (Id, Salary) values (&#39;2&#39;, &#39;200&#39;) insert into Employee (Id, Salary) values (&#39;3&#39;, &#39;300&#39;)  My Interesting Code SELECT MAX(Salary) AS SecondHighestSalary FROM Employee WHERE Salary &amp;lt; (SELECT MAX(Salary) FROM Employee) My Perspective This question is also simple." />
-<meta name="keywords" content=", leetcode, sql, advertising product manager, second highest salary" />
+&#43;---------------------&#43; | SecondHighestSalary | &#43;---------------------&#43; | 200 | &#43;---------------------&#43;  SQL Schema Create table If Not Exists Employee (Id int, Salary int) Truncate table Employee insert into Employee (Id, Salary) values (&amp;#39;1&amp;#39;, &amp;#39;100&amp;#39;) insert into Employee (Id, Salary) values (&amp;#39;2&amp;#39;, &amp;#39;200&amp;#39;) insert into Employee (Id, Salary) values (&amp;#39;3&amp;#39;, &amp;#39;300&amp;#39;) My Interesting Code select max(Salary) as SecondHighestSalary from Employee where Salary &amp;lt; (select max(Salary) from Employee) My Perspective This question is also simple." />
+<meta name="keywords" content=", leetcode, #176, sql, advertising product manager, second highest salary" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="#252627" />
 <link rel="canonical" href="https://www.marshalgao.com/leetcode176-second-highest-salary/" />
@@ -46,7 +46,7 @@
 <meta itemprop="name" content="LeetCode[176] Second Highest Salary">
 <meta itemprop="description" content="Question Write a SQL query to get the second highest salary from the Employee table.
 &#43;----&#43;--------&#43; | Id | Salary | &#43;----&#43;--------&#43; | 1 | 100 | | 2 | 200 | | 3 | 300 | &#43;----&#43;--------&#43;  For example, given the above Employee table, the query should return 200 as the second highest salary. If there is no second highest salary, then the query should return null.
-&#43;---------------------&#43; | SecondHighestSalary | &#43;---------------------&#43; | 200 | &#43;---------------------&#43;  SQL Schema Create table If Not Exists Employee (Id int, Salary int) Truncate table Employee insert into Employee (Id, Salary) values (&#39;1&#39;, &#39;100&#39;) insert into Employee (Id, Salary) values (&#39;2&#39;, &#39;200&#39;) insert into Employee (Id, Salary) values (&#39;3&#39;, &#39;300&#39;)  My Interesting Code SELECT MAX(Salary) AS SecondHighestSalary FROM Employee WHERE Salary &lt; (SELECT MAX(Salary) FROM Employee) My Perspective This question is also simple.">
+&#43;---------------------&#43; | SecondHighestSalary | &#43;---------------------&#43; | 200 | &#43;---------------------&#43;  SQL Schema Create table If Not Exists Employee (Id int, Salary int) Truncate table Employee insert into Employee (Id, Salary) values (&#39;1&#39;, &#39;100&#39;) insert into Employee (Id, Salary) values (&#39;2&#39;, &#39;200&#39;) insert into Employee (Id, Salary) values (&#39;3&#39;, &#39;300&#39;) My Interesting Code select max(Salary) as SecondHighestSalary from Employee where Salary &lt; (select max(Salary) from Employee) My Perspective This question is also simple.">
 <meta itemprop="datePublished" content="2021-01-08T16:37:07+08:00" />
 <meta itemprop="dateModified" content="2021-01-08T16:37:07+08:00" />
 <meta itemprop="wordCount" content="210">
@@ -54,7 +54,7 @@
 
 
 
-<meta itemprop="keywords" content="leetcode,sql,advertising product manager,second highest salary," />
+<meta itemprop="keywords" content="leetcode,#176,sql,advertising product manager,second highest salary," />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.marshalgao.com/"/>
@@ -62,14 +62,14 @@
 <meta name="twitter:title" content="LeetCode[176] Second Highest Salary"/>
 <meta name="twitter:description" content="Question Write a SQL query to get the second highest salary from the Employee table.
 &#43;----&#43;--------&#43; | Id | Salary | &#43;----&#43;--------&#43; | 1 | 100 | | 2 | 200 | | 3 | 300 | &#43;----&#43;--------&#43;  For example, given the above Employee table, the query should return 200 as the second highest salary. If there is no second highest salary, then the query should return null.
-&#43;---------------------&#43; | SecondHighestSalary | &#43;---------------------&#43; | 200 | &#43;---------------------&#43;  SQL Schema Create table If Not Exists Employee (Id int, Salary int) Truncate table Employee insert into Employee (Id, Salary) values (&#39;1&#39;, &#39;100&#39;) insert into Employee (Id, Salary) values (&#39;2&#39;, &#39;200&#39;) insert into Employee (Id, Salary) values (&#39;3&#39;, &#39;300&#39;)  My Interesting Code SELECT MAX(Salary) AS SecondHighestSalary FROM Employee WHERE Salary &lt; (SELECT MAX(Salary) FROM Employee) My Perspective This question is also simple."/>
+&#43;---------------------&#43; | SecondHighestSalary | &#43;---------------------&#43; | 200 | &#43;---------------------&#43;  SQL Schema Create table If Not Exists Employee (Id int, Salary int) Truncate table Employee insert into Employee (Id, Salary) values (&#39;1&#39;, &#39;100&#39;) insert into Employee (Id, Salary) values (&#39;2&#39;, &#39;200&#39;) insert into Employee (Id, Salary) values (&#39;3&#39;, &#39;300&#39;) My Interesting Code select max(Salary) as SecondHighestSalary from Employee where Salary &lt; (select max(Salary) from Employee) My Perspective This question is also simple."/>
 
 
 
     <meta property="og:title" content="LeetCode[176] Second Highest Salary" />
 <meta property="og:description" content="Question Write a SQL query to get the second highest salary from the Employee table.
 &#43;----&#43;--------&#43; | Id | Salary | &#43;----&#43;--------&#43; | 1 | 100 | | 2 | 200 | | 3 | 300 | &#43;----&#43;--------&#43;  For example, given the above Employee table, the query should return 200 as the second highest salary. If there is no second highest salary, then the query should return null.
-&#43;---------------------&#43; | SecondHighestSalary | &#43;---------------------&#43; | 200 | &#43;---------------------&#43;  SQL Schema Create table If Not Exists Employee (Id int, Salary int) Truncate table Employee insert into Employee (Id, Salary) values (&#39;1&#39;, &#39;100&#39;) insert into Employee (Id, Salary) values (&#39;2&#39;, &#39;200&#39;) insert into Employee (Id, Salary) values (&#39;3&#39;, &#39;300&#39;)  My Interesting Code SELECT MAX(Salary) AS SecondHighestSalary FROM Employee WHERE Salary &lt; (SELECT MAX(Salary) FROM Employee) My Perspective This question is also simple." />
+&#43;---------------------&#43; | SecondHighestSalary | &#43;---------------------&#43; | 200 | &#43;---------------------&#43;  SQL Schema Create table If Not Exists Employee (Id int, Salary int) Truncate table Employee insert into Employee (Id, Salary) values (&#39;1&#39;, &#39;100&#39;) insert into Employee (Id, Salary) values (&#39;2&#39;, &#39;200&#39;) insert into Employee (Id, Salary) values (&#39;3&#39;, &#39;300&#39;) My Interesting Code select max(Salary) as SecondHighestSalary from Employee where Salary &lt; (select max(Salary) from Employee) My Perspective This question is also simple." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.marshalgao.com/leetcode176-second-highest-salary/" />
 <meta property="og:image" content="https://www.marshalgao.com/"/>
@@ -181,19 +181,18 @@
 +---------------------+
 </code></pre>
 <h2 id="sql-schema">SQL Schema</h2>
-<pre><code>Create table If Not Exists Employee (Id int, Salary int)
-Truncate table Employee
-insert into Employee (Id, Salary) values ('1', '100')
-insert into Employee (Id, Salary) values ('2', '200')
-insert into Employee (Id, Salary) values ('3', '300')
-</code></pre>
-<h2 id="my-interesting-code">My Interesting Code</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">MAX</span>(Salary) <span style="color:#66d9ef">AS</span> SecondHighestSalary
-<span style="color:#66d9ef">FROM</span> Employee 
-<span style="color:#66d9ef">WHERE</span> Salary <span style="color:#f92672">&lt;</span> (<span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">MAX</span>(Salary) <span style="color:#66d9ef">FROM</span> Employee)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">Create</span> <span style="color:#66d9ef">table</span> <span style="color:#66d9ef">If</span> <span style="color:#66d9ef">Not</span> <span style="color:#66d9ef">Exists</span> Employee (Id int, Salary int)
+<span style="color:#66d9ef">Truncate</span> <span style="color:#66d9ef">table</span> Employee
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Employee (Id, Salary) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;1&#39;</span>, <span style="color:#e6db74">&#39;100&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Employee (Id, Salary) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;2&#39;</span>, <span style="color:#e6db74">&#39;200&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Employee (Id, Salary) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;3&#39;</span>, <span style="color:#e6db74">&#39;300&#39;</span>)
+</code></pre></div><h2 id="my-interesting-code">My Interesting Code</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> <span style="color:#66d9ef">max</span>(Salary) <span style="color:#66d9ef">as</span> SecondHighestSalary
+<span style="color:#66d9ef">from</span> Employee 
+<span style="color:#66d9ef">where</span> Salary <span style="color:#f92672">&lt;</span> (<span style="color:#66d9ef">select</span> <span style="color:#66d9ef">max</span>(Salary) <span style="color:#66d9ef">from</span> Employee)
 </code></pre></div><h2 id="my-perspective">My Perspective</h2>
 <p>This question is also simple. If you want to find the second highest salary, you can find the highest salary first. Then you can traverse the whole table again, but you need to make all the value are less than the highest salary (regardless of equality). Finally, the maximum of these numbers is the answer.</p>
-<p>By the way, if you use MAX function, the column name is MAX(Salary). You can use &ldquo;AS&rdquo; to address this problem.</p>
+<p>By the way, if you use &ldquo;max&rdquo; function, the column name is &ldquo;max(Salary)&rdquo;. You can use &ldquo;as&rdquo; to address this problem.</p>
 
       </div>
     </article>
@@ -206,6 +205,7 @@ insert into Employee (Id, Salary) values ('3', '300')
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
         <span class="tag"><a href="https://www.marshalgao.com/tags/leetcode/">leetcode</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/#176/">#176</a></span>
         <span class="tag"><a href="https://www.marshalgao.com/tags/sql/">sql</a></span>
         <span class="tag"><a href="https://www.marshalgao.com/tags/advertising-product-manager/">advertising product manager</a></span>
         <span class="tag"><a href="https://www.marshalgao.com/tags/second-highest-salary/">second highest salary</a></span>

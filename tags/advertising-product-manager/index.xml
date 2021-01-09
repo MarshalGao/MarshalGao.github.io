@@ -7,7 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 08 Jan 2021 17:35:12 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/advertising-product-manager/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Jan 2021 16:18:31 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/advertising-product-manager/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode[178] Rank Scores</title>
+      <link>https://www.marshalgao.com/leetcode178-rank-scores/</link>
+      <pubDate>Sat, 09 Jan 2021 16:18:31 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode178-rank-scores/</guid>
+      <description>Question Write a SQL query to rank scores. If there is a tie between two scores, both should have the same ranking. Note that after a tie, the next ranking number should be the next consecutive integer value. In other words, there should be no &amp;ldquo;holes&amp;rdquo; between ranks.
++----+-------+ | Id | Score | +----+-------+ | 1 | 3.50 | | 2 | 3.65 | | 3 | 4.00 | | 4 | 3.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[177] Nth Highest Salary</title>
+      <link>https://www.marshalgao.com/leetcode177-nth-highest-salary/</link>
+      <pubDate>Sat, 09 Jan 2021 16:06:13 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode177-nth-highest-salary/</guid>
+      <description>Question Write a SQL query to get the nth highest salary from the Employee table.
++----+--------+ | Id | Salary | +----+--------+ | 1 | 100 | | 2 | 200 | | 3 | 300 | +----+--------+  For example, given the above Employee table, the nth highest salary where n = 2 is 200. If there is no nth highest salary, then the query should return null.
++------------------------+ | getNthHighestSalary(2) | +------------------------+ | 200 | +------------------------+  My Interesting Code CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT BEGIN set N = N - 1; RETURN ( select distinct Salary as getNthHighestSalary from Employee order by Salary desc limit N, 1 ); END My Perspective For this question, firstly, you can order the salary.</description>
+    </item>
+    
     <item>
       <title>The Needs and Development of Internet Advertising</title>
       <link>https://www.marshalgao.com/the-needs-and-development-of-internet-advertising/</link>
@@ -27,7 +48,7 @@
       <guid>https://www.marshalgao.com/leetcode176-second-highest-salary/</guid>
       <description>Question Write a SQL query to get the second highest salary from the Employee table.
 +----+--------+ | Id | Salary | +----+--------+ | 1 | 100 | | 2 | 200 | | 3 | 300 | +----+--------+  For example, given the above Employee table, the query should return 200 as the second highest salary. If there is no second highest salary, then the query should return null.
-+---------------------+ | SecondHighestSalary | +---------------------+ | 200 | +---------------------+  SQL Schema Create table If Not Exists Employee (Id int, Salary int) Truncate table Employee insert into Employee (Id, Salary) values (&#39;1&#39;, &#39;100&#39;) insert into Employee (Id, Salary) values (&#39;2&#39;, &#39;200&#39;) insert into Employee (Id, Salary) values (&#39;3&#39;, &#39;300&#39;)  My Interesting Code SELECT MAX(Salary) AS SecondHighestSalary FROM Employee WHERE Salary &amp;lt; (SELECT MAX(Salary) FROM Employee) My Perspective This question is also simple.</description>
++---------------------+ | SecondHighestSalary | +---------------------+ | 200 | +---------------------+  SQL Schema Create table If Not Exists Employee (Id int, Salary int) Truncate table Employee insert into Employee (Id, Salary) values (&amp;#39;1&amp;#39;, &amp;#39;100&amp;#39;) insert into Employee (Id, Salary) values (&amp;#39;2&amp;#39;, &amp;#39;200&amp;#39;) insert into Employee (Id, Salary) values (&amp;#39;3&amp;#39;, &amp;#39;300&amp;#39;) My Interesting Code select max(Salary) as SecondHighestSalary from Employee where Salary &amp;lt; (select max(Salary) from Employee) My Perspective This question is also simple.</description>
     </item>
     
     <item>
@@ -98,41 +119,6 @@
  结合广告主的需求，将素材进行精准投放 结合计费模式 关系图   设计有效的广告投放流程——以CPM竞价为例
  请求广告：一般采用广告组件或者sdk等方式嵌入在广告位中，广告组件可以根据广告位的用户属性等信息向广告投放系统请求广告资源 匹配广告位：按照广告位的不同， 广告系统需要选择符合当前广告位投放目标的广告需求池 匹配投放计划：将广告位的用户属性等信息与大数据标签系统进行匹配，获取对应的用户画像标签，根据标签来和广告投放计划的定向需求进行匹配，并通过竞价选取对应的投放计划 匹配广告创意：由于符合条件每个投放计划可能有多个广告素材，因此需要根据实时的广告效果来对广告素材进行评估，并选择转化率更高的广告素材进行投放 广告数据统计：在达成统计要求后，统计广告效果数据，如曝光量、点击量等 投放流程图   广告投放策略系统
  需求点  广告运营需要一直关注投放效果，不断调整投放，控制成本，同时保证效率   名词解释  自动化的广告盯盘工具   组成部分  数据项  前段数据  浏览量、点击量 前期更注重前段数据，因为没有一定曝光，何谈转化   后端数据  App下载量、注册成本 一定程度上取决于广告素材是否吸引用户，完成转化   当前段数据达到一个阈值之后，辅以后段指标进行验证   逻辑判断条件和数值  利用大于、小于或是介于两者之间来出发投放策略调整   条件组合  同时满足 - and 任意满足 - or 例如  当消耗和成本不符合预算时，需要降低预算  「消耗」&amp;gt; XX元，且「转化成本」&amp;gt; XX元 -&amp;gt; 降低预算   广告渡过冷启动阶段，需要提高预算，加速冲量  「曝光量」&amp;gt; XX，且「转化数」&amp;gt;= XX -&amp;gt; 提高预算       执行动作  当广告达到条件预设值后，需要对广告执行相应的操作  调整预算  有预算封顶值   调整出价 更换定向包 暂停广告   可以设置包含多个动作的复杂任务，实现触发     补充  策略系统搭建完成后，需要考虑接口的并发  不同媒介对接口的分钟调用和日调用都是有限制的，从而影响拉取广告数据的频率   例如  1h拉取一次 -&amp;gt; 策略机制形同虚设      </description>
-    </item>
-    
-    <item>
-      <title>Comparison Between Different DSPs</title>
-      <link>https://www.marshalgao.com/comparison-between-different-dsps/</link>
-      <pubDate>Thu, 10 Dec 2020 20:35:34 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/comparison-between-different-dsps/</guid>
-      <description>由于目前国内外的广告投放平台众多，本文将腾讯广告、巨量引擎、百度信息流、新浪微博以及阿里妈妈广告投放平台进行对比，分析其内在流量类型以及投放测策略。
-腾讯广告
-腾讯广告依赖于社交流量，凭借QQ和微信两大社交平台，基本可以实现对全网用户的覆盖。除此，腾讯自身产品丰富，包括腾讯新闻、腾讯视频、微信朋友圈、公众号、QQ空间等，由此提供了非常多的流量媒体接口以及投放场景，这对于原生广告和信息流广告来说是十分重要的。
-腾讯广告的流量由于是以社交为基础的，所以具备大而广的特点，且流量具有通用性，不会涉及模式兼容性的问题。同时，社交意味着极高的用户覆盖率以及用户粘性。从数据统计上来看，用户整体偏年轻化，适合做品牌宣传。而社交行为数据的积累，可以让用户画像更为精准，投放更准确，转化率比较可观。但在实际投放时，需要结合自身产品的用户群体，选择适当的媒体场景进行投放。
-巨量引擎
-巨量引擎是字节跳动旗下的营销平台，由于字节跳动拥有的产品众多，比如今日头条、抖音、懂车帝等。流量具备大而广的特点，深入不同的领域，虽然不像腾讯具备流量通用性，但在大多数领域都可以找到合适的投放媒体。
-例如今日头条，作为目前国内咨询类信息流中最大的平台、一款基于数据挖掘的推荐引擎产品，其受众十分广泛，且行业覆盖率高。最重要的是，其拥有业界公认的最强人工智能算法。同时，其oCPM、CPA系统算法效果较好。在流量方面，用户每日使用时长超过76分钟，同时可以5秒快速推广，10s更新用户模型，所以广告的投放十分精准。但也由于其应用场景，使得最终的展现点击量比较大，转化率不是特别高。
-再如抖音，用户十分活跃，在大数据上表现有明显的优势。而且其用户平均在线时长、广告曝光率较高，产品推送十分多元化。用户整体偏年轻化，活跃度和记忆度高，所以十分适合新品牌的品牌推广。由于其是一个内容分享平台，所以对广告的素材要求较高，同时也存在行业要求限制，比如游戏、生活、App、电商等泛流的产品投放效果较好。
-百度信息流
-百度的流量依托于搜索引擎，其主要是在旗下各大平台咨询流中穿插展现原生广告。由于其扎实的搜索基础，内容定向精准，转化率很高。但流量来源复杂，流量和成本较为不稳定。与此同时，在搜索广告领域，需要产品掌握好关键词，关键词词包是影响流量的重要因素，只有掌控好关键词，才能将产品精准投放到目标用户。百度的用户覆盖面很广，所以也是适合绝大多数产品投放的。
-新浪微博
-新浪微博是基于用户兴趣和开放关系的以移动使用为主的社交媒体平台，超级粉丝通（微博“粉丝通”）是基于用户属性和社交关系将企业广告精准地传递给粉丝和潜在粉丝的营销产品。它会根据用户属性和社交关系将信息精准的投放给目标人群。其商业化成熟，女性用户居多，偏年轻化，粉丝群体活跃，容易受舆论影响。说到底，新浪微博是一种更为宽泛的社交平台，其用户量巨大，日活高，并且具有多种广告形式，通过移动社交实现原生传播。但也是基于此，其行业趋向化明显。例如，生活类产品(例食品、服装等)、地区类产品(例摄影等)、游戏、APP、美妆等偏向女性化产品在新浪微博投放后的转化率很高。
-阿里妈妈
-阿里旗下虽然有淘宝、天猫、饿了么等，但归根结底，其流量依赖于电商，或者说流量依赖于交易行为，由此使得流量场景特征明显，通用性不高。而反观腾讯、字节流量的通用性，可以看出对于阿里妈妈需要具有不同的投放策略。由于电商的流量基本都被阿里囊括，所以采用原生的方式，在产品所属的生态链上投放，就会具有很高的转化率，但如果跨生态投放，效果将会大打折扣。其实，生态更适合做其他生态的搜索广告，用户搜索时带着需求来的，不会受到场景的影响。回到搜索广告的本质，其确实具备投放精准，转化率高的特点。</description>
-    </item>
-    
-    <item>
-      <title>Advertising Creativity and Internet Thinking</title>
-      <link>https://www.marshalgao.com/advertising-creativity-and-internet-thinking/</link>
-      <pubDate>Sun, 06 Dec 2020 16:24:41 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/advertising-creativity-and-internet-thinking/</guid>
-      <description>广告主最终的效果取决于两方面，一方面是广告创意，另一方面则是广告的精准投放。广告的精准投放需要依靠庞大的数据来勾勒出精准的用户画像，同时对推荐算法的技术也有着十分高的要求。当广告投放逐渐做到“千人千面”的今天，广告创意就会对最终的效果产生至关重要的影响。而且，在同等情况下，更好的创意会让广告主的广告在RTB中赢得优势。
-互联网的广告创意与传统电视广告不同，需要具备互联网思维。其中，最重要的就是人与广告之间的联系，也就是互联网思维里提到的“连接”。这种“连接”可以分为两种，一种是主动的“连接”，另一种是被动的“连接”。
-主动的“连接”可以理解为从产品本身出发，以产品为第一视角，讲述产品的核心理念与价值取向，产品是主角。同时，这类广告对用户的划分会更加粗糙，旨在表明自身产品应用场景之多，强行建立起产品与用户的联系。例如，中国移动4G以“和”为主题的创意广告。
-  被动的“连接“可以理解为从产品的目标用户出发，以用户为第一视角，表明产品与用户的生活息息相关，产品仅仅是一个配角，用户才是真的主角。这一类广告对用户的划分会更为精细，因为同一类用户承担了主角的重任。这种广告产品与人的联系是被动的，如果观看者同时是产品的目标用户，会很容易产生情感共鸣，用户不由自主被动地与产品建立起了连接。例如，支付宝十周年的创意广告。
-  综上所述，广告创意与对互联网广告的最终效果会起到至关重要的作用，短期内依靠精准投放带来得营效是不长久的，真正利用内容完成品牌的定位和口碑建设才是长久的。</description>
     </item>
     
   </channel>
