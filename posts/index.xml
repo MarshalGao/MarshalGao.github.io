@@ -1612,7 +1612,8 @@ AddressId is the primary key column for this table.
             <description>Overview Difficulties and challenges
  our world is increasing challenged  urbanization ageing population social conflict inequality loss of nature pollution energy crisis climate change natural disaster resource depletion    Basic understanding
  definition of smart city  no official definition basically  the use of ICT (Information and Communications Technology) to improve the quality of life and city services, making the city more livable     ultimate goals  enhance quality of life  key indicators  health time and convenience safety cost of living jobs social connectedness and civic participation environmental quality     foster sustainable growth   leverage on technologies for better city management  IoT (data collection) big data (much data) AI (data analysis and prediction) above three technologies are based on GIS (Geographic Information System)    Building a Smart City Countries developing smart city initiatives with their own goals</description>
-            <content type="html"><![CDATA[<h2 id="overview">Overview</h2>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Understanding%20the%20Concept%20of%20Smart%20City.png" alt=""></p>
+<h2 id="overview">Overview</h2>
 <p><strong>Difficulties and challenges</strong></p>
 <ul>
 <li>our world is increasing challenged
@@ -1979,6 +1980,13 @@ AddressId is the primary key column for this table.
 </ul>
 <h2 id="additional-reading">Additional Reading</h2>
 <ul>
+<li>Smart Cities -&gt; <a href="../articles/2018_Book_SmartCities.pdf">details</a></li>
+<li>Smart City 3.0 (Chinese Edition) -&gt; <a href="../articles/Smart_City_3_0.pdf">details</a></li>
+<li>Smart City 3.0 (English Edition) -&gt; <a href="../articles/Smart_City_3_0_en.pdf">details</a></li>
+<li>Hong Kong Smart City Blueprint 1.0 -&gt; <a href="../articles/HongKongSmartCityBlueprint(EN).pdf">details</a></li>
+<li>Hong Kong Smart City Blueprint 2.0 -&gt; <a href="../articles/HKSmartCityBlueprint(ENG)v2.pdf">details</a></li>
+<li>Full Report of the Consultancy Study on Smart City Blueprint for Hong Kong -&gt; <a href="../articles/Smart%20City%20Blueprint%20Consultancy%20Study%20-%20Full%20Report%20(EN).pdf">details</a></li>
+<li>Are You Future Ready? (English Edition) -&gt; <a href="../articles/AreYouFutureReadyEnglish.pdf">details</a></li>
 <li>Hong Kong&rsquo;s Smart City Journey -&gt; <a href="../articles/GCIO%20HKU%20Guest%20Lecture%20(05-01-2021)%20Final.pdf">details</a></li>
 </ul>
 ]]></content>
