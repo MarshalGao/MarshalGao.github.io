@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 08 Jan 2021 17:35:12 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/daily-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Jan 2021 22:33:41 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/daily-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Content Products</title>
+      <link>https://www.marshalgao.com/content-products/</link>
+      <pubDate>Sat, 09 Jan 2021 22:33:41 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/content-products/</guid>
+      <description>内容型产品
+ 定义  通过内容聚集用户，形成流量平台 用户主要是进行内容消费，消磨时间   举例  新闻资讯类：网易新闻、今日头条、微信公众号 社交类：微博、知乎、豆瓣 内容电商类：什么值得买、小红书 影音娱乐类：腾讯视频、QQ音乐   内容的生产方式  分发型（PGC）  产品模式  以媒体资讯类为主，例如：今日头条 平台签约创作者，吸引内容消费者，实现流量平台搭建 头部MCN会优先推荐 流量积累速度快，起步快 关系沉淀弱，创作者对观众的单向关系，观众难以转化为创作者 除了解决内容增长之外，还需要增加用户、内容以及用户之间的互动（社交属性）-&amp;gt; 提升用户粘性   业务划分（以新闻资讯类为例）  推荐分发  通过订阅、个性化推荐将内容分发给用户   跟帖互动  社交属性，增强用户粘性   内容后台  自媒体管理，审核与质量评级，建立内容库的基础   用户增长  拉新和留存   商业变现  广告、知识付费     变现模式  创作者变现  平台补贴刺激生产内容 知识付费收入分成 流量主收入 沉淀粉丝其他渠道变现   平台变现  广告变现  例如：今日头条、网易新闻   内容IP-知识付费  订阅付费：先付费再消费，例如：得到 打赏付费：先消费再付费，例如：微信公众号   购买会员  满足用户跳过广告的需求，例如：腾讯视频          社区型（UGC）  产品模式  通过内容聚集相同兴趣或调性的用户，以引导用户创作内容为主导，通过内容发现人，强调关系链的搭建与互动，以及社区内容的调性维护，例如：抖音，小红书 社区中，用户群体关系通常呈现为金字塔结构  大V和KOL 腰部中小V 尝鲜小白和社区普通用户    UGC产品起步如果采取单纯UGC的模式会产生大量的“内容噪音”，因此一般来说会先从头部KOL开始产生内容进行输出（个人理解是PGC的方式），后期发展需要打造社区氛围 UGC与PGC相比，天花板更高，迁移成本提高，用户留存高（因为社区的形成）   业务划分  发布工具  降低内容创作门槛，提高创作趣味性   KOL扶植  提升KOL的on boarding体验   互动关系  打造关系链，创建社区   内容分发  通过内容聚集相同属性的用户   用户增长  新增和留存   商业变现  广告、电商      变现模式  创作者变现  平台补贴刺激生产内容 沉淀粉丝其他渠道转化变现 带货收入分成   平台变现  电商  自建电商，例如：小红书 导流电商，例如：抖音   广告变现  与PGC的广告模式类似，例如：知乎的信息流广告            快速设计内容发现</description>
+    </item>
+    
     <item>
       <title>The Needs and Development of Internet Advertising</title>
       <link>https://www.marshalgao.com/the-needs-and-development-of-internet-advertising/</link>
@@ -121,24 +131,6 @@
       <guid>https://www.marshalgao.com/the-logical-relationship-of-advertising-system/</guid>
       <description>本文将从宏观角度理清广告系统中DSP、SSP、DMP、ADX、RTB等概念的逻辑与关系。
  广告主  希望为自己的品牌提供曝光，增加营销的商家或个人   代理商  不擅长或无经验的广告主  使用代理商代办   擅长且有经验的广告主  不使代理商，直接与DSP沟通     DSP  相当于面向广告主的前端产品 但有的DSP自身不带数据，则需要与DMP进行合作 虽然在DSP上广告主已经设定好了一切需求，但真正进行广告投放时，会利用DMP与正在浏览的用户进行画像比对   DMP  整理分散的数据，构建用户画像 大多数情况下利用所有浏览器的cookie 但在Fackbook上还使用了其自身的CRM   SSP  相当于提供流量、广告位的企业前端 汇聚了很多的Publisher Publisher在SSP上管理自己的广告位   Publisher  流量的实际拥有者 可以是网页，又可以是免费型的App 可以加入到SSP   RTB  不是平台，也不是DSP的一部分 是一种技术概念，采取oCPA以及oCPM等方式    Ad Network  由于互联网广告的碎片性质，导致广告主需要与不同的Publisher进行谈判 Ad Network整合了相应的Publisher，方便广告主   ADX  由于Ad network之间可能存在互相符合用户画像的流量，所以要对Ad Network进行整合 ADX最终整合了Ad Network以及更多的Publisher 引入RTB技术   简化流程   现如今，每一个广告联盟对应一个DSP，所以ADX连接的DSP和SSP并不一定是一对一的关系，可能会存在更复杂的情况。</description>
-    </item>
-    
-    <item>
-      <title>Media Management Platform (Take E-Commerce as an Example)</title>
-      <link>https://www.marshalgao.com/media-management-platform-take-e-commerce-as-an-example/</link>
-      <pubDate>Fri, 04 Dec 2020 16:25:08 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/media-management-platform-take-e-commerce-as-an-example/</guid>
-      <description>电商中大部分的页面还是写死的，但在一些大型活动节，商家可以自己定制化活动页面。但数量十分有限，因为平台要考虑算法运算效率以及加载速度等诸多因素。而活动的促销页面类似于广告中的落地页。通过媒体管理平台或者内容管理平台（CMS）进行页面动态配置。后文将以电商为例说明页面动态配置的逻辑。
-基础组件
-组件是动态页面的基础，提供给用户编辑具体展示的信息。有许多类型的组件：图片轮播、ICON、优惠券等，每种组件都可以有多个不同的样式，选择内部展示的内容或者自定义。用的最常见的就是链接，组件显示样式虽然多样，但是点击之后通往的页面选择库却是共通的。例如：新的活动页面、商品详情页、商品聚合页、购物车、客服等等。
-基础组件的定义和解析是自定义页面的核心，不同的组件有不同的功能，表示不同类型的内容。每个组件都需要单独设计，定义其规则和样式。 例如ICON、图片轮播就是简单的图片展示，商品排名对应的算法较为复杂，需要实时去取动态排名。
-位置+内容
-有了组件之后，用户在设置或者系统在解析的时候，首先要确定组件在自定义页面中的位置。位置可以称为“楼层”，每个页面的各楼层可以定义名称、设置背景、配置内容，目前最主流的交互是拖动组件到相应的位置，设置内容之后实时预览，自定义页面动态可视化。
-动态页面
-对于整个动态页面，需要定义生效时间、结束时间、活动页面名称等基础信息。设置之后可生成相应的链接进行预览。
-动态页面是由不同的组件内容构成，首先按照各组件位置去解析，然后再去解析组件的内容（样式、图片/商品、背景、链接等）。按照上图的反向流程走，就能解析出对应的自定义页面内容。
-首页设置也是相同，类似自定义页面，可动态设置首页内容，动态添加自定义组件。目前绝大部分电商首页都是动态配置，有着丰富的自定义内容。</description>
     </item>
     
   </channel>

@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 09 Jan 2021 16:18:31 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Jan 2021 22:33:41 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Content Products</title>
+      <link>https://www.marshalgao.com/content-products/</link>
+      <pubDate>Sat, 09 Jan 2021 22:33:41 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/content-products/</guid>
+      <description>内容型产品
+ 定义  通过内容聚集用户，形成流量平台 用户主要是进行内容消费，消磨时间   举例  新闻资讯类：网易新闻、今日头条、微信公众号 社交类：微博、知乎、豆瓣 内容电商类：什么值得买、小红书 影音娱乐类：腾讯视频、QQ音乐   内容的生产方式  分发型（PGC）  产品模式  以媒体资讯类为主，例如：今日头条 平台签约创作者，吸引内容消费者，实现流量平台搭建 头部MCN会优先推荐 流量积累速度快，起步快 关系沉淀弱，创作者对观众的单向关系，观众难以转化为创作者 除了解决内容增长之外，还需要增加用户、内容以及用户之间的互动（社交属性）-&amp;gt; 提升用户粘性   业务划分（以新闻资讯类为例）  推荐分发  通过订阅、个性化推荐将内容分发给用户   跟帖互动  社交属性，增强用户粘性   内容后台  自媒体管理，审核与质量评级，建立内容库的基础   用户增长  拉新和留存   商业变现  广告、知识付费     变现模式  创作者变现  平台补贴刺激生产内容 知识付费收入分成 流量主收入 沉淀粉丝其他渠道变现   平台变现  广告变现  例如：今日头条、网易新闻   内容IP-知识付费  订阅付费：先付费再消费，例如：得到 打赏付费：先消费再付费，例如：微信公众号   购买会员  满足用户跳过广告的需求，例如：腾讯视频          社区型（UGC）  产品模式  通过内容聚集相同兴趣或调性的用户，以引导用户创作内容为主导，通过内容发现人，强调关系链的搭建与互动，以及社区内容的调性维护，例如：抖音，小红书 社区中，用户群体关系通常呈现为金字塔结构  大V和KOL 腰部中小V 尝鲜小白和社区普通用户    UGC产品起步如果采取单纯UGC的模式会产生大量的“内容噪音”，因此一般来说会先从头部KOL开始产生内容进行输出（个人理解是PGC的方式），后期发展需要打造社区氛围 UGC与PGC相比，天花板更高，迁移成本提高，用户留存高（因为社区的形成）   业务划分  发布工具  降低内容创作门槛，提高创作趣味性   KOL扶植  提升KOL的on boarding体验   互动关系  打造关系链，创建社区   内容分发  通过内容聚集相同属性的用户   用户增长  新增和留存   商业变现  广告、电商      变现模式  创作者变现  平台补贴刺激生产内容 沉淀粉丝其他渠道转化变现 带货收入分成   平台变现  电商  自建电商，例如：小红书 导流电商，例如：抖音   广告变现  与PGC的广告模式类似，例如：知乎的信息流广告            快速设计内容发现</description>
+    </item>
+    
     <item>
       <title>LeetCode[178] Rank Scores</title>
       <link>https://www.marshalgao.com/leetcode178-rank-scores/</link>
@@ -103,16 +113,6 @@
       <guid>https://www.marshalgao.com/ecom7123-smart-mobility/</guid>
       <description>Overview Mobility
  definition  mobility describes the ability of people and goods to move around an area, and in doing so to access the essential facilities, communities &amp;amp; other destinations that are required to support a decent quality of life &amp;amp; a buoyant economy mobility incorporates the transport infrastructure &amp;amp; services that facilitate these interactions   challenges of urban mobility  overview  congestion energy crisis pollution climate change   details  increasing demand for travel in city centers, suburbs &amp;amp; between the two areas increasing demand for improved intercity mobility requiring faster &amp;amp; more direct connectivity between destinations increasing city traffic, pollution, waste production &amp;amp; CO2 emission      Smart Mobility Goals</description>
-    </item>
-    
-    <item>
-      <title>Development Model</title>
-      <link>https://www.marshalgao.com/development-model/</link>
-      <pubDate>Wed, 06 Jan 2021 16:35:38 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/development-model/</guid>
-      <description>5种常见开发模式
- 瀑布式开发  典型的预见性方法 自上而下 上一阶段结束，下一阶段执行，不可回溯 优点  预先计划 便于确定预期的开发成本和时间   缺点  无法预知未来 环环相扣，一环出问题，满盘皆输 测试发现问题，开发没法及时解决（开发此时可能已经处于下一个项目的研发中）   适合场景  具有明确定义和不变需求的中小型项目，比如小型公司网站开发 需要严格控制流程，预算和时间表可预测的项目，比如政府类项目 必须遵守多个规章制度的项目，比如医疗软件 使用了业内熟悉的成熟的技术方案的项目      增量和迭代开发  增量开发  项目切割成子模块（相对独立） 横向开发 可以顺序进行，也可以并行进行 如果研发资源有限，需要进行子模块的排序 如果研发资源充足，那么在设计阶段PM任务量较大    迭代开发  项目切割成子任务（以上一次迭代为基础进行） 纵向开发 项目初期不需要完整的规范，在开发过程中可以对需求进行少量更改，但需求根本和主体不能改变 每次迭代需要留下清晰的文档    优点  如果失败，只是一小部分的失败，降低损失，软件容易成功 也可以根据上线版本的用户反馈，结合完成下一次迭代方案   缺点  沟通或文档的不清晰，会导致后期融合出现问题   适合场景  大型关键企业应用程序，最好由松散耦合的部分组成，比如微服务或web服务类     看板开发  属于敏捷开发的一种（scrum也是其中一种） 自下而上（与瀑布式开发对比） 后道工序需要时，给前道工序发信号，前道工序才启动任务 用户需求为原动力 优点  没有明显的迭代过程，可以随时加入新需求 即来即增加，即变即更新 团队中的人可以清楚看到所有任务的负责人以及进度等 透明度高有助于准确估计最要紧的任务，项目组越来越自动化 站立会 —— 每人交代已完成的任务和遇到的问题（对于复杂问题会有专项讨论） 遇到问题，立刻停下来解决   缺点  不利于思维的发散   适合场景  要求处理目标用户前期反馈的新项目 业务要求不能被清晰地转换成产品需求的中型定制化项目      极限编程（XP）  属于敏捷开发的一种 与看板开发相比，更注重快速解决问题 团队人数少，人人平等，畅所欲言 优点  没有总体设计，设计过程贯穿始终 只要满足需求，通过测试即可（因为满足需求后，后期会有迭代版本）   缺点  对团队要求高 由于过程不拘泥于形式，后期文档在完整性上会有所欠缺 项目组成员流动会带来巨大问题   适合场景  要求处理目标用户前期反馈的新项目 业务要求不能被清晰地转换成产品需求的中型定制化项目 经常发生变化的项目、紧急上线任务和封闭开发等      从操作灵活性和用户参与度进行对比 </description>
     </item>
     
   </channel>
