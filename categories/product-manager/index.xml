@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 09 Jan 2021 22:33:41 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/product-manager/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Jan 2021 13:50:25 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/product-manager/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Entertainment Industry Development</title>
+      <link>https://www.marshalgao.com/entertainment-industry-development/</link>
+      <pubDate>Mon, 11 Jan 2021 13:50:25 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/entertainment-industry-development/</guid>
+      <description>文娱行业发展概况
+ 受疫情和移动互联网的影响，文娱行业现为线上、线下结合的模式 文娱行业前景可观，主要集中在内容上  发展因素及趋势概况
+ 利好政策的扶持 中国文娱行业进入资本寒冬  从数据上看，总投资金额在减少，投资项目数量也在减少   平均单笔融资金额快速上升  从数据上看，虽然总投资金额在减少，但是单笔投资金额在逐年上升 对于大IP等头部内容，备受青睐   战略投资和并购占比高  意味着更多的投资公司不愿意再冒风险去投资小IP  但对于互联网企业除外  资金足够多 为了自家整体生态布局     战略投资和并购的提高，意味着头部项目更吃香  容易造成文娱领域的马太效应     从全国城市文娱行业的融资数据来看，北京成为文娱行业投融资的主战场 媒体、游戏成为投资热门  从数据看，两者占比最大   CVC机构活跃  CVC  CVC是一种创新的投资组织形式，指的是企业通过其设立专业的投资机构，或战略投资部门对外进行直接投资，起源于20世纪60年代的美国   2019年投资项目数量TOP10中，有7家CVC  基本都是互联网企业     文娱类独角兽估值高  虽然数量少，但是足够吸金 诸如笑果文化等新文娱企业的崛起   大量的融资并购  融资大多涵盖互联网企业 并购方基本为传统文娱企业    原文链接</description>
+    </item>
+    
     <item>
       <title>Content Products</title>
       <link>https://www.marshalgao.com/content-products/</link>
@@ -121,16 +132,6 @@
 主动的“连接”可以理解为从产品本身出发，以产品为第一视角，讲述产品的核心理念与价值取向，产品是主角。同时，这类广告对用户的划分会更加粗糙，旨在表明自身产品应用场景之多，强行建立起产品与用户的联系。例如，中国移动4G以“和”为主题的创意广告。
   被动的“连接“可以理解为从产品的目标用户出发，以用户为第一视角，表明产品与用户的生活息息相关，产品仅仅是一个配角，用户才是真的主角。这一类广告对用户的划分会更为精细，因为同一类用户承担了主角的重任。这种广告产品与人的联系是被动的，如果观看者同时是产品的目标用户，会很容易产生情感共鸣，用户不由自主被动地与产品建立起了连接。例如，支付宝十周年的创意广告。
   综上所述，广告创意与对互联网广告的最终效果会起到至关重要的作用，短期内依靠精准投放带来得营效是不长久的，真正利用内容完成品牌的定位和口碑建设才是长久的。</description>
-    </item>
-    
-    <item>
-      <title>The Logical Relationship of Advertising System</title>
-      <link>https://www.marshalgao.com/the-logical-relationship-of-advertising-system/</link>
-      <pubDate>Sun, 06 Dec 2020 14:20:55 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/the-logical-relationship-of-advertising-system/</guid>
-      <description>本文将从宏观角度理清广告系统中DSP、SSP、DMP、ADX、RTB等概念的逻辑与关系。
- 广告主  希望为自己的品牌提供曝光，增加营销的商家或个人   代理商  不擅长或无经验的广告主  使用代理商代办   擅长且有经验的广告主  不使代理商，直接与DSP沟通     DSP  相当于面向广告主的前端产品 但有的DSP自身不带数据，则需要与DMP进行合作 虽然在DSP上广告主已经设定好了一切需求，但真正进行广告投放时，会利用DMP与正在浏览的用户进行画像比对   DMP  整理分散的数据，构建用户画像 大多数情况下利用所有浏览器的cookie 但在Fackbook上还使用了其自身的CRM   SSP  相当于提供流量、广告位的企业前端 汇聚了很多的Publisher Publisher在SSP上管理自己的广告位   Publisher  流量的实际拥有者 可以是网页，又可以是免费型的App 可以加入到SSP   RTB  不是平台，也不是DSP的一部分 是一种技术概念，采取oCPA以及oCPM等方式    Ad Network  由于互联网广告的碎片性质，导致广告主需要与不同的Publisher进行谈判 Ad Network整合了相应的Publisher，方便广告主   ADX  由于Ad network之间可能存在互相符合用户画像的流量，所以要对Ad Network进行整合 ADX最终整合了Ad Network以及更多的Publisher 引入RTB技术   简化流程   现如今，每一个广告联盟对应一个DSP，所以ADX连接的DSP和SSP并不一定是一对一的关系，可能会存在更复杂的情况。</description>
     </item>
     
   </channel>

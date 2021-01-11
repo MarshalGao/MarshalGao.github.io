@@ -49,7 +49,7 @@
 
 
 
-<link rel="stylesheet" href="https://www.marshalgao.com/main.bdf16375e88c9de5121e200285a015c4d181bcc9641cf97e05c5e46866f50161.css">
+<link rel="stylesheet" href="https://www.marshalgao.com/main.1abfe30dec5ae0f5c4f84acd6413b12f63e4a6f9e1e7167f42de12192bfd25e9.css">
 
 
 
@@ -262,7 +262,7 @@
 
 <p>在获取最相似的节点之前，来回顾一下高中的数学知识。在二维平面XY上有若干个点，A(1.0, 2.0)，B(1.0, 0.0)，C(0.0, 2.0)，试问A离谁比较近一些？</p>
 
-<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-e39d87b703c4dcf7f0f214b689fbf1a8_1440w.jpg" alt=""></figure></p>
+<p><center><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-e39d87b703c4dcf7f0f214b689fbf1a8_1440w.jpg" alt=""></figure></center></p>
 
 <p>根据欧几里得的数学公式<span  class="math">\(\sqrt{(x_0 - x_1)^2 + (y_0 - y_1)^2}\)</span>可以计算出AB距离为2, AC距离为1,因此A离C更近一些。这就是一个最简单的向量检索，通过计算获知向量A离C更近，而AC距离更近意味着向量A和向量C更相似。</p>
 
@@ -280,21 +280,21 @@
 
 <p>打个比方，我们先给一个城市里所有的人按照职业做一个分类，比如工程师，律师，医生，等等。现在我要找一个人，他是Java程序员，那么我们掐指一算，只要在工程师队伍里找就十有八九能找到他，不需要再去其他队伍里找了。</p>
 
-<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112903.jpg" alt=""></figure></p>
+<p><center><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112903.jpg" alt=""></figure></center></p>
 
 <p>向量检索中典型的做法就是通过某种聚类算法把大批向量分成很多簇， 每个簇含有成百上千条向量，每个簇都有一个中心向量，当用户输入目标向量搜索时，系统先把目标向量和每个簇的中心向量做距离计算，挑选出距离比较近的几个簇，然后再把目标向量和这几个簇里的每一条向量做距离运算，最后得出距离最近的k条结果向量。</p>
 
 <p>下面将以一个散点图来进行更为直观的说明。假设在二维平面上有若干个向量（点）。</p>
 
-<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-0b40121588f693beb5157d5f7caae745_1440w.jpg" alt=""></figure></p>
+<p><center><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-0b40121588f693beb5157d5f7caae745_1440w.jpg" alt=""></figure></center></p>
 
 <p>通过聚类算法把它们分成若干个簇，簇的数量是可以指定的（这里以4为例），黑圈表示中心向量。</p>
 
-<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-19ead11e5123e686fcb6611328d1a601_1440w.jpg" alt=""></figure></p>
+<p><center><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-19ead11e5123e686fcb6611328d1a601_1440w.jpg" alt=""></figure></center></p>
 
 <p>加入要检索的目标向量，根据对比计算，我们发现它离黄色簇的中心最近，那么只需要将目标向量和黄色簇里每一个向量计算距离，就可以得到离目标向量最近的那个向量。</p>
 
-<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-6cc5bd36aea3f17e69d1da6551bd62c1_1440w.jpg" alt=""></figure></p>
+<p><center><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-6cc5bd36aea3f17e69d1da6551bd62c1_1440w.jpg" alt=""></figure></center></p>
 
 <p>当然，具体到实现环节会有很多种不同做法，有基于矢量量化的，基于图的，以及基于树的各种算法。</p>
 

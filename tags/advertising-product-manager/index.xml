@@ -7,7 +7,44 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 11 Jan 2021 12:14:21 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/advertising-product-manager/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Jan 2021 15:00:18 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/advertising-product-manager/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Principles of Advertising Algorithms</title>
+      <link>https://www.marshalgao.com/principles-of-advertising-algorithms/</link>
+      <pubDate>Mon, 11 Jan 2021 15:00:18 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/principles-of-advertising-algorithms/</guid>
+      <description>本文将以Google和Fackbook的竞价系统为主线，阐述其内在的算法原理。
+竞价系统
+ GSP（Generalized Second Price  Google采用的竞价方式  GSP &amp;amp; VCG（Vickrey-Clarke-Groves）  Facebook采用的竞价方式   GSP
+简而言之就是按照下一位出价来进行实际扣费，为了鼓励广告主提高素材、广告点击率。
+\[cost=next price\times\frac{next\ quality}{current\ quality}+0.01\]
+举例说明：
+   广告位 平均每小时点击量 广告主 出价（CPC）     1 200 A 10   2 100 B 4   null null C 2    按照上表，此时A的出价为4.01，B的出价为2.01，C竞价失败。
+变化一：
+如果A出价$7（少于A认为这个广告本身的价值），B出价$8（多于B认为这个广告的价值），则B就会以$7.01拍得第一个广告位，但是这比预想多了$3.01。
+变化二：
+如果A出价$3.5，B出价$3，那么A就会以$3.01拍得第一个广告位。但如果B出价$3.6，B会以$3.51拍得第一个广告位，并且节省了$0.49。
+有这样一个场景，A的真实出价是$10，B出不起那么高的价格，那么B会认为既然得不到那就同归于尽，于是出价$9.99，这样A没有得到一点便宜。这种恶意竞价对双方都不友好。
+为了解决上述问题，Google在系统里引入了质量得分的因素，质量得分的关键是CTR（ClickThrough Rate）。显然，在竞价排名时，不仅要考虑价格，还要考虑综合竞价、点击率、广告相关性、广告账户历史等等。
+GSP是一种稳定的竞价方式，可操作性很强，现阶段很多互联网广告平台都采用这种竞价方式。但GSP的不足之处在于，竞价的结果不一定是全局最优化的，于是VCG竞价算法出现了。
+VCG
+基本原理就是广告主为参加拍卖过程中给别的广告主带来的损失之和来买单定价。
+举例说明：
+   广告位 平均每小时点击量 广告主 出价（CPC）     1 200 A 10   2 100 B 4   null null C 2    A不参加竞价，B和C的总费用为\(4\times200+2\times100=1000\)。</description>
+    </item>
+    
+    <item>
+      <title>Entertainment Industry Development</title>
+      <link>https://www.marshalgao.com/entertainment-industry-development/</link>
+      <pubDate>Mon, 11 Jan 2021 13:50:25 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/entertainment-industry-development/</guid>
+      <description>文娱行业发展概况
+ 受疫情和移动互联网的影响，文娱行业现为线上、线下结合的模式 文娱行业前景可观，主要集中在内容上  发展因素及趋势概况
+ 利好政策的扶持 中国文娱行业进入资本寒冬  从数据上看，总投资金额在减少，投资项目数量也在减少   平均单笔融资金额快速上升  从数据上看，虽然总投资金额在减少，但是单笔投资金额在逐年上升 对于大IP等头部内容，备受青睐   战略投资和并购占比高  意味着更多的投资公司不愿意再冒风险去投资小IP  但对于互联网企业除外  资金足够多 为了自家整体生态布局     战略投资和并购的提高，意味着头部项目更吃香  容易造成文娱领域的马太效应     从全国城市文娱行业的融资数据来看，北京成为文娱行业投融资的主战场 媒体、游戏成为投资热门  从数据看，两者占比最大   CVC机构活跃  CVC  CVC是一种创新的投资组织形式，指的是企业通过其设立专业的投资机构，或战略投资部门对外进行直接投资，起源于20世纪60年代的美国   2019年投资项目数量TOP10中，有7家CVC  基本都是互联网企业     文娱类独角兽估值高  虽然数量少，但是足够吸金 诸如笑果文化等新文娱企业的崛起   大量的融资并购  融资大多涵盖互联网企业 并购方基本为传统文娱企业    原文链接</description>
+    </item>
+    
     <item>
       <title>LeetCode[181] Employees Earning More Than Their Managers</title>
       <link>https://www.marshalgao.com/leetcode181-employees-earning-more-than-their-managers/</link>
@@ -93,27 +130,6 @@ Logs table: +----+-----+ | Id | Num | +----+-----+ | 1 | 1 | | 2 | 1 | | 3 | 1 |
       <description>Question Table: Person
 +-------------+---------+ | Column Name | Type | +-------------+---------+ | AddressId | int | | PersonId | int | | City | varchar | | State | varchar | +-------------+---------+ PersonId is the primary key column for this table.  Table: Address
 +-------------+---------+ | Column Name | Type | +-------------+---------+ | AddressId | int | | PersonId | int | | City | varchar | | State | varchar | +-------------+---------+ AddressId is the primary key column for this table.</description>
-    </item>
-    
-    <item>
-      <title>Data Analysis</title>
-      <link>https://www.marshalgao.com/data-analysis/</link>
-      <pubDate>Thu, 07 Jan 2021 15:51:48 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/data-analysis/</guid>
-      <description>定性分析与定量分析
- 定性分析  对事物性质的归纳 对问题的一种假设   定量分析  对事物数量的统计 对问题的一种验证   数据基础  访谈（定性） 问卷（定量） &amp;hellip;   闭环  定性假设 -&amp;gt; 定量验证 -&amp;gt; 结论 -&amp;gt; 定性假设   区别   定性分析步骤
- 转录  文本是最方便处理的形式，首先需要将获得的录音、现场笔记等资料转录为可读的文本   编码  是对资料进行简化、提炼、初步分析的过程 常见方法  归纳法  基于扎根理论，在开始分析之前并不预设编码系统，而是在分析资料的过程中逐步地、自下而上地形成编码系统，从而能够实现从原始资料中提炼出理论和规律   演绎法  根据已有的理论和假设，预先设定一套编码系统，在资料分析的过程中直接使用这套系统中的代码进行标记   综合方法  融合了归纳法和演绎法，不预设代码系统，但是为代码预先创建一套基本的说明系统，限定代码的规则和范围 在资料分析的过程中，根据资料本身的属性和说明系统的要求，产生代码       资料展示  使用可读性更强或者逻辑关系更加清晰的形式展示信息，资料展示的过程也是对资料进行进一步分析的过程 常见方法  矩阵表  类似于表格 了解事件的流程和关联，或者用于个案间的比较   网状图  类似于变量与变量之间的关系网 强调多个变量或者元素之间的关系   脉络图  将群体按照社会体系进行划分，找出内在联系，类似于人际关系脉络 描绘所处的情境、社会体系等，在相关脉络中深入理解人的行为   决策图  类似于流程图 思考和决策的关键节点和流程   认知图  类似于日常的笔记作图，随意关系指代 非层级的网状图，包括很多节点及其联系，表现人们的认知模式   散点图  利用坐标系展现所有所有点（即每一个案例） 根据两个或者多个维度，展示所有个案的情况。       引出结论  从资料中提炼出规律、模式、解释、因果、命题等，并在提炼的过程中快速验证    定量分析步骤</description>
-    </item>
-    
-    <item>
-      <title>Development Model</title>
-      <link>https://www.marshalgao.com/development-model/</link>
-      <pubDate>Wed, 06 Jan 2021 16:35:38 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/development-model/</guid>
-      <description>5种常见开发模式
- 瀑布式开发  典型的预见性方法 自上而下 上一阶段结束，下一阶段执行，不可回溯 优点  预先计划 便于确定预期的开发成本和时间   缺点  无法预知未来 环环相扣，一环出问题，满盘皆输 测试发现问题，开发没法及时解决（开发此时可能已经处于下一个项目的研发中）   适合场景  具有明确定义和不变需求的中小型项目，比如小型公司网站开发 需要严格控制流程，预算和时间表可预测的项目，比如政府类项目 必须遵守多个规章制度的项目，比如医疗软件 使用了业内熟悉的成熟的技术方案的项目      增量和迭代开发  增量开发  项目切割成子模块（相对独立） 横向开发 可以顺序进行，也可以并行进行 如果研发资源有限，需要进行子模块的排序 如果研发资源充足，那么在设计阶段PM任务量较大    迭代开发  项目切割成子任务（以上一次迭代为基础进行） 纵向开发 项目初期不需要完整的规范，在开发过程中可以对需求进行少量更改，但需求根本和主体不能改变 每次迭代需要留下清晰的文档    优点  如果失败，只是一小部分的失败，降低损失，软件容易成功 也可以根据上线版本的用户反馈，结合完成下一次迭代方案   缺点  沟通或文档的不清晰，会导致后期融合出现问题   适合场景  大型关键企业应用程序，最好由松散耦合的部分组成，比如微服务或web服务类     看板开发  属于敏捷开发的一种（scrum也是其中一种） 自下而上（与瀑布式开发对比） 后道工序需要时，给前道工序发信号，前道工序才启动任务 用户需求为原动力 优点  没有明显的迭代过程，可以随时加入新需求 即来即增加，即变即更新 团队中的人可以清楚看到所有任务的负责人以及进度等 透明度高有助于准确估计最要紧的任务，项目组越来越自动化 站立会 —— 每人交代已完成的任务和遇到的问题（对于复杂问题会有专项讨论） 遇到问题，立刻停下来解决   缺点  不利于思维的发散   适合场景  要求处理目标用户前期反馈的新项目 业务要求不能被清晰地转换成产品需求的中型定制化项目      极限编程（XP）  属于敏捷开发的一种 与看板开发相比，更注重快速解决问题 团队人数少，人人平等，畅所欲言 优点  没有总体设计，设计过程贯穿始终 只要满足需求，通过测试即可（因为满足需求后，后期会有迭代版本）   缺点  对团队要求高 由于过程不拘泥于形式，后期文档在完整性上会有所欠缺 项目组成员流动会带来巨大问题   适合场景  要求处理目标用户前期反馈的新项目 业务要求不能被清晰地转换成产品需求的中型定制化项目 经常发生变化的项目、紧急上线任务和封闭开发等      从操作灵活性和用户参与度进行对比 </description>
     </item>
     
   </channel>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>advertising algorithms on This Is Marshal</title>
+    <link>https://www.marshalgao.com/tags/advertising-algorithms/</link>
+    <description>Recent content in advertising algorithms on This Is Marshal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
+    <lastBuildDate>Mon, 11 Jan 2021 15:00:18 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/advertising-algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Principles of Advertising Algorithms</title>
+      <link>https://www.marshalgao.com/principles-of-advertising-algorithms/</link>
+      <pubDate>Mon, 11 Jan 2021 15:00:18 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/principles-of-advertising-algorithms/</guid>
+      <description>本文将以Google和Fackbook的竞价系统为主线，阐述其内在的算法原理。
+竞价系统
+ GSP（Generalized Second Price  Google采用的竞价方式  GSP &amp;amp; VCG（Vickrey-Clarke-Groves）  Facebook采用的竞价方式   GSP
+简而言之就是按照下一位出价来进行实际扣费，为了鼓励广告主提高素材、广告点击率。
+\[cost=next price\times\frac{next\ quality}{current\ quality}+0.01\]
+举例说明：
+   广告位 平均每小时点击量 广告主 出价（CPC）     1 200 A 10   2 100 B 4   null null C 2    按照上表，此时A的出价为4.01，B的出价为2.01，C竞价失败。
+变化一：
+如果A出价$7（少于A认为这个广告本身的价值），B出价$8（多于B认为这个广告的价值），则B就会以$7.01拍得第一个广告位，但是这比预想多了$3.01。
+变化二：
+如果A出价$3.5，B出价$3，那么A就会以$3.01拍得第一个广告位。但如果B出价$3.6，B会以$3.51拍得第一个广告位，并且节省了$0.49。
+有这样一个场景，A的真实出价是$10，B出不起那么高的价格，那么B会认为既然得不到那就同归于尽，于是出价$9.99，这样A没有得到一点便宜。这种恶意竞价对双方都不友好。
+为了解决上述问题，Google在系统里引入了质量得分的因素，质量得分的关键是CTR（ClickThrough Rate）。显然，在竞价排名时，不仅要考虑价格，还要考虑综合竞价、点击率、广告相关性、广告账户历史等等。
+GSP是一种稳定的竞价方式，可操作性很强，现阶段很多互联网广告平台都采用这种竞价方式。但GSP的不足之处在于，竞价的结果不一定是全局最优化的，于是VCG竞价算法出现了。
+VCG
+基本原理就是广告主为参加拍卖过程中给别的广告主带来的损失之和来买单定价。
+举例说明：
+   广告位 平均每小时点击量 广告主 出价（CPC）     1 200 A 10   2 100 B 4   null null C 2    A不参加竞价，B和C的总费用为\(4\times200+2\times100=1000\)。</description>
+    </item>
+    
+  </channel>
+</rss>

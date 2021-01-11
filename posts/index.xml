@@ -6,8 +6,309 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Mon, 11 Jan 2021 12:14:21 +0800</lastBuildDate>
+        <lastBuildDate>Mon, 11 Jan 2021 15:00:18 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Principles of Advertising Algorithms</title>
+            <link>https://www.marshalgao.com/principles-of-advertising-algorithms/</link>
+            <pubDate>Mon, 11 Jan 2021 15:00:18 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/principles-of-advertising-algorithms/</guid>
+            <description>本文将以Google和Fackbook的竞价系统为主线，阐述其内在的算法原理。
+竞价系统
+ GSP（Generalized Second Price  Google采用的竞价方式  GSP &amp;amp; VCG（Vickrey-Clarke-Groves）  Facebook采用的竞价方式   GSP
+简而言之就是按照下一位出价来进行实际扣费，为了鼓励广告主提高素材、广告点击率。
+\[cost=next price\times\frac{next\ quality}{current\ quality}+0.01\]
+举例说明：
+   广告位 平均每小时点击量 广告主 出价（CPC）     1 200 A 10   2 100 B 4   null null C 2    按照上表，此时A的出价为4.01，B的出价为2.01，C竞价失败。
+变化一：
+如果A出价$7（少于A认为这个广告本身的价值），B出价$8（多于B认为这个广告的价值），则B就会以$7.01拍得第一个广告位，但是这比预想多了$3.01。
+变化二：
+如果A出价$3.5，B出价$3，那么A就会以$3.01拍得第一个广告位。但如果B出价$3.6，B会以$3.51拍得第一个广告位，并且节省了$0.49。
+有这样一个场景，A的真实出价是$10，B出不起那么高的价格，那么B会认为既然得不到那就同归于尽，于是出价$9.99，这样A没有得到一点便宜。这种恶意竞价对双方都不友好。
+为了解决上述问题，Google在系统里引入了质量得分的因素，质量得分的关键是CTR（ClickThrough Rate）。显然，在竞价排名时，不仅要考虑价格，还要考虑综合竞价、点击率、广告相关性、广告账户历史等等。
+GSP是一种稳定的竞价方式，可操作性很强，现阶段很多互联网广告平台都采用这种竞价方式。但GSP的不足之处在于，竞价的结果不一定是全局最优化的，于是VCG竞价算法出现了。
+VCG
+基本原理就是广告主为参加拍卖过程中给别的广告主带来的损失之和来买单定价。
+举例说明：
+   广告位 平均每小时点击量 广告主 出价（CPC）     1 200 A 10   2 100 B 4   null null C 2    A不参加竞价，B和C的总费用为\(4\times200+2\times100=1000\)。</description>
+            <content type="html"><![CDATA[<p>本文将以Google和Fackbook的竞价系统为主线，阐述其内在的算法原理。</p>
+
+<p><strong>竞价系统</strong></p>
+
+<ul>
+<li>GSP（Generalized Second Price
+
+<ul>
+<li>Google采用的竞价方式</li>
+</ul></li>
+<li>GSP &amp; VCG（Vickrey-Clarke-Groves）
+
+<ul>
+<li>Facebook采用的竞价方式</li>
+</ul></li>
+</ul>
+
+<p><strong>GSP</strong></p>
+
+<p>简而言之就是按照下一位出价来进行实际扣费，为了鼓励广告主提高素材、广告点击率。</p>
+
+<p><span  class="math">\[cost=next price\times\frac{next\ quality}{current\ quality}+0.01\]</span></p>
+
+<p>举例说明：</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">广告位</th>
+<th align="center">平均每小时点击量</th>
+<th align="center">广告主</th>
+<th align="center">出价（CPC）</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">200</td>
+<td align="center">A</td>
+<td align="center">10</td>
+</tr>
+
+<tr>
+<td align="center">2</td>
+<td align="center">100</td>
+<td align="center">B</td>
+<td align="center">4</td>
+</tr>
+
+<tr>
+<td align="center">null</td>
+<td align="center">null</td>
+<td align="center">C</td>
+<td align="center">2</td>
+</tr>
+</tbody>
+</table>
+
+<p>按照上表，此时A的出价为4.01，B的出价为2.01，C竞价失败。</p>
+
+<p>变化一：</p>
+
+<p>如果A出价$7（少于A认为这个广告本身的价值），B出价$8（多于B认为这个广告的价值），则B就会以$7.01拍得第一个广告位，但是这比预想多了$3.01。</p>
+
+<p>变化二：</p>
+
+<p>如果A出价$3.5，B出价$3，那么A就会以$3.01拍得第一个广告位。但如果B出价$3.6，B会以$3.51拍得第一个广告位，并且节省了$0.49。</p>
+
+<p>有这样一个场景，A的真实出价是$10，B出不起那么高的价格，那么B会认为既然得不到那就同归于尽，于是出价$9.99，这样A没有得到一点便宜。这种恶意竞价对双方都不友好。</p>
+
+<p>为了解决上述问题，Google在系统里引入了质量得分的因素，质量得分的关键是CTR（ClickThrough Rate）。显然，在竞价排名时，不仅要考虑价格，还要考虑综合竞价、点击率、广告相关性、广告账户历史等等。</p>
+
+<p>GSP是一种稳定的竞价方式，可操作性很强，现阶段很多互联网广告平台都采用这种竞价方式。但GSP的不足之处在于，竞价的结果不一定是全局最优化的，于是VCG竞价算法出现了。</p>
+
+<p><strong>VCG</strong></p>
+
+<p>基本原理就是广告主为参加拍卖过程中给别的广告主带来的损失之和来买单定价。</p>
+
+<p>举例说明：</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">广告位</th>
+<th align="center">平均每小时点击量</th>
+<th align="center">广告主</th>
+<th align="center">出价（CPC）</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">200</td>
+<td align="center">A</td>
+<td align="center">10</td>
+</tr>
+
+<tr>
+<td align="center">2</td>
+<td align="center">100</td>
+<td align="center">B</td>
+<td align="center">4</td>
+</tr>
+
+<tr>
+<td align="center">null</td>
+<td align="center">null</td>
+<td align="center">C</td>
+<td align="center">2</td>
+</tr>
+</tbody>
+</table>
+
+<p>A不参加竞价，B和C的总费用为<span  class="math">\(4\times200+2\times100=1000\)</span>。</p>
+
+<p>A参加竞价，B和C的总费用为<span  class="math">\(4\times1+2\times0=400\)</span>。</p>
+
+<p>由于A的参与，导致B和C一共损失了600。</p>
+
+<p>最终，A的每次点击支付金额为<span  class="math">\(600\div200=3\)</span>。</p>
+
+<p><strong>Pacing系统</strong></p>
+
+<p>Pacing系统是广告系统中控制预算或投放最大化的一个算法。</p>
+
+<p>Google Adwords设定好预算和最高出价，Adwords会自动调节出价，让广告主在限定的时间内获取最多的点击，通过调节出价，获得最大的ROI。其实是在控制平均成本。</p>
+
+<p>Facebook广告的Pacing系统更注重长期和总体价值的创造，在竞争较为激烈的环境下，起量较慢。Facebook平台内每天有很多广告投放机会，其中某些投放机会的花费相对更高。因此，在广告的整个投放期间，费用并非一成不变。排期机制考虑到了这样的变化，通过掌控预算使用速率，寻找最佳的机会以最低的价格向用户展示广告，来提高广告主的价值。默认情况下，Facebook会在一天内向目标受众均匀地展示你的广告。</p>
+
+<p>举例说明：</p>
+
+<p>某广告主现在推广一款产品，每天预算$10，以CPC计费，假设每次广告点击能产生$5的收益。</p>
+
+<p>情况一：当没有Pacing算法的时候
+<center><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-8c70fe5d80e9d397c083efaa5a2ce0cd_1440w.jpg" alt=""></figure></center></p>
+
+<p>上图蓝色点表示广告获得展示机会，黄色表示广告赢得展示机会，红线代表出价价格。</p>
+
+<p>广告总花费 = $10。</p>
+
+<p>广告点击总价值 = $30。</p>
+
+<p>预算 = $10.</p>
+
+<p>广告总收益 = $20。</p>
+
+<p>这种模式下，广告预算会在一开始就被消耗殆尽，前期竞争激烈，后期没有竞争，形成资源浪费。</p>
+
+<p>情况二：出价过低
+<center><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-f6bc68887876fee22dff4e894e34ed57_1440w.jpg" alt=""></figure></center></p>
+
+<p>广告总花费 = $4。</p>
+
+<p>广告点击总价值 = $20。</p>
+
+<p>预算 = $10.</p>
+
+<p>广告总收益 = $16。</p>
+
+<p>这种模式就是追求最低的点击价格，会导致广告主的预算没用完，广告效果也不好。</p>
+
+<p>情况三：Pacing算法下的均衡状态
+<center><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-e10053a3ed6ad061fbf124e467704c8d_r.jpg" alt=""></figure></center></p>
+
+<p>广告总花费 = $10。</p>
+
+<p>广告点击总价值 = $35。</p>
+
+<p>预算 = $10.</p>
+
+<p>广告总收益 = $25。</p>
+
+<p>这种模式下，广告客户获得了最大的点击数，获取了最大的利益，同时用完了每日预算。</p>
+
+<p>从上面例子中，当我们在整段时间内使用稳定的出价（Pacing），广告主的价值相比没有Pacing或者出价过高过低，得到了最大化。为了实现目标，Pacing期望通过学习其他的有同样目标用户的竞争广告，提出一个优化的竞价。</p>
+
+<p><strong>自动出价系统</strong></p>
+
+<p>Google Adwords系统中，同一广告主可以选择多条广告平均展示。</p>
+
+<p>Facebook广告中，如果同一账户下有多个广告指向同一个目标，那么系统会选择一个（半随机）进行出价，屏蔽未被选中的广告的出价。</p>
+
+<p><strong>BB Part</strong></p>
+
+<p>Google和Facebook拥有世界上最先进的系统，很难说这两种竞价方式的好坏。在大多数模块上，Google和Facebook的实现其实从结果来看会发现惊人的相似，差异更多是来自于产品本身的不同。</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Entertainment Industry Development</title>
+            <link>https://www.marshalgao.com/entertainment-industry-development/</link>
+            <pubDate>Mon, 11 Jan 2021 13:50:25 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/entertainment-industry-development/</guid>
+            <description>文娱行业发展概况
+ 受疫情和移动互联网的影响，文娱行业现为线上、线下结合的模式 文娱行业前景可观，主要集中在内容上  发展因素及趋势概况
+ 利好政策的扶持 中国文娱行业进入资本寒冬  从数据上看，总投资金额在减少，投资项目数量也在减少   平均单笔融资金额快速上升  从数据上看，虽然总投资金额在减少，但是单笔投资金额在逐年上升 对于大IP等头部内容，备受青睐   战略投资和并购占比高  意味着更多的投资公司不愿意再冒风险去投资小IP  但对于互联网企业除外  资金足够多 为了自家整体生态布局     战略投资和并购的提高，意味着头部项目更吃香  容易造成文娱领域的马太效应     从全国城市文娱行业的融资数据来看，北京成为文娱行业投融资的主战场 媒体、游戏成为投资热门  从数据看，两者占比最大   CVC机构活跃  CVC  CVC是一种创新的投资组织形式，指的是企业通过其设立专业的投资机构，或战略投资部门对外进行直接投资，起源于20世纪60年代的美国   2019年投资项目数量TOP10中，有7家CVC  基本都是互联网企业     文娱类独角兽估值高  虽然数量少，但是足够吸金 诸如笑果文化等新文娱企业的崛起   大量的融资并购  融资大多涵盖互联网企业 并购方基本为传统文娱企业    原文链接</description>
+            <content type="html"><![CDATA[<p><strong>文娱行业发展概况</strong></p>
+<ul>
+<li>受疫情和移动互联网的影响，文娱行业现为线上、线下结合的模式</li>
+<li>文娱行业前景可观，主要集中在内容上</li>
+</ul>
+<p><strong>发展因素及趋势概况</strong></p>
+<ul>
+<li>利好政策的扶持</li>
+<li>中国文娱行业进入资本寒冬
+<ul>
+<li>从数据上看，总投资金额在减少，投资项目数量也在减少</li>
+</ul>
+</li>
+<li>平均单笔融资金额快速上升
+<ul>
+<li>从数据上看，虽然总投资金额在减少，但是单笔投资金额在逐年上升</li>
+<li>对于大IP等头部内容，备受青睐</li>
+</ul>
+</li>
+<li>战略投资和并购占比高
+<ul>
+<li>意味着更多的投资公司不愿意再冒风险去投资小IP
+<ul>
+<li>但对于互联网企业除外
+<ul>
+<li>资金足够多</li>
+<li>为了自家整体生态布局</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>战略投资和并购的提高，意味着头部项目更吃香
+<ul>
+<li>容易造成文娱领域的马太效应</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>从全国城市文娱行业的融资数据来看，北京成为文娱行业投融资的主战场</li>
+<li>媒体、游戏成为投资热门
+<ul>
+<li>从数据看，两者占比最大</li>
+</ul>
+</li>
+<li>CVC机构活跃
+<ul>
+<li>CVC
+<ul>
+<li>CVC是一种创新的投资组织形式，指的是企业通过其设立专业的投资机构，或战略投资部门对外进行直接投资，起源于20世纪60年代的美国</li>
+</ul>
+</li>
+<li>2019年投资项目数量TOP10中，有7家CVC
+<ul>
+<li>基本都是互联网企业</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>文娱类独角兽估值高
+<ul>
+<li>虽然数量少，但是足够吸金</li>
+<li>诸如笑果文化等新文娱企业的崛起</li>
+</ul>
+</li>
+<li>大量的融资并购
+<ul>
+<li>融资大多涵盖互联网企业</li>
+<li>并购方基本为传统文娱企业</li>
+</ul>
+</li>
+</ul>
+<p><strong>原文链接</strong></p>
+<ul>
+<li><a href="https://bg.qianzhan.com/trends/detail/506/200921-7da74f1f.html">2020年中国文娱行业投融资现状及发展前景分析 内容创作领域将成未来投资重点领域</a></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>LeetCode[181] Employees Earning More Than Their Managers</title>
@@ -904,7 +1205,7 @@ Result table:
 </ul>
 <h2 id="additional-reading">Additional Reading</h2>
 <ul>
-<li>Water Supplies in Hong Kong -&gt; <a href="../articles/Guest%20Lecture%20Presentation%20Slides_WSD_2021_issued.pdf">details</a></li>
+<li><a href="../articles/Guest%20Lecture%20Presentation%20Slides_WSD_2021_issued.pdf">Water Supplies in Hong Kong</a></li>
 </ul>
 ]]></content>
         </item>
@@ -1481,7 +1782,7 @@ AddressId is the primary key column for this table.
 </ul>
 <h2 id="additional-reading">Additional Reading</h2>
 <ul>
-<li>Open Data and Spatial Data Infrastructure -&gt; <a href="../articles/HKU%20Lecture%20on%20SDI%202021%20CW%20Tsoi%20v1.0%20all.pdf">details</a></li>
+<li><a href="../articles/HKU%20Lecture%20on%20SDI%202021%20CW%20Tsoi%20v1.0%20all.pdf">Open Data and Spatial Data Infrastructure</a></li>
 </ul>
 ]]></content>
         </item>
@@ -2009,7 +2310,7 @@ AddressId is the primary key column for this table.
 </ul>
 <h2 id="additional-reading">Additional Reading</h2>
 <ul>
-<li>Smart Mobility -&gt; <a href="../articles/Smart%20Mobility%20HKU%2020210106.pdf">details</a></li>
+<li><a href="../articles/Smart%20Mobility%20HKU%2020210106.pdf">Smart Mobility</a></li>
 </ul>
 ]]></content>
         </item>
@@ -2532,14 +2833,14 @@ AddressId is the primary key column for this table.
 </ul>
 <h2 id="additional-reading">Additional Reading</h2>
 <ul>
-<li>Smart Cities -&gt; <a href="../articles/2018_Book_SmartCities.pdf">details</a></li>
-<li>Smart City 3.0 (Chinese Edition) -&gt; <a href="../articles/Smart_City_3_0.pdf">details</a></li>
-<li>Smart City 3.0 (English Edition) -&gt; <a href="../articles/Smart_City_3_0_en.pdf">details</a></li>
-<li>Hong Kong Smart City Blueprint 1.0 -&gt; <a href="../articles/HongKongSmartCityBlueprint(EN).pdf">details</a></li>
-<li>Hong Kong Smart City Blueprint 2.0 -&gt; <a href="../articles/HKSmartCityBlueprint(ENG)v2.pdf">details</a></li>
-<li>Full Report of the Consultancy Study on Smart City Blueprint for Hong Kong -&gt; <a href="../articles/Smart%20City%20Blueprint%20Consultancy%20Study%20-%20Full%20Report%20(EN).pdf">details</a></li>
-<li>Are You Future Ready? (English Edition) -&gt; <a href="../articles/AreYouFutureReadyEnglish.pdf">details</a></li>
-<li>Hong Kong&rsquo;s Smart City Journey -&gt; <a href="../articles/GCIO%20HKU%20Guest%20Lecture%20(05-01-2021)%20Final.pdf">details</a></li>
+<li><a href="../articles/2018_Book_SmartCities.pdf">Smart Cities</a></li>
+<li><a href="../articles/Smart_City_3_0.pdf">Smart City 3.0 (Chinese Edition)</a></li>
+<li><a href="../articles/Smart_City_3_0_en.pdf">Smart City 3.0 (English Edition)</a></li>
+<li><a href="../articles/HongKongSmartCityBlueprint(EN).pdf">Hong Kong Smart City Blueprint 1.0</a></li>
+<li><a href="../articles/HKSmartCityBlueprint(ENG)v2.pdf">Hong Kong Smart City Blueprint 2.0</a></li>
+<li><a href="../articles/Smart%20City%20Blueprint%20Consultancy%20Study%20-%20Full%20Report%20(EN).pdf">Full Report of the Consultancy Study on Smart City Blueprint for Hong Kong</a></li>
+<li><a href="../articles/AreYouFutureReadyEnglish.pdf">Are You Future Ready? (English Edition)</a></li>
+<li><a href="../articles/GCIO%20HKU%20Guest%20Lecture%20(05-01-2021)%20Final.pdf">Hong Kong&rsquo;s Smart City Journey</a></li>
 </ul>
 ]]></content>
         </item>
@@ -3217,10 +3518,10 @@ These trends have a profound impact on the people and the spaces they inhabit, r
 </ul>
 <h2 id="additional-reading">Additional Reading</h2>
 <ul>
-<li>Top 10 Strategic Technology Trends 2020 (Gartner) -&gt; <a href="../articles/top-tech-trends-2020-ebook.pdf">details</a></li>
-<li>5 Key Trends in E-Commerce in 2019 According to Mary Meeker -&gt; <a href="https://www.inc.com/don-reisinger/5-major-takeaways-from-2019-mary-meeker-internet-trends-report.html">details</a></li>
-<li>Internet Trends 2019 by Mary Meeker -&gt; <a href="../articles/Internet_Trends_2019.pdf">details</a></li>
-<li>The Top 10 Takeaways From the China Internet Report 2020 (SCMP) -&gt; <a href="../articles/The%20top%2010%20takeaways%20from%20the%20China%20Internet%20Report%202020%20(SCMP).pdf">details</a></li>
+<li><a href="../articles/top-tech-trends-2020-ebook.pdf">Top 10 Strategic Technology Trends 2020 (Gartner)</a></li>
+<li><a href="https://www.inc.com/don-reisinger/5-major-takeaways-from-2019-mary-meeker-internet-trends-report.html">5 Key Trends in E-Commerce in 2019 According to Mary Meeker</a></li>
+<li><a href="../articles/Internet_Trends_2019.pdf">Internet Trends 2019 by Mary Meeker</a></li>
+<li><a href="../articles/The%20top%2010%20takeaways%20from%20the%20China%20Internet%20Report%202020%20(SCMP).pdf">The Top 10 Takeaways From the China Internet Report 2020 (SCMP)</a></li>
 </ul>
 ]]></content>
         </item>
@@ -3365,10 +3666,10 @@ These trends have a profound impact on the people and the spaces they inhabit, r
 </ul>
 <h2 id="additional-reading">Additional Reading</h2>
 <ul>
-<li>How to Design an IoT-Ready Infrastructure - The 4-Stage Architecture -&gt; <a href="https://techbeacon.com/enterprise-it/4-stages-iot-architecture">details</a></li>
-<li>Gartner IoT Trends 2020 -&gt; <a href="https://www.mobileappdaily.com/internet-of-things-technologies-trends">details</a></li>
-<li>The Neural Network Zoo -&gt; <a href="https://www.asimovinstitute.org/neural-network-zoo/">details</a></li>
-<li>AI &amp; Life in 2030 (AI100 Report, 2016 Stanford) -&gt; <a href="../articles/ai100report10032016fnl_singles.pdf">details</a></li>
+<li><a href="https://techbeacon.com/enterprise-it/4-stages-iot-architecture">How to Design an IoT-Ready Infrastructure - The 4-Stage Architecture</a></li>
+<li><a href="https://www.mobileappdaily.com/internet-of-things-technologies-trends">Gartner IoT Trends 2020</a></li>
+<li><a href="https://www.asimovinstitute.org/neural-network-zoo/">The Neural Network Zoo</a></li>
+<li><a href="../articles/ai100report10032016fnl_singles.pdf">AI &amp; Life in 2030 (AI100 Report, 2016 Stanford)</a></li>
 </ul>
 ]]></content>
         </item>
@@ -3628,9 +3929,9 @@ These trends have a profound impact on the people and the spaces they inhabit, r
 </ul>
 <h2 id="additional-reading">Additional Reading</h2>
 <ul>
-<li>Bitcoin Original Paper (Satoshi Nakamoto, 2009) -&gt; <a href="../articles/Bitcoin%20Original%20Paper%20(Satoshi%20Nakamoto,%202009).pdf">details</a></li>
-<li>UK Govt - Distributed Ledger Technology (White Paper) -&gt; <a href="../articles/UK%20Govt%20-%20Distributed-Ledger-Technology.pdf">details</a></li>
-<li>A Survey of Research on Retail Central Bank Digital Currency - IMF (Working Paper, June 2020) -&gt; <a href="../articles/Central%20Bank%20Digital%20Currency%20-%20IMF.pdf">details</a></li>
+<li><a href="../articles/Bitcoin%20Original%20Paper%20(Satoshi%20Nakamoto,%202009).pdf">Bitcoin Original Paper (Satoshi Nakamoto, 2009)</a></li>
+<li><a href="../articles/UK%20Govt%20-%20Distributed-Ledger-Technology.pdf">UK Govt - Distributed Ledger Technology (White Paper)</a></li>
+<li><a href="../articles/Central%20Bank%20Digital%20Currency%20-%20IMF.pdf">A Survey of Research on Retail Central Bank Digital Currency - IMF (Working Paper, June 2020)</a></li>
 </ul>
 ]]></content>
         </item>
@@ -3812,8 +4113,8 @@ These trends have a profound impact on the people and the spaces they inhabit, r
 </ul>
 <h2 id="additional-reading">Additional Reading</h2>
 <ul>
-<li>Is WeChat Pay Taking Over Alipay? -&gt; <a href="../articles/Is%20WeChat%20Pay%20Taking%20Over%20Alipay?.pdf">details</a></li>
-<li>Payments-Trends 2018 (by Capgemini) -&gt; <a href="../articles/Payments-trends_2018%20Capgemini.pdf">details</a></li>
+<li><a href="../articles/Is%20WeChat%20Pay%20Taking%20Over%20Alipay?.pdf">Is WeChat Pay Taking Over Alipay?</a></li>
+<li><a href="../articles/Payments-trends_2018%20Capgemini.pdf">Payments-Trends 2018 (by Capgemini)</a></li>
 </ul>
 ]]></content>
         </item>
@@ -4308,7 +4609,7 @@ These trends have a profound impact on the people and the spaces they inhabit, r
 </ul>
 <h2 id="additional-reading">Additional Reading</h2>
 <ul>
-<li>WSJ - Yahoo Data Breach Report (2019) -&gt; <a href="../articles/WSJ%20-%20Yahoo%20Data%20Breach%20Report%20(2019).pdf">details</a></li>
+<li><a href="../articles/WSJ%20-%20Yahoo%20Data%20Breach%20Report%20(2019).pdf">WSJ - Yahoo Data Breach Report (2019)</a></li>
 </ul>
 ]]></content>
         </item>
@@ -5772,7 +6073,7 @@ These trends have a profound impact on the people and the spaces they inhabit, r
 </ul>
 <h2 id="additional-reading">Additional Reading</h2>
 <ul>
-<li>Difference Between HTML &amp; HTML5 -&gt; <a href="https://www.difference.wiki/html-vs-html5/">details</a></li>
+<li><a href="https://www.difference.wiki/html-vs-html5/">Difference Between HTML &amp; HTML5</a></li>
 </ul>
 ]]></content>
         </item>
@@ -5856,7 +6157,7 @@ These trends have a profound impact on the people and the spaces they inhabit, r
 </ul>
 <h2 id="additional-reading">Additional Reading</h2>
 <ul>
-<li>How Do Self-Driving Cars Work and What Problems Remain? -&gt; <a href="https://www.thesimpledollar.com/insurance/auto/how-self-driving-cars-work/">details</a></li>
+<li><a href="https://www.thesimpledollar.com/insurance/auto/how-self-driving-cars-work/">How Do Self-Driving Cars Work and What Problems Remain?</a></li>
 </ul>
 ]]></content>
         </item>
@@ -7762,9 +8063,9 @@ DTC除了可以更好的让商家与用户进行沟通，同时还可以减少�
 </ul>
 <h2 id="additional-reading">Additional Reading</h2>
 <ul>
-<li>Global Ecommerce - 11 Growth Trends and Statistics -&gt; <a href="https://www.shopify.com/enterprise/global-ecommerce-statistics">details</a></li>
-<li>What Is the Future of Ecommerce? 10 Insights on the Evolution of an Industry -&gt; <a href="../articles/The-Future-of-Ecommerce-in-2019-10-Insights-from-the-Leaders-Data.pdf">details</a></li>
-<li>Facebook, Covid and Misinformation - The Peril of Social Media -&gt; <a href="https://secure.avaaz.org/campaign/en/facebook_threat_health/">details</a></li>
+<li><a href="https://www.shopify.com/enterprise/global-ecommerce-statistics">Global Ecommerce - 11 Growth Trends and Statistics</a></li>
+<li><a href="../articles/The-Future-of-Ecommerce-in-2019-10-Insights-from-the-Leaders-Data.pdf">What Is the Future of Ecommerce? 10 Insights on the Evolution of an Industry</a></li>
+<li><a href="https://secure.avaaz.org/campaign/en/facebook_threat_health/">Facebook, Covid and Misinformation - The Peril of Social Media</a></li>
 </ul>
 ]]></content>
         </item>
@@ -8621,7 +8922,7 @@ DTC除了可以更好的让商家与用户进行沟通，同时还可以减少�
 </ul>
 <h2 id="additional-reading">Additional Reading</h2>
 <ul>
-<li>Measuring Level of Friendliness of Smart City: A Perceptual Study -&gt; <a href="https://iopscience.iop.org/article/10.1088/1755-1315/126/1/012172/pdf">details</a></li>
+<li><a href="https://iopscience.iop.org/article/10.1088/1755-1315/126/1/012172/pdf">Measuring Level of Friendliness of Smart City: A Perceptual Study</a></li>
 </ul>
 ]]></content>
         </item>
@@ -9103,7 +9404,7 @@ DTC除了可以更好的让商家与用户进行沟通，同时还可以减少�
 
 <p>在获取最相似的节点之前，来回顾一下高中的数学知识。在二维平面XY上有若干个点，A(1.0, 2.0)，B(1.0, 0.0)，C(0.0, 2.0)，试问A离谁比较近一些？</p>
 
-<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-e39d87b703c4dcf7f0f214b689fbf1a8_1440w.jpg" alt=""></figure></p>
+<p><center><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-e39d87b703c4dcf7f0f214b689fbf1a8_1440w.jpg" alt=""></figure></center></p>
 
 <p>根据欧几里得的数学公式<span  class="math">\(\sqrt{(x_0 - x_1)^2 + (y_0 - y_1)^2}\)</span>可以计算出AB距离为2, AC距离为1,因此A离C更近一些。这就是一个最简单的向量检索，通过计算获知向量A离C更近，而AC距离更近意味着向量A和向量C更相似。</p>
 
@@ -9121,21 +9422,21 @@ DTC除了可以更好的让商家与用户进行沟通，同时还可以减少�
 
 <p>打个比方，我们先给一个城市里所有的人按照职业做一个分类，比如工程师，律师，医生，等等。现在我要找一个人，他是Java程序员，那么我们掐指一算，只要在工程师队伍里找就十有八九能找到他，不需要再去其他队伍里找了。</p>
 
-<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112903.jpg" alt=""></figure></p>
+<p><center><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/112903.jpg" alt=""></figure></center></p>
 
 <p>向量检索中典型的做法就是通过某种聚类算法把大批向量分成很多簇， 每个簇含有成百上千条向量，每个簇都有一个中心向量，当用户输入目标向量搜索时，系统先把目标向量和每个簇的中心向量做距离计算，挑选出距离比较近的几个簇，然后再把目标向量和这几个簇里的每一条向量做距离运算，最后得出距离最近的k条结果向量。</p>
 
 <p>下面将以一个散点图来进行更为直观的说明。假设在二维平面上有若干个向量（点）。</p>
 
-<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-0b40121588f693beb5157d5f7caae745_1440w.jpg" alt=""></figure></p>
+<p><center><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-0b40121588f693beb5157d5f7caae745_1440w.jpg" alt=""></figure></center></p>
 
 <p>通过聚类算法把它们分成若干个簇，簇的数量是可以指定的（这里以4为例），黑圈表示中心向量。</p>
 
-<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-19ead11e5123e686fcb6611328d1a601_1440w.jpg" alt=""></figure></p>
+<p><center><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-19ead11e5123e686fcb6611328d1a601_1440w.jpg" alt=""></figure></center></p>
 
 <p>加入要检索的目标向量，根据对比计算，我们发现它离黄色簇的中心最近，那么只需要将目标向量和黄色簇里每一个向量计算距离，就可以得到离目标向量最近的那个向量。</p>
 
-<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-6cc5bd36aea3f17e69d1da6551bd62c1_1440w.jpg" alt=""></figure></p>
+<p><center><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-6cc5bd36aea3f17e69d1da6551bd62c1_1440w.jpg" alt=""></figure></center></p>
 
 <p>当然，具体到实现环节会有很多种不同做法，有基于矢量量化的，基于图的，以及基于树的各种算法。</p>
 
@@ -11108,7 +11409,7 @@ Frost &amp;amp; Sullivan近日发布的中国公有云市场的调研报告显�
             <pubDate>Tue, 17 Nov 2020 11:10:59 +0800</pubDate>
             
             <guid>https://www.marshalgao.com/ecom7121-digital-and-network-economics/</guid>
-            <description>Network Effects  function  one way to create competitive &amp;ldquo;moats&amp;rdquo; in the digital world   categories  direct network effects -&amp;gt; more searchers, better search indirect network effects -&amp;gt; more apps, more smartphone buyers cross-network effects -&amp;gt; more searchers, more advertisers (e.g., keywords monetize the &amp;ldquo;long tail&amp;rdquo; of advertising) social network effects -&amp;gt; social influence &amp;amp; local effects demand-side network effects -&amp;gt; exclusivity, dynamic pricing, limited access, keyword auctions   example  power laws  n is the number of network links tips: remember to multiply each link&amp;rsquo;s worth    PlentyofFish  business model analysis  itself  free online dating site runs website and writes the love doctor quiz   adsense  Google Adsense Publisher Blogging for money volunteers contribute to community advertisers pay for access to community for related products   ad-based revenue  PPC and keyword pricing 70% to publisher and 30% to Google money/week or money/year, low fixed costs     canvas  social media monetization  RPU - average revenue per user CAC - cost to acquire a customer LTV - lifetime value of user    what can drive the balance  summary  PlentyofFish and “free online dating” changes the customer relationship to a “community platform”— with users contributing time and self-policing PlentyofFish makes money on a free dating service through Google’s Adsense program PlentyofFish is very profitable, and Google Adsense pays Marcus Fried $1M a month &amp;amp; costs are very low we can calculate RPU—revenue per user—on a free or freemium service by taking $1M divided by monthly active users in the community Lui Mama, the livestreaming Chinese pig farmer is also very profitable, but is “gift” not ad-supported    Updating Dating  some examples - profile, matching, monetization  Coffee meets Bagel - Facebook, bagels/beans OKCupid - questionnaire, suggestions Jiayuan – user data, proof of employment Dating Ring - human &amp;amp; algorithmic matches Hurry Date - 4 minute exchanges   monetization strategies  user engagement vs high quality/seriousness pros and cons of  subscription pay per message     summary  major shift in past 20 years to online dating younger adults have newer experience and expectations of mobile dating Tinder gamified the industry by fun “swiping” online dating is big in China dating apps address key “market failure” issues and monetization differently    Additional Reading  Secret of Googlenomics: Data-Fueled Recipe Brews Profitability -&amp;gt; details HBR Case: PlentyofFish -&amp;gt; details HBR Case: Updating Dating -&amp;gt; details  </description>
+            <description>Network Effects  function  one way to create competitive &amp;ldquo;moats&amp;rdquo; in the digital world   categories  direct network effects -&amp;gt; more searchers, better search indirect network effects -&amp;gt; more apps, more smartphone buyers cross-network effects -&amp;gt; more searchers, more advertisers (e.g., keywords monetize the &amp;ldquo;long tail&amp;rdquo; of advertising) social network effects -&amp;gt; social influence &amp;amp; local effects demand-side network effects -&amp;gt; exclusivity, dynamic pricing, limited access, keyword auctions   example  power laws  n is the number of network links tips: remember to multiply each link&amp;rsquo;s worth    PlentyofFish  business model analysis  itself  free online dating site runs website and writes the love doctor quiz   adsense  Google Adsense Publisher Blogging for money volunteers contribute to community advertisers pay for access to community for related products   ad-based revenue  PPC and keyword pricing 70% to publisher and 30% to Google money/week or money/year, low fixed costs     canvas  social media monetization  RPU - average revenue per user CAC - cost to acquire a customer LTV - lifetime value of user    what can drive the balance  summary  PlentyofFish and “free online dating” changes the customer relationship to a “community platform”— with users contributing time and self-policing PlentyofFish makes money on a free dating service through Google’s Adsense program PlentyofFish is very profitable, and Google Adsense pays Marcus Fried $1M a month &amp;amp; costs are very low we can calculate RPU—revenue per user—on a free or freemium service by taking $1M divided by monthly active users in the community Lui Mama, the livestreaming Chinese pig farmer is also very profitable, but is “gift” not ad-supported    Updating Dating  some examples - profile, matching, monetization  Coffee meets Bagel - Facebook, bagels/beans OKCupid - questionnaire, suggestions Jiayuan – user data, proof of employment Dating Ring - human &amp;amp; algorithmic matches Hurry Date - 4 minute exchanges   monetization strategies  user engagement vs high quality/seriousness pros and cons of  subscription pay per message     summary  major shift in past 20 years to online dating younger adults have newer experience and expectations of mobile dating Tinder gamified the industry by fun “swiping” online dating is big in China dating apps address key “market failure” issues and monetization differently    Additional Reading  Secret of Googlenomics: Data-Fueled Recipe Brews Profitability HBR Case: PlentyofFish HBR Case: Updating Dating  </description>
             <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Digital%20and%20Network%20Economics.png" alt=""></p>
 <h2 id="network-effects">Network Effects</h2>
 <ul>
@@ -11218,9 +11519,9 @@ Frost &amp;amp; Sullivan近日发布的中国公有云市场的调研报告显�
 </ul>
 <h2 id="additional-reading">Additional Reading</h2>
 <ul>
-<li>Secret of Googlenomics: Data-Fueled Recipe Brews Profitability -&gt; <a href="https://www.wired.com/2009/05/nep-googlenomics/?currentPage=1">details</a></li>
-<li>HBR Case: PlentyofFish -&gt; <a href="../articles/PlentyOfFish.pdf">details</a></li>
-<li>HBR Case: Updating Dating -&gt; <a href="../articles/UpdatingDating.pdf">details</a></li>
+<li><a href="https://www.wired.com/2009/05/nep-googlenomics/?currentPage=1">Secret of Googlenomics: Data-Fueled Recipe Brews Profitability</a></li>
+<li><a href="../articles/PlentyOfFish.pdf">HBR Case: PlentyofFish</a></li>
+<li><a href="../articles/UpdatingDating.pdf">HBR Case: Updating Dating</a></li>
 </ul>
 ]]></content>
         </item>
@@ -12005,8 +12306,8 @@ Frost &amp;amp; Sullivan近日发布的中国公有云市场的调研报告显�
 <h2 id="additional-reading">Additional Reading</h2>
 
 <ul>
-<li>ByteDance Beyond China -&gt; <a href="../articles/ByteDance.pdf">details</a></li>
-<li>The Complicated Truth About China's Social Credit System -&gt; <a href="../articles/The%20complicated%20truth%20about%20China's%20social%20credit%20system%20|%20WIRED%20UK.pdf">details</a></li>
+<li><a href="../articles/ByteDance.pdf">ByteDance Beyond China</a></li>
+<li><a href="../articles/The%20complicated%20truth%20about%20China's%20social%20credit%20system%20|%20WIRED%20UK.pdf">The Complicated Truth About China's Social Credit System</a></li>
 </ul>
 ]]></content>
         </item>
@@ -12226,9 +12527,9 @@ Frost &amp;amp; Sullivan近日发布的中国公有云市场的调研报告显�
 </ul>
 <h2 id="additional-reading">Additional Reading</h2>
 <ul>
-<li>The On-Demand Economy -&gt; <a href="../articles/On-DemandEconomy.pdf">details</a></li>
-<li>Grab vs. Uber vs. Go-Jek -&gt; <a href="../articles/Grab-Uber-Go-Jek.pdf">details</a></li>
-<li>On-Demand Economy Bubble is Not Bursting But Evolving -&gt; <a href="https://www.code-brew.com/blog/2018/05/15/the-on-demand-economy-bubble/">details</a></li>
+<li><a href="../articles/On-DemandEconomy.pdf">The On-Demand Economy</a></li>
+<li><a href="../articles/Grab-Uber-Go-Jek.pdf">Grab vs. Uber vs. Go-Jek</a></li>
+<li><a href="https://www.code-brew.com/blog/2018/05/15/the-on-demand-economy-bubble/">On-Demand Economy Bubble is Not Bursting But Evolving</a></li>
 </ul>
 ]]></content>
         </item>
@@ -12543,10 +12844,10 @@ Frost &amp;amp; Sullivan近日发布的中国公有云市场的调研报告显�
 <p><strong>Many traditional industries, from t-shirt to software, from auto-makers to gold mining, are experimenting with crowdsourcing</strong></p>
 <h2 id="additional-reading">Additional Reading</h2>
 <ul>
-<li>How to Manage Crowdsourcing Platforms Effectively -&gt; <a href="../articles/How_Manage_Crowdsourcing.pdf">details</a></li>
-<li>reCAPTCHA: The Genius Who&rsquo;s Tricking the World Into Doing His Work -&gt; <a href="https://thehustle.co/the-genius-whos-tricking-the-world-into-doing-his-work-recaptcha">details</a></li>
-<li>Inside the mind of Duolingo CEO Luis von Ahn as $700M language learning startup eyes IPO in 2020 -&gt; <a href="https://www.geekwire.com/2018/inside-mind-duolingo-ceo-luis-von-ahn-700m-language-learning-startup-preps-ipo/">details</a></li>
-<li>How InnoCentive Marshals Freelancers to Do Cheap R&amp;D -&gt; <a href="https://www.canadianbusiness.com/innovation/innocentive-freelancing-innovation/">details</a></li>
+<li><a href="../articles/How_Manage_Crowdsourcing.pdf">How to Manage Crowdsourcing Platforms Effectively</a></li>
+<li><a href="https://thehustle.co/the-genius-whos-tricking-the-world-into-doing-his-work-recaptcha">reCAPTCHA: The Genius Who&rsquo;s Tricking the World Into Doing His Work</a></li>
+<li><a href="https://www.geekwire.com/2018/inside-mind-duolingo-ceo-luis-von-ahn-700m-language-learning-startup-preps-ipo/">Inside the mind of Duolingo CEO Luis von Ahn as $700M language learning startup eyes IPO in 2020</a></li>
+<li><a href="https://www.canadianbusiness.com/innovation/innocentive-freelancing-innovation/">How InnoCentive Marshals Freelancers to Do Cheap R&amp;D</a></li>
 </ul>
 ]]></content>
         </item>
@@ -12793,10 +13094,10 @@ value chain or pipeline.
 </ul>
 <h2 id="additional-reading">Additional Reading</h2>
 <ul>
-<li>Alibaba and the Future of Business -&gt; <a href="../articles/Alibaba_FutureOfBusiness.pdf">details</a></li>
-<li>Orchestrating the New Dynamic Capabilities -&gt; <a href="../articles/Orchestrating_NewDynamicCapabilities.pdf">details</a></li>
-<li>Pipelines, Platforms, and the New Rules of Strategy -&gt; <a href="../articles/Pipelines_Platforms.pdf">details</a></li>
-<li>Web 2.0 A Strategy Guide -&gt; <a href="../articles/Web%202.0_%20A%20Strategy%20Guide.pdf">details</a></li>
+<li><a href="../articles/Alibaba_FutureOfBusiness.pdf">Alibaba and the Future of Business</a></li>
+<li><a href="../articles/Orchestrating_NewDynamicCapabilities.pdf">Orchestrating the New Dynamic Capabilities</a></li>
+<li><a href="../articles/Pipelines_Platforms.pdf">Pipelines, Platforms, and the New Rules of Strategy</a></li>
+<li><a href="../articles/Web%202.0_%20A%20Strategy%20Guide.pdf">Web 2.0 A Strategy Guide</a></li>
 </ul>
 ]]></content>
         </item>

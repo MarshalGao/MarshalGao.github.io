@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Marshal ">
+<meta name="description" content="本文将以Google和Fackbook的竞价系统为主线，阐述其内在的算法原理。
+竞价系统
+ GSP（Generalized Second Price  Google采用的竞价方式  GSP &amp;amp; VCG（Vickrey-Clarke-Groves）  Facebook采用的竞价方式   GSP
+简而言之就是按照下一位出价来进行实际扣费，为了鼓励广告主提高素材、广告点击率。
+\[cost=next price\times\frac{next\ quality}{current\ quality}&#43;0.01\]
+举例说明：
+   广告位 平均每小时点击量 广告主 出价（CPC）     1 200 A 10   2 100 B 4   null null C 2    按照上表，此时A的出价为4.01，B的出价为2.01，C竞价失败。
+变化一：
+如果A出价$7（少于A认为这个广告本身的价值），B出价$8（多于B认为这个广告的价值），则B就会以$7.01拍得第一个广告位，但是这比预想多了$3.01。
+变化二：
+如果A出价$3.5，B出价$3，那么A就会以$3.01拍得第一个广告位。但如果B出价$3.6，B会以$3.51拍得第一个广告位，并且节省了$0.49。
+有这样一个场景，A的真实出价是$10，B出不起那么高的价格，那么B会认为既然得不到那就同归于尽，于是出价$9.99，这样A没有得到一点便宜。这种恶意竞价对双方都不友好。
+为了解决上述问题，Google在系统里引入了质量得分的因素，质量得分的关键是CTR（ClickThrough Rate）。显然，在竞价排名时，不仅要考虑价格，还要考虑综合竞价、点击率、广告相关性、广告账户历史等等。
+GSP是一种稳定的竞价方式，可操作性很强，现阶段很多互联网广告平台都采用这种竞价方式。但GSP的不足之处在于，竞价的结果不一定是全局最优化的，于是VCG竞价算法出现了。
+VCG
+基本原理就是广告主为参加拍卖过程中给别的广告主带来的损失之和来买单定价。
+举例说明：
+   广告位 平均每小时点击量 广告主 出价（CPC）     1 200 A 10   2 100 B 4   null null C 2    A不参加竞价，B和C的总费用为\(4\times200&#43;2\times100=1000\)。" />
+<meta name="keywords" content=", advertising product manager, advertising algorithms, google, facebook" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://www.marshalgao.com/principles-of-advertising-algorithms/" />
+
+
+    <title>
+        
+            Principles of Advertising Algorithms :: This Is Marshal 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://www.marshalgao.com/main.1abfe30dec5ae0f5c4f84acd6413b12f63e4a6f9e1e7167f42de12192bfd25e9.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.marshalgao.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.marshalgao.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.marshalgao.com/favicon-16x16.png">
+    <link rel="manifest" href="https://www.marshalgao.com/site.webmanifest">
+    <link rel="mask-icon" href="https://www.marshalgao.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://www.marshalgao.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="Principles of Advertising Algorithms">
+<meta itemprop="description" content="本文将以Google和Fackbook的竞价系统为主线，阐述其内在的算法原理。
+竞价系统
+ GSP（Generalized Second Price  Google采用的竞价方式  GSP &amp; VCG（Vickrey-Clarke-Groves）  Facebook采用的竞价方式   GSP
+简而言之就是按照下一位出价来进行实际扣费，为了鼓励广告主提高素材、广告点击率。
+\[cost=next price\times\frac{next\ quality}{current\ quality}&#43;0.01\]
+举例说明：
+   广告位 平均每小时点击量 广告主 出价（CPC）     1 200 A 10   2 100 B 4   null null C 2    按照上表，此时A的出价为4.01，B的出价为2.01，C竞价失败。
+变化一：
+如果A出价$7（少于A认为这个广告本身的价值），B出价$8（多于B认为这个广告的价值），则B就会以$7.01拍得第一个广告位，但是这比预想多了$3.01。
+变化二：
+如果A出价$3.5，B出价$3，那么A就会以$3.01拍得第一个广告位。但如果B出价$3.6，B会以$3.51拍得第一个广告位，并且节省了$0.49。
+有这样一个场景，A的真实出价是$10，B出不起那么高的价格，那么B会认为既然得不到那就同归于尽，于是出价$9.99，这样A没有得到一点便宜。这种恶意竞价对双方都不友好。
+为了解决上述问题，Google在系统里引入了质量得分的因素，质量得分的关键是CTR（ClickThrough Rate）。显然，在竞价排名时，不仅要考虑价格，还要考虑综合竞价、点击率、广告相关性、广告账户历史等等。
+GSP是一种稳定的竞价方式，可操作性很强，现阶段很多互联网广告平台都采用这种竞价方式。但GSP的不足之处在于，竞价的结果不一定是全局最优化的，于是VCG竞价算法出现了。
+VCG
+基本原理就是广告主为参加拍卖过程中给别的广告主带来的损失之和来买单定价。
+举例说明：
+   广告位 平均每小时点击量 广告主 出价（CPC）     1 200 A 10   2 100 B 4   null null C 2    A不参加竞价，B和C的总费用为\(4\times200&#43;2\times100=1000\)。">
+<meta itemprop="datePublished" content="2021-01-11T15:00:18+08:00" />
+<meta itemprop="dateModified" content="2021-01-11T15:00:18+08:00" />
+<meta itemprop="wordCount" content="123">
+<meta itemprop="image" content="https://www.marshalgao.com/"/>
+
+
+
+<meta itemprop="keywords" content="advertising product manager,advertising algorithms,google,facebook," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.marshalgao.com/"/>
+
+<meta name="twitter:title" content="Principles of Advertising Algorithms"/>
+<meta name="twitter:description" content="本文将以Google和Fackbook的竞价系统为主线，阐述其内在的算法原理。
+竞价系统
+ GSP（Generalized Second Price  Google采用的竞价方式  GSP &amp; VCG（Vickrey-Clarke-Groves）  Facebook采用的竞价方式   GSP
+简而言之就是按照下一位出价来进行实际扣费，为了鼓励广告主提高素材、广告点击率。
+\[cost=next price\times\frac{next\ quality}{current\ quality}&#43;0.01\]
+举例说明：
+   广告位 平均每小时点击量 广告主 出价（CPC）     1 200 A 10   2 100 B 4   null null C 2    按照上表，此时A的出价为4.01，B的出价为2.01，C竞价失败。
+变化一：
+如果A出价$7（少于A认为这个广告本身的价值），B出价$8（多于B认为这个广告的价值），则B就会以$7.01拍得第一个广告位，但是这比预想多了$3.01。
+变化二：
+如果A出价$3.5，B出价$3，那么A就会以$3.01拍得第一个广告位。但如果B出价$3.6，B会以$3.51拍得第一个广告位，并且节省了$0.49。
+有这样一个场景，A的真实出价是$10，B出不起那么高的价格，那么B会认为既然得不到那就同归于尽，于是出价$9.99，这样A没有得到一点便宜。这种恶意竞价对双方都不友好。
+为了解决上述问题，Google在系统里引入了质量得分的因素，质量得分的关键是CTR（ClickThrough Rate）。显然，在竞价排名时，不仅要考虑价格，还要考虑综合竞价、点击率、广告相关性、广告账户历史等等。
+GSP是一种稳定的竞价方式，可操作性很强，现阶段很多互联网广告平台都采用这种竞价方式。但GSP的不足之处在于，竞价的结果不一定是全局最优化的，于是VCG竞价算法出现了。
+VCG
+基本原理就是广告主为参加拍卖过程中给别的广告主带来的损失之和来买单定价。
+举例说明：
+   广告位 平均每小时点击量 广告主 出价（CPC）     1 200 A 10   2 100 B 4   null null C 2    A不参加竞价，B和C的总费用为\(4\times200&#43;2\times100=1000\)。"/>
+
+
+
+    <meta property="og:title" content="Principles of Advertising Algorithms" />
+<meta property="og:description" content="本文将以Google和Fackbook的竞价系统为主线，阐述其内在的算法原理。
+竞价系统
+ GSP（Generalized Second Price  Google采用的竞价方式  GSP &amp; VCG（Vickrey-Clarke-Groves）  Facebook采用的竞价方式   GSP
+简而言之就是按照下一位出价来进行实际扣费，为了鼓励广告主提高素材、广告点击率。
+\[cost=next price\times\frac{next\ quality}{current\ quality}&#43;0.01\]
+举例说明：
+   广告位 平均每小时点击量 广告主 出价（CPC）     1 200 A 10   2 100 B 4   null null C 2    按照上表，此时A的出价为4.01，B的出价为2.01，C竞价失败。
+变化一：
+如果A出价$7（少于A认为这个广告本身的价值），B出价$8（多于B认为这个广告的价值），则B就会以$7.01拍得第一个广告位，但是这比预想多了$3.01。
+变化二：
+如果A出价$3.5，B出价$3，那么A就会以$3.01拍得第一个广告位。但如果B出价$3.6，B会以$3.51拍得第一个广告位，并且节省了$0.49。
+有这样一个场景，A的真实出价是$10，B出不起那么高的价格，那么B会认为既然得不到那就同归于尽，于是出价$9.99，这样A没有得到一点便宜。这种恶意竞价对双方都不友好。
+为了解决上述问题，Google在系统里引入了质量得分的因素，质量得分的关键是CTR（ClickThrough Rate）。显然，在竞价排名时，不仅要考虑价格，还要考虑综合竞价、点击率、广告相关性、广告账户历史等等。
+GSP是一种稳定的竞价方式，可操作性很强，现阶段很多互联网广告平台都采用这种竞价方式。但GSP的不足之处在于，竞价的结果不一定是全局最优化的，于是VCG竞价算法出现了。
+VCG
+基本原理就是广告主为参加拍卖过程中给别的广告主带来的损失之和来买单定价。
+举例说明：
+   广告位 平均每小时点击量 广告主 出价（CPC）     1 200 A 10   2 100 B 4   null null C 2    A不参加竞价，B和C的总费用为\(4\times200&#43;2\times100=1000\)。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.marshalgao.com/principles-of-advertising-algorithms/" />
+<meta property="og:image" content="https://www.marshalgao.com/"/>
+<meta property="article:published_time" content="2021-01-11T15:00:18+08:00" />
+<meta property="article:modified_time" content="2021-01-11T15:00:18+08:00" />
+
+
+
+
+    <meta property="article:section" content="Technology" />
+
+
+
+    <meta property="article:published_time" content="2021-01-11 15:00:18 &#43;0800 HKT" />
+
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css" integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.js" integrity="sha384-JiKN5O8x9Hhs/UE5cT5AAJqieYlOZbGT3CHws/y97o3ty4R7/O5poG9F3JoiOYw1" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://www.marshalgao.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://www.marshalgao.com/categories/hku">HKU</a></li><li><a href="https://www.marshalgao.com/categories/technology">TECH</a></li><li><a href="https://www.marshalgao.com/categories/product-manager">PM</a></li><li><a href="https://www.marshalgao.com/categories/life">LIFE</a></li><li><a href="https://www.marshalgao.com/about/">ABOUT</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        One minute
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://www.marshalgao.com/principles-of-advertising-algorithms/">Principles of Advertising Algorithms</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <p>本文将以Google和Fackbook的竞价系统为主线，阐述其内在的算法原理。</p>
+
+<p><strong>竞价系统</strong></p>
+
+<ul>
+<li>GSP（Generalized Second Price
+
+<ul>
+<li>Google采用的竞价方式</li>
+</ul></li>
+<li>GSP &amp; VCG（Vickrey-Clarke-Groves）
+
+<ul>
+<li>Facebook采用的竞价方式</li>
+</ul></li>
+</ul>
+
+<p><strong>GSP</strong></p>
+
+<p>简而言之就是按照下一位出价来进行实际扣费，为了鼓励广告主提高素材、广告点击率。</p>
+
+<p><span  class="math">\[cost=next price\times\frac{next\ quality}{current\ quality}+0.01\]</span></p>
+
+<p>举例说明：</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">广告位</th>
+<th align="center">平均每小时点击量</th>
+<th align="center">广告主</th>
+<th align="center">出价（CPC）</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">200</td>
+<td align="center">A</td>
+<td align="center">10</td>
+</tr>
+
+<tr>
+<td align="center">2</td>
+<td align="center">100</td>
+<td align="center">B</td>
+<td align="center">4</td>
+</tr>
+
+<tr>
+<td align="center">null</td>
+<td align="center">null</td>
+<td align="center">C</td>
+<td align="center">2</td>
+</tr>
+</tbody>
+</table>
+
+<p>按照上表，此时A的出价为4.01，B的出价为2.01，C竞价失败。</p>
+
+<p>变化一：</p>
+
+<p>如果A出价$7（少于A认为这个广告本身的价值），B出价$8（多于B认为这个广告的价值），则B就会以$7.01拍得第一个广告位，但是这比预想多了$3.01。</p>
+
+<p>变化二：</p>
+
+<p>如果A出价$3.5，B出价$3，那么A就会以$3.01拍得第一个广告位。但如果B出价$3.6，B会以$3.51拍得第一个广告位，并且节省了$0.49。</p>
+
+<p>有这样一个场景，A的真实出价是$10，B出不起那么高的价格，那么B会认为既然得不到那就同归于尽，于是出价$9.99，这样A没有得到一点便宜。这种恶意竞价对双方都不友好。</p>
+
+<p>为了解决上述问题，Google在系统里引入了质量得分的因素，质量得分的关键是CTR（ClickThrough Rate）。显然，在竞价排名时，不仅要考虑价格，还要考虑综合竞价、点击率、广告相关性、广告账户历史等等。</p>
+
+<p>GSP是一种稳定的竞价方式，可操作性很强，现阶段很多互联网广告平台都采用这种竞价方式。但GSP的不足之处在于，竞价的结果不一定是全局最优化的，于是VCG竞价算法出现了。</p>
+
+<p><strong>VCG</strong></p>
+
+<p>基本原理就是广告主为参加拍卖过程中给别的广告主带来的损失之和来买单定价。</p>
+
+<p>举例说明：</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">广告位</th>
+<th align="center">平均每小时点击量</th>
+<th align="center">广告主</th>
+<th align="center">出价（CPC）</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">200</td>
+<td align="center">A</td>
+<td align="center">10</td>
+</tr>
+
+<tr>
+<td align="center">2</td>
+<td align="center">100</td>
+<td align="center">B</td>
+<td align="center">4</td>
+</tr>
+
+<tr>
+<td align="center">null</td>
+<td align="center">null</td>
+<td align="center">C</td>
+<td align="center">2</td>
+</tr>
+</tbody>
+</table>
+
+<p>A不参加竞价，B和C的总费用为<span  class="math">\(4\times200+2\times100=1000\)</span>。</p>
+
+<p>A参加竞价，B和C的总费用为<span  class="math">\(4\times1+2\times0=400\)</span>。</p>
+
+<p>由于A的参与，导致B和C一共损失了600。</p>
+
+<p>最终，A的每次点击支付金额为<span  class="math">\(600\div200=3\)</span>。</p>
+
+<p><strong>Pacing系统</strong></p>
+
+<p>Pacing系统是广告系统中控制预算或投放最大化的一个算法。</p>
+
+<p>Google Adwords设定好预算和最高出价，Adwords会自动调节出价，让广告主在限定的时间内获取最多的点击，通过调节出价，获得最大的ROI。其实是在控制平均成本。</p>
+
+<p>Facebook广告的Pacing系统更注重长期和总体价值的创造，在竞争较为激烈的环境下，起量较慢。Facebook平台内每天有很多广告投放机会，其中某些投放机会的花费相对更高。因此，在广告的整个投放期间，费用并非一成不变。排期机制考虑到了这样的变化，通过掌控预算使用速率，寻找最佳的机会以最低的价格向用户展示广告，来提高广告主的价值。默认情况下，Facebook会在一天内向目标受众均匀地展示你的广告。</p>
+
+<p>举例说明：</p>
+
+<p>某广告主现在推广一款产品，每天预算$10，以CPC计费，假设每次广告点击能产生$5的收益。</p>
+
+<p>情况一：当没有Pacing算法的时候
+<center><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-8c70fe5d80e9d397c083efaa5a2ce0cd_1440w.jpg" alt=""></figure></center></p>
+
+<p>上图蓝色点表示广告获得展示机会，黄色表示广告赢得展示机会，红线代表出价价格。</p>
+
+<p>广告总花费 = $10。</p>
+
+<p>广告点击总价值 = $30。</p>
+
+<p>预算 = $10.</p>
+
+<p>广告总收益 = $20。</p>
+
+<p>这种模式下，广告预算会在一开始就被消耗殆尽，前期竞争激烈，后期没有竞争，形成资源浪费。</p>
+
+<p>情况二：出价过低
+<center><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-f6bc68887876fee22dff4e894e34ed57_1440w.jpg" alt=""></figure></center></p>
+
+<p>广告总花费 = $4。</p>
+
+<p>广告点击总价值 = $20。</p>
+
+<p>预算 = $10.</p>
+
+<p>广告总收益 = $16。</p>
+
+<p>这种模式就是追求最低的点击价格，会导致广告主的预算没用完，广告效果也不好。</p>
+
+<p>情况三：Pacing算法下的均衡状态
+<center><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/v2-e10053a3ed6ad061fbf124e467704c8d_r.jpg" alt=""></figure></center></p>
+
+<p>广告总花费 = $10。</p>
+
+<p>广告点击总价值 = $35。</p>
+
+<p>预算 = $10.</p>
+
+<p>广告总收益 = $25。</p>
+
+<p>这种模式下，广告客户获得了最大的点击数，获取了最大的利益，同时用完了每日预算。</p>
+
+<p>从上面例子中，当我们在整段时间内使用稳定的出价（Pacing），广告主的价值相比没有Pacing或者出价过高过低，得到了最大化。为了实现目标，Pacing期望通过学习其他的有同样目标用户的竞争广告，提出一个优化的竞价。</p>
+
+<p><strong>自动出价系统</strong></p>
+
+<p>Google Adwords系统中，同一广告主可以选择多条广告平均展示。</p>
+
+<p>Facebook广告中，如果同一账户下有多个广告指向同一个目标，那么系统会选择一个（半随机）进行出价，屏蔽未被选中的广告的出价。</p>
+
+<p><strong>BB Part</strong></p>
+
+<p>Google和Facebook拥有世界上最先进的系统，很难说这两种竞价方式的好坏。在大多数模块上，Google和Facebook的实现其实从结果来看会发现惊人的相似，差异更多是来自于产品本身的不同。</p>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/tags/advertising-product-manager/">advertising product manager</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/advertising-algorithms/">advertising algorithms</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/google/">google</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/facebook/">facebook</a></span>
+        
+    </p>
+
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/categories/technology/">Technology</a></span>
+        
+    </p>
+
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        123 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2021-01-11 15:00
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+
+          
+            <span class="button next">
+              <a href="https://www.marshalgao.com/entertainment-industry-development/">
+                <span class="button__text">Entertainment Industry Development</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020-2021</span>
+            
+                <span><a href="https://www.marshalgao.com/">Marshal</a></span>
+            
+            
+                <span><a href="https://www.hku.hk" target="_blank" rel="noopener">The University of Hong Kong</a></span>
+            <span><a href="https://www.marshalgao.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Team Rocket: <a href="https://www.pseudoyu.com/" target="_blank" rel="noopener">Pseudoyu</a></span>
+            <span><a href="https://www.m1sty.com/" target="_blank" rel="noopener">Misty</a></span>
+          </div>
+    </div>
+</footer>
+
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://www.marshalgao.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>
