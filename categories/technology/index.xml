@@ -7,7 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 11 Jan 2021 15:00:18 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Jan 2021 20:16:24 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode[183] Customers Who Never Order</title>
+      <link>https://www.marshalgao.com/leetcode183-customers-who-never-order/</link>
+      <pubDate>Mon, 11 Jan 2021 20:16:24 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode183-customers-who-never-order/</guid>
+      <description>Question Suppose that a website contains two tables, the Customers table and the Orders table. Write a SQL query to find all customers who never order anything.
+Table: Customers
++----+-------+ | Id | Name | +----+-------+ | 1 | Joe | | 2 | Henry | | 3 | Sam | | 4 | Max | +----+-------+  Table: Orders
++----+------------+ | Id | CustomerId | +----+------------+ | 1 | 3 | | 2 | 1 | +----+------------+  Using the above tables as example, return the following:</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[182] Duplicate Emails</title>
+      <link>https://www.marshalgao.com/leetcode182-duplicate-emails/</link>
+      <pubDate>Mon, 11 Jan 2021 17:20:59 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode182-duplicate-emails/</guid>
+      <description>Question Write a SQL query to find all duplicate emails in a table named Person.
++----+---------+ | Id | Email | +----+---------+ | 1 | a@b.com | | 2 | c@d.com | | 3 | a@b.com | +----+---------+  For example, your query should return the following for the above table:
++---------+ | Email | +---------+ | a@b.com | +---------+  Note: All emails are in lowercase.
+SQL Schema Create table If Not Exists Person (Id int, Email varchar(255)) Truncate table Person insert into Person (Id, Email) values (&amp;#39;1&amp;#39;, &amp;#39;a@b.</description>
+    </item>
+    
     <item>
       <title>Principles of Advertising Algorithms</title>
       <link>https://www.marshalgao.com/principles-of-advertising-algorithms/</link>
@@ -131,18 +155,6 @@ Logs table: +----+-----+ | Id | Num | +----+-----+ | 1 | 1 | | 2 | 1 | | 3 | 1 |
 大规模向量检索的系统作为一个向量数据库，不但要能够支持海量数据的持久化，还要能快速地检索出用户需要的信息。生产环境中的向量维度一般起步就是128维，高一些的可达512维。我们可以算一下，对于512维度的向量，每条向量有512个数值，通常在计算机里这些数值是以float类型表示，这意味着每条向量将会占用2048字节，那么一亿条这样的向量就会用掉200GB。而生产环境中的向量数量有可能达到十亿甚至百亿的规模。
 根据使用的场景，可以分为静态库和增量库。静态库就是数据固定不变的，一旦完成数据导入，基本不会再接收新的数据，这种场景主要注重检索的性能；增量库在用户使用向量检索的过程中可能还伴随着持续的数据插入，需要考虑的问题要多一些，比如数据插入后多久可见，怎样兼顾检索效率和插入效率，如何保证宕机数据不丢失等等。
 目前，用于向量检索的最热门工具是Facebook开源的FAISS向量搜索库，另外，微软也开源了一个SPTAG库。用户可以无需深入了解向量聚类和向量相似性计算的算法，就能使用这些库实现简单的向量检索。但是这些只是最基础的工具库，其功能并不包括对向量数据的管理，不具备高可用性，缺乏监控手段，没有提供分布式方案，以及缺少各种语言版本的SDK等等，这也使得用户需要基于它们进行大量的开发才能满足生产环境的要求。</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[1] Two Sum</title>
-      <link>https://www.marshalgao.com/leetcode1-two-sum/</link>
-      <pubDate>Wed, 07 Oct 2020 18:24:14 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode1-two-sum/</guid>
-      <description>Question Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
-You may assume that each input would have exactly one solution, and you may not use the same element twice.
-You can return the answer in any order.
-Example 1 Input: nums = [2,7,11,15], target = 9 Output: [0,1] Output: Because nums[0] + nums[1] == 9, we return [0, 1].</description>
     </item>
     
   </channel>
