@@ -7,7 +7,40 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 09 Jan 2021 16:18:31 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/advertising-product-manager/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Jan 2021 12:14:21 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/advertising-product-manager/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode[181] Employees Earning More Than Their Managers</title>
+      <link>https://www.marshalgao.com/leetcode181-employees-earning-more-than-their-managers/</link>
+      <pubDate>Mon, 11 Jan 2021 12:14:21 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode181-employees-earning-more-than-their-managers/</guid>
+      <description>Question The Employee table holds all employees including their managers. Every employee has an Id, and there is also a column for the manager Id.
++----+-------+--------+-----------+ | Id | Name | Salary | ManagerId | +----+-------+--------+-----------+ | 1 | Joe | 70000 | 3 | | 2 | Henry | 80000 | 4 | | 3 | Sam | 60000 | NULL | | 4 | Max | 90000 | NULL | +----+-------+--------+-----------+  Given the Employee table, write a SQL query that finds out employees who earn more than their managers.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[180] Consecutive Numbers</title>
+      <link>https://www.marshalgao.com/leetcode180-consecutive-numbers/</link>
+      <pubDate>Mon, 11 Jan 2021 11:20:40 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode180-consecutive-numbers/</guid>
+      <description>Question Table: Logs
++-------------+---------+ | Column Name | Type | +-------------+---------+ | id | int | | num | varchar | +-------------+---------+ id is the primary key for this table.  Write an SQL query to find all numbers that appear at least three times consecutively.
+Return the result table in any order.
+The query result format is in the following example:
+Logs table: +----+-----+ | Id | Num | +----+-----+ | 1 | 1 | | 2 | 1 | | 3 | 1 | | 4 | 2 | | 5 | 1 | | 6 | 2 | | 7 | 2 | +----+-----+ Result table: +-----------------+ | ConsecutiveNums | +-----------------+ | 1 | +-----------------+ 1 is the only number that appears consecutively for at least three times.</description>
+    </item>
+    
+    <item>
+      <title>Content Products</title>
+      <link>https://www.marshalgao.com/content-products/</link>
+      <pubDate>Sat, 09 Jan 2021 22:33:41 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/content-products/</guid>
+      <description>内容型产品
+ 定义  通过内容聚集用户，形成流量平台 用户主要是进行内容消费，消磨时间   举例  新闻资讯类：网易新闻、今日头条、微信公众号 社交类：微博、知乎、豆瓣 内容电商类：什么值得买、小红书 影音娱乐类：腾讯视频、QQ音乐   内容的生产方式  分发型（PGC）  产品模式  以媒体资讯类为主，例如：今日头条 平台签约创作者，吸引内容消费者，实现流量平台搭建 头部MCN会优先推荐 流量积累速度快，起步快 关系沉淀弱，创作者对观众的单向关系，观众难以转化为创作者 除了解决内容增长之外，还需要增加用户、内容以及用户之间的互动（社交属性）-&amp;gt; 提升用户粘性   业务划分（以新闻资讯类为例）  推荐分发  通过订阅、个性化推荐将内容分发给用户   跟帖互动  社交属性，增强用户粘性   内容后台  自媒体管理，审核与质量评级，建立内容库的基础   用户增长  拉新和留存   商业变现  广告、知识付费     变现模式  创作者变现  平台补贴刺激生产内容 知识付费收入分成 流量主收入 沉淀粉丝其他渠道变现   平台变现  广告变现  例如：今日头条、网易新闻   内容IP-知识付费  订阅付费：先付费再消费，例如：得到 打赏付费：先消费再付费，例如：微信公众号   购买会员  满足用户跳过广告的需求，例如：腾讯视频          社区型（UGC）  产品模式  通过内容聚集相同兴趣或调性的用户，以引导用户创作内容为主导，通过内容发现人，强调关系链的搭建与互动，以及社区内容的调性维护，例如：抖音，小红书 社区中，用户群体关系通常呈现为金字塔结构  大V和KOL 腰部中小V 尝鲜小白和社区普通用户    UGC产品起步如果采取单纯UGC的模式会产生大量的“内容噪音”，因此一般来说会先从头部KOL开始产生内容进行输出（个人理解是PGC的方式），后期发展需要打造社区氛围 UGC与PGC相比，天花板更高，迁移成本提高，用户留存高（因为社区的形成）   业务划分  发布工具  降低内容创作门槛，提高创作趣味性   KOL扶植  提升KOL的on boarding体验   互动关系  打造关系链，创建社区   内容分发  通过内容聚集相同属性的用户   用户增长  新增和留存   商业变现  广告、电商      变现模式  创作者变现  平台补贴刺激生产内容 沉淀粉丝其他渠道转化变现 带货收入分成   平台变现  电商  自建电商，例如：小红书 导流电商，例如：抖音   广告变现  与PGC的广告模式类似，例如：知乎的信息流广告            快速设计内容发现</description>
+    </item>
+    
     <item>
       <title>LeetCode[178] Rank Scores</title>
       <link>https://www.marshalgao.com/leetcode178-rank-scores/</link>
@@ -81,44 +114,6 @@
       <guid>https://www.marshalgao.com/development-model/</guid>
       <description>5种常见开发模式
  瀑布式开发  典型的预见性方法 自上而下 上一阶段结束，下一阶段执行，不可回溯 优点  预先计划 便于确定预期的开发成本和时间   缺点  无法预知未来 环环相扣，一环出问题，满盘皆输 测试发现问题，开发没法及时解决（开发此时可能已经处于下一个项目的研发中）   适合场景  具有明确定义和不变需求的中小型项目，比如小型公司网站开发 需要严格控制流程，预算和时间表可预测的项目，比如政府类项目 必须遵守多个规章制度的项目，比如医疗软件 使用了业内熟悉的成熟的技术方案的项目      增量和迭代开发  增量开发  项目切割成子模块（相对独立） 横向开发 可以顺序进行，也可以并行进行 如果研发资源有限，需要进行子模块的排序 如果研发资源充足，那么在设计阶段PM任务量较大    迭代开发  项目切割成子任务（以上一次迭代为基础进行） 纵向开发 项目初期不需要完整的规范，在开发过程中可以对需求进行少量更改，但需求根本和主体不能改变 每次迭代需要留下清晰的文档    优点  如果失败，只是一小部分的失败，降低损失，软件容易成功 也可以根据上线版本的用户反馈，结合完成下一次迭代方案   缺点  沟通或文档的不清晰，会导致后期融合出现问题   适合场景  大型关键企业应用程序，最好由松散耦合的部分组成，比如微服务或web服务类     看板开发  属于敏捷开发的一种（scrum也是其中一种） 自下而上（与瀑布式开发对比） 后道工序需要时，给前道工序发信号，前道工序才启动任务 用户需求为原动力 优点  没有明显的迭代过程，可以随时加入新需求 即来即增加，即变即更新 团队中的人可以清楚看到所有任务的负责人以及进度等 透明度高有助于准确估计最要紧的任务，项目组越来越自动化 站立会 —— 每人交代已完成的任务和遇到的问题（对于复杂问题会有专项讨论） 遇到问题，立刻停下来解决   缺点  不利于思维的发散   适合场景  要求处理目标用户前期反馈的新项目 业务要求不能被清晰地转换成产品需求的中型定制化项目      极限编程（XP）  属于敏捷开发的一种 与看板开发相比，更注重快速解决问题 团队人数少，人人平等，畅所欲言 优点  没有总体设计，设计过程贯穿始终 只要满足需求，通过测试即可（因为满足需求后，后期会有迭代版本）   缺点  对团队要求高 由于过程不拘泥于形式，后期文档在完整性上会有所欠缺 项目组成员流动会带来巨大问题   适合场景  要求处理目标用户前期反馈的新项目 业务要求不能被清晰地转换成产品需求的中型定制化项目 经常发生变化的项目、紧急上线任务和封闭开发等      从操作灵活性和用户参与度进行对比 </description>
-    </item>
-    
-    <item>
-      <title>Integration and Link</title>
-      <link>https://www.marshalgao.com/integration-and-link/</link>
-      <pubDate>Tue, 05 Jan 2021 15:49:08 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/integration-and-link/</guid>
-      <description>整合 vs 链路
- 区别  整合是为了占据消费者心智 链路是为了驱动消费者行为   整合营销  在不同的地方，用同一个声音说话 整合各类营销资源，保持统一的声音和形象 将户外广告、公共关系、SEM（引擎营销）、内容营销、终端促销等看成一个整体，让不同的传播活动去共同打造统一的品牌形象 问题  信息碎片化程度超过了预期，无法有效整合所有的媒介 数字营销在不断进步，广告对消费者的影响周期缩短了  以往的广告和卖场是分离的，企业将广告信息浓缩在海报、电视广告中，目的是为了消费者在现在商场购物时，想到这个品牌 数字营销的广告和卖场是一体的，所见即所购，比如直播带货 广告不再是一种心智占领（整合），而是一种行为诱导（链路）   营销的潜台词是效果而不是品牌  由于每一笔广告的ROI，导致越来越多的广告主在意效果 效果广告注重消费者从看到广告到购买商品的整个行为链条 -&amp;gt; 链路       链路  链路在整合之余，更关注不同步骤的广告活动对消费行为的影响 在空间维度之外，加入了时间维度 驱动消费者行为决策   案例对比  蒙牛赞助《超级女声》，利用的就是整合营销，全方位的宣传 蒙牛赞助《创造营》，利用的就是链路  通过购买蒙牛产品进行投票 驱动了购买行为      链路法则
- 互联网传播广告模型——AISAS法则  内容  Attention（注意） Interest（兴趣） Search（搜索） Action（购买） Share（分享）   使用范围  适合一些高决策力的产品，例如：汽车、手机、房产（价格高，需要深思熟虑）     增长黑客AARRR理论  传统企业营销目标是“卖货”，而互联网企业的目标是“获客” 由于移动互联网的发展，“拉新”代替了“品牌知名度”，“留存”代替了“复购” 内容  Acquisition（获取） Activation（激活） Retention（留存） Revenue（付费） Refer（推荐）   该理论提倡“去广告化”，“老用户带新用户” 前期广告的钱用来用户补贴和技术搭建，屡试不爽 案例  饿了么、滴滴、拼多多、美团      链路原则</description>
-    </item>
-    
-    <item>
-      <title>Programmatic Advertising</title>
-      <link>https://www.marshalgao.com/programmatic-advertising/</link>
-      <pubDate>Tue, 05 Jan 2021 12:02:50 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/programmatic-advertising/</guid>
-      <description>定义
-程序化广告是指广告主通过数字平台从受众的匹配的角度由程序自动化完成展示类广告的采买和投放，并实时反馈投放分析的一种广告投放方式，实现了整个数字广告的自动化。
-四大特点
- 数字平台  程序化广告是通过数字平台（DSP和ADX）进行投放 -&amp;gt; 最基本的特点 通过媒体方的广告投放平台进行投放，不算程序化广告，因为不经过DSP  例如，微信朋友圈广告（只有展示和不展示，并不涉及投放的选择）   场景类比  买菜的人（DSP）在菜市场（ADX）寻找摆摊的菜贩子（SSP）     受众角度  通过与用户画像（标签）进行匹配，做到广告的“千人千面“，实现精准营销 传统广告  购买广告位，并在一段展示时间内付费 目标流量的不明确，过于宽泛   程序化广告  购买受众流量 目标流量明确且精准 问题与挑战  品牌安全问题  品牌广告不应出现在暴力、色情等网站 例如，YouTube恐怖分子宣传视频出现某公司的广告       传统广告 vs 程序化广告    程序自动化  根据媒体主（SSP）竞价请求提供的信息，依据广告策略和算法自动完成对每次展示的竞价决策（是否出价、出价多少） 返回为毫秒级别，速度快 不需人为干涉，十分高效 有些已经实现自动优化功能，例如动态创意优化   展示类广告  程序化广告只在展示类广告存在 在线广告可以分为两种  搜索类广告 展示类广告  banner 信息流 背投 视频贴片        品牌方如何投放程序化广告</description>
-    </item>
-    
-    <item>
-      <title>Advertising Platform</title>
-      <link>https://www.marshalgao.com/advertising-platform/</link>
-      <pubDate>Mon, 04 Jan 2021 20:11:52 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/advertising-platform/</guid>
-      <description>在线广告市场结构
- 广告主：金主爸爸，有广告联盟和广告主两种形式 广告平台：提供流量分发的能力，与此同时也提供广告创意，广告素材服务，如百度推广、腾讯广告等 媒体：流量提供方，互联网公司是现在世界上最大的媒体 消费者：C端用户，广告和流量的使用者 关系图   广告系统模块规划
- 广告投放系统：广告投放系统承担了广告内容管理和广告流量分发的功能，承前启后，是广告系统的核心部分 商户后台系统：用于广告主和广告联盟商自主接入的管理平台，主要包含广告需求承接和广告效果数据、广告费用的展示 运营后台系统：广告平台方的运营后台，主要用于广告审核、广告主管理和其他管理功能 广告素材设计系统：用于制作广告创意，根据广告位的要求支持不同尺寸、不同投放环境的创意设计 数据统计系统：用于广告效果数据收集和分析 关系图   广告需求模型设计
- 站在广告主的立场，至少分为广告主-投放计划-广告素材（创意）  广告主：广告的需求方，是广告效果和广告计费统一的收口方，广告主名下的广告投放计划所产生的成本均计入广告主的整体费用 投放计划：广告主名下往往由很多广告需求，我们将每个定制的广告需求称为投放计划 广告素材（创意）：广告投放最小颗粒是广告素材（创意），每一个投放计划都可能包含多个广告素材的投放。广告计费的也是根据广告素材的曝光、点击、展示时长等计费方式的数值进行计算的。常用的广告创意有横幅广告（banner），文字链广告，视频广告，嵌入式社交广告、sdk嵌入式移动广告等   广告主同时需要对广告的投放目标、投放时间、投放的定向和预算等进行配置 关系图   广告投放模型的建立
- 结合广告主的需求，将素材进行精准投放 结合计费模式 关系图   设计有效的广告投放流程——以CPM竞价为例
- 请求广告：一般采用广告组件或者sdk等方式嵌入在广告位中，广告组件可以根据广告位的用户属性等信息向广告投放系统请求广告资源 匹配广告位：按照广告位的不同， 广告系统需要选择符合当前广告位投放目标的广告需求池 匹配投放计划：将广告位的用户属性等信息与大数据标签系统进行匹配，获取对应的用户画像标签，根据标签来和广告投放计划的定向需求进行匹配，并通过竞价选取对应的投放计划 匹配广告创意：由于符合条件每个投放计划可能有多个广告素材，因此需要根据实时的广告效果来对广告素材进行评估，并选择转化率更高的广告素材进行投放 广告数据统计：在达成统计要求后，统计广告效果数据，如曝光量、点击量等 投放流程图   广告投放策略系统
- 需求点  广告运营需要一直关注投放效果，不断调整投放，控制成本，同时保证效率   名词解释  自动化的广告盯盘工具   组成部分  数据项  前段数据  浏览量、点击量 前期更注重前段数据，因为没有一定曝光，何谈转化   后端数据  App下载量、注册成本 一定程度上取决于广告素材是否吸引用户，完成转化   当前段数据达到一个阈值之后，辅以后段指标进行验证   逻辑判断条件和数值  利用大于、小于或是介于两者之间来出发投放策略调整   条件组合  同时满足 - and 任意满足 - or 例如  当消耗和成本不符合预算时，需要降低预算  「消耗」&amp;gt; XX元，且「转化成本」&amp;gt; XX元 -&amp;gt; 降低预算   广告渡过冷启动阶段，需要提高预算，加速冲量  「曝光量」&amp;gt; XX，且「转化数」&amp;gt;= XX -&amp;gt; 提高预算       执行动作  当广告达到条件预设值后，需要对广告执行相应的操作  调整预算  有预算封顶值   调整出价 更换定向包 暂停广告   可以设置包含多个动作的复杂任务，实现触发     补充  策略系统搭建完成后，需要考虑接口的并发  不同媒介对接口的分钟调用和日调用都是有限制的，从而影响拉取广告数据的频率   例如  1h拉取一次 -&amp;gt; 策略机制形同虚设      </description>
     </item>
     
   </channel>

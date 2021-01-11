@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>#181 on This Is Marshal</title>
+    <link>https://www.marshalgao.com/tags/#181/</link>
+    <description>Recent content in #181 on This Is Marshal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
+    <lastBuildDate>Mon, 11 Jan 2021 12:14:21 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/#181/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode[181] Employees Earning More Than Their Managers</title>
+      <link>https://www.marshalgao.com/leetcode181-employees-earning-more-than-their-managers/</link>
+      <pubDate>Mon, 11 Jan 2021 12:14:21 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode181-employees-earning-more-than-their-managers/</guid>
+      <description>Question The Employee table holds all employees including their managers. Every employee has an Id, and there is also a column for the manager Id.
++----+-------+--------+-----------+ | Id | Name | Salary | ManagerId | +----+-------+--------+-----------+ | 1 | Joe | 70000 | 3 | | 2 | Henry | 80000 | 4 | | 3 | Sam | 60000 | NULL | | 4 | Max | 90000 | NULL | +----+-------+--------+-----------+  Given the Employee table, write a SQL query that finds out employees who earn more than their managers.</description>
+    </item>
+    
+  </channel>
+</rss>

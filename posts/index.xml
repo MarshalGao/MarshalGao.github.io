@@ -6,8 +6,133 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Sat, 09 Jan 2021 22:33:41 +0800</lastBuildDate>
+        <lastBuildDate>Mon, 11 Jan 2021 12:14:21 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>LeetCode[181] Employees Earning More Than Their Managers</title>
+            <link>https://www.marshalgao.com/leetcode181-employees-earning-more-than-their-managers/</link>
+            <pubDate>Mon, 11 Jan 2021 12:14:21 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/leetcode181-employees-earning-more-than-their-managers/</guid>
+            <description>Question The Employee table holds all employees including their managers. Every employee has an Id, and there is also a column for the manager Id.
++----+-------+--------+-----------+ | Id | Name | Salary | ManagerId | +----+-------+--------+-----------+ | 1 | Joe | 70000 | 3 | | 2 | Henry | 80000 | 4 | | 3 | Sam | 60000 | NULL | | 4 | Max | 90000 | NULL | +----+-------+--------+-----------+  Given the Employee table, write a SQL query that finds out employees who earn more than their managers.</description>
+            <content type="html"><![CDATA[<h2 id="question">Question</h2>
+<p>The Employee table holds all employees including their managers. Every employee has an Id, and there is also a column for the manager Id.</p>
+<pre><code>+----+-------+--------+-----------+
+| Id | Name  | Salary | ManagerId |
++----+-------+--------+-----------+
+| 1  | Joe   | 70000  | 3         |
+| 2  | Henry | 80000  | 4         |
+| 3  | Sam   | 60000  | NULL      |
+| 4  | Max   | 90000  | NULL      |
++----+-------+--------+-----------+
+</code></pre>
+<p>Given the Employee table, write a SQL query that finds out employees who earn more than their managers. For the above table, Joe is the only employee who earns more than his manager.</p>
+<pre><code>+----------+
+| Employee |
++----------+
+| Joe      |
++----------+
+</code></pre>
+<h2 id="sql-schema">SQL Schema</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">Create</span> <span style="color:#66d9ef">table</span> <span style="color:#66d9ef">If</span> <span style="color:#66d9ef">Not</span> <span style="color:#66d9ef">Exists</span> Employee (Id int, Name varchar(<span style="color:#ae81ff">255</span>), Salary int, ManagerId int)
+<span style="color:#66d9ef">Truncate</span> <span style="color:#66d9ef">table</span> Employee
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Employee (Id, Name, Salary, ManagerId) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;1&#39;</span>, <span style="color:#e6db74">&#39;Joe&#39;</span>, <span style="color:#e6db74">&#39;70000&#39;</span>, <span style="color:#e6db74">&#39;3&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Employee (Id, Name, Salary, ManagerId) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;2&#39;</span>, <span style="color:#e6db74">&#39;Henry&#39;</span>, <span style="color:#e6db74">&#39;80000&#39;</span>, <span style="color:#e6db74">&#39;4&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Employee (Id, Name, Salary, ManagerId) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;3&#39;</span>, <span style="color:#e6db74">&#39;Sam&#39;</span>, <span style="color:#e6db74">&#39;60000&#39;</span>, <span style="color:#e6db74">&#39;None&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Employee (Id, Name, Salary, ManagerId) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;4&#39;</span>, <span style="color:#e6db74">&#39;Max&#39;</span>, <span style="color:#e6db74">&#39;90000&#39;</span>, <span style="color:#e6db74">&#39;None&#39;</span>)
+</code></pre></div><h2 id="my-interesting-code">My Interesting Code</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> origin.Name <span style="color:#66d9ef">as</span> Employee
+<span style="color:#66d9ef">from</span> Employee <span style="color:#66d9ef">as</span> origin
+<span style="color:#66d9ef">inner</span> <span style="color:#66d9ef">join</span> Employee <span style="color:#66d9ef">as</span> temp
+<span style="color:#66d9ef">on</span> origin.ManagerId <span style="color:#f92672">=</span> temp.Id
+<span style="color:#66d9ef">where</span> origin.Salary <span style="color:#f92672">&gt;</span> temp.Salary
+</code></pre></div><h2 id="my-perspective">My Perspective</h2>
+<p>For this question, because you only have one table, you can use &ldquo;inner join&rdquo; to combine the same table twice accoring to the &ldquo;MangerId&rdquo; and &ldquo;Id&rdquo;. Then you can just compare the value of &ldquo;Salary&rdquo; is ok.</p>
+<p>More importantly, the new table contains all the keys twice, so I suggest you can use &ldquo;as&rdquo; to distinguish these two tables, which can make &ldquo;select&rdquo; more conveniently.</p>
+<p>Also, there is a useful links, and I think it can help you. (chinese version)</p>
+<ul>
+<li><a href="https://www.cnblogs.com/wgphp/p/8183812.html">useful link</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>LeetCode[180] Consecutive Numbers</title>
+            <link>https://www.marshalgao.com/leetcode180-consecutive-numbers/</link>
+            <pubDate>Mon, 11 Jan 2021 11:20:40 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/leetcode180-consecutive-numbers/</guid>
+            <description>Question Table: Logs
++-------------+---------+ | Column Name | Type | +-------------+---------+ | id | int | | num | varchar | +-------------+---------+ id is the primary key for this table.  Write an SQL query to find all numbers that appear at least three times consecutively.
+Return the result table in any order.
+The query result format is in the following example:
+Logs table: +----+-----+ | Id | Num | +----+-----+ | 1 | 1 | | 2 | 1 | | 3 | 1 | | 4 | 2 | | 5 | 1 | | 6 | 2 | | 7 | 2 | +----+-----+ Result table: +-----------------+ | ConsecutiveNums | +-----------------+ | 1 | +-----------------+ 1 is the only number that appears consecutively for at least three times.</description>
+            <content type="html"><![CDATA[<h2 id="question">Question</h2>
+<p>Table: Logs</p>
+<pre><code>+-------------+---------+
+| Column Name | Type    |
++-------------+---------+
+| id          | int     |
+| num         | varchar |
++-------------+---------+
+id is the primary key for this table.
+</code></pre>
+<p>Write an SQL query to find all numbers that appear at least three times consecutively.</p>
+<p>Return the result table in <strong>any order</strong>.</p>
+<p>The query result format is in the following example:</p>
+<pre><code>Logs table:
++----+-----+
+| Id | Num |
++----+-----+
+| 1  | 1   |
+| 2  | 1   |
+| 3  | 1   |
+| 4  | 2   |
+| 5  | 1   |
+| 6  | 2   |
+| 7  | 2   |
++----+-----+
+
+Result table:   
++-----------------+
+| ConsecutiveNums |
++-----------------+
+| 1               |
++-----------------+
+1 is the only number that appears consecutively for at least three times.
+</code></pre>
+<h2 id="sql-schema">SQL Schema</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">Create</span> <span style="color:#66d9ef">table</span> <span style="color:#66d9ef">If</span> <span style="color:#66d9ef">Not</span> <span style="color:#66d9ef">Exists</span> Logs (Id int, Num int)
+<span style="color:#66d9ef">Truncate</span> <span style="color:#66d9ef">table</span> Logs
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Logs (Id, Num) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;1&#39;</span>, <span style="color:#e6db74">&#39;1&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Logs (Id, Num) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;2&#39;</span>, <span style="color:#e6db74">&#39;1&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Logs (Id, Num) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;3&#39;</span>, <span style="color:#e6db74">&#39;1&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Logs (Id, Num) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;4&#39;</span>, <span style="color:#e6db74">&#39;2&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Logs (Id, Num) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;5&#39;</span>, <span style="color:#e6db74">&#39;1&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Logs (Id, Num) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;6&#39;</span>, <span style="color:#e6db74">&#39;2&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Logs (Id, Num) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;7&#39;</span>, <span style="color:#e6db74">&#39;2&#39;</span>)
+</code></pre></div><h2 id="my-interesting-code">My Interesting Code</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> <span style="color:#66d9ef">distinct</span> Num <span style="color:#66d9ef">as</span> ConsecutiveNums
+<span style="color:#66d9ef">from</span> (
+    <span style="color:#66d9ef">select</span> lag(Num) over() <span style="color:#66d9ef">as</span> preNum,
+        Num,
+        lead(Num) over() <span style="color:#66d9ef">as</span> nextNum
+    <span style="color:#66d9ef">from</span> Logs
+) temp
+<span style="color:#66d9ef">where</span> preNum <span style="color:#f92672">=</span> Num <span style="color:#66d9ef">and</span> Num <span style="color:#f92672">=</span> nextNum
+</code></pre></div><h2 id="my-perspective">My Perspective</h2>
+<p>For this question, if you want to find a number that appears consecutively for at least three times, you can find each number&rsquo;s previous number and next number, using &ldquo;lag over&rdquo; and &ldquo;lead over&rdquo;. Then put them into one line.</p>
+<p>According to the requirement, if the new table - &ldquo;temp&rdquo; - has at least one line that all elements are equal, it can address the problem. More importantly, you may have the same result, and do not forget to use &ldquo;distinct&rdquo; to address the problem.</p>
+<p>Also, there are three useful links, and I think they can help you. (chinese version)</p>
+<ul>
+<li><a href="https://www.jb51.net/article/152155.htm">useful link 1</a></li>
+<li><a href="https://www.cnblogs.com/beautifuldata/p/3204294.html">useful link 2</a></li>
+<li><a href="https://blog.csdn.net/sinat_26811377/article/details/107188400">useful link 3</a></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>Content Products</title>
