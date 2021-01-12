@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>easy on This Is Marshal</title>
+    <link>https://www.marshalgao.com/tags/easy/</link>
+    <description>Recent content in easy on This Is Marshal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
+    <lastBuildDate>Tue, 12 Jan 2021 15:21:40 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/easy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode[197] Rising Temperature</title>
+      <link>https://www.marshalgao.com/leetcode197-rising-temperature/</link>
+      <pubDate>Tue, 12 Jan 2021 15:21:40 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode197-rising-temperature/</guid>
+      <description>Question Table: Weather
++---------------+---------+ | Column Name | Type | +---------------+---------+ | id | int | | recordDate | date | | temperature | int | +---------------+---------+ id is the primary key for this table. This table contains information about the temperature in a certain day.  Write an SQL query to find all dates&#39; id with higher temperature compared to its previous dates (yesterday).
+Return the result table in any order.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[196] Delete Duplicate Emails</title>
+      <link>https://www.marshalgao.com/leetcode196-delete-duplicate-emails/</link>
+      <pubDate>Tue, 12 Jan 2021 14:36:11 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode196-delete-duplicate-emails/</guid>
+      <description>Question Write a SQL query to delete all duplicate email entries in a table named Person, keeping only unique emails based on its smallest Id.
++----+------------------+ | Id | Email | +----+------------------+ | 1 | john@example.com | | 2 | bob@example.com | | 3 | john@example.com | +----+------------------+ Id is the primary key column for this table.  For example, after running your query, the above Person table should have the following rows:</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[183] Customers Who Never Order</title>
+      <link>https://www.marshalgao.com/leetcode183-customers-who-never-order/</link>
+      <pubDate>Mon, 11 Jan 2021 20:16:24 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode183-customers-who-never-order/</guid>
+      <description>Question Suppose that a website contains two tables, the Customers table and the Orders table. Write a SQL query to find all customers who never order anything.
+Table: Customers
++----+-------+ | Id | Name | +----+-------+ | 1 | Joe | | 2 | Henry | | 3 | Sam | | 4 | Max | +----+-------+  Table: Orders
++----+------------+ | Id | CustomerId | +----+------------+ | 1 | 3 | | 2 | 1 | +----+------------+  Using the above tables as example, return the following:</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[182] Duplicate Emails</title>
+      <link>https://www.marshalgao.com/leetcode182-duplicate-emails/</link>
+      <pubDate>Mon, 11 Jan 2021 17:20:59 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode182-duplicate-emails/</guid>
+      <description>Question Write a SQL query to find all duplicate emails in a table named Person.
++----+---------+ | Id | Email | +----+---------+ | 1 | a@b.com | | 2 | c@d.com | | 3 | a@b.com | +----+---------+  For example, your query should return the following for the above table:
++---------+ | Email | +---------+ | a@b.com | +---------+  Note: All emails are in lowercase.
+SQL Schema Create table If Not Exists Person (Id int, Email varchar(255)) Truncate table Person insert into Person (Id, Email) values (&amp;#39;1&amp;#39;, &amp;#39;a@b.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[181] Employees Earning More Than Their Managers</title>
+      <link>https://www.marshalgao.com/leetcode181-employees-earning-more-than-their-managers/</link>
+      <pubDate>Mon, 11 Jan 2021 12:14:21 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode181-employees-earning-more-than-their-managers/</guid>
+      <description>Question The Employee table holds all employees including their managers. Every employee has an Id, and there is also a column for the manager Id.
++----+-------+--------+-----------+ | Id | Name | Salary | ManagerId | +----+-------+--------+-----------+ | 1 | Joe | 70000 | 3 | | 2 | Henry | 80000 | 4 | | 3 | Sam | 60000 | NULL | | 4 | Max | 90000 | NULL | +----+-------+--------+-----------+  Given the Employee table, write a SQL query that finds out employees who earn more than their managers.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[176] Second Highest Salary</title>
+      <link>https://www.marshalgao.com/leetcode176-second-highest-salary/</link>
+      <pubDate>Fri, 08 Jan 2021 16:37:07 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode176-second-highest-salary/</guid>
+      <description>Question Write a SQL query to get the second highest salary from the Employee table.
++----+--------+ | Id | Salary | +----+--------+ | 1 | 100 | | 2 | 200 | | 3 | 300 | +----+--------+  For example, given the above Employee table, the query should return 200 as the second highest salary. If there is no second highest salary, then the query should return null.
++---------------------+ | SecondHighestSalary | +---------------------+ | 200 | +---------------------+  SQL Schema Create table If Not Exists Employee (Id int, Salary int) Truncate table Employee insert into Employee (Id, Salary) values (&amp;#39;1&amp;#39;, &amp;#39;100&amp;#39;) insert into Employee (Id, Salary) values (&amp;#39;2&amp;#39;, &amp;#39;200&amp;#39;) insert into Employee (Id, Salary) values (&amp;#39;3&amp;#39;, &amp;#39;300&amp;#39;) My Interesting Code select max(Salary) as SecondHighestSalary from Employee where Salary &amp;lt; (select max(Salary) from Employee) My Perspective This question is also simple.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[175] Combine Two Tables</title>
+      <link>https://www.marshalgao.com/leetcode175-combine-two-tables/</link>
+      <pubDate>Fri, 08 Jan 2021 16:21:38 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode175-combine-two-tables/</guid>
+      <description>Question Table: Person
++-------------+---------+ | Column Name | Type | +-------------+---------+ | AddressId | int | | PersonId | int | | City | varchar | | State | varchar | +-------------+---------+ PersonId is the primary key column for this table.  Table: Address
++-------------+---------+ | Column Name | Type | +-------------+---------+ | AddressId | int | | PersonId | int | | City | varchar | | State | varchar | +-------------+---------+ AddressId is the primary key column for this table.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[1] Two Sum</title>
+      <link>https://www.marshalgao.com/leetcode1-two-sum/</link>
+      <pubDate>Wed, 07 Oct 2020 18:24:14 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode1-two-sum/</guid>
+      <description>Question Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+You can return the answer in any order.
+Example 1 Input: nums = [2,7,11,15], target = 9 Output: [0,1] Output: Because nums[0] + nums[1] == 9, we return [0, 1].</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -8,7 +8,7 @@
 <meta name="description" content="Question Write a SQL query to get the second highest salary from the Employee table.
 &#43;----&#43;--------&#43; | Id | Salary | &#43;----&#43;--------&#43; | 1 | 100 | | 2 | 200 | | 3 | 300 | &#43;----&#43;--------&#43;  For example, given the above Employee table, the query should return 200 as the second highest salary. If there is no second highest salary, then the query should return null.
 &#43;---------------------&#43; | SecondHighestSalary | &#43;---------------------&#43; | 200 | &#43;---------------------&#43;  SQL Schema Create table If Not Exists Employee (Id int, Salary int) Truncate table Employee insert into Employee (Id, Salary) values (&amp;#39;1&amp;#39;, &amp;#39;100&amp;#39;) insert into Employee (Id, Salary) values (&amp;#39;2&amp;#39;, &amp;#39;200&amp;#39;) insert into Employee (Id, Salary) values (&amp;#39;3&amp;#39;, &amp;#39;300&amp;#39;) My Interesting Code select max(Salary) as SecondHighestSalary from Employee where Salary &amp;lt; (select max(Salary) from Employee) My Perspective This question is also simple." />
-<meta name="keywords" content=", leetcode, #176, sql, advertising product manager, second highest salary" />
+<meta name="keywords" content=", leetcode, #176, easy, sql, advertising product manager, second highest salary" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="#252627" />
 <link rel="canonical" href="https://www.marshalgao.com/leetcode176-second-highest-salary/" />
@@ -54,7 +54,7 @@
 
 
 
-<meta itemprop="keywords" content="leetcode,#176,sql,advertising product manager,second highest salary," />
+<meta itemprop="keywords" content="leetcode,#176,easy,sql,advertising product manager,second highest salary," />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://www.marshalgao.com/"/>
@@ -206,6 +206,7 @@
 
         <span class="tag"><a href="https://www.marshalgao.com/tags/leetcode/">leetcode</a></span>
         <span class="tag"><a href="https://www.marshalgao.com/tags/#176/">#176</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/easy/">easy</a></span>
         <span class="tag"><a href="https://www.marshalgao.com/tags/sql/">sql</a></span>
         <span class="tag"><a href="https://www.marshalgao.com/tags/advertising-product-manager/">advertising product manager</a></span>
         <span class="tag"><a href="https://www.marshalgao.com/tags/second-highest-salary/">second highest salary</a></span>

@@ -6,8 +6,293 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Mon, 11 Jan 2021 20:16:24 +0800</lastBuildDate>
+        <lastBuildDate>Tue, 12 Jan 2021 15:21:40 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>LeetCode[197] Rising Temperature</title>
+            <link>https://www.marshalgao.com/leetcode197-rising-temperature/</link>
+            <pubDate>Tue, 12 Jan 2021 15:21:40 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/leetcode197-rising-temperature/</guid>
+            <description>Question Table: Weather
++---------------+---------+ | Column Name | Type | +---------------+---------+ | id | int | | recordDate | date | | temperature | int | +---------------+---------+ id is the primary key for this table. This table contains information about the temperature in a certain day.  Write an SQL query to find all dates&#39; id with higher temperature compared to its previous dates (yesterday).
+Return the result table in any order.</description>
+            <content type="html"><![CDATA[<h2 id="question">Question</h2>
+<p>Table: Weather</p>
+<pre><code>+---------------+---------+
+| Column Name   | Type    |
++---------------+---------+
+| id            | int     |
+| recordDate    | date    |
+| temperature   | int     |
++---------------+---------+ 
+id is the primary key for this table.   
+This table contains information about the temperature in a certain day.
+</code></pre>
+<p>Write an SQL query to find all dates' id with higher temperature compared to its previous dates (yesterday).</p>
+<p>Return the result table in <strong>any order</strong>.</p>
+<p>The query result format is in the following example:</p>
+<pre><code>Weather
++----+------------+-------------+
+| id | recordDate | Temperature |
++----+------------+-------------+   
+| 1  | 2015-01-01 | 10          |
+| 2  | 2015-01-02 | 25          |
+| 3  | 2015-01-03 | 20          |
+| 4  | 2015-01-04 | 30          |
++----+------------+-------------+
+
+Result table:
++----+
+| Id |
++----+
+| 2  |
+| 4  |
++----+
+In 2015-01-02, temperature was higher than the previous day (10 -&gt; 25).
+In 2015-01-04, temperature was higher than the previous day (20 -&gt; 30).
+</code></pre>
+<h2 id="sql-schema">SQL Schema</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">Create</span> <span style="color:#66d9ef">table</span> <span style="color:#66d9ef">If</span> <span style="color:#66d9ef">Not</span> <span style="color:#66d9ef">Exists</span> Weather (Id int, RecordDate date, Temperature int)
+<span style="color:#66d9ef">Truncate</span> <span style="color:#66d9ef">table</span> Weather
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Weather (Id, RecordDate, Temperature) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;1&#39;</span>, <span style="color:#e6db74">&#39;2015-01-01&#39;</span>, <span style="color:#e6db74">&#39;10&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Weather (Id, RecordDate, Temperature) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;2&#39;</span>, <span style="color:#e6db74">&#39;2015-01-02&#39;</span>, <span style="color:#e6db74">&#39;25&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Weather (Id, RecordDate, Temperature) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;3&#39;</span>, <span style="color:#e6db74">&#39;2015-01-03&#39;</span>, <span style="color:#e6db74">&#39;20&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Weather (Id, RecordDate, Temperature) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;4&#39;</span>, <span style="color:#e6db74">&#39;2015-01-04&#39;</span>, <span style="color:#e6db74">&#39;30&#39;</span>)
+</code></pre></div><h2 id="my-interesting-code">My Interesting Code</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> temp.id <span style="color:#66d9ef">as</span> Id
+<span style="color:#66d9ef">from</span> (
+    <span style="color:#66d9ef">select</span> w1.id, w1.recordDate, w1.Temperature, w2.Temperature <span style="color:#66d9ef">as</span> PreTemperature
+    <span style="color:#66d9ef">from</span> Weather w1
+    <span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Weather w2 <span style="color:#66d9ef">on</span> date_add(w2.recordDate, interval <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">day</span>) <span style="color:#f92672">=</span> w1.recordDate
+) temp
+<span style="color:#66d9ef">where</span> temp.Temperature <span style="color:#f92672">&gt;</span> temp.PreTemperature
+</code></pre></div><h2 id="my-perspective">My Perspective</h2>
+<p>For this question, firstly, you can make a new column, called &ldquo;PreTemperature&rdquo;, record the previous day&rsquo;s temperature, using &ldquo;left join&rdquo;. Then, you can select the elements whose current temperature is larger than previous temperature, getting the relevant &ldquo;Ids&rdquo;.</p>
+<p>More importantly, &ldquo;data_add()&rdquo; can help you to realize the time discrimination.</p>
+<p>Also, there is a useful link, and I think it can help you. (chinese version)</p>
+<ul>
+<li><a href="https://blog.csdn.net/qq_43154385/article/details/87690837">useful link</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>LeetCode[196] Delete Duplicate Emails</title>
+            <link>https://www.marshalgao.com/leetcode196-delete-duplicate-emails/</link>
+            <pubDate>Tue, 12 Jan 2021 14:36:11 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/leetcode196-delete-duplicate-emails/</guid>
+            <description>Question Write a SQL query to delete all duplicate email entries in a table named Person, keeping only unique emails based on its smallest Id.
++----+------------------+ | Id | Email | +----+------------------+ | 1 | john@example.com | | 2 | bob@example.com | | 3 | john@example.com | +----+------------------+ Id is the primary key column for this table.  For example, after running your query, the above Person table should have the following rows:</description>
+            <content type="html"><![CDATA[<h2 id="question">Question</h2>
+<p>Write a SQL query to delete all duplicate email entries in a table named Person, keeping only unique emails based on its smallest Id.</p>
+<pre><code>+----+------------------+
+| Id | Email            |
++----+------------------+
+| 1  | john@example.com |
+| 2  | bob@example.com  |
+| 3  | john@example.com |
++----+------------------+
+Id is the primary key column for this table.
+</code></pre>
+<p>For example, after running your query, the above Person table should have the following rows:</p>
+<pre><code>+----+------------------+
+| Id | Email            |
++----+------------------+
+| 1  | john@example.com |
+| 2  | bob@example.com  |
++----+------------------+
+</code></pre>
+<p><strong>Note</strong>:</p>
+<p>Your output is the whole Person table after executing your sql. Use delete statement.</p>
+<h2 id="sql-schema">SQL Schema</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">Truncate</span> <span style="color:#66d9ef">table</span> Person
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Person (Id, Email) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;1&#39;</span>, <span style="color:#e6db74">&#39;john@example.com&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Person (Id, Email) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;2&#39;</span>, <span style="color:#e6db74">&#39;bob@example.com&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Person (Id, Email) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;3&#39;</span>, <span style="color:#e6db74">&#39;john@example.com&#39;</span>)
+</code></pre></div><h2 id="my-interesting-code">My Interesting Code</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">delete</span> <span style="color:#66d9ef">from</span> Person
+<span style="color:#66d9ef">where</span> Email <span style="color:#66d9ef">in</span> (
+    <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> 
+    <span style="color:#66d9ef">from</span> (
+        <span style="color:#66d9ef">select</span> Email
+        <span style="color:#66d9ef">from</span> Person
+        <span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> Email <span style="color:#66d9ef">having</span> <span style="color:#66d9ef">count</span>(Email) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>
+    ) temp1
+) <span style="color:#66d9ef">and</span> Id <span style="color:#66d9ef">not</span> <span style="color:#66d9ef">in</span> (
+    <span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span>
+    <span style="color:#66d9ef">from</span> (
+        <span style="color:#66d9ef">select</span> <span style="color:#66d9ef">min</span>(Id)
+        <span style="color:#66d9ef">from</span> Person
+        <span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> Email <span style="color:#66d9ef">having</span> <span style="color:#66d9ef">count</span>(Email) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>
+    ) temp2
+)
+</code></pre></div><h2 id="my-perspective">My Perspective</h2>
+<p>This question is easy, but you must use &ldquo;delete&rdquo;. Firstly, you need to find all the duplicated &ldquo;Emails&rdquo; and all the minimum &ldquo;Ids&rdquo;. Then, you can use &ldquo;delete&rdquo; to finish this question.</p>
+<p>However, if you do not use &ldquo;select *&rdquo;, there will be an error, which is &ldquo;You can&rsquo;t specify target table &ldquo;Person&rdquo; for update in FROM clause. This is because sql do not allow anyone using itself quering results to update itself. So you need to make the quering result become another table, using &ldquo;select *&rdquo;.</p>
+<p>Also, there is a useful link, and I think it can help you. (chinese version)</p>
+<ul>
+<li><a href="https://www.cnblogs.com/java-zzl/p/9739750.html">useful link</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>LeetCode[185] Department Top Three Salaries</title>
+            <link>https://www.marshalgao.com/leetcode185-department-top-three-salaries/</link>
+            <pubDate>Tue, 12 Jan 2021 13:43:33 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/leetcode185-department-top-three-salaries/</guid>
+            <description>Question The Employee table holds all employees. Every employee has an Id, and there is also a column for the department Id.
++----+-------+--------+--------------+ | Id | Name | Salary | DepartmentId | +----+-------+--------+--------------+ | 1 | Joe | 85000 | 1 | | 2 | Henry | 80000 | 2 | | 3 | Sam | 60000 | 2 | | 4 | Max | 90000 | 1 | | 5 | Janet | 69000 | 1 | | 6 | Randy | 85000 | 1 | | 7 | Will | 70000 | 1 | +----+-------+--------+--------------+  The Department table holds all departments of the company.</description>
+            <content type="html"><![CDATA[<h2 id="question">Question</h2>
+<p>The Employee table holds all employees. Every employee has an Id, and there is also a column for the department Id.</p>
+<pre><code>+----+-------+--------+--------------+
+| Id | Name  | Salary | DepartmentId |
++----+-------+--------+--------------+
+| 1  | Joe   | 85000  | 1            |
+| 2  | Henry | 80000  | 2            |
+| 3  | Sam   | 60000  | 2            |
+| 4  | Max   | 90000  | 1            |
+| 5  | Janet | 69000  | 1            |
+| 6  | Randy | 85000  | 1            |
+| 7  | Will  | 70000  | 1            |
++----+-------+--------+--------------+
+</code></pre>
+<p>The Department table holds all departments of the company.</p>
+<pre><code>+----+----------+
+| Id | Name     |
++----+----------+
+| 1  | IT       |
+| 2  | Sales    |
++----+----------+
+</code></pre>
+<p>Write a SQL query to find employees who earn the top three salaries in each of the department. For the above tables, your SQL query should return the following rows (order of rows does not matter).</p>
+<pre><code>+------------+----------+--------+
+| Department | Employee | Salary |
++------------+----------+--------+
+| IT         | Max      | 90000  |
+| IT         | Randy    | 85000  |
+| IT         | Joe      | 85000  |
+| IT         | Will     | 70000  |
+| Sales      | Henry    | 80000  |
+| Sales      | Sam      | 60000  |
++------------+----------+--------+
+</code></pre>
+<p><strong>Explanation</strong>:</p>
+<p>In IT department, Max earns the highest salary, both Randy and Joe earn the second highest salary, and Will earns the third highest salary. There are only two employees in the Sales department, Henry earns the highest salary while Sam earns the second highest salary.</p>
+<h2 id="sql-schema">SQL Schema</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">Create</span> <span style="color:#66d9ef">table</span> <span style="color:#66d9ef">If</span> <span style="color:#66d9ef">Not</span> <span style="color:#66d9ef">Exists</span> Employee (Id int, Name varchar(<span style="color:#ae81ff">255</span>), Salary int, DepartmentId int)
+<span style="color:#66d9ef">Create</span> <span style="color:#66d9ef">table</span> <span style="color:#66d9ef">If</span> <span style="color:#66d9ef">Not</span> <span style="color:#66d9ef">Exists</span> Department (Id int, Name varchar(<span style="color:#ae81ff">255</span>))
+<span style="color:#66d9ef">Truncate</span> <span style="color:#66d9ef">table</span> Employee
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Employee (Id, Name, Salary, DepartmentId) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;1&#39;</span>, <span style="color:#e6db74">&#39;Joe&#39;</span>, <span style="color:#e6db74">&#39;85000&#39;</span>, <span style="color:#e6db74">&#39;1&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Employee (Id, Name, Salary, DepartmentId) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;2&#39;</span>, <span style="color:#e6db74">&#39;Henry&#39;</span>, <span style="color:#e6db74">&#39;80000&#39;</span>, <span style="color:#e6db74">&#39;2&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Employee (Id, Name, Salary, DepartmentId) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;3&#39;</span>, <span style="color:#e6db74">&#39;Sam&#39;</span>, <span style="color:#e6db74">&#39;60000&#39;</span>, <span style="color:#e6db74">&#39;2&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Employee (Id, Name, Salary, DepartmentId) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;4&#39;</span>, <span style="color:#e6db74">&#39;Max&#39;</span>, <span style="color:#e6db74">&#39;90000&#39;</span>, <span style="color:#e6db74">&#39;1&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Employee (Id, Name, Salary, DepartmentId) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;5&#39;</span>, <span style="color:#e6db74">&#39;Janet&#39;</span>, <span style="color:#e6db74">&#39;69000&#39;</span>, <span style="color:#e6db74">&#39;1&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Employee (Id, Name, Salary, DepartmentId) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;6&#39;</span>, <span style="color:#e6db74">&#39;Randy&#39;</span>, <span style="color:#e6db74">&#39;85000&#39;</span>, <span style="color:#e6db74">&#39;1&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Employee (Id, Name, Salary, DepartmentId) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;7&#39;</span>, <span style="color:#e6db74">&#39;Will&#39;</span>, <span style="color:#e6db74">&#39;70000&#39;</span>, <span style="color:#e6db74">&#39;1&#39;</span>)
+<span style="color:#66d9ef">Truncate</span> <span style="color:#66d9ef">table</span> Department
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Department (Id, Name) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;1&#39;</span>, <span style="color:#e6db74">&#39;IT&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Department (Id, Name) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;2&#39;</span>, <span style="color:#e6db74">&#39;Sales&#39;</span>)
+</code></pre></div><h2 id="my-interesting-code">My Interesting Code</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> temp2.Department, temp2.Employee, temp2.Salary
+<span style="color:#66d9ef">from</span> (
+    <span style="color:#66d9ef">select</span> dense_rank() over(partition <span style="color:#66d9ef">by</span> DepartmentId <span style="color:#66d9ef">order</span> <span style="color:#66d9ef">by</span> Salary <span style="color:#66d9ef">desc</span>) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Rank&#39;</span>,
+        temp1.Department,
+        temp1.Employee,
+        temp1.Salary
+    <span style="color:#66d9ef">from</span> (
+        <span style="color:#66d9ef">select</span> Employee.Name <span style="color:#66d9ef">as</span> Employee, Salary, DepartmentId, Department.Name <span style="color:#66d9ef">as</span> Department
+        <span style="color:#66d9ef">from</span> Employee
+        <span style="color:#66d9ef">inner</span> <span style="color:#66d9ef">join</span> Department <span style="color:#66d9ef">on</span> Employee.DepartmentId <span style="color:#f92672">=</span> Department.Id
+    ) temp1
+)temp2
+<span style="color:#66d9ef">where</span> temp2.Rank <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">3</span>
+</code></pre></div><h2 id="my-perspective">My Perspective</h2>
+<p>This question is similar to the #184. Firstly, you can combine the two tables, making the all the data covered in one table. Then, you can use &ldquo;dense_rank()&rdquo; to rank the salary. More importantly, you should use &ldquo;partition by&rdquo; rather than &ldquo;group by&rdquo;, which have differences. And if you want to use &ldquo;Rank&rdquo; as the column name, you need to add &lsquo;&rsquo;.</p>
+<p>I am confused that the second &ldquo;select&rdquo; cannot use &ldquo;*&rdquo;, so I can just type all the column names. It is a little bit foolish. Finally, select the top 3 salaries' people of each department.</p>
+<p>Also, there are two useful links, and I think they can help you. (chinese version)</p>
+<ul>
+<li><a href="https://blog.csdn.net/zsjwenrou/article/details/97130170">useful link 1</a></li>
+<li><a href="https://www.cnblogs.com/lizongyan/p/13820701.html">useful link 2</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>LeetCode[184] Department Highest Salary</title>
+            <link>https://www.marshalgao.com/leetcode184-department-highest-salary/</link>
+            <pubDate>Tue, 12 Jan 2021 11:37:06 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/leetcode184-department-highest-salary/</guid>
+            <description>Question The Employee table holds all employees. Every employee has an Id, a salary, and there is also a column for the department Id.
++----+-------+--------+--------------+ | Id | Name | Salary | DepartmentId | +----+-------+--------+--------------+ | 1 | Joe | 70000 | 1 | | 2 | Jim | 90000 | 1 | | 3 | Henry | 80000 | 2 | | 4 | Sam | 60000 | 2 | | 5 | Max | 90000 | 1 | +----+-------+--------+--------------+  The Department table holds all departments of the company.</description>
+            <content type="html"><![CDATA[<h2 id="question">Question</h2>
+<p>The Employee table holds all employees. Every employee has an Id, a salary, and there is also a column for the department Id.</p>
+<pre><code>+----+-------+--------+--------------+
+| Id | Name  | Salary | DepartmentId |
++----+-------+--------+--------------+
+| 1  | Joe   | 70000  | 1            |
+| 2  | Jim   | 90000  | 1            |
+| 3  | Henry | 80000  | 2            |
+| 4  | Sam   | 60000  | 2            |
+| 5  | Max   | 90000  | 1            |
++----+-------+--------+--------------+
+</code></pre>
+<p>The Department table holds all departments of the company.</p>
+<pre><code>+----+----------+
+| Id | Name     |
++----+----------+
+| 1  | IT       |
+| 2  | Sales    |
++----+----------+
+</code></pre>
+<p>Write a SQL query to find employees who have the highest salary in each of the departments. For the above tables, your SQL query should return the following rows (order of rows does not matter).</p>
+<pre><code>+------------+----------+--------+
+| Department | Employee | Salary |
++------------+----------+--------+
+| IT         | Max      | 90000  |
+| IT         | Jim      | 90000  |
+| Sales      | Henry    | 80000  |
++------------+----------+--------+
+</code></pre>
+<p><strong>Explanation</strong>:</p>
+<p>Max and Jim both have the highest salary in the IT department and Henry has the highest salary in the Sales department.</p>
+<h2 id="sql-schema">SQL Schema</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">Create</span> <span style="color:#66d9ef">table</span> <span style="color:#66d9ef">If</span> <span style="color:#66d9ef">Not</span> <span style="color:#66d9ef">Exists</span> Employee (Id int, Name varchar(<span style="color:#ae81ff">255</span>), Salary int, DepartmentId int)
+<span style="color:#66d9ef">Create</span> <span style="color:#66d9ef">table</span> <span style="color:#66d9ef">If</span> <span style="color:#66d9ef">Not</span> <span style="color:#66d9ef">Exists</span> Department (Id int, Name varchar(<span style="color:#ae81ff">255</span>))
+<span style="color:#66d9ef">Truncate</span> <span style="color:#66d9ef">table</span> Employee
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Employee (Id, Name, Salary, DepartmentId) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;1&#39;</span>, <span style="color:#e6db74">&#39;Joe&#39;</span>, <span style="color:#e6db74">&#39;70000&#39;</span>, <span style="color:#e6db74">&#39;1&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Employee (Id, Name, Salary, DepartmentId) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;2&#39;</span>, <span style="color:#e6db74">&#39;Jim&#39;</span>, <span style="color:#e6db74">&#39;90000&#39;</span>, <span style="color:#e6db74">&#39;1&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Employee (Id, Name, Salary, DepartmentId) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;3&#39;</span>, <span style="color:#e6db74">&#39;Henry&#39;</span>, <span style="color:#e6db74">&#39;80000&#39;</span>, <span style="color:#e6db74">&#39;2&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Employee (Id, Name, Salary, DepartmentId) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;4&#39;</span>, <span style="color:#e6db74">&#39;Sam&#39;</span>, <span style="color:#e6db74">&#39;60000&#39;</span>, <span style="color:#e6db74">&#39;2&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Employee (Id, Name, Salary, DepartmentId) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;5&#39;</span>, <span style="color:#e6db74">&#39;Max&#39;</span>, <span style="color:#e6db74">&#39;90000&#39;</span>, <span style="color:#e6db74">&#39;1&#39;</span>)
+<span style="color:#66d9ef">Truncate</span> <span style="color:#66d9ef">table</span> Department
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Department (Id, Name) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;1&#39;</span>, <span style="color:#e6db74">&#39;IT&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Department (Id, Name) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;2&#39;</span>, <span style="color:#e6db74">&#39;Sales&#39;</span>)
+</code></pre></div><h2 id="my-interesting-code">My Interesting Code</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> temp1.Department, temp1.Employee, temp1.Salary
+<span style="color:#66d9ef">from</span> (
+    <span style="color:#66d9ef">select</span> Employee.Name <span style="color:#66d9ef">as</span> Employee, Employee.Salary, Employee.DepartmentId, Department.Name <span style="color:#66d9ef">as</span> Department
+    <span style="color:#66d9ef">from</span> Employee
+    <span style="color:#66d9ef">inner</span> <span style="color:#66d9ef">join</span> Department <span style="color:#66d9ef">on</span> Employee.DepartmentId <span style="color:#f92672">=</span> Department.Id
+) temp1,
+    (<span style="color:#66d9ef">select</span> <span style="color:#66d9ef">max</span>(Salary) <span style="color:#66d9ef">as</span> Salary, DepartmentId
+    <span style="color:#66d9ef">from</span> Employee
+    <span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> DepartmentId) temp2
+<span style="color:#66d9ef">where</span> temp1.DepartmentId <span style="color:#f92672">=</span> temp2.DepartmentId <span style="color:#66d9ef">and</span> temp1.Salary <span style="color:#f92672">=</span> temp2.Salary
+</code></pre></div><h2 id="my-perspective">My Perspective</h2>
+<p>This question is a little bit complex, but I think there would be other better solutions. Firstly, you can find all the highest salary of different departments. Then, you can just use this table - &ldquo;temp2&rdquo;- to find relevant people. Because different people meay have the same salary, you need to do the second step, finding all the relevant people.</p>
+<p>However, when I submitted for the first time, I failed. Becasue according to the question, if an employee does not belong to any department, the result would be null, even if the employee&rsquo;s salary is extremely high. Therefore, the &ldquo;join&rdquo; should use &ldquo;inner join&rdquo; rather than &ldquo;left join&rdquo;. &ldquo;Inner join&rdquo; would only return the compared successfully ones, others would be set null.</p>
+<p>Also, there is a useful link, and I think it can help you. (chinese version)</p>
+<ul>
+<li><a href="https://www.cnblogs.com/wgphp/p/8183812.html">useful link</a></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>LeetCode[183] Customers Who Never Order</title>

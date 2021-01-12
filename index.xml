@@ -7,7 +7,48 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 11 Jan 2021 20:16:24 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Jan 2021 15:21:40 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode[197] Rising Temperature</title>
+      <link>https://www.marshalgao.com/leetcode197-rising-temperature/</link>
+      <pubDate>Tue, 12 Jan 2021 15:21:40 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode197-rising-temperature/</guid>
+      <description>Question Table: Weather
++---------------+---------+ | Column Name | Type | +---------------+---------+ | id | int | | recordDate | date | | temperature | int | +---------------+---------+ id is the primary key for this table. This table contains information about the temperature in a certain day.  Write an SQL query to find all dates&#39; id with higher temperature compared to its previous dates (yesterday).
+Return the result table in any order.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[196] Delete Duplicate Emails</title>
+      <link>https://www.marshalgao.com/leetcode196-delete-duplicate-emails/</link>
+      <pubDate>Tue, 12 Jan 2021 14:36:11 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode196-delete-duplicate-emails/</guid>
+      <description>Question Write a SQL query to delete all duplicate email entries in a table named Person, keeping only unique emails based on its smallest Id.
++----+------------------+ | Id | Email | +----+------------------+ | 1 | john@example.com | | 2 | bob@example.com | | 3 | john@example.com | +----+------------------+ Id is the primary key column for this table.  For example, after running your query, the above Person table should have the following rows:</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[185] Department Top Three Salaries</title>
+      <link>https://www.marshalgao.com/leetcode185-department-top-three-salaries/</link>
+      <pubDate>Tue, 12 Jan 2021 13:43:33 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode185-department-top-three-salaries/</guid>
+      <description>Question The Employee table holds all employees. Every employee has an Id, and there is also a column for the department Id.
++----+-------+--------+--------------+ | Id | Name | Salary | DepartmentId | +----+-------+--------+--------------+ | 1 | Joe | 85000 | 1 | | 2 | Henry | 80000 | 2 | | 3 | Sam | 60000 | 2 | | 4 | Max | 90000 | 1 | | 5 | Janet | 69000 | 1 | | 6 | Randy | 85000 | 1 | | 7 | Will | 70000 | 1 | +----+-------+--------+--------------+  The Department table holds all departments of the company.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[184] Department Highest Salary</title>
+      <link>https://www.marshalgao.com/leetcode184-department-highest-salary/</link>
+      <pubDate>Tue, 12 Jan 2021 11:37:06 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode184-department-highest-salary/</guid>
+      <description>Question The Employee table holds all employees. Every employee has an Id, a salary, and there is also a column for the department Id.
++----+-------+--------+--------------+ | Id | Name | Salary | DepartmentId | +----+-------+--------+--------------+ | 1 | Joe | 70000 | 1 | | 2 | Jim | 90000 | 1 | | 3 | Henry | 80000 | 2 | | 4 | Sam | 60000 | 2 | | 5 | Max | 90000 | 1 | +----+-------+--------+--------------+  The Department table holds all departments of the company.</description>
+    </item>
+    
     <item>
       <title>LeetCode[183] Customers Who Never Order</title>
       <link>https://www.marshalgao.com/leetcode183-customers-who-never-order/</link>
@@ -110,50 +151,6 @@ VCG
       <guid>https://www.marshalgao.com/leetcode181-employees-earning-more-than-their-managers/</guid>
       <description>Question The Employee table holds all employees including their managers. Every employee has an Id, and there is also a column for the manager Id.
 +----+-------+--------+-----------+ | Id | Name | Salary | ManagerId | +----+-------+--------+-----------+ | 1 | Joe | 70000 | 3 | | 2 | Henry | 80000 | 4 | | 3 | Sam | 60000 | NULL | | 4 | Max | 90000 | NULL | +----+-------+--------+-----------+  Given the Employee table, write a SQL query that finds out employees who earn more than their managers.</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[180] Consecutive Numbers</title>
-      <link>https://www.marshalgao.com/leetcode180-consecutive-numbers/</link>
-      <pubDate>Mon, 11 Jan 2021 11:20:40 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode180-consecutive-numbers/</guid>
-      <description>Question Table: Logs
-+-------------+---------+ | Column Name | Type | +-------------+---------+ | id | int | | num | varchar | +-------------+---------+ id is the primary key for this table.  Write an SQL query to find all numbers that appear at least three times consecutively.
-Return the result table in any order.
-The query result format is in the following example:
-Logs table: +----+-----+ | Id | Num | +----+-----+ | 1 | 1 | | 2 | 1 | | 3 | 1 | | 4 | 2 | | 5 | 1 | | 6 | 2 | | 7 | 2 | +----+-----+ Result table: +-----------------+ | ConsecutiveNums | +-----------------+ | 1 | +-----------------+ 1 is the only number that appears consecutively for at least three times.</description>
-    </item>
-    
-    <item>
-      <title>Content Products</title>
-      <link>https://www.marshalgao.com/content-products/</link>
-      <pubDate>Sat, 09 Jan 2021 22:33:41 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/content-products/</guid>
-      <description>内容型产品
- 定义  通过内容聚集用户，形成流量平台 用户主要是进行内容消费，消磨时间   举例  新闻资讯类：网易新闻、今日头条、微信公众号 社交类：微博、知乎、豆瓣 内容电商类：什么值得买、小红书 影音娱乐类：腾讯视频、QQ音乐   内容的生产方式  分发型（PGC）  产品模式  以媒体资讯类为主，例如：今日头条 平台签约创作者，吸引内容消费者，实现流量平台搭建 头部MCN会优先推荐 流量积累速度快，起步快 关系沉淀弱，创作者对观众的单向关系，观众难以转化为创作者 除了解决内容增长之外，还需要增加用户、内容以及用户之间的互动（社交属性）-&amp;gt; 提升用户粘性   业务划分（以新闻资讯类为例）  推荐分发  通过订阅、个性化推荐将内容分发给用户   跟帖互动  社交属性，增强用户粘性   内容后台  自媒体管理，审核与质量评级，建立内容库的基础   用户增长  拉新和留存   商业变现  广告、知识付费     变现模式  创作者变现  平台补贴刺激生产内容 知识付费收入分成 流量主收入 沉淀粉丝其他渠道变现   平台变现  广告变现  例如：今日头条、网易新闻   内容IP-知识付费  订阅付费：先付费再消费，例如：得到 打赏付费：先消费再付费，例如：微信公众号   购买会员  满足用户跳过广告的需求，例如：腾讯视频          社区型（UGC）  产品模式  通过内容聚集相同兴趣或调性的用户，以引导用户创作内容为主导，通过内容发现人，强调关系链的搭建与互动，以及社区内容的调性维护，例如：抖音，小红书 社区中，用户群体关系通常呈现为金字塔结构  大V和KOL 腰部中小V 尝鲜小白和社区普通用户    UGC产品起步如果采取单纯UGC的模式会产生大量的“内容噪音”，因此一般来说会先从头部KOL开始产生内容进行输出（个人理解是PGC的方式），后期发展需要打造社区氛围 UGC与PGC相比，天花板更高，迁移成本提高，用户留存高（因为社区的形成）   业务划分  发布工具  降低内容创作门槛，提高创作趣味性   KOL扶植  提升KOL的on boarding体验   互动关系  打造关系链，创建社区   内容分发  通过内容聚集相同属性的用户   用户增长  新增和留存   商业变现  广告、电商      变现模式  创作者变现  平台补贴刺激生产内容 沉淀粉丝其他渠道转化变现 带货收入分成   平台变现  电商  自建电商，例如：小红书 导流电商，例如：抖音   广告变现  与PGC的广告模式类似，例如：知乎的信息流广告            快速设计内容发现</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[178] Rank Scores</title>
-      <link>https://www.marshalgao.com/leetcode178-rank-scores/</link>
-      <pubDate>Sat, 09 Jan 2021 16:18:31 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode178-rank-scores/</guid>
-      <description>Question Write a SQL query to rank scores. If there is a tie between two scores, both should have the same ranking. Note that after a tie, the next ranking number should be the next consecutive integer value. In other words, there should be no &amp;ldquo;holes&amp;rdquo; between ranks.
-+----+-------+ | Id | Score | +----+-------+ | 1 | 3.50 | | 2 | 3.65 | | 3 | 4.00 | | 4 | 3.</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[177] Nth Highest Salary</title>
-      <link>https://www.marshalgao.com/leetcode177-nth-highest-salary/</link>
-      <pubDate>Sat, 09 Jan 2021 16:06:13 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode177-nth-highest-salary/</guid>
-      <description>Question Write a SQL query to get the nth highest salary from the Employee table.
-+----+--------+ | Id | Salary | +----+--------+ | 1 | 100 | | 2 | 200 | | 3 | 300 | +----+--------+  For example, given the above Employee table, the nth highest salary where n = 2 is 200. If there is no nth highest salary, then the query should return null.
-+------------------------+ | getNthHighestSalary(2) | +------------------------+ | 200 | +------------------------+  My Interesting Code CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT BEGIN set N = N - 1; RETURN ( select distinct Salary as getNthHighestSalary from Employee order by Salary desc limit N, 1 ); END My Perspective For this question, firstly, you can order the salary.</description>
     </item>
     
   </channel>
