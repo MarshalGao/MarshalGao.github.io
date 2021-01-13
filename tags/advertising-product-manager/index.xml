@@ -7,7 +7,39 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 12 Jan 2021 15:21:40 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/advertising-product-manager/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Jan 2021 15:10:29 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/advertising-product-manager/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode[596] Classes More Than 5 Students</title>
+      <link>https://www.marshalgao.com/leetcode596-classes-more-than-5-students/</link>
+      <pubDate>Wed, 13 Jan 2021 15:10:29 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode596-classes-more-than-5-students/</guid>
+      <description>Question There is a table courses with columns: student and class
+Please list out all classes which have more than or equal to 5 students.
+For example, the table:
++---------+------------+ | student | class | +---------+------------+ | A | Math | | B | English | | C | Math | | D | Biology | | E | Math | | F | Computer | | G | Math | | H | Math | | I | Math | +---------+------------+  Should output:</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[595] Big Countries</title>
+      <link>https://www.marshalgao.com/leetcode595-big-countries/</link>
+      <pubDate>Wed, 13 Jan 2021 15:03:55 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode595-big-countries/</guid>
+      <description>Question There is a table World.
++-----------------+------------+------------+--------------+---------------+ | name | continent | area | population | gdp | +-----------------+------------+------------+--------------+---------------+ | Afghanistan | Asia | 652230 | 25500100 | 20343000 | | Albania | Europe | 28748 | 2831741 | 12960000 | | Algeria | Africa | 2381741 | 37100000 | 188681000 | | Andorra | Europe | 468 | 78115 | 3712000 | | Angola | Africa | 1246700 | 20609294 | 100990000 | +-----------------+------------+------------+--------------+---------------+  A country is big if it has an area of bigger than 3 million square km or a population of more than 25 million.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[262] Trips and Users</title>
+      <link>https://www.marshalgao.com/leetcode262-trips-and-users/</link>
+      <pubDate>Wed, 13 Jan 2021 14:46:36 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode262-trips-and-users/</guid>
+      <description>Question The Trips table holds all taxi trips. Each trip has a unique Id, while Client_Id and Driver_Id are both foreign keys to the Users_Id at the Users table. Status is an ENUM type of (‘completed’, ‘cancelled_by_driver’, ‘cancelled_by_client’).
++----+-----------+-----------+---------+--------------------+----------+ | Id | Client_Id | Driver_Id | City_Id | Status |Request_at| +----+-----------+-----------+---------+--------------------+----------+ | 1 | 1 | 10 | 1 | completed |2013-10-01| | 2 | 2 | 11 | 1 | cancelled_by_driver|2013-10-01| | 3 | 3 | 12 | 6 | completed |2013-10-01| | 4 | 4 | 13 | 6 | cancelled_by_client|2013-10-01| | 5 | 1 | 10 | 1 | completed |2013-10-02| | 6 | 2 | 11 | 6 | completed |2013-10-02| | 7 | 3 | 12 | 6 | completed |2013-10-02| | 8 | 2 | 12 | 12 | completed |2013-10-03| | 9 | 3 | 10 | 12 | completed |2013-10-03| | 10 | 4 | 13 | 12 | cancelled_by_driver|2013-10-03| +----+-----------+-----------+---------+--------------------+----------+  The Users table holds all users.</description>
+    </item>
+    
     <item>
       <title>LeetCode[197] Rising Temperature</title>
       <link>https://www.marshalgao.com/leetcode197-rising-temperature/</link>
@@ -104,53 +136,6 @@ SQL Schema Create table If Not Exists Person (Id int, Email varchar(255)) Trunca
   结伴效应
   定义：个人活动由于有他人参加导致效率变化。有两个表现：由于有他人增加会导致效率提高，或者是由于有他人增加导致效率下降。
   产品中的应用：组队、拼团等玩法就是利用了这个效应。拼团在一定程度上对用户有一定激励：因为可以和好朋友一起参与活动；而拼团本身也是一种限制：因为如果拼团成功，一个人的撤销、暂停等行为势必会对另一个人造成影响，用户的犯错成本变高。在设计产品的过程中可以根据活动的玩法让用户适当结伴，增加用户的参与积极性或者是提高用户犯错成本。</description>
-    </item>
-    
-    <item>
-      <title>Principles of Advertising Algorithms</title>
-      <link>https://www.marshalgao.com/principles-of-advertising-algorithms/</link>
-      <pubDate>Mon, 11 Jan 2021 15:00:18 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/principles-of-advertising-algorithms/</guid>
-      <description>本文将以Google和Fackbook的竞价系统为主线，阐述其内在的算法原理。
-竞价系统
- GSP（Generalized Second Price  Google采用的竞价方式  GSP &amp;amp; VCG（Vickrey-Clarke-Groves）  Facebook采用的竞价方式   GSP
-简而言之就是按照下一位出价来进行实际扣费，为了鼓励广告主提高素材、广告点击率。
-\[cost=next price\times\frac{next\ quality}{current\ quality}+0.01\]
-举例说明：
-   广告位 平均每小时点击量 广告主 出价（CPC）     1 200 A 10   2 100 B 4   null null C 2    按照上表，此时A的出价为4.01，B的出价为2.01，C竞价失败。
-变化一：
-如果A出价$7（少于A认为这个广告本身的价值），B出价$8（多于B认为这个广告的价值），则B就会以$7.01拍得第一个广告位，但是这比预想多了$3.01。
-变化二：
-如果A出价$3.5，B出价$3，那么A就会以$3.01拍得第一个广告位。但如果B出价$3.6，B会以$3.51拍得第一个广告位，并且节省了$0.49。
-有这样一个场景，A的真实出价是$10，B出不起那么高的价格，那么B会认为既然得不到那就同归于尽，于是出价$9.99，这样A没有得到一点便宜。这种恶意竞价对双方都不友好。
-为了解决上述问题，Google在系统里引入了质量得分的因素，质量得分的关键是CTR（ClickThrough Rate）。显然，在竞价排名时，不仅要考虑价格，还要考虑综合竞价、点击率、广告相关性、广告账户历史等等。
-GSP是一种稳定的竞价方式，可操作性很强，现阶段很多互联网广告平台都采用这种竞价方式。但GSP的不足之处在于，竞价的结果不一定是全局最优化的，于是VCG竞价算法出现了。
-VCG
-基本原理就是广告主为参加拍卖过程中给别的广告主带来的损失之和来买单定价。
-举例说明：
-   广告位 平均每小时点击量 广告主 出价（CPC）     1 200 A 10   2 100 B 4   null null C 2    A不参加竞价，B和C的总费用为\(4\times200+2\times100=1000\)。</description>
-    </item>
-    
-    <item>
-      <title>Entertainment Industry Development</title>
-      <link>https://www.marshalgao.com/entertainment-industry-development/</link>
-      <pubDate>Mon, 11 Jan 2021 13:50:25 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/entertainment-industry-development/</guid>
-      <description>文娱行业发展概况
- 受疫情和移动互联网的影响，文娱行业现为线上、线下结合的模式 文娱行业前景可观，主要集中在内容上  发展因素及趋势概况
- 利好政策的扶持 中国文娱行业进入资本寒冬  从数据上看，总投资金额在减少，投资项目数量也在减少   平均单笔融资金额快速上升  从数据上看，虽然总投资金额在减少，但是单笔投资金额在逐年上升 对于大IP等头部内容，备受青睐   战略投资和并购占比高  意味着更多的投资公司不愿意再冒风险去投资小IP  但对于互联网企业除外  资金足够多 为了自家整体生态布局     战略投资和并购的提高，意味着头部项目更吃香  容易造成文娱领域的马太效应     从全国城市文娱行业的融资数据来看，北京成为文娱行业投融资的主战场 媒体、游戏成为投资热门  从数据看，两者占比最大   CVC机构活跃  CVC  CVC是一种创新的投资组织形式，指的是企业通过其设立专业的投资机构，或战略投资部门对外进行直接投资，起源于20世纪60年代的美国   2019年投资项目数量TOP10中，有7家CVC  基本都是互联网企业     文娱类独角兽估值高  虽然数量少，但是足够吸金 诸如笑果文化等新文娱企业的崛起   大量的融资并购  融资大多涵盖互联网企业 并购方基本为传统文娱企业    原文链接</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[181] Employees Earning More Than Their Managers</title>
-      <link>https://www.marshalgao.com/leetcode181-employees-earning-more-than-their-managers/</link>
-      <pubDate>Mon, 11 Jan 2021 12:14:21 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode181-employees-earning-more-than-their-managers/</guid>
-      <description>Question The Employee table holds all employees including their managers. Every employee has an Id, and there is also a column for the manager Id.
-+----+-------+--------+-----------+ | Id | Name | Salary | ManagerId | +----+-------+--------+-----------+ | 1 | Joe | 70000 | 3 | | 2 | Henry | 80000 | 4 | | 3 | Sam | 60000 | NULL | | 4 | Max | 90000 | NULL | +----+-------+--------+-----------+  Given the Employee table, write a SQL query that finds out employees who earn more than their managers.</description>
     </item>
     
   </channel>

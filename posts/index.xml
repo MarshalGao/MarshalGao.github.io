@@ -6,8 +6,207 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Wed, 13 Jan 2021 09:30:37 +0800</lastBuildDate>
+        <lastBuildDate>Wed, 13 Jan 2021 15:10:29 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>LeetCode[596] Classes More Than 5 Students</title>
+            <link>https://www.marshalgao.com/leetcode596-classes-more-than-5-students/</link>
+            <pubDate>Wed, 13 Jan 2021 15:10:29 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/leetcode596-classes-more-than-5-students/</guid>
+            <description>Question There is a table courses with columns: student and class
+Please list out all classes which have more than or equal to 5 students.
+For example, the table:
++---------+------------+ | student | class | +---------+------------+ | A | Math | | B | English | | C | Math | | D | Biology | | E | Math | | F | Computer | | G | Math | | H | Math | | I | Math | +---------+------------+  Should output:</description>
+            <content type="html"><![CDATA[<h2 id="question">Question</h2>
+<p>There is a table courses with columns: <strong>student</strong> and <strong>class</strong></p>
+<p>Please list out all classes which have more than or equal to 5 students.</p>
+<p>For example, the table:</p>
+<pre><code>+---------+------------+
+| student | class      |
++---------+------------+
+| A       | Math       |
+| B       | English    |
+| C       | Math       |
+| D       | Biology    |
+| E       | Math       |
+| F       | Computer   |
+| G       | Math       |
+| H       | Math       |
+| I       | Math       |
++---------+------------+
+</code></pre>
+<p>Should output:</p>
+<pre><code>+---------+
+| class   |
++---------+
+| Math    |
++---------+
+</code></pre>
+<p><strong>Note</strong>:</p>
+<p>The students should not be counted duplicate in each course.</p>
+<h2 id="sql-schema">SQL Schema</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">Create</span> <span style="color:#66d9ef">table</span> <span style="color:#66d9ef">If</span> <span style="color:#66d9ef">Not</span> <span style="color:#66d9ef">Exists</span> courses (student varchar(<span style="color:#ae81ff">255</span>), <span style="color:#66d9ef">class</span> varchar(<span style="color:#ae81ff">255</span>))
+<span style="color:#66d9ef">Truncate</span> <span style="color:#66d9ef">table</span> courses
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> courses (student, <span style="color:#66d9ef">class</span>) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;A&#39;</span>, <span style="color:#e6db74">&#39;Math&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> courses (student, <span style="color:#66d9ef">class</span>) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;B&#39;</span>, <span style="color:#e6db74">&#39;English&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> courses (student, <span style="color:#66d9ef">class</span>) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;C&#39;</span>, <span style="color:#e6db74">&#39;Math&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> courses (student, <span style="color:#66d9ef">class</span>) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;D&#39;</span>, <span style="color:#e6db74">&#39;Biology&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> courses (student, <span style="color:#66d9ef">class</span>) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;E&#39;</span>, <span style="color:#e6db74">&#39;Math&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> courses (student, <span style="color:#66d9ef">class</span>) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;F&#39;</span>, <span style="color:#e6db74">&#39;Computer&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> courses (student, <span style="color:#66d9ef">class</span>) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;G&#39;</span>, <span style="color:#e6db74">&#39;Math&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> courses (student, <span style="color:#66d9ef">class</span>) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;H&#39;</span>, <span style="color:#e6db74">&#39;Math&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> courses (student, <span style="color:#66d9ef">class</span>) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;I&#39;</span>, <span style="color:#e6db74">&#39;Math&#39;</span>)
+</code></pre></div><h2 id="my-interesting-code">My Interesting Code</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> <span style="color:#66d9ef">class</span>
+<span style="color:#66d9ef">from</span> courses
+<span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> <span style="color:#66d9ef">class</span> <span style="color:#66d9ef">having</span> <span style="color:#66d9ef">count</span>(<span style="color:#66d9ef">distinct</span> student) <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">5</span>
+</code></pre></div><h2 id="my-perspective">My Perspective</h2>
+<p>This question is very simple. However, you should consider the redundant students in the same class, using &ldquo;distinct&rdquo;</p>
+<p>Also, there is a useful link, and I think it can help you. (chinese version)</p>
+<ul>
+<li><a href="https://www.w3school.com.cn/sql/sql_func_count.asp">useful link</a></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>LeetCode[595] Big Countries</title>
+            <link>https://www.marshalgao.com/leetcode595-big-countries/</link>
+            <pubDate>Wed, 13 Jan 2021 15:03:55 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/leetcode595-big-countries/</guid>
+            <description>Question There is a table World.
++-----------------+------------+------------+--------------+---------------+ | name | continent | area | population | gdp | +-----------------+------------+------------+--------------+---------------+ | Afghanistan | Asia | 652230 | 25500100 | 20343000 | | Albania | Europe | 28748 | 2831741 | 12960000 | | Algeria | Africa | 2381741 | 37100000 | 188681000 | | Andorra | Europe | 468 | 78115 | 3712000 | | Angola | Africa | 1246700 | 20609294 | 100990000 | +-----------------+------------+------------+--------------+---------------+  A country is big if it has an area of bigger than 3 million square km or a population of more than 25 million.</description>
+            <content type="html"><![CDATA[<h2 id="question">Question</h2>
+<p>There is a table World.</p>
+<pre><code>+-----------------+------------+------------+--------------+---------------+
+| name            | continent  | area       | population   | gdp           |
++-----------------+------------+------------+--------------+---------------+
+| Afghanistan     | Asia       | 652230     | 25500100     | 20343000      |
+| Albania         | Europe     | 28748      | 2831741      | 12960000      |
+| Algeria         | Africa     | 2381741    | 37100000     | 188681000     |
+| Andorra         | Europe     | 468        | 78115        | 3712000       |
+| Angola          | Africa     | 1246700    | 20609294     | 100990000     |
++-----------------+------------+------------+--------------+---------------+
+</code></pre>
+<p>A country is big if it has an area of bigger than 3 million square km or a population of more than 25 million.</p>
+<p>Write a SQL solution to output big countries' name, population and area.</p>
+<p>For example, according to the above table, we should output:</p>
+<pre><code>+--------------+-------------+--------------+
+| name         | population  | area         |
++--------------+-------------+--------------+
+| Afghanistan  | 25500100    | 652230       |
+| Algeria      | 37100000    | 2381741      |
++--------------+-------------+--------------+
+</code></pre>
+<h2 id="sql-schema">SQL Schema</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">Create</span> <span style="color:#66d9ef">table</span> <span style="color:#66d9ef">If</span> <span style="color:#66d9ef">Not</span> <span style="color:#66d9ef">Exists</span> World (name varchar(<span style="color:#ae81ff">255</span>), continent varchar(<span style="color:#ae81ff">255</span>), area int, population int, gdp int)
+<span style="color:#66d9ef">Truncate</span> <span style="color:#66d9ef">table</span> World
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> World (name, continent, area, population, gdp) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;Afghanistan&#39;</span>, <span style="color:#e6db74">&#39;Asia&#39;</span>, <span style="color:#e6db74">&#39;652230&#39;</span>, <span style="color:#e6db74">&#39;25500100&#39;</span>, <span style="color:#e6db74">&#39;20343000000&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> World (name, continent, area, population, gdp) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;Albania&#39;</span>, <span style="color:#e6db74">&#39;Europe&#39;</span>, <span style="color:#e6db74">&#39;28748&#39;</span>, <span style="color:#e6db74">&#39;2831741&#39;</span>, <span style="color:#e6db74">&#39;12960000000&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> World (name, continent, area, population, gdp) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;Algeria&#39;</span>, <span style="color:#e6db74">&#39;Africa&#39;</span>, <span style="color:#e6db74">&#39;2381741&#39;</span>, <span style="color:#e6db74">&#39;37100000&#39;</span>, <span style="color:#e6db74">&#39;188681000000&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> World (name, continent, area, population, gdp) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;Andorra&#39;</span>, <span style="color:#e6db74">&#39;Europe&#39;</span>, <span style="color:#e6db74">&#39;468&#39;</span>, <span style="color:#e6db74">&#39;78115&#39;</span>, <span style="color:#e6db74">&#39;3712000000&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> World (name, continent, area, population, gdp) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;Angola&#39;</span>, <span style="color:#e6db74">&#39;Africa&#39;</span>, <span style="color:#e6db74">&#39;1246700&#39;</span>, <span style="color:#e6db74">&#39;20609294&#39;</span>, <span style="color:#e6db74">&#39;100990000000&#39;</span>)
+</code></pre></div><h2 id="my-interesting-code">My Interesting Code</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> name, population, area
+<span style="color:#66d9ef">from</span> World
+<span style="color:#66d9ef">where</span> area <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">3000000</span> <span style="color:#66d9ef">or</span> population <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">25000000</span>
+</code></pre></div><h2 id="my-perspective">My Perspective</h2>
+<p>This question is too simple, and using &ldquo;where&rdquo; to set relevant situations is ok.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>LeetCode[262] Trips and Users</title>
+            <link>https://www.marshalgao.com/leetcode262-trips-and-users/</link>
+            <pubDate>Wed, 13 Jan 2021 14:46:36 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/leetcode262-trips-and-users/</guid>
+            <description>Question The Trips table holds all taxi trips. Each trip has a unique Id, while Client_Id and Driver_Id are both foreign keys to the Users_Id at the Users table. Status is an ENUM type of (‘completed’, ‘cancelled_by_driver’, ‘cancelled_by_client’).
++----+-----------+-----------+---------+--------------------+----------+ | Id | Client_Id | Driver_Id | City_Id | Status |Request_at| +----+-----------+-----------+---------+--------------------+----------+ | 1 | 1 | 10 | 1 | completed |2013-10-01| | 2 | 2 | 11 | 1 | cancelled_by_driver|2013-10-01| | 3 | 3 | 12 | 6 | completed |2013-10-01| | 4 | 4 | 13 | 6 | cancelled_by_client|2013-10-01| | 5 | 1 | 10 | 1 | completed |2013-10-02| | 6 | 2 | 11 | 6 | completed |2013-10-02| | 7 | 3 | 12 | 6 | completed |2013-10-02| | 8 | 2 | 12 | 12 | completed |2013-10-03| | 9 | 3 | 10 | 12 | completed |2013-10-03| | 10 | 4 | 13 | 12 | cancelled_by_driver|2013-10-03| +----+-----------+-----------+---------+--------------------+----------+  The Users table holds all users.</description>
+            <content type="html"><![CDATA[<h2 id="question">Question</h2>
+<p>The Trips table holds all taxi trips. Each trip has a unique Id, while Client_Id and Driver_Id are both foreign keys to the Users_Id at the Users table. Status is an ENUM type of (‘completed’, ‘cancelled_by_driver’, ‘cancelled_by_client’).</p>
+<pre><code>+----+-----------+-----------+---------+--------------------+----------+
+| Id | Client_Id | Driver_Id | City_Id |        Status      |Request_at|
++----+-----------+-----------+---------+--------------------+----------+
+| 1  |     1     |    10     |    1    |     completed      |2013-10-01|
+| 2  |     2     |    11     |    1    | cancelled_by_driver|2013-10-01|
+| 3  |     3     |    12     |    6    |     completed      |2013-10-01|
+| 4  |     4     |    13     |    6    | cancelled_by_client|2013-10-01|
+| 5  |     1     |    10     |    1    |     completed      |2013-10-02|
+| 6  |     2     |    11     |    6    |     completed      |2013-10-02|
+| 7  |     3     |    12     |    6    |     completed      |2013-10-02|
+| 8  |     2     |    12     |    12   |     completed      |2013-10-03|
+| 9  |     3     |    10     |    12   |     completed      |2013-10-03| 
+| 10 |     4     |    13     |    12   | cancelled_by_driver|2013-10-03|
++----+-----------+-----------+---------+--------------------+----------+
+</code></pre>
+<p>The Users table holds all users. Each user has an unique Users_Id, and Role is an ENUM type of (‘client’, ‘driver’, ‘partner’).</p>
+<pre><code>+----------+--------+--------+
+| Users_Id | Banned |  Role  |
++----------+--------+--------+
+|    1     |   No   | client |
+|    2     |   Yes  | client |
+|    3     |   No   | client |
+|    4     |   No   | client |
+|    10    |   No   | driver |
+|    11    |   No   | driver |
+|    12    |   No   | driver |
+|    13    |   No   | driver |
++----------+--------+--------+
+</code></pre>
+<p>Write a SQL query to find the cancellation rate of requests made by unbanned users (both client and driver must be unbanned) between <strong>Oct 1, 2013</strong> and <strong>Oct 3, 2013</strong>. The cancellation rate is computed by dividing the number of canceled (by client or driver) requests made by unbanned users by the total number of requests made by unbanned users.</p>
+<p>For the above tables, your SQL query should return the following rows with the cancellation rate being rounded to two decimal places.</p>
+<pre><code>+------------+-------------------+
+|     Day    | Cancellation Rate |
++------------+-------------------+
+| 2013-10-01 |       0.33        |
+| 2013-10-02 |       0.00        |
+| 2013-10-03 |       0.50        |
++------------+-------------------+
+</code></pre>
+<h2 id="sql-schema">SQL Schema</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">Create</span> <span style="color:#66d9ef">table</span> <span style="color:#66d9ef">If</span> <span style="color:#66d9ef">Not</span> <span style="color:#66d9ef">Exists</span> Trips (Id int, Client_Id int, Driver_Id int, City_Id int, Status ENUM(<span style="color:#e6db74">&#39;completed&#39;</span>, <span style="color:#e6db74">&#39;cancelled_by_driver&#39;</span>, <span style="color:#e6db74">&#39;cancelled_by_client&#39;</span>), Request_at varchar(<span style="color:#ae81ff">50</span>))
+<span style="color:#66d9ef">Create</span> <span style="color:#66d9ef">table</span> <span style="color:#66d9ef">If</span> <span style="color:#66d9ef">Not</span> <span style="color:#66d9ef">Exists</span> Users (Users_Id int, Banned varchar(<span style="color:#ae81ff">50</span>), <span style="color:#66d9ef">Role</span> ENUM(<span style="color:#e6db74">&#39;client&#39;</span>, <span style="color:#e6db74">&#39;driver&#39;</span>, <span style="color:#e6db74">&#39;partner&#39;</span>))
+<span style="color:#66d9ef">Truncate</span> <span style="color:#66d9ef">table</span> Trips
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Trips (Id, Client_Id, Driver_Id, City_Id, Status, Request_at) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;1&#39;</span>, <span style="color:#e6db74">&#39;1&#39;</span>, <span style="color:#e6db74">&#39;10&#39;</span>, <span style="color:#e6db74">&#39;1&#39;</span>, <span style="color:#e6db74">&#39;completed&#39;</span>, <span style="color:#e6db74">&#39;2013-10-01&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Trips (Id, Client_Id, Driver_Id, City_Id, Status, Request_at) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;2&#39;</span>, <span style="color:#e6db74">&#39;2&#39;</span>, <span style="color:#e6db74">&#39;11&#39;</span>, <span style="color:#e6db74">&#39;1&#39;</span>, <span style="color:#e6db74">&#39;cancelled_by_driver&#39;</span>, <span style="color:#e6db74">&#39;2013-10-01&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Trips (Id, Client_Id, Driver_Id, City_Id, Status, Request_at) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;3&#39;</span>, <span style="color:#e6db74">&#39;3&#39;</span>, <span style="color:#e6db74">&#39;12&#39;</span>, <span style="color:#e6db74">&#39;6&#39;</span>, <span style="color:#e6db74">&#39;completed&#39;</span>, <span style="color:#e6db74">&#39;2013-10-01&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Trips (Id, Client_Id, Driver_Id, City_Id, Status, Request_at) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;4&#39;</span>, <span style="color:#e6db74">&#39;4&#39;</span>, <span style="color:#e6db74">&#39;13&#39;</span>, <span style="color:#e6db74">&#39;6&#39;</span>, <span style="color:#e6db74">&#39;cancelled_by_client&#39;</span>, <span style="color:#e6db74">&#39;2013-10-01&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Trips (Id, Client_Id, Driver_Id, City_Id, Status, Request_at) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;5&#39;</span>, <span style="color:#e6db74">&#39;1&#39;</span>, <span style="color:#e6db74">&#39;10&#39;</span>, <span style="color:#e6db74">&#39;1&#39;</span>, <span style="color:#e6db74">&#39;completed&#39;</span>, <span style="color:#e6db74">&#39;2013-10-02&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Trips (Id, Client_Id, Driver_Id, City_Id, Status, Request_at) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;6&#39;</span>, <span style="color:#e6db74">&#39;2&#39;</span>, <span style="color:#e6db74">&#39;11&#39;</span>, <span style="color:#e6db74">&#39;6&#39;</span>, <span style="color:#e6db74">&#39;completed&#39;</span>, <span style="color:#e6db74">&#39;2013-10-02&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Trips (Id, Client_Id, Driver_Id, City_Id, Status, Request_at) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;7&#39;</span>, <span style="color:#e6db74">&#39;3&#39;</span>, <span style="color:#e6db74">&#39;12&#39;</span>, <span style="color:#e6db74">&#39;6&#39;</span>, <span style="color:#e6db74">&#39;completed&#39;</span>, <span style="color:#e6db74">&#39;2013-10-02&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Trips (Id, Client_Id, Driver_Id, City_Id, Status, Request_at) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;8&#39;</span>, <span style="color:#e6db74">&#39;2&#39;</span>, <span style="color:#e6db74">&#39;12&#39;</span>, <span style="color:#e6db74">&#39;12&#39;</span>, <span style="color:#e6db74">&#39;completed&#39;</span>, <span style="color:#e6db74">&#39;2013-10-03&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Trips (Id, Client_Id, Driver_Id, City_Id, Status, Request_at) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;9&#39;</span>, <span style="color:#e6db74">&#39;3&#39;</span>, <span style="color:#e6db74">&#39;10&#39;</span>, <span style="color:#e6db74">&#39;12&#39;</span>, <span style="color:#e6db74">&#39;completed&#39;</span>, <span style="color:#e6db74">&#39;2013-10-03&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Trips (Id, Client_Id, Driver_Id, City_Id, Status, Request_at) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;10&#39;</span>, <span style="color:#e6db74">&#39;4&#39;</span>, <span style="color:#e6db74">&#39;13&#39;</span>, <span style="color:#e6db74">&#39;12&#39;</span>, <span style="color:#e6db74">&#39;cancelled_by_driver&#39;</span>, <span style="color:#e6db74">&#39;2013-10-03&#39;</span>)
+<span style="color:#66d9ef">Truncate</span> <span style="color:#66d9ef">table</span> Users
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Users (Users_Id, Banned, <span style="color:#66d9ef">Role</span>) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;1&#39;</span>, <span style="color:#e6db74">&#39;No&#39;</span>, <span style="color:#e6db74">&#39;client&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Users (Users_Id, Banned, <span style="color:#66d9ef">Role</span>) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;2&#39;</span>, <span style="color:#e6db74">&#39;Yes&#39;</span>, <span style="color:#e6db74">&#39;client&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Users (Users_Id, Banned, <span style="color:#66d9ef">Role</span>) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;3&#39;</span>, <span style="color:#e6db74">&#39;No&#39;</span>, <span style="color:#e6db74">&#39;client&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Users (Users_Id, Banned, <span style="color:#66d9ef">Role</span>) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;4&#39;</span>, <span style="color:#e6db74">&#39;No&#39;</span>, <span style="color:#e6db74">&#39;client&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Users (Users_Id, Banned, <span style="color:#66d9ef">Role</span>) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;10&#39;</span>, <span style="color:#e6db74">&#39;No&#39;</span>, <span style="color:#e6db74">&#39;driver&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Users (Users_Id, Banned, <span style="color:#66d9ef">Role</span>) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;11&#39;</span>, <span style="color:#e6db74">&#39;No&#39;</span>, <span style="color:#e6db74">&#39;driver&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Users (Users_Id, Banned, <span style="color:#66d9ef">Role</span>) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;12&#39;</span>, <span style="color:#e6db74">&#39;No&#39;</span>, <span style="color:#e6db74">&#39;driver&#39;</span>)
+<span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> Users (Users_Id, Banned, <span style="color:#66d9ef">Role</span>) <span style="color:#66d9ef">values</span> (<span style="color:#e6db74">&#39;13&#39;</span>, <span style="color:#e6db74">&#39;No&#39;</span>, <span style="color:#e6db74">&#39;driver&#39;</span>)
+</code></pre></div><h2 id="my-interesting-code">My Interesting Code</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> Request_at <span style="color:#66d9ef">as</span> <span style="color:#66d9ef">Day</span>, round(<span style="color:#66d9ef">avg</span>(<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> Status <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;completed&#39;</span> <span style="color:#66d9ef">then</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">end</span>), <span style="color:#ae81ff">2</span>) <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;Cancellation Rate&#39;</span>
+<span style="color:#66d9ef">from</span> Trips
+<span style="color:#66d9ef">where</span> Client_Id <span style="color:#66d9ef">in</span> (<span style="color:#66d9ef">select</span> Users_Id <span style="color:#66d9ef">from</span> Users <span style="color:#66d9ef">where</span> Banned <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;No&#39;</span>) 
+    <span style="color:#66d9ef">and</span> Driver_Id <span style="color:#66d9ef">in</span> (<span style="color:#66d9ef">select</span> Users_Id <span style="color:#66d9ef">from</span> Users <span style="color:#66d9ef">where</span> Banned <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;No&#39;</span>) 
+    <span style="color:#66d9ef">and</span> Request_at <span style="color:#66d9ef">between</span> <span style="color:#e6db74">&#39;2013-10-01&#39;</span> <span style="color:#66d9ef">and</span> <span style="color:#e6db74">&#39;2013-10-03&#39;</span>
+<span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> Request_at
+</code></pre></div><h2 id="my-perspective">My Perspective</h2>
+<p>This question is not too difficult but interesting. Firstly, you can find all the unbanned users' ids (Users_Id). Then, you can use &ldquo;case&rdquo; to count all the cancelled orders. More importantly, if you use &ldquo;group by&rdquo;, the result would only have one element. So you can use &ldquo;avg()&rdquo; to cover all the elements, and the result is the cancellation rate. Finally, you should use &ldquo;round()&rdquo; to cut redundant numbers.</p>
+<p>However, the question only let you find the cancellation rate between Oct 1 to Oct 3, so you need to add &ldquo;between &hellip; and &hellip;&rdquo;.</p>
+<p>Also, there are two useful links, and I think they can help you. (chinese version)</p>
+<ul>
+<li><a href="https://www.cnblogs.com/telescope11/p/9909757.html">useful link 1</a></li>
+<li><a href="https://www.w3school.com.cn/sql/sql_func_round.asp">useful link 2</a></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>ECOM7123 Building a Resilient, Healthy and Safe Community</title>

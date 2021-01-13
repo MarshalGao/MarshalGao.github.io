@@ -7,7 +7,39 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 13 Jan 2021 09:30:37 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Jan 2021 15:10:29 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode[596] Classes More Than 5 Students</title>
+      <link>https://www.marshalgao.com/leetcode596-classes-more-than-5-students/</link>
+      <pubDate>Wed, 13 Jan 2021 15:10:29 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode596-classes-more-than-5-students/</guid>
+      <description>Question There is a table courses with columns: student and class
+Please list out all classes which have more than or equal to 5 students.
+For example, the table:
++---------+------------+ | student | class | +---------+------------+ | A | Math | | B | English | | C | Math | | D | Biology | | E | Math | | F | Computer | | G | Math | | H | Math | | I | Math | +---------+------------+  Should output:</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[595] Big Countries</title>
+      <link>https://www.marshalgao.com/leetcode595-big-countries/</link>
+      <pubDate>Wed, 13 Jan 2021 15:03:55 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode595-big-countries/</guid>
+      <description>Question There is a table World.
++-----------------+------------+------------+--------------+---------------+ | name | continent | area | population | gdp | +-----------------+------------+------------+--------------+---------------+ | Afghanistan | Asia | 652230 | 25500100 | 20343000 | | Albania | Europe | 28748 | 2831741 | 12960000 | | Algeria | Africa | 2381741 | 37100000 | 188681000 | | Andorra | Europe | 468 | 78115 | 3712000 | | Angola | Africa | 1246700 | 20609294 | 100990000 | +-----------------+------------+------------+--------------+---------------+  A country is big if it has an area of bigger than 3 million square km or a population of more than 25 million.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[262] Trips and Users</title>
+      <link>https://www.marshalgao.com/leetcode262-trips-and-users/</link>
+      <pubDate>Wed, 13 Jan 2021 14:46:36 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode262-trips-and-users/</guid>
+      <description>Question The Trips table holds all taxi trips. Each trip has a unique Id, while Client_Id and Driver_Id are both foreign keys to the Users_Id at the Users table. Status is an ENUM type of (‘completed’, ‘cancelled_by_driver’, ‘cancelled_by_client’).
++----+-----------+-----------+---------+--------------------+----------+ | Id | Client_Id | Driver_Id | City_Id | Status |Request_at| +----+-----------+-----------+---------+--------------------+----------+ | 1 | 1 | 10 | 1 | completed |2013-10-01| | 2 | 2 | 11 | 1 | cancelled_by_driver|2013-10-01| | 3 | 3 | 12 | 6 | completed |2013-10-01| | 4 | 4 | 13 | 6 | cancelled_by_client|2013-10-01| | 5 | 1 | 10 | 1 | completed |2013-10-02| | 6 | 2 | 11 | 6 | completed |2013-10-02| | 7 | 3 | 12 | 6 | completed |2013-10-02| | 8 | 2 | 12 | 12 | completed |2013-10-03| | 9 | 3 | 10 | 12 | completed |2013-10-03| | 10 | 4 | 13 | 12 | cancelled_by_driver|2013-10-03| +----+-----------+-----------+---------+--------------------+----------+  The Users table holds all users.</description>
+    </item>
+    
     <item>
       <title>ECOM7123 Building a Resilient, Healthy and Safe Community</title>
       <link>https://www.marshalgao.com/ecom7123-building-a-resilient-healthy-and-safe-community/</link>
@@ -81,76 +113,6 @@ Table: Customers
 +----+---------+ | Id | Email | +----+---------+ | 1 | a@b.com | | 2 | c@d.com | | 3 | a@b.com | +----+---------+  For example, your query should return the following for the above table:
 +---------+ | Email | +---------+ | a@b.com | +---------+  Note: All emails are in lowercase.
 SQL Schema Create table If Not Exists Person (Id int, Email varchar(255)) Truncate table Person insert into Person (Id, Email) values (&amp;#39;1&amp;#39;, &amp;#39;a@b.</description>
-    </item>
-    
-    <item>
-      <title>28 Psychological Effects That Product Managers Must Understand</title>
-      <link>https://www.marshalgao.com/28-psychological-effects-that-product-managers-must-understand/</link>
-      <pubDate>Mon, 11 Jan 2021 16:47:59 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/28-psychological-effects-that-product-managers-must-understand/</guid>
-      <description>普通的产品解决问题，中等的产品服务用户，优秀的产品洞察人性。
-晕轮效应
-  定义：在生活中，我们一旦对某人的某种特征形成好或坏的印象后，在看待他的其他品质时，也会倾向于带上相似的态度。即“喜欢一个人就会喜欢他的一切”。
-  产品中的应用：这里有一个很好的例子就是小米。大家都知道小米手机的利润空间是很低的，而小米的核心策略就是通过手机聚集一批高忠诚度的“米粉”，米粉对小米的产品形成“价格厚道，质量上乘”的用户认知以后，小米再通过生态链产品及软件产品盈利，数据显示一个米粉购买小米商品（包括生态链）的件数是远远高于友商的，即做到了“薄利多销”。
-  首因效应
-  定义：也称最初效应，在总体印象形成上，最初获得的信息比后来获得的信息影响更大的现象。也就是第一印象几乎决定了别人对你的总体印象。
-  产品中的应用：这里有一个很好的例子，就是拼多多。拼多多一开始给大家的印象就是假货居多，所以即便是现在已经花了很大的力度去打假，依然有很多人因为假货拒绝使用拼多多，即便拼多多的东西真的很便宜实惠。这是因为用户已经形成了初始认知，短期内难以改变，这也是为什么京东一直宣传正品行货的理念来不断强化用户认知的原因。
-  登门槛效应
-  定义：又称得寸进尺效应，是指一个人一旦接受了他人的一个微不足道的要求，为了避免认知上的不协调，或想给他人以前后一致的印象，就有可能接受更大的要求。在一般情况下，人们都不愿接受较高较难的要求，因为它费时费力又难以成功，相反，人们却乐于接受较小的、较易完成的要求，在实现了较小的要求后，人们才慢慢地接受较大的要求。
-  产品中的应用：要设置合理的参与门槛，以方便目标用户参与，减少流失。当然也不是说参与门槛越低越好，比如一些优质的内容社区如人人都是产品经理，肯定不能谁想发文章就可以乱发，肯定是要经过审核以保证内容的优质性。所以PM要根据自己的目标人群设置合理的参与门槛，如果是普适性活动，建议最开始的参与门槛一定要足够低，甚至连登录都可以不要，采用一键获取微信OpenID等方式替代登录。
-  巴纳姆效应
-  定义：巴纳姆效应认为人们总是特别容易相信一种对于自己的笼统描述。即使这种描述十分空洞，但人们还是确信这就是自己真正的人格面貌。比如白羊座的人渴望一种稳定的社交关系，白羊座的人一听就觉得和自己很符合，但是仔细一想，谁不渴望一种稳定的社交关系呢？所以这个笼统描述是普适的。
-  产品中的应用：主要是存在于用户调研中，用户往往不知道自己的真实想法是什么，因此有经验的产品经理或者用研人员会客观地给用户一些发散性的提示，防止出现主观的引导而让用户误认为自己有这样的需求。而一些小白产品经理和用研人员经常会犯这样的错误，比如自己想做一个信息流的产品，就问用户：你是否有时候会觉得无聊，想看一些好玩有趣的事情打发时间？得到了用户肯定的回答之后，就觉得信息流产品是用户的痛点。但实际上这里的痛点是“用户有时候会觉得无聊”，信息流产品只是解决这个痛点的一个方式，但不一定是最好的方式，因为用户自己也不知道自己的需求是什么。
-  旁观者效应
-  定义：旁观者效应也叫“责任分散效应”，即他人的在场使得个体采取某种行动的可能性降低，也可以理解成“原本属于一个人的责任被主观分散到其它在场者身上了”。
-  产品中的应用：在裂变分享的时候，我们应该采取一些措施刺激和激励用户分享到个人，而不是分享到群里，因为如果不是非常亲密的群，群成员这个时候大多会出现“旁观者效应”，即大多处于观望状态，不会采取行动。
-  二八法则
-  定义：二八定律又名80/20定律、是19世纪末20世纪初意大利经济学家帕累托发现的。他认为，在任何一组东西中，最重要的只占其中一小部分，约20%，其余80%尽管是多数，却是次要的，因此又称二八定律。
-  产品中的应用：往往20%的用户会创造80%的价值，尤其是在电商领域中，基本上80%的GMV都是由20%的忠实用户贡献的。因此产品经理在设计产品逻辑的时候，要重点想以下两个问题：如何集中精力服务好20%的高价值用户以保持粘性？如何将剩下80%的普通用户转化成高价值用户？
-  搭便车效应
-  定义：搭便车效应指的是某个成员为集体所做出的努力使得全体成员都可能获利，但成本却由这个成员自己承担。
-  产品中的应用：淘宝双11合伙人组战队集能量的玩法，声势浩大，也取得了很好的效果，其中有一个玩法设计的非常巧妙：最后的现金红包并不是均分的，而是按照成员对团队的贡献发放对应的奖励。事后有不少人吐糟自己的队友里面有浑水摸鱼的，组了战队却不付出努力，还好最后不是按照人头均分的奖励，不然那些真正付出努力的用户肯定会有负面情绪，不利于下一次活动的开展。
-  结伴效应
-  定义：个人活动由于有他人参加导致效率变化。有两个表现：由于有他人增加会导致效率提高，或者是由于有他人增加导致效率下降。
-  产品中的应用：组队、拼团等玩法就是利用了这个效应。拼团在一定程度上对用户有一定激励：因为可以和好朋友一起参与活动；而拼团本身也是一种限制：因为如果拼团成功，一个人的撤销、暂停等行为势必会对另一个人造成影响，用户的犯错成本变高。在设计产品的过程中可以根据活动的玩法让用户适当结伴，增加用户的参与积极性或者是提高用户犯错成本。</description>
-    </item>
-    
-    <item>
-      <title>Principles of Advertising Algorithms</title>
-      <link>https://www.marshalgao.com/principles-of-advertising-algorithms/</link>
-      <pubDate>Mon, 11 Jan 2021 15:00:18 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/principles-of-advertising-algorithms/</guid>
-      <description>本文将以Google和Fackbook的竞价系统为主线，阐述其内在的算法原理。
-竞价系统
- GSP（Generalized Second Price  Google采用的竞价方式  GSP &amp;amp; VCG（Vickrey-Clarke-Groves）  Facebook采用的竞价方式   GSP
-简而言之就是按照下一位出价来进行实际扣费，为了鼓励广告主提高素材、广告点击率。
-\[cost=next price\times\frac{next\ quality}{current\ quality}+0.01\]
-举例说明：
-   广告位 平均每小时点击量 广告主 出价（CPC）     1 200 A 10   2 100 B 4   null null C 2    按照上表，此时A的出价为4.01，B的出价为2.01，C竞价失败。
-变化一：
-如果A出价$7（少于A认为这个广告本身的价值），B出价$8（多于B认为这个广告的价值），则B就会以$7.01拍得第一个广告位，但是这比预想多了$3.01。
-变化二：
-如果A出价$3.5，B出价$3，那么A就会以$3.01拍得第一个广告位。但如果B出价$3.6，B会以$3.51拍得第一个广告位，并且节省了$0.49。
-有这样一个场景，A的真实出价是$10，B出不起那么高的价格，那么B会认为既然得不到那就同归于尽，于是出价$9.99，这样A没有得到一点便宜。这种恶意竞价对双方都不友好。
-为了解决上述问题，Google在系统里引入了质量得分的因素，质量得分的关键是CTR（ClickThrough Rate）。显然，在竞价排名时，不仅要考虑价格，还要考虑综合竞价、点击率、广告相关性、广告账户历史等等。
-GSP是一种稳定的竞价方式，可操作性很强，现阶段很多互联网广告平台都采用这种竞价方式。但GSP的不足之处在于，竞价的结果不一定是全局最优化的，于是VCG竞价算法出现了。
-VCG
-基本原理就是广告主为参加拍卖过程中给别的广告主带来的损失之和来买单定价。
-举例说明：
-   广告位 平均每小时点击量 广告主 出价（CPC）     1 200 A 10   2 100 B 4   null null C 2    A不参加竞价，B和C的总费用为\(4\times200+2\times100=1000\)。</description>
-    </item>
-    
-    <item>
-      <title>Entertainment Industry Development</title>
-      <link>https://www.marshalgao.com/entertainment-industry-development/</link>
-      <pubDate>Mon, 11 Jan 2021 13:50:25 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/entertainment-industry-development/</guid>
-      <description>文娱行业发展概况
- 受疫情和移动互联网的影响，文娱行业现为线上、线下结合的模式 文娱行业前景可观，主要集中在内容上  发展因素及趋势概况
- 利好政策的扶持 中国文娱行业进入资本寒冬  从数据上看，总投资金额在减少，投资项目数量也在减少   平均单笔融资金额快速上升  从数据上看，虽然总投资金额在减少，但是单笔投资金额在逐年上升 对于大IP等头部内容，备受青睐   战略投资和并购占比高  意味着更多的投资公司不愿意再冒风险去投资小IP  但对于互联网企业除外  资金足够多 为了自家整体生态布局     战略投资和并购的提高，意味着头部项目更吃香  容易造成文娱领域的马太效应     从全国城市文娱行业的融资数据来看，北京成为文娱行业投融资的主战场 媒体、游戏成为投资热门  从数据看，两者占比最大   CVC机构活跃  CVC  CVC是一种创新的投资组织形式，指的是企业通过其设立专业的投资机构，或战略投资部门对外进行直接投资，起源于20世纪60年代的美国   2019年投资项目数量TOP10中，有7家CVC  基本都是互联网企业     文娱类独角兽估值高  虽然数量少，但是足够吸金 诸如笑果文化等新文娱企业的崛起   大量的融资并购  融资大多涵盖互联网企业 并购方基本为传统文娱企业    原文链接</description>
     </item>
     
   </channel>

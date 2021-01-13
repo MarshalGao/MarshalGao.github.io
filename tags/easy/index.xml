@@ -7,7 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 12 Jan 2021 15:21:40 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/easy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Jan 2021 15:10:29 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/easy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode[596] Classes More Than 5 Students</title>
+      <link>https://www.marshalgao.com/leetcode596-classes-more-than-5-students/</link>
+      <pubDate>Wed, 13 Jan 2021 15:10:29 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode596-classes-more-than-5-students/</guid>
+      <description>Question There is a table courses with columns: student and class
+Please list out all classes which have more than or equal to 5 students.
+For example, the table:
++---------+------------+ | student | class | +---------+------------+ | A | Math | | B | English | | C | Math | | D | Biology | | E | Math | | F | Computer | | G | Math | | H | Math | | I | Math | +---------+------------+  Should output:</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[595] Big Countries</title>
+      <link>https://www.marshalgao.com/leetcode595-big-countries/</link>
+      <pubDate>Wed, 13 Jan 2021 15:03:55 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode595-big-countries/</guid>
+      <description>Question There is a table World.
++-----------------+------------+------------+--------------+---------------+ | name | continent | area | population | gdp | +-----------------+------------+------------+--------------+---------------+ | Afghanistan | Asia | 652230 | 25500100 | 20343000 | | Albania | Europe | 28748 | 2831741 | 12960000 | | Algeria | Africa | 2381741 | 37100000 | 188681000 | | Andorra | Europe | 468 | 78115 | 3712000 | | Angola | Africa | 1246700 | 20609294 | 100990000 | +-----------------+------------+------------+--------------+---------------+  A country is big if it has an area of bigger than 3 million square km or a population of more than 25 million.</description>
+    </item>
+    
     <item>
       <title>LeetCode[197] Rising Temperature</title>
       <link>https://www.marshalgao.com/leetcode197-rising-temperature/</link>

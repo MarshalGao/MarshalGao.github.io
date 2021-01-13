@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 12 Jan 2021 13:43:33 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/hard/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Jan 2021 14:46:36 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/hard/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode[262] Trips and Users</title>
+      <link>https://www.marshalgao.com/leetcode262-trips-and-users/</link>
+      <pubDate>Wed, 13 Jan 2021 14:46:36 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode262-trips-and-users/</guid>
+      <description>Question The Trips table holds all taxi trips. Each trip has a unique Id, while Client_Id and Driver_Id are both foreign keys to the Users_Id at the Users table. Status is an ENUM type of (‘completed’, ‘cancelled_by_driver’, ‘cancelled_by_client’).
++----+-----------+-----------+---------+--------------------+----------+ | Id | Client_Id | Driver_Id | City_Id | Status |Request_at| +----+-----------+-----------+---------+--------------------+----------+ | 1 | 1 | 10 | 1 | completed |2013-10-01| | 2 | 2 | 11 | 1 | cancelled_by_driver|2013-10-01| | 3 | 3 | 12 | 6 | completed |2013-10-01| | 4 | 4 | 13 | 6 | cancelled_by_client|2013-10-01| | 5 | 1 | 10 | 1 | completed |2013-10-02| | 6 | 2 | 11 | 6 | completed |2013-10-02| | 7 | 3 | 12 | 6 | completed |2013-10-02| | 8 | 2 | 12 | 12 | completed |2013-10-03| | 9 | 3 | 10 | 12 | completed |2013-10-03| | 10 | 4 | 13 | 12 | cancelled_by_driver|2013-10-03| +----+-----------+-----------+---------+--------------------+----------+  The Users table holds all users.</description>
+    </item>
+    
     <item>
       <title>LeetCode[185] Department Top Three Salaries</title>
       <link>https://www.marshalgao.com/leetcode185-department-top-three-salaries/</link>

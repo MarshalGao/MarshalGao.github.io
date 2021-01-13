@@ -7,7 +7,39 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 12 Jan 2021 15:21:40 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Jan 2021 15:10:29 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode[596] Classes More Than 5 Students</title>
+      <link>https://www.marshalgao.com/leetcode596-classes-more-than-5-students/</link>
+      <pubDate>Wed, 13 Jan 2021 15:10:29 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode596-classes-more-than-5-students/</guid>
+      <description>Question There is a table courses with columns: student and class
+Please list out all classes which have more than or equal to 5 students.
+For example, the table:
++---------+------------+ | student | class | +---------+------------+ | A | Math | | B | English | | C | Math | | D | Biology | | E | Math | | F | Computer | | G | Math | | H | Math | | I | Math | +---------+------------+  Should output:</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[595] Big Countries</title>
+      <link>https://www.marshalgao.com/leetcode595-big-countries/</link>
+      <pubDate>Wed, 13 Jan 2021 15:03:55 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode595-big-countries/</guid>
+      <description>Question There is a table World.
++-----------------+------------+------------+--------------+---------------+ | name | continent | area | population | gdp | +-----------------+------------+------------+--------------+---------------+ | Afghanistan | Asia | 652230 | 25500100 | 20343000 | | Albania | Europe | 28748 | 2831741 | 12960000 | | Algeria | Africa | 2381741 | 37100000 | 188681000 | | Andorra | Europe | 468 | 78115 | 3712000 | | Angola | Africa | 1246700 | 20609294 | 100990000 | +-----------------+------------+------------+--------------+---------------+  A country is big if it has an area of bigger than 3 million square km or a population of more than 25 million.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[262] Trips and Users</title>
+      <link>https://www.marshalgao.com/leetcode262-trips-and-users/</link>
+      <pubDate>Wed, 13 Jan 2021 14:46:36 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode262-trips-and-users/</guid>
+      <description>Question The Trips table holds all taxi trips. Each trip has a unique Id, while Client_Id and Driver_Id are both foreign keys to the Users_Id at the Users table. Status is an ENUM type of (‘completed’, ‘cancelled_by_driver’, ‘cancelled_by_client’).
++----+-----------+-----------+---------+--------------------+----------+ | Id | Client_Id | Driver_Id | City_Id | Status |Request_at| +----+-----------+-----------+---------+--------------------+----------+ | 1 | 1 | 10 | 1 | completed |2013-10-01| | 2 | 2 | 11 | 1 | cancelled_by_driver|2013-10-01| | 3 | 3 | 12 | 6 | completed |2013-10-01| | 4 | 4 | 13 | 6 | cancelled_by_client|2013-10-01| | 5 | 1 | 10 | 1 | completed |2013-10-02| | 6 | 2 | 11 | 6 | completed |2013-10-02| | 7 | 3 | 12 | 6 | completed |2013-10-02| | 8 | 2 | 12 | 12 | completed |2013-10-03| | 9 | 3 | 10 | 12 | completed |2013-10-03| | 10 | 4 | 13 | 12 | cancelled_by_driver|2013-10-03| +----+-----------+-----------+---------+--------------------+----------+  The Users table holds all users.</description>
+    </item>
+    
     <item>
       <title>LeetCode[197] Rising Temperature</title>
       <link>https://www.marshalgao.com/leetcode197-rising-temperature/</link>
@@ -81,40 +113,6 @@ SQL Schema Create table If Not Exists Person (Id int, Email varchar(255)) Trunca
       <guid>https://www.marshalgao.com/leetcode181-employees-earning-more-than-their-managers/</guid>
       <description>Question The Employee table holds all employees including their managers. Every employee has an Id, and there is also a column for the manager Id.
 +----+-------+--------+-----------+ | Id | Name | Salary | ManagerId | +----+-------+--------+-----------+ | 1 | Joe | 70000 | 3 | | 2 | Henry | 80000 | 4 | | 3 | Sam | 60000 | NULL | | 4 | Max | 90000 | NULL | +----+-------+--------+-----------+  Given the Employee table, write a SQL query that finds out employees who earn more than their managers.</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[180] Consecutive Numbers</title>
-      <link>https://www.marshalgao.com/leetcode180-consecutive-numbers/</link>
-      <pubDate>Mon, 11 Jan 2021 11:20:40 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode180-consecutive-numbers/</guid>
-      <description>Question Table: Logs
-+-------------+---------+ | Column Name | Type | +-------------+---------+ | id | int | | num | varchar | +-------------+---------+ id is the primary key for this table.  Write an SQL query to find all numbers that appear at least three times consecutively.
-Return the result table in any order.
-The query result format is in the following example:
-Logs table: +----+-----+ | Id | Num | +----+-----+ | 1 | 1 | | 2 | 1 | | 3 | 1 | | 4 | 2 | | 5 | 1 | | 6 | 2 | | 7 | 2 | +----+-----+ Result table: +-----------------+ | ConsecutiveNums | +-----------------+ | 1 | +-----------------+ 1 is the only number that appears consecutively for at least three times.</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[178] Rank Scores</title>
-      <link>https://www.marshalgao.com/leetcode178-rank-scores/</link>
-      <pubDate>Sat, 09 Jan 2021 16:18:31 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode178-rank-scores/</guid>
-      <description>Question Write a SQL query to rank scores. If there is a tie between two scores, both should have the same ranking. Note that after a tie, the next ranking number should be the next consecutive integer value. In other words, there should be no &amp;ldquo;holes&amp;rdquo; between ranks.
-+----+-------+ | Id | Score | +----+-------+ | 1 | 3.50 | | 2 | 3.65 | | 3 | 4.00 | | 4 | 3.</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[177] Nth Highest Salary</title>
-      <link>https://www.marshalgao.com/leetcode177-nth-highest-salary/</link>
-      <pubDate>Sat, 09 Jan 2021 16:06:13 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode177-nth-highest-salary/</guid>
-      <description>Question Write a SQL query to get the nth highest salary from the Employee table.
-+----+--------+ | Id | Salary | +----+--------+ | 1 | 100 | | 2 | 200 | | 3 | 300 | +----+--------+  For example, given the above Employee table, the nth highest salary where n = 2 is 200. If there is no nth highest salary, then the query should return null.
-+------------------------+ | getNthHighestSalary(2) | +------------------------+ | 200 | +------------------------+  My Interesting Code CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT BEGIN set N = N - 1; RETURN ( select distinct Salary as getNthHighestSalary from Employee order by Salary desc limit N, 1 ); END My Perspective For this question, firstly, you can order the salary.</description>
     </item>
     
   </channel>
