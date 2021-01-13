@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 09 Jan 2021 09:23:37 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/hku/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Jan 2021 09:30:37 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/hku/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM7123 Building a Resilient, Healthy and Safe Community</title>
+      <link>https://www.marshalgao.com/ecom7123-building-a-resilient-healthy-and-safe-community/</link>
+      <pubDate>Wed, 13 Jan 2021 09:30:37 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom7123-building-a-resilient-healthy-and-safe-community/</guid>
+      <description>Overview Basic concepts
+ resilient city  resilience is the ability to withstand disruption and rebound quickly   a healthy city aims to  create a health-supportive environment achieve a good quality of life provide basic sanitation &amp;amp; hygiene needs supply access to health care   safe city  provides residents with less risks than others   related to  smart living smart government smart environment smart economy, etc.</description>
+    </item>
+    
     <item>
       <title>ECOM7123 IoT, Big Data Analytics and AI</title>
       <link>https://www.marshalgao.com/ecom7123-iot-big-data-analytics-and-ai/</link>
@@ -102,17 +112,6 @@ These trends have a profound impact on the people and the spaces they inhabit, r
       <description>Overview Good e-commerce security
  to achieve highest degree of security, one needs  new technologies organizational policies and procedures industry standards and government laws    other factors  cost of security versus potential loss security often breaks at weakest link    Different perspectives between customers and merchants Basic E-Commerce Security The tension between security and other values
  security vs ease of use  the more security measures added, the more difficult a site is to use, and the slower it becomes   security vs desire of individuals to act anonymously  use of technology by criminals to plan crimes or threaten nation-state    Basic security issues and landscape</description>
-    </item>
-    
-    <item>
-      <title>ECOM6013 Mobile Technology and M-Commerce</title>
-      <link>https://www.marshalgao.com/ecom6013-mobile-technology-and-m-commerce/</link>
-      <pubDate>Thu, 10 Dec 2020 23:33:40 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/ecom6013-mobile-technology-and-m-commerce/</guid>
-      <description>Mobile Technology Basic principle
- 3 division methods  fundamental mobility: cellphones  cell handover     Future and issues
- 5G - the future  issues with mobile access to e-commerce web sites  efficiency of mobile device web clients broad new range of contextual/accessibility issues, e.g. fingerprint, wearable devices screen size – all over the place, unpredictable interactivity client-side processing requirements bandwidth issues    M-Commerce Overview</description>
     </item>
     
   </channel>

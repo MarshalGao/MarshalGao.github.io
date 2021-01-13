@@ -6,8 +6,268 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Tue, 12 Jan 2021 15:21:40 +0800</lastBuildDate>
+        <lastBuildDate>Wed, 13 Jan 2021 09:30:37 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ECOM7123 Building a Resilient, Healthy and Safe Community</title>
+            <link>https://www.marshalgao.com/ecom7123-building-a-resilient-healthy-and-safe-community/</link>
+            <pubDate>Wed, 13 Jan 2021 09:30:37 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/ecom7123-building-a-resilient-healthy-and-safe-community/</guid>
+            <description>Overview Basic concepts
+ resilient city  resilience is the ability to withstand disruption and rebound quickly   a healthy city aims to  create a health-supportive environment achieve a good quality of life provide basic sanitation &amp;amp; hygiene needs supply access to health care   safe city  provides residents with less risks than others   related to  smart living smart government smart environment smart economy, etc.</description>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Building%20a%20Resilient%2C%20Healthy%20and%20Safe%20Community.png" alt=""></p>
+<h2 id="overview">Overview</h2>
+<p><strong>Basic concepts</strong></p>
+<ul>
+<li>resilient city
+<ul>
+<li>resilience is the ability to withstand disruption and rebound quickly</li>
+</ul>
+</li>
+<li>a healthy city aims to
+<ul>
+<li>create a health-supportive environment</li>
+<li>achieve a good quality of life</li>
+<li>provide basic sanitation &amp; hygiene needs</li>
+<li>supply access to health care</li>
+</ul>
+</li>
+<li>safe city
+<ul>
+<li>provides residents with less risks than others</li>
+</ul>
+</li>
+<li>related to
+<ul>
+<li>smart living</li>
+<li>smart government</li>
+<li>smart environment</li>
+<li>smart economy, etc.</li>
+</ul>
+</li>
+</ul>
+<h2 id="resilient">Resilient</h2>
+<p><strong>Disasters</strong></p>
+<ul>
+<li>natural or man-made
+<ul>
+<li>10 deadly natural disasters
+<ul>
+<li>tsunami wave (Japan)</li>
+<li>fire tornado</li>
+<li>volcanic eruption (Papua New Guinea)</li>
+<li>hurricane (Katrina)</li>
+<li>meteor attack (Russia)</li>
+<li>typhoon Haiyan (Philippines)</li>
+<li>volcanic eruption (Mount Ontake)</li>
+<li>2010 Haiti earthquake</li>
+<li>tsunami (Indian Ocean)</li>
+<li>earthquake (Nepal)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>short term or long term</li>
+<li>physical, social or economical</li>
+</ul>
+<p><strong>To be resilient</strong></p>
+<ul>
+<li>anticipate future trends</li>
+<li>prepare ahead of time</li>
+<li>enact policies that support rapid response</li>
+<li>response rapidly</li>
+<li>operate effectively during events</li>
+<li>recover quickly</li>
+</ul>
+<p><strong>10 essentials for making cities resilient</strong></p>
+<ul>
+<li>organize for disaster resilience</li>
+<li>strengthen financial capacity for resilience</li>
+<li>pursue resilient urban development and design</li>
+<li>increase infrastructure resilience</li>
+<li>assess the safety of all schools and health facilities and upgrade these as necessary</li>
+<li>strengthen institutional capacity for resilience</li>
+<li>understand &amp; strengthen societal capacity for resilient</li>
+<li>safeguard natural buffers to enhance ecosystems' protective functions</li>
+<li>ensure effective disaster response</li>
+<li>expedite recovery and build back better</li>
+</ul>
+<p><strong>For resilience</strong></p>
+<ul>
+<li>pay attention to
+<ul>
+<li>climate
+<ul>
+<li>sponge cities</li>
+<li>reuse the rain water</li>
+<li>Zhuhai is the first city to reuse the rain water in China</li>
+</ul>
+</li>
+<li>public safety
+<ul>
+<li>policies and procedures are in place to ensure the safety of citizens</li>
+<li>GIS helps government inform the public of risks in their areas</li>
+<li>apps enable people to create virtual neighborhood watches (e.g., when crime or disaster strikes, GIS is the key to knowing where to send personnel including police, fire, and other law enforcement officials)</li>
+<li>COP
+<ul>
+<li>a single identical display of relevant (operational) information shared by more than one command in events</li>
+<li>facilitates collaborative planning and combined execution and assists all echelons to achieve situational awareness</li>
+<li>technologies like GIS can provide a COP viewer about shared information such as road closures, open shelters, hospital status and emergency service routes in all covered areas</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>disaster response
+<ul>
+<li>before events, preventice measures can be taken</li>
+<li>after events, GIS helps response organizations see where need is greatest and where to quickly deploy teams and deliver aid</li>
+<li>timing is everything in a disaster situation</li>
+<li>real-time map of flooding by crowdsourcing</li>
+</ul>
+</li>
+<li>health and human services
+<ul>
+<li>maps are used to understand the best places to build clinics and hospitals that serve changing &amp; aging populations as well as how to prepare for potential outbreaks</li>
+</ul>
+</li>
+<li>economy
+<ul>
+<li>moving forward, economic development departments use innovative approaches to help local business owners find the best ways to market their products &amp; the right places to set up shop</li>
+</ul>
+</li>
+<li>transportation and infrastructure
+<ul>
+<li>to find the best ways to lessen commute times &amp; reduce carbon emissions</li>
+<li>analysis shows existing transportation infrastructure, areas of high demand, air quality, and opportunities for improvement</li>
+</ul>
+</li>
+<li>food and water
+<ul>
+<li>to grow crops &amp; raise animals, farmers depend on specific climate conditions</li>
+<li>as these change, apps can help food producers better understand conditions, impacts, and how to adapt</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>some prerequisites
+<ul>
+<li>open data</li>
+<li>visualization tools to understand the impacts of disasters</li>
+<li>SDI (Spatial Data Infrastructure)
+<ul>
+<li>an integrated network of people, data, technology, and governance</li>
+<li>based on open standards &amp; APIs</li>
+<li>facilitates faster &amp; better decision-making by enabling easy sharing, discovery, and use of spatial data</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="healthy">Healthy</h2>
+<p><strong>Current conditions</strong></p>
+<ul>
+<li>worldwide healthcare is deteriorating
+<ul>
+<li>the world&rsquo;s population is aging</li>
+<li>shortage of doctors and nurses, especially young medical professionals</li>
+</ul>
+</li>
+</ul>
+<p><strong>Smart healthcare</strong></p>
+<ul>
+<li>definition
+<ul>
+<li>a holistic approach to healthcare that integrates the best of technologies to remove information barriers, enabling data to be analyzed and shared in real time</li>
+<li>forging time and creating cost-saving collaborative partnerships among doctors, administrators, insurers and healthcare institutions</li>
+</ul>
+</li>
+<li>advantages
+<ul>
+<li>critical to smart cities because a robust healthcare system is the hallmark of organized development</li>
+<li>healthy citizens will translate into a productive workforce and a thriving economy</li>
+<li>take full advantage of the limitless possibilities of telehealth, or care-at-a-distance</li>
+</ul>
+</li>
+<li>contents or procedures
+<ul>
+<li>providing essential information to doctors and staff, regardless of the devices they are using</li>
+<li>giving real-time access to patient records, images and expert consultations, using any device, anywhere</li>
+<li>accurate tracking and location of patients, staff, equipment and medical supplies</li>
+<li>education programs for medical staff and patients</li>
+</ul>
+</li>
+<li>IoT in healthcare
+<ul>
+<li>IoT can transform the healthcare sector, result in better health outcomes, increase productivity and provide an enhanced patient experience</li>
+<li>it alters doctor-patient interaction leading to quicker and intelligent decision making</li>
+<li>IoT thus empowers caregivers with the information to transform healthcare delivery from a ‘disease-centric’ discipline to a system focused on promoting and maintaining wellness</li>
+<li>categories
+<ul>
+<li>connected healthcare
+<ul>
+<li>provide a single platform for delivering digital content, streaming media and personalized patient information</li>
+</ul>
+</li>
+<li>virtual patient observation
+<ul>
+<li>helps doctors monitor patients from a centralized location</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>leveraging telemedicine to deliver better patient care
+<ul>
+<li>health monitoring devices have made it possible for physicians to remotely collect patient data to foster diagnostics, preventive care, and measurement of treatment results</li>
+<li>they offer residents the convenience of receiving alerts for medication &amp; health checkups</li>
+<li>users can also set up notifications and workflows based on health status so that proactive action can be taken</li>
+<li>in hospitals, electronic medical records can be used to set up notifications that are automatically sent to the staff when it’s time for a patient to take medicine or when a test is due</li>
+<li>in a similar manner, patients receive text messages on their phone to remind them of scheduled appointments</li>
+</ul>
+</li>
+<li>eHealth interoperability standard
+<ul>
+<li>HL7 (Health Level Seven)
+<ul>
+<li>provide a framework (and related standards) for the exchange, integration, sharing, &amp; retrieval of electronic health information</li>
+<li>support clinical practice &amp; the management delivery, &amp; evaluation of health services</li>
+<li>being recognized as the most commonly used in the world</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>eHealth and the future
+<ul>
+<li>implementing ICT can result in higher quality and safer, more patient-responsive healthcare</li>
+<li>the adoption of smart healthcare solutions complimented with an array of healthcare management services, will help the healthcare industry in smart cities leapfrog into &lsquo;information age healthcare&rsquo;, much quicker than imagined before</li>
+</ul>
+</li>
+</ul>
+<h2 id="safe">Safe</h2>
+<p><strong>Examples</strong></p>
+<ul>
+<li>pavement traffic lights in Bodegraven, Netherlands</li>
+<li>security robot in Singapore</li>
+<li>dangerous dogs map in Minneapolis</li>
+<li>man vs. bicycle vs. automobile in NYC
+<ul>
+<li>using GIS</li>
+</ul>
+</li>
+<li>crime map in San Francisco</li>
+<li>citizen problem reporter in US</li>
+<li>health and safety reports in US</li>
+<li>slope information system in HK</li>
+</ul>
+<h2 id="additional-reading">Additional Reading</h2>
+<ul>
+<li><a href="../articles/HKU_Big-Data_HKO_20210112.pdf">Building a Resilient, Healthy and Safe Community: Big Data Applications</a></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>LeetCode[197] Rising Temperature</title>
