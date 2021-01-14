@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 13 Jan 2021 15:10:29 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Jan 2021 09:24:26 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM7123 Smart Environment and Energy</title>
+      <link>https://www.marshalgao.com/ecom7123-smart-environment-and-energy/</link>
+      <pubDate>Thu, 14 Jan 2021 09:24:26 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom7123-smart-environment-and-energy/</guid>
+      <description>Overview Smart environment
+ objectives  green &amp;amp; sustainable urban planning effective management and optimization of urban resources achieve energy saving and emission reduction   scopes  greening land use planning environmental protection &amp;amp; pollution control smart &amp;amp; green building smart waste management smart water management smart &amp;amp; renewable energy    Details of Smart Environment Greening
+ definition  the process of making somewhere greener and environmental friendly by planting grass, trees and plants there   benefits  create fresh, beautiful, comfortable and elegant environment improve urban living conditions purify air, reduce pollution, adjust climate, improve soil quality and ecology enhance visual environment   greening techniques  skyrise greenery  all greening at the buildings or other structures beyond the ground level  roof greening (main approach) vertical greening (main approach) sky gardens terrace planting       tree management  strategies  tree maintenance  tree register, routine maintenance, rick assessment and management   tree protection  registration of heritage trees, tree preservation   planning and tree planting  green development plans required from developers, tree selection and planting   training  train tree management professionals   public management      Land use planning</description>
+    </item>
+    
     <item>
       <title>LeetCode[596] Classes More Than 5 Students</title>
       <link>https://www.marshalgao.com/leetcode596-classes-more-than-5-students/</link>
@@ -101,18 +112,6 @@ Return the result table in any order.</description>
 Table: Customers
 +----+-------+ | Id | Name | +----+-------+ | 1 | Joe | | 2 | Henry | | 3 | Sam | | 4 | Max | +----+-------+  Table: Orders
 +----+------------+ | Id | CustomerId | +----+------------+ | 1 | 3 | | 2 | 1 | +----+------------+  Using the above tables as example, return the following:</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[182] Duplicate Emails</title>
-      <link>https://www.marshalgao.com/leetcode182-duplicate-emails/</link>
-      <pubDate>Mon, 11 Jan 2021 17:20:59 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode182-duplicate-emails/</guid>
-      <description>Question Write a SQL query to find all duplicate emails in a table named Person.
-+----+---------+ | Id | Email | +----+---------+ | 1 | a@b.com | | 2 | c@d.com | | 3 | a@b.com | +----+---------+  For example, your query should return the following for the above table:
-+---------+ | Email | +---------+ | a@b.com | +---------+  Note: All emails are in lowercase.
-SQL Schema Create table If Not Exists Person (Id int, Email varchar(255)) Truncate table Person insert into Person (Id, Email) values (&amp;#39;1&amp;#39;, &amp;#39;a@b.</description>
     </item>
     
   </channel>

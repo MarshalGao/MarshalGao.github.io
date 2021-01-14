@@ -6,8 +6,353 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Wed, 13 Jan 2021 15:10:29 +0800</lastBuildDate>
+        <lastBuildDate>Thu, 14 Jan 2021 09:24:26 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ECOM7123 Smart Environment and Energy</title>
+            <link>https://www.marshalgao.com/ecom7123-smart-environment-and-energy/</link>
+            <pubDate>Thu, 14 Jan 2021 09:24:26 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/ecom7123-smart-environment-and-energy/</guid>
+            <description>Overview Smart environment
+ objectives  green &amp;amp; sustainable urban planning effective management and optimization of urban resources achieve energy saving and emission reduction   scopes  greening land use planning environmental protection &amp;amp; pollution control smart &amp;amp; green building smart waste management smart water management smart &amp;amp; renewable energy    Details of Smart Environment Greening
+ definition  the process of making somewhere greener and environmental friendly by planting grass, trees and plants there   benefits  create fresh, beautiful, comfortable and elegant environment improve urban living conditions purify air, reduce pollution, adjust climate, improve soil quality and ecology enhance visual environment   greening techniques  skyrise greenery  all greening at the buildings or other structures beyond the ground level  roof greening (main approach) vertical greening (main approach) sky gardens terrace planting       tree management  strategies  tree maintenance  tree register, routine maintenance, rick assessment and management   tree protection  registration of heritage trees, tree preservation   planning and tree planting  green development plans required from developers, tree selection and planting   training  train tree management professionals   public management      Land use planning</description>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Smart%20Environment%20and%20Energy.png" alt=""></p>
+<h2 id="overview">Overview</h2>
+<p><strong>Smart environment</strong></p>
+<ul>
+<li>objectives
+<ul>
+<li>green &amp; sustainable urban planning</li>
+<li>effective management and optimization of urban resources</li>
+<li>achieve energy saving and emission reduction</li>
+</ul>
+</li>
+<li>scopes
+<ul>
+<li>greening</li>
+<li>land use planning</li>
+<li>environmental protection &amp; pollution control</li>
+<li>smart &amp; green building</li>
+<li>smart waste management</li>
+<li>smart water management</li>
+<li>smart &amp; renewable energy</li>
+</ul>
+</li>
+</ul>
+<h2 id="details-of-smart-environment">Details of Smart Environment</h2>
+<p><strong>Greening</strong></p>
+<ul>
+<li>definition
+<ul>
+<li>the process of making somewhere greener and environmental friendly by planting grass, trees and plants there</li>
+</ul>
+</li>
+<li>benefits
+<ul>
+<li>create fresh, beautiful, comfortable and elegant environment</li>
+<li>improve urban living conditions</li>
+<li>purify air, reduce pollution, adjust climate, improve soil quality and ecology</li>
+<li>enhance visual environment</li>
+</ul>
+</li>
+<li>greening techniques
+<ul>
+<li>skyrise greenery
+<ul>
+<li>all greening at the buildings or other structures beyond the ground level
+<ul>
+<li>roof greening (main approach)</li>
+<li>vertical greening (main approach)</li>
+<li>sky gardens</li>
+<li>terrace planting</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>tree management
+<ul>
+<li>strategies
+<ul>
+<li>tree maintenance
+<ul>
+<li>tree register, routine maintenance, rick assessment and management</li>
+</ul>
+</li>
+<li>tree protection
+<ul>
+<li>registration of heritage trees, tree preservation</li>
+</ul>
+</li>
+<li>planning and tree planting
+<ul>
+<li>green development plans required from developers, tree selection and planting</li>
+</ul>
+</li>
+<li>training
+<ul>
+<li>train tree management professionals</li>
+</ul>
+</li>
+<li>public management</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Land use planning</strong></p>
+<ul>
+<li>definition
+<ul>
+<li>is defined as the process of protecting and improving the living, production and recreation environment in a city through the proper use and development of land</li>
+</ul>
+</li>
+<li>technology adoption
+<ul>
+<li>remote sensing
+<ul>
+<li>acquiring information about an object without touching the object itself</li>
+<li>acquired data is digitized and processed into image</li>
+<li>captures spatial (area), spectral (color) and temporal (time) data with accuracy, speed &amp; cost effective on a repetitive basis</li>
+</ul>
+</li>
+<li>drone/UAV (Unmanned aerial vehicle)
+<ul>
+<li>aircraft without human pilot aboard</li>
+<li>remote control</li>
+<li>mounted with cameras to capture ground images</li>
+<li>monitor land use</li>
+<li>illegal landfill detection</li>
+</ul>
+</li>
+<li>LiDAR (Light Detection And Ranging)
+<ul>
+<li>measures distance to a target by illuminating that target with a laser light</li>
+<li>scan ground surface/objects</li>
+<li>monitor landscape changes and illegal dumping</li>
+</ul>
+</li>
+<li>3D modelling
+<ul>
+<li>developing digital representation of any 3D surface of an object/landscape</li>
+<li>commonly used in urban planning</li>
+<li>visual impact analysis</li>
+<li>landscape analysis</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Pollution control</strong></p>
+<ul>
+<li>Paris agreement
+<ul>
+<li>came into force on 4 Nov 2016</li>
+<li>succeeding the Kyoto Protocol that expired in 2020</li>
+<li>signed by 197 countries in 2016 including China, and ratified by 185 as of Jan 2019</li>
+</ul>
+</li>
+<li>carbon neutrality
+<ul>
+<li>China - by 2060</li>
+<li>Hong Kong - before 2050</li>
+</ul>
+</li>
+</ul>
+<p><strong>Smart &amp; green building</strong></p>
+<ul>
+<li>smart building - convenient direction
+<ul>
+<li>definition
+<ul>
+<li>deliver useful building services that make occupants more productive at the lowest cost and environmental impact over the building life cycle</li>
+<li>utilize integrated ICT technologies to operate &amp; manage building services &amp; functions</li>
+<li>require detailed planning during the inception stage as well as ensuring the longevity of the implemented technologies</li>
+</ul>
+</li>
+<li>functions
+<ul>
+<li>video surveillance</li>
+<li>access control</li>
+<li>power management</li>
+<li>programmable lighting</li>
+<li>facilities management</li>
+<li>data network and data center</li>
+<li>wireless systems</li>
+<li>building management system</li>
+<li>all integrated with IT</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>green building - environmental direction
+<ul>
+<li>definition
+<ul>
+<li>the one that considers its impact on the environment and human health</li>
+<li>part of a global response to increasing awareness of the role of human activity in causing global climate change</li>
+<li>incorporates design, construction and operational practices that significantly reduce or eliminate the negative impact of development on the environment and people</li>
+<li>energy efficient, resource efficient and environmentally responsible</li>
+</ul>
+</li>
+<li>measures
+<ul>
+<li>reduce heat loads, maximize natural light, promote circulation of fresh air</li>
+<li>energy efficient air conditioning &amp; lighting</li>
+<li>use environmentally friendly, non-toxic materials</li>
+<li>water efficient plumbing fittings and water harvesting</li>
+<li>using renewable energy sources</li>
+<li>sensitive to the impact to the environment</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>smart building and green building have an intersection</li>
+</ul>
+<p><strong>Smart waste management</strong></p>
+<ul>
+<li>examples
+<ul>
+<li>clearbot, designed by HKU, HKUST &amp; CityU</li>
+<li>effective waste recycling, Japan</li>
+<li>discarded plastic turns into jersey, Taiwan</li>
+<li>collecting food waste with IT, South Korea</li>
+<li>automatic vacuum waste collection system</li>
+<li>central compactor system</li>
+<li>smart rubbish bin
+<ul>
+<li>reduce cost</li>
+<li>less truck</li>
+<li>less emission</li>
+<li>less fuel required</li>
+<li>less time</li>
+<li>eliminate overflow</li>
+</ul>
+</li>
+<li>real-time waste tracking and monitoring
+<ul>
+<li>GPS</li>
+<li>CCTV</li>
+</ul>
+</li>
+<li>RFID for waste collection
+<ul>
+<li>each bin tipping is recorded and used as basis of charging</li>
+</ul>
+</li>
+<li>WTE (Waste to Energy)
+<ul>
+<li>consist of waste treatment processes that produce energy in the form of electricity, heat, biogas, landfill gas or fuels from different waste sources</li>
+<li>energy is a by-product of waste treatment</li>
+<li>WTE technologies can be applied to sewage sludge and municipal solid waste</li>
+</ul>
+</li>
+<li>amager bakke, Copenhagen, Denmark
+<ul>
+<li>more than a WTE plant</li>
+<li>a landmark, a leisure facility
+<ul>
+<li>the plant&rsquo;s architecture includes a roof-wide artificial ski slope open to the public</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Smart water management</strong></p>
+<ul>
+<li>water intelligent network
+<ul>
+<li>to manage and monitor water supply</li>
+<li>improve the efficiency, longevity, and reliability of the underlying physical water network by better measuring, collecting, analyzing, and acting upon a wide range of network events, e.g., leakage, blockage, etc.</li>
+<li>an integrated set of products, solutions and systems that enable utilities to remotely and continuously monitor and diagnose problems, prioritize and manage maintenance issues and use data to optimize all aspects of the water distribution network</li>
+<li>water network + sensors can generate data</li>
+</ul>
+</li>
+<li>leakage management control
+<ul>
+<li>identifies water leakage location</li>
+<li>analyze impact areas and affected customers</li>
+<li>implemented by GIS and dashboards</li>
+</ul>
+</li>
+<li>AMR (Automatic Meter Reading) system&rsquo;s advantages
+<ul>
+<li>automatic reading of meters</li>
+<li>detection of abnormal water consumptions (e.g. leakage of inside service)</li>
+<li>better planning and management of water supplies</li>
+<li>availability of consumption data for resolving water charges disputes</li>
+<li>enhancing customer services through provision of Internet and mobile phone access to consumers for accessing their consumption data</li>
+<li>ideal platform for promotion of water conservation</li>
+</ul>
+</li>
+</ul>
+<p><strong>Smart energy</strong></p>
+<ul>
+<li>definition
+<ul>
+<li>intelligent integration of decentralized renewable energy sources and power consumption to form the future energy ecosystem</li>
+</ul>
+</li>
+<li>examples
+<ul>
+<li>floating solar, Huainan City, Anhui Province, China</li>
+<li>panda solar farm, China
+<ul>
+<li>through PV (Photovoltaic)</li>
+</ul>
+</li>
+<li>smart lighting, Copenhagen</li>
+<li>wind energy</li>
+</ul>
+</li>
+</ul>
+<h2 id="trends-for-smart-environment">Trends for Smart Environment</h2>
+<p><strong>Aspects and details</strong></p>
+<ul>
+<li>smart metering
+<ul>
+<li>citizens are encouraged to reduce energy consumption especially at peak level</li>
+</ul>
+</li>
+<li>new micro-sources of power
+<ul>
+<li>citizens use homes and offices to generate electricity</li>
+</ul>
+</li>
+<li>smart &amp; responsive appliances
+<ul>
+<li>smart appliances can temporarily reduce energy consumption in peak energy demand periods</li>
+</ul>
+</li>
+<li>self-healing grid
+<ul>
+<li>IoTs are added to monitor real-time data</li>
+<li>able to detect &amp; isolate faults &amp; reconfigure the system to minimize impact on customers</li>
+</ul>
+</li>
+<li>lower usage through gamification
+<ul>
+<li>the data generated by smart meters can be used to create detailed insight into energy usage patterns</li>
+</ul>
+</li>
+<li>localized environmental enforcement
+<ul>
+<li>embedded sensor networks &amp; intelligent algorithms can provide data to human analysts
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-01-14%20%E4%B8%8A%E5%8D%8810.55.50.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<h2 id="additional-reading">Additional Reading</h2>
+<ul>
+<li><a href="../articles/20210113%20HKU-Smart%20Environment%20%20Energy%20(Paul%20Poon).pdf">Cleaner Energy Greener Future</a></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>LeetCode[596] Classes More Than 5 Students</title>
