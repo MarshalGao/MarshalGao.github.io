@@ -7,7 +7,41 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 13 Jan 2021 15:10:29 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/easy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Jan 2021 15:51:59 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/easy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode[1179] Reformat Department Table</title>
+      <link>https://www.marshalgao.com/leetcode1179-reformat-department-table/</link>
+      <pubDate>Thu, 14 Jan 2021 15:51:59 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode1179-reformat-department-table/</guid>
+      <description>Question Table: Department
++---------------+---------+ | Column Name | Type | +---------------+---------+ | id | int | | revenue | int | | month | varchar | +---------------+---------+ (id, month) is the primary key of this table. The table has information about the revenue of each department per month. The month has values in [&amp;quot;Jan&amp;quot;,&amp;quot;Feb&amp;quot;,&amp;quot;Mar&amp;quot;,&amp;quot;Apr&amp;quot;,&amp;quot;May&amp;quot;,&amp;quot;Jun&amp;quot;,&amp;quot;Jul&amp;quot;,&amp;quot;Aug&amp;quot;,&amp;quot;Sep&amp;quot;,&amp;quot;Oct&amp;quot;,&amp;quot;Nov&amp;quot;,&amp;quot;Dec&amp;quot;].  Write an SQL query to reformat the table such that there is a department id column and a revenue column for each month.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[627] Swap Salary</title>
+      <link>https://www.marshalgao.com/leetcode627-swap-salary/</link>
+      <pubDate>Thu, 14 Jan 2021 15:12:42 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode627-swap-salary/</guid>
+      <description>Question Given a table salary, such as the one below, that has m=male and f=female values. Swap all f and m values (i.e., change all f values to m and vice versa) with a single update statement and no intermediate temp table.
+Note that you must write a single update statement, DO NOT write any select statement for this problem.
+Example:
+| id | name | sex | salary | |----|------|-----|--------| | 1 | A | m | 2500 | | 2 | B | f | 1500 | | 3 | C | m | 5500 | | 4 | D | f | 500 |  After running your update statement, the above salary table should have the following rows:</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[620] Not Boring Movies</title>
+      <link>https://www.marshalgao.com/leetcode620-not-boring-movies/</link>
+      <pubDate>Thu, 14 Jan 2021 13:47:00 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode620-not-boring-movies/</guid>
+      <description>Question X city opened a new cinema, many people would like to go to this cinema. The cinema also gives out a poster indicating the movies’ ratings and descriptions.
+Please write a SQL query to output movies with an odd numbered ID and a description that is not &amp;lsquo;boring&amp;rsquo;. Order the result by rating.
+For example, table cinema:
++---------+-----------+--------------+-----------+ | id | movie | description | rating | +---------+-----------+--------------+-----------+ | 1 | War | great 3D | 8.</description>
+    </item>
+    
     <item>
       <title>LeetCode[596] Classes More Than 5 Students</title>
       <link>https://www.marshalgao.com/leetcode596-classes-more-than-5-students/</link>
@@ -83,40 +117,6 @@ SQL Schema Create table If Not Exists Person (Id int, Email varchar(255)) Trunca
       <guid>https://www.marshalgao.com/leetcode181-employees-earning-more-than-their-managers/</guid>
       <description>Question The Employee table holds all employees including their managers. Every employee has an Id, and there is also a column for the manager Id.
 +----+-------+--------+-----------+ | Id | Name | Salary | ManagerId | +----+-------+--------+-----------+ | 1 | Joe | 70000 | 3 | | 2 | Henry | 80000 | 4 | | 3 | Sam | 60000 | NULL | | 4 | Max | 90000 | NULL | +----+-------+--------+-----------+  Given the Employee table, write a SQL query that finds out employees who earn more than their managers.</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[176] Second Highest Salary</title>
-      <link>https://www.marshalgao.com/leetcode176-second-highest-salary/</link>
-      <pubDate>Fri, 08 Jan 2021 16:37:07 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode176-second-highest-salary/</guid>
-      <description>Question Write a SQL query to get the second highest salary from the Employee table.
-+----+--------+ | Id | Salary | +----+--------+ | 1 | 100 | | 2 | 200 | | 3 | 300 | +----+--------+  For example, given the above Employee table, the query should return 200 as the second highest salary. If there is no second highest salary, then the query should return null.
-+---------------------+ | SecondHighestSalary | +---------------------+ | 200 | +---------------------+  SQL Schema Create table If Not Exists Employee (Id int, Salary int) Truncate table Employee insert into Employee (Id, Salary) values (&amp;#39;1&amp;#39;, &amp;#39;100&amp;#39;) insert into Employee (Id, Salary) values (&amp;#39;2&amp;#39;, &amp;#39;200&amp;#39;) insert into Employee (Id, Salary) values (&amp;#39;3&amp;#39;, &amp;#39;300&amp;#39;) My Interesting Code select max(Salary) as SecondHighestSalary from Employee where Salary &amp;lt; (select max(Salary) from Employee) My Perspective This question is also simple.</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[175] Combine Two Tables</title>
-      <link>https://www.marshalgao.com/leetcode175-combine-two-tables/</link>
-      <pubDate>Fri, 08 Jan 2021 16:21:38 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode175-combine-two-tables/</guid>
-      <description>Question Table: Person
-+-------------+---------+ | Column Name | Type | +-------------+---------+ | AddressId | int | | PersonId | int | | City | varchar | | State | varchar | +-------------+---------+ PersonId is the primary key column for this table.  Table: Address
-+-------------+---------+ | Column Name | Type | +-------------+---------+ | AddressId | int | | PersonId | int | | City | varchar | | State | varchar | +-------------+---------+ AddressId is the primary key column for this table.</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[1] Two Sum</title>
-      <link>https://www.marshalgao.com/leetcode1-two-sum/</link>
-      <pubDate>Wed, 07 Oct 2020 18:24:14 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode1-two-sum/</guid>
-      <description>Question Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
-You may assume that each input would have exactly one solution, and you may not use the same element twice.
-You can return the answer in any order.
-Example 1 Input: nums = [2,7,11,15], target = 9 Output: [0,1] Output: Because nums[0] + nums[1] == 9, we return [0, 1].</description>
     </item>
     
   </channel>

@@ -7,7 +7,64 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 13 Jan 2021 15:10:29 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/advertising-product-manager/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Jan 2021 15:51:59 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/advertising-product-manager/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode[1179] Reformat Department Table</title>
+      <link>https://www.marshalgao.com/leetcode1179-reformat-department-table/</link>
+      <pubDate>Thu, 14 Jan 2021 15:51:59 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode1179-reformat-department-table/</guid>
+      <description>Question Table: Department
++---------------+---------+ | Column Name | Type | +---------------+---------+ | id | int | | revenue | int | | month | varchar | +---------------+---------+ (id, month) is the primary key of this table. The table has information about the revenue of each department per month. The month has values in [&amp;quot;Jan&amp;quot;,&amp;quot;Feb&amp;quot;,&amp;quot;Mar&amp;quot;,&amp;quot;Apr&amp;quot;,&amp;quot;May&amp;quot;,&amp;quot;Jun&amp;quot;,&amp;quot;Jul&amp;quot;,&amp;quot;Aug&amp;quot;,&amp;quot;Sep&amp;quot;,&amp;quot;Oct&amp;quot;,&amp;quot;Nov&amp;quot;,&amp;quot;Dec&amp;quot;].  Write an SQL query to reformat the table such that there is a department id column and a revenue column for each month.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[627] Swap Salary</title>
+      <link>https://www.marshalgao.com/leetcode627-swap-salary/</link>
+      <pubDate>Thu, 14 Jan 2021 15:12:42 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode627-swap-salary/</guid>
+      <description>Question Given a table salary, such as the one below, that has m=male and f=female values. Swap all f and m values (i.e., change all f values to m and vice versa) with a single update statement and no intermediate temp table.
+Note that you must write a single update statement, DO NOT write any select statement for this problem.
+Example:
+| id | name | sex | salary | |----|------|-----|--------| | 1 | A | m | 2500 | | 2 | B | f | 1500 | | 3 | C | m | 5500 | | 4 | D | f | 500 |  After running your update statement, the above salary table should have the following rows:</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[626] Exchange Seats</title>
+      <link>https://www.marshalgao.com/leetcode626-exchange-seats/</link>
+      <pubDate>Thu, 14 Jan 2021 14:50:32 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode626-exchange-seats/</guid>
+      <description>Question Mary is a teacher in a middle school and she has a table seat storing students&#39; names and their corresponding seat ids.
+The column id is continuous increment.
+Mary wants to change seats for the adjacent students.
+Can you write a SQL query to output the result for Mary?
++---------+---------+ | id | student | +---------+---------+ | 1 | Abbot | | 2 | Doris | | 3 | Emerson | | 4 | Green | | 5 | Jeames | +---------+---------+  For the sample input, the output is:</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[620] Not Boring Movies</title>
+      <link>https://www.marshalgao.com/leetcode620-not-boring-movies/</link>
+      <pubDate>Thu, 14 Jan 2021 13:47:00 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode620-not-boring-movies/</guid>
+      <description>Question X city opened a new cinema, many people would like to go to this cinema. The cinema also gives out a poster indicating the movies’ ratings and descriptions.
+Please write a SQL query to output movies with an odd numbered ID and a description that is not &amp;lsquo;boring&amp;rsquo;. Order the result by rating.
+For example, table cinema:
++---------+-----------+--------------+-----------+ | id | movie | description | rating | +---------+-----------+--------------+-----------+ | 1 | War | great 3D | 8.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[601] Human Traffic of Stadium</title>
+      <link>https://www.marshalgao.com/leetcode601-human-traffic-of-stadium/</link>
+      <pubDate>Thu, 14 Jan 2021 13:31:17 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode601-human-traffic-of-stadium/</guid>
+      <description>Question Table: Stadium
++---------------+---------+ | Column Name | Type | +---------------+---------+ | id | int | | visit_date | date | | people | int | +---------------+---------+ visit_date is the primary key for this table. Each row of this table contains the visit date and visit id to the stadium with the number of people during the visit. No two rows will have the same visit_date, and as the id increases, the dates increase as well.</description>
+    </item>
+    
     <item>
       <title>LeetCode[596] Classes More Than 5 Students</title>
       <link>https://www.marshalgao.com/leetcode596-classes-more-than-5-students/</link>
@@ -59,83 +116,6 @@ Return the result table in any order.</description>
       <guid>https://www.marshalgao.com/leetcode196-delete-duplicate-emails/</guid>
       <description>Question Write a SQL query to delete all duplicate email entries in a table named Person, keeping only unique emails based on its smallest Id.
 +----+------------------+ | Id | Email | +----+------------------+ | 1 | john@example.com | | 2 | bob@example.com | | 3 | john@example.com | +----+------------------+ Id is the primary key column for this table.  For example, after running your query, the above Person table should have the following rows:</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[185] Department Top Three Salaries</title>
-      <link>https://www.marshalgao.com/leetcode185-department-top-three-salaries/</link>
-      <pubDate>Tue, 12 Jan 2021 13:43:33 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode185-department-top-three-salaries/</guid>
-      <description>Question The Employee table holds all employees. Every employee has an Id, and there is also a column for the department Id.
-+----+-------+--------+--------------+ | Id | Name | Salary | DepartmentId | +----+-------+--------+--------------+ | 1 | Joe | 85000 | 1 | | 2 | Henry | 80000 | 2 | | 3 | Sam | 60000 | 2 | | 4 | Max | 90000 | 1 | | 5 | Janet | 69000 | 1 | | 6 | Randy | 85000 | 1 | | 7 | Will | 70000 | 1 | +----+-------+--------+--------------+  The Department table holds all departments of the company.</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[184] Department Highest Salary</title>
-      <link>https://www.marshalgao.com/leetcode184-department-highest-salary/</link>
-      <pubDate>Tue, 12 Jan 2021 11:37:06 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode184-department-highest-salary/</guid>
-      <description>Question The Employee table holds all employees. Every employee has an Id, a salary, and there is also a column for the department Id.
-+----+-------+--------+--------------+ | Id | Name | Salary | DepartmentId | +----+-------+--------+--------------+ | 1 | Joe | 70000 | 1 | | 2 | Jim | 90000 | 1 | | 3 | Henry | 80000 | 2 | | 4 | Sam | 60000 | 2 | | 5 | Max | 90000 | 1 | +----+-------+--------+--------------+  The Department table holds all departments of the company.</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[183] Customers Who Never Order</title>
-      <link>https://www.marshalgao.com/leetcode183-customers-who-never-order/</link>
-      <pubDate>Mon, 11 Jan 2021 20:16:24 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode183-customers-who-never-order/</guid>
-      <description>Question Suppose that a website contains two tables, the Customers table and the Orders table. Write a SQL query to find all customers who never order anything.
-Table: Customers
-+----+-------+ | Id | Name | +----+-------+ | 1 | Joe | | 2 | Henry | | 3 | Sam | | 4 | Max | +----+-------+  Table: Orders
-+----+------------+ | Id | CustomerId | +----+------------+ | 1 | 3 | | 2 | 1 | +----+------------+  Using the above tables as example, return the following:</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[182] Duplicate Emails</title>
-      <link>https://www.marshalgao.com/leetcode182-duplicate-emails/</link>
-      <pubDate>Mon, 11 Jan 2021 17:20:59 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode182-duplicate-emails/</guid>
-      <description>Question Write a SQL query to find all duplicate emails in a table named Person.
-+----+---------+ | Id | Email | +----+---------+ | 1 | a@b.com | | 2 | c@d.com | | 3 | a@b.com | +----+---------+  For example, your query should return the following for the above table:
-+---------+ | Email | +---------+ | a@b.com | +---------+  Note: All emails are in lowercase.
-SQL Schema Create table If Not Exists Person (Id int, Email varchar(255)) Truncate table Person insert into Person (Id, Email) values (&amp;#39;1&amp;#39;, &amp;#39;a@b.</description>
-    </item>
-    
-    <item>
-      <title>28 Psychological Effects That Product Managers Must Understand</title>
-      <link>https://www.marshalgao.com/28-psychological-effects-that-product-managers-must-understand/</link>
-      <pubDate>Mon, 11 Jan 2021 16:47:59 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/28-psychological-effects-that-product-managers-must-understand/</guid>
-      <description>普通的产品解决问题，中等的产品服务用户，优秀的产品洞察人性。
-晕轮效应
-  定义：在生活中，我们一旦对某人的某种特征形成好或坏的印象后，在看待他的其他品质时，也会倾向于带上相似的态度。即“喜欢一个人就会喜欢他的一切”。
-  产品中的应用：这里有一个很好的例子就是小米。大家都知道小米手机的利润空间是很低的，而小米的核心策略就是通过手机聚集一批高忠诚度的“米粉”，米粉对小米的产品形成“价格厚道，质量上乘”的用户认知以后，小米再通过生态链产品及软件产品盈利，数据显示一个米粉购买小米商品（包括生态链）的件数是远远高于友商的，即做到了“薄利多销”。
-  首因效应
-  定义：也称最初效应，在总体印象形成上，最初获得的信息比后来获得的信息影响更大的现象。也就是第一印象几乎决定了别人对你的总体印象。
-  产品中的应用：这里有一个很好的例子，就是拼多多。拼多多一开始给大家的印象就是假货居多，所以即便是现在已经花了很大的力度去打假，依然有很多人因为假货拒绝使用拼多多，即便拼多多的东西真的很便宜实惠。这是因为用户已经形成了初始认知，短期内难以改变，这也是为什么京东一直宣传正品行货的理念来不断强化用户认知的原因。
-  登门槛效应
-  定义：又称得寸进尺效应，是指一个人一旦接受了他人的一个微不足道的要求，为了避免认知上的不协调，或想给他人以前后一致的印象，就有可能接受更大的要求。在一般情况下，人们都不愿接受较高较难的要求，因为它费时费力又难以成功，相反，人们却乐于接受较小的、较易完成的要求，在实现了较小的要求后，人们才慢慢地接受较大的要求。
-  产品中的应用：要设置合理的参与门槛，以方便目标用户参与，减少流失。当然也不是说参与门槛越低越好，比如一些优质的内容社区如人人都是产品经理，肯定不能谁想发文章就可以乱发，肯定是要经过审核以保证内容的优质性。所以PM要根据自己的目标人群设置合理的参与门槛，如果是普适性活动，建议最开始的参与门槛一定要足够低，甚至连登录都可以不要，采用一键获取微信OpenID等方式替代登录。
-  巴纳姆效应
-  定义：巴纳姆效应认为人们总是特别容易相信一种对于自己的笼统描述。即使这种描述十分空洞，但人们还是确信这就是自己真正的人格面貌。比如白羊座的人渴望一种稳定的社交关系，白羊座的人一听就觉得和自己很符合，但是仔细一想，谁不渴望一种稳定的社交关系呢？所以这个笼统描述是普适的。
-  产品中的应用：主要是存在于用户调研中，用户往往不知道自己的真实想法是什么，因此有经验的产品经理或者用研人员会客观地给用户一些发散性的提示，防止出现主观的引导而让用户误认为自己有这样的需求。而一些小白产品经理和用研人员经常会犯这样的错误，比如自己想做一个信息流的产品，就问用户：你是否有时候会觉得无聊，想看一些好玩有趣的事情打发时间？得到了用户肯定的回答之后，就觉得信息流产品是用户的痛点。但实际上这里的痛点是“用户有时候会觉得无聊”，信息流产品只是解决这个痛点的一个方式，但不一定是最好的方式，因为用户自己也不知道自己的需求是什么。
-  旁观者效应
-  定义：旁观者效应也叫“责任分散效应”，即他人的在场使得个体采取某种行动的可能性降低，也可以理解成“原本属于一个人的责任被主观分散到其它在场者身上了”。
-  产品中的应用：在裂变分享的时候，我们应该采取一些措施刺激和激励用户分享到个人，而不是分享到群里，因为如果不是非常亲密的群，群成员这个时候大多会出现“旁观者效应”，即大多处于观望状态，不会采取行动。
-  二八法则
-  定义：二八定律又名80/20定律、是19世纪末20世纪初意大利经济学家帕累托发现的。他认为，在任何一组东西中，最重要的只占其中一小部分，约20%，其余80%尽管是多数，却是次要的，因此又称二八定律。
-  产品中的应用：往往20%的用户会创造80%的价值，尤其是在电商领域中，基本上80%的GMV都是由20%的忠实用户贡献的。因此产品经理在设计产品逻辑的时候，要重点想以下两个问题：如何集中精力服务好20%的高价值用户以保持粘性？如何将剩下80%的普通用户转化成高价值用户？
-  搭便车效应
-  定义：搭便车效应指的是某个成员为集体所做出的努力使得全体成员都可能获利，但成本却由这个成员自己承担。
-  产品中的应用：淘宝双11合伙人组战队集能量的玩法，声势浩大，也取得了很好的效果，其中有一个玩法设计的非常巧妙：最后的现金红包并不是均分的，而是按照成员对团队的贡献发放对应的奖励。事后有不少人吐糟自己的队友里面有浑水摸鱼的，组了战队却不付出努力，还好最后不是按照人头均分的奖励，不然那些真正付出努力的用户肯定会有负面情绪，不利于下一次活动的开展。
-  结伴效应
-  定义：个人活动由于有他人参加导致效率变化。有两个表现：由于有他人增加会导致效率提高，或者是由于有他人增加导致效率下降。
-  产品中的应用：组队、拼团等玩法就是利用了这个效应。拼团在一定程度上对用户有一定激励：因为可以和好朋友一起参与活动；而拼团本身也是一种限制：因为如果拼团成功，一个人的撤销、暂停等行为势必会对另一个人造成影响，用户的犯错成本变高。在设计产品的过程中可以根据活动的玩法让用户适当结伴，增加用户的参与积极性或者是提高用户犯错成本。</description>
     </item>
     
   </channel>

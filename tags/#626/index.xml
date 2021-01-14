@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>#626 on This Is Marshal</title>
+    <link>https://www.marshalgao.com/tags/#626/</link>
+    <description>Recent content in #626 on This Is Marshal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 14 Jan 2021 14:50:32 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/#626/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode[626] Exchange Seats</title>
+      <link>https://www.marshalgao.com/leetcode626-exchange-seats/</link>
+      <pubDate>Thu, 14 Jan 2021 14:50:32 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode626-exchange-seats/</guid>
+      <description>Question Mary is a teacher in a middle school and she has a table seat storing students&#39; names and their corresponding seat ids.
+The column id is continuous increment.
+Mary wants to change seats for the adjacent students.
+Can you write a SQL query to output the result for Mary?
++---------+---------+ | id | student | +---------+---------+ | 1 | Abbot | | 2 | Doris | | 3 | Emerson | | 4 | Green | | 5 | Jeames | +---------+---------+  For the sample input, the output is:</description>
+    </item>
+    
+  </channel>
+</rss>
