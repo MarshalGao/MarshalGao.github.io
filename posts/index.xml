@@ -6,8 +6,407 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Thu, 14 Jan 2021 15:51:59 +0800</lastBuildDate>
+        <lastBuildDate>Fri, 15 Jan 2021 09:30:34 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ECOM7123 Smart Economy and Fintech</title>
+            <link>https://www.marshalgao.com/ecom7123-smart-economy-and-fintech/</link>
+            <pubDate>Fri, 15 Jan 2021 09:30:34 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/ecom7123-smart-economy-and-fintech/</guid>
+            <description>Smart Economy Overview
+ definition  economy growth based on knowledge &amp;amp; innovation establish new economy models &amp;amp; business opportunities create quality jobs grow resource-efficiently so that economy is more competitive global reach    New economy models
+ sharing economy  different people sharing idle resources or services through the exchange of information to build a trusted platform to effectively connect those who provide and demand for the resources or services, thereby lowering the cost of transaction sharing economy facilitates sharing among people and can reduce waste of resources   industry 4.</description>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Smart%20Economy%20and%20FinTech1.png" alt=""></p>
+<h2 id="smart-economy">Smart Economy</h2>
+<p><strong>Overview</strong></p>
+<ul>
+<li>definition
+<ul>
+<li>economy growth based on knowledge &amp; innovation</li>
+<li>establish new economy models &amp; business opportunities</li>
+<li>create quality jobs</li>
+<li>grow resource-efficiently so that economy is more competitive</li>
+<li>global reach</li>
+</ul>
+</li>
+</ul>
+<p><strong>New economy models</strong></p>
+<ul>
+<li>sharing economy
+<ul>
+<li>different people sharing idle resources or services through the exchange of information</li>
+<li>to build a trusted platform to effectively connect those who provide and demand for the resources or services, thereby lowering the cost of transaction</li>
+<li>sharing economy facilitates sharing among people and can reduce waste of resources</li>
+</ul>
+</li>
+<li>industry 4.0 (society 5.0 in Japan)
+<ul>
+<li>energy-efficient product production systems</li>
+<li>intelligent manufacturing systems</li>
+<li>based on IoT, big data, cybersecurity, augmented reality and robots</li>
+</ul>
+</li>
+<li>circular economy
+<ul>
+<li>promotes greater resource productivity</li>
+<li>towards sustainable development</li>
+<li>reducing, reusing &amp; recycling</li>
+</ul>
+</li>
+<li>platform economy
+<ul>
+<li>a platform business owns a medium which let others to connect</li>
+<li>connecting supply with demand directly</li>
+<li>usually does not produce or own the products or services</li>
+<li>examples
+<ul>
+<li>Alibaba, Amazon, Apple, Facebook, Google, Spotify, etc.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>startups
+<ul>
+<li>small, agile and innovate quickly</li>
+<li>able to disrupt the lumbering traditional companies and organizations</li>
+<li>incubator
+<ul>
+<li>a company that helps new &amp; startup companies to develop by providing services such as management training or office space</li>
+</ul>
+</li>
+<li>accelerator
+<ul>
+<li>fixed-term and cohort-based programs that include mentorship and educational components to startups</li>
+<li>a seed investment is usually made in exchange for equity</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="fintech">FinTech</h2>
+<p><strong>Overview</strong></p>
+<ul>
+<li>definition
+<ul>
+<li>FinTech = Financial Technologies</li>
+<li>using new technologies, such as mobile phones and cloud computing, to provide more affordable and eaiser-to-access financial services to a wider population, from e-payment and fund transfer, to insurance and personal loan</li>
+</ul>
+</li>
+</ul>
+<p><strong>FinTech scope</strong></p>
+<ul>
+<li>financing
+<ul>
+<li>P2P lending
+<ul>
+<li>is the loan of money to individuals or businesses through online services that match lenders directly with borrowers without going through a traditional financial intermediary such as bank</li>
+</ul>
+</li>
+<li>crowdfunding
+<ul>
+<li>advantages
+<ul>
+<li>startups can raise money quickly and cheaply from people all over the world</li>
+<li>democratized the process of finding capital</li>
+<li>shortened the timeline from months to as little as a few weeks</li>
+</ul>
+</li>
+<li>4 types
+<ul>
+<li>donation-based
+<ul>
+<li>donors generally donate small amounts used to raise money for a non-porfit projects</li>
+</ul>
+</li>
+<li>debt-based
+<ul>
+<li>investors do not get a reward and equity</li>
+<li>make a loan get paid back plus interest</li>
+</ul>
+</li>
+<li>reward-based
+<ul>
+<li>backers contribute typically small amounts of money (typically between $1 and $1,000 but somtimes more) in exchange for a reward</li>
+</ul>
+</li>
+<li>equity-based
+<ul>
+<li>investors give large amount of money without a reward</li>
+<li>investors get a small piece of equity</li>
+<li>from angel investors or venture capitalists</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>WealthTech
+<ul>
+<li>focuses on improving wealth management and investing</li>
+<li>benefits include more efficient workflow, more optimal portfolio management, increased access to assets, improved client experiences and greater transparency</li>
+<li>any technology that supports financial advisors – falls within the broad definition of WealthTech</li>
+</ul>
+</li>
+<li>InsurTech
+<ul>
+<li>is a subset of FinTech which relates to the use of technology to simplify and improve the efficiency of the insurance industry</li>
+</ul>
+</li>
+<li>PropTech
+<ul>
+<li>using technology to disrupt and improve the way we design, construct, buy, rent, sell and manage property</li>
+<li>using GIS, GeoAI (Geospatial + AI)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>payment &amp; securities settlement
+<ul>
+<li>alternative payment methods
+<ul>
+<li>SVF (Store Value Facility)
+<ul>
+<li>is a form of prepaid electronic cash or card that can be used within the system of the SVF issuer</li>
+<li>the SVF issuer is known as the holder of the stored value</li>
+<li>some electronic SVFs are also known as e-money</li>
+<li>device-based SVF and non-device based SVF (i.e. network-based SVF)</li>
+</ul>
+</li>
+<li>mobile payment
+<ul>
+<li>via mobile phone</li>
+<li>benefits
+<ul>
+<li>convenient</li>
+<li>flexible</li>
+<li>easier to manage spending</li>
+</ul>
+</li>
+<li>technologies
+<ul>
+<li>NFC, QR codes, etc.</li>
+</ul>
+</li>
+<li>commone categories
+<ul>
+<li>mobile wallets
+<ul>
+<li>the major type of mobile payment now</li>
+</ul>
+</li>
+<li>closed loop mobile payments
+<ul>
+<li>traditional closed loop payments
+<ul>
+<li>allows consumers to load money into a spending account that is linked to a payment device such as a gift card for a specific company (and only that company)</li>
+</ul>
+</li>
+<li>moving to mobile platform
+<ul>
+<li>enabling consumers to check their balance, top-up, and pay using mobile apps</li>
+</ul>
+</li>
+<li>benefits
+<ul>
+<li>instantly capture big data on customer insights, buying habits, return on marketing campaigns</li>
+<li>increase customer loyalty</li>
+<li>become the convenient choice for customers</li>
+</ul>
+</li>
+<li>examples: Starbucks mobile app</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>cryptocurrencies &amp; blockchain
+<ul>
+<li>cryptocurrencies
+<ul>
+<li>is a decentralized digital currency which uses encryption to generate units of currency and validate transactions independent of a central bank</li>
+<li>Bitcoin &amp; Ether are the most common form of digital currencies</li>
+</ul>
+</li>
+<li>blockchain
+<ul>
+<li>the proposition
+<ul>
+<li>the technology allows a ledger (transaction record) to be distributed rather than centralized</li>
+<li>a distributed database that maintains a continuously growing list of ordered records called “blocks”</li>
+</ul>
+</li>
+<li>the design
+<ul>
+<li>a blockchain database is managed autonomously through a peer-to-peer network and a distributed timestamping server</li>
+<li>once recorded, the data in a block cannot be altered autonomously, therefore even more trustworthy than the traditional centralized ledger</li>
+</ul>
+</li>
+<li>usage example
+<ul>
+<li>GeoBlockchain (GIS + Blockchain)</li>
+<li>adding location to the distributed ledger to provide proof of location (PoL) and other details, using in diamonds, coffee, a newly digitized supply chain</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>securities settlement
+<ul>
+<li>secure and expand Hong Kong role as a settlement hub for China-international payments and securities transactions
+<ul>
+<li>Stock Connects</li>
+<li>Bond Connect (債券通)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>big data analytics
+<ul>
+<li>analytics
+<ul>
+<li>example
+<ul>
+<li>using GIS to detect and discover fraud and suspected money laundering activities from billion numbers of transactions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>cybersecurity
+<ul>
+<li>FinTech major attack
+<ul>
+<li>online fraud</li>
+<li>theft of big data</li>
+<li>digital account hacking</li>
+<li>DDoS attack</li>
+</ul>
+</li>
+<li>protection
+<ul>
+<li>automate and integrate threat intelligence
+<ul>
+<li>subscribe service from Security Operations Centres (SOCs)</li>
+<li>real-time monitoring</li>
+</ul>
+</li>
+<li>identity and access management</li>
+<li>mobile and web security
+<ul>
+<li>strong firewall and anti-virus software</li>
+</ul>
+</li>
+<li>use anti-fraud system</li>
+<li>strengthen security knowledge for startups
+<ul>
+<li>attend training or seminar</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>identity
+<ul>
+<li>digital ID
+<ul>
+<li>examples
+<ul>
+<li>usage in Estonia</li>
+<li>e-ID on WeChat</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>KYC (Know Your Customer)
+<ul>
+<li>verification of the Proof of Identity (PoI) and Proof of Address (PoA) is a key requirement for access to financial products
+<ul>
+<li>payment product</li>
+<li>bank account</li>
+<li>insurance product, etc.</li>
+</ul>
+</li>
+<li>the need of KYC
+<ul>
+<li>verifying customers identity is costly for organizations</li>
+<li>organizations need a reliable way to verify self-provided data when onboarding a new customer</li>
+<li>they must ensure the identity presented is real, that the data points resolve consistently to a single identity</li>
+<li>some organizations must also verify that the customer is of legal age to purchase or engage with goods and services, or ensure that the customer is in a serviceable area</li>
+</ul>
+</li>
+<li>e-KYC
+<ul>
+<li>the concept of e-KYC refers to identifying your customers with personal information while maintaining individual privacy</li>
+<li>customers can opt to share their personal information with a registered service providers</li>
+<li>the e-KYC service has the potential to revolutionize service delivery in the public and private sector, and drive innovation in the market</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>RegTech
+<ul>
+<li>basic concepts
+<ul>
+<li>RegTech (Regulatory Technology), a new field within the financial services industry</li>
+<li>the main focus is on regulatory monitoring, reporting and compliance</li>
+<li>the objective of RegTech is to enhance transparency as well as consistency and to standardize regulatory processes, to deliver sound interpretations of ambiguous regulations and thus to provide higher quality of service at lower cost</li>
+<li>this technology ranges from complementing existing compliance, audit, and risk workflows to replacing and wholly automating them through leveraging cutting-edge technologies like artificial intelligence, machine learning, and the blockchain</li>
+</ul>
+</li>
+<li>advantages
+<ul>
+<li>helps corporations avoid fines for non-compliance by keeping them on top of the growing levels of regulatory and compliance requirements</li>
+<li>helps companies improve compliance, mitigate risk, streamline processes</li>
+<li>helps displacing manual risk</li>
+<li>helps predicting and preventing the next financial crisis</li>
+</ul>
+</li>
+<li>drivers fueling RegTech growth and adoption
+<ul>
+<li>driver 1: increasing regulatory pressure</li>
+<li>driver 2: regulators have increased jurisdictional oversight — and are using it to crack down on bad actors</li>
+<li>driver 3: non-compliance continues to plague the industry</li>
+<li>driver 4: regulators are raising the technical bar on compliance requirements</li>
+<li>driver 5: firms push for standardization</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Case - Hong Kong</strong></p>
+<ul>
+<li>HK - the FinTech hub of the world
+<ul>
+<li>5 reasons
+<ul>
+<li>international financial center</li>
+<li>vibrant startup ecosystem</li>
+<li>favorable policies</li>
+<li>strong pool of talents</li>
+<li>robust ICT infrastructure</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="additional-reading">Additional Reading</h2>
+<ul>
+<li><a href="../articles/Guest%20Lecture%20by%20HKSTP%2020210114.pdf">What Is Entrepreneurship &amp; HKSTP FinTech Initiative</a></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>LeetCode[1179] Reformat Department Table</title>
