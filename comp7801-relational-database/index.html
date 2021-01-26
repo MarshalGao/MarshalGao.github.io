@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Marshal ">
+<meta name="description" content="Structure of Relational Databases Overview
+ definition  formally, given sets \(D_1, D_2, ..., D_n\) a relation \(r\) is a subset of \(D_1 \times D_2 \times ... \times D_n\) thus a relation is a set of n-tuples (\(a_1, a_2, ..., a_n\)) where each \(a_i \in D_i\)  attribute type  each attribute of a relation has a name the set of allowed values for each attribute is called the domain of the attribute examples of simple domain types  integer string date  note  in advanced (non-relational) database systems, we may have complex attribute types e." />
+<meta name="keywords" content=", comp7801, topics in computer science, relational database" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://www.marshalgao.com/comp7801-relational-database/" />
+
+
+    <title>
+        
+            COMP7801 Relational Database :: This Is Marshal 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://www.marshalgao.com/main.1abfe30dec5ae0f5c4f84acd6413b12f63e4a6f9e1e7167f42de12192bfd25e9.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.marshalgao.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.marshalgao.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.marshalgao.com/favicon-16x16.png">
+    <link rel="manifest" href="https://www.marshalgao.com/site.webmanifest">
+    <link rel="mask-icon" href="https://www.marshalgao.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://www.marshalgao.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="COMP7801 Relational Database">
+<meta itemprop="description" content="Structure of Relational Databases Overview
+ definition  formally, given sets \(D_1, D_2, ..., D_n\) a relation \(r\) is a subset of \(D_1 \times D_2 \times ... \times D_n\) thus a relation is a set of n-tuples (\(a_1, a_2, ..., a_n\)) where each \(a_i \in D_i\)  attribute type  each attribute of a relation has a name the set of allowed values for each attribute is called the domain of the attribute examples of simple domain types  integer string date  note  in advanced (non-relational) database systems, we may have complex attribute types e.">
+<meta itemprop="datePublished" content="2021-01-25T11:56:40+08:00" />
+<meta itemprop="dateModified" content="2021-01-25T11:56:40+08:00" />
+<meta itemprop="wordCount" content="1410">
+<meta itemprop="image" content="https://www.marshalgao.com/"/>
+
+
+
+<meta itemprop="keywords" content="comp7801,topics in computer science,relational database," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.marshalgao.com/"/>
+
+<meta name="twitter:title" content="COMP7801 Relational Database"/>
+<meta name="twitter:description" content="Structure of Relational Databases Overview
+ definition  formally, given sets \(D_1, D_2, ..., D_n\) a relation \(r\) is a subset of \(D_1 \times D_2 \times ... \times D_n\) thus a relation is a set of n-tuples (\(a_1, a_2, ..., a_n\)) where each \(a_i \in D_i\)  attribute type  each attribute of a relation has a name the set of allowed values for each attribute is called the domain of the attribute examples of simple domain types  integer string date  note  in advanced (non-relational) database systems, we may have complex attribute types e."/>
+
+
+
+    <meta property="og:title" content="COMP7801 Relational Database" />
+<meta property="og:description" content="Structure of Relational Databases Overview
+ definition  formally, given sets \(D_1, D_2, ..., D_n\) a relation \(r\) is a subset of \(D_1 \times D_2 \times ... \times D_n\) thus a relation is a set of n-tuples (\(a_1, a_2, ..., a_n\)) where each \(a_i \in D_i\)  attribute type  each attribute of a relation has a name the set of allowed values for each attribute is called the domain of the attribute examples of simple domain types  integer string date  note  in advanced (non-relational) database systems, we may have complex attribute types e." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.marshalgao.com/comp7801-relational-database/" />
+<meta property="og:image" content="https://www.marshalgao.com/"/>
+<meta property="article:published_time" content="2021-01-25T11:56:40+08:00" />
+<meta property="article:modified_time" content="2021-01-25T11:56:40+08:00" />
+
+
+
+
+    <meta property="article:section" content="HKU" />
+
+
+
+    <meta property="article:published_time" content="2021-01-25 11:56:40 &#43;0800 HKT" />
+
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css" integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.js" integrity="sha384-JiKN5O8x9Hhs/UE5cT5AAJqieYlOZbGT3CHws/y97o3ty4R7/O5poG9F3JoiOYw1" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://www.marshalgao.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://www.marshalgao.com/categories/hku">HKU</a></li><li><a href="https://www.marshalgao.com/categories/technology">TECH</a></li><li><a href="https://www.marshalgao.com/categories/product-manager">PM</a></li><li><a href="https://www.marshalgao.com/categories/life">LIFE</a></li><li><a href="https://www.marshalgao.com/about/">ABOUT</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        7 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://www.marshalgao.com/comp7801-relational-database/">COMP7801 Relational Database</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Relational%20Database.png" alt=""></figure></p>
+
+<h2 id="structure-of-relational-databases">Structure of Relational Databases</h2>
+
+<p><strong>Overview</strong></p>
+
+<ul>
+<li>definition
+
+<ul>
+<li>formally, given sets <span  class="math">\(D_1, D_2, ..., D_n\)</span> a relation <span  class="math">\(r\)</span> is a subset of <span  class="math">\(D_1 \times D_2 \times ... \times D_n\)</span></li>
+<li>thus a relation is a set of n-tuples (<span  class="math">\(a_1, a_2, ..., a_n\)</span>) where each <span  class="math">\(a_i \in D_i\)</span></li>
+</ul></li>
+<li>attribute type
+
+<ul>
+<li>each attribute of a relation has a name</li>
+<li>the set of allowed values for each attribute is called the domain of the attribute</li>
+<li>examples of simple domain types
+
+<ul>
+<li>integer</li>
+<li>string</li>
+<li>date</li>
+</ul></li>
+<li>note
+
+<ul>
+<li>in advanced (non-relational) database systems, we may have complex attribute types</li>
+<li>e.g., in spatial database
+
+<ul>
+<li>point</li>
+<li>polygon</li>
+<li>poly-line</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h2 id="reduction-of-an-er-schema-to-tables">Reduction of an E-R Schema to Tables</h2>
+
+<p><strong>Relation</strong></p>
+
+<ul>
+<li>schema
+
+<ul>
+<li><span  class="math">\(A_1, A_2, ..., A_n\)</span> are attributes</li>
+<li><span  class="math">\(R = (A_1, A_2, ..., A_n)\)</span> is a relation schema</li>
+<li><span  class="math">\(r(R)\)</span> is a relation on the relation schema <span  class="math">\(R\)</span>
+
+<ul>
+<li>e.g., customer(Customer-schema)</li>
+</ul></li>
+</ul></li>
+<li>instance
+
+<ul>
+<li>the current values (relation instance) of a relation are specified by a table</li>
+<li>an element <span  class="math">\(t\)</span> of <span  class="math">\(r\)</span> is a tuple, represented by a row in a table
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/012501.png" alt=""></figure></li>
+</ul></li>
+</ul>
+
+<p><strong>Database</strong></p>
+
+<ul>
+<li>definition
+
+<ul>
+<li>a database consists of multiple relations which are inter-related
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/012502.png" alt=""></figure></li>
+</ul></li>
+</ul>
+
+<h2 id="relational-algebra-and-sql">Relational Algebra and SQL</h2>
+
+<p><strong>Query languages</strong></p>
+
+<ul>
+<li>definition
+
+<ul>
+<li>language in which user requests information from the database</li>
+</ul></li>
+<li>categories
+
+<ul>
+<li>procedural</li>
+<li>non-procedural</li>
+</ul></li>
+<li>pure languages
+
+<ul>
+<li>relational algebra</li>
+<li>relational calculus</li>
+<li>from underlying basis of query languages that people use</li>
+</ul></li>
+</ul>
+
+<p><strong>Relational algebra</strong></p>
+
+<ul>
+<li>overview
+
+<ul>
+<li>procedural language</li>
+<li>6 basic operators
+
+<ul>
+<li>select</li>
+<li>project</li>
+<li>union</li>
+<li>set difference</li>
+<li>Cartesian product</li>
+<li>rename</li>
+</ul></li>
+<li>additional operations
+
+<ul>
+<li>natural join</li>
+<li>division, etc.</li>
+</ul></li>
+<li>the operators take one or more relations as inputs and give a new relation as a result</li>
+<li>all inputs and outputs are relations - sets of tuples
+
+<ul>
+<li>in SQL, the output of an operator is a multiset of tuples</li>
+</ul></li>
+</ul></li>
+<li>select operation
+
+<ul>
+<li>notation
+
+<ul>
+<li><span  class="math">\(\sigma_p(r)\)</span></li>
+</ul></li>
+<li><span  class="math">\(p\)</span> is called the selection predicate</li>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/012505.png" alt=""></figure></li>
+</ul></li>
+<li>project operation
+
+<ul>
+<li>notation
+
+<ul>
+<li><span  class="math">\(\Pi_{A_1, A_2, ..., A_k}(r)\)</span></li>
+</ul></li>
+<li>the result is defined as the relation of k columns obtained by erasing the columns that are not listed</li>
+<li>duplicate rows removed from result, since relations are sets</li>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/012507.png" alt=""></figure></li>
+</ul></li>
+<li>union operation
+
+<ul>
+<li>notation
+
+<ul>
+<li><span  class="math">\(r\cup s\)</span></li>
+</ul></li>
+<li>union must be taken between compatible relations
+
+<ul>
+<li><span  class="math">\(r\)</span> and <span  class="math">\(s\)</span> must have the same arity</li>
+<li>attribute domains of <span  class="math">\(r\)</span> and <span  class="math">\(s\)</span> must be compatible</li>
+</ul></li>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/012508.png" alt=""></figure></li>
+</ul></li>
+<li>intersection operation
+
+<ul>
+<li>notation
+
+<ul>
+<li><span  class="math">\(r\cap s\)</span></li>
+</ul></li>
+<li>intersection must be taken between compatible relations
+
+<ul>
+<li><span  class="math">\(r\)</span> and <span  class="math">\(s\)</span> must have the same arity</li>
+<li>attribute domains of <span  class="math">\(r\)</span> and <span  class="math">\(s\)</span> must be compatible</li>
+</ul></li>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/012509.png" alt=""></figure></li>
+</ul></li>
+<li>difference operation
+
+<ul>
+<li>notation
+
+<ul>
+<li><span  class="math">\(r-s\)</span></li>
+</ul></li>
+<li>differences must be taken between compatible relations
+
+<ul>
+<li><span  class="math">\(r\)</span> and <span  class="math">\(s\)</span> must have the same arity</li>
+<li>attribute domains of <span  class="math">\(r\)</span> and <span  class="math">\(s\)</span> must be compatible</li>
+</ul></li>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/012510.png" alt=""></figure></li>
+</ul></li>
+<li>Cartesian-product operation
+
+<ul>
+<li>notation
+
+<ul>
+<li><span  class="math">\(r\times s\)</span></li>
+</ul></li>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/012511.png" alt=""></figure></li>
+</ul></li>
+<li>natural join operation
+
+<ul>
+<li>notation
+
+<ul>
+<li><span  class="math">\(r\infty s\)</span></li>
+</ul></li>
+<li>example
+
+<ul>
+<li><span  class="math">\(R=(A, B, C, D)\)</span></li>
+<li><span  class="math">\(S=(E, B, D)\)</span></li>
+<li>result schema = <span  class="math">\(R=(A, B, C, D, E)\)</span></li>
+<li><span  class="math">\(r\infty s\)</span> is defined as
+
+<ul>
+<li><span  class="math">\(\Pi_{r.A, r.B, r.C, r.D, s.E}(\sigma_{r.B=s.B \cap r.D=s.D}(r\times s))\)</span>
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/012512.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>aggregate functions and operations
+
+<ul>
+<li>an aggregation function takes a collection of values and returns a single value as a result
+
+<ul>
+<li>avg: average value</li>
+<li>min: minimum value</li>
+<li>max: maximum value</li>
+<li>sum: sum of values</li>
+<li>count: number of values</li>
+</ul></li>
+<li>aggregate operation in relational algebra
+
+<ul>
+<li>notation
+
+<ul>
+<li><span  class="math">\(_{G_1, G_2, ..., G_n} g_{F_1(A_1),F_2(A_2), ..., F_n(A_n)}(E)\)</span></li>
+</ul></li>
+<li><span  class="math">\(E\)</span> is any relational-algebra expression</li>
+<li><span  class="math">\(G_1, G_2, ..., G_n\)</span> is a list of attributes on which to group (can be empty)</li>
+<li>each <span  class="math">\(F_i\)</span> is an aggregate function</li>
+<li>each <span  class="math">\(A_i\)</span> is an attribute name</li>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8B%E5%8D%883.46.19.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>SQL</strong></p>
+
+<ul>
+<li>basic structure
+
+<ul>
+<li>form
+
+<ul>
+<li>select <span  class="math">\(A_1, A_2, ..., A_n\)</span></li>
+<li>from <span  class="math">\(r_1, r_2, ..., r_m\)</span></li>
+<li>where <span  class="math">\(P\)</span></li>
+</ul></li>
+<li>equivalent to the relational algebra
+
+<ul>
+<li><span  class="math">\(\Pi_{A_1, A_2, ..., A_n}(\sigma_P (r_1\times r_2\times ... \times r_m))\)</span></li>
+</ul></li>
+<li>the result of a SQL query is a multiset of tuples</li>
+</ul></li>
+<li>the select clause
+
+<ul>
+<li>to force the elimination of duplicates, insert the keyword &quot;distinct&quot; after &quot;select&quot;</li>
+</ul></li>
+<li>the where clause
+
+<ul>
+<li>comparison results can be combined using the logical connectives &quot;and&quot;, &quot;or&quot;, and &quot;not&quot;</li>
+<li>comparisons can be applied to results of arithmetic expressions</li>
+</ul></li>
+<li>the from clause
+
+<ul>
+<li>is Cartesian product</li>
+<li>a join can be expressed by a Cartesian product followed by selections on the join attributes</li>
+</ul></li>
+<li>aggregate functions
+
+<ul>
+<li>group by
+
+<ul>
+<li>in the select clause outside of aggregate functions we must have<br>
+
+<ul>
+<li>attributes that appear in the &quot;group by&quot; list and/or</li>
+<li>aggregate functions on attributes of each group</li>
+</ul></li>
+</ul></li>
+<li>having
+
+<ul>
+<li>predicates in the having clause are applied after the formation of groups whereas predicates in the where clause are applied before forming groups</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>Query evaluation and optimization</strong></p>
+
+<ul>
+<li>purpose
+
+<ul>
+<li>many equivalent expressions to the original query can be derived</li>
+<li>the query optimizer uses statistical data and appropriate algorithms to compute an expression of low evaluation cost</li>
+</ul></li>
+<li>example
+
+<ul>
+<li><span  class="math">\(\Pi_{customer-name}(\sigma_{branch-city = Brooklyn}(branch \infty account \infty depositor))\)</span>
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/012601.png" alt=""></figure></li>
+</ul></li>
+</ul>
+
+<h2 id="storage-of-relations">Storage of Relations</h2>
+
+<p><strong>Physical storage media</strong></p>
+
+<ul>
+<li>cache
+
+<ul>
+<li>fastest and most costly form of storage</li>
+<li>volatile
+
+<ul>
+<li>you lose power, you lose everything</li>
+</ul></li>
+<li>managed by the computer system hardware</li>
+</ul></li>
+<li>main memory
+
+<ul>
+<li>fast access</li>
+<li>generally too small (or too expensive) to store the entire database</li>
+<li>volatile</li>
+</ul></li>
+<li>magnetic disk
+
+<ul>
+<li>data is stored on spinning disk, and read/written magnetically</li>
+<li>primary medium for the long-term storage of data; typically stores entire database</li>
+<li>data must be moved from disk to main memory for access, and written back for storage
+
+<ul>
+<li>much slower access than main memory</li>
+</ul></li>
+<li>direct-access – possible to read data on disk in any order, unlike magnetic tape</li>
+<li>capacities range up to several TB currently</li>
+<li>survives power failures and system crashes
+
+<ul>
+<li>disk failure can destroy data, but is very rare</li>
+</ul></li>
+<li>magnetic hard disk mechanism
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/012603.png" alt=""></figure></li>
+</ul></li>
+<li>storage and memory hierarchy
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/012602.png" alt=""></figure></li>
+</ul>
+
+<p><strong>Optimization of disk-block access</strong></p>
+
+<ul>
+<li>block
+
+<ul>
+<li>data is transferred between disk and main memory in blocks</li>
+<li>sizes range from 512 bytes to several kilobytes
+
+<ul>
+<li>smaller blocks: more transfers from disk</li>
+<li>larger blocks: more space wasted due to partially filled blocks</li>
+<li>typical block sizes today range from 4 to 16 kilobytes</li>
+</ul></li>
+</ul></li>
+<li>algorithm
+
+<ul>
+<li>disk-arm-scheduling algorithms order pending accesses to tracks so that disk arm movement is minimized</li>
+</ul></li>
+</ul>
+
+<p><strong>Storage access</strong></p>
+
+<ul>
+<li>purpose
+
+<ul>
+<li>in order to minimize the number of block transfers between the disk and memory</li>
+<li>reduce the number of disk accesses by keeping as many blocks as possible in main memory</li>
+</ul></li>
+<li>buffer
+
+<ul>
+<li>portion of main memory available to store copies of disk blocks</li>
+</ul></li>
+<li>buffer manager
+
+<ul>
+<li>subsystem responsible for allocating buffer space in main memory</li>
+<li>if the block is already in the buffer
+
+<ul>
+<li>the requesting program is given the address of the block in main memory</li>
+</ul></li>
+<li>if the block is not in the buffer
+
+<ul>
+<li>the buffer manager allocates space in the buffer for the block, replacing (throwing out) some other block, if required, to make space for the new block
+
+<ul>
+<li>buffer-replacement policies
+
+<ul>
+<li>most OS replace the block least recently used (LRU strategy)</li>
+<li>LRU works well for unpredicted access patterns</li>
+<li>however, queries have well-defined access patterns (such as sequential scans), and a database system can use the information in a user’s query to predict future references
+
+<ul>
+<li>LRU can be a bad strategy for certain access patterns involving repeated scans of data</li>
+<li>mixed strategy with hints on replacement strategy provided by the query optimizer is preferable</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>the block that is thrown out is written back to disk only if it was modified since the most recent time that it was written to/fetched from the disk</li>
+<li>once space is allocated in the buffer, the buffer manager reads the block from the disk to the buffer, and passes the address of the block in main memory to requester</li>
+</ul></li>
+</ul></li>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/012604.png" alt=""></figure></li>
+</ul>
+
+<p><strong>File organization</strong></p>
+
+<ul>
+<li>overview
+
+<ul>
+<li>the database is stored as a collection of files</li>
+<li>each file is a sequence of records</li>
+<li>a record is a sequence of fields</li>
+<li>each record has an address in the file, which is called record pointer or record id (simply rid)</li>
+<li>a simple approach
+
+<ul>
+<li>assume record size is fixed</li>
+<li>each file has records of one particular type only</li>
+<li>different files are used for different relations</li>
+</ul></li>
+</ul></li>
+<li>organization of records in files
+
+<ul>
+<li>heap
+
+<ul>
+<li>a record can be placed anywhere in the file where there is space</li>
+</ul></li>
+<li>sequential
+
+<ul>
+<li>store records in sequential order, based on the value of the search key of each record</li>
+</ul></li>
+<li>hashing
+
+<ul>
+<li>a hash function computed on some attribute of each record</li>
+<li>the result specifies in which block of the file the record should be placed</li>
+</ul></li>
+<li>other
+
+<ul>
+<li>records of each relation may be stored in a separate file</li>
+<li>in a &quot;clustered file organization&quot; records of several different relations can be stored in the same file
+
+<ul>
+<li>motivation: store related records on the same block to minimize I/O</li>
+<li>however, not good for queries accessing only a few relations</li>
+<li>in general, this representation is barely used</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h2 id="questions">Questions</h2>
+
+<p><strong>Q: Suppose I just want to access your age, but in practice, the main memory read all your information from the specific block. Why?</strong></p>
+
+<p>A: The disk may be slower than main memory, in order to reduce the number of block transfers between the disk and memory, the main memory would read all your informtion.</p>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/tags/comp7801/">comp7801</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/topics-in-computer-science/">topics in computer science</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/relational-database/">relational database</a></span>
+        
+    </p>
+
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/categories/hku/">HKU</a></span>
+        
+    </p>
+
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        1410 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2021-01-25 11:56
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+
+          
+            <span class="button next">
+              <a href="https://www.marshalgao.com/ecom7123-smart-economy-and-fintech/">
+                <span class="button__text">ECOM7123 Smart Economy and FinTech</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020-2021</span>
+            
+                <span><a href="https://www.marshalgao.com/">Marshal</a></span>
+            
+            
+                <span><a href="https://www.hku.hk" target="_blank" rel="noopener">The University of Hong Kong</a></span>
+            <span><a href="https://www.marshalgao.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Team Rocket: <a href="https://www.pseudoyu.com/" target="_blank" rel="noopener">Pseudoyu</a></span>
+            <span><a href="https://www.m1sty.com/" target="_blank" rel="noopener">Misty</a></span>
+          </div>
+    </div>
+</footer>
+
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://www.marshalgao.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>

@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 15 Jan 2021 09:30:34 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/hku/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Jan 2021 11:56:40 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/hku/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>COMP7801 Relational Database</title>
+      <link>https://www.marshalgao.com/comp7801-relational-database/</link>
+      <pubDate>Mon, 25 Jan 2021 11:56:40 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/comp7801-relational-database/</guid>
+      <description>Structure of Relational Databases Overview
+ definition  formally, given sets \(D_1, D_2, ..., D_n\) a relation \(r\) is a subset of \(D_1 \times D_2 \times ... \times D_n\) thus a relation is a set of n-tuples (\(a_1, a_2, ..., a_n\)) where each \(a_i \in D_i\)  attribute type  each attribute of a relation has a name the set of allowed values for each attribute is called the domain of the attribute examples of simple domain types  integer string date  note  in advanced (non-relational) database systems, we may have complex attribute types e.</description>
+    </item>
+    
     <item>
       <title>ECOM7123 Smart Economy and FinTech</title>
       <link>https://www.marshalgao.com/ecom7123-smart-economy-and-fintech/</link>
@@ -102,16 +112,6 @@ These trends have a profound impact on the people and the spaces they inhabit, r
       <guid>https://www.marshalgao.com/ecom6013-emerging-and-disruptive-technologies-iot-and-ai/</guid>
       <description>Disruptive Technologies E-commerce is evolving
  the technologies will either evolve or have a limited lifespan a challenge is to determine what new technologies are relevant and what they might contribute to the future especially of e-commerce definition of technology  the application of science, math, engineering, art, and other fields of knowledge to create tools and implementations deemed useful by a society    Adoption of disruptive technologies</description>
-    </item>
-    
-    <item>
-      <title>ECOM6013 Blockchain and Cybercurrency</title>
-      <link>https://www.marshalgao.com/ecom6013-blockchain-and-cybercurrency/</link>
-      <pubDate>Sat, 12 Dec 2020 10:13:49 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/ecom6013-blockchain-and-cybercurrency/</guid>
-      <description>Overview Traditional types of money
- token money  represented by a physical object (token) such as a banknote, coin, traveler’s check, etc without that token the value is lost no intermediary is required for spending but requires faith in the issuer, usually a government or a bank   notational money  represented by a notation/entry in a ledger, passbook, or database (e.g., a bank account) notational money cannot be lost (in theory) requires an intermediary (bank or clearing house) for spending requires faith in the maintainer of the ledger   hybrid money  requires both a token and a ledger account (e.</description>
     </item>
     
   </channel>

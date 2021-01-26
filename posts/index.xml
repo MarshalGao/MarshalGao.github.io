@@ -6,8 +6,540 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-        <lastBuildDate>Fri, 15 Jan 2021 09:30:34 +0800</lastBuildDate>
+        <lastBuildDate>Mon, 25 Jan 2021 11:56:40 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>COMP7801 Relational Database</title>
+            <link>https://www.marshalgao.com/comp7801-relational-database/</link>
+            <pubDate>Mon, 25 Jan 2021 11:56:40 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/comp7801-relational-database/</guid>
+            <description>Structure of Relational Databases Overview
+ definition  formally, given sets \(D_1, D_2, ..., D_n\) a relation \(r\) is a subset of \(D_1 \times D_2 \times ... \times D_n\) thus a relation is a set of n-tuples (\(a_1, a_2, ..., a_n\)) where each \(a_i \in D_i\)  attribute type  each attribute of a relation has a name the set of allowed values for each attribute is called the domain of the attribute examples of simple domain types  integer string date  note  in advanced (non-relational) database systems, we may have complex attribute types e.</description>
+            <content type="html"><![CDATA[<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Relational%20Database.png" alt=""></figure></p>
+
+<h2 id="structure-of-relational-databases">Structure of Relational Databases</h2>
+
+<p><strong>Overview</strong></p>
+
+<ul>
+<li>definition
+
+<ul>
+<li>formally, given sets <span  class="math">\(D_1, D_2, ..., D_n\)</span> a relation <span  class="math">\(r\)</span> is a subset of <span  class="math">\(D_1 \times D_2 \times ... \times D_n\)</span></li>
+<li>thus a relation is a set of n-tuples (<span  class="math">\(a_1, a_2, ..., a_n\)</span>) where each <span  class="math">\(a_i \in D_i\)</span></li>
+</ul></li>
+<li>attribute type
+
+<ul>
+<li>each attribute of a relation has a name</li>
+<li>the set of allowed values for each attribute is called the domain of the attribute</li>
+<li>examples of simple domain types
+
+<ul>
+<li>integer</li>
+<li>string</li>
+<li>date</li>
+</ul></li>
+<li>note
+
+<ul>
+<li>in advanced (non-relational) database systems, we may have complex attribute types</li>
+<li>e.g., in spatial database
+
+<ul>
+<li>point</li>
+<li>polygon</li>
+<li>poly-line</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h2 id="reduction-of-an-er-schema-to-tables">Reduction of an E-R Schema to Tables</h2>
+
+<p><strong>Relation</strong></p>
+
+<ul>
+<li>schema
+
+<ul>
+<li><span  class="math">\(A_1, A_2, ..., A_n\)</span> are attributes</li>
+<li><span  class="math">\(R = (A_1, A_2, ..., A_n)\)</span> is a relation schema</li>
+<li><span  class="math">\(r(R)\)</span> is a relation on the relation schema <span  class="math">\(R\)</span>
+
+<ul>
+<li>e.g., customer(Customer-schema)</li>
+</ul></li>
+</ul></li>
+<li>instance
+
+<ul>
+<li>the current values (relation instance) of a relation are specified by a table</li>
+<li>an element <span  class="math">\(t\)</span> of <span  class="math">\(r\)</span> is a tuple, represented by a row in a table
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/012501.png" alt=""></figure></li>
+</ul></li>
+</ul>
+
+<p><strong>Database</strong></p>
+
+<ul>
+<li>definition
+
+<ul>
+<li>a database consists of multiple relations which are inter-related
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/012502.png" alt=""></figure></li>
+</ul></li>
+</ul>
+
+<h2 id="relational-algebra-and-sql">Relational Algebra and SQL</h2>
+
+<p><strong>Query languages</strong></p>
+
+<ul>
+<li>definition
+
+<ul>
+<li>language in which user requests information from the database</li>
+</ul></li>
+<li>categories
+
+<ul>
+<li>procedural</li>
+<li>non-procedural</li>
+</ul></li>
+<li>pure languages
+
+<ul>
+<li>relational algebra</li>
+<li>relational calculus</li>
+<li>from underlying basis of query languages that people use</li>
+</ul></li>
+</ul>
+
+<p><strong>Relational algebra</strong></p>
+
+<ul>
+<li>overview
+
+<ul>
+<li>procedural language</li>
+<li>6 basic operators
+
+<ul>
+<li>select</li>
+<li>project</li>
+<li>union</li>
+<li>set difference</li>
+<li>Cartesian product</li>
+<li>rename</li>
+</ul></li>
+<li>additional operations
+
+<ul>
+<li>natural join</li>
+<li>division, etc.</li>
+</ul></li>
+<li>the operators take one or more relations as inputs and give a new relation as a result</li>
+<li>all inputs and outputs are relations - sets of tuples
+
+<ul>
+<li>in SQL, the output of an operator is a multiset of tuples</li>
+</ul></li>
+</ul></li>
+<li>select operation
+
+<ul>
+<li>notation
+
+<ul>
+<li><span  class="math">\(\sigma_p(r)\)</span></li>
+</ul></li>
+<li><span  class="math">\(p\)</span> is called the selection predicate</li>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/012505.png" alt=""></figure></li>
+</ul></li>
+<li>project operation
+
+<ul>
+<li>notation
+
+<ul>
+<li><span  class="math">\(\Pi_{A_1, A_2, ..., A_k}(r)\)</span></li>
+</ul></li>
+<li>the result is defined as the relation of k columns obtained by erasing the columns that are not listed</li>
+<li>duplicate rows removed from result, since relations are sets</li>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/012507.png" alt=""></figure></li>
+</ul></li>
+<li>union operation
+
+<ul>
+<li>notation
+
+<ul>
+<li><span  class="math">\(r\cup s\)</span></li>
+</ul></li>
+<li>union must be taken between compatible relations
+
+<ul>
+<li><span  class="math">\(r\)</span> and <span  class="math">\(s\)</span> must have the same arity</li>
+<li>attribute domains of <span  class="math">\(r\)</span> and <span  class="math">\(s\)</span> must be compatible</li>
+</ul></li>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/012508.png" alt=""></figure></li>
+</ul></li>
+<li>intersection operation
+
+<ul>
+<li>notation
+
+<ul>
+<li><span  class="math">\(r\cap s\)</span></li>
+</ul></li>
+<li>intersection must be taken between compatible relations
+
+<ul>
+<li><span  class="math">\(r\)</span> and <span  class="math">\(s\)</span> must have the same arity</li>
+<li>attribute domains of <span  class="math">\(r\)</span> and <span  class="math">\(s\)</span> must be compatible</li>
+</ul></li>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/012509.png" alt=""></figure></li>
+</ul></li>
+<li>difference operation
+
+<ul>
+<li>notation
+
+<ul>
+<li><span  class="math">\(r-s\)</span></li>
+</ul></li>
+<li>differences must be taken between compatible relations
+
+<ul>
+<li><span  class="math">\(r\)</span> and <span  class="math">\(s\)</span> must have the same arity</li>
+<li>attribute domains of <span  class="math">\(r\)</span> and <span  class="math">\(s\)</span> must be compatible</li>
+</ul></li>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/012510.png" alt=""></figure></li>
+</ul></li>
+<li>Cartesian-product operation
+
+<ul>
+<li>notation
+
+<ul>
+<li><span  class="math">\(r\times s\)</span></li>
+</ul></li>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/012511.png" alt=""></figure></li>
+</ul></li>
+<li>natural join operation
+
+<ul>
+<li>notation
+
+<ul>
+<li><span  class="math">\(r\infty s\)</span></li>
+</ul></li>
+<li>example
+
+<ul>
+<li><span  class="math">\(R=(A, B, C, D)\)</span></li>
+<li><span  class="math">\(S=(E, B, D)\)</span></li>
+<li>result schema = <span  class="math">\(R=(A, B, C, D, E)\)</span></li>
+<li><span  class="math">\(r\infty s\)</span> is defined as
+
+<ul>
+<li><span  class="math">\(\Pi_{r.A, r.B, r.C, r.D, s.E}(\sigma_{r.B=s.B \cap r.D=s.D}(r\times s))\)</span>
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/012512.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>aggregate functions and operations
+
+<ul>
+<li>an aggregation function takes a collection of values and returns a single value as a result
+
+<ul>
+<li>avg: average value</li>
+<li>min: minimum value</li>
+<li>max: maximum value</li>
+<li>sum: sum of values</li>
+<li>count: number of values</li>
+</ul></li>
+<li>aggregate operation in relational algebra
+
+<ul>
+<li>notation
+
+<ul>
+<li><span  class="math">\(_{G_1, G_2, ..., G_n} g_{F_1(A_1),F_2(A_2), ..., F_n(A_n)}(E)\)</span></li>
+</ul></li>
+<li><span  class="math">\(E\)</span> is any relational-algebra expression</li>
+<li><span  class="math">\(G_1, G_2, ..., G_n\)</span> is a list of attributes on which to group (can be empty)</li>
+<li>each <span  class="math">\(F_i\)</span> is an aggregate function</li>
+<li>each <span  class="math">\(A_i\)</span> is an attribute name</li>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8B%E5%8D%883.46.19.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>SQL</strong></p>
+
+<ul>
+<li>basic structure
+
+<ul>
+<li>form
+
+<ul>
+<li>select <span  class="math">\(A_1, A_2, ..., A_n\)</span></li>
+<li>from <span  class="math">\(r_1, r_2, ..., r_m\)</span></li>
+<li>where <span  class="math">\(P\)</span></li>
+</ul></li>
+<li>equivalent to the relational algebra
+
+<ul>
+<li><span  class="math">\(\Pi_{A_1, A_2, ..., A_n}(\sigma_P (r_1\times r_2\times ... \times r_m))\)</span></li>
+</ul></li>
+<li>the result of a SQL query is a multiset of tuples</li>
+</ul></li>
+<li>the select clause
+
+<ul>
+<li>to force the elimination of duplicates, insert the keyword &quot;distinct&quot; after &quot;select&quot;</li>
+</ul></li>
+<li>the where clause
+
+<ul>
+<li>comparison results can be combined using the logical connectives &quot;and&quot;, &quot;or&quot;, and &quot;not&quot;</li>
+<li>comparisons can be applied to results of arithmetic expressions</li>
+</ul></li>
+<li>the from clause
+
+<ul>
+<li>is Cartesian product</li>
+<li>a join can be expressed by a Cartesian product followed by selections on the join attributes</li>
+</ul></li>
+<li>aggregate functions
+
+<ul>
+<li>group by
+
+<ul>
+<li>in the select clause outside of aggregate functions we must have<br>
+
+<ul>
+<li>attributes that appear in the &quot;group by&quot; list and/or</li>
+<li>aggregate functions on attributes of each group</li>
+</ul></li>
+</ul></li>
+<li>having
+
+<ul>
+<li>predicates in the having clause are applied after the formation of groups whereas predicates in the where clause are applied before forming groups</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>Query evaluation and optimization</strong></p>
+
+<ul>
+<li>purpose
+
+<ul>
+<li>many equivalent expressions to the original query can be derived</li>
+<li>the query optimizer uses statistical data and appropriate algorithms to compute an expression of low evaluation cost</li>
+</ul></li>
+<li>example
+
+<ul>
+<li><span  class="math">\(\Pi_{customer-name}(\sigma_{branch-city = Brooklyn}(branch \infty account \infty depositor))\)</span>
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/012601.png" alt=""></figure></li>
+</ul></li>
+</ul>
+
+<h2 id="storage-of-relations">Storage of Relations</h2>
+
+<p><strong>Physical storage media</strong></p>
+
+<ul>
+<li>cache
+
+<ul>
+<li>fastest and most costly form of storage</li>
+<li>volatile
+
+<ul>
+<li>you lose power, you lose everything</li>
+</ul></li>
+<li>managed by the computer system hardware</li>
+</ul></li>
+<li>main memory
+
+<ul>
+<li>fast access</li>
+<li>generally too small (or too expensive) to store the entire database</li>
+<li>volatile</li>
+</ul></li>
+<li>magnetic disk
+
+<ul>
+<li>data is stored on spinning disk, and read/written magnetically</li>
+<li>primary medium for the long-term storage of data; typically stores entire database</li>
+<li>data must be moved from disk to main memory for access, and written back for storage
+
+<ul>
+<li>much slower access than main memory</li>
+</ul></li>
+<li>direct-access – possible to read data on disk in any order, unlike magnetic tape</li>
+<li>capacities range up to several TB currently</li>
+<li>survives power failures and system crashes
+
+<ul>
+<li>disk failure can destroy data, but is very rare</li>
+</ul></li>
+<li>magnetic hard disk mechanism
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/012603.png" alt=""></figure></li>
+</ul></li>
+<li>storage and memory hierarchy
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/012602.png" alt=""></figure></li>
+</ul>
+
+<p><strong>Optimization of disk-block access</strong></p>
+
+<ul>
+<li>block
+
+<ul>
+<li>data is transferred between disk and main memory in blocks</li>
+<li>sizes range from 512 bytes to several kilobytes
+
+<ul>
+<li>smaller blocks: more transfers from disk</li>
+<li>larger blocks: more space wasted due to partially filled blocks</li>
+<li>typical block sizes today range from 4 to 16 kilobytes</li>
+</ul></li>
+</ul></li>
+<li>algorithm
+
+<ul>
+<li>disk-arm-scheduling algorithms order pending accesses to tracks so that disk arm movement is minimized</li>
+</ul></li>
+</ul>
+
+<p><strong>Storage access</strong></p>
+
+<ul>
+<li>purpose
+
+<ul>
+<li>in order to minimize the number of block transfers between the disk and memory</li>
+<li>reduce the number of disk accesses by keeping as many blocks as possible in main memory</li>
+</ul></li>
+<li>buffer
+
+<ul>
+<li>portion of main memory available to store copies of disk blocks</li>
+</ul></li>
+<li>buffer manager
+
+<ul>
+<li>subsystem responsible for allocating buffer space in main memory</li>
+<li>if the block is already in the buffer
+
+<ul>
+<li>the requesting program is given the address of the block in main memory</li>
+</ul></li>
+<li>if the block is not in the buffer
+
+<ul>
+<li>the buffer manager allocates space in the buffer for the block, replacing (throwing out) some other block, if required, to make space for the new block
+
+<ul>
+<li>buffer-replacement policies
+
+<ul>
+<li>most OS replace the block least recently used (LRU strategy)</li>
+<li>LRU works well for unpredicted access patterns</li>
+<li>however, queries have well-defined access patterns (such as sequential scans), and a database system can use the information in a user’s query to predict future references
+
+<ul>
+<li>LRU can be a bad strategy for certain access patterns involving repeated scans of data</li>
+<li>mixed strategy with hints on replacement strategy provided by the query optimizer is preferable</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>the block that is thrown out is written back to disk only if it was modified since the most recent time that it was written to/fetched from the disk</li>
+<li>once space is allocated in the buffer, the buffer manager reads the block from the disk to the buffer, and passes the address of the block in main memory to requester</li>
+</ul></li>
+</ul></li>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/012604.png" alt=""></figure></li>
+</ul>
+
+<p><strong>File organization</strong></p>
+
+<ul>
+<li>overview
+
+<ul>
+<li>the database is stored as a collection of files</li>
+<li>each file is a sequence of records</li>
+<li>a record is a sequence of fields</li>
+<li>each record has an address in the file, which is called record pointer or record id (simply rid)</li>
+<li>a simple approach
+
+<ul>
+<li>assume record size is fixed</li>
+<li>each file has records of one particular type only</li>
+<li>different files are used for different relations</li>
+</ul></li>
+</ul></li>
+<li>organization of records in files
+
+<ul>
+<li>heap
+
+<ul>
+<li>a record can be placed anywhere in the file where there is space</li>
+</ul></li>
+<li>sequential
+
+<ul>
+<li>store records in sequential order, based on the value of the search key of each record</li>
+</ul></li>
+<li>hashing
+
+<ul>
+<li>a hash function computed on some attribute of each record</li>
+<li>the result specifies in which block of the file the record should be placed</li>
+</ul></li>
+<li>other
+
+<ul>
+<li>records of each relation may be stored in a separate file</li>
+<li>in a &quot;clustered file organization&quot; records of several different relations can be stored in the same file
+
+<ul>
+<li>motivation: store related records on the same block to minimize I/O</li>
+<li>however, not good for queries accessing only a few relations</li>
+<li>in general, this representation is barely used</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h2 id="questions">Questions</h2>
+
+<p><strong>Q: Suppose I just want to access your age, but in practice, the main memory read all your information from the specific block. Why?</strong></p>
+
+<p>A: The disk may be slower than main memory, in order to reduce the number of block transfers between the disk and memory, the main memory would read all your informtion.</p>
+]]></content>
+        </item>
         
         <item>
             <title>ECOM7123 Smart Economy and FinTech</title>
@@ -13761,7 +14293,7 @@ Frost &amp;amp; Sullivan近日发布的中国公有云市场的调研报告显�
             <guid>https://www.marshalgao.com/getting-to-know-the-internet-advertising-system/</guid>
             <description>互联网广告分类
  社交广告  QQ、微信   搜索广告  百度、Google   媒体广告  抖音、今日头条    广告计费方式
- CPA（每行动成本，Cost Per Action）  指按广告投放实际效果，即按回应的有效问卷或定单来计费，而不限广告投放量。CPA广告是网络中最常见的一种广告形式，当用户点击某个网站上的CPA广告后，这个站的站长就会获得相应的收入。   CPS（每销售成本，Cost Per Sale）  广告是网络广告的一种，广告主为规避广告费用风险，按照广告点击之后产生的实际销售笔数付给广告站点销售提成费用。   CPC（每点击成本，Cost Per Click）  以每点击一次计费。这样的方法加上点击率限制可以加强作弊的难度，网民的每一次点击就会为广告主带来真实的流量或是潜在的消费者，是网络比较成熟的国家常见的收费方式之一。 当前流行的广告系统主流的二价收费的方式。   CPD（按天收费 ，Cost Per Day）  是广告合作的一种常见方式，相比当前比较流行的CPS，优势在于对合作的基础条件没有过高要求，容易促成双方合作；劣势在于其在长期合作中，不如CPS形式实时有效。   CPM（千人成本，Cost Per Mille）  是一种媒体或媒体排期表（SCHEDULING）送达1000人或”家庭”的成本计算单位。千人成本并非是广告主衡量媒体的唯一标准，只是为了对不同媒体进行衡量不得已而制定的一个相对指标。表现形式就是比如你在网站上投放了一个广告，然后有人打开你的网站看到了这个广告，那么就可以给您计费，也就是按照展示量给佣金。   CPE（每参与成本，Cost Per Engagement）  旨在评估用户与品牌之间参与程度的价值。多应用于社交媒体，例如链接点击、喜欢、转发和 “@回复” 等等。另外 CPE 也指用户浏览过广告后，在一定时间内（如一周）与品牌进行的互动。   eCPM (Effective Cost Per Mille)  每一千次展示可以获得的广告收入。 当前流行的广告系统主流的一种竞价方式。   oCPA (Optimized Cost Per Action)  CPA的模式下是按照每转化一次进行收费，oCPA可以理解为在更为精准的投放模式下（特定某一群体），使得转化率更高，即与CPA相比更高的性价比以及转化率。   oCPM (Optimized Cost Per Mille)  CPM的模式下是按照每1000曝光进行收费，oCPM可以理解为采用更精准的点击率和转化率预估机制，将广告展现给最容易产生转化的用户，在获取流量的同时，提高转化率、降低转化成本，跑量提速更快。   一种比较有趣的阐述方式  details    广告投放机制  频次控制  根据平台不同，广告的频次不同。比如微信一天只有两条广告，而头条会有更多。   原生广告  让广告看起来不像广告，成为内容的一部分。   竞价  平台根据用户画像，筛选出适合投放的几种广告，并依靠竞价系统来进行选择。 竞价系统还会结合点击率（CTR）-&amp;gt; 点击率预估   自动化  智能出价、智能制作广告、落地页等 自动广告实验   数据  平台会手机用户的哪些数据用于广告的投放   互动性  互动广告是未来的一种趋势，比如微信和YouTube的广告。通过正反馈和负反馈，来不断完善广告系统。    广告提升营收方式</description>
+ CPA（每行动成本，Cost Per Action）  指按广告投放实际效果，即按回应的有效问卷或定单来计费，而不限广告投放量。CPA广告是网络中最常见的一种广告形式，当用户点击某个网站上的CPA广告后，这个站的站长就会获得相应的收入。   CPS（每销售成本，Cost Per Sale）  广告是网络广告的一种，广告主为规避广告费用风险，按照广告点击之后产生的实际销售笔数付给广告站点销售提成费用。   CPC（每点击成本，Cost Per Click）  以每点击一次计费。这样的方法加上点击率限制可以加强作弊的难度，网民的每一次点击就会为广告主带来真实的流量或是潜在的消费者，是网络比较成熟的国家常见的收费方式之一。 当前流行的广告系统主流的二价收费的方式。   CPD（按天收费 ，Cost Per Day）  是广告合作的一种常见方式，相比当前比较流行的CPS，优势在于对合作的基础条件没有过高要求，容易促成双方合作；劣势在于其在长期合作中，不如CPS形式实时有效。   CPM（千人成本，Cost Per Mille）  是一种媒体或媒体排期表（SCHEDULING）送达1000人或”家庭”的成本计算单位。千人成本并非是广告主衡量媒体的唯一标准，只是为了对不同媒体进行衡量不得已而制定的一个相对指标。表现形式就是比如你在网站上投放了一个广告，然后有人打开你的网站看到了这个广告，那么就可以给您计费，也就是按照展示量给佣金。   CPE（每参与成本，Cost Per Engagement）  旨在评估用户与品牌之间参与程度的价值。多应用于社交媒体，例如链接点击、喜欢、转发和 “@回复” 等等。另外 CPE 也指用户浏览过广告后，在一定时间内（如一周）与品牌进行的互动。   eCPM (Effective Cost Per Mille)  每一千次展示可以获得的广告收入。 当前流行的广告系统主流的一种竞价方式。   oCPA (Optimized Cost Per Action)  CPA的模式下是按照每转化一次进行收费，oCPA可以理解为在更为精准的投放模式下（特定某一群体），使得转化率更高，即与CPA相比更高的性价比以及转化率。   oCPM (Optimized Cost Per Mille)  CPM的模式下是按照每1000曝光进行收费，oCPM可以理解为采用更精准的点击率和转化率预估机制，将广告展现给最容易产生转化的用户，在获取流量的同时，提高转化率、降低转化成本，跑量提速更快。   一种比较有趣的阐述方式  details    广告投放机制  频次控制  根据平台不同，广告的频次不同。比如微信一天只有两条广告，而头条会有更多。   原生广告  让广告看起来不像广告，成为内容的一部分。   竞价  平台根据用户画像，筛选出适合投放的几种广告，并依靠竞价系统来进行选择。 竞价系统还会结合点击率（CTR）-&amp;gt; 点击率预估   自动化  智能出价、智能制作广告、落地页等 自动广告实验   数据  平台汇集手机用户的哪些数据用于广告的投放   互动性  互动广告是未来的一种趋势，比如微信和YouTube的广告。通过正反馈和负反馈，来不断完善广告系统。    广告提升营收方式</description>
             <content type="html"><![CDATA[<p><strong>互联网广告分类</strong></p>
 <ul>
 <li>社交广告
@@ -13862,7 +14394,7 @@ Frost &amp;amp; Sullivan近日发布的中国公有云市场的调研报告显�
 </li>
 <li>数据
 <ul>
-<li>平台会手机用户的哪些数据用于广告的投放</li>
+<li>平台汇集手机用户的哪些数据用于广告的投放</li>
 </ul>
 </li>
 <li>互动性
@@ -14037,7 +14569,7 @@ Frost &amp;amp; Sullivan近日发布的中国公有云市场的调研报告显�
 </ul>
 <p><strong>BB Part</strong></p>
 <p>在广告领域，普遍认为“广告费会浪费一半，但是浪费在哪一半不得而知”。广告领域一直在追求一件事件，就是将流量变现。在互联网发展之前，主要的流量都集中在电视、广播等。所以这些就会成为广告投放的主要场所。但传统广告存在的问题是广告形式“千人一面”，而互联网广告依靠大数据实现对用户分类，可以达到“千人千面”的精准投放。这样一来，不仅节约了广告主的投入成本，而且可以将广告回报最大化。</p>
-<p>但现如今的流量基本被电商、社交以及短视频等平台垄断，所以广告的投放场景也有电视、广播转到了互联网平台。互联网广告主要依靠推荐算法、精准投放以及内容来实现，前两者属于比较高效，极具性价比的方式。而内容会不会成为最后的趋势不得而知，但内容对于品牌的建立一定是最有效的方式。如果广告主为了追求效果（营销），这种方式就不再适用，但足够好的内容也是可以弥补的。所以在一定程度上，个人认为广告可以分为品牌广告和效果广告（营销），前者内容更为有效，后者推荐算法和精准投放更能在短期内见效。</p>
+<p>但现如今的流量基本被电商、社交以及短视频等平台垄断，所以广告的投放场景也由电视、广播转到了互联网平台。互联网广告主要依靠推荐算法、精准投放以及内容来实现，前两者属于比较高效，极具性价比的方式。而内容会不会成为最后的趋势不得而知，但内容对于品牌的建立一定是最有效的方式。如果广告主为了追求效果（营销），这种方式就不再适用，但足够好的内容也是可以弥补的。所以在一定程度上，个人认为广告可以分为品牌广告和效果广告（营销），前者内容更为有效，后者推荐算法和精准投放更能在短期内见效。</p>
 <p>一直以来有一个疑问，厂商投了广告，应该会造成商品成本的增加，进而提高售价。但看了一下数据，发现事实正好相反，不投入广告的品牌更容易被遗忘（遗忘曲线，比如健力宝案例），且价格更高。事实上，广告会促进用户增长，进而推动商品规模的扩大，从而使得商品成本减少，最终使得售价降低。其实说到底，还是吸引流量，最终利用流量驱动扩大生产降低成本，提升利润。广告除了可以降低商品售价，还可以让用户免费使用一些产品，例如Facebook和Google。同时，还可以降低用户的选择成本。例如，当我们去商店买洗发水，如果没有广告，我们会看成分表，选择一个去屑效果好的。但如今通过海飞丝“去屑实力派”的slogan，我们可以很容易作出选择。</p>
 ]]></content>
         </item>

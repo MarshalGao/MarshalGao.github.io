@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 15 Jan 2021 09:30:34 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Jan 2021 11:56:40 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>COMP7801 Relational Database</title>
+      <link>https://www.marshalgao.com/comp7801-relational-database/</link>
+      <pubDate>Mon, 25 Jan 2021 11:56:40 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/comp7801-relational-database/</guid>
+      <description>Structure of Relational Databases Overview
+ definition  formally, given sets \(D_1, D_2, ..., D_n\) a relation \(r\) is a subset of \(D_1 \times D_2 \times ... \times D_n\) thus a relation is a set of n-tuples (\(a_1, a_2, ..., a_n\)) where each \(a_i \in D_i\)  attribute type  each attribute of a relation has a name the set of allowed values for each attribute is called the domain of the attribute examples of simple domain types  integer string date  note  in advanced (non-relational) database systems, we may have complex attribute types e.</description>
+    </item>
+    
     <item>
       <title>ECOM7123 Smart Economy and FinTech</title>
       <link>https://www.marshalgao.com/ecom7123-smart-economy-and-fintech/</link>
@@ -107,16 +117,6 @@ For example, the table:
       <guid>https://www.marshalgao.com/leetcode595-big-countries/</guid>
       <description>Question There is a table World.
 +-----------------+------------+------------+--------------+---------------+ | name | continent | area | population | gdp | +-----------------+------------+------------+--------------+---------------+ | Afghanistan | Asia | 652230 | 25500100 | 20343000 | | Albania | Europe | 28748 | 2831741 | 12960000 | | Algeria | Africa | 2381741 | 37100000 | 188681000 | | Andorra | Europe | 468 | 78115 | 3712000 | | Angola | Africa | 1246700 | 20609294 | 100990000 | +-----------------+------------+------------+--------------+---------------+  A country is big if it has an area of bigger than 3 million square km or a population of more than 25 million.</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[262] Trips and Users</title>
-      <link>https://www.marshalgao.com/leetcode262-trips-and-users/</link>
-      <pubDate>Wed, 13 Jan 2021 14:46:36 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode262-trips-and-users/</guid>
-      <description>Question The Trips table holds all taxi trips. Each trip has a unique Id, while Client_Id and Driver_Id are both foreign keys to the Users_Id at the Users table. Status is an ENUM type of (‘completed’, ‘cancelled_by_driver’, ‘cancelled_by_client’).
-+----+-----------+-----------+---------+--------------------+----------+ | Id | Client_Id | Driver_Id | City_Id | Status |Request_at| +----+-----------+-----------+---------+--------------------+----------+ | 1 | 1 | 10 | 1 | completed |2013-10-01| | 2 | 2 | 11 | 1 | cancelled_by_driver|2013-10-01| | 3 | 3 | 12 | 6 | completed |2013-10-01| | 4 | 4 | 13 | 6 | cancelled_by_client|2013-10-01| | 5 | 1 | 10 | 1 | completed |2013-10-02| | 6 | 2 | 11 | 6 | completed |2013-10-02| | 7 | 3 | 12 | 6 | completed |2013-10-02| | 8 | 2 | 12 | 12 | completed |2013-10-03| | 9 | 3 | 10 | 12 | completed |2013-10-03| | 10 | 4 | 13 | 12 | cancelled_by_driver|2013-10-03| +----+-----------+-----------+---------+--------------------+----------+  The Users table holds all users.</description>
     </item>
     
   </channel>

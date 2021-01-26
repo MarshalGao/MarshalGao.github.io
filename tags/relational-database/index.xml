@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>relational database on This Is Marshal</title>
+    <link>https://www.marshalgao.com/tags/relational-database/</link>
+    <description>Recent content in relational database on This Is Marshal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
+    <lastBuildDate>Mon, 25 Jan 2021 11:56:40 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/relational-database/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>COMP7801 Relational Database</title>
+      <link>https://www.marshalgao.com/comp7801-relational-database/</link>
+      <pubDate>Mon, 25 Jan 2021 11:56:40 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/comp7801-relational-database/</guid>
+      <description>Structure of Relational Databases Overview
+ definition  formally, given sets \(D_1, D_2, ..., D_n\) a relation \(r\) is a subset of \(D_1 \times D_2 \times ... \times D_n\) thus a relation is a set of n-tuples (\(a_1, a_2, ..., a_n\)) where each \(a_i \in D_i\)  attribute type  each attribute of a relation has a name the set of allowed values for each attribute is called the domain of the attribute examples of simple domain types  integer string date  note  in advanced (non-relational) database systems, we may have complex attribute types e.</description>
+    </item>
+    
+  </channel>
+</rss>
