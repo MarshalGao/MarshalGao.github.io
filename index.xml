@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 25 Jan 2021 11:56:40 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Jan 2021 09:32:37 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FITE7410 Introduction to Financial Fraud Analytics</title>
+      <link>https://www.marshalgao.com/fite7410-introduction-to-financial-fraud-analytics/</link>
+      <pubDate>Fri, 29 Jan 2021 09:32:37 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/fite7410-introduction-to-financial-fraud-analytics/</guid>
+      <description>Introduction to Financial Fraud Basic introdution (according to reports)
+ types of crime (according to PwC)  accounting/financial statement fraud anti-competition/antitrust law infringement bribery and corruption customer fraud cybercrime deceptive business practices human resources fraud insider/unauthorized trading intellectual property (IP) theft money laundering and sanctions procurement fraud   interesting phenomenon  approxiamtely 50% of companies experienced fraud in the past 2 years but only 56% of companies conducted investigations into their worst incidents    Fraud</description>
+    </item>
+    
     <item>
       <title>COMP7801 Relational Database</title>
       <link>https://www.marshalgao.com/comp7801-relational-database/</link>
@@ -107,16 +117,6 @@ For example, table cinema:
 Please list out all classes which have more than or equal to 5 students.
 For example, the table:
 +---------+------------+ | student | class | +---------+------------+ | A | Math | | B | English | | C | Math | | D | Biology | | E | Math | | F | Computer | | G | Math | | H | Math | | I | Math | +---------+------------+  Should output:</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[595] Big Countries</title>
-      <link>https://www.marshalgao.com/leetcode595-big-countries/</link>
-      <pubDate>Wed, 13 Jan 2021 15:03:55 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode595-big-countries/</guid>
-      <description>Question There is a table World.
-+-----------------+------------+------------+--------------+---------------+ | name | continent | area | population | gdp | +-----------------+------------+------------+--------------+---------------+ | Afghanistan | Asia | 652230 | 25500100 | 20343000 | | Albania | Europe | 28748 | 2831741 | 12960000 | | Algeria | Africa | 2381741 | 37100000 | 188681000 | | Andorra | Europe | 468 | 78115 | 3712000 | | Angola | Africa | 1246700 | 20609294 | 100990000 | +-----------------+------------+------------+--------------+---------------+  A country is big if it has an area of bigger than 3 million square km or a population of more than 25 million.</description>
     </item>
     
   </channel>
