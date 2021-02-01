@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 29 Jan 2021 09:32:37 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Feb 2021 12:17:11 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic Usage of R Language</title>
+      <link>https://www.marshalgao.com/basic-usage-of-r-language/</link>
+      <pubDate>Mon, 01 Feb 2021 12:17:11 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/basic-usage-of-r-language/</guid>
+      <description>Installation R
+ download from official website -&amp;gt; click here choose the mirror to download according your location and OS  RStudio
+ ensure that you have installed R before installing RSudio download RStudio desktop from official website -&amp;gt; click here  Notebook
+ can use RStudio also can use Kaggle  Basic Functions and Usage of R Language  practice in Kaggle  </description>
+    </item>
+    
     <item>
       <title>FITE7410 Introduction to Financial Fraud Analytics</title>
       <link>https://www.marshalgao.com/fite7410-introduction-to-financial-fraud-analytics/</link>
@@ -105,18 +117,6 @@ For example, table cinema:
       <description>Overview Smart environment
  objectives  green &amp;amp; sustainable urban planning effective management and optimization of urban resources achieve energy saving and emission reduction   scopes  greening land use planning environmental protection &amp;amp; pollution control smart &amp;amp; green building smart waste management smart water management smart &amp;amp; renewable energy    Details of Smart Environment Greening
  definition  the process of making somewhere greener and environmental friendly by planting grass, trees and plants there   benefits  create fresh, beautiful, comfortable and elegant environment improve urban living conditions purify air, reduce pollution, adjust climate, improve soil quality and ecology enhance visual environment   greening techniques  skyrise greenery  all greening at the buildings or other structures beyond the ground level  roof greening (main approach) vertical greening (main approach) sky gardens terrace planting       tree management  strategies  tree maintenance  tree register, routine maintenance, rick assessment and management   tree protection  registration of heritage trees, tree preservation   planning and tree planting  green development plans required from developers, tree selection and planting   training  train tree management professionals   public management      Land use planning</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[596] Classes More Than 5 Students</title>
-      <link>https://www.marshalgao.com/leetcode596-classes-more-than-5-students/</link>
-      <pubDate>Wed, 13 Jan 2021 15:10:29 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode596-classes-more-than-5-students/</guid>
-      <description>Question There is a table courses with columns: student and class
-Please list out all classes which have more than or equal to 5 students.
-For example, the table:
-+---------+------------+ | student | class | +---------+------------+ | A | Math | | B | English | | C | Math | | D | Biology | | E | Math | | F | Computer | | G | Math | | H | Math | | I | Math | +---------+------------+  Should output:</description>
     </item>
     
   </channel>

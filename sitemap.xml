@@ -3,23 +3,53 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.marshalgao.com/basic-usage-of-r-language/</loc>
+    <lastmod>2021-02-01T12:17:11+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.marshalgao.com/categories/</loc>
-    <lastmod>2021-01-29T09:32:37+08:00</lastmod>
+    <lastmod>2021-02-01T12:17:11+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.marshalgao.com/tags/financial-fraud-analytics/</loc>
-    <lastmod>2021-01-29T09:32:37+08:00</lastmod>
+    <lastmod>2021-02-01T12:17:11+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.marshalgao.com/tags/fintech/</loc>
-    <lastmod>2021-01-29T09:32:37+08:00</lastmod>
+    <lastmod>2021-02-01T12:17:11+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.marshalgao.com/tags/fite7410/</loc>
-    <lastmod>2021-01-29T09:32:37+08:00</lastmod>
+    <lastmod>2021-02-01T12:17:11+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.marshalgao.com/posts/</loc>
+    <lastmod>2021-02-01T12:17:11+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.marshalgao.com/tags/r-language/</loc>
+    <lastmod>2021-02-01T12:17:11+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.marshalgao.com/tags/</loc>
+    <lastmod>2021-02-01T12:17:11+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.marshalgao.com/categories/technology/</loc>
+    <lastmod>2021-02-01T12:17:11+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.marshalgao.com/</loc>
+    <lastmod>2021-02-01T12:17:11+08:00</lastmod>
   </url>
   
   <url>
@@ -34,21 +64,6 @@
   
   <url>
     <loc>https://www.marshalgao.com/tags/introduction/</loc>
-    <lastmod>2021-01-29T09:32:37+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.marshalgao.com/posts/</loc>
-    <lastmod>2021-01-29T09:32:37+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.marshalgao.com/tags/</loc>
-    <lastmod>2021-01-29T09:32:37+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.marshalgao.com/</loc>
     <lastmod>2021-01-29T09:32:37+08:00</lastmod>
   </url>
   
@@ -129,11 +144,6 @@
   
   <url>
     <loc>https://www.marshalgao.com/tags/sql/</loc>
-    <lastmod>2021-01-14T15:51:59+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.marshalgao.com/categories/technology/</loc>
     <lastmod>2021-01-14T15:51:59+08:00</lastmod>
   </url>
   

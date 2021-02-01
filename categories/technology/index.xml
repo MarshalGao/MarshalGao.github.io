@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 14 Jan 2021 15:51:59 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Feb 2021 12:17:11 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic Usage of R Language</title>
+      <link>https://www.marshalgao.com/basic-usage-of-r-language/</link>
+      <pubDate>Mon, 01 Feb 2021 12:17:11 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/basic-usage-of-r-language/</guid>
+      <description>Installation R
+ download from official website -&amp;gt; click here choose the mirror to download according your location and OS  RStudio
+ ensure that you have installed R before installing RSudio download RStudio desktop from official website -&amp;gt; click here  Notebook
+ can use RStudio also can use Kaggle  Basic Functions and Usage of R Language  practice in Kaggle  </description>
+    </item>
+    
     <item>
       <title>LeetCode[1179] Reformat Department Table</title>
       <link>https://www.marshalgao.com/leetcode1179-reformat-department-table/</link>
@@ -106,16 +118,6 @@ For example, the table:
       <description>Question Table: Weather
 +---------------+---------+ | Column Name | Type | +---------------+---------+ | id | int | | recordDate | date | | temperature | int | +---------------+---------+ id is the primary key for this table. This table contains information about the temperature in a certain day.  Write an SQL query to find all dates&#39; id with higher temperature compared to its previous dates (yesterday).
 Return the result table in any order.</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[196] Delete Duplicate Emails</title>
-      <link>https://www.marshalgao.com/leetcode196-delete-duplicate-emails/</link>
-      <pubDate>Tue, 12 Jan 2021 14:36:11 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode196-delete-duplicate-emails/</guid>
-      <description>Question Write a SQL query to delete all duplicate email entries in a table named Person, keeping only unique emails based on its smallest Id.
-+----+------------------+ | Id | Email | +----+------------------+ | 1 | john@example.com | | 2 | bob@example.com | | 3 | john@example.com | +----+------------------+ Id is the primary key column for this table.  For example, after running your query, the above Person table should have the following rows:</description>
     </item>
     
   </channel>
