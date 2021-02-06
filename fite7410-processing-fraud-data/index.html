@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Marshal ">
+<meta name="description" content="Data Collection Overview
+ real-life data problems  inconsistencies incompleteness duplication merging data size too big to handle, etc.  how to deal with  pre-process the raw data before proceeding to conduct the analysis steps   Data sources
+ types  structured  transactional data contractual, subscription, or account data surveys behavoural information  unstructured  text documents, e.g. emails, web pages, claim forms or multimedia contents contextual or network information qualitative expert-based data publicly available data  semi-structured  5Vs  velocity volume variety veracity value   Basic concepts" />
+<meta name="keywords" content=", fite7410, financial fraud analytics, fintech, processing fraud data" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://www.marshalgao.com/fite7410-processing-fraud-data/" />
+
+
+    <title>
+        
+            FITE7410 Processing Fraud Data :: This Is Marshal 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://www.marshalgao.com/main.1abfe30dec5ae0f5c4f84acd6413b12f63e4a6f9e1e7167f42de12192bfd25e9.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.marshalgao.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.marshalgao.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.marshalgao.com/favicon-16x16.png">
+    <link rel="manifest" href="https://www.marshalgao.com/site.webmanifest">
+    <link rel="mask-icon" href="https://www.marshalgao.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://www.marshalgao.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="FITE7410 Processing Fraud Data">
+<meta itemprop="description" content="Data Collection Overview
+ real-life data problems  inconsistencies incompleteness duplication merging data size too big to handle, etc.  how to deal with  pre-process the raw data before proceeding to conduct the analysis steps   Data sources
+ types  structured  transactional data contractual, subscription, or account data surveys behavoural information  unstructured  text documents, e.g. emails, web pages, claim forms or multimedia contents contextual or network information qualitative expert-based data publicly available data  semi-structured  5Vs  velocity volume variety veracity value   Basic concepts">
+<meta itemprop="datePublished" content="2021-02-05T10:11:09+08:00" />
+<meta itemprop="dateModified" content="2021-02-05T10:11:09+08:00" />
+<meta itemprop="wordCount" content="1893">
+<meta itemprop="image" content="https://www.marshalgao.com/"/>
+
+
+
+<meta itemprop="keywords" content="fite7410,financial fraud analytics,fintech,processing fraud data," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.marshalgao.com/"/>
+
+<meta name="twitter:title" content="FITE7410 Processing Fraud Data"/>
+<meta name="twitter:description" content="Data Collection Overview
+ real-life data problems  inconsistencies incompleteness duplication merging data size too big to handle, etc.  how to deal with  pre-process the raw data before proceeding to conduct the analysis steps   Data sources
+ types  structured  transactional data contractual, subscription, or account data surveys behavoural information  unstructured  text documents, e.g. emails, web pages, claim forms or multimedia contents contextual or network information qualitative expert-based data publicly available data  semi-structured  5Vs  velocity volume variety veracity value   Basic concepts"/>
+
+
+
+    <meta property="og:title" content="FITE7410 Processing Fraud Data" />
+<meta property="og:description" content="Data Collection Overview
+ real-life data problems  inconsistencies incompleteness duplication merging data size too big to handle, etc.  how to deal with  pre-process the raw data before proceeding to conduct the analysis steps   Data sources
+ types  structured  transactional data contractual, subscription, or account data surveys behavoural information  unstructured  text documents, e.g. emails, web pages, claim forms or multimedia contents contextual or network information qualitative expert-based data publicly available data  semi-structured  5Vs  velocity volume variety veracity value   Basic concepts" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.marshalgao.com/fite7410-processing-fraud-data/" />
+<meta property="og:image" content="https://www.marshalgao.com/"/>
+<meta property="article:published_time" content="2021-02-05T10:11:09+08:00" />
+<meta property="article:modified_time" content="2021-02-05T10:11:09+08:00" />
+
+
+
+
+    <meta property="article:section" content="HKU" />
+
+
+
+    <meta property="article:published_time" content="2021-02-05 10:11:09 &#43;0800 HKT" />
+
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css" integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.js" integrity="sha384-JiKN5O8x9Hhs/UE5cT5AAJqieYlOZbGT3CHws/y97o3ty4R7/O5poG9F3JoiOYw1" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://www.marshalgao.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://www.marshalgao.com/categories/hku">HKU</a></li><li><a href="https://www.marshalgao.com/categories/technology">TECH</a></li><li><a href="https://www.marshalgao.com/categories/product-manager">PM</a></li><li><a href="https://www.marshalgao.com/categories/life">LIFE</a></li><li><a href="https://www.marshalgao.com/about/">ABOUT</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        9 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://www.marshalgao.com/fite7410-processing-fraud-data/">FITE7410 Processing Fraud Data</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Processing%20Fraud%20Data.png" alt=""></figure></p>
+
+<h2 id="data-collection">Data Collection</h2>
+
+<p><strong>Overview</strong></p>
+
+<ul>
+<li>real-life data problems
+
+<ul>
+<li>inconsistencies</li>
+<li>incompleteness</li>
+<li>duplication</li>
+<li>merging</li>
+<li>data size too big to handle, etc.</li>
+</ul></li>
+<li>how to deal with
+
+<ul>
+<li>pre-process the raw data before proceeding to conduct the analysis steps</li>
+</ul></li>
+</ul>
+
+<p><strong>Data sources</strong></p>
+
+<ul>
+<li>types
+
+<ul>
+<li>structured
+
+<ul>
+<li>transactional data</li>
+<li>contractual, subscription, or account data</li>
+<li>surveys</li>
+<li>behavoural information</li>
+</ul></li>
+<li>unstructured
+
+<ul>
+<li>text documents, e.g. emails, web pages, claim forms or multimedia contents</li>
+<li>contextual or network information</li>
+<li>qualitative expert-based data</li>
+<li>publicly available data</li>
+</ul></li>
+<li>semi-structured</li>
+</ul></li>
+<li>5Vs
+
+<ul>
+<li>velocity</li>
+<li>volume</li>
+<li>variety</li>
+<li>veracity</li>
+<li>value</li>
+</ul></li>
+</ul>
+
+<p><strong>Basic concepts</strong></p>
+
+<ul>
+<li>data table
+
+<ul>
+<li>columns, variables, fields, characteristics, attributes, features, etc. -&gt; same things</li>
+<li>rows, instances, observations, lines, records, tuples, etc. -&gt; same things</li>
+</ul></li>
+<li>data types
+
+<ul>
+<li>continuous data
+
+<ul>
+<li>e.g. amount of transactions, balance on saving account, similarity index</li>
+</ul></li>
+<li>categorical data
+
+<ul>
+<li>nominal
+
+<ul>
+<li>e.g. marital status, payment type, country of region</li>
+</ul></li>
+<li>ordinal
+
+<ul>
+<li>e.g. age code as young, middle-age, and old</li>
+</ul></li>
+<li>binary
+
+<ul>
+<li>e.g. yes/no, 1/0 (only two values)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h2 id="data-preprocessing">Data Pre-Processing</h2>
+
+<p><strong>Overview</strong></p>
+
+<ul>
+<li>definition
+
+<ul>
+<li>a process to transform raw data into some usable format for the next data analytics step</li>
+<li>provides techniques that can help us to understand and make knowledge discovery of data at the same time</li>
+</ul></li>
+<li>reasons
+
+<ul>
+<li>to deal with the problems of raw data, e.g. noise, incompleteness, inconsistencies</li>
+<li>to make sense of the raw data, i.e. to transform raw data into an understandable format</li>
+</ul></li>
+</ul>
+
+<p><strong>Basic techniques</strong></p>
+
+<ul>
+<li>data integration
+
+<ul>
+<li>combines data from multiple sources into a coherent data store</li>
+<li>problems
+
+<ul>
+<li>entity identification problem
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-02-05%20%E4%B8%8A%E5%8D%8811.00.31.png" alt=""></figure></li>
+<li>redundant attribute problem
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-02-05%20%E4%B8%8A%E5%8D%8811.00.56.png" alt=""></figure></li>
+<li>tuple (record) duplication problem
+
+<ul>
+<li>redundant records after merging data from different sources</li>
+</ul></li>
+<li>data conflict problem
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-02-05%20%E4%B8%8A%E5%8D%8811.01.09.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+<li>data cleaning
+
+<ul>
+<li>attempts to fill in missing values (incompleteness), smooth out noise while identifying outliers, and correct inconsistencies in the data</li>
+<li>&quot;dirty&quot; data
+
+<ul>
+<li>incomplete/missing data
+
+<ul>
+<li>human input error, intentionally hiding some information</li>
+<li>not applicable values, e.g. if there are records without visa card, visa card transactions will be not applicable</li>
+<li>not matching search or filter criteria, e.g. if transaction &gt; 1 billion</li>
+</ul></li>
+<li>nosiy data (outliers or errors)
+
+<ul>
+<li>reasons of outliers
+
+<ul>
+<li>valid observations, e.g. salary of senior management &gt; $1M</li>
+<li>invalid observations, e.g. age &gt; 300</li>
+</ul></li>
+</ul></li>
+<li>data inconsistencies (similar to data conflict in data integration)</li>
+<li>duplicate records (similar to data duplication in data integration)</li>
+</ul></li>
+<li>resolution - missing data
+
+<ul>
+<li>listwise/pairwise deletion
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-02-05%20%E4%B8%8A%E5%8D%8811.34.13.png" alt=""></figure>
+
+<ul>
+<li>problems
+
+<ul>
+<li>listwise - reduced sample size and possibility of missing some important information</li>
+<li>pairwise - still have the problem of drawing conclusions based on a subset of data only</li>
+</ul></li>
+</ul></li>
+<li>data imputation - fill in the missing data
+
+<ul>
+<li>4 techniques
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-02-05%20%E4%B8%8A%E5%8D%8811.54.47.png" alt=""></figure>
+
+<ul>
+<li>which method should be used, it really depends on the dataset, the volume of missing data and skill level of various methods</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>resolution - outliers
+
+<ul>
+<li>detection
+
+<ul>
+<li>calculate minimum, maximum, z-score values for each attribute</li>
+<li>define outliers when absolute value of z-score is longer than 3</li>
+<li>use visualization, e.g. histogram, box plots
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-02-05%20%E4%B8%8B%E5%8D%8812.05.59.png" alt=""></figure></li>
+</ul></li>
+<li>treatment
+
+<ul>
+<li>for invalid observations, treat the outlier as missing value and can use one of the techniques for handling missing value to deal with outlier value</li>
+<li>for valid observations, truncation/capping/winsorizing, i.e. set upper and lower limits on a variable
+
+<ul>
+<li>z-score (standard deviation), e.g. upper/lower limit = <span  class="math">\(M \pm 3 \times z-score\)</span></li>
+<li>IQR (interquartile range), e.g. upper/lower limit = <span  class="math">\(M \pm 3 \times IQR/(2 \times 0.6745)\)</span></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>outliers or reg flags
+
+<ul>
+<li>outliers may sometimes be actually the fraud cases, because behaviors of fraudsters usually deviant from normal non-fraudsters</li>
+<li>these diviations from normal patterns are red flags of fraud, e.g. small payment followed by a large payment immediately -&gt; may be credit card fraud</li>
+<li>caution or mark when deal with outliers -&gt; for further analysis</li>
+</ul></li>
+</ul></li>
+
+<li><p>data transformation</p>
+
+<ul>
+<li>data are transformed into appropriate format for data analysis, also known as ETL (Extract, Transform, Load)</li>
+<li>purposes
+
+<ul>
+<li>for easy comparison among different data sets with diverse format</li>
+<li>for easy combination with other data sets to provide insights</li>
+<li>to perform aggregation of data</li>
+</ul></li>
+
+<li><p>techniques</p>
+
+<ul>
+<li>normalization
+
+<ul>
+<li>required only when attributes have different ranges</li>
+<li>e.g. AGE range from 0 - 100, INCOME range from 10,000 - 100,000 -&gt; INCOME might have larger effect on the predictive power of the model due to its large value</li>
+<li>for continuous variables
+
+<ul>
+<li>min-max normalization (range normalization)</li>
+<li>z-score standardization</li>
+<li>(natual) log or base-10 log</li>
+<li>square root</li>
+<li>inverse</li>
+<li>square</li>
+<li>exponential</li>
+<li>centring (subtract mean)</li>
+</ul></li>
+</ul></li>
+<li>attribute (feature) construction
+
+<ul>
+<li>transform a given set of input features to gnerate a new set of more powerful features</li>
+<li>purpose
+
+<ul>
+<li>dimensionality reduction</li>
+<li>prediction performance improvement</li>
+</ul></li>
+<li>method - PCA</li>
+</ul></li>
+
+<li><p>discretization</p>
+
+<ul>
+<li>replace the values of numeric attribute (continuous variable) by conceptual values (discrete variable)</li>
+<li>e.g. replace AGE (numeric value) with AGEGROUP (children, youth, adult, elderly), group rare levels into one discrete group &quot;OTHER&quot;</li>
+
+<li><p>method - binning transformation (or categorization)</p>
+
+<ul>
+<li>purpose
+
+<ul>
+<li>to reduce the number of categories for categorical variables</li>
+<li>to reduce the number of values for a given continuous variable by dividing the range of variable into discrete intervals</li>
+</ul></li>
+<li>example - non-linear relation of default risk vs age
+
+<ul>
+<li>fits only when non-linear models are used (e.g. neural network)</li>
+<li>will not work well for linear models (e.g. regression)</li>
+<li>group variables into ranges, so that nonmonotonicity can be captured (group 25-45, the peak would disappear)
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-02-05%20%E4%B8%8B%E5%8D%883.22.15.png" alt=""></figure></li>
+</ul></li>
+<li>method #1
+
+<ul>
+<li>equal interval binning
+
+<ul>
+<li>BIN 1 (range 1,000 - 1,500): A, B, C, F</li>
+<li>BIN 2 (range 1,500 - 2,000): D, E</li>
+</ul></li>
+<li>equal frequency binning - sort firstly and divide into groups with the same volume
+
+<ul>
+<li>BIN 1: A, B, C</li>
+<li>BIN 2: D, E, F
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-02-05%20%E4%B8%8B%E5%8D%883.38.32.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+
+<li><p>method #2 - chi-square test</p>
+
+<ul>
+<li>purpose - combine variables better</li>
+
+<li><p>formula</p>
+
+<p><span  class="math">\[\chi^2 = \sum \frac{{(observed \ value - expected \ value)}^2}{expected \ value}\]</span></p></li>
+
+<li><p>example</p>
+
+<ul>
+<li>blue = observed, red = expected</li>
+<li>if bins are significantly different, split is made (if not, try another combination)
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-02-05%20%E4%B8%8B%E5%8D%883.53.23.png" alt=""></figure>
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-02-05%20%E4%B8%8B%E5%8D%883.53.33.png" alt=""></figure>
+<span  class="math">\(\chi^2 = \frac{(6000-5670)^2}{5670} + \frac{(300-630)^2}{630} + \frac{(1950-2241)^2}{2241} + \frac{(540-249)^2}{249} + \frac{(1050-1089)^2}{1089} + \frac{(160-121)^2}{121} = 583\)</span></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+
+<li><p>data sampling/reduction</p>
+
+<ul>
+<li>makes it possible to perform data analysis on huge amounts of data that may take a very long time if not reduced in size</li>
+<li>purpose
+
+<ul>
+<li>increase storage efficiency</li>
+<li>reduce data storage and analysis costs</li>
+</ul></li>
+<li>methods
+
+<ul>
+<li>reduce number of cases
+
+<ul>
+<li>aggregation (e.g. &quot;DAILY&quot; transforms to &quot;MONTHLY&quot;)</li>
+<li>sampling
+
+<ul>
+<li>purpose
+
+<ul>
+<li>to produce a sufficiently representative sample for further analysis</li>
+<li>to reduce the size of an extremely large dataset to manageable size</li>
+</ul></li>
+<li>pros &amp; cons
+
+<ul>
+<li>reduce costs and more operationally efficient, with good prediction result</li>
+<li>still have uncertainties as this is only estimates</li>
+</ul></li>
+<li>methods
+
+<ul>
+<li>simple random sampling
+
+<ul>
+<li>randomly select the sample from the dataset</li>
+<li>the probability of being selected is the same</li>
+</ul></li>
+<li>systematic sampling
+
+<ul>
+<li>sample every <span  class="math">\(k^{th}\)</span> observation from the dataset from a random start</li>
+<li>suitable for cases with the need to keep the sequences or periodicity of the dataset</li>
+<li>e.g. to create a sample of <span  class="math">\(n=20\)</span> from a dataset size <span  class="math">\(N=200\)</span>
+
+<ul>
+<li>randomly select an integer from 1 to 10 (200/20), e.g. random# = 6</li>
+<li>start with <span  class="math">\(6^{th}\)</span> observation and select every <span  class="math">\(6^{th}\)</span> unit observation as sample</li>
+</ul></li>
+</ul></li>
+<li>stratified sampling
+
+<ul>
+<li>according similar characteristics divide the dataset into groups (strata)</li>
+<li>using simple random sampling for each group (strata)</li>
+<li>more precise than simple random sampling, if the strata are homogenous</li>
+</ul></li>
+<li>cluster sampling
+
+<ul>
+<li>according similar characteristics divide the data set into groups (cluster)</li>
+<li>randomly select clusters as samples (sampled clusters) -&gt; select the whole group</li>
+<li>used when the dataset is too widely dispersed</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>reduce number of distinct values or variables
+
+<ul>
+<li>binning</li>
+</ul></li>
+<li>variable selection
+
+<ul>
+<li>purpose
+
+<ul>
+<li>dimensionality reduction</li>
+<li>operational efficiency - reduce time and memory</li>
+<li>better interpretability with easier visualization using fewer variables</li>
+<li>eliminate irrelevant features (e.g. 10-15 features are useful in fraud detection models)</li>
+</ul></li>
+<li>input variables are selected (or filtered) based on the usefulness or relation with target variables, using
+
+<ul>
+<li>correlation with target variable (mostly use)</li>
+<li>information criteria</li>
+<li>clustering of variables</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h2 id="imbalanced-data-handling">Imbalanced Data Handling</h2>
+
+<p><strong>Imbalanced dataset</strong></p>
+
+<ul>
+<li>definition
+
+<ul>
+<li>also known as skewed dataset</li>
+<li>is a special case for classification problem where the class distribution is not uniform among the classes</li>
+<li>composed by two classes
+
+<ul>
+<li>majority class</li>
+<li>minority class</li>
+</ul></li>
+</ul></li>
+<li>problems in machine learning
+
+<ul>
+<li>most machine learning models assume an equal distribution of classes</li>
+<li>a model may focus on learning the characteristics of majority class due to the abundance of samples available for learning</li>
+<li>many machine learning models will show bias towards majority class, leading to incorrect conclusions</li>
+</ul></li>
+<li>slight imbalance vs severe imbalance
+
+<ul>
+<li>if the dataset is only slightly imbalance (e.g. ratio of 4:6), can still be used for training</li>
+</ul></li>
+</ul>
+
+<p><strong>Handling methods</strong></p>
+
+<ul>
+<li>varying the sample window
+
+<ul>
+<li>increase the number of fraudsters by increasing the time horizon
+
+<ul>
+<li>e.g. using 12-month window rather than 6-month window</li>
+</ul></li>
+<li>sample every fraudsters twice or more as shown in the following figure
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-02-05%20%E4%B8%8B%E5%8D%8810.05.40.png" alt=""></figure></li>
+</ul></li>
+<li>undersampling and oversampling
+
+<ul>
+<li>undersampling
+
+<ul>
+<li>reduce the number of majority class</li>
+<li>some information is lost
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-02-05%20%E4%B8%8B%E5%8D%8810.10.22.png" alt=""></figure></li>
+</ul></li>
+<li>oversampling
+
+<ul>
+<li>increase the minority class</li>
+<li>no information is lost, both majority and minority classes (advantage)</li>
+<li>it is prone to overfitting
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-02-05%20%E4%B8%8B%E5%8D%8810.10.35.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+<li>SMOTE (Synthetic Minority Over-Sampling Technique)
+
+<ul>
+<li>creates synthetic observations based upon the existing minority observations</li>
+<li>combines the synthetic oversampling of the minority class with undersampling the minority class</li>
+<li>is better than either under-/over- sampling, can be used in fraud detection</li>
+<li>example - select using line
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-02-06%20%E4%B8%8A%E5%8D%889.34.23.png" alt=""></figure></li>
+<li>problem
+
+<ul>
+<li>may create a line bridge with the majority class, if the observations in minority class are outlying and appears in majority class
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-02-06%20%E4%B8%8A%E5%8D%889.34.34.png" alt=""></figure><br></li>
+</ul></li>
+</ul></li>
+<li>ADASYN (Adaptive Synthetic Sampling)
+
+<ul>
+<li>a generalization of the SMOTE algorithm</li>
+<li>takes into account the distribution of density</li>
+<li>measures the k-nearest neighbors for all minority instances, then calculates the class ratio of the minority and majority instances to create new samples</li>
+<li>impurity ratio is calculated for all minority data points</li>
+<li>higher the ratio, more synthetic data points (minority class) are created</li>
+<li>example
+
+<ul>
+<li>the synthetic data points of Obs3 will double that of Obs2
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-02-06%20%E4%B8%8A%E5%8D%889.57.03.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+<li>other approaches
+
+<ul>
+<li>using probabilities
+
+<ul>
+<li>likelihood approach</li>
+<li>adjusting posterior probabilities</li>
+</ul></li>
+<li>cost-sensitive learning - assign higher misclassification costs to minority class (i.e. fraud cases)</li>
+</ul></li>
+<li>notes
+
+<ul>
+<li>the performance of both sampling and cost-sensitive learning approaches are good and equivalent for handling imbalanced dataset</li>
+<li>suggest to adopt the sampling approaches for fraud analytics</li>
+</ul></li>
+</ul>
+
+<h2 id="exploratory-data-analysis">Exploratory Data Analysis</h2>
+
+<p><strong>Overview</strong></p>
+
+<ul>
+<li>definition
+
+<ul>
+<li>the process of using quick and simple methods for the visualization and examination of small data, e.g. boxplots, histograms, etc.</li>
+<li>but it is not feasible to use traditional EDA to analyze dataset, due to 5Vs</li>
+</ul></li>
+<li>purpose
+
+<ul>
+<li>to have a better understanding of the data before building the fraud detection model</li>
+<li>to detect problems in data</li>
+</ul></li>
+</ul>
+
+<p><strong>Basic techniques</strong></p>
+
+<ul>
+<li>non-graphical - statistics summary
+
+<ul>
+<li>illustrate relationships between two or more data variables using statistics or cross-tabulation</li>
+<li>as a preview to check the symmetry or asymmetry of the distribution, i.e. skewness of the data</li>
+<li>calculate for the whole sample set and target set</li>
+<li>using descriptive statistics
+
+<ul>
+<li>mean, median (for continuous variables)</li>
+<li>mode (for categorical variables)</li>
+<li>standard deviation (represent how much data is spread around the mean)</li>
+<li>percentile distribution (percentage/distribution of the data)</li>
+</ul></li>
+</ul></li>
+<li>graphical - visualization
+
+<ul>
+<li>using picture of data, such as stem-and-leaf plots, box plots, pie chart, histogram, scatter plot</li>
+<li>missing data, outliers, and distribution can be more easily identified using visualization of the data</li>
+<li>example
+
+<ul>
+<li>the maximum value of hospital stay is 668 (&gt; 365) -&gt; impossible
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-02-06%20%E4%B8%8B%E5%8D%883.58.52.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+
+<li><p>correlation analysis</p>
+
+<ul>
+<li>find out the variable relations (positively or negatively correlated), e.g. use scatter plots, correlation</li>
+
+<li><p>pearson correlation (mostly used)</p>
+
+<ul>
+<li>the covariance of the two variables divided by the product of their standard deviations</li>
+<li>if the coefficient lies between <span  class="math">\(\pm 0.5\)</span> to <span  class="math">\(\pm 1.0\)</span>, it is highly correlated</li>
+<li>if the coefficient is below <span  class="math">\(\pm 0.29\)</span>, the correlation is low</li>
+</ul>
+
+<p><span  class="math">\[\rho_{X, Y}=\frac{cov(X, Y)}{\sigma_X \sigma_Y}\]</span></p>
+
+<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-02-06%20%E4%B8%8B%E5%8D%884.13.23.png" alt=""></figure></p></li>
+
+<li><p>example</p>
+
+<ul>
+<li>many of the variables are not significantly correlated with each other and the class variable - because this is an imbalance class dataset
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-02-06%20%E4%B8%8B%E5%8D%884.13.38.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+
+<li><p>PCA (Principal Component Analysis)</p>
+
+<ul>
+<li>reduce the dimensionality of a huge dataset down to a manageable dimensions</li>
+<li>only keep principle components that have high correlations</li>
+<li>explained
+<div class="iframe-container">
+<iframe src="https://www.youtube.com/embed/FgakZw6K1QQ" allowfullscreen> </iframe>
+</div></li>
+<li>example
+
+<ul>
+<li>the first few principal components are most important</li>
+<li>can only use these instead of using 50+ variables
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-02-06%20%E4%B8%8B%E5%8D%884.24.04.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/tags/fite7410/">fite7410</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/financial-fraud-analytics/">financial fraud analytics</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/fintech/">fintech</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/processing-fraud-data/">processing fraud data</a></span>
+        
+    </p>
+
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/categories/hku/">HKU</a></span>
+        
+    </p>
+
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        1893 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2021-02-05 10:11
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+
+          
+            <span class="button next">
+              <a href="https://www.marshalgao.com/basic-usage-of-r-language/">
+                <span class="button__text">Basic Usage of R Language</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020-2021</span>
+            
+                <span><a href="https://www.marshalgao.com/">Marshal</a></span>
+            
+            
+                <span><a href="https://www.hku.hk" target="_blank" rel="noopener">The University of Hong Kong</a></span>
+            <span><a href="https://www.marshalgao.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Team Rocket: <a href="https://www.pseudoyu.com/" target="_blank" rel="noopener">Pseudoyu</a></span>
+            <span><a href="https://www.m1sty.com/" target="_blank" rel="noopener">Misty</a></span>
+          </div>
+    </div>
+</footer>
+
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://www.marshalgao.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>

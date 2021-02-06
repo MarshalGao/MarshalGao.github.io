@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 29 Jan 2021 09:32:37 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/hku/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Feb 2021 10:11:09 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/hku/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FITE7410 Processing Fraud Data</title>
+      <link>https://www.marshalgao.com/fite7410-processing-fraud-data/</link>
+      <pubDate>Fri, 05 Feb 2021 10:11:09 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/fite7410-processing-fraud-data/</guid>
+      <description>Data Collection Overview
+ real-life data problems  inconsistencies incompleteness duplication merging data size too big to handle, etc.  how to deal with  pre-process the raw data before proceeding to conduct the analysis steps   Data sources
+ types  structured  transactional data contractual, subscription, or account data surveys behavoural information  unstructured  text documents, e.g. emails, web pages, claim forms or multimedia contents contextual or network information qualitative expert-based data publicly available data  semi-structured  5Vs  velocity volume variety veracity value   Basic concepts</description>
+    </item>
+    
     <item>
       <title>FITE7410 Introduction to Financial Fraud Analytics</title>
       <link>https://www.marshalgao.com/fite7410-introduction-to-financial-fraud-analytics/</link>
@@ -101,17 +112,6 @@
       <description>Overview Difficulties and challenges
  our world is increasing challenged  urbanization ageing population social conflict inequality loss of nature pollution energy crisis climate change natural disaster resource depletion    Basic understanding
  definition of smart city  no official definition basically  the use of ICT (Information and Communications Technology) to improve the quality of life and city services, making the city more livable     ultimate goals  enhance quality of life  key indicators  health time and convenience safety cost of living jobs social connectedness and civic participation environmental quality     foster sustainable growth   leverage on technologies for better city management  IoT (data collection) big data (much data) AI (data analysis and prediction) above three technologies are based on GIS (Geographic Information System)    Building a Smart City Countries developing smart city initiatives with their own goals</description>
-    </item>
-    
-    <item>
-      <title>ECOM6013 Technologies and E-Commerce Trends</title>
-      <link>https://www.marshalgao.com/ecom6013-technologies-and-e-commerce-trends/</link>
-      <pubDate>Sat, 12 Dec 2020 21:44:03 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/ecom6013-technologies-and-e-commerce-trends/</guid>
-      <description>Emerging Technology Trends Gartner hype cycle for emerging technologies, 2019 Gartner hype cycle for emerging technologies, 2020 The top 10 strategic technologies for 2020
-The Gartner top 10 strategic technology trends for 2020 highlight trends that will drive significant disruption and opportunity over the next five to 10 years.
-These trends have a profound impact on the people and the spaces they inhabit, rather than building a technology stack and then exploring the potential applications, organizations must consider the business and human contexts first.</description>
     </item>
     
   </channel>

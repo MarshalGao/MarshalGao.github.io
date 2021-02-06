@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://www.hku.hk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The University of Hong Kong&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 01 Feb 2021 12:17:11 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Feb 2021 10:11:09 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FITE7410 Processing Fraud Data</title>
+      <link>https://www.marshalgao.com/fite7410-processing-fraud-data/</link>
+      <pubDate>Fri, 05 Feb 2021 10:11:09 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/fite7410-processing-fraud-data/</guid>
+      <description>Data Collection Overview
+ real-life data problems  inconsistencies incompleteness duplication merging data size too big to handle, etc.  how to deal with  pre-process the raw data before proceeding to conduct the analysis steps   Data sources
+ types  structured  transactional data contractual, subscription, or account data surveys behavoural information  unstructured  text documents, e.g. emails, web pages, claim forms or multimedia contents contextual or network information qualitative expert-based data publicly available data  semi-structured  5Vs  velocity volume variety veracity value   Basic concepts</description>
+    </item>
+    
     <item>
       <title>Basic Usage of R Language</title>
       <link>https://www.marshalgao.com/basic-usage-of-r-language/</link>
@@ -38,6 +49,15 @@
       <guid>https://www.marshalgao.com/comp7801-relational-database/</guid>
       <description>Structure of Relational Databases Overview
  definition  formally, given sets \(D_1, D_2, ..., D_n\) a relation \(r\) is a subset of \(D_1 \times D_2 \times ... \times D_n\) thus a relation is a set of n-tuples (\(a_1, a_2, ..., a_n\)) where each \(a_i \in D_i\)  attribute type  each attribute of a relation has a name the set of allowed values for each attribute is called the domain of the attribute examples of simple domain types  integer string date  note  in advanced (non-relational) database systems, we may have complex attribute types e.</description>
+    </item>
+    
+    <item>
+      <title>Study With Marshal</title>
+      <link>https://www.marshalgao.com/study-with-marshal/</link>
+      <pubDate>Sat, 16 Jan 2021 22:12:02 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/study-with-marshal/</guid>
+      <description>   开学的已经开学，放假的也开始放假了，但是大家都要继续学习呀！ 给大家安利超赞的8小时学习法，每个小时分为 50 mins learning + 10 mins break！（视频放8次就好啦） 我们一起看海，听着Marshal最爱的白噪声，翻来覆去。。。的学习！！！ </description>
     </item>
     
     <item>
@@ -96,27 +116,6 @@ Can you write a SQL query to output the result for Mary?
 Please write a SQL query to output movies with an odd numbered ID and a description that is not &amp;lsquo;boring&amp;rsquo;. Order the result by rating.
 For example, table cinema:
 +---------+-----------+--------------+-----------+ | id | movie | description | rating | +---------+-----------+--------------+-----------+ | 1 | War | great 3D | 8.</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[601] Human Traffic of Stadium</title>
-      <link>https://www.marshalgao.com/leetcode601-human-traffic-of-stadium/</link>
-      <pubDate>Thu, 14 Jan 2021 13:31:17 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode601-human-traffic-of-stadium/</guid>
-      <description>Question Table: Stadium
-+---------------+---------+ | Column Name | Type | +---------------+---------+ | id | int | | visit_date | date | | people | int | +---------------+---------+ visit_date is the primary key for this table. Each row of this table contains the visit date and visit id to the stadium with the number of people during the visit. No two rows will have the same visit_date, and as the id increases, the dates increase as well.</description>
-    </item>
-    
-    <item>
-      <title>ECOM7123 Smart Environment and Energy</title>
-      <link>https://www.marshalgao.com/ecom7123-smart-environment-and-energy/</link>
-      <pubDate>Thu, 14 Jan 2021 09:24:26 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/ecom7123-smart-environment-and-energy/</guid>
-      <description>Overview Smart environment
- objectives  green &amp;amp; sustainable urban planning effective management and optimization of urban resources achieve energy saving and emission reduction   scopes  greening land use planning environmental protection &amp;amp; pollution control smart &amp;amp; green building smart waste management smart water management smart &amp;amp; renewable energy    Details of Smart Environment Greening
- definition  the process of making somewhere greener and environmental friendly by planting grass, trees and plants there   benefits  create fresh, beautiful, comfortable and elegant environment improve urban living conditions purify air, reduce pollution, adjust climate, improve soil quality and ecology enhance visual environment   greening techniques  skyrise greenery  all greening at the buildings or other structures beyond the ground level  roof greening (main approach) vertical greening (main approach) sky gardens terrace planting       tree management  strategies  tree maintenance  tree register, routine maintenance, rick assessment and management   tree protection  registration of heritage trees, tree preservation   planning and tree planting  green development plans required from developers, tree selection and planting   training  train tree management professionals   public management      Land use planning</description>
     </item>
     
   </channel>
