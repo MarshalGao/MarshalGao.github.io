@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 05 Feb 2021 10:11:09 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/hku/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Feb 2021 10:00:44 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/hku/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FITE7410 Financial Fraud Analytics Techniques</title>
+      <link>https://www.marshalgao.com/fite7410-financial-fraud-analytics-techniques/</link>
+      <pubDate>Fri, 26 Feb 2021 10:00:44 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/fite7410-financial-fraud-analytics-techniques/</guid>
+      <description>Financial Fraud Analytics Fraud detection models
+ classification  the output is category  regression  the output is a real value   Techniques
+ statistics techniques  break-point analysis peer-group analysis association rule analysis linear/logistic regressions  AI/DM/ML techniques  supervised learning  using historical information to retrieve patterns required labelled dataset  unsupervised learning  using historical information to retrieve patterns do not require labelled dataset divided into  clustering - to discover the inherent groupings in the data association - to discover rules that describe large portions of the data, find relation   semi-supervised learning  deal with pertially labelled data  social network analysis  learn and detect characteristics of fraudulent behavior in a network of linked entities  notes  these techniques are not mutually exclusive but complement each other an effective fraud detection and prevention system may combine the use of different techniques    Data analytics</description>
+    </item>
+    
     <item>
       <title>FITE7410 Processing Fraud Data</title>
       <link>https://www.marshalgao.com/fite7410-processing-fraud-data/</link>
@@ -101,17 +112,6 @@
       <guid>https://www.marshalgao.com/ecom7123-smart-mobility/</guid>
       <description>Overview Mobility
  definition  mobility describes the ability of people and goods to move around an area, and in doing so to access the essential facilities, communities &amp;amp; other destinations that are required to support a decent quality of life &amp;amp; a buoyant economy mobility incorporates the transport infrastructure &amp;amp; services that facilitate these interactions   challenges of urban mobility  overview  congestion energy crisis pollution climate change   details  increasing demand for travel in city centers, suburbs &amp;amp; between the two areas increasing demand for improved intercity mobility requiring faster &amp;amp; more direct connectivity between destinations increasing city traffic, pollution, waste production &amp;amp; CO2 emission      Smart Mobility Goals</description>
-    </item>
-    
-    <item>
-      <title>ECOM7123 Understanding the Concept of Smart City</title>
-      <link>https://www.marshalgao.com/ecom7123-understanding-the-concept-of-smart-city/</link>
-      <pubDate>Wed, 06 Jan 2021 09:17:43 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/ecom7123-understanding-the-concept-of-smart-city/</guid>
-      <description>Overview Difficulties and challenges
- our world is increasing challenged  urbanization ageing population social conflict inequality loss of nature pollution energy crisis climate change natural disaster resource depletion    Basic understanding
- definition of smart city  no official definition basically  the use of ICT (Information and Communications Technology) to improve the quality of life and city services, making the city more livable     ultimate goals  enhance quality of life  key indicators  health time and convenience safety cost of living jobs social connectedness and civic participation environmental quality     foster sustainable growth   leverage on technologies for better city management  IoT (data collection) big data (much data) AI (data analysis and prediction) above three technologies are based on GIS (Geographic Information System)    Building a Smart City Countries developing smart city initiatives with their own goals</description>
     </item>
     
   </channel>

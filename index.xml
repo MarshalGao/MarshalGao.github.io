@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 05 Feb 2021 10:11:09 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Feb 2021 10:00:44 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FITE7410 Financial Fraud Analytics Techniques</title>
+      <link>https://www.marshalgao.com/fite7410-financial-fraud-analytics-techniques/</link>
+      <pubDate>Fri, 26 Feb 2021 10:00:44 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/fite7410-financial-fraud-analytics-techniques/</guid>
+      <description>Financial Fraud Analytics Fraud detection models
+ classification  the output is category  regression  the output is a real value   Techniques
+ statistics techniques  break-point analysis peer-group analysis association rule analysis linear/logistic regressions  AI/DM/ML techniques  supervised learning  using historical information to retrieve patterns required labelled dataset  unsupervised learning  using historical information to retrieve patterns do not require labelled dataset divided into  clustering - to discover the inherent groupings in the data association - to discover rules that describe large portions of the data, find relation   semi-supervised learning  deal with pertially labelled data  social network analysis  learn and detect characteristics of fraudulent behavior in a network of linked entities  notes  these techniques are not mutually exclusive but complement each other an effective fraud detection and prevention system may combine the use of different techniques    Data analytics</description>
+    </item>
+    
     <item>
       <title>FITE7410 Processing Fraud Data</title>
       <link>https://www.marshalgao.com/fite7410-processing-fraud-data/</link>
@@ -104,18 +115,6 @@ The column id is continuous increment.
 Mary wants to change seats for the adjacent students.
 Can you write a SQL query to output the result for Mary?
 +---------+---------+ | id | student | +---------+---------+ | 1 | Abbot | | 2 | Doris | | 3 | Emerson | | 4 | Green | | 5 | Jeames | +---------+---------+  For the sample input, the output is:</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[620] Not Boring Movies</title>
-      <link>https://www.marshalgao.com/leetcode620-not-boring-movies/</link>
-      <pubDate>Thu, 14 Jan 2021 13:47:00 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode620-not-boring-movies/</guid>
-      <description>Question X city opened a new cinema, many people would like to go to this cinema. The cinema also gives out a poster indicating the movies’ ratings and descriptions.
-Please write a SQL query to output movies with an odd numbered ID and a description that is not &amp;lsquo;boring&amp;rsquo;. Order the result by rating.
-For example, table cinema:
-+---------+-----------+--------------+-----------+ | id | movie | description | rating | +---------+-----------+--------------+-----------+ | 1 | War | great 3D | 8.</description>
     </item>
     
   </channel>
