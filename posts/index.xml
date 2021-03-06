@@ -10,15 +10,17 @@
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
-            <title>FITE7410 Financial Fraud Analytics Techniques</title>
-            <link>https://www.marshalgao.com/fite7410-financial-fraud-analytics-techniques/</link>
+            <title>FITE7410 Financial Fraud Analytics Techniques (Part 1)</title>
+            <link>https://www.marshalgao.com/fite7410-financial-fraud-analytics-techniques-part-1/</link>
             <pubDate>Fri, 26 Feb 2021 10:00:44 +0800</pubDate>
             
-            <guid>https://www.marshalgao.com/fite7410-financial-fraud-analytics-techniques/</guid>
+            <guid>https://www.marshalgao.com/fite7410-financial-fraud-analytics-techniques-part-1/</guid>
             <description>Financial Fraud Analytics Fraud detection models
  classification  the output is category  regression  the output is a real value   Techniques
  statistics techniques  break-point analysis peer-group analysis association rule analysis linear/logistic regressions  AI/DM/ML techniques  supervised learning  using historical information to retrieve patterns required labelled dataset  unsupervised learning  using historical information to retrieve patterns do not require labelled dataset divided into  clustering - to discover the inherent groupings in the data association - to discover rules that describe large portions of the data, find relation   semi-supervised learning  deal with pertially labelled data  social network analysis  learn and detect characteristics of fraudulent behavior in a network of linked entities  notes  these techniques are not mutually exclusive but complement each other an effective fraud detection and prevention system may combine the use of different techniques    Data analytics</description>
-            <content type="html"><![CDATA[<h2 id="financial-fraud-analytics">Financial Fraud Analytics</h2>
+            <content type="html"><![CDATA[<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Financial%20Fraud%20Analytics%20Techniques%20(Part%201).png" alt=""></figure></p>
+
+<h2 id="financial-fraud-analytics">Financial Fraud Analytics</h2>
 
 <p><strong>Fraud detection models</strong></p>
 
@@ -639,7 +641,82 @@
 <li><p>any measures that are applicable for the model developed</p></li>
 </ul></li>
 
-<li><p>regression model</p></li>
+<li><p>regression model</p>
+
+<ul>
+<li>MAE (Mean Absolute Error)
+
+<ul>
+<li><span  class="math">\(y_i\)</span> is the actual expected output and <span  class="math">\(\hat{y_i}\)</span> is the model's prediction</li>
+<li>simplest but not popular
+<br></li>
+</ul></li>
+</ul>
+
+<p><span  class="math">\[MAE=\frac{1}{N} \displaystyle \sum^{N}_{i=1} |y_i - \hat{y_i}|\]</span></p>
+
+<ul>
+<li>MSE (Mean Squared Error)
+
+<ul>
+<li>more sensitive to outliers, compared with MAE</li>
+</ul></li>
+</ul>
+
+<p><span  class="math">\[MSE=\frac{1}{N} \displaystyle \sum^{N}_{i=1} {(y_i - \hat{y_i})}^2\]</span></p>
+
+<ul>
+<li>RMSE (Root Mean Squared Error)
+
+<ul>
+<li>due to squared error terms in MSE</li>
+</ul></li>
+</ul>
+
+<p><span  class="math">\[RMSE=\sqrt{\frac{1}{N} \displaystyle \sum^{N}_{i=1} {(y_i - \hat{y_i})}^2}\]</span></p>
+
+<ul>
+<li>r-squared
+
+<ul>
+<li>also called coefficient of determination</li>
+<li>explains the degree to which the input variables explain the variation of the output/predicted variable</li>
+<li>limitation: either stay the same or increases with the addition of more variables, even if they do not have any relationship with the output variables</li>
+</ul></li>
+</ul>
+
+<p><span  class="math">\[R^2=1-\frac{SS_{RES}}{SS_{TOT}}=1-\frac{\sum_i {(y_i-\hat{y_i})}^2}{\sum_i {(y_i-\bar{y})}^2}\]</span></p>
+
+<ul>
+<li>adjusted r-squared
+
+<ul>
+<li>N is the total sample size (number of rows) and p is the number of predictors (number of columns)</li>
+<li>overcome the R-squared limitation</li>
+<li>for building linear regression on multiple variables, suggest to use this method to judge</li>
+<li>but for only one input variable, r-squared and adjusted r-squared are same</li>
+</ul></li>
+</ul>
+
+<p><span  class="math">\[Adjusted R^2=1-\frac{(1-R^2)(N-1)}{N-p-1}\]</span></p>
+
+<ul>
+<li><p>scatter plot</p>
+
+<ul>
+<li>the more the plot approximately a straight, the better the performance of the regression model
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21030601.png" alt=""></figure></li>
+</ul></li>
+
+<li><p>Pearson correlation coefficient</p>
+
+<ul>
+<li>varies between -1 and +1</li>
+<li>closer to +1 indicates better agreement</li>
+</ul></li>
+</ul>
+
+<p><span  class="math">\[corr(\hat{y},y)=\frac{\sum^n_{i=1}(\hat{y_i}-\bar{\hat{y}})(y_i-\bar{y})}{\sqrt{\sum^n_{i=1}{(\hat{y_i}-\bar{\hat{y}})}^2}\sqrt{\sum^n_{i=1}{(y_i-\bar{y})}^2}}\]</span></p></li>
 
 <li><p>comparison</p>
 

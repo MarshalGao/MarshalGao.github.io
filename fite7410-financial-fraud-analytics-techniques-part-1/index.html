@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Marshal ">
+<meta name="description" content="Financial Fraud Analytics Fraud detection models
+ classification  the output is category  regression  the output is a real value   Techniques
+ statistics techniques  break-point analysis peer-group analysis association rule analysis linear/logistic regressions  AI/DM/ML techniques  supervised learning  using historical information to retrieve patterns required labelled dataset  unsupervised learning  using historical information to retrieve patterns do not require labelled dataset divided into  clustering - to discover the inherent groupings in the data association - to discover rules that describe large portions of the data, find relation   semi-supervised learning  deal with pertially labelled data  social network analysis  learn and detect characteristics of fraudulent behavior in a network of linked entities  notes  these techniques are not mutually exclusive but complement each other an effective fraud detection and prevention system may combine the use of different techniques    Data analytics" />
+<meta name="keywords" content=", fite7410, financial fraud analytics, fintech, techniques" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://www.marshalgao.com/fite7410-financial-fraud-analytics-techniques-part-1/" />
+
+
+    <title>
+        
+            FITE7410 Financial Fraud Analytics Techniques (Part 1) :: This is Marshal 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://www.marshalgao.com/main.1abfe30dec5ae0f5c4f84acd6413b12f63e4a6f9e1e7167f42de12192bfd25e9.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.marshalgao.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.marshalgao.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.marshalgao.com/favicon-16x16.png">
+    <link rel="manifest" href="https://www.marshalgao.com/site.webmanifest">
+    <link rel="mask-icon" href="https://www.marshalgao.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://www.marshalgao.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="FITE7410 Financial Fraud Analytics Techniques (Part 1)">
+<meta itemprop="description" content="Financial Fraud Analytics Fraud detection models
+ classification  the output is category  regression  the output is a real value   Techniques
+ statistics techniques  break-point analysis peer-group analysis association rule analysis linear/logistic regressions  AI/DM/ML techniques  supervised learning  using historical information to retrieve patterns required labelled dataset  unsupervised learning  using historical information to retrieve patterns do not require labelled dataset divided into  clustering - to discover the inherent groupings in the data association - to discover rules that describe large portions of the data, find relation   semi-supervised learning  deal with pertially labelled data  social network analysis  learn and detect characteristics of fraudulent behavior in a network of linked entities  notes  these techniques are not mutually exclusive but complement each other an effective fraud detection and prevention system may combine the use of different techniques    Data analytics">
+<meta itemprop="datePublished" content="2021-02-26T10:00:44+08:00" />
+<meta itemprop="dateModified" content="2021-02-26T10:00:44+08:00" />
+<meta itemprop="wordCount" content="2134">
+<meta itemprop="image" content="https://www.marshalgao.com/"/>
+
+
+
+<meta itemprop="keywords" content="fite7410,financial fraud analytics,fintech,techniques," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.marshalgao.com/"/>
+
+<meta name="twitter:title" content="FITE7410 Financial Fraud Analytics Techniques (Part 1)"/>
+<meta name="twitter:description" content="Financial Fraud Analytics Fraud detection models
+ classification  the output is category  regression  the output is a real value   Techniques
+ statistics techniques  break-point analysis peer-group analysis association rule analysis linear/logistic regressions  AI/DM/ML techniques  supervised learning  using historical information to retrieve patterns required labelled dataset  unsupervised learning  using historical information to retrieve patterns do not require labelled dataset divided into  clustering - to discover the inherent groupings in the data association - to discover rules that describe large portions of the data, find relation   semi-supervised learning  deal with pertially labelled data  social network analysis  learn and detect characteristics of fraudulent behavior in a network of linked entities  notes  these techniques are not mutually exclusive but complement each other an effective fraud detection and prevention system may combine the use of different techniques    Data analytics"/>
+
+
+
+    <meta property="og:title" content="FITE7410 Financial Fraud Analytics Techniques (Part 1)" />
+<meta property="og:description" content="Financial Fraud Analytics Fraud detection models
+ classification  the output is category  regression  the output is a real value   Techniques
+ statistics techniques  break-point analysis peer-group analysis association rule analysis linear/logistic regressions  AI/DM/ML techniques  supervised learning  using historical information to retrieve patterns required labelled dataset  unsupervised learning  using historical information to retrieve patterns do not require labelled dataset divided into  clustering - to discover the inherent groupings in the data association - to discover rules that describe large portions of the data, find relation   semi-supervised learning  deal with pertially labelled data  social network analysis  learn and detect characteristics of fraudulent behavior in a network of linked entities  notes  these techniques are not mutually exclusive but complement each other an effective fraud detection and prevention system may combine the use of different techniques    Data analytics" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.marshalgao.com/fite7410-financial-fraud-analytics-techniques-part-1/" />
+<meta property="og:image" content="https://www.marshalgao.com/"/>
+<meta property="article:published_time" content="2021-02-26T10:00:44+08:00" />
+<meta property="article:modified_time" content="2021-02-26T10:00:44+08:00" />
+
+
+
+
+    <meta property="article:section" content="HKU" />
+
+
+
+    <meta property="article:published_time" content="2021-02-26 10:00:44 &#43;0800 HKT" />
+
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css" integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.js" integrity="sha384-JiKN5O8x9Hhs/UE5cT5AAJqieYlOZbGT3CHws/y97o3ty4R7/O5poG9F3JoiOYw1" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://www.marshalgao.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://www.marshalgao.com/categories/hku">HKU</a></li><li><a href="https://www.marshalgao.com/categories/technology">TECH</a></li><li><a href="https://www.marshalgao.com/categories/product-manager">PM</a></li><li><a href="https://www.marshalgao.com/categories/life">LIFE</a></li><li><a href="https://www.marshalgao.com/about/">ABOUT</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        11 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://www.marshalgao.com/fite7410-financial-fraud-analytics-techniques-part-1/">FITE7410 Financial Fraud Analytics Techniques (Part 1)</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Financial%20Fraud%20Analytics%20Techniques%20(Part%201).png" alt=""></figure></p>
+
+<h2 id="financial-fraud-analytics">Financial Fraud Analytics</h2>
+
+<p><strong>Fraud detection models</strong></p>
+
+<ul>
+<li>classification
+
+<ul>
+<li>the output is category</li>
+</ul></li>
+<li>regression
+
+<ul>
+<li>the output is a real value</li>
+</ul></li>
+</ul>
+
+<p><strong>Techniques</strong></p>
+
+<ul>
+<li>statistics techniques
+
+<ul>
+<li>break-point analysis</li>
+<li>peer-group analysis</li>
+<li>association rule analysis</li>
+<li>linear/logistic regressions</li>
+</ul></li>
+<li>AI/DM/ML techniques
+
+<ul>
+<li>supervised learning
+
+<ul>
+<li>using historical information to retrieve patterns</li>
+<li>required labelled dataset</li>
+</ul></li>
+<li>unsupervised learning
+
+<ul>
+<li>using historical information to retrieve patterns</li>
+<li>do not require labelled dataset</li>
+<li>divided into
+
+<ul>
+<li>clustering - to discover the inherent groupings in the data</li>
+<li>association - to discover rules that describe large portions of the data, find relation</li>
+</ul></li>
+</ul></li>
+<li>semi-supervised learning
+
+<ul>
+<li>deal with pertially labelled data</li>
+</ul></li>
+<li>social network analysis
+
+<ul>
+<li>learn and detect characteristics of fraudulent behavior in a network of linked entities</li>
+</ul></li>
+<li>notes
+
+<ul>
+<li>these techniques are not mutually exclusive but complement each other</li>
+<li>an effective fraud detection and prevention system may combine the use of different techniques</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>Data analytics</strong></p>
+
+<ul>
+<li>predictive analytics
+
+<ul>
+<li>logistic regression</li>
+<li>decision tree</li>
+<li>random forest</li>
+<li>neural network</li>
+<li>support vector machines</li>
+</ul></li>
+<li>descriptive analytics
+
+<ul>
+<li>clustering</li>
+<li>autoencoder</li>
+</ul></li>
+</ul>
+
+<h2 id="statistics-techniques">Statistics Techniques</h2>
+
+<p><strong>Descriptive analytics for fraud detection</strong></p>
+
+<ul>
+<li>outlier detection techniques
+
+<ul>
+<li>break-point analysis
+
+<ul>
+<li>intra-account, indicates by a sudden change in account behavior</li>
+<li>starts from defining a fixed time window</li>
+<li>split the time window into old and new</li>
+<li>old part represents the local model or profile against which the new observations will be compared</li>
+<li>use t-test (mean comparison) to compare the averages of the old and new parts</li>
+<li>observations are ranked according to the t-statistical value
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21022603.png" alt=""></figure></li>
+</ul></li>
+<li>peer-group analysis
+
+<ul>
+<li>inter-account, compare with peer-group (nomal behavior)</li>
+<li>identifies the peer group of a target account
+
+<ul>
+<li>by using prior business knowledge or in a statistical way</li>
+<li>group size cannot be too small (sensitive to noise), or too big (insensitive to local irregularities)</li>
+</ul></li>
+<li>compares the behaviors of target account with peer accounts, e.g. t-test, any distance metrics
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21022604.png" alt=""></figure></li>
+</ul></li>
+<li>disadvantage
+
+<ul>
+<li>the two methods can be used to detect local anomalies rather than global anomalies
+
+<ul>
+<li>cases may be normal in global population</li>
+<li>these cases are marked as suspicious when compared to local profile or peers (more sensitive to local anomalies)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>relation detection techniques
+
+<ul>
+<li>association rule analysis
+
+<ul>
+<li>detect frequently occurring relationships between items</li>
+<li>originates from market basket analysis - to detect which items are frequently purchased together</li>
+<li>rules measure correlation associations, should not be interpreted as casual relation</li>
+</ul></li>
+<li>steps
+
+<ul>
+<li>identify frequent item sets
+
+<ul>
+<li>frequency of an item set is measured by means of its support
+<span  class="math">\(support(X) = \frac{number of transactions supporting (X)}{total number of transactions}\)</span></li>
+<li>example
+
+<ul>
+<li>item set {insured A, police officer X, auto repair shop 1}</li>
+<li>occurs in claim ID# 1, 6, 9</li>
+<li>support = 3/10 = 30%
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21022605.png" alt=""></figure></li>
+</ul></li>
+<li>a frequent item set - an item set of which the support is higher than a minimum value (e.g. 10%)</li>
+</ul></li>
+<li>identify association rules
+
+<ul>
+<li>strength of the association rule measured by confidence
+<span  class="math">\(confidence(X \rightarrow Y) = P(Y|X) = \frac{support(X \cap Y)}{support(X)}\)</span></li>
+<li>example
+
+<ul>
+<li>item set {insured A, police officer X, auto repair shop 1} can have multiple association rules
+
+<ul>
+<li>if insured A AND police officer X -&gt; auto repair shop 1
+
+<ul>
+<li>X = {insured A, police officer X}</li>
+<li><span  class="math">\(support(X) = 4/10\)</span> (ID# 1, 2, 6, 9)</li>
+<li>Y = {auto repair shop 1}</li>
+<li><span  class="math">\(support(X\cap Y) = 3/10\)</span> (ID# 1, 6, 9)</li>
+<li>confidence (X -&gt; Y) = 75%</li>
+</ul></li>
+<li>if insured A AND auto repair shop 1 -&gt; police office X</li>
+<li>if insured A -&gt; auto repair shop 1 AND police office X</li>
+</ul></li>
+</ul></li>
+<li>selected association rule - a rule of which the confidence is higher than a specified value</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>Predictive analytics for fraud detection</strong></p>
+
+<ul>
+<li>linear regression
+
+<ul>
+<li>used to model a continuous target variable</li>
+<li>general formulation:
+<span  class="math">\(Y = \beta_0 + \beta_1 X_1 + \cdots + \beta_N X_N\)</span>
+
+<ul>
+<li>slope: positive or negative relation between X and Y</li>
+<li><span  class="math">\(\beta_1\ldots\beta_N\)</span>: regression coefficient of a variable</li>
+<li><span  class="math">\(\beta_0\)</span>: intercept coefficient, excepted mean value of Y when all X = 0</li>
+</ul></li>
+<li>minimize the sum of all error squares (MSE = mean square error) to find the best fit straight line
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21022606.png" alt=""></figure></li>
+<li>advantages
+
+<ul>
+<li>performs exceptionally well for linearly separable data</li>
+<li>operationally efficient and easy to interpret &amp; implement</li>
+<li>extrapolation beyond a specific dataset</li>
+</ul></li>
+<li>disadvantages
+
+<ul>
+<li>target and exploratory variables must be of linear relation</li>
+<li>prone to noise and overfitting (a better fitting of the training dataset than the testing dataset)</li>
+<li>sensitive to outliers</li>
+<li>assumes exploratory variables are independent, might have problem of multicollinearity</li>
+<li>some variables are correlated, may have errors</li>
+</ul></li>
+</ul></li>
+<li>logistic regression
+
+<ul>
+<li>can be used for classification problem where the target variable assumes a value between 0 or 1 (boundaries)</li>
+<li><span  class="math">\(P(Y=1)=1-P(Y=0)\)</span></li>
+<li>steps
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21022607.png" alt=""></figure></li>
+<li>optimize the maximum likelihood estimation (MLE) - chooses the parameters in such a way as to maximize the probability of getting the sample at hand, in order to find the best fit straight line</li>
+<li>interpret result
+
+<ul>
+<li>linear in log odds (logit)</li>
+<li>estimates a linear decision boundary between the two classes
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21022608.png" alt=""></figure></li>
+</ul></li>
+<li>advantages
+
+<ul>
+<li>performs exceptionally well for linearly separable data</li>
+<li>operationally efficient and easy to implement</li>
+<li>a good baseline to measure performance of other more complex fraud detection model</li>
+</ul></li>
+<li>disadvantages
+
+<ul>
+<li>nonlinear problem cannot be solved</li>
+<li>prone to overfitting</li>
+<li>difficult to capture complex relationships</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h2 id="decision-tree">Decision Tree</h2>
+
+<p><strong>Overview</strong></p>
+
+<ul>
+<li>basics
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21022701.png" alt=""></figure></li>
+<li>aims
+
+<ul>
+<li>minimize &quot;impurity&quot; in the data</li>
+</ul></li>
+<li>impurity
+
+<ul>
+<li>the node impurity is a measure of the homogeneity of the labels at the node
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21022702.png" alt=""></figure></li>
+</ul></li>
+</ul>
+
+<p><strong>Splitting decision</strong></p>
+
+<ul>
+<li><p>categorical variables - decision tree</p>
+
+<ul>
+<li>Gini impurity</li>
+<li>entropy</li>
+
+<li><p>example</p>
+
+<ul>
+<li>formula
+<br></li>
+</ul>
+
+<p><span  class="math">\[IG(D_p,f)=I(D_p)-\frac{N_{left}}{N}I(D_{left})-\frac{N_{right}}{N}I(D_{right})\]</span></p>
+
+<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21022703.png" alt=""></figure></p>
+
+<ul>
+<li>compare the IG for splitting decision using the attribute &quot;AGE&quot; and &quot;INCOME&quot;</li>
+<li>IG(AGE) &gt; IG(INCOME) -&gt; use AGE as the splitting attribute
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21022704.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+
+<li><p>continuous variables - regression tree</p>
+
+<ul>
+<li>mean square error (MSE)</li>
+<li>variance</li>
+<li>regression tree splits - favour homogeneity within node and heterogeneity between nodes</li>
+<li>example - favour low MSE in a leave node
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21022708.png" alt=""></figure><br></li>
+</ul></li>
+</ul>
+
+<p><strong>Stopping decision</strong></p>
+
+<ul>
+<li>aims
+
+<ul>
+<li>avoid overfitting, the tree would be too complex and fails to correctly model the noise free pattern or trend in the data</li>
+</ul></li>
+<li>steps
+
+<ul>
+<li>split the data into training set and validation set (usually 7:3)</li>
+<li>stop growing the tree when the misclassification error for validation set reaches its minimal value
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21022705.png" alt=""></figure></li>
+</ul></li>
+</ul>
+
+<p><strong>Comparison</strong></p>
+
+<ul>
+<li>advantages of decision tree
+
+<ul>
+<li>easy to understand and interpret</li>
+<li>useful in data exploration</li>
+<li>less data clearing required - robust to outliers in inputs and no problem with missing values</li>
+<li>data type not a constraint - can handle both continuous and categorical data for both input and target data</li>
+<li>automatically detects interactions, accommodates nonlinearity and selects input variables</li>
+</ul></li>
+<li>disadvantages of decision tree
+
+<ul>
+<li>prone to overfitting</li>
+<li>splitting turns continuous input variables into discrete variables</li>
+<li>unstable fitted tree - small change in the data result in a very different series of splits - sensitve to the dataset</li>
+</ul></li>
+<li>classification vs regression tree
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21022706.png" alt=""></figure></li>
+</ul>
+
+<h2 id="ensemble-methods">Ensemble Methods</h2>
+
+<p><strong>Overview</strong></p>
+
+<ul>
+<li>definition
+
+<ul>
+<li>a machine learning model that involve a group of prediction models (not only one model)</li>
+</ul></li>
+<li>reasons of using ensemble learning
+
+<ul>
+<li>performance: better predictions than any single contributing model</li>
+<li>robustness: reduce the spread or dispersion of the predictions and model performance</li>
+</ul></li>
+</ul>
+
+<p><strong>Bootstrap sampling</strong></p>
+
+<ul>
+<li>definition
+
+<ul>
+<li>smaller sample of same size are repeated drawn, with replacement, from the larger original sample</li>
+</ul></li>
+<li>procedures
+
+<ul>
+<li>choose a number of bootstrap samples to perform</li>
+<li>choose a sample size</li>
+<li>for each bootstrap sample
+
+<ul>
+<li>draw a sample with replacement with the chosen size</li>
+<li>calculate the statistic on the sample</li>
+</ul></li>
+<li>calculate the mean of the calculated sample statistics
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21022709.png" alt=""></figure></li>
+</ul></li>
+<li>bagging (bootstrap aggregating)
+
+<ul>
+<li>take N number of bootstraps from the underlying sample</li>
+<li>build a classifier
+
+<ul>
+<li>for classification -&gt; major voting</li>
+<li>for regression -&gt; calculate the average of the outcome of the N prediction models
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21022710.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h2 id="random-forest">Random Forest</h2>
+
+<p><strong>Overview</strong></p>
+
+<ul>
+<li>definition
+
+<ul>
+<li>is a forest of decision trees</li>
+<li>can be used for both classification tree and regression tree</li>
+<li>achieve dissimilarities among the decision trees by
+
+<ul>
+<li>adopting a bootstrap procedure to select training samples for each tree (the same dataset -&gt; useless)</li>
+<li>selecting a random subset of attributes at each node</li>
+<li>training different base models of decision trees</li>
+</ul></li>
+<li>result of random forest is a model with better performance compared to a single decision tree model
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21022711.png" alt=""></figure></li>
+</ul></li>
+</ul>
+
+<p><strong>Comparison</strong></p>
+
+<ul>
+<li>advantages
+
+<ul>
+<li>random forest can achieve excellent predictive performance and suitable for the requirements of fraud detection</li>
+<li>capable of dealing with data sets having only a few observations, but with lots of variables</li>
+</ul></li>
+<li>disadvantages
+
+<ul>
+<li>it is a black-box model, more complicated actually
+
+<ul>
+<li>variable importance can be used to understand the internal workings of random forest (or any ensemble model)</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>Variable importance</strong></p>
+
+<ul>
+<li>aims
+
+<ul>
+<li>when get result from random tree, which variables have the most predictive power</li>
+<li>variables with HIGH importance can be used for further analysis, while variables with LOW importance can be discarded</li>
+</ul></li>
+<li>example - provide two mechanism, which one should be used, it depends
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21022712.png" alt=""></figure></li>
+</ul>
+
+<h2 id="performance-evaluation">Performance Evaluation</h2>
+
+<p><strong>Split the sample data</strong></p>
+
+<ul>
+<li>training dataset
+
+<ul>
+<li>training data - to build the model</li>
+<li>validation data - to be used during model development (e.g. making stopping decision in decision tree)</li>
+<li>testing data - to test the performance of the model</li>
+</ul></li>
+<li>splitting the dataset
+
+<ul>
+<li>observations used for training should not be used for testing or validation</li>
+<li>training:(validation):testing (not strict, it depends)
+
+<ul>
+<li>7:3 (validation dataset is not required)</li>
+<li>4:3:3 (validation dataset is required)</li>
+</ul></li>
+</ul></li>
+<li>k-fold cross-validation
+
+<ul>
+<li>can be applied when the sample size is small</li>
+<li>procedures (k = 5)
+
+<ul>
+<li>original dataset (shown in dark green) is randomly partitioned into k disjoint sets (shown in light green)</li>
+<li>then k − 1 parts are used for training a model (shown in blue) and remaining part is used for evaluation (shown in orange)</li>
+<li>this process is repeated k times for all possible choices of the test set, producing test errors</li>
+<li>the final performance is reported by averaging the errors from each iteration
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21022713.png" alt=""></figure></li>
+</ul></li>
+<li>which one should be chosen
+
+<ul>
+<li>similar to ensemble method, use voting procedure</li>
+<li>use leave one out cross-validation and randomly select one model
+
+<ul>
+<li>randomly select</li>
+<li>using all data except dropped one for training</li>
+<li>since all models differ by one observation only, the performance should be similar for all models</li>
+</ul></li>
+<li>use all observations for training
+
+<ul>
+<li>then, use the cross-validation performance result (mean error) as the independent estimate of the model</li>
+<li>only use when the sample size is really extremely small (no choice option)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>Model evaluation</strong></p>
+
+<ul>
+<li><p>classification model</p>
+
+<ul>
+<li>statistics measure
+
+<ul>
+<li>correlation tests</li>
+<li>comparison of mean tests</li>
+<li>regression tests</li>
+<li>non-parametric tests</li>
+</ul></li>
+
+<li><p>performance metric</p>
+
+<ul>
+<li>mainly used in machine learning evaluation</li>
+
+<li><p>the confusion matrix
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21022714.png" alt=""></figure></p>
+
+<ul>
+<li>accuracy: percentage of total items classified correctly
+<br></li>
+</ul>
+
+<p><span  class="math">\[Classification\ accuracy=\frac{TP+TN}{TP+FP+FN+TN}\]</span></p>
+
+<ul>
+<li>error: percentage of total items classified incorrectly</li>
+</ul>
+
+<p><span  class="math">\[Classification\ error=\frac{FP+FN}{TP+FP+FN+TN}\]</span></p>
+
+<ul>
+<li>recall: how many fraudsters are correctly classified as fraudsters (most important, i.e. favour TP &gt; FN)</li>
+</ul>
+
+<p><span  class="math">\[Sensitivity=Recall=Hit\ rate=\frac{TP}{TP+FN}\]</span></p>
+
+<ul>
+<li>precision: how many predicted fraudsters are actually fraudsters (useful if the objective is not to leave out important information, e.g. spam mail detection, i.e. TP &gt; FP)</li>
+</ul>
+
+<p><span  class="math">\[Precision=\frac{TP}{TP+FP}\]</span></p>
+
+<ul>
+<li>F1 score: the weight average of precision and recall (take into account FP and FN, thus more informative than accuracy)</li>
+</ul>
+
+<p><span  class="math">\[F-measure=\frac{2\times (Precision\times Recall)}{Precision+Recall}\]</span></p>
+
+<ul>
+<li>for fraud detection models, recall is most useful performance measure</li>
+
+<li><p>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21030102.png" alt=""></figure></p>
+
+<p><span  class="math">\[Accuracy = \frac{0+90}{100}=90%\]</span></p>
+
+<ul>
+<li>even with very high accuracy, this model is useless in detecting fraud cases, because no fraud cases are detected by this model</li>
+</ul></li>
+</ul></li>
+
+<li><p>ROC-AUC</p>
+
+<ul>
+<li>basic terms
+
+<ul>
+<li>ROC = Receiver Operating Characteristics</li>
+<li>AUC = Area Under the ROC Curve</li>
+<li><span  class="math">\(True Positive Rate (TPR) = Sensitivity=Recall=Hit\ rate=\frac{TP}{TP+FN}\)</span></li>
+<li><span  class="math">\(True Negative Rate (TNR) = Specificity = \frac{TN}{FP + TN}\)</span></li>
+<li><span  class="math">\(False Positive Rate (FPR) = 1 - Specificity\)</span></li>
+</ul></li>
+<li>ROC curve
+
+<ul>
+<li>a curve of probabilities</li>
+<li>with TPR as y-axis and FPR as x-axis
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21030103.png" alt=""></figure></li>
+</ul></li>
+<li>example
+
+<ul>
+<li>AUC is always between 0 and 1</li>
+<li>calculate the area of the curve and compare which one is better</li>
+<li>AUC = 1 = ideal situation where all fraud and no fraud cases are correctly predicted</li>
+<li>AUC = 0.5 (i.e. diagonal curve) = random guesses, i.e. no discrimination power between fraud and no fraud cases</li>
+<li>any curves under the diagonal curve = no use
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21030104.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+</ul></li>
+
+<li><p>any measures that are applicable for the model developed</p></li>
+</ul></li>
+
+<li><p>regression model</p>
+
+<ul>
+<li>MAE (Mean Absolute Error)
+
+<ul>
+<li><span  class="math">\(y_i\)</span> is the actual expected output and <span  class="math">\(\hat{y_i}\)</span> is the model's prediction</li>
+<li>simplest but not popular
+<br></li>
+</ul></li>
+</ul>
+
+<p><span  class="math">\[MAE=\frac{1}{N} \displaystyle \sum^{N}_{i=1} |y_i - \hat{y_i}|\]</span></p>
+
+<ul>
+<li>MSE (Mean Squared Error)
+
+<ul>
+<li>more sensitive to outliers, compared with MAE</li>
+</ul></li>
+</ul>
+
+<p><span  class="math">\[MSE=\frac{1}{N} \displaystyle \sum^{N}_{i=1} {(y_i - \hat{y_i})}^2\]</span></p>
+
+<ul>
+<li>RMSE (Root Mean Squared Error)
+
+<ul>
+<li>due to squared error terms in MSE</li>
+</ul></li>
+</ul>
+
+<p><span  class="math">\[RMSE=\sqrt{\frac{1}{N} \displaystyle \sum^{N}_{i=1} {(y_i - \hat{y_i})}^2}\]</span></p>
+
+<ul>
+<li>r-squared
+
+<ul>
+<li>also called coefficient of determination</li>
+<li>explains the degree to which the input variables explain the variation of the output/predicted variable</li>
+<li>limitation: either stay the same or increases with the addition of more variables, even if they do not have any relationship with the output variables</li>
+</ul></li>
+</ul>
+
+<p><span  class="math">\[R^2=1-\frac{SS_{RES}}{SS_{TOT}}=1-\frac{\sum_i {(y_i-\hat{y_i})}^2}{\sum_i {(y_i-\bar{y})}^2}\]</span></p>
+
+<ul>
+<li>adjusted r-squared
+
+<ul>
+<li>N is the total sample size (number of rows) and p is the number of predictors (number of columns)</li>
+<li>overcome the R-squared limitation</li>
+<li>for building linear regression on multiple variables, suggest to use this method to judge</li>
+<li>but for only one input variable, r-squared and adjusted r-squared are same</li>
+</ul></li>
+</ul>
+
+<p><span  class="math">\[Adjusted R^2=1-\frac{(1-R^2)(N-1)}{N-p-1}\]</span></p>
+
+<ul>
+<li><p>scatter plot</p>
+
+<ul>
+<li>the more the plot approximately a straight, the better the performance of the regression model
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21030601.png" alt=""></figure></li>
+</ul></li>
+
+<li><p>Pearson correlation coefficient</p>
+
+<ul>
+<li>varies between -1 and +1</li>
+<li>closer to +1 indicates better agreement</li>
+</ul></li>
+</ul>
+
+<p><span  class="math">\[corr(\hat{y},y)=\frac{\sum^n_{i=1}(\hat{y_i}-\bar{\hat{y}})(y_i-\bar{y})}{\sqrt{\sum^n_{i=1}{(\hat{y_i}-\bar{\hat{y}})}^2}\sqrt{\sum^n_{i=1}{(y_i-\bar{y})}^2}}\]</span></p></li>
+
+<li><p>comparison</p>
+
+<ul>
+<li>for classfication model
+
+<ul>
+<li>the output is categorical data</li>
+<li>the measure of the performance is counting the % of correctly predicted value</li>
+</ul></li>
+
+<li><p>for regression model</p>
+
+<ul>
+<li>the outout is a continuous number</li>
+<li>the measure of the performance is how &quot;close&quot; the predicted value is to the actual value, any deviation from the actual value is an error
+<br></li>
+</ul>
+
+<p><span  class="math">\[Error=Y(actual)-Y(predicted)\]</span></p></li>
+</ul></li>
+</ul>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/tags/fite7410/">fite7410</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/financial-fraud-analytics/">financial fraud analytics</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/fintech/">fintech</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/techniques/">techniques</a></span>
+        
+    </p>
+
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/categories/hku/">HKU</a></span>
+        
+    </p>
+
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        2134 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2021-02-26 10:00
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+
+          
+            <span class="button next">
+              <a href="https://www.marshalgao.com/fite7410-processing-fraud-data/">
+                <span class="button__text">FITE7410 Processing Fraud Data</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span><a href="https://www.hku.hk" target="_blank" rel="noopener">The University of Hong Kong</a></span>
+            <span><a href="https://www.ecom-icom.hku.hk" target="_blank" rel="noopener">ECIC</a></span>
+          </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020-2021</span>
+            
+                
+                <span>Marshal</a></span>
+            
+            
+            
+        </div>
+    </div>
+</footer>
+
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://www.marshalgao.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>

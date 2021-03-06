@@ -9,11 +9,11 @@
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Fri, 26 Feb 2021 10:00:44 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>FITE7410 Financial Fraud Analytics Techniques</title>
-      <link>https://www.marshalgao.com/fite7410-financial-fraud-analytics-techniques/</link>
+      <title>FITE7410 Financial Fraud Analytics Techniques (Part 1)</title>
+      <link>https://www.marshalgao.com/fite7410-financial-fraud-analytics-techniques-part-1/</link>
       <pubDate>Fri, 26 Feb 2021 10:00:44 +0800</pubDate>
       
-      <guid>https://www.marshalgao.com/fite7410-financial-fraud-analytics-techniques/</guid>
+      <guid>https://www.marshalgao.com/fite7410-financial-fraud-analytics-techniques-part-1/</guid>
       <description>Financial Fraud Analytics Fraud detection models
  classification  the output is category  regression  the output is a real value   Techniques
  statistics techniques  break-point analysis peer-group analysis association rule analysis linear/logistic regressions  AI/DM/ML techniques  supervised learning  using historical information to retrieve patterns required labelled dataset  unsupervised learning  using historical information to retrieve patterns do not require labelled dataset divided into  clustering - to discover the inherent groupings in the data association - to discover rules that describe large portions of the data, find relation   semi-supervised learning  deal with pertially labelled data  social network analysis  learn and detect characteristics of fraudulent behavior in a network of linked entities  notes  these techniques are not mutually exclusive but complement each other an effective fraud detection and prevention system may combine the use of different techniques    Data analytics</description>
