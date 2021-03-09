@@ -6,8 +6,296 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-        <lastBuildDate>Fri, 26 Feb 2021 10:00:44 +0800</lastBuildDate>
+        <lastBuildDate>Sat, 06 Mar 2021 11:46:59 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>FITE7410 Financial Fraud Analytics Techniques (Part 2)</title>
+            <link>https://www.marshalgao.com/fite7410-financial-fraud-analytics-techniques-part-2/</link>
+            <pubDate>Sat, 06 Mar 2021 11:46:59 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/fite7410-financial-fraud-analytics-techniques-part-2/</guid>
+            <description>Clustering Basics about clustering
+ aim  group a set of observations into groups (or clusters)  feature  the homogeneity (similarity) within the cluster is maximized the heterogeneity (dissimilarity) between the cluster is maximized unsupervised classification (no labels) no predefined target class number of clusters unknown meaning of clusters unknown  distance metrics
+ measure the similarity and dissimilarity between observations in a group types
+ metrics for continuous variables</description>
+            <content type="html"><![CDATA[<h2 id="clustering">Clustering</h2>
+
+<p><strong>Basics about clustering</strong></p>
+
+<ul>
+<li>aim
+
+<ul>
+<li>group a set of observations into groups (or clusters)</li>
+</ul></li>
+<li>feature
+
+<ul>
+<li>the homogeneity (similarity) within the cluster is maximized</li>
+<li>the heterogeneity (dissimilarity) between the cluster is maximized</li>
+<li>unsupervised classification (no labels)</li>
+<li>no predefined target class</li>
+<li>number of clusters unknown</li>
+<li>meaning of clusters unknown</li>
+</ul></li>
+
+<li><p>distance metrics</p>
+
+<ul>
+<li>measure the similarity and dissimilarity between observations in a group</li>
+
+<li><p>types</p>
+
+<ul>
+<li><p>metrics for continuous variables</p>
+
+<ul>
+<li><p>Minkowski distance</p>
+
+<ul>
+<li>formula
+
+<ul>
+<li><span  class="math">\(n\)</span> represents the number of variables</li>
+<li><span  class="math">\(x_i, x_j\)</span> are two observations</li>
+</ul></li>
+</ul>
+
+<p><span  class="math">\[D(x_i:x_j)={(\sum_{k=1}^n {|x_{ik}-x_{jk}|}^p)}^{1/p}\]</span></p>
+
+<ul>
+<li>when p = 1, it is Manhattan (or city block) distance
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21030602.png" alt=""></figure></li>
+</ul>
+
+<p><span  class="math">\[D(x_i:x_j)=|x_{11}-x_{21}|+|x_{12}-x_{22}|=|50-30|+|20-10|=30\]</span></p>
+
+<ul>
+<li>when p = 2, it is Euclidean distance</li>
+</ul>
+
+<p><span  class="math">\[D(x_i:x_j)=\sqrt{{(x_{11}-x_{21})}^2+{(x_{12}-x_{22})}^2}=\sqrt{{(50-30)}^2+{(20-10)}^2}=22\]</span></p></li>
+
+<li><p>Pearson correlation</p></li>
+</ul></li>
+
+<li><p>metrics for categorical variables</p>
+
+<ul>
+<li>simple matching coefficient (SMC)
+
+<ul>
+<li>calculates the number of identical matches between the variable values</li>
+<li>assumption of SMC is that &quot;Yes&quot; and &quot;No&quot; are of equal weights</li>
+</ul></li>
+<li>Jaccard index
+
+<ul>
+<li>similar to SMC, but left out the &quot;No-No&quot; match</li>
+<li>measures the similarity between observations across those red flags that were raised at least once</li>
+<li>especially useful in situations where many red-flag indicators are available and typically only a few are raised</li>
+</ul></li>
+<li>example
+
+<ul>
+<li>SMC(Claim1, Claim2) = 2/5</li>
+<li>Jaccard(Claim1, Claim2) = 1/4
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21030604.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>Types of clustering</strong></p>
+
+<ul>
+<li><p>hierarchical</p>
+
+<ul>
+<li>agglomerative
+
+<ul>
+<li>bottom-up</li>
+</ul></li>
+<li>divisive
+
+<ul>
+<li>top-down
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21030605.png" alt=""></figure><br></li>
+</ul></li>
+<li>use a similarity or distance matrix to merge or split one cluster at a time</li>
+
+<li><p>distance matrics</p>
+
+<ul>
+<li>single linkage: smallest possible distance
+
+<ul>
+<li>thin, long and elongated clusters since dissimilar objects are not accounted for</li>
+</ul></li>
+<li>complete linkage: biggest possible distance
+
+<ul>
+<li>cluster are tight, more balanced and spherical</li>
+</ul></li>
+<li>average linkage: average of all possible distances
+
+<ul>
+<li>merge clusters with small variances, results in clusters with similar variance</li>
+</ul></li>
+<li>centroid method: distance between the centroids of both clusters
+
+<ul>
+<li>most robust to outliers, but not perform as well as Ward's method or average linkage
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21030606.png" alt=""></figure></li>
+</ul></li>
+
+<li><p>Ward's distance: the dendrogram and hierarchy is clearer</p>
+
+<ul>
+<li>merge clusters with a small number of observations and results in balanced clusters</li>
+<li>formula</li>
+</ul>
+
+<p><span  class="math">\[D_{Ward}(C_i,C_j)=\sum_{x\in C_i}{(x-c_i)}^2+\sum_{x\in C_j}{(x-c_j)}^2-\sum_{x\in C_{ij}}{(x-c_{ij})}^2\]</span></p>
+
+<ul>
+<li>find the optimal clustering thru
+
+<ul>
+<li>dendrogram - termination condition to cut the dendrogram</li>
+<li>screen plot - elbow point indicates the optimal clustering
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21030608.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+</ul></li>
+
+<li><p>advantages</p>
+
+<ul>
+<li>easy to interpret and understand (dendrogram is easy to understand)</li>
+<li>relatively easy to implement</li>
+<li>number of clusters does not need to be specified prior to the analysis</li>
+</ul></li>
+
+<li><p>disadvantages</p>
+
+<ul>
+<li>the methods do not scale very well to large data sets, i.e. computationally expansive</li>
+<li>interpretation of clusters is often subjective and depends on expert knowledge</li>
+<li>does not work well with mixed data types and missing data</li>
+<li>not the best solution for data sets with high dimensions</li>
+</ul></li>
+</ul></li>
+
+<li><p>non-hierarchical</p>
+
+<ul>
+<li>k-means
+
+<ul>
+<li>some basics
+
+<ul>
+<li>k means each cluster is represented by the center (or mean) of the cluster</li>
+<li>need to be specified before the start of analysis</li>
+</ul></li>
+<li>procedure
+
+<ul>
+<li>select k observations as initial cluster centroids (seeds)</li>
+<li>assign each observation to the cluster that has the closest centroid</li>
+<li>when all observations have been assigned, recalculate the positions of the k centroids</li>
+<li>repeat until the cluster centroids no longer change or a fixed number of iterations is reached
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21030609.png" alt=""></figure></li>
+</ul></li>
+<li>advantages
+
+<ul>
+<li>relatively computational efficient as compared with hierarchical clustering</li>
+<li>simple to implement and scales to large datasets</li>
+</ul></li>
+<li>disadvantages
+
+<ul>
+<li>need to specify k, the number of clusters, in advance</li>
+<li>often terminates at a local optimum.  Need to try different initial cluster centres</li>
+<li>unable to handle noisy data and outliers</li>
+</ul></li>
+</ul></li>
+<li>self-organizing map (SOM)</li>
+</ul></li>
+
+<li><p>many others</p>
+
+<ul>
+<li>density-based</li>
+<li>model-based</li>
+<li>graph-basedxs</li>
+</ul></li>
+</ul>
+
+<h2 id="performance-evaluation-of-clustering">Performance Evaluation of Clustering</h2>
+
+<p><strong>Overivew</strong></p>
+
+<ul>
+<li>method
+
+<ul>
+<li>no universal criterion for clustering performance evaluation</li>
+</ul></li>
+<li>only 2 perspectives
+
+<ul>
+<li>statistical perspective</li>
+<li>interpretability perspective</li>
+</ul></li>
+<li>the standard of a good clustering solution
+
+<ul>
+<li>high within-cluster similarity</li>
+<li>low between-cluster similarity</li>
+</ul></li>
+</ul>
+
+<p><strong>SSE (Sum of Square Error)</strong></p>
+
+<ul>
+<li>a statistical method</li>
+<li>how to evaluate
+
+<ul>
+<li>the lower the SSE for a particular cluster (WSS), the more homogenous is that cluster, i.e. higher within-cluster similarity</li>
+<li>the higher the SSE among different clusters (BSS), the more heterogenous are the clusters, i.e. lower between-cluster similarity</li>
+</ul></li>
+<li>the optimal number of clusters
+
+<ul>
+<li>elbow method - makes use of within-cluster SSE (WSS)</li>
+<li>steps
+
+<ul>
+<li>compute the k-means clustering models for different k values</li>
+<li>for each k, calculate the WSS</li>
+<li>plot WSS accoriding to the value of k</li>
+<li>find the point where there is a bend (or elbow) in the curve -&gt; optimal
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21030901.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>Interpretation of a clustering solution</strong></p>
+
+<h2 id="neural-network">Neural Network</h2>
+
+<h2 id="support-vector-machine">Support Vector Machine</h2>
+
+<h2 id="multiclass-classification-techniques">Multiclass Classification Techniques</h2>
+]]></content>
+        </item>
         
         <item>
             <title>FITE7410 Financial Fraud Analytics Techniques (Part 1)</title>
@@ -7988,47 +8276,6 @@ AddressId is the primary key column for this table.
 <h5 id="希望2021不念过往拥抱未来">希望2021不念过往，拥抱未来！</h5>
 <h5 id="年度感谢小刘输入的bgm">年度感谢小刘输入的BGM！</h5>
 <h5 id="给2020在我身边的人笔芯">给2020在我身边的人笔芯！</h5>
-]]></content>
-        </item>
-        
-        <item>
-            <title>My Secret</title>
-            <link>https://www.marshalgao.com/my-secret/</link>
-            <pubDate>Fri, 25 Dec 2020 23:16:05 +0800</pubDate>
-            
-            <guid>https://www.marshalgao.com/my-secret/</guid>
-            <description>我的秘密 词：邓紫棋
-曲：邓紫棋
-   今天是2020年12月25日，圣诞节。我曾经很向往一个人的生活，但是等到这一刻真的到来，心里百般难平。没有平安果，没有圣诞祝福，其实一开始对这些也不是很在乎，但是可能随着年龄增长，自己慢慢地被感性一面支配。包括现在，我只会在晚上写出这样的文字，这也是为什么我会在晚上做创造性工作的原因。
-其实早一开始就想着写点什么，但是一直被很多due缠身，就拖到了现在。本开始选定了一首歌，但是今天在《哈哈哈哈哈》看到了邓紫棋，自己还身在香港，就不由自主的想换一首歌曲，分享一下自己听歌的感受吧。
-本来心里五味杂陈，但是本着健哥的那句话，“音乐应该给人传递给人爱与温暖”。说罢，我决定选择对我来说很重要的一首歌。
-高中的时候，我特别喜欢邓紫棋，那时还不是健哥的脑残粉。邓紫棋的高音真的很有爆发力，但又不失内敛和婉转。很多人认识她都是因为《泡沫》，但是与我而言，《我的秘密》或许是我最喜欢的一首。
-有的时候，我们隔了很久听同一首歌，会有不一样的心境。个人的主观感受，并不是音乐本身导致的，而是外在的环境和自己的内心。这首歌旋律欢快，仿佛给人一种学生时代恋爱般的感觉。
-时间回到2014年，我还用着iPod，某天的一个晚自习，那是第一次听到《我的秘密》。可能是青春期的原因，这首歌很容易就会把人带进去。可能真的是自己年轻，那时感觉心里可以装下十个女生。这不是花心，而是高中枯燥无味生活的一种情感寄托。有人说我讲到以前的事眼睛会放光，我也不止一次公开表明，如果时间重来，我最愿意回到高中，即便再经历一次高考的痛苦，但也甘愿。原因很简单，简单的关系，两点一线，最喜欢的人与你只有一步的距离。
-第一部分主歌的欢快，仿佛就是学生时期那种情不自禁想一个人的感觉。内心情窦初开也好，暗恋也罢。我们都曾经历过，早自习回眸之间，她的微笑，或许没有那么精致的妆容，但是依旧如花美眷。这部分副歌迎来了第一次的情绪起伏，当我们开始喜欢一个人，便总会和她不经意的相见。一见钟情的心跳加速，日久生情的跌宕起伏，在那一瞬间会觉得，喜欢你，就是我在这苦海里的甜。
-时间回到现在，我们各自都有一段感情关系。回想自己的过往，我可能自始至终喜欢的人都是她，即便和别人在一起。当我分手之后，在2020年的第一天，她找到我，我又一次被拽回了《我的秘密》。我们这些年都有成长，看问题或许更为通透，但只要我们一聊起天，真的就是素面朝天，仍是少年。第二部分主歌“沙了的声音”，在我看来就是经过似水流年的沉淀，最温柔的证明。即便此刻的我们确实改变了，但至少都变得更好了。其实一直以来，我都有偷偷想你，直到今年忽远忽近的距离。即便隔着屏幕，也会感受到甜蜜。这种特殊感情，我不确定是不是双向的，但我很享受这个过程。
-以前的我，不喜欢爱人，喜欢被爱。但是，在香港的几个月，我慢慢开始享受喜欢一个人的感觉，也开始慢慢正视自己的内心。相对于表达，我更不想失去这个人。所谓的爱而不得，或许就是现如今我对“别人无法理解的特殊感情”的最好解读。
-最后，站在两条时间线的中点。我希望全世界都会清晰，七年多以来，我心底的秘密，就是一直喜欢着你。为了不失去。</description>
-            <content type="html"><![CDATA[<div align="center">
-<b>我的秘密
-<p>词：邓紫棋</p>
-<p>曲：邓紫棋</b></p>
-</div>
-<div align="center">
-<audio id="audio" controls="" preload="none">
-      <source id="mp3" src="../music/my-secret.mp3" height="100" width="100">
-</audio>
-</div>
-<p>今天是2020年12月25日，圣诞节。我曾经很向往一个人的生活，但是等到这一刻真的到来，心里百般难平。没有平安果，没有圣诞祝福，其实一开始对这些也不是很在乎，但是可能随着年龄增长，自己慢慢地被感性一面支配。包括现在，我只会在晚上写出这样的文字，这也是为什么我会在晚上做创造性工作的原因。</p>
-<p>其实早一开始就想着写点什么，但是一直被很多due缠身，就拖到了现在。本开始选定了一首歌，但是今天在《哈哈哈哈哈》看到了邓紫棋，自己还身在香港，就不由自主的想换一首歌曲，分享一下自己听歌的感受吧。</p>
-<p>本来心里五味杂陈，但是本着健哥的那句话，“音乐应该给人传递给人爱与温暖”。说罢，我决定选择对我来说很重要的一首歌。</p>
-<p>高中的时候，我特别喜欢邓紫棋，那时还不是健哥的脑残粉。邓紫棋的高音真的很有爆发力，但又不失内敛和婉转。很多人认识她都是因为《泡沫》，但是与我而言，《我的秘密》或许是我最喜欢的一首。</p>
-<p>有的时候，我们隔了很久听同一首歌，会有不一样的心境。个人的主观感受，并不是音乐本身导致的，而是外在的环境和自己的内心。这首歌旋律欢快，仿佛给人一种学生时代恋爱般的感觉。</p>
-<p>时间回到2014年，我还用着iPod，某天的一个晚自习，那是第一次听到《我的秘密》。可能是青春期的原因，这首歌很容易就会把人带进去。可能真的是自己年轻，那时感觉心里可以装下十个女生。这不是花心，而是高中枯燥无味生活的一种情感寄托。有人说我讲到以前的事眼睛会放光，我也不止一次公开表明，如果时间重来，我最愿意回到高中，即便再经历一次高考的痛苦，但也甘愿。原因很简单，简单的关系，两点一线，最喜欢的人与你只有一步的距离。</p>
-<p>第一部分主歌的欢快，仿佛就是学生时期那种情不自禁想一个人的感觉。内心情窦初开也好，暗恋也罢。我们都曾经历过，早自习回眸之间，她的微笑，或许没有那么精致的妆容，但是依旧如花美眷。这部分副歌迎来了第一次的情绪起伏，当我们开始喜欢一个人，便总会和她不经意的相见。一见钟情的心跳加速，日久生情的跌宕起伏，在那一瞬间会觉得，喜欢你，就是我在这苦海里的甜。</p>
-<p>时间回到现在，我们各自都有一段感情关系。回想自己的过往，我可能自始至终喜欢的人都是她，即便和别人在一起。当我分手之后，在2020年的第一天，她找到我，我又一次被拽回了《我的秘密》。我们这些年都有成长，看问题或许更为通透，但只要我们一聊起天，真的就是素面朝天，仍是少年。第二部分主歌“沙了的声音”，在我看来就是经过似水流年的沉淀，最温柔的证明。即便此刻的我们确实改变了，但至少都变得更好了。其实一直以来，我都有偷偷想你，直到今年忽远忽近的距离。即便隔着屏幕，也会感受到甜蜜。这种特殊感情，我不确定是不是双向的，但我很享受这个过程。</p>
-<p>以前的我，不喜欢爱人，喜欢被爱。但是，在香港的几个月，我慢慢开始享受喜欢一个人的感觉，也开始慢慢正视自己的内心。相对于表达，我更不想失去这个人。所谓的爱而不得，或许就是现如今我对“别人无法理解的特殊感情”的最好解读。</p>
-<p>最后，站在两条时间线的中点。我希望全世界都会清晰，七年多以来，我心底的秘密，就是一直喜欢着你。为了不失去。</p>
 ]]></content>
         </item>
         

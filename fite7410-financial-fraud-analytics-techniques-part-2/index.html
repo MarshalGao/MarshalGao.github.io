@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Marshal ">
+<meta name="description" content="Clustering Basics about clustering
+ aim  group a set of observations into groups (or clusters)  feature  the homogeneity (similarity) within the cluster is maximized the heterogeneity (dissimilarity) between the cluster is maximized unsupervised classification (no labels) no predefined target class number of clusters unknown meaning of clusters unknown  distance metrics
+ measure the similarity and dissimilarity between observations in a group types
+ metrics for continuous variables" />
+<meta name="keywords" content=", fite7410, financial fraud analytics, fintech, techniques" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://www.marshalgao.com/fite7410-financial-fraud-analytics-techniques-part-2/" />
+
+
+    <title>
+        
+            FITE7410 Financial Fraud Analytics Techniques (Part 2) :: This is Marshal 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://www.marshalgao.com/main.1abfe30dec5ae0f5c4f84acd6413b12f63e4a6f9e1e7167f42de12192bfd25e9.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.marshalgao.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.marshalgao.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.marshalgao.com/favicon-16x16.png">
+    <link rel="manifest" href="https://www.marshalgao.com/site.webmanifest">
+    <link rel="mask-icon" href="https://www.marshalgao.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://www.marshalgao.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="FITE7410 Financial Fraud Analytics Techniques (Part 2)">
+<meta itemprop="description" content="Clustering Basics about clustering
+ aim  group a set of observations into groups (or clusters)  feature  the homogeneity (similarity) within the cluster is maximized the heterogeneity (dissimilarity) between the cluster is maximized unsupervised classification (no labels) no predefined target class number of clusters unknown meaning of clusters unknown  distance metrics
+ measure the similarity and dissimilarity between observations in a group types
+ metrics for continuous variables">
+<meta itemprop="datePublished" content="2021-03-06T11:46:59+08:00" />
+<meta itemprop="dateModified" content="2021-03-06T11:46:59+08:00" />
+<meta itemprop="wordCount" content="683">
+<meta itemprop="image" content="https://www.marshalgao.com/"/>
+
+
+
+<meta itemprop="keywords" content="fite7410,financial fraud analytics,fintech,techniques," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.marshalgao.com/"/>
+
+<meta name="twitter:title" content="FITE7410 Financial Fraud Analytics Techniques (Part 2)"/>
+<meta name="twitter:description" content="Clustering Basics about clustering
+ aim  group a set of observations into groups (or clusters)  feature  the homogeneity (similarity) within the cluster is maximized the heterogeneity (dissimilarity) between the cluster is maximized unsupervised classification (no labels) no predefined target class number of clusters unknown meaning of clusters unknown  distance metrics
+ measure the similarity and dissimilarity between observations in a group types
+ metrics for continuous variables"/>
+
+
+
+    <meta property="og:title" content="FITE7410 Financial Fraud Analytics Techniques (Part 2)" />
+<meta property="og:description" content="Clustering Basics about clustering
+ aim  group a set of observations into groups (or clusters)  feature  the homogeneity (similarity) within the cluster is maximized the heterogeneity (dissimilarity) between the cluster is maximized unsupervised classification (no labels) no predefined target class number of clusters unknown meaning of clusters unknown  distance metrics
+ measure the similarity and dissimilarity between observations in a group types
+ metrics for continuous variables" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.marshalgao.com/fite7410-financial-fraud-analytics-techniques-part-2/" />
+<meta property="og:image" content="https://www.marshalgao.com/"/>
+<meta property="article:published_time" content="2021-03-06T11:46:59+08:00" />
+<meta property="article:modified_time" content="2021-03-06T11:46:59+08:00" />
+
+
+
+
+    <meta property="article:section" content="HKU" />
+
+
+
+    <meta property="article:published_time" content="2021-03-06 11:46:59 &#43;0800 HKT" />
+
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css" integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.js" integrity="sha384-JiKN5O8x9Hhs/UE5cT5AAJqieYlOZbGT3CHws/y97o3ty4R7/O5poG9F3JoiOYw1" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://www.marshalgao.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://www.marshalgao.com/categories/hku">HKU</a></li><li><a href="https://www.marshalgao.com/categories/technology">TECH</a></li><li><a href="https://www.marshalgao.com/categories/product-manager">PM</a></li><li><a href="https://www.marshalgao.com/categories/life">LIFE</a></li><li><a href="https://www.marshalgao.com/about/">ABOUT</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        4 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://www.marshalgao.com/fite7410-financial-fraud-analytics-techniques-part-2/">FITE7410 Financial Fraud Analytics Techniques (Part 2)</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <h2 id="clustering">Clustering</h2>
+
+<p><strong>Basics about clustering</strong></p>
+
+<ul>
+<li>aim
+
+<ul>
+<li>group a set of observations into groups (or clusters)</li>
+</ul></li>
+<li>feature
+
+<ul>
+<li>the homogeneity (similarity) within the cluster is maximized</li>
+<li>the heterogeneity (dissimilarity) between the cluster is maximized</li>
+<li>unsupervised classification (no labels)</li>
+<li>no predefined target class</li>
+<li>number of clusters unknown</li>
+<li>meaning of clusters unknown</li>
+</ul></li>
+
+<li><p>distance metrics</p>
+
+<ul>
+<li>measure the similarity and dissimilarity between observations in a group</li>
+
+<li><p>types</p>
+
+<ul>
+<li><p>metrics for continuous variables</p>
+
+<ul>
+<li><p>Minkowski distance</p>
+
+<ul>
+<li>formula
+
+<ul>
+<li><span  class="math">\(n\)</span> represents the number of variables</li>
+<li><span  class="math">\(x_i, x_j\)</span> are two observations</li>
+</ul></li>
+</ul>
+
+<p><span  class="math">\[D(x_i:x_j)={(\sum_{k=1}^n {|x_{ik}-x_{jk}|}^p)}^{1/p}\]</span></p>
+
+<ul>
+<li>when p = 1, it is Manhattan (or city block) distance
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21030602.png" alt=""></figure></li>
+</ul>
+
+<p><span  class="math">\[D(x_i:x_j)=|x_{11}-x_{21}|+|x_{12}-x_{22}|=|50-30|+|20-10|=30\]</span></p>
+
+<ul>
+<li>when p = 2, it is Euclidean distance</li>
+</ul>
+
+<p><span  class="math">\[D(x_i:x_j)=\sqrt{{(x_{11}-x_{21})}^2+{(x_{12}-x_{22})}^2}=\sqrt{{(50-30)}^2+{(20-10)}^2}=22\]</span></p></li>
+
+<li><p>Pearson correlation</p></li>
+</ul></li>
+
+<li><p>metrics for categorical variables</p>
+
+<ul>
+<li>simple matching coefficient (SMC)
+
+<ul>
+<li>calculates the number of identical matches between the variable values</li>
+<li>assumption of SMC is that &quot;Yes&quot; and &quot;No&quot; are of equal weights</li>
+</ul></li>
+<li>Jaccard index
+
+<ul>
+<li>similar to SMC, but left out the &quot;No-No&quot; match</li>
+<li>measures the similarity between observations across those red flags that were raised at least once</li>
+<li>especially useful in situations where many red-flag indicators are available and typically only a few are raised</li>
+</ul></li>
+<li>example
+
+<ul>
+<li>SMC(Claim1, Claim2) = 2/5</li>
+<li>Jaccard(Claim1, Claim2) = 1/4
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21030604.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>Types of clustering</strong></p>
+
+<ul>
+<li><p>hierarchical</p>
+
+<ul>
+<li>agglomerative
+
+<ul>
+<li>bottom-up</li>
+</ul></li>
+<li>divisive
+
+<ul>
+<li>top-down
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21030605.png" alt=""></figure><br></li>
+</ul></li>
+<li>use a similarity or distance matrix to merge or split one cluster at a time</li>
+
+<li><p>distance matrics</p>
+
+<ul>
+<li>single linkage: smallest possible distance
+
+<ul>
+<li>thin, long and elongated clusters since dissimilar objects are not accounted for</li>
+</ul></li>
+<li>complete linkage: biggest possible distance
+
+<ul>
+<li>cluster are tight, more balanced and spherical</li>
+</ul></li>
+<li>average linkage: average of all possible distances
+
+<ul>
+<li>merge clusters with small variances, results in clusters with similar variance</li>
+</ul></li>
+<li>centroid method: distance between the centroids of both clusters
+
+<ul>
+<li>most robust to outliers, but not perform as well as Ward's method or average linkage
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21030606.png" alt=""></figure></li>
+</ul></li>
+
+<li><p>Ward's distance: the dendrogram and hierarchy is clearer</p>
+
+<ul>
+<li>merge clusters with a small number of observations and results in balanced clusters</li>
+<li>formula</li>
+</ul>
+
+<p><span  class="math">\[D_{Ward}(C_i,C_j)=\sum_{x\in C_i}{(x-c_i)}^2+\sum_{x\in C_j}{(x-c_j)}^2-\sum_{x\in C_{ij}}{(x-c_{ij})}^2\]</span></p>
+
+<ul>
+<li>find the optimal clustering thru
+
+<ul>
+<li>dendrogram - termination condition to cut the dendrogram</li>
+<li>screen plot - elbow point indicates the optimal clustering
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21030608.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+</ul></li>
+
+<li><p>advantages</p>
+
+<ul>
+<li>easy to interpret and understand (dendrogram is easy to understand)</li>
+<li>relatively easy to implement</li>
+<li>number of clusters does not need to be specified prior to the analysis</li>
+</ul></li>
+
+<li><p>disadvantages</p>
+
+<ul>
+<li>the methods do not scale very well to large data sets, i.e. computationally expansive</li>
+<li>interpretation of clusters is often subjective and depends on expert knowledge</li>
+<li>does not work well with mixed data types and missing data</li>
+<li>not the best solution for data sets with high dimensions</li>
+</ul></li>
+</ul></li>
+
+<li><p>non-hierarchical</p>
+
+<ul>
+<li>k-means
+
+<ul>
+<li>some basics
+
+<ul>
+<li>k means each cluster is represented by the center (or mean) of the cluster</li>
+<li>need to be specified before the start of analysis</li>
+</ul></li>
+<li>procedure
+
+<ul>
+<li>select k observations as initial cluster centroids (seeds)</li>
+<li>assign each observation to the cluster that has the closest centroid</li>
+<li>when all observations have been assigned, recalculate the positions of the k centroids</li>
+<li>repeat until the cluster centroids no longer change or a fixed number of iterations is reached
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21030609.png" alt=""></figure></li>
+</ul></li>
+<li>advantages
+
+<ul>
+<li>relatively computational efficient as compared with hierarchical clustering</li>
+<li>simple to implement and scales to large datasets</li>
+</ul></li>
+<li>disadvantages
+
+<ul>
+<li>need to specify k, the number of clusters, in advance</li>
+<li>often terminates at a local optimum.  Need to try different initial cluster centres</li>
+<li>unable to handle noisy data and outliers</li>
+</ul></li>
+</ul></li>
+<li>self-organizing map (SOM)</li>
+</ul></li>
+
+<li><p>many others</p>
+
+<ul>
+<li>density-based</li>
+<li>model-based</li>
+<li>graph-basedxs</li>
+</ul></li>
+</ul>
+
+<h2 id="performance-evaluation-of-clustering">Performance Evaluation of Clustering</h2>
+
+<p><strong>Overivew</strong></p>
+
+<ul>
+<li>method
+
+<ul>
+<li>no universal criterion for clustering performance evaluation</li>
+</ul></li>
+<li>only 2 perspectives
+
+<ul>
+<li>statistical perspective</li>
+<li>interpretability perspective</li>
+</ul></li>
+<li>the standard of a good clustering solution
+
+<ul>
+<li>high within-cluster similarity</li>
+<li>low between-cluster similarity</li>
+</ul></li>
+</ul>
+
+<p><strong>SSE (Sum of Square Error)</strong></p>
+
+<ul>
+<li>a statistical method</li>
+<li>how to evaluate
+
+<ul>
+<li>the lower the SSE for a particular cluster (WSS), the more homogenous is that cluster, i.e. higher within-cluster similarity</li>
+<li>the higher the SSE among different clusters (BSS), the more heterogenous are the clusters, i.e. lower between-cluster similarity</li>
+</ul></li>
+<li>the optimal number of clusters
+
+<ul>
+<li>elbow method - makes use of within-cluster SSE (WSS)</li>
+<li>steps
+
+<ul>
+<li>compute the k-means clustering models for different k values</li>
+<li>for each k, calculate the WSS</li>
+<li>plot WSS accoriding to the value of k</li>
+<li>find the point where there is a bend (or elbow) in the curve -&gt; optimal
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21030901.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>Interpretation of a clustering solution</strong></p>
+
+<h2 id="neural-network">Neural Network</h2>
+
+<h2 id="support-vector-machine">Support Vector Machine</h2>
+
+<h2 id="multiclass-classification-techniques">Multiclass Classification Techniques</h2>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/tags/fite7410/">fite7410</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/financial-fraud-analytics/">financial fraud analytics</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/fintech/">fintech</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/techniques/">techniques</a></span>
+        
+    </p>
+
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/categories/hku/">HKU</a></span>
+        
+    </p>
+
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        683 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2021-03-06 11:46
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+
+          
+            <span class="button next">
+              <a href="https://www.marshalgao.com/fite7410-financial-fraud-analytics-techniques-part-1/">
+                <span class="button__text">FITE7410 Financial Fraud Analytics Techniques (Part 1)</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span><a href="https://www.hku.hk" target="_blank" rel="noopener">The University of Hong Kong</a></span>
+            <span><a href="https://www.ecom-icom.hku.hk" target="_blank" rel="noopener">ECIC</a></span>
+          </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020-2021</span>
+            
+                
+                <span>Marshal</a></span>
+            
+            
+            
+        </div>
+    </div>
+</footer>
+
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://www.marshalgao.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>

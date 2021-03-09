@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 26 Feb 2021 10:00:44 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Mar 2021 11:46:59 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FITE7410 Financial Fraud Analytics Techniques (Part 2)</title>
+      <link>https://www.marshalgao.com/fite7410-financial-fraud-analytics-techniques-part-2/</link>
+      <pubDate>Sat, 06 Mar 2021 11:46:59 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/fite7410-financial-fraud-analytics-techniques-part-2/</guid>
+      <description>Clustering Basics about clustering
+ aim  group a set of observations into groups (or clusters)  feature  the homogeneity (similarity) within the cluster is maximized the heterogeneity (dissimilarity) between the cluster is maximized unsupervised classification (no labels) no predefined target class number of clusters unknown meaning of clusters unknown  distance metrics
+ measure the similarity and dissimilarity between observations in a group types
+ metrics for continuous variables</description>
+    </item>
+    
     <item>
       <title>FITE7410 Financial Fraud Analytics Techniques (Part 1)</title>
       <link>https://www.marshalgao.com/fite7410-financial-fraud-analytics-techniques-part-1/</link>
@@ -102,19 +114,6 @@
 Note that you must write a single update statement, DO NOT write any select statement for this problem.
 Example:
 | id | name | sex | salary | |----|------|-----|--------| | 1 | A | m | 2500 | | 2 | B | f | 1500 | | 3 | C | m | 5500 | | 4 | D | f | 500 |  After running your update statement, the above salary table should have the following rows:</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[626] Exchange Seats</title>
-      <link>https://www.marshalgao.com/leetcode626-exchange-seats/</link>
-      <pubDate>Thu, 14 Jan 2021 14:50:32 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode626-exchange-seats/</guid>
-      <description>Question Mary is a teacher in a middle school and she has a table seat storing students&#39; names and their corresponding seat ids.
-The column id is continuous increment.
-Mary wants to change seats for the adjacent students.
-Can you write a SQL query to output the result for Mary?
-+---------+---------+ | id | student | +---------+---------+ | 1 | Abbot | | 2 | Doris | | 3 | Emerson | | 4 | Green | | 5 | Jeames | +---------+---------+  For the sample input, the output is:</description>
     </item>
     
   </channel>
