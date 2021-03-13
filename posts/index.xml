@@ -19,7 +19,9 @@
  aim  group a set of observations into groups (or clusters)  feature  the homogeneity (similarity) within the cluster is maximized the heterogeneity (dissimilarity) between the cluster is maximized unsupervised classification (no labels) no predefined target class number of clusters unknown meaning of clusters unknown  distance metrics
  measure the similarity and dissimilarity between observations in a group types
  metrics for continuous variables</description>
-            <content type="html"><![CDATA[<h2 id="clustering">Clustering</h2>
+            <content type="html"><![CDATA[<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Financial%20Fraud%20Analytics%20Techniques%20(Part%202).png" alt=""></figure></p>
+
+<h2 id="clustering">Clustering</h2>
 
 <p><strong>Basics about clustering</strong></p>
 
@@ -233,7 +235,7 @@
 <ul>
 <li>density-based</li>
 <li>model-based</li>
-<li>graph-basedxs</li>
+<li>graph-based</li>
 </ul></li>
 </ul>
 
@@ -289,11 +291,554 @@
 
 <p><strong>Interpretation of a clustering solution</strong></p>
 
+<ul>
+<li>compare clusters with population distribution (or between clusters)
+
+<ul>
+<li>plot histogram, mean, bar charts etc of those most important variables by clusters</li>
+<li>example
+
+<ul>
+<li>cluster C1 has observations with low recency values and high monetary values, whereas the frequency is similar to original population
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21031101.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+<li>use classification tree
+
+<ul>
+<li>to predict the target variables</li>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21031102.png" alt=""></figure></li>
+</ul></li>
+</ul>
+
 <h2 id="neural-network">Neural Network</h2>
 
-<h2 id="support-vector-machine">Support Vector Machine</h2>
+<p><strong>Basic concepts</strong></p>
+
+<ul>
+<li>neural networks (NN)
+
+<ul>
+<li>can be used to perform tasks like classification, clustering, predictive analytics</li>
+</ul></li>
+<li>ANN &amp; DNN
+
+<ul>
+<li>artificial neural networks (ANN) are composed of layers of node/neurons</li>
+<li>neural networks with more than one hidden layer are called deep neural networks (DNN)</li>
+</ul></li>
+<li>structure
+
+<ul>
+<li>input layer - initial input data for the neural network (visible layer)</li>
+<li>hidden layers - between input and output layers, where the computations are done and passed on to other nodes deeper in the neural network</li>
+<li>output layer - output result of the given input (visible layer)
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21031103.png" alt=""></figure></li>
+</ul></li>
+</ul>
+
+<p><strong>Inside an artificial neuron</strong></p>
+
+<ul>
+<li>activation functions
+
+<ul>
+<li>mathematical equations that determine the output of a neural network</li>
+<li>attached to each node and defines if the given node should be “activated”, based on whether each node’s input is relevant for the model’s prediction</li>
+<li>normalize the output of each neuron to a range between 1 and 0 or between -1 and 1
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-11%20%E4%B8%8B%E5%8D%883.53.17.png" alt=""></figure></li>
+<li>examples
+
+<ul>
+<li>linear activation functions
+
+<ul>
+<li>threshold (unit step or sign) function
+
+<ul>
+<li>only classify output as 0 or 1</li>
+</ul></li>
+<li>linear function
+
+<ul>
+<li>transform the output of the neural network into a linear function, unable to cater for non-linear data
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21031104.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+<li>non-linear activation functions (most neural networks use this for more complex mappings between inputs and outputs)
+
+<ul>
+<li>Sigmoid function
+
+<ul>
+<li>can accept any value and normalize output between 0 to 1</li>
+<li>smooth gradient and clear predictions</li>
+<li>problems
+
+<ul>
+<li>output not zero centered &amp; computationally expensive</li>
+<li>vanishing gradient - when the sigmoid function value is either too high or too low, the derivative becomes very small i.e. &lt;&lt; 1, causing poor learning for deep networks</li>
+</ul></li>
+</ul></li>
+<li>TanH (hyperbolic tangent) function
+
+<ul>
+<li>similar to Sigmoid function, but zero centered, i.e. easier to model inputs with strong negative, neutral and positive values
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21031105.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>Training a neural network</strong></p>
+
+<ul>
+<li><p>cost/loss function</p>
+
+<ul>
+<li>NN is trained based on this</li>
+<li>to measure the error of the network's prediction, or how good the neural network model is for a particular task</li>
+
+<li><p>cost function - MSE</p>
+
+<ul>
+<li>difference between predicted output and actual output</li>
+<li>square the difference and</li>
+<li>calculate the mean</li>
+</ul>
+
+<p><span  class="math">\[MSE=\frac{1}{n}\sum_{i=1}^n{(Y_i-\hat{Y_i})}^2\]</span></p></li>
+
+<li><p>MSE should be as small number as possible</p></li>
+</ul></li>
+
+<li><p>process
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21031106.png" alt=""></figure></p></li>
+
+<li><p>for fraud analytics</p>
+
+<ul>
+<li>usually one hidden layer is enough</li>
+<li>theoretically can use different activation function at each node, but usually this is fixed for each layer</li>
+<li>for hidden layers (black-box approach)
+
+<ul>
+<li>use non-linear functions, e.g. TanH function</li>
+</ul></li>
+<li>for output layers
+
+<ul>
+<li>classification targets (fraud vs non-fraud): use sigmoid function</li>
+<li>regression target (e.g. amount of fraud): can use any function</li>
+</ul></li>
+<li>data pre-processing
+
+<ul>
+<li>normalize the continuous variables, e.g. using z-scores</li>
+<li>reduce the number of categories for categorical variables</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>Interpret neural network</strong></p>
+
+<ul>
+<li>variable selection
+
+<ul>
+<li>features
+
+<ul>
+<li>to select those variables that actively contribute to the neural network output</li>
+<li>does not give insight about the internal workings of the neural network</li>
+</ul></li>
+<li>Hinton diagram
+
+<ul>
+<li>visualizes the weights between inputs and hidden neurons as squares</li>
+<li>size of square is proportional to size of the weight</li>
+<li>color of the square represents sign of the weight (e.g. black = -ve, white = +ve)</li>
+<li>e.g. “Income” variable can be removed
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21031202.png" alt=""></figure></li>
+</ul></li>
+<li>variable selection procedures
+
+<ul>
+<li>inspect the Hinton diagram and remove the variable whose weights are closest to ZERO</li>
+<li>re-estimate the neural network with the variable removed (to speed up the convergence, it could be beneficial to start from the previous weights)</li>
+<li>continue with step 1 until a stopping criterion is met, the stopping criterion could be a decrease of predictive performance or a fixed number of steps</li>
+</ul></li>
+<li>backward variable selection procedures
+
+<ul>
+<li>build a neural network with all N variables</li>
+<li>remove each variable in turn and re-estimate the network (this will give N networks each having N-1 variables)</li>
+<li>remove the variable whose absence gives the best performing network (e.g. in terms of misclassification error, mean squared error)</li>
+<li>repeat this procedure until the performance decreases significantly
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21031203.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+<li>rule extraction
+
+<ul>
+<li>feature
+
+<ul>
+<li>extract if-then classification rules</li>
+</ul></li>
+<li>decompositional approach
+
+<ul>
+<li>decompose the network’s internal workings by inspecting weights and/or activation values</li>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21031204.png" alt=""></figure></li>
+</ul></li>
+<li>pedagogical approach
+
+<ul>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21031205.png" alt=""></figure></li>
+</ul></li>
+<li>performance evaluation
+
+<ul>
+<li>rules extraction sets evaluated in terms of
+
+<ul>
+<li>accuracy</li>
+<li>conciseness (e.g. number of rules, number of conditions per rule)</li>
+<li>fidelity – measures to what extent the extracted rule set succeeds in mimicking the neural network
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21031206.png" alt=""></figure></li>
+</ul></li>
+<li>benchmark the extracted rules/trees with a tree built directly on the original data to see the benefit of going through the neural network</li>
+</ul></li>
+</ul></li>
+<li>two-stage models
+
+<ul>
+<li>combines 2 models with both interpretability and performance</li>
+<li>procedure
+
+<ul>
+<li>stage 1 (model interpretability)
+
+<ul>
+<li>to estimate an easy-to-understand model (e.g. linear regression, logistic regression)</li>
+</ul></li>
+<li>stage 2 (model performance)
+
+<ul>
+<li>to predict the errors made by the simple model using the same set of predictors</li>
+</ul></li>
+</ul></li>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21031207.png" alt=""></figure></li>
+</ul></li>
+</ul>
+
+<p><strong>Advantages and disadvantages</strong></p>
+
+<ul>
+<li>advantages
+
+<ul>
+<li>handle different types of input variables and support multivariate targets</li>
+<li>support flexible and nonlinear relations between input and target variables</li>
+<li>due to flexibility of the model, it is applicable to many problems</li>
+</ul></li>
+<li>disadvantages
+
+<ul>
+<li>black-box model, not easy to interpret</li>
+<li>prone to overfit</li>
+<li>requires handling of input attributes, e.g. data imputation
+<br></li>
+</ul></li>
+</ul>
+
+<h2 id="support-vector-machine-svm">Support Vector Machine (SVM)</h2>
+
+<p><strong>Overview</strong></p>
+
+<ul>
+<li>issues with NN
+
+<ul>
+<li>the objective function is nonconvex (i.e. may have multiple local minima)</li>
+<li>the effort needed to tune the number of hidden neurons</li>
+</ul></li>
+<li>basics of SVM
+
+<ul>
+<li>supervised learning model that can be used for both classification and regression tasks</li>
+<li>more commonly used for classification tasks</li>
+<li>basic idea - to find a line or a hyperplane that best divides the dataset into 2 classes</li>
+</ul></li>
+</ul>
+
+<p><strong>Basic idea</strong></p>
+
+<ul>
+<li>linear classification
+
+<ul>
+<li>decision boundary
+
+<ul>
+<li>1-d: a dot</li>
+<li>2-d: a line</li>
+<li>n-d: hyperplane</li>
+</ul></li>
+<li>steps
+
+<ul>
+<li>find the points (support vector) that are closest to the hyperplane (the line) from both classes</li>
+<li>compute the margin = distance between the support vectors and hyperplane</li>
+<li>find the hyperplane with the maximal margins
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21031208.png" alt=""></figure></li>
+</ul></li>
+<li>objective of SVM
+
+<ul>
+<li>to maximize margins between the two dotted lines</li>
+<li>i.e. the 2 classes are far away as possible</li>
+</ul></li>
+<li>linear nonseparable
+
+<ul>
+<li>introduce some values
+
+<ul>
+<li>error term (<span  class="math">\(e_k\)</span>) allows for misclassification errors</li>
+<li>hyperparameter (C) balances importance maximizing the margin or minimizing the error of on the data
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21031209.png" alt=""></figure></li>
+</ul></li>
+<li>if it is linear separable, just ignore the above values</li>
+</ul></li>
+</ul></li>
+
+<li><p>nonlinear classification</p>
+
+<ul>
+<li><p>mapping function <span  class="math">\(\phi(x)\)</span></p>
+
+<ul>
+<li>transform the input data points to a higher dimensional feature space</li>
+<li>mathematically, it is not needed (need kernel function actually)</li>
+
+<li><p>kernel trick</p>
+
+<ul>
+<li>formula
+<br></li>
+</ul>
+
+<p><span  class="math">\[K(x_k,x_l)=\phi(x_k)^T\phi(x_l)\]</span></p>
+
+<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21031210.png" alt=""></figure></p></li>
+</ul></li>
+
+<li><p>commonly used kernel functions</p>
+
+<ul>
+<li>linear kernel: <span  class="math">\(K(x,x_k)=x_k^Tx\)</span></li>
+<li>polynomial kernel: <span  class="math">\(K(x,x_k)={(1+x_k^Tx)}^d\)</span></li>
+<li>radial basis function (RBF) kernel: <span  class="math">\(K(x,x_k)=exp\{-{||x-x_k||}^2/\sigma^2\}\)</span></li>
+<li>example
+
+<ul>
+<li>RBF kernel usually performs best, but you need to tune the extra parameter gamma <span  class="math">\(\sigma\)</span>
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21031211.png" alt=""></figure></li>
+</ul></li>
+
+<li><p>tuning of hyperparameters</p>
+
+<ul>
+<li>hyperparameter C - penalty parameter representing an error or any form of misclassification
+
+<ul>
+<li>samll C value
+
+<ul>
+<li>hyperplane with a larger margin, i.e. more violations are allowed, maximizing the margins</li>
+</ul></li>
+<li>large C value
+
+<ul>
+<li>hyperplane with a tighter margin, i.e. more emphasis is placed on minimizing the number of classifications
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21031212.png" alt=""></figure></li>
+</ul></li>
+<li>just try to balance, which one should be used, thinking about the performance</li>
+</ul></li>
+<li>gamma
+
+<ul>
+<li>only need to tune this hyperparameter if you use nonlinear hyperplane</li>
+<li>lower value of gamma
+
+<ul>
+<li>create a loose fit of the training dataset</li>
+<li>consider only the nearby points for the calculation of a separate plane</li>
+</ul></li>
+<li>higher value of gamma
+
+<ul>
+<li>tries to exactly fit the training data</li>
+<li>consider all the data-points to calculate the final separation line</li>
+</ul></li>
+<li>which one is better, defined by performance (each one is good, the difference is boundary)
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21031213.png" alt=""></figure></li>
+</ul></li>
+
+<li><p>procedure</p>
+
+<ul>
+<li>partition the data into 40%, 30%, 30% training, validation and test data</li>
+
+<li><p>build an RBF SVM classifier for each (<span  class="math">\(\sigma, C\)</span>)</p>
+
+<p><span  class="math">\[\sigma \in \{0.5, 5, 10, 15, 25, 50, 100, 250, 500\}\]</span></p>
+
+<p><span  class="math">\[C \in \{0.01, 0.05, 0.1, 0.5, 1, 5, 10, 50, 100, 500\}\]</span></p></li>
+
+<li><p>choose the (<span  class="math">\(\sigma, C\)</span>) combination with the best validation set performance</p></li>
+
+<li><p>build an RBF SVM classifier with the optimal (<span  class="math">\(\sigma, C\)</span>) combination on combined training + validation dataset</p></li>
+
+<li><p>calculate the performance of the estimated RBF SVM classifier on the test set</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+
+<li><p>SVM interpretation</p>
+
+<ul>
+<li>SVM classifier can be presented as a neural network</li>
+<li>then, use the techniques in neural network interpretation</li>
+<li>SVM prediction -&gt; decision tree (like previous example)
+<br></li>
+</ul></li>
+</ul>
+
+<p><strong>Advantages and disadvantages</strong></p>
+
+<ul>
+<li>advantages
+
+<ul>
+<li>works really well with a clear margin of separation</li>
+<li>effective in high dimensional spaces and where the number of dimensions is greater than the number of samples</li>
+<li>uses a subset of training points in the decision function (called support vectors), so it is also memory efficient</li>
+</ul></li>
+<li>disadvantages
+
+<ul>
+<li>does not perform well when data set is large, and when the data set has more noise</li>
+<li>choosing the effective kernel function can be computationally intensive</li>
+</ul></li>
+</ul>
 
 <h2 id="multiclass-classification-techniques">Multiclass Classification Techniques</h2>
+
+<p><strong>Binary vs multiclass</strong></p>
+
+<ul>
+<li>binary
+
+<ul>
+<li>label as &quot;fraud&quot; and &quot;no fraud&quot;</li>
+</ul></li>
+<li>multiclass
+
+<ul>
+<li>more than 2 labels</li>
+<li>nominal labels
+
+<ul>
+<li>fraud, suspected fraud, no fraud</li>
+</ul></li>
+<li>ordinal labels
+
+<ul>
+<li>severe fraud, medium fraud, light fraud, no fraud
+<br></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>Techniques</strong></p>
+
+<ul>
+<li><p>logistic regression (for nominal target variables)</p>
+
+<ul>
+<li><p>choose one of the target class (e.g. class K) as the base class</p>
+
+<p><span  class="math">\[\frac{P(Y=1|X_1,\ldots,X_N)}{P(Y=K|X_1,\ldots,X_N)}=e^{(\beta_0^1+\beta_1^1X_1+\beta_2^2X_2+\ldots+\beta_N^1X_N)}\]</span></p>
+
+<p><span  class="math">\[\frac{P(Y=2|X_1,\ldots,X_N)}{P(Y=K|X_1,\ldots,X_N)}=e^{(\beta_0^2+\beta_1^2X_1+\beta_2^2X_2+\ldots+\beta_N^2X_N)}\]</span></p>
+
+<p><span  class="math">\[\cdots\]</span></p>
+
+<p><span  class="math">\[\frac{P(Y=K-1|X_1,\ldots,X_N)}{P(Y=K|X_1,\ldots,X_N)}=e^{(\beta_0^{K-1}+\beta_1^{K-1}X_1+\beta_2^{K-1}X_2+\ldots+\beta_N^{K-1}X_N)}\]</span></p></li>
+
+<li><p>based on the fact that all probabilities sum to 1</p>
+
+<p><span  class="math">\[P(Y=1|X_1,\ldots,X_N)=\frac{e^{(\beta_0^1+\beta_1^1X_1+\beta_2^2X_2+\ldots+\beta_N^1X_N)}}{1+\sum_{k=1}^{K-1}e^{(\beta_0^k+\beta_1^kX_1+\beta_2^kX_2+\ldots+\beta_N^kX_N)}}\]</span></p>
+
+<p><span  class="math">\[P(Y=2|X_1,\ldots,X_N)=\frac{e^{(\beta_0^2+\beta_1^2X_1+\beta_2^2X_2+\ldots+\beta_N^2X_N)}}{1+\sum_{k=1}^{K-1}e^{(\beta_0^k+\beta_1^kX_1+\beta_2^kX_2+\ldots+\beta_N^kX_N)}}\]</span></p>
+
+<p><span  class="math">\[P(Y=K|X_1,\ldots,X_N)=\frac{1}{1+\sum_{k=1}^{K-1}e^{(\beta_0^k+\beta_1^kX_1+\beta_2^kX_2+\ldots+\beta_N^kX_N)}}\]</span></p></li>
+
+<li><p>parameter <span  class="math">\(\beta\)</span> is estimated using maximum aposteriori estimation, which is extension of maximum likelihood estimation</p></li>
+</ul></li>
+
+<li><p>decision tree</p>
+
+<ul>
+<li><p>the impurity criteria can be written as follows (K is the number of class labels)</p>
+
+<p><span  class="math">\[Entropy(S)=-\displaystyle \sum^K_{k=1}p_klog_2(p_k)\]</span></p>
+
+<p><span  class="math">\[Gini(S)=\displaystyle \sum^K_{k=1}p_k(1-p_k)\]</span></p></li>
+
+<li><p>the splitting and stopping decisions are the same as the binary class classifications</p></li>
+</ul></li>
+
+<li><p>NN</p>
+
+<ul>
+<li>increase the number of output neurons to K, where K corresponds to K class labels</li>
+<li>an observation is assigned to the output neuron with the highest activation value
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21031301.png" alt=""></figure></li>
+</ul></li>
+
+<li><p>SVM</p>
+
+<ul>
+<li>treat is as binary class problem by dividing the target classes into 2 classes</li>
+<li>one-versus-one, for a K target classes, learn K SVMs as follows
+
+<ul>
+<li>classifies target as &quot;y=1&quot; vs &quot;y=2&quot;; &quot;y=1&quot; vs &quot;y=3&quot;; ... &quot;y=1&quot; vs &quot;y=K&quot;; &quot;y=2&quot; vs &quot;y=3&quot;; &quot;y=2&quot; vs &quot;y=4&quot;; ... &quot;y=2&quot; vs &quot;y=K&quot; ...</li>
+<li>will have <span  class="math">\(\frac{K(K-1)}{2}\)</span> classifiers</li>
+<li>use a (weighted) voting procedure for the final classification result
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21031302.png" alt=""></figure></li>
+</ul></li>
+<li>one-versus-all, for a K target classes, learn K SVMs as follows
+
+<ul>
+<li>SVM#1, with target class label=1, classifies target as “y=1” vs “y≠1&quot;</li>
+<li>SVM#2, with target class label=2, classifies target as “y=2” vs “y≠2&quot;</li>
+<li>SVM#K, with target class label=K, classifies target as “y=K” vs “y≠K”</li>
+<li>use the highest posterior probability to decide the classification result
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21031303.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+</ul>
 ]]></content>
         </item>
         
