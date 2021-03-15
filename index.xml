@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sat, 06 Mar 2021 11:46:59 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Mar 2021 09:41:47 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM7122 Introduction to Entrepreneurship and Lean Startup</title>
+      <link>https://www.marshalgao.com/ecom7122-introduction-to-entrepreneurship-and-lean-startup/</link>
+      <pubDate>Mon, 15 Mar 2021 09:41:47 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom7122-introduction-to-entrepreneurship-and-lean-startup/</guid>
+      <description>Lean Startup Approach Overview MVP
+ definition  minimum viable product   schematic diagram  case - DropBox  its MVP is online video details     Comparison
+ decade old formula  initiate business plan pitch your idea to investors assign the process to the right team launch roll your sales, marketing and profit making process hit or miss   lean startup  build minimum viable product measure understand customer feedback pivot or persevere launch sure to hit     The startup founder&amp;rsquo;s map</description>
+    </item>
+    
     <item>
       <title>FITE7410 Financial Fraud Analytics Techniques (Part 2)</title>
       <link>https://www.marshalgao.com/fite7410-financial-fraud-analytics-techniques-part-2/</link>
@@ -102,18 +113,6 @@
       <guid>https://www.marshalgao.com/leetcode1179-reformat-department-table/</guid>
       <description>Question Table: Department
 +---------------+---------+ | Column Name | Type | +---------------+---------+ | id | int | | revenue | int | | month | varchar | +---------------+---------+ (id, month) is the primary key of this table. The table has information about the revenue of each department per month. The month has values in [&amp;quot;Jan&amp;quot;,&amp;quot;Feb&amp;quot;,&amp;quot;Mar&amp;quot;,&amp;quot;Apr&amp;quot;,&amp;quot;May&amp;quot;,&amp;quot;Jun&amp;quot;,&amp;quot;Jul&amp;quot;,&amp;quot;Aug&amp;quot;,&amp;quot;Sep&amp;quot;,&amp;quot;Oct&amp;quot;,&amp;quot;Nov&amp;quot;,&amp;quot;Dec&amp;quot;].  Write an SQL query to reformat the table such that there is a department id column and a revenue column for each month.</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[627] Swap Salary</title>
-      <link>https://www.marshalgao.com/leetcode627-swap-salary/</link>
-      <pubDate>Thu, 14 Jan 2021 15:12:42 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode627-swap-salary/</guid>
-      <description>Question Given a table salary, such as the one below, that has m=male and f=female values. Swap all f and m values (i.e., change all f values to m and vice versa) with a single update statement and no intermediate temp table.
-Note that you must write a single update statement, DO NOT write any select statement for this problem.
-Example:
-| id | name | sex | salary | |----|------|-----|--------| | 1 | A | m | 2500 | | 2 | B | f | 1500 | | 3 | C | m | 5500 | | 4 | D | f | 500 |  After running your update statement, the above salary table should have the following rows:</description>
     </item>
     
   </channel>

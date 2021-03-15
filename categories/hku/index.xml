@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sat, 06 Mar 2021 11:46:59 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/hku/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Mar 2021 09:41:47 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/hku/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM7122 Introduction to Entrepreneurship and Lean Startup</title>
+      <link>https://www.marshalgao.com/ecom7122-introduction-to-entrepreneurship-and-lean-startup/</link>
+      <pubDate>Mon, 15 Mar 2021 09:41:47 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom7122-introduction-to-entrepreneurship-and-lean-startup/</guid>
+      <description>Lean Startup Approach Overview MVP
+ definition  minimum viable product   schematic diagram  case - DropBox  its MVP is online video details     Comparison
+ decade old formula  initiate business plan pitch your idea to investors assign the process to the right team launch roll your sales, marketing and profit making process hit or miss   lean startup  build minimum viable product measure understand customer feedback pivot or persevere launch sure to hit     The startup founder&amp;rsquo;s map</description>
+    </item>
+    
     <item>
       <title>FITE7410 Financial Fraud Analytics Techniques (Part 2)</title>
       <link>https://www.marshalgao.com/fite7410-financial-fraud-analytics-techniques-part-2/</link>
@@ -104,16 +115,6 @@
  features  everything is connected tying together the physical, digital and analytic worlds   connectivity and the &amp;ldquo;any&amp;rdquo; dimension  IoT allows people &amp;amp; things to be connected anytime at anyplace with anything and anyone using any network and any service     Evolution Characteristics
  dynamic changes heterogeneity things-related services inter-connectivity enormous scale  Architecture
  sensor and identification layer  information generation lowest abstraction layer with sensors we are creating digital nervous system incorporated to measure physical quantities interconnects the physical and digital world collects and process the real time information examples  barcode &amp;amp; QR code RFID smartphone sensor     network construction layer  information transmission robust and high performance network infrastructure supports the communication requirements for latency, bandwidth or security allows multiple organizations to share and use the same network independently examples  telecommunication systems (e.</description>
-    </item>
-    
-    <item>
-      <title>ECOM7123 Open Data &amp; Spatial Data Infrastructure (SDI)</title>
-      <link>https://www.marshalgao.com/ecom7123-open-data-spatial-data-infrastructure-sdi/</link>
-      <pubDate>Fri, 08 Jan 2021 09:20:54 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/ecom7123-open-data-spatial-data-infrastructure-sdi/</guid>
-      <description>Data in Smart Cities Overview
- real time data  collected from  devices sensor network IoT   sources  parking spaces city trash bins vehicles energy turbines, etc.     data: existing in different forms  data in cloud  pay for actual usage centralized &amp;amp; remote management accessible in different locations   big data  large and complex data sets difficult to be handled by traditional technologies like relational database requires new technologies and processing applications like Hadoop to deal with   spatial data  80% of data generated in our daily lives are spatial data identifies the geographic location of features and boundaries on earth     value of data in developing smart city  to understand where, when, how and why to support policy-making to optimize operations to enable smart apps and services    Future</description>
     </item>
     
   </channel>

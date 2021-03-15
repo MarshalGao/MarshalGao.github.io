@@ -6,8 +6,81 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-        <lastBuildDate>Sat, 06 Mar 2021 11:46:59 +0800</lastBuildDate>
+        <lastBuildDate>Mon, 15 Mar 2021 09:41:47 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ECOM7122 Introduction to Entrepreneurship and Lean Startup</title>
+            <link>https://www.marshalgao.com/ecom7122-introduction-to-entrepreneurship-and-lean-startup/</link>
+            <pubDate>Mon, 15 Mar 2021 09:41:47 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/ecom7122-introduction-to-entrepreneurship-and-lean-startup/</guid>
+            <description>Lean Startup Approach Overview MVP
+ definition  minimum viable product   schematic diagram  case - DropBox  its MVP is online video details     Comparison
+ decade old formula  initiate business plan pitch your idea to investors assign the process to the right team launch roll your sales, marketing and profit making process hit or miss   lean startup  build minimum viable product measure understand customer feedback pivot or persevere launch sure to hit     The startup founder&amp;rsquo;s map</description>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Introduction%20to%20Entrepreneurship%20and%20Lean%20Startup.png" alt=""></p>
+<h2 id="lean-startup-approach">Lean Startup Approach</h2>
+<p><strong>Overview</strong>
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-15%20%E4%B8%8A%E5%8D%889.49.46.png" alt=""></p>
+<p><strong>MVP</strong></p>
+<ul>
+<li>definition
+<ul>
+<li>minimum viable product</li>
+</ul>
+</li>
+<li>schematic diagram
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-15%20%E4%B8%8A%E5%8D%889.52.15.png" alt=""></li>
+<li>case - DropBox
+<ul>
+<li>its MVP is online video</li>
+<li>details
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-15%20%E4%B8%8A%E5%8D%889.54.08.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<p><strong>Comparison</strong></p>
+<ul>
+<li>decade old formula
+<ul>
+<li>initiate business plan</li>
+<li>pitch your idea to investors</li>
+<li>assign the process to the right team</li>
+<li>launch</li>
+<li>roll your sales, marketing and profit making process</li>
+<li>hit or miss</li>
+</ul>
+</li>
+<li>lean startup
+<ul>
+<li>build minimum viable product</li>
+<li>measure</li>
+<li>understand customer feedback</li>
+<li>pivot or persevere</li>
+<li>launch</li>
+<li>sure to hit
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-15%20%E4%B8%8A%E5%8D%8810.04.05.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<p><strong>The startup founder&rsquo;s map</strong></p>
+<ul>
+<li>important points
+<ul>
+<li>value propositions, customer segments, and relationships between them are all hypothesis</li>
+<li>we need to convert these hypothesis into facts
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21031501.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>the Lean Startup Approach is a fast, iterative, circular process for startups based on learning, building and measuring your product/service’s value proposition via an MVP</li>
+<li>many success stories like DropBox show the effectiveness of fast experimentation and hypothesis testing vs. other approaches</li>
+<li>the Business Model Canvas starts as “hypotheses” and a living record or startup founder’s map of the “pivots” required over time</li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>FITE7410 Financial Fraud Analytics Techniques (Part 2)</title>
