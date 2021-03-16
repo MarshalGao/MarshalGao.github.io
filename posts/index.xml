@@ -6,8 +6,201 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-        <lastBuildDate>Mon, 15 Mar 2021 09:41:47 +0800</lastBuildDate>
+        <lastBuildDate>Tue, 16 Mar 2021 10:01:44 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ECOM7122 Applied AI in Business</title>
+            <link>https://www.marshalgao.com/ecom7122-applied-ai-in-business/</link>
+            <pubDate>Tue, 16 Mar 2021 10:01:44 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/ecom7122-applied-ai-in-business/</guid>
+            <description>Intro to Applied AI Four pillars of applied AI
+ every industry may use it contains  virtual assistance  apple siri, etc. chat robot   generating insights  machine learning   automation of manual processes  industrial robot machine or program replacement for routine work   unlocking unstructured data  used structured data in the past, but can unlock unstructured data, transferring the books on the shelf into database understand consumer conversations, e.</description>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Applied%20AI%20in%20Business.png" alt=""></p>
+<h2 id="intro-to-applied-ai">Intro to Applied AI</h2>
+<p><strong>Four pillars of applied AI</strong></p>
+<ul>
+<li>every industry may use it</li>
+<li>contains
+<ul>
+<li>virtual assistance
+<ul>
+<li>apple siri, etc.</li>
+<li>chat robot</li>
+</ul>
+</li>
+<li>generating insights
+<ul>
+<li>machine learning</li>
+</ul>
+</li>
+<li>automation of manual processes
+<ul>
+<li>industrial robot</li>
+<li>machine or program replacement for routine work</li>
+</ul>
+</li>
+<li>unlocking unstructured data
+<ul>
+<li>used structured data in the past, but can unlock unstructured data, transferring the books on the shelf into database</li>
+<li>understand consumer conversations, e.g. Mattersight uses call center conversations to identify customers’ personality types</li>
+<li>unstructured data</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Unstructured data</strong></p>
+<ul>
+<li>
+<p>definition</p>
+<ul>
+<li>cannot find the relationship between different values</li>
+<li>e.g. email, text files, social media, call center transcripts</li>
+</ul>
+</li>
+<li>
+<p>structured data vs unstructured data
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-16%20%E4%B8%8A%E5%8D%8810.35.00.png" alt=""></p>
+</li>
+<li>
+<p>process of usage</p>
+<ul>
+<li>the breakthrough of image recognition and natural language voice recognition make the unstructured data unlocked</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-16%20%E4%B8%8A%E5%8D%8810.57.56.png" alt=""></p>
+</li>
+</ul>
+<p><strong>Core components of an AI/ML system</strong></p>
+<ul>
+<li>data input</li>
+<li>data (pre) processing</li>
+<li>predictive models</li>
+<li>decision rules</li>
+<li>response/output</li>
+</ul>
+<p><strong>Case - DoNotPay</strong></p>
+<ul>
+<li>four pillars
+<ul>
+<li>virtual assistance — mobile chatbot</li>
+<li>generating insights — likelihood of parking fee being dismissed</li>
+<li>automation of manual processes — Josh gives his advice &amp; experience via a chatbot that generates a legal letter</li>
+<li>unlocking unstructured data — Josh found his successful legal protest strategy by reading up on many county parking laws and successful legal briefs</li>
+</ul>
+</li>
+<li>core components
+<ul>
+<li>data input — text entered by user on mobile app</li>
+<li>data (pre) processing — rule-based chatbot</li>
+<li>predictive models — algorithms based on Josh’ experience</li>
+<li>decision rules — if [answers to question 1, 2 or 3 are yes], then [inform user that they should print a pdf letter of protest]</li>
+<li>response/output — user can print a pdf letter of protest that uses correct legal terms and language for their situation and asks for the parking fine to be dismissed</li>
+</ul>
+</li>
+</ul>
+<h2 id="ai-fintech">AI FinTech</h2>
+<p><strong>Overview</strong></p>
+<ul>
+<li>current status
+<ul>
+<li>globally 1.7 billion adults are unbanked &amp; do not have access to a bank loan</li>
+</ul>
+</li>
+<li>MSME
+<ul>
+<li>micro, small and medium sized businesses/enterprises</li>
+<li>are key to creating the 600 million new jobs needed by 2030 to keep pace with the growth of the world&rsquo;s working-age population</li>
+<li>without access to loans and with little or no savings, MSMEs are at-risk
+<ul>
+<li>they cannot plan and pay for regular expenses like family schooling, water, electricity</li>
+<li>an unexpected illness, medical expense, death in family, natural disaster can ruin their micro-business or make them homeless</li>
+<li>they cannot break out of their cycle of poverty</li>
+<li>loan from non-bank entities have extremely high interest rates - 300%, e.g.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>AI helps with smart loans</strong></p>
+<ul>
+<li>
+<p>ant financial&rsquo;s 3-1-0 smart loan</p>
+<ul>
+<li>3 minutes to apply on mobile</li>
+<li>1 second to approve</li>
+<li>0 human intervention</li>
+<li>related video</li>
+</ul>
+  <div class="iframe-container">
+      <iframe src="https://player.cnbc.com/p/gZWlPC/cnbc_global?playertype=synd&byGuid=7000053005" allowfullscreen> </iframe>
+  </div>
+</li>
+<li>
+<p>tala smart loan lean startup analysis</p>
+<ul>
+<li>video description</li>
+</ul>
+  <div class="iframe-container">
+      <iframe src="https://embed.ted.com/talks/shivani_siroya_a_smart_loan_for_people_with_no_credit_history_yet" allowfullscreen> </iframe>
+  </div>
+</li>
+<li>
+<p>lenddo goes from smart loan product to credit reporting service</p>
+<ul>
+<li>video description</li>
+</ul>
+  <div class="iframe-container">
+      <iframe src="https://www.youtube.com/embed/0bEJO4Twgu4" allowfullscreen> </iframe>
+  </div> 
+</li>
+</ul>
+<h2 id="the-applied-ai-business-model-canvas">The Applied AI Business Model Canvas</h2>
+<p><strong>Value proposition</strong></p>
+<ul>
+<li>core services</li>
+<li>pre-sales or sales services</li>
+<li>after-sales services</li>
+</ul>
+<div class="iframe-container">
+    <iframe src="https://www.youtube.com/embed/f2Gg1W6PAEY" allowfullscreen> </iframe>
+</div>
+<p><strong>Alibaba&rsquo;s 4 steps to smart business</strong></p>
+<ul>
+<li>datafy every customer exchange</li>
+<li>software every activity</li>
+<li>get data flowing</li>
+<li>apply algorithms</li>
+</ul>
+<p><strong>Cases</strong></p>
+<ul>
+<li>3-1-0 smart loan virtuous loop
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-16%20%E4%B8%8B%E5%8D%882.24.03.png" alt=""></li>
+<li>tala smart loan virtuous loop
+<ul>
+<li>credit scores based on phone data
+<ul>
+<li>stability in key relationships</li>
+<li>network diveristy</li>
+<li>location consistency</li>
+<li>financial transactions
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-16%20%E4%B8%8B%E5%8D%882.26.22.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>lenddo social credit scoring service
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-16%20%E4%B8%8B%E5%8D%882.27.22.png" alt=""></li>
+</ul>
+<h2 id="additional-reading">Additional Reading</h2>
+<ul>
+<li><a href="https://www.forbes.com/sites/gregsatell/2016/09/18/4-ways-every-business-needs-to-use-artificial-intelligence/?sh=7f90ccc92a52">Four Ways Every Business Needs to Use Artificial Intelligence</a></li>
+<li><a href="https://lawtomated.com/structured-data-vs-unstructured-data-what-are-they-and-why-care/">Structured Data vs. Unstructured Data: What Are They and Why Care?</a></li>
+<li><a href="http://aiindex.org/2017-report.pdf">Artificial Intelligence Index</a></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>ECOM7122 Introduction to Entrepreneurship and Lean Startup</title>

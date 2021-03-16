@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 15 Mar 2021 09:41:47 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/hku/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Mar 2021 10:01:44 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/hku/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM7122 Applied AI in Business</title>
+      <link>https://www.marshalgao.com/ecom7122-applied-ai-in-business/</link>
+      <pubDate>Tue, 16 Mar 2021 10:01:44 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom7122-applied-ai-in-business/</guid>
+      <description>Intro to Applied AI Four pillars of applied AI
+ every industry may use it contains  virtual assistance  apple siri, etc. chat robot   generating insights  machine learning   automation of manual processes  industrial robot machine or program replacement for routine work   unlocking unstructured data  used structured data in the past, but can unlock unstructured data, transferring the books on the shelf into database understand consumer conversations, e.</description>
+    </item>
+    
     <item>
       <title>ECOM7122 Introduction to Entrepreneurship and Lean Startup</title>
       <link>https://www.marshalgao.com/ecom7122-introduction-to-entrepreneurship-and-lean-startup/</link>
@@ -103,18 +113,6 @@
       <guid>https://www.marshalgao.com/ecom7123-building-a-resilient-healthy-and-safe-community/</guid>
       <description>Overview Basic concepts
  resilient city  resilience is the ability to withstand disruption and rebound quickly   a healthy city aims to  create a health-supportive environment achieve a good quality of life provide basic sanitation &amp;amp; hygiene needs supply access to health care   safe city  provides residents with less risks than others   related to  smart living smart government smart environment smart economy, etc.</description>
-    </item>
-    
-    <item>
-      <title>ECOM7123 IoT, Big Data Analytics and AI</title>
-      <link>https://www.marshalgao.com/ecom7123-iot-big-data-analytics-and-ai/</link>
-      <pubDate>Sat, 09 Jan 2021 09:23:37 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/ecom7123-iot-big-data-analytics-and-ai/</guid>
-      <description>IoT Overview
- features  everything is connected tying together the physical, digital and analytic worlds   connectivity and the &amp;ldquo;any&amp;rdquo; dimension  IoT allows people &amp;amp; things to be connected anytime at anyplace with anything and anyone using any network and any service     Evolution Characteristics
- dynamic changes heterogeneity things-related services inter-connectivity enormous scale  Architecture
- sensor and identification layer  information generation lowest abstraction layer with sensors we are creating digital nervous system incorporated to measure physical quantities interconnects the physical and digital world collects and process the real time information examples  barcode &amp;amp; QR code RFID smartphone sensor     network construction layer  information transmission robust and high performance network infrastructure supports the communication requirements for latency, bandwidth or security allows multiple organizations to share and use the same network independently examples  telecommunication systems (e.</description>
     </item>
     
   </channel>

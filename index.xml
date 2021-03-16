@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 15 Mar 2021 09:41:47 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Mar 2021 10:01:44 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM7122 Applied AI in Business</title>
+      <link>https://www.marshalgao.com/ecom7122-applied-ai-in-business/</link>
+      <pubDate>Tue, 16 Mar 2021 10:01:44 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom7122-applied-ai-in-business/</guid>
+      <description>Intro to Applied AI Four pillars of applied AI
+ every industry may use it contains  virtual assistance  apple siri, etc. chat robot   generating insights  machine learning   automation of manual processes  industrial robot machine or program replacement for routine work   unlocking unstructured data  used structured data in the past, but can unlock unstructured data, transferring the books on the shelf into database understand consumer conversations, e.</description>
+    </item>
+    
     <item>
       <title>ECOM7122 Introduction to Entrepreneurship and Lean Startup</title>
       <link>https://www.marshalgao.com/ecom7122-introduction-to-entrepreneurship-and-lean-startup/</link>
@@ -103,16 +113,6 @@
       <description>Smart Economy Overview
  definition  economy growth based on knowledge &amp;amp; innovation establish new economy models &amp;amp; business opportunities create quality jobs grow resource-efficiently so that economy is more competitive global reach    New economy models
  sharing economy  different people sharing idle resources or services through the exchange of information to build a trusted platform to effectively connect those who provide and demand for the resources or services, thereby lowering the cost of transaction sharing economy facilitates sharing among people and can reduce waste of resources   industry 4.</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[1179] Reformat Department Table</title>
-      <link>https://www.marshalgao.com/leetcode1179-reformat-department-table/</link>
-      <pubDate>Thu, 14 Jan 2021 15:51:59 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode1179-reformat-department-table/</guid>
-      <description>Question Table: Department
-+---------------+---------+ | Column Name | Type | +---------------+---------+ | id | int | | revenue | int | | month | varchar | +---------------+---------+ (id, month) is the primary key of this table. The table has information about the revenue of each department per month. The month has values in [&amp;quot;Jan&amp;quot;,&amp;quot;Feb&amp;quot;,&amp;quot;Mar&amp;quot;,&amp;quot;Apr&amp;quot;,&amp;quot;May&amp;quot;,&amp;quot;Jun&amp;quot;,&amp;quot;Jul&amp;quot;,&amp;quot;Aug&amp;quot;,&amp;quot;Sep&amp;quot;,&amp;quot;Oct&amp;quot;,&amp;quot;Nov&amp;quot;,&amp;quot;Dec&amp;quot;].  Write an SQL query to reformat the table such that there is a department id column and a revenue column for each month.</description>
     </item>
     
   </channel>

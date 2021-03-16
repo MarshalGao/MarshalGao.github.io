@@ -7,11 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 15 Mar 2021 09:41:47 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Mar 2021 10:01:44 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ai</title>
+      <link>https://www.marshalgao.com/tags/ai/</link>
+      <pubDate>Tue, 16 Mar 2021 10:01:44 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/tags/ai/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>ecom7122</title>
       <link>https://www.marshalgao.com/tags/ecom7122/</link>
-      <pubDate>Mon, 15 Mar 2021 09:41:47 +0800</pubDate>
+      <pubDate>Tue, 16 Mar 2021 10:01:44 +0800</pubDate>
       
       <guid>https://www.marshalgao.com/tags/ecom7122/</guid>
       <description></description>
@@ -20,7 +29,7 @@
     <item>
       <title>entrepreneurship</title>
       <link>https://www.marshalgao.com/tags/entrepreneurship/</link>
-      <pubDate>Mon, 15 Mar 2021 09:41:47 +0800</pubDate>
+      <pubDate>Tue, 16 Mar 2021 10:01:44 +0800</pubDate>
       
       <guid>https://www.marshalgao.com/tags/entrepreneurship/</guid>
       <description></description>
@@ -29,7 +38,7 @@
     <item>
       <title>entrepreneurship development and fintech ventures in asia</title>
       <link>https://www.marshalgao.com/tags/entrepreneurship-development-and-fintech-ventures-in-asia/</link>
-      <pubDate>Mon, 15 Mar 2021 09:41:47 +0800</pubDate>
+      <pubDate>Tue, 16 Mar 2021 10:01:44 +0800</pubDate>
       
       <guid>https://www.marshalgao.com/tags/entrepreneurship-development-and-fintech-ventures-in-asia/</guid>
       <description></description>
@@ -38,7 +47,7 @@
     <item>
       <title>fintech</title>
       <link>https://www.marshalgao.com/tags/fintech/</link>
-      <pubDate>Mon, 15 Mar 2021 09:41:47 +0800</pubDate>
+      <pubDate>Tue, 16 Mar 2021 10:01:44 +0800</pubDate>
       
       <guid>https://www.marshalgao.com/tags/fintech/</guid>
       <description></description>
@@ -86,15 +95,6 @@
       <pubDate>Sat, 06 Mar 2021 11:46:59 +0800</pubDate>
       
       <guid>https://www.marshalgao.com/tags/techniques/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>processing fraud data</title>
-      <link>https://www.marshalgao.com/tags/processing-fraud-data/</link>
-      <pubDate>Fri, 05 Feb 2021 10:11:09 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/tags/processing-fraud-data/</guid>
       <description></description>
     </item>
     
