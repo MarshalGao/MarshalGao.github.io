@@ -17,7 +17,7 @@
             <guid>https://www.marshalgao.com/ecom7122-applied-ai-in-business/</guid>
             <description>Intro to Applied AI Four pillars of applied AI
  every industry may use it contains  virtual assistance  apple siri, etc. chat robot   generating insights  machine learning   automation of manual processes  industrial robot machine or program replacement for routine work   unlocking unstructured data  used structured data in the past, but can unlock unstructured data, transferring the books on the shelf into database understand consumer conversations, e.</description>
-            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Applied%20AI%20in%20Business.png" alt=""></p>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Applied%20AI%20in%20Business1.png" alt=""></p>
 <h2 id="intro-to-applied-ai">Intro to Applied AI</h2>
 <p><strong>Four pillars of applied AI</strong></p>
 <ul>
@@ -82,7 +82,18 @@
 </ul>
 <p><strong>Case - DoNotPay</strong></p>
 <ul>
-<li>four pillars
+<li>
+<p>video description</p>
+<ul>
+<li><a href="https://events.technologyreview.com/video/watch/joshua-browder-donotpay-innovator/">source of inspiration</a></li>
+<li>how to use</li>
+</ul>
+  <div class="iframe-container">
+      <iframe src="https://www.youtube.com/embed/0yx6UIO6Xg0" allowfullscreen> </iframe>
+  </div>
+</li>
+<li>
+<p>four pillars</p>
 <ul>
 <li>virtual assistance — mobile chatbot</li>
 <li>generating insights — likelihood of parking fee being dismissed</li>
@@ -90,7 +101,8 @@
 <li>unlocking unstructured data — Josh found his successful legal protest strategy by reading up on many county parking laws and successful legal briefs</li>
 </ul>
 </li>
-<li>core components
+<li>
+<p>core components</p>
 <ul>
 <li>data input — text entered by user on mobile app</li>
 <li>data (pre) processing — rule-based chatbot</li>
@@ -198,6 +210,9 @@
 <li><a href="https://www.forbes.com/sites/gregsatell/2016/09/18/4-ways-every-business-needs-to-use-artificial-intelligence/?sh=7f90ccc92a52">Four Ways Every Business Needs to Use Artificial Intelligence</a></li>
 <li><a href="https://lawtomated.com/structured-data-vs-unstructured-data-what-are-they-and-why-care/">Structured Data vs. Unstructured Data: What Are They and Why Care?</a></li>
 <li><a href="http://aiindex.org/2017-report.pdf">Artificial Intelligence Index</a></li>
+<li><a href="https://www.ifc.org/wps/wcm/connect/3e0cfba8-12c9-42fe-943b-e99f4a36de73/202008_D2E_MyBank.pdf?MOD=AJPERES&amp;CVID=nfvyYCR">MyBank’s Gender-Driven Approach to Lending</a></li>
+<li><a href="https://www.predictiveanalyticstoday.com/tala-provides-instant-credit-scoring-lending-for-underserved-people/">Tala Provides Instant Credit Scoring, Lending for Underserved People Using Behavioral Data</a></li>
+<li><a href="https://www.marketwatch.com/story/ai-based-credit-scores-will-soon-give-one-billion-people-access-to-banking-services-2018-10-09">How Artificial Intelligence Could Replace Credit Scores and Reshape How We Get Loans</a></li>
 </ul>
 ]]></content>
         </item>
