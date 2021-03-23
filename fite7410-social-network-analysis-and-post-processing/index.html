@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Marshal ">
+<meta name="description" content="Social Network Analysis for Fraud Detection Basic concepts
+ guilt-by-association  the reason of studying social network assumes that a person is guilty of a crime because he/she is associated with someone or something involved in a crime  applications of social network analytics  because most frauds are committed by illegal set-ups of a group of fraudsters traditional fraud detection models have limitations to detect relations or insight from a social network social network analytics will give insights about some suspicious cases (e." />
+<meta name="keywords" content=", fite7410, financial fraud analytics, fintech, social network, post-processing" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://www.marshalgao.com/fite7410-social-network-analysis-and-post-processing/" />
+
+
+    <title>
+        
+            FITE7410 Social Network Analysis and Post-Processing :: This is Marshal 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://www.marshalgao.com/main.1abfe30dec5ae0f5c4f84acd6413b12f63e4a6f9e1e7167f42de12192bfd25e9.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.marshalgao.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.marshalgao.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.marshalgao.com/favicon-16x16.png">
+    <link rel="manifest" href="https://www.marshalgao.com/site.webmanifest">
+    <link rel="mask-icon" href="https://www.marshalgao.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://www.marshalgao.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="FITE7410 Social Network Analysis and Post-Processing">
+<meta itemprop="description" content="Social Network Analysis for Fraud Detection Basic concepts
+ guilt-by-association  the reason of studying social network assumes that a person is guilty of a crime because he/she is associated with someone or something involved in a crime  applications of social network analytics  because most frauds are committed by illegal set-ups of a group of fraudsters traditional fraud detection models have limitations to detect relations or insight from a social network social network analytics will give insights about some suspicious cases (e.">
+<meta itemprop="datePublished" content="2021-03-20T16:08:36+08:00" />
+<meta itemprop="dateModified" content="2021-03-20T16:08:36+08:00" />
+<meta itemprop="wordCount" content="2484">
+<meta itemprop="image" content="https://www.marshalgao.com/"/>
+
+
+
+<meta itemprop="keywords" content="fite7410,financial fraud analytics,fintech,social network,post-processing," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.marshalgao.com/"/>
+
+<meta name="twitter:title" content="FITE7410 Social Network Analysis and Post-Processing"/>
+<meta name="twitter:description" content="Social Network Analysis for Fraud Detection Basic concepts
+ guilt-by-association  the reason of studying social network assumes that a person is guilty of a crime because he/she is associated with someone or something involved in a crime  applications of social network analytics  because most frauds are committed by illegal set-ups of a group of fraudsters traditional fraud detection models have limitations to detect relations or insight from a social network social network analytics will give insights about some suspicious cases (e."/>
+
+
+
+    <meta property="og:title" content="FITE7410 Social Network Analysis and Post-Processing" />
+<meta property="og:description" content="Social Network Analysis for Fraud Detection Basic concepts
+ guilt-by-association  the reason of studying social network assumes that a person is guilty of a crime because he/she is associated with someone or something involved in a crime  applications of social network analytics  because most frauds are committed by illegal set-ups of a group of fraudsters traditional fraud detection models have limitations to detect relations or insight from a social network social network analytics will give insights about some suspicious cases (e." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.marshalgao.com/fite7410-social-network-analysis-and-post-processing/" />
+<meta property="og:image" content="https://www.marshalgao.com/"/>
+<meta property="article:published_time" content="2021-03-20T16:08:36+08:00" />
+<meta property="article:modified_time" content="2021-03-20T16:08:36+08:00" />
+
+
+
+
+    <meta property="article:section" content="HKU" />
+
+
+
+    <meta property="article:published_time" content="2021-03-20 16:08:36 &#43;0800 HKT" />
+
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css" integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.js" integrity="sha384-JiKN5O8x9Hhs/UE5cT5AAJqieYlOZbGT3CHws/y97o3ty4R7/O5poG9F3JoiOYw1" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://www.marshalgao.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://www.marshalgao.com/categories/hku">HKU</a></li><li><a href="https://www.marshalgao.com/categories/technology">TECH</a></li><li><a href="https://www.marshalgao.com/categories/product-manager">PM</a></li><li><a href="https://www.marshalgao.com/categories/life">LIFE</a></li><li><a href="https://www.marshalgao.com/about/">ABOUT</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        12 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://www.marshalgao.com/fite7410-social-network-analysis-and-post-processing/">FITE7410 Social Network Analysis and Post-Processing</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Social%20Network%20Analysis%20and%20Post-Processing.png" alt=""></figure></p>
+
+<h2 id="social-network-analysis-for-fraud-detection">Social Network Analysis for Fraud Detection</h2>
+
+<p><strong>Basic concepts</strong></p>
+
+<ul>
+<li>guilt-by-association
+
+<ul>
+<li>the reason of studying social network</li>
+<li>assumes that a person is guilty of a crime because he/she is associated with someone or something involved in a crime</li>
+</ul></li>
+<li>applications of social network analytics
+
+<ul>
+<li>because most frauds are committed by illegal set-ups of a group of fraudsters</li>
+<li>traditional fraud detection models have limitations to detect relations or insight from a social network</li>
+<li>social network analytics will give insights about some suspicious cases (e.g., insurance frauds, bankruptcies of companies, and opinion frauds)</li>
+</ul></li>
+
+<li><p>network components</p>
+
+<ul>
+<li>complex network analysis (CNA) - study of complex networks, inculding structure, characteristics, and dynamics</li>
+
+<li><p>graph theory - mathematical study for the analysis and representation of networks</p>
+
+<ul>
+<li>types of graphs
+
+<ul>
+<li>directed graph</li>
+<li>undirected graph</li>
+</ul></li>
+<li>edge representation
+
+<ul>
+<li>self-edge - a person who transfers money from his/her account to another he/she owns</li>
+<li>multi-edge - a person pay the merchant money twice</li>
+<li>hyper-edge - 3 people attend the same event
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21032001.png" alt=""></figure></li>
+</ul></li>
+
+<li><p>weighted graph - represents the intensity of relations in a network</p>
+
+<ul>
+<li>binary weight
+
+<ul>
+<li>0 or 1: represents relation exists between 2 nodes or not</li>
+<li>-1, 0 or 1: e.g. 1 represents close relation, 0 represents no relation, -1 represents animosity</li>
+</ul></li>
+<li>numeric weight
+
+<ul>
+<li>higher numeric value represents closer affinity</li>
+</ul></li>
+<li>normalized weight
+
+<ul>
+<li>variant of numeric weight where all outgoing edges of a node sum up to 1</li>
+</ul></li>
+
+<li><p>Jaccard weight</p>
+
+<ul>
+<li>edge weight depends on how &quot;social&quot; both nodes are</li>
+<li>formula</li>
+</ul>
+
+<p><span  class="math">\[w(v_1,v_2)=\frac{|\Gamma(v_1)\cap\Gamma(v_2)|}{|\Gamma(v_1)\cup\Gamma(v_2)|}\]</span></p>
+
+<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21032002.png" alt=""></figure></p>
+
+<ul>
+<li>example
+
+<ul>
+<li>person A attended 10 events, person B attended 5 events</li>
+<li>both went to 3 common events</li>
+<li><span  class="math">\(Jaccard\ weight = \frac{3}{10+5-3}=\frac{1}{4}\)</span></li>
+</ul></li>
+</ul></li>
+</ul></li>
+
+<li><p>for fraud</p>
+
+<ul>
+<li>nodes - legitimate or fraudulent</li>
+<li>edges - relationship</li>
+<li>egonet - one-hop neighbourhoods
+
+<ul>
+<li>one-hop is enough for fraud analysis
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21032003.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+
+<li><p>network representations</p>
+
+<ul>
+<li>graphically (a)</li>
+<li>mathematically
+
+<ul>
+<li>adjacency or connection matrix - a matrix of size <span  class="math">\(n \times n\)</span> (n is the number of nodes) (b)
+
+<ul>
+<li>a sparse matrix - containing many zero values</li>
+<li>similar to real-life social network, where most people are only connected to a small number of friends</li>
+</ul></li>
+<li>adjacency list - abstract representation of adjacency matrix (d)</li>
+<li>weight matrix - a matrix with edge weights (c)</li>
+<li>weight list - abstract representation of weight matrix (e)
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21032004.png" alt=""></figure><br></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>Homophilic network</strong></p>
+
+<ul>
+<li>definition
+
+<ul>
+<li>fraudsters connect to fraudsters</li>
+<li>legitimate people connect to legitimate people</li>
+</ul></li>
+<li>web of frauds
+
+<ul>
+<li>fraudsters' nodes are grouped together</li>
+</ul></li>
+<li>features
+
+<ul>
+<li>no network is perfectly homophilic - if a network exhibits evidence of homophily, it is worthwhile to investigate more thoroughly</li>
+<li>a network that is not homophilic is heterophilic</li>
+</ul></li>
+<li>formula
+
+<ul>
+<li><span  class="math">\(l\)</span> = legitimate nodes in the network</li>
+<li><span  class="math">\(f\)</span> = fraudulent nodes in the network</li>
+<li><span  class="math">\(2lf\)</span> = expected cross-label edges (fraud connects to non-fraud)</li>
+<li><span  class="math">\(\hat{r}\)</span> = observed cross-label edges</li>
+<li>if null hypothesis is rejected (observed cross-label edges is significantly less than the expected cross-label edges), a network is homophilic</li>
+</ul></li>
+</ul>
+
+<p><span  class="math">\[H_0 : \hat{r} \geq 2lf\]</span></p>
+
+<ul>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21032201.png" alt=""></figure></li>
+
+<li><p>dyadicity &amp; heterophilicity
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21032202.png" alt=""></figure></p>
+
+<ul>
+<li><span  class="math">\(Dyadicity(D)=\frac{m_{11}}{\overline{m}_{11}}\)</span></li>
+<li><span  class="math">\(Heterophilicity(H)=\frac{m_{10}}{\overline{m}_{10}}\)</span></li>
+<li>if D &gt; 1, network is dyadic
+
+<ul>
+<li>fraudulent cases tend to connect more densely among themselves than expected randomly</li>
+</ul></li>
+<li>if H &lt; 1, network is heterophobic (oppsite of heterophilic)
+
+<ul>
+<li>fraud nodes have fewer connections to legitimate nodes than expected randomly</li>
+</ul></li>
+<li>if a network is dyadic and heterophobic (D &gt; 1 and H &lt; 1), it exhibits homophily</li>
+</ul></li>
+</ul>
+
+<p><strong>Metrics to measure impact of neighborhoods</strong></p>
+
+<ul>
+<li>neighbour metrics
+
+<ul>
+<li>characterize the target of interest based on its direct associates</li>
+<li>first-order neighbour for fraud detection models</li>
+<li>include: degree, triangles, density, relation neighbour &amp; probabilistic relational neighbour</li>
+</ul></li>
+<li>centrality metrics
+
+<ul>
+<li>quantify the importance of an individual in a social network</li>
+<li>include: geodesic paths, betweenness, closeness, and graph theoretic center</li>
+</ul></li>
+<li>collective inference algorithms
+
+<ul>
+<li>compute the probability that a node is exposed to fraud, i.e. probability that fraud influences a certain node</li>
+<li>include: PageRank, Gibbs sampling, iterative classification, relaxation labelling, and loopy belief propagation</li>
+</ul></li>
+</ul>
+
+<p><strong>Neighborhood Metrics</strong></p>
+
+<ul>
+<li>degree
+
+<ul>
+<li>definition
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21032203.png" alt=""></figure></li>
+<li>degree distribution
+
+<ul>
+<li>the probability distribution of the degree in the network</li>
+<li>in real-life networks, follows power law (i.e. many nodes are connected with few other nodes, while only few nodes are connected to many other nodes)</li>
+</ul></li>
+<li>k-regular graph
+
+<ul>
+<li>network with a constant degree distribution</li>
+<li>each node in the network has the same degree</li>
+<li>e.g. 4-regulat graph
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-22%20%E4%B8%8B%E5%8D%8812.20.56.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+<li>triangle
+
+<ul>
+<li>definition
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21032204.png" alt=""></figure></li>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21032205.png" alt=""></figure></li>
+</ul></li>
+
+<li><p>density</p>
+
+<ul>
+<li><p>definition</p>
+
+<ul>
+<li>measures the extent to which ndoes in a network are connected to each other</li>
+<li>i.e. measures the number of observed edges (M) to the maximum possible number of edges in the graph</li>
+<li>full connected network: each node is connected to every other node, has <span  class="math">\(\frac{N(N-1)}{2}\)</span> edges, where N = total number of nodes</li>
+</ul>
+
+<p><span  class="math">\[d=\frac{2M}{N(N-1)}\]</span></p></li>
+
+<li><p>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21032206.png" alt=""></figure></p></li>
+</ul></li>
+
+<li><p>relational neighbourhood</p>
+
+<ul>
+<li>relational neighbor classifier
+
+<ul>
+<li>makes use of the homophily assumption - connected nodes have a propensity to belong to the same class, i.e. guilt-by-association</li>
+<li>if two nodes are associated, they tend to exhibit similar behaviours</li>
+</ul></li>
+<li>posterior class probability for node n to belong to class c
+
+<ul>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21032207.png" alt=""></figure>
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21032208.png" alt=""></figure><br></li>
+</ul></li>
+</ul></li>
+
+<li><p>probabilistic relational neighborhood</p>
+
+<ul>
+<li>extension of relational neighbour classifier</li>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21032209.png" alt=""></figure></li>
+<li><span  class="math">\(P(c|n_j)\)</span> can be result of a local model, or of a previously applied network model</li>
+<li>relational neighborhood and probabilistic relational neighborhood, can both be used as a classifier, or an additional variable in fraud prediction models</li>
+</ul></li>
+
+<li><p>relational logistic regression classifier</p>
+
+<ul>
+<li>definition
+
+<ul>
+<li>starts with a dataset with local node-specific characteristics called, intrinsic variables, e.g. company's age, sector, etc.</li>
+</ul></li>
+<li>network characteristics
+
+<ul>
+<li>mode-link: most frequently occuring class of neighbor</li>
+<li>count-link: frequency of the classes of the neighbor</li>
+<li>binary-link: binary indicators indicating class presence</li>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21032301.png" alt=""></figure></li>
+</ul></li>
+<li>trick: use logistic regression with the dataset that contains both intrinsic and network variables</li>
+<li>caution: there might be correlations between the network variables added
+
+<ul>
+<li>filtered out during an input selection procedure (e.g. using stepwise logistic regression), or</li>
+<li>featurization - can measure the behaviour of the neighbors in terms of the target variables or the intrinsic variables</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>Centrality metrics</strong></p>
+
+<ul>
+<li>Dijkstra's algorithm
+
+<ul>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21032302.png" alt=""></figure></li>
+<li>Dijkstra's algorithm is only applicable to networks with non-negative edge weights</li>
+</ul></li>
+<li>geodesic path (or shortest path)
+
+<ul>
+<li>computes the minimum distance needed to reach a node from a target node</li>
+<li>Q: how far is any fraudulent node in the network removed from the target node?
+
+<ul>
+<li>if a fraudulent node is in the close neighborhood, fraud might impact the node more intensively and contaminate the target of interest</li>
+</ul></li>
+<li>graph theoretic center
+
+<ul>
+<li>the node with the smallest, maximum distance to all other nodes, i.e. most central node in the network</li>
+</ul></li>
+<li>average path length
+
+<ul>
+<li>length one needs to traverse on average to reach one node from another</li>
+</ul></li>
+<li>in fraud, if more paths exist between two nodes, there is a higher chance that fraudulent influence will eventually reach the target node</li>
+<li>adjacency matrix - number of connecting paths between any two nodes
+
+<ul>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21032303.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+
+<li><p>closeness</p>
+
+<ul>
+<li><p>definition</p>
+
+<ul>
+<li>mean geodesic distance or farness measure
+
+<ul>
+<li><span  class="math">\(d(v_i v_j)\)</span> = distance between a node and another node corresponds to the geodesic or shortest path</li>
+<li><span  class="math">\(g(v_i)\)</span> = mean geodesic distance or farness from a node i to the other nodes</li>
+<li><span  class="math">\(n\)</span> = number of nodes in a network
+<br></li>
+</ul></li>
+</ul>
+
+<p><span  class="math">\[g(v_i)=\frac{\displaystyle \sum_{j=1(j\neq i)}d(v_i v_j)}{n-1}\]</span></p></li>
+
+<li><p>closeness centrality</p>
+
+<ul>
+<li>measures the mean distance from a node to each other in the network</li>
+<li>inverse of farness measure</li>
+</ul>
+
+<p><span  class="math">\[Closeness \ Centrality(v_i)={(\frac{\displaystyle \sum_{j=1(j\neq i)}d(v_i v_j)}{n-1})}^{-1}\]</span></p></li>
+
+<li><p>a few points to note</p>
+
+<ul>
+<li>the higher the value, the more central the node is in the network</li>
+<li>the value of closeness centralities for all nodes in the network might lie closely together, and therefore important to inspect the decimals</li>
+<li>closeness centralities often excludes the distances to nodes that cannot be reached</li>
+</ul></li>
+
+<li><p>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21032304.png" alt=""></figure></p></li>
+</ul></li>
+
+<li><p>betweenness</p>
+
+<ul>
+<li>definition
+
+<ul>
+<li>measures the extent to which a node lies on the geodesic paths connecting any two nodes in the network</li>
+<li>the extent to which information passes through this node</li>
+<li>a node with a high betweenness possibly connects communities with each other</li>
+</ul></li>
+
+<li><p>betweenness centrality</p>
+
+<ul>
+<li><span  class="math">\(g_{jk}\)</span> = number of shortest paths between node j and node k</li>
+<li><span  class="math">\(g_{jk}(v_i)\)</span> = number of shortest paths between node j and node k that pass through node <span  class="math">\(v_i\)</span></li>
+</ul>
+
+<p><span  class="math">\[\displaystyle \sum_{j < k}\frac{g_{jk}(v_i)}{g_{jk}}\]</span></p></li>
+
+<li><p>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21032305.png" alt=""></figure></p></li>
+</ul></li>
+</ul>
+
+<p><strong>Collective inference algorithms</strong></p>
+
+<ul>
+<li>definition
+
+<ul>
+<li>infers a set of class labels/probabilities for the unknown nodes</li>
+<li>rationale: inferences about nodes can mutually affect one another</li>
+</ul></li>
+<li>PageRank algorithm
+
+<ul>
+<li>Google based on this</li>
+<li>explaination
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21032306.png" alt=""></figure></li>
+<li>ranking of a web page depends on
+
+<ul>
+<li>ranking of web pages pointing towards that web page</li>
+<li>out-degree of the linking web pages</li>
+<li>random surfer: assumes surfers get bored and jumped randomly to another web page</li>
+</ul></li>
+<li>to calculate the PageRank requires ranking of the neighboring web pages
+
+<ul>
+<li>start with a random RageRank value for every web page</li>
+<li>lteratively update the PageRank scores until a predefined number of iterations is reached, or a stopping criteria is met (e.g. when the change in the ranking is marginal)</li>
+</ul></li>
+<li>application of PageRank algorithm to fraud analytics
+
+<ul>
+<li>PageRank algorithm can be seen as a propagation of page influence through the network</li>
+<li>propagate fraud through the network</li>
+</ul></li>
+<li>personalize PageRank by fraud
+
+<ul>
+<li>i.e. adjacency matrix A = fraud network (i.e. people-to-people network)</li>
+</ul></li>
+<li>example
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21032307.png" alt=""></figure></li>
+</ul></li>
+<li>Gibbs sampling
+
+<ul>
+<li>uses a local classifier to infer a posterior class probability in order to initialize the node labels in the network</li>
+<li>original semi-labelled graph is transformed in a fully labelled graph by sampling the posterior probabilities of the local classifier</li>
+<li>predictive features of a local classifier consist of only intrinsic variables</li>
+<li>labels of unknown nodes in the graph express an expectation of the true class value</li>
+<li>lterative procedure
+
+<ul>
+<li>updates the expected class labels of the unknown nodes</li>
+<li>the first iterb steps approach a stationary distribution (burn-in period), where no statistics are recorded</li>
+<li>the last iterc steps, keeps track of which class labels are assigned to each node</li>
+<li>final class probability estimate is computed as normalized count of the number of times each class is assigned to a particular node
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21032308.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+<li>lterative classification algorithm
+
+<ul>
+<li>similar to Gibbs sampling, iterative classification initializes the semi-labelled graph by using a local classifier</li>
+<li>bootstrap phase
+
+<ul>
+<li>based on the local model’s output, the most probable class label is assigned to each unknown node</li>
+</ul></li>
+<li>iteration phase
+
+<ul>
+<li>a relational learner updates the class labels of each unknown node based on the outcome of a relational logistic regression model</li>
+<li>input features: computed as link statistics of the current label assignments</li>
+<li>link statistics: mode (most occurring label of the neighboring nodes), count (number of neighboring fraud nodes), binary (at least one of the neighboring nodes are fraudulent)</li>
+<li>nodes not yet classified are ignored</li>
+<li>a new class label is assigned to each unknown node based on the largest posterior probability, this step is repeated until a stopping criterion is met</li>
+<li>the final class label corresponds to the class label estimate generated during the last iteration</li>
+</ul></li>
+</ul></li>
+<li>relaxation labelling
+
+<ul>
+<li>starts from a local classifier to initialize a node’s class label</li>
+<li>previous approaches assigned a hard label (i.e. either legitimate or fraud).<br></li>
+<li>soft labelling: relaxation labelling starts with assigning each node a probability that indicates the likelihood of a node to belong to a certain class</li>
+<li>next, the probability class labels are used to iteratively update the class probability using a relational model</li>
+<li>the class estimates of the last iteration are the final class label estimates</li>
+</ul></li>
+<li>loopy belief propagation
+
+<ul>
+<li>a collective inference procedure based on iterative message passing</li>
+<li>idea
+
+<ul>
+<li>belief of each node to be in state x (let’s say fraud) depends on the messages it receives from its neighbors</li>
+<li>belief of a node to be in state x is the normalized product of the received messages</li>
+<li>the message as well as the belief is continuously updated during the algorithm</li>
+</ul></li>
+</ul></li>
+<li>featurization
+
+<ul>
+<li>mapping of an unstructured data source like a network into useful and meaningful characteristics of each node</li>
+<li>most network-based features already give a good indication which  nodes might be fraudulent in the future, these network-based characteristics can be combined with local features into a classification model</li>
+</ul></li>
+<li>bipartite graph
+
+<ul>
+<li>unipartite network
+
+<ul>
+<li>networks with only one node type</li>
+<li>link weight: shared events or behaviors</li>
+<li>the higher the link weight, the more intense the relationship is</li>
+<li>two nodes are more influenced by each other if their relationship is more intense</li>
+</ul></li>
+<li>affiliation or bipartite network
+
+<ul>
+<li>represent the reason why people connect to each other, and include the events that network nodes (e.g. people or company) attend or share</li>
+<li>creates new insights in the network structure
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-23%20%E4%B8%8B%E5%8D%883.02.26.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h2 id="postprocessing-of-fraud-analytics">Post-Processing of Fraud Analytics</h2>
+
+<p><strong>Backtesting analytical fraud models</strong></p>
+
+<ul>
+<li>backtesting
+
+<ul>
+<li>aims at contrasting ex-ante made predictions with ex-post realized outcomes</li>
+<li>key idea is to verify whether the fraud model still performs satisfactory</li>
+<li>important because fraudsters might outsmart fraud analytical models by continuously changing their strategies
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21032309.png" alt=""></figure></li>
+</ul></li>
+<li>backtesting activities
+
+<ul>
+<li>data stability</li>
+<li>model stability</li>
+<li>model calibration</li>
+</ul></li>
+<li>traffic light indicator approach
+
+<ul>
+<li>green light = low probability of fraud</li>
+<li>red light = high probability of fraud
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21032310.png" alt=""></figure></li>
+</ul></li>
+
+<li><p>backtesting data stability</p>
+
+<ul>
+<li>check whether the population on which the model is currently being used is similar to the population what was used to develop the model</li>
+<li>if difference occur in step 1, verify the stability of the individual variables</li>
+
+<li><p>for step 1, a system stability index (SSI) can be calculated as</p>
+
+<p><span  class="math">\[SSI=\sum_{i=1}^k(observed_i - expected_i).ln\frac{observed_i}{expected_i}\]</span></p>
+
+<ul>
+<li>SSI measures difference between expected and observed distribution</li>
+<li>higher SSI implies a population shift and instability</li>
+<li>rule of thumb
+
+<ul>
+<li>SSI &lt; 0.10: no significant shift (green)</li>
+<li>0.10 ≤ SSI &lt; 0.25: moderate shift (yellow)</li>
+<li>SSI ≥ 0.25: significant shift (red)</li>
+</ul></li>
+<li>SSI also referred to as deviation index, identical to information value</li>
+<li>SSI can be monitored through time or by individual variables</li>
+</ul></li>
+</ul></li>
+
+<li><p>backtesting model stability</p>
+
+<ul>
+<li>volatility of the model performance</li>
+<li>to track the model performance using PM (performance metric), no. of observations, no. of frauds and corresponding traffic light</li>
+<li>to track over a subsequent peroid of time</li>
+<li>traffic light coding procedure
+
+<ul>
+<li>if change of PM &lt; 5%, assign green light</li>
+<li>if change of PM ≥ 5% and &lt; 10%, assign yellow light</li>
+<li>if change of PM ≥ 10%, assign red light</li>
+</ul></li>
+<li>bootstrapping procedure
+
+<ul>
+<li>pool the training and out-of-time test observations with the predicted PM into one larger sample</li>
+<li>draw a training and a test set bootstrap sample with the same size as the original training and out-of-time test set (NOTE: a bootstrap sample is one with replacement)</li>
+<li>calculate the difference for PM between the bootstrap training and the bootstrap test sample</li>
+<li>repeat 1,000 or more times to get the distribution and statistically test whether the difference is zero</li>
+</ul></li>
+<li>traffic light procedure
+
+<ul>
+<li>green: no statistical difference at 95%</li>
+<li>yellow: statistical difference at 95% but not at 99%</li>
+<li>red: statistical difference at 99%</li>
+</ul></li>
+</ul></li>
+
+<li><p>backtesting model calibration</p>
+
+<ul>
+<li>in classification or regression model
+
+<ul>
+<li>aim of the model is to come up with well-calibrated estimates of fraud probabilities or fraud amounts</li>
+<li>the calibration needs to be monitored in time</li>
+</ul></li>
+<li>procedure
+
+<ul>
+<li>a classification model assigns fraud probabilities to various pools of customers</li>
+<li>each pool has a corresponding calibrated probability, as it was calculated during model development</li>
+<li>to see how these probabilities evolve in time and whether they remain stable</li>
+</ul></li>
+<li>binomial test
+
+<ul>
+<li>used as heuristic for evaluating the quality of the calibration</li>
+<li>traffic light procedure
+
+<ul>
+<li>green: no statistical difference at 90%</li>
+<li>yellow: statistical difference at 90% but not at 95%</li>
+<li>orange: statistical difference at 95% but not at 99%</li>
+<li>red: statistical difference at 99%</li>
+</ul></li>
+</ul></li>
+<li>hosmer-lemeshow test
+
+<ul>
+<li>test calibrated versus observed fraud rates across multiple pools simultaneously</li>
+</ul></li>
+<li>backtest calibration of regression model
+
+<ul>
+<li>use a parametric student's t-test
+
+<ul>
+<li>can be used to evaluate the significance of the error defined as the difference between the amount predicted and observed</li>
+</ul></li>
+<li>output of regression model has been categorized into pools</li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/tags/fite7410/">fite7410</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/financial-fraud-analytics/">financial fraud analytics</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/fintech/">fintech</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/social-network/">social network</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/post-processing/">post-processing</a></span>
+        
+    </p>
+
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/categories/hku/">HKU</a></span>
+        
+    </p>
+
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        2484 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2021-03-20 16:08
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+            <span class="button previous">
+              <a href="https://www.marshalgao.com/ecom7122-competitive-advantage-and-profitability-analysis/">
+                <span class="button__icon">←</span>
+                <span class="button__text">ECOM7122 Competitive Advantage and Profitability Analysis</span>
+              </a>
+            </span>
+          
+
+          
+            <span class="button next">
+              <a href="https://www.marshalgao.com/ecom7122-applied-ai-in-business/">
+                <span class="button__text">ECOM7122 Applied AI in Business</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span><a href="https://www.hku.hk" target="_blank" rel="noopener">The University of Hong Kong</a></span>
+            <span><a href="https://www.ecom-icom.hku.hk" target="_blank" rel="noopener">ECIC</a></span>
+          </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020-2021</span>
+            
+                
+                <span>Marshal</a></span>
+            
+            
+            
+        </div>
+    </div>
+</footer>
+
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://www.marshalgao.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>social network on This is Marshal</title>
+    <link>https://www.marshalgao.com/tags/social-network/</link>
+    <description>Recent content in social network on This is Marshal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sat, 20 Mar 2021 16:08:36 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/social-network/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FITE7410 Social Network Analysis and Post-Processing</title>
+      <link>https://www.marshalgao.com/fite7410-social-network-analysis-and-post-processing/</link>
+      <pubDate>Sat, 20 Mar 2021 16:08:36 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/fite7410-social-network-analysis-and-post-processing/</guid>
+      <description>Social Network Analysis for Fraud Detection Basic concepts
+ guilt-by-association  the reason of studying social network assumes that a person is guilty of a crime because he/she is associated with someone or something involved in a crime  applications of social network analytics  because most frauds are committed by illegal set-ups of a group of fraudsters traditional fraud detection models have limitations to detect relations or insight from a social network social network analytics will give insights about some suspicious cases (e.</description>
+    </item>
+    
+  </channel>
+</rss>

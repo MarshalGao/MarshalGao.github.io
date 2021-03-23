@@ -7,7 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 16 Mar 2021 10:01:44 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Mar 2021 10:36:00 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM7122 Competitive Advantage and Profitability Analysis</title>
+      <link>https://www.marshalgao.com/ecom7122-competitive-advantage-and-profitability-analysis/</link>
+      <pubDate>Mon, 22 Mar 2021 10:36:00 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom7122-competitive-advantage-and-profitability-analysis/</guid>
+      <description>Competitive Advantage Defined Strategy toolbox
+ firm-level analysis  target segments market size mission statement, etc.   industry-level analysis  competitive adavantage analysis value chain analysis   tips  competitive advantage analysis requires &amp;ldquo;zooming out&amp;rdquo; to industry-level analysis, looking at the forest as well as the trees    Industry &amp;amp; market
+ industry  many companies companies that make similar products or services   market  many buyers buyers of an industry&amp;rsquo;s products and services    Industry average profitability or &amp;ldquo;grades&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>FITE7410 Social Network Analysis and Post-Processing</title>
+      <link>https://www.marshalgao.com/fite7410-social-network-analysis-and-post-processing/</link>
+      <pubDate>Sat, 20 Mar 2021 16:08:36 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/fite7410-social-network-analysis-and-post-processing/</guid>
+      <description>Social Network Analysis for Fraud Detection Basic concepts
+ guilt-by-association  the reason of studying social network assumes that a person is guilty of a crime because he/she is associated with someone or something involved in a crime  applications of social network analytics  because most frauds are committed by illegal set-ups of a group of fraudsters traditional fraud detection models have limitations to detect relations or insight from a social network social network analytics will give insights about some suspicious cases (e.</description>
+    </item>
+    
     <item>
       <title>ECOM7122 Applied AI in Business</title>
       <link>https://www.marshalgao.com/ecom7122-applied-ai-in-business/</link>
@@ -93,26 +114,6 @@
       <guid>https://www.marshalgao.com/comp7801-relational-database/</guid>
       <description>Structure of Relational Databases Overview
  definition  formally, given sets \(D_1, D_2, ..., D_n\) a relation \(r\) is a subset of \(D_1 \times D_2 \times ... \times D_n\) thus a relation is a set of n-tuples (\(a_1, a_2, ..., a_n\)) where each \(a_i \in D_i\)  attribute type  each attribute of a relation has a name the set of allowed values for each attribute is called the domain of the attribute examples of simple domain types  integer string date  note  in advanced (non-relational) database systems, we may have complex attribute types e.</description>
-    </item>
-    
-    <item>
-      <title>Study With Marshal</title>
-      <link>https://www.marshalgao.com/study-with-marshal/</link>
-      <pubDate>Sat, 16 Jan 2021 22:12:02 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/study-with-marshal/</guid>
-      <description>   开学的已经开学，放假的也开始放假了，但是大家都要继续学习呀！ 给大家安利超赞的8小时学习法，每个小时分为 50 mins learning + 10 mins break！（视频放8次就好啦） 我们一起看海，听着Marshal最爱的白噪声，翻来覆去。。。的学习！！！ </description>
-    </item>
-    
-    <item>
-      <title>ECOM7123 Smart Economy and FinTech</title>
-      <link>https://www.marshalgao.com/ecom7123-smart-economy-and-fintech/</link>
-      <pubDate>Fri, 15 Jan 2021 09:30:34 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/ecom7123-smart-economy-and-fintech/</guid>
-      <description>Smart Economy Overview
- definition  economy growth based on knowledge &amp;amp; innovation establish new economy models &amp;amp; business opportunities create quality jobs grow resource-efficiently so that economy is more competitive global reach    New economy models
- sharing economy  different people sharing idle resources or services through the exchange of information to build a trusted platform to effectively connect those who provide and demand for the resources or services, thereby lowering the cost of transaction sharing economy facilitates sharing among people and can reduce waste of resources   industry 4.</description>
     </item>
     
   </channel>
