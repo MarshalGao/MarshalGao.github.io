@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 22 Mar 2021 10:36:00 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/fintech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Mar 2021 17:07:01 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/fintech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM7122 Machine Learning, InsurTech and Ethical Considerations</title>
+      <link>https://www.marshalgao.com/ecom7122-machine-learning-insurtech-and-ethical-considerations/</link>
+      <pubDate>Tue, 23 Mar 2021 17:07:01 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom7122-machine-learning-insurtech-and-ethical-considerations/</guid>
+      <description>Machine Learning &amp;amp; Heart Attack Risk Overview
+ traditional medical systems  treat illness when people are already sick   the reason of using machine learning  more accurate  20% - 30% better performance (means better prediction)   &amp;ldquo;unbiased&amp;rdquo;  statistical vs prejudicial bias   fast  automated decision making system but some decision making system may generate risks   cheap  predictive models work 24/7 can provide medical services all the time      Scorecard</description>
+    </item>
+    
     <item>
       <title>ECOM7122 Competitive Advantage and Profitability Analysis</title>
       <link>https://www.marshalgao.com/ecom7122-competitive-advantage-and-profitability-analysis/</link>
@@ -104,17 +114,6 @@
       <guid>https://www.marshalgao.com/fite7410-introduction-to-financial-fraud-analytics/</guid>
       <description>Introduction to Financial Fraud Basic introdution (according to reports)
  types of crime (according to PwC)  accounting/financial statement fraud anti-competition/antitrust law infringement bribery and corruption customer fraud cybercrime deceptive business practices human resources fraud insider/unauthorized trading intellectual property (IP) theft money laundering and sanctions procurement fraud   interesting phenomenon  approxiamtely 50% of companies experienced fraud in the past 2 years but only 56% of companies conducted investigations into their worst incidents    Fraud</description>
-    </item>
-    
-    <item>
-      <title>ECOM7123 Smart Economy and FinTech</title>
-      <link>https://www.marshalgao.com/ecom7123-smart-economy-and-fintech/</link>
-      <pubDate>Fri, 15 Jan 2021 09:30:34 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/ecom7123-smart-economy-and-fintech/</guid>
-      <description>Smart Economy Overview
- definition  economy growth based on knowledge &amp;amp; innovation establish new economy models &amp;amp; business opportunities create quality jobs grow resource-efficiently so that economy is more competitive global reach    New economy models
- sharing economy  different people sharing idle resources or services through the exchange of information to build a trusted platform to effectively connect those who provide and demand for the resources or services, thereby lowering the cost of transaction sharing economy facilitates sharing among people and can reduce waste of resources   industry 4.</description>
     </item>
     
   </channel>

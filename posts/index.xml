@@ -6,8 +6,290 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-        <lastBuildDate>Mon, 22 Mar 2021 10:36:00 +0800</lastBuildDate>
+        <lastBuildDate>Tue, 23 Mar 2021 17:07:01 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ECOM7122 Machine Learning, InsurTech and Ethical Considerations</title>
+            <link>https://www.marshalgao.com/ecom7122-machine-learning-insurtech-and-ethical-considerations/</link>
+            <pubDate>Tue, 23 Mar 2021 17:07:01 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/ecom7122-machine-learning-insurtech-and-ethical-considerations/</guid>
+            <description>Machine Learning &amp;amp; Heart Attack Risk Overview
+ traditional medical systems  treat illness when people are already sick   the reason of using machine learning  more accurate  20% - 30% better performance (means better prediction)   &amp;ldquo;unbiased&amp;rdquo;  statistical vs prejudicial bias   fast  automated decision making system but some decision making system may generate risks   cheap  predictive models work 24/7 can provide medical services all the time      Scorecard</description>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Machine%20Learning%2C%20InsurTech%20and%20Ethical%20Considerations.png" alt=""></p>
+<h2 id="machine-learning--heart-attack-risk">Machine Learning &amp; Heart Attack Risk</h2>
+<p><strong>Overview</strong></p>
+<ul>
+<li>traditional medical systems
+<ul>
+<li>treat illness when people are already sick</li>
+</ul>
+</li>
+<li>the reason of using machine learning
+<ul>
+<li>more accurate
+<ul>
+<li>20% - 30% better performance (means better prediction)</li>
+</ul>
+</li>
+<li>&ldquo;unbiased&rdquo;
+<ul>
+<li>statistical vs prejudicial bias</li>
+</ul>
+</li>
+<li>fast
+<ul>
+<li>automated decision making system</li>
+<li>but some decision making system may generate risks</li>
+</ul>
+</li>
+<li>cheap
+<ul>
+<li>predictive models work 24/7</li>
+<li>can provide medical services all the time</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Scorecard</strong></p>
+<ul>
+<li>features
+<ul>
+<li>easy to understand and fits with our common sense and intuition</li>
+<li>it is &ldquo;explainable&rdquo; or &ldquo;white-box&rdquo;</li>
+</ul>
+</li>
+<li>scenario - predicting heart disease
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-24%20%E4%B8%8A%E5%8D%8810.56.18.png" alt=""></li>
+<li>predicting heart disease with scorecard
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-24%20%E4%B8%8A%E5%8D%8810.57.47.png" alt=""></li>
+<li>likelihood of heart attack in the next 5 years
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-24%20%E4%B8%8A%E5%8D%8810.58.49.png" alt=""></li>
+<li>decision rules &amp; cutoffs
+<ul>
+<li>if this was a Covid-fatality risk calculator, who would you vaccinate first &amp; why
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-24%20%E4%B8%8A%E5%8D%8811.05.20.png" alt=""></li>
+<li>if this was a default risk calculator, who would you deny credit to, who would you loan to
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-24%20%E4%B8%8A%E5%8D%8811.05.33.png" alt="">
+<ul>
+<li>Fair Isaacs Corporation created FICO, a credit scoring system used in the US</li>
+</ul>
+</li>
+<li>consider age
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-24%20%E4%B8%8A%E5%8D%8811.08.39.png" alt=""></li>
+<li>yong or low-income families pay more to buy a house, with a higher mortage interest rate
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-24%20%E4%B8%8A%E5%8D%8811.11.00.png" alt=""></li>
+</ul>
+</li>
+<li>FinTech - the disrupting force
+<ul>
+<li>different data sources
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-24%20%E4%B8%8A%E5%8D%8811.14.05.png" alt=""></li>
+<li>applying AI, machine learning and predictive analytics for credit scoring
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-24%20%E4%B8%8A%E5%8D%8811.17.27.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<p><strong>Bank loans &amp; credit in China</strong></p>
+<ul>
+<li>history
+<ul>
+<li>1949 all FIs nationalized -&gt; People’s Bank of China</li>
+<li>1980s Bank of China, Agricultural Bank of China, China Construction Bank, Industrial &amp; Commercial Bank of China established for loans to SOEs</li>
+<li>2010 all listed on stock exchange, largest banks in the world by market cap, 1⁄2 of total assets in China</li>
+<li>regulatory control of interest rates for insurance and mutual fund products</li>
+<li>20% of SMEs had access to credit, 60% GDP</li>
+<li>private micro-enterprises of &lt; 10 employees, no credit access</li>
+<li>2008 PBOC and CBRC microfinance defined</li>
+<li>2013 village and town 7839 microfinance companies with $131B in loan balance</li>
+</ul>
+</li>
+<li>CreditEase
+<ul>
+<li>poor talented students seeking vocational training at Ning Tang’s (the founder) school</li>
+<li>problem - students can’t afford tuition</li>
+<li>need - speedy credit approval for tuition loan</li>
+<li>risk — default, not paying back</li>
+<li>reward— better-paying jobs increase likelihood of payback</li>
+<li>proxies — grades, attendance, teacher recommendations</li>
+<li>credit rating system
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-24%20%E4%B8%8A%E5%8D%8811.24.56.png" alt=""></li>
+</ul>
+</li>
+<li>P2P lending
+<ul>
+<li>the importance of credit-scoring
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-24%20%E4%B8%8A%E5%8D%8811.27.42.png" alt=""></li>
+</ul>
+</li>
+<li>bank loans vs P2P lending
+<ul>
+<li>the source of money is different</li>
+<li>the risk control of traditional bank is better than that of P2P platform
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-24%20%E4%B8%8A%E5%8D%8811.30.38.png" alt=""></li>
+</ul>
+</li>
+<li>Dianrong &amp; sesame credit
+<ul>
+<li>using alternative data - &ldquo;data exhaust&rdquo;
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-24%20%E4%B8%8A%E5%8D%8811.34.50.png" alt=""></li>
+</ul>
+</li>
+<li>Ant Financial &amp; sesame credit
+<ul>
+<li>consumption scenarios
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-24%20%E4%B8%8A%E5%8D%8811.36.37.png" alt=""></li>
+<li>creating real-time datastreams
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-24%20%E4%B8%8A%E5%8D%8811.38.08.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<h2 id="ai-enabled-insurance">AI-Enabled Insurance</h2>
+<p><strong>Overview</strong></p>
+<ul>
+<li>insurance technology
+<ul>
+<li>is an important sector of the financial services industry</li>
+</ul>
+</li>
+<li>the reason of using InsurTech
+<ul>
+<li>more accurate
+<ul>
+<li>better predictions and better at spotting claims fraud via video, e.g. Lemonade 1 min. claim</li>
+</ul>
+</li>
+<li>&ldquo;unbiased&rdquo;
+<ul>
+<li>reduced agent favoritism or outright corruption, e.g. Ping An Medical Insurance/OneConnect</li>
+</ul>
+</li>
+<li>fast
+<ul>
+<li>speeds the application and ID verification &amp; approval process and the customer experience, e.g. Ant Financial auto 6 seconds vs 6 days for claims reimbursement</li>
+</ul>
+</li>
+<li>cheap
+<ul>
+<li>more accessible medical care and emergency payment for rural and underserved areas, e.g. The Good Doctor telemedicine one-minute clinic</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Lemonade&rsquo;s AI bot is easy and fast</strong></p>
+<ul>
+<li>
+<p>video description</p>
+  <div class="iframe-container">
+      <iframe src="https://www.youtube.com/embed/flSLI2JmWVE" allowfullscreen> </iframe>
+  </div>
+</li>
+<li>
+<p>top 5 data questions</p>
+<ul>
+<li>home address</li>
+<li>own or rent</li>
+<li>roommates, fire alarm, burglar alarm</li>
+<li>birthdate</li>
+<li>active renter&rsquo;s insurance</li>
+</ul>
+</li>
+</ul>
+<h2 id="ethical-considerations">Ethical Considerations</h2>
+<p><strong>Assessing the risk of an automated decision making system</strong></p>
+<ul>
+<li>beneficiary
+<ul>
+<li>who is going to gain from the decision being made</li>
+<li>high risk from high benefits for the decision maker</li>
+<li>low risk from low benefits for the individual</li>
+<li>because of a unbalanced situation</li>
+</ul>
+</li>
+<li>data immutability
+<ul>
+<li>if decisions are made on the basis of characteristics people are born with such as age and ethnic origin</li>
+<li>this is higher risk and more controversial than lifestyle choices such as the music people like or what they watch on TV</li>
+</ul>
+</li>
+<li>impact
+<ul>
+<li>what effect is a decision going to have</li>
+<li>a life or death decision about cancer treatment is much more important than whether or not to send someone a 10% coupon for frozen pizza</li>
+</ul>
+</li>
+</ul>
+<p><strong>Approaches of using predictive models for &ldquo;high risk&rdquo; decisions</strong></p>
+<ul>
+<li>try to identify at risk groups
+<ul>
+<li>separate score distribution reports can be compared to see if certain groups will be adversely treated</li>
+</ul>
+</li>
+<li>a more fair treatment
+<ul>
+<li>for lower than average scoring groups, constraints and over-ride rules as well as different cut-offs can be set</li>
+</ul>
+</li>
+<li>continue to monitor the situation once the decision making system goes live
+<ul>
+<li>review score profile and decision rules for key groups</li>
+<li>fine tune cut-offs, constraints, and over-rides</li>
+</ul>
+</li>
+</ul>
+<p><strong>InsurTech</strong></p>
+<ul>
+<li>
+<p>Axa - $10k large-loss claims</p>
+<ul>
+<li>video description (until 9'20'')</li>
+</ul>
+  <div class="iframe-container">
+      <iframe src="https://www.youtube.com/embed/BwWg__HVfsM?start=385" allowfullscreen> </iframe>
+  </div>
+</li>
+<li>
+<p>ethical considerations for Axa</p>
+<ul>
+<li>what are the automated decision rules that will use the predictions of the large-claim predictive model</li>
+<li>who might be at-risk groups</li>
+<li>what constraints, over-ride, cut-offs should be set for risk groups</li>
+<li>how to monitor</li>
+<li>how to protect reputation if the large-claim predictive model is used to “screen out” undesirable drivers</li>
+</ul>
+</li>
+<li>
+<p>different legislative regimes</p>
+<ul>
+<li>US utilitarian approach
+<ul>
+<li>personal data can be harvested for business goals</li>
+<li>if there is a problem using a specific type of data, unacceptable bias against a specific group, legislation is enacted to address that concern</li>
+</ul>
+</li>
+<li>European Union rights based approach
+<ul>
+<li>personal ownership of data, companies have no right to hold or use personal data unless the individual gives permission</li>
+<li>GDPR (General Data Protection Regulations) for EU citizens and transactions, “right to erase”</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="additional-reading">Additional Reading</h2>
+<ul>
+<li><a href="https://www.scmp.com/tech/science-research/article/3019907/doctors-singapore-now-have-smart-assistant-backed-ai">Doctors in Singapore Now Have a Smart Assistant Backed With AI Technology From China&rsquo;s Ping An</a></li>
+<li><a href="https://technode.com/2017/03/09/dianrong-and-foxconn-launch-chinas-first-blockchain-platform/">Dianrong</a></li>
+<li><a href="https://fortune.com/longform/ping-an-big-data/">Ping An</a></li>
+<li><a href="https://www.scmp.com/business/article/3050074/ping-good-doctor-chinas-largest-health-care-platform-reports-jump-users">Good Doctor</a></li>
+<li><a href="https://www.coredna.com/blogs/general-data-protection-regulation">GDPR</a></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>ECOM7122 Competitive Advantage and Profitability Analysis</title>
