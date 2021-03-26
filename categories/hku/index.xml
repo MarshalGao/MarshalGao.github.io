@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 23 Mar 2021 17:07:01 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/hku/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Mar 2021 09:45:22 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/hku/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FITE7410 Forensic Accounting and Fraud Investigation</title>
+      <link>https://www.marshalgao.com/fite7410-forensic-accounting-and-fraud-investigation/</link>
+      <pubDate>Fri, 26 Mar 2021 09:45:22 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/fite7410-forensic-accounting-and-fraud-investigation/</guid>
+      <description>What Is Forensic Accounting Overview
+ forensic accounting  a discipline that deals with the relationship and application of financial facts as they relate to legal issues in the court of law an important tool that assists in investigating crimes such as bribery, fraud, money laundering and other white collar crimes   forensic accountant  financial and fraud investigator identifier of issues gatherer of information analyst of documentation analyst of people expert witness   forensic accountant do  fraud prevention and detection forensic and fraud investigation regulatory compliance and internal control review asset tracing and recovery anti-money laundering investigation and review litigation support expert witness reporting and testimony    Difference between audit and forensic accounting Fraud Prevention and Detection Fraud</description>
+    </item>
+    
     <item>
       <title>ECOM7122 Machine Learning, InsurTech and Ethical Considerations</title>
       <link>https://www.marshalgao.com/ecom7122-machine-learning-insurtech-and-ethical-considerations/</link>
@@ -102,16 +112,6 @@
       <guid>https://www.marshalgao.com/fite7410-introduction-to-financial-fraud-analytics/</guid>
       <description>Introduction to Financial Fraud Basic introdution (according to reports)
  types of crime (according to PwC)  accounting/financial statement fraud anti-competition/antitrust law infringement bribery and corruption customer fraud cybercrime deceptive business practices human resources fraud insider/unauthorized trading intellectual property (IP) theft money laundering and sanctions procurement fraud   interesting phenomenon  approxiamtely 50% of companies experienced fraud in the past 2 years but only 56% of companies conducted investigations into their worst incidents    Fraud</description>
-    </item>
-    
-    <item>
-      <title>COMP7801 Relational Database</title>
-      <link>https://www.marshalgao.com/comp7801-relational-database/</link>
-      <pubDate>Mon, 25 Jan 2021 11:56:40 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/comp7801-relational-database/</guid>
-      <description>Structure of Relational Databases Overview
- definition  formally, given sets \(D_1, D_2, ..., D_n\) a relation \(r\) is a subset of \(D_1 \times D_2 \times ... \times D_n\) thus a relation is a set of n-tuples (\(a_1, a_2, ..., a_n\)) where each \(a_i \in D_i\)  attribute type  each attribute of a relation has a name the set of allowed values for each attribute is called the domain of the attribute examples of simple domain types  integer string date  note  in advanced (non-relational) database systems, we may have complex attribute types e.</description>
     </item>
     
   </channel>
