@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 30 Mar 2021 18:06:17 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 31 Mar 2021 11:57:06 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM7122 Deep Learning</title>
+      <link>https://www.marshalgao.com/ecom7122-deep-learning/</link>
+      <pubDate>Wed, 31 Mar 2021 11:57:06 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom7122-deep-learning/</guid>
+      <description>Deep Learning Image &amp;amp; Voice Overview
+ for applied AI four pillars  corresponding to unlocking unstructured data  AI &amp;ldquo;core&amp;rdquo; capabilities in language and vision natural language processing (NLP)     the &amp;ldquo;core&amp;rdquo; deep learning breakthroughs  vision - image recognition language - voice recognition    Fastest growing product in history
+ result  conclusion  smart speaker increases the most quickly to 50% but smart speaker goes smoothly after 5 years, compared the continuous dramatical growth of smartphone and TV after reaching 50% (growth flatten)  may due to the loss of freshness may due to the loss of practicality      Cases</description>
+    </item>
+    
     <item>
       <title>ECOM7122 Blue Ocean Value Innovation</title>
       <link>https://www.marshalgao.com/ecom7122-blue-ocean-value-innovation/</link>
@@ -102,17 +113,6 @@
       <description>Financial Fraud Analytics Fraud detection models
  classification  the output is category  regression  the output is a real value   Techniques
  statistics techniques  break-point analysis peer-group analysis association rule analysis linear/logistic regressions  AI/DM/ML techniques  supervised learning  using historical information to retrieve patterns required labelled dataset  unsupervised learning  using historical information to retrieve patterns do not require labelled dataset divided into  clustering - to discover the inherent groupings in the data association - to discover rules that describe large portions of the data, find relation   semi-supervised learning  deal with pertially labelled data  social network analysis  learn and detect characteristics of fraudulent behavior in a network of linked entities  notes  these techniques are not mutually exclusive but complement each other an effective fraud detection and prevention system may combine the use of different techniques    Data analytics</description>
-    </item>
-    
-    <item>
-      <title>FITE7410 Processing Fraud Data</title>
-      <link>https://www.marshalgao.com/fite7410-processing-fraud-data/</link>
-      <pubDate>Fri, 05 Feb 2021 10:11:09 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/fite7410-processing-fraud-data/</guid>
-      <description>Data Collection Overview
- real-life data problems  inconsistencies incompleteness duplication merging data size too big to handle, etc.  how to deal with  pre-process the raw data before proceeding to conduct the analysis steps   Data sources
- types  structured  transactional data contractual, subscription, or account data surveys behavoural information  unstructured  text documents, e.g. emails, web pages, claim forms or multimedia contents contextual or network information qualitative expert-based data publicly available data  semi-structured  5Vs  velocity volume variety veracity value   Basic concepts</description>
     </item>
     
   </channel>

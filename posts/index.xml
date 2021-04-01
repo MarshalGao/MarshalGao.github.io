@@ -6,8 +6,177 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-        <lastBuildDate>Tue, 30 Mar 2021 18:06:17 +0800</lastBuildDate>
+        <lastBuildDate>Wed, 31 Mar 2021 11:57:06 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ECOM7122 Deep Learning</title>
+            <link>https://www.marshalgao.com/ecom7122-deep-learning/</link>
+            <pubDate>Wed, 31 Mar 2021 11:57:06 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/ecom7122-deep-learning/</guid>
+            <description>Deep Learning Image &amp;amp; Voice Overview
+ for applied AI four pillars  corresponding to unlocking unstructured data  AI &amp;ldquo;core&amp;rdquo; capabilities in language and vision natural language processing (NLP)     the &amp;ldquo;core&amp;rdquo; deep learning breakthroughs  vision - image recognition language - voice recognition    Fastest growing product in history
+ result  conclusion  smart speaker increases the most quickly to 50% but smart speaker goes smoothly after 5 years, compared the continuous dramatical growth of smartphone and TV after reaching 50% (growth flatten)  may due to the loss of freshness may due to the loss of practicality      Cases</description>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Deep%20Learning.png" alt=""></p>
+<h2 id="deep-learning-image--voice">Deep Learning Image &amp; Voice</h2>
+<p><strong>Overview</strong></p>
+<ul>
+<li>for applied AI four pillars
+<ul>
+<li>corresponding to unlocking unstructured data
+<ul>
+<li>AI &ldquo;core&rdquo; capabilities in language and vision</li>
+<li>natural language processing (NLP)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>the &ldquo;core&rdquo; deep learning breakthroughs
+<ul>
+<li>vision - image recognition</li>
+<li>language - voice recognition</li>
+</ul>
+</li>
+</ul>
+<p><strong>Fastest growing product in history</strong></p>
+<ul>
+<li>result
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-04-01%20%E4%B8%8B%E5%8D%883.24.44.png" alt=""></li>
+<li>conclusion
+<ul>
+<li>smart speaker increases the most quickly to 50%</li>
+<li>but smart speaker goes smoothly after 5 years, compared the continuous dramatical growth of smartphone and TV after reaching 50% (growth flatten)
+<ul>
+<li>may due to the loss of freshness</li>
+<li>may due to the loss of practicality</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Cases</strong></p>
+<ul>
+<li>vision
+<ul>
+<li>in 2015, the accuracy of human and AI are equal, which is 95% (human accuracy level)</li>
+<li>self-driving is another example</li>
+</ul>
+</li>
+<li>language
+<ul>
+<li>in 2017, the accuracy of human and AI are equal, which is 95%</li>
+<li>Amazon Alexa (Echo Dot) is an example
+<ul>
+<li>core components of AI/ML applications
+<ul>
+<li>data input - voice</li>
+<li>data (pre)processing - language data for soundbites + NLP</li>
+<li>predictive models - far field voice recognition + understanding of intent and context of voice question or command</li>
+<li>decision rules (rule sets) - use the appropriate Alexa skill to address user intent</li>
+<li>response/output - Alexa voice response</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>voice-enabled smart kitchen is another example</li>
+</ul>
+</li>
+</ul>
+<h2 id="deep-learning--neural-networks">Deep Learning &amp; Neural Networks</h2>
+<p><strong>Artificial neuron &amp; neuron network</strong></p>
+<ul>
+<li>from scorecards to decision trees
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-04-01%20%E4%B8%8B%E5%8D%884.23.31.png" alt=""></li>
+<li>an artificial neuron
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-04-01%20%E4%B8%8B%E5%8D%884.24.30.png" alt=""></li>
+<li>a neuron network model
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-04-01%20%E4%B8%8B%E5%8D%884.24.45.png" alt=""></li>
+</ul>
+<p><strong>Deep learning</strong></p>
+<ul>
+<li>feature
+<ul>
+<li>the more the layers, the &ldquo;deeper&rdquo; the network</li>
+</ul>
+</li>
+<li>convoluted neural network (CNN)
+<ul>
+<li>not connecting all inputs to all of the neurons in the first layer</li>
+</ul>
+</li>
+<li>recurrent neural network (RNN)
+<ul>
+<li>create feedback loops where the output of later layers act as inputs to earlier layers</li>
+<li>time latency effect</li>
+</ul>
+</li>
+<li>basic machine learning paradigms
+<ul>
+<li>supervised learning
+<ul>
+<li>using labelled data</li>
+</ul>
+</li>
+<li>unsupervised learning
+<ul>
+<li>using unlabelled data</li>
+</ul>
+</li>
+<li>semi-supervised learning
+<ul>
+<li>using a small amount of labelled data</li>
+<li>and unlabelled data</li>
+</ul>
+</li>
+<li>reinforcement learning
+<ul>
+<li>concerned with how intelligent agents ought to take actions in an environment in order to maximize the notion of cumulative reward</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="white-box--black-box-ai">White Box &amp; Black Box AI</h2>
+<p><strong>Create a common sense baseline first</strong>
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-04-01%20%E4%B8%8B%E5%8D%885.15.57.png" alt=""></p>
+<p><strong>White box vs. black box AI</strong></p>
+<ul>
+<li>white box
+<ul>
+<li>simple models - scorecards, decision trees</li>
+<li>easy to understand how a score and prediction about someone is arrived</li>
+<li>which data items are important, which less</li>
+<li>easy to code</li>
+<li>still produce pretty good predictions</li>
+</ul>
+</li>
+<li>black box
+<ul>
+<li>complex models - neural networks, object recognition, language translation, game playing</li>
+<li>requires multiple machine learning approaches - autonomous robots, cars, digital personal assistants</li>
+</ul>
+</li>
+</ul>
+<p><strong>The ethics of applied AI &amp; deep learning</strong></p>
+<ul>
+<li>can do with AI -&gt; should do with AI</li>
+</ul>
+<h2 id="additional-reading">Additional Reading</h2>
+<ul>
+<li><a href="https://spectrum.ieee.org/tech-talk/at-work/tech-careers/computer-vision-leader-feifei-li-on-why-ai-needs-diversity">Computer Vision Leader Fei-Fei Li on Why AI Needs Diversity</a></li>
+<li><a href="https://medium.com/self-driving-cars/pony-ai-launches-chinas-first-robotaxi-service-8603bd56d314">Pony.AI Launches China’s First Robotaxi Service</a></li>
+<li><a href="http://blog.ramakrishnan.com">A Good Blog</a></li>
+<li><a href="https://www.theverge.com/2016/3/9/11185030/google-deepmind-alphago-go-artificial-intelligence-impact">Why Is Google&rsquo;s Go Win Such a Big Deal?</a></li>
+<li><a href="https://www.wired.com/story/amazon-artificial-intelligence-flywheel/">Inside Amazon&rsquo;s Artificial Intelligence Flywheel</a></li>
+<li><a href="https://www.repairerdrivennews.com/2017/06/28/alibaba-chinese-photo-estimating-ai-handles-12-claims-in-6-seconds/">Alibaba: Chinese Photo-Estimating AI Handles 12 Claims in 6 Seconds</a></li>
+<li><a href="https://www.sixthtone.com/news/1005216/scan-reading-ai-systems-are-helping-doctors-diagnose-covid-19">Scan-Reading AI Systems Are Helping Doctors Diagnose COVID-19</a></li>
+<li><a href="https://www.nationalgeographic.com/history/article/maya-laser-lidar-guatemala-pacunam#:~:text=Laser%20technology%20known%20as%20LiDAR,ground%2Dbased%20research%20had%20suggested.&amp;text=unknown%20areas%20of%20Maya%20cities">Exclusive: Laser Scans Reveal Maya &ldquo;Megalopolis&rdquo; Below Guatemalan Jungle</a></li>
+<li><a href="https://www.sciencemag.org/news/2017/07/how-ai-detectives-are-cracking-open-black-box-deep-learning">How AI Detectives Are Cracking Open the Black Box of Deep Learning</a></li>
+<li><a href="https://towardsdatascience.com/machine-learning-interpretability-techniques-662c723454f3">Black-Box Versus White-Box Models</a></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>ECOM7122 Blue Ocean Value Innovation</title>
