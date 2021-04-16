@@ -6,8 +6,39 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-        <lastBuildDate>Wed, 31 Mar 2021 11:57:06 +0800</lastBuildDate>
+        <lastBuildDate>Fri, 16 Apr 2021 14:47:37 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ECOM6029 Cases and Relevant Materials</title>
+            <link>https://www.marshalgao.com/ecom6029-cases-and-relevant-materials/</link>
+            <pubDate>Fri, 16 Apr 2021 14:47:37 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/ecom6029-cases-and-relevant-materials/</guid>
+            <description>Overview Since this course is mainly focus on the discussion and cases, the note will only provide some cases and relevant materials for review.
+Cases  Nintendo&amp;rsquo;s Disruptive Strategy: Implications for the Video Game Industry Facebook: Facing off Against Tencent Apple: How to Grow on Chinese Soil Walmart China: Challenging Alibaba&amp;rsquo;s New Retail Lenovo: Being on Top of a Declining Industry Daksh and IBM  Relevant Materials  From Mental Models to Transformation: Overcoming Inhibitors to Change How to Plan E-Business Initiatives in Established Companies Innovating Across the Business Model Business Model Analysis for Entrepreneurs Reinventing Your Business Model  </description>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Cases%20and%20Relevant%20Materials.png" alt=""></p>
+<h2 id="overview">Overview</h2>
+<p>Since this course is mainly focus on the discussion and cases, the note will only provide some cases and relevant materials for review.</p>
+<h2 id="cases">Cases</h2>
+<ul>
+<li><a href="../articles/Nintendo_DisruptiveStrategy.pdf">Nintendo&rsquo;s Disruptive Strategy: Implications for the Video Game Industry</a></li>
+<li><a href="../articles/Facebook.pdf">Facebook: Facing off Against Tencent</a></li>
+<li><a href="../articles/Apple.pdf">Apple: How to Grow on Chinese Soil</a></li>
+<li><a href="../articles/Walmart_China_19-643C.pdf">Walmart China: Challenging Alibaba&rsquo;s New Retail</a></li>
+<li><a href="../articles/Lenovo.pdf">Lenovo: Being on Top of a Declining Industry</a></li>
+<li><a href="../articles/DAKSH.pdf">Daksh and IBM</a></li>
+</ul>
+<h2 id="relevant-materials">Relevant Materials</h2>
+<ul>
+<li><a href="../articles/MentalModels_Transformation.pdf">From Mental Models to Transformation: Overcoming Inhibitors to Change</a></li>
+<li><a href="../articles/HowToPlanE-BusinessInitiatives.pdf">How to Plan E-Business Initiatives in Established Companies</a></li>
+<li><a href="../articles/InnovatingAcross_BM.pdf">Innovating Across the Business Model</a></li>
+<li><a href="../articles/BusinessModelAnalysis.pdf">Business Model Analysis for Entrepreneurs</a></li>
+<li><a href="../articles/ReinventingYourBusinessModel.pdf">Reinventing Your Business Model</a></li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>ECOM7122 Deep Learning</title>
