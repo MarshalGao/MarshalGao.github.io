@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>autoencoder on This is Marshal</title>
+    <link>https://www.marshalgao.com/tags/autoencoder/</link>
+    <description>Recent content in autoencoder on This is Marshal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 09 May 2021 15:18:22 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/autoencoder/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FITE7410 Autoencoder and Benford&#39;s Law</title>
+      <link>https://www.marshalgao.com/fite7410-autoencoder-and-benfords-law/</link>
+      <pubDate>Sun, 09 May 2021 15:18:22 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/fite7410-autoencoder-and-benfords-law/</guid>
+      <description>Review and Autoencoder A qiuck review
+ assumptions underlying PCA  is not Gaussian distribution interval-level measurement random sampling linearity large variances have important structure the principal components are orthogonal  fraud detection with outliers  assume data has N features (N-dimensions) using PCA to find key components identify outliers using the key components  the reason of using PCA  N-dimensional data are difficult to understand PCA supports dimension reduction  PCA  is a technique to reduce the dimensionality of data by forming new variables that are linear composites of the original variables   Autoencoder</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Marshal ">
+<meta name="description" content="Review and Autoencoder A qiuck review
+ assumptions underlying PCA  is not Gaussian distribution interval-level measurement random sampling linearity large variances have important structure the principal components are orthogonal  fraud detection with outliers  assume data has N features (N-dimensions) using PCA to find key components identify outliers using the key components  the reason of using PCA  N-dimensional data are difficult to understand PCA supports dimension reduction  PCA  is a technique to reduce the dimensionality of data by forming new variables that are linear composites of the original variables   Autoencoder" />
+<meta name="keywords" content=", fite7410, financial fraud analytics, fintech, autoencoder, benford&#39;s law" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://www.marshalgao.com/fite7410-autoencoder-and-benfords-law/" />
+
+
+    <title>
+        
+            FITE7410 Autoencoder and Benford&#39;s Law :: This is Marshal 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://www.marshalgao.com/main.1abfe30dec5ae0f5c4f84acd6413b12f63e4a6f9e1e7167f42de12192bfd25e9.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.marshalgao.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.marshalgao.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.marshalgao.com/favicon-16x16.png">
+    <link rel="manifest" href="https://www.marshalgao.com/site.webmanifest">
+    <link rel="mask-icon" href="https://www.marshalgao.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://www.marshalgao.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="FITE7410 Autoencoder and Benford&#39;s Law">
+<meta itemprop="description" content="Review and Autoencoder A qiuck review
+ assumptions underlying PCA  is not Gaussian distribution interval-level measurement random sampling linearity large variances have important structure the principal components are orthogonal  fraud detection with outliers  assume data has N features (N-dimensions) using PCA to find key components identify outliers using the key components  the reason of using PCA  N-dimensional data are difficult to understand PCA supports dimension reduction  PCA  is a technique to reduce the dimensionality of data by forming new variables that are linear composites of the original variables   Autoencoder">
+<meta itemprop="datePublished" content="2021-05-09T15:18:22+08:00" />
+<meta itemprop="dateModified" content="2021-05-09T15:18:22+08:00" />
+<meta itemprop="wordCount" content="1689">
+<meta itemprop="image" content="https://www.marshalgao.com/"/>
+
+
+
+<meta itemprop="keywords" content="fite7410,financial fraud analytics,fintech,autoencoder,benford&#39;s law," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.marshalgao.com/"/>
+
+<meta name="twitter:title" content="FITE7410 Autoencoder and Benford&#39;s Law"/>
+<meta name="twitter:description" content="Review and Autoencoder A qiuck review
+ assumptions underlying PCA  is not Gaussian distribution interval-level measurement random sampling linearity large variances have important structure the principal components are orthogonal  fraud detection with outliers  assume data has N features (N-dimensions) using PCA to find key components identify outliers using the key components  the reason of using PCA  N-dimensional data are difficult to understand PCA supports dimension reduction  PCA  is a technique to reduce the dimensionality of data by forming new variables that are linear composites of the original variables   Autoencoder"/>
+
+
+
+    <meta property="og:title" content="FITE7410 Autoencoder and Benford&#39;s Law" />
+<meta property="og:description" content="Review and Autoencoder A qiuck review
+ assumptions underlying PCA  is not Gaussian distribution interval-level measurement random sampling linearity large variances have important structure the principal components are orthogonal  fraud detection with outliers  assume data has N features (N-dimensions) using PCA to find key components identify outliers using the key components  the reason of using PCA  N-dimensional data are difficult to understand PCA supports dimension reduction  PCA  is a technique to reduce the dimensionality of data by forming new variables that are linear composites of the original variables   Autoencoder" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.marshalgao.com/fite7410-autoencoder-and-benfords-law/" />
+<meta property="og:image" content="https://www.marshalgao.com/"/>
+<meta property="article:published_time" content="2021-05-09T15:18:22+08:00" />
+<meta property="article:modified_time" content="2021-05-09T15:18:22+08:00" />
+
+
+
+
+    <meta property="article:section" content="HKU" />
+
+
+
+    <meta property="article:published_time" content="2021-05-09 15:18:22 &#43;0800 HKT" />
+
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css" integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.js" integrity="sha384-JiKN5O8x9Hhs/UE5cT5AAJqieYlOZbGT3CHws/y97o3ty4R7/O5poG9F3JoiOYw1" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://www.marshalgao.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://www.marshalgao.com/categories/hku">HKU</a></li><li><a href="https://www.marshalgao.com/categories/technology">TECH</a></li><li><a href="https://www.marshalgao.com/categories/product-manager">PM</a></li><li><a href="https://www.marshalgao.com/categories/life">LIFE</a></li><li><a href="https://www.marshalgao.com/about/">ABOUT</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        8 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://www.marshalgao.com/fite7410-autoencoder-and-benfords-law/">FITE7410 Autoencoder and Benford&rsquo;s Law</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Autoencoder%20and%20Benford%E2%80%99s%20Law.png" alt=""></figure></p>
+
+<h2 id="review-and-autoencoder">Review and Autoencoder</h2>
+
+<p><strong>A qiuck review</strong></p>
+
+<ul>
+<li>assumptions underlying PCA
+
+<ul>
+<li>is not Gaussian distribution</li>
+<li>interval-level measurement</li>
+<li>random sampling</li>
+<li>linearity</li>
+<li>large variances have important structure</li>
+<li>the principal components are orthogonal</li>
+</ul></li>
+<li>fraud detection with outliers
+
+<ul>
+<li>assume data has N features (N-dimensions)</li>
+<li>using PCA to find key components</li>
+<li>identify outliers using the key components</li>
+</ul></li>
+<li>the reason of using PCA
+
+<ul>
+<li>N-dimensional data are difficult to understand</li>
+<li>PCA supports dimension reduction</li>
+</ul></li>
+<li>PCA
+
+<ul>
+<li>is a technique to reduce the dimensionality of data by forming new variables that are linear composites of the original variables</li>
+</ul></li>
+</ul>
+
+<p><strong>Autoencoder</strong></p>
+
+<ul>
+<li>definition
+
+<ul>
+<li>an autoencoder is a type of artificial neural network used to learn efficient data coding in an unsupervised manner</li>
+<li>it is an neural network that is trained to recreate as output what it is fed as input
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21050901.png" alt=""></figure></li>
+</ul></li>
+<li>characteristics
+
+<ul>
+<li>for non-linear situation</li>
+<li>feed-forward neural network</li>
+<li>encoder and decoder</li>
+<li>unsupervised learning</li>
+<li>reconstruct the input in the output layer</li>
+<li>code layer is the latent representation</li>
+<li>with autoencoder, the hidden layers will map the input to a vector space in a “nice” way</li>
+<li>using fewer neurons in the output layer, we map the input from a high dimensional space to one with few dimensions, i.e. dimension reduction</li>
+<li>for higher dimensional data, autoencoders are capable of learning a complex representation of the data (manifold) which can be used to describe observations in a lower dimensionality and correspondingly decoded into the original input space</li>
+</ul></li>
+<li>applications
+
+<ul>
+<li>dimensionality reduction</li>
+<li>information retrieval</li>
+<li>anomaly detection
+
+<ul>
+<li>fraud detection</li>
+<li>insider detection</li>
+<li>intrusion detection</li>
+</ul></li>
+<li>image processing</li>
+<li>drug discovery</li>
+<li>population synthesis</li>
+<li>popularity prediction</li>
+<li>machine translation</li>
+</ul></li>
+
+<li><p>using reconstruction error to find the fraudulent transactions</p>
+
+<ul>
+<li>the dataset has too few fraudulent cases</li>
+
+<li><p>create an autoencoder and train it only on non-fraudulent transactions</p>
+
+<ul>
+<li>train the autoencoder with non-fraudulent transactions only</li>
+<li>after 100 epochs, we have an encoder</li>
+<li>feed all transactions of the training data set into the trained encoder</li>
+
+<li><p>calculate the error (reconstruction error) between the input and the output</p>
+
+<ul>
+<li><p>reconstruction error</p>
+
+<ul>
+<li>autoencoders compress the input into a lower-dimensional projection and then reconstruct the output from this representation</li>
+<li>reconstruction error is the distance between the original input and its autoencoder reconstruction</li>
+</ul>
+
+<p><span  class="math">\[L(x,x^{\prime})={||x-x^{\prime}||}^2\]</span></p></li>
+</ul></li>
+</ul></li>
+
+<li><p>evaluate the result</p>
+
+<ul>
+<li>it is expected that the reconstruction error of the autoencoder is higher for fraudulent transactions than the normal transactions</li>
+<li>transaction <span  class="math">\(t\)</span> is defined to be fraudulent if it falls outside a confidence interval that is d standard deviations from the mean for some parameter <span  class="math">\(d: mean + d \times stdev\)</span></li>
+<li>if the data is normally distributed
+
+<ul>
+<li>if the reconstruction error of a transaction &gt; <span  class="math">\(d: mean + 3 \times stdev\)</span>, mark the case as fraudulent
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21050902.png" alt=""></figure></li>
+</ul></li>
+<li>if the data is not normally distributed
+
+<ul>
+<li>by Chebyshev's inequality, the probability of a value falling outside this interval is at most <span  class="math">\(\frac{1}{d^2}\)</span>
+
+<ul>
+<li>for d = 3, the probability is at most 0.1111</li>
+<li>for d = 4, the probability is at most 0.0625
+<br></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>A real autoencoder</strong></p>
+
+<ul>
+<li>process
+
+<ul>
+<li>normalize and scale the data set</li>
+<li>randomly split into training data set (80%) and testing data set (20%)</li>
+<li>create the autoencoder: 5 fully connected layers with 29, 14, 7, 7 and 29 (for example) neurons respectively</li>
+<li>feed the normal data set into the autoencoder model for training</li>
+<li>check whether the reconstruction error on the training data set converge or not
+
+<ul>
+<li>the reconstruction error on the training and testing data sets seems to converge nicely
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21050903.png" alt=""></figure></li>
+</ul></li>
+<li>evaluate the performance using the testing data set</li>
+</ul></li>
+<li>evaluation
+
+<ul>
+<li>metrics
+
+<ul>
+<li><span  class="math">\(Recall=\frac{TP}{TP+FN}=TPR\)</span>
+
+<ul>
+<li>measures how many relevant results are returned</li>
+</ul></li>
+<li><span  class="math">\(Precision=\frac{TP}{TP+FP}\)</span>
+
+<ul>
+<li>measures the relevancy of obtained results</li>
+</ul></li>
+<li><span  class="math">\(F1=2 \times \frac{Recall \times Precision}{Recall+Precision}\)</span></li>
+<li><span  class="math">\(True Positive Rate (TPR)=\frac{TP}{TP+FN}\)</span></li>
+<li><span  class="math">\(False Positive Rate (FPR)=\frac{FP}{FP+TN}\)</span></li>
+<li>AUC = Area Under ROC Curve
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-05-09%2018.52.36.png" alt=""></figure></li>
+<li>good to have both Precision and Recall values equal to 1</li>
+<li>high recall low precision: classify many fraud transactions, most of them are normal transactions (high false positives, low relevancy)</li>
+<li>high precision low recall: classify few fraud transactions (with high relevancy), many fraud transactions cannot be found</li>
+</ul></li>
+<li>optimal threshold
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-05-09%2018.57.43.png" alt=""></figure>
+
+<ul>
+<li>threshold value
+
+<ul>
+<li>the boundary between the normal and fraudulent transactions using the autoencoder</li>
+</ul></li>
+<li>different threshold value produces different reconstruction error
+
+<ul>
+<li>when threshold value increases, reconstruction error increases</li>
+</ul></li>
+<li>when threshold value increases, the precision increases and the recall decreases
+
+<ul>
+<li>when threshold = 50, the recall is 0.2 and the precision is 0.4
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21050906.png" alt=""></figure></li>
+</ul></li>
+<li>comparing different threshold values
+
+<ul>
+<li>higher threshold value
+
+<ul>
+<li>lower in false classification of normal transaction, but discovery of fewer fraudulent cases</li>
+</ul></li>
+<li>lower threshold value
+
+<ul>
+<li>more fraudulent cases can be found, but more false classification of normal transaction
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-05-09%2019.08.37.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>ROC curve (Receiver Operating Characteristic curve)
+
+<ul>
+<li>change the threshold, show the TPR vs FPR</li>
+<li>a graph showing the performance of a classification model for all classification thresholds</li>
+<li>lowering the classification threshold classifies more items as positive
+
+<ul>
+<li>increasing both False Positives and True Positives
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21050904.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+<li>Precision-Recall curve
+
+<ul>
+<li>a high area under the curve represents both high recall and high precision
+
+<ul>
+<li>high precision means to false positive rate</li>
+<li>high recall means low false negative rate</li>
+</ul></li>
+<li>high scores for both precision and recall means the classifier returns accurate results (high precision) and finds majority of all fraudulent transactions (high recall)
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21050905.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>Fraud detection using autoencoder and k-NN</strong></p>
+
+<ul>
+<li>process
+
+<ul>
+<li>using only the encoder part of an autoencoder (dimension reduction)</li>
+<li>apply k-Nearest Neighbors (k-NN) for classification to the instances in the reduced dimension space</li>
+<li>both normal and fraudulent transactions will be used in training</li>
+</ul></li>
+<li>example
+
+<ul>
+<li>train the encoder with all transaction in the training data set</li>
+<li>for the k-NN classification, both training and testing transactions will be mapped to the “reduced” 12-dimensional space with the encoder</li>
+<li>for each transaction in the testing data set, the 3 closest neighboring instances of the training data set decide whether it is a fraudulent transaction or not
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21050907.png" alt=""></figure></li>
+</ul></li>
+</ul>
+
+<h2 id="benfords-law-the-first-digit-law">Benford's Law (The First Digit Law)</h2>
+
+<p><strong>Overview</strong></p>
+
+<ul>
+<li>content
+
+<ul>
+<li>the frequency of occurrence of the leading digits in “naturally occurring” numerical distributions is predictable and nonuniform, but closer to a power-law distribution</li>
+<li>a given number is six times more likely to start with a 1 than a 9</li>
+<li>this is counterintuitive, people would expect a uniform distribution</li>
+</ul></li>
+<li>characteristics
+
+<ul>
+<li>a series of numerical records follows Benford’s Law when they
+
+<ul>
+<li>represents magnitudes of events or events, such as populations of cities, flows of water in rivers</li>
+<li>do not have pre-established minimum or maximum limits</li>
+<li>are not made up of numbers used as identifiers, such as ID cards, bank accounts, telephone numbers</li>
+<li>have a mean which is less than the median, and the data is not concentrated around the mean
+<br></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>Benford's law in fraud detection</strong></p>
+
+<ul>
+<li>an experiment
+
+<ul>
+<li>start with a Benford dataset D</li>
+<li>D was contaminated by a sample from a normal distribution with the same mean and the same variance of D</li>
+<li>the data were replaced at random in D by the fraudulent, so that the size of the dataset D’ was kept constant</li>
+<li>measure the distance (Euclidean distance) of the contaminated dataset D from Benford’s Law
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21050908.png" alt=""></figure></li>
+</ul></li>
+<li>observations
+
+<ul>
+<li>the figure shows the evolution of the distance from Benford’s Law to the size of the fraudulent sample (% of the size of the dataset D)</li>
+<li>range of contamination was chosen to be 0-10%</li>
+<li>an exponential curve was found to be “good” fit, i.e. distance from Benford’s Law increases exponentially as the dataset is more contaminated
+
+<ul>
+<li>distance can be used as a measure for fraud detection</li>
+<li>variance in distance is large, especially for high level of contamination → separating noise from fraud may be difficult</li>
+</ul></li>
+</ul></li>
+
+<li><p>mathmatically usage</p>
+
+<ul>
+<li>the frequency of occurrence of the leading digit D in naturally occurring numerical distributions following a logarithmically decaying distribution</li>
+</ul>
+
+<p><span  class="math">\[Pr(D_1 = d) = log_{10}(1+\frac{1}{d})\]</span></p>
+
+<ul>
+<li>result
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-05-09%2021.54.11.png" alt=""></figure></li>
+<li>idea
+
+<ul>
+<li>if a certain set of values follows Benford’s Law, then model’s for the corresponding predicted values should also follow Benford’s Law</li>
+</ul></li>
+<li>for fraud detection
+
+<ul>
+<li>manipulated or fraudulent data do not trend to confirm to Benford’s Law, whereas unmanipulated data do
+
+<ul>
+<li>Benford’s Law can be used to investigate fraud patterns for datasets in fields where categorical values have been counted, such as medical test results or income tax revenues</li>
+</ul></li>
+</ul></li>
+<li>example 1 - consider financial data
+
+<ul>
+<li>assume someone owes a stock with a value of $1,000</li>
+<li>for his fund to arrive $2,000, it would have to double by growing 100%</li>
+<li>to further grow from $2,000 to $3,000, it would only need to increase by 50%</li>
+<li>to further grow from $3,000 to $4,000, i.e. first digit from 3 to 4, it would need to increase by 33.3%</li>
+<li>therefore, for the first digit from 1 to 2 (100%), it requires more growth than for the first digit from 3 to 4 (33.3%)</li>
+<li>Benford distribution is a “distribution of distributions”</li>
+</ul></li>
+<li>example 2 - Enron Case (splitting the invoice)
+
+<ul>
+<li>consider a company where any travel and entertainment expenses over $10,000 must be approved by the vice president</li>
+<li>employees will split invoice with amount over $10,000 to avoid the “approval”</li>
+<li>a spike in first-digit frequencies around 5 and 6, clear violation of Bendford’s Law
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/20050909.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+
+<li><p>notes</p>
+
+<ul>
+<li>Benford’s Law works best for fraud detection when the criminals are unaware of it</li>
+<li>if the criminals know how the law works, they can fool or cheat it</li>
+<li>you can use Benford’s Law to flag datasets that might be fraudulent, but you can’t use it to prove the datasets are not fraudulent</li>
+</ul></li>
+
+<li><p>Chi-square goodness-of-fit test</p>
+
+<ul>
+<li>use statistical test to verify that a dataset obeys Benford’s law</li>
+<li>Chi-square goodness-of-fit test: statistical test to check whether an empirical (observed) distribution differs significantly from a theoretical (expected) distribution</li>
+<li>a significance level (p-value) is used as the discriminator
+
+<ul>
+<li>commonly used p-value: 0.05, means 5% risk of erroneously concluding a differences exists when it does not</li>
+<li>other p-value: 0.01 or 0.1</li>
+</ul></li>
+<li>process
+
+<ul>
+<li>find the degree of freedom (df), defined as number of categories (k) minus 1: df = k – 1
+
+<ul>
+<li>for Benford’s law, df = 9 – 1 = 8</li>
+</ul></li>
+<li>calculate the expected frequency count at each level by multiplying the sample size by the theoretical proportions at each level</li>
+<li>calculate the chi-square random variable, aka the test statistic</li>
+<li>refer to the chi-square distribution table for the p-value for df=8
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21050910.png" alt=""></figure></li>
+<li>if the test statistic is less than the p-value in the table, it is considered as significant, then you cannot reject the hypothesis that the observed and theoretical distributions are the same
+
+<ul>
+<li>if the test statistic &lt; 15.51, the p-value is &gt; 0.05, there is no statistically significant difference between the observed dataset and the Benford’s law prediction</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/tags/fite7410/">fite7410</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/financial-fraud-analytics/">financial fraud analytics</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/fintech/">fintech</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/autoencoder/">autoencoder</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/benfords-law/">benford&#39;s law</a></span>
+        
+    </p>
+
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/categories/hku/">HKU</a></span>
+        
+    </p>
+
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        1689 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2021-05-09 15:18
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+
+          
+            <span class="button next">
+              <a href="https://www.marshalgao.com/fite7410-computer-forensic-and-data-analytics-in-ff-and-ml/">
+                <span class="button__text">FITE7410 Computer Forensic and Data Analytics in FF and ML</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span><a href="https://www.hku.hk" target="_blank" rel="noopener">The University of Hong Kong</a></span>
+            <span><a href="https://www.ecom-icom.hku.hk" target="_blank" rel="noopener">ECIC</a></span>
+          </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020-2021</span>
+            
+                
+                <span>Marshal</a></span>
+            
+            
+            
+        </div>
+    </div>
+</footer>
+
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://www.marshalgao.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>

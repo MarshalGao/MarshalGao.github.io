@@ -6,8 +6,1317 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-        <lastBuildDate>Fri, 16 Apr 2021 14:47:37 +0800</lastBuildDate>
+        <lastBuildDate>Sun, 09 May 2021 15:18:22 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>FITE7410 Autoencoder and Benford&#39;s Law</title>
+            <link>https://www.marshalgao.com/fite7410-autoencoder-and-benfords-law/</link>
+            <pubDate>Sun, 09 May 2021 15:18:22 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/fite7410-autoencoder-and-benfords-law/</guid>
+            <description>Review and Autoencoder A qiuck review
+ assumptions underlying PCA  is not Gaussian distribution interval-level measurement random sampling linearity large variances have important structure the principal components are orthogonal  fraud detection with outliers  assume data has N features (N-dimensions) using PCA to find key components identify outliers using the key components  the reason of using PCA  N-dimensional data are difficult to understand PCA supports dimension reduction  PCA  is a technique to reduce the dimensionality of data by forming new variables that are linear composites of the original variables   Autoencoder</description>
+            <content type="html"><![CDATA[<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Autoencoder%20and%20Benford%E2%80%99s%20Law.png" alt=""></figure></p>
+
+<h2 id="review-and-autoencoder">Review and Autoencoder</h2>
+
+<p><strong>A qiuck review</strong></p>
+
+<ul>
+<li>assumptions underlying PCA
+
+<ul>
+<li>is not Gaussian distribution</li>
+<li>interval-level measurement</li>
+<li>random sampling</li>
+<li>linearity</li>
+<li>large variances have important structure</li>
+<li>the principal components are orthogonal</li>
+</ul></li>
+<li>fraud detection with outliers
+
+<ul>
+<li>assume data has N features (N-dimensions)</li>
+<li>using PCA to find key components</li>
+<li>identify outliers using the key components</li>
+</ul></li>
+<li>the reason of using PCA
+
+<ul>
+<li>N-dimensional data are difficult to understand</li>
+<li>PCA supports dimension reduction</li>
+</ul></li>
+<li>PCA
+
+<ul>
+<li>is a technique to reduce the dimensionality of data by forming new variables that are linear composites of the original variables</li>
+</ul></li>
+</ul>
+
+<p><strong>Autoencoder</strong></p>
+
+<ul>
+<li>definition
+
+<ul>
+<li>an autoencoder is a type of artificial neural network used to learn efficient data coding in an unsupervised manner</li>
+<li>it is an neural network that is trained to recreate as output what it is fed as input
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21050901.png" alt=""></figure></li>
+</ul></li>
+<li>characteristics
+
+<ul>
+<li>for non-linear situation</li>
+<li>feed-forward neural network</li>
+<li>encoder and decoder</li>
+<li>unsupervised learning</li>
+<li>reconstruct the input in the output layer</li>
+<li>code layer is the latent representation</li>
+<li>with autoencoder, the hidden layers will map the input to a vector space in a “nice” way</li>
+<li>using fewer neurons in the output layer, we map the input from a high dimensional space to one with few dimensions, i.e. dimension reduction</li>
+<li>for higher dimensional data, autoencoders are capable of learning a complex representation of the data (manifold) which can be used to describe observations in a lower dimensionality and correspondingly decoded into the original input space</li>
+</ul></li>
+<li>applications
+
+<ul>
+<li>dimensionality reduction</li>
+<li>information retrieval</li>
+<li>anomaly detection
+
+<ul>
+<li>fraud detection</li>
+<li>insider detection</li>
+<li>intrusion detection</li>
+</ul></li>
+<li>image processing</li>
+<li>drug discovery</li>
+<li>population synthesis</li>
+<li>popularity prediction</li>
+<li>machine translation</li>
+</ul></li>
+
+<li><p>using reconstruction error to find the fraudulent transactions</p>
+
+<ul>
+<li>the dataset has too few fraudulent cases</li>
+
+<li><p>create an autoencoder and train it only on non-fraudulent transactions</p>
+
+<ul>
+<li>train the autoencoder with non-fraudulent transactions only</li>
+<li>after 100 epochs, we have an encoder</li>
+<li>feed all transactions of the training data set into the trained encoder</li>
+
+<li><p>calculate the error (reconstruction error) between the input and the output</p>
+
+<ul>
+<li><p>reconstruction error</p>
+
+<ul>
+<li>autoencoders compress the input into a lower-dimensional projection and then reconstruct the output from this representation</li>
+<li>reconstruction error is the distance between the original input and its autoencoder reconstruction</li>
+</ul>
+
+<p><span  class="math">\[L(x,x^{\prime})={||x-x^{\prime}||}^2\]</span></p></li>
+</ul></li>
+</ul></li>
+
+<li><p>evaluate the result</p>
+
+<ul>
+<li>it is expected that the reconstruction error of the autoencoder is higher for fraudulent transactions than the normal transactions</li>
+<li>transaction <span  class="math">\(t\)</span> is defined to be fraudulent if it falls outside a confidence interval that is d standard deviations from the mean for some parameter <span  class="math">\(d: mean + d \times stdev\)</span></li>
+<li>if the data is normally distributed
+
+<ul>
+<li>if the reconstruction error of a transaction &gt; <span  class="math">\(d: mean + 3 \times stdev\)</span>, mark the case as fraudulent
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21050902.png" alt=""></figure></li>
+</ul></li>
+<li>if the data is not normally distributed
+
+<ul>
+<li>by Chebyshev's inequality, the probability of a value falling outside this interval is at most <span  class="math">\(\frac{1}{d^2}\)</span>
+
+<ul>
+<li>for d = 3, the probability is at most 0.1111</li>
+<li>for d = 4, the probability is at most 0.0625
+<br></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>A real autoencoder</strong></p>
+
+<ul>
+<li>process
+
+<ul>
+<li>normalize and scale the data set</li>
+<li>randomly split into training data set (80%) and testing data set (20%)</li>
+<li>create the autoencoder: 5 fully connected layers with 29, 14, 7, 7 and 29 (for example) neurons respectively</li>
+<li>feed the normal data set into the autoencoder model for training</li>
+<li>check whether the reconstruction error on the training data set converge or not
+
+<ul>
+<li>the reconstruction error on the training and testing data sets seems to converge nicely
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21050903.png" alt=""></figure></li>
+</ul></li>
+<li>evaluate the performance using the testing data set</li>
+</ul></li>
+<li>evaluation
+
+<ul>
+<li>metrics
+
+<ul>
+<li><span  class="math">\(Recall=\frac{TP}{TP+FN}=TPR\)</span>
+
+<ul>
+<li>measures how many relevant results are returned</li>
+</ul></li>
+<li><span  class="math">\(Precision=\frac{TP}{TP+FP}\)</span>
+
+<ul>
+<li>measures the relevancy of obtained results</li>
+</ul></li>
+<li><span  class="math">\(F1=2 \times \frac{Recall \times Precision}{Recall+Precision}\)</span></li>
+<li><span  class="math">\(True Positive Rate (TPR)=\frac{TP}{TP+FN}\)</span></li>
+<li><span  class="math">\(False Positive Rate (FPR)=\frac{FP}{FP+TN}\)</span></li>
+<li>AUC = Area Under ROC Curve
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-05-09%2018.52.36.png" alt=""></figure></li>
+<li>good to have both Precision and Recall values equal to 1</li>
+<li>high recall low precision: classify many fraud transactions, most of them are normal transactions (high false positives, low relevancy)</li>
+<li>high precision low recall: classify few fraud transactions (with high relevancy), many fraud transactions cannot be found</li>
+</ul></li>
+<li>optimal threshold
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-05-09%2018.57.43.png" alt=""></figure>
+
+<ul>
+<li>threshold value
+
+<ul>
+<li>the boundary between the normal and fraudulent transactions using the autoencoder</li>
+</ul></li>
+<li>different threshold value produces different reconstruction error
+
+<ul>
+<li>when threshold value increases, reconstruction error increases</li>
+</ul></li>
+<li>when threshold value increases, the precision increases and the recall decreases
+
+<ul>
+<li>when threshold = 50, the recall is 0.2 and the precision is 0.4
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21050906.png" alt=""></figure></li>
+</ul></li>
+<li>comparing different threshold values
+
+<ul>
+<li>higher threshold value
+
+<ul>
+<li>lower in false classification of normal transaction, but discovery of fewer fraudulent cases</li>
+</ul></li>
+<li>lower threshold value
+
+<ul>
+<li>more fraudulent cases can be found, but more false classification of normal transaction
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-05-09%2019.08.37.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>ROC curve (Receiver Operating Characteristic curve)
+
+<ul>
+<li>change the threshold, show the TPR vs FPR</li>
+<li>a graph showing the performance of a classification model for all classification thresholds</li>
+<li>lowering the classification threshold classifies more items as positive
+
+<ul>
+<li>increasing both False Positives and True Positives
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21050904.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+<li>Precision-Recall curve
+
+<ul>
+<li>a high area under the curve represents both high recall and high precision
+
+<ul>
+<li>high precision means to false positive rate</li>
+<li>high recall means low false negative rate</li>
+</ul></li>
+<li>high scores for both precision and recall means the classifier returns accurate results (high precision) and finds majority of all fraudulent transactions (high recall)
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21050905.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>Fraud detection using autoencoder and k-NN</strong></p>
+
+<ul>
+<li>process
+
+<ul>
+<li>using only the encoder part of an autoencoder (dimension reduction)</li>
+<li>apply k-Nearest Neighbors (k-NN) for classification to the instances in the reduced dimension space</li>
+<li>both normal and fraudulent transactions will be used in training</li>
+</ul></li>
+<li>example
+
+<ul>
+<li>train the encoder with all transaction in the training data set</li>
+<li>for the k-NN classification, both training and testing transactions will be mapped to the “reduced” 12-dimensional space with the encoder</li>
+<li>for each transaction in the testing data set, the 3 closest neighboring instances of the training data set decide whether it is a fraudulent transaction or not
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21050907.png" alt=""></figure></li>
+</ul></li>
+</ul>
+
+<h2 id="benfords-law-the-first-digit-law">Benford's Law (The First Digit Law)</h2>
+
+<p><strong>Overview</strong></p>
+
+<ul>
+<li>content
+
+<ul>
+<li>the frequency of occurrence of the leading digits in “naturally occurring” numerical distributions is predictable and nonuniform, but closer to a power-law distribution</li>
+<li>a given number is six times more likely to start with a 1 than a 9</li>
+<li>this is counterintuitive, people would expect a uniform distribution</li>
+</ul></li>
+<li>characteristics
+
+<ul>
+<li>a series of numerical records follows Benford’s Law when they
+
+<ul>
+<li>represents magnitudes of events or events, such as populations of cities, flows of water in rivers</li>
+<li>do not have pre-established minimum or maximum limits</li>
+<li>are not made up of numbers used as identifiers, such as ID cards, bank accounts, telephone numbers</li>
+<li>have a mean which is less than the median, and the data is not concentrated around the mean
+<br></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>Benford's law in fraud detection</strong></p>
+
+<ul>
+<li>an experiment
+
+<ul>
+<li>start with a Benford dataset D</li>
+<li>D was contaminated by a sample from a normal distribution with the same mean and the same variance of D</li>
+<li>the data were replaced at random in D by the fraudulent, so that the size of the dataset D’ was kept constant</li>
+<li>measure the distance (Euclidean distance) of the contaminated dataset D from Benford’s Law
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21050908.png" alt=""></figure></li>
+</ul></li>
+<li>observations
+
+<ul>
+<li>the figure shows the evolution of the distance from Benford’s Law to the size of the fraudulent sample (% of the size of the dataset D)</li>
+<li>range of contamination was chosen to be 0-10%</li>
+<li>an exponential curve was found to be “good” fit, i.e. distance from Benford’s Law increases exponentially as the dataset is more contaminated
+
+<ul>
+<li>distance can be used as a measure for fraud detection</li>
+<li>variance in distance is large, especially for high level of contamination → separating noise from fraud may be difficult</li>
+</ul></li>
+</ul></li>
+
+<li><p>mathmatically usage</p>
+
+<ul>
+<li>the frequency of occurrence of the leading digit D in naturally occurring numerical distributions following a logarithmically decaying distribution</li>
+</ul>
+
+<p><span  class="math">\[Pr(D_1 = d) = log_{10}(1+\frac{1}{d})\]</span></p>
+
+<ul>
+<li>result
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-05-09%2021.54.11.png" alt=""></figure></li>
+<li>idea
+
+<ul>
+<li>if a certain set of values follows Benford’s Law, then model’s for the corresponding predicted values should also follow Benford’s Law</li>
+</ul></li>
+<li>for fraud detection
+
+<ul>
+<li>manipulated or fraudulent data do not trend to confirm to Benford’s Law, whereas unmanipulated data do
+
+<ul>
+<li>Benford’s Law can be used to investigate fraud patterns for datasets in fields where categorical values have been counted, such as medical test results or income tax revenues</li>
+</ul></li>
+</ul></li>
+<li>example 1 - consider financial data
+
+<ul>
+<li>assume someone owes a stock with a value of $1,000</li>
+<li>for his fund to arrive $2,000, it would have to double by growing 100%</li>
+<li>to further grow from $2,000 to $3,000, it would only need to increase by 50%</li>
+<li>to further grow from $3,000 to $4,000, i.e. first digit from 3 to 4, it would need to increase by 33.3%</li>
+<li>therefore, for the first digit from 1 to 2 (100%), it requires more growth than for the first digit from 3 to 4 (33.3%)</li>
+<li>Benford distribution is a “distribution of distributions”</li>
+</ul></li>
+<li>example 2 - Enron Case (splitting the invoice)
+
+<ul>
+<li>consider a company where any travel and entertainment expenses over $10,000 must be approved by the vice president</li>
+<li>employees will split invoice with amount over $10,000 to avoid the “approval”</li>
+<li>a spike in first-digit frequencies around 5 and 6, clear violation of Bendford’s Law
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/20050909.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+
+<li><p>notes</p>
+
+<ul>
+<li>Benford’s Law works best for fraud detection when the criminals are unaware of it</li>
+<li>if the criminals know how the law works, they can fool or cheat it</li>
+<li>you can use Benford’s Law to flag datasets that might be fraudulent, but you can’t use it to prove the datasets are not fraudulent</li>
+</ul></li>
+
+<li><p>Chi-square goodness-of-fit test</p>
+
+<ul>
+<li>use statistical test to verify that a dataset obeys Benford’s law</li>
+<li>Chi-square goodness-of-fit test: statistical test to check whether an empirical (observed) distribution differs significantly from a theoretical (expected) distribution</li>
+<li>a significance level (p-value) is used as the discriminator
+
+<ul>
+<li>commonly used p-value: 0.05, means 5% risk of erroneously concluding a differences exists when it does not</li>
+<li>other p-value: 0.01 or 0.1</li>
+</ul></li>
+<li>process
+
+<ul>
+<li>find the degree of freedom (df), defined as number of categories (k) minus 1: df = k – 1
+
+<ul>
+<li>for Benford’s law, df = 9 – 1 = 8</li>
+</ul></li>
+<li>calculate the expected frequency count at each level by multiplying the sample size by the theoretical proportions at each level</li>
+<li>calculate the chi-square random variable, aka the test statistic</li>
+<li>refer to the chi-square distribution table for the p-value for df=8
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21050910.png" alt=""></figure></li>
+<li>if the test statistic is less than the p-value in the table, it is considered as significant, then you cannot reject the hypothesis that the observed and theoretical distributions are the same
+
+<ul>
+<li>if the test statistic &lt; 15.51, the p-value is &gt; 0.05, there is no statistically significant difference between the observed dataset and the Benford’s law prediction</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>FITE7410 Computer Forensic and Data Analytics in FF and ML</title>
+            <link>https://www.marshalgao.com/fite7410-computer-forensic-and-data-analytics-in-ff-and-ml/</link>
+            <pubDate>Sat, 08 May 2021 16:22:22 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/fite7410-computer-forensic-and-data-analytics-in-ff-and-ml/</guid>
+            <description>Trade Based Money Laundering (TBML) Overview
+ definition  the process of disguising the proceeds of crime and moving value through the use of trade transactions in an attempt to legitimize their illicit origins or their activities contains lots of transactions   aim  is not the movement of goods, but the movement of money, which the trade transactions facilitate   trade process and financing  international trade involves a range of risks for the parties involved, leading to uncertainty over the timing of payments between the exporter and importer the Wolfsberg Group notes approximately 80% of international trade processed by FIs is open account trading  “open account transaction” involves a sale where the goods are shipped and delivered before payment is due   TBML schemes frequently involve this method because financial institutions have a reduced role on the documentary collection process in the transaction    TBML Risks &amp;amp; Trends Economic sectors and products vulnerable to TBML activities</description>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Computer%20Forensic%20and%20Data%20Analytics%20in%20FF%20and%20ML.png" alt=""></p>
+<h2 id="trade-based-money-laundering-tbml">Trade Based Money Laundering (TBML)</h2>
+<p><strong>Overview</strong></p>
+<ul>
+<li>definition
+<ul>
+<li>the process of disguising the proceeds of crime and moving value through the use of trade transactions in an attempt to legitimize their illicit origins or their activities</li>
+<li>contains lots of transactions</li>
+</ul>
+</li>
+<li>aim
+<ul>
+<li>is not the movement of goods, but the movement of money, which the trade transactions facilitate</li>
+</ul>
+</li>
+<li>trade process and financing
+<ul>
+<li>international trade involves a range of risks for the parties involved, leading to uncertainty over the timing of payments between the exporter and importer</li>
+<li>the Wolfsberg Group notes approximately 80% of international trade processed by FIs is open account trading
+<ul>
+<li>“open account transaction” involves a sale where the goods are shipped and delivered before payment is due</li>
+</ul>
+</li>
+<li>TBML schemes frequently involve this method because financial institutions have a reduced role on the documentary collection process in the transaction</li>
+</ul>
+</li>
+</ul>
+<h2 id="tbml-risks--trends">TBML Risks &amp; Trends</h2>
+<p><strong>Economic sectors and products vulnerable to TBML activities</strong></p>
+<ul>
+<li>details
+<ul>
+<li>a wide range of economic sectors are vulnerable to TBML, meaning both high-value, low-volume products (such as precious metals) and low-value, high volume products (such as second-hand textiles) can be exploited by criminals to launder the proceeds of crime</li>
+<li>common themes conducive to TBML exploitation were identified
+<ul>
+<li>goods with wide pricing margins</li>
+<li>goods with extended trade cycles (i.e., shipping across multiple jurisdictions)</li>
+<li>goods which are difficult for customs authorities to examine</li>
+</ul>
+</li>
+<li>supply chains moving lower-value goods are most at risk to end-to end ownership by a criminal organization or Professional Money Launderer (“PML”) network</li>
+<li>the set-up costs can be considerably lower than supply chains moving higher-value goods and may not attract the same level of scrutiny by authorities across the supply chain</li>
+</ul>
+</li>
+<li>examples
+<ul>
+<li>gold, precious metals, and minerals</li>
+<li>auto parts and vehicles, including second-hand cars or luxury cars</li>
+<li>agricultural products and foodstuffs</li>
+<li>clothing and second-hand textiles</li>
+<li>portable electronics (mobile phones, laptops, etc.)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Common TBML techniques</strong></p>
+<ul>
+<li>misrepresentation of the price of the goods
+<ul>
+<li>a mismatch in the invoice value and the fair market value</li>
+</ul>
+</li>
+<li>misrepresentation of the quantity of goods
+<ul>
+<li>a mismatch in the invoiced quantity and/or quality of goods actually shipped</li>
+</ul>
+</li>
+<li>fictitious trades
+<ul>
+<li>also known as ‘phantom shipments’, seller may not ship any goods at all, but simply collude with a buyer</li>
+</ul>
+</li>
+<li>multiple invoicing of goods
+<ul>
+<li>reuse of existing documentation to justify multiple payments for the same shipment</li>
+</ul>
+</li>
+<li>use of shell or fictitious companies
+<ul>
+<li>the exploitation of shell and front companies has become a key feature of many different types of ML activity</li>
+<li>these companies are incorporated but have no significant assets or operations</li>
+</ul>
+</li>
+<li>black market trades
+<ul>
+<li>commonly referred to as “black market peso exchange arrangements”, this usually involves the domestic transfer of funds to pay for goods on behalf of foreign importer</li>
+</ul>
+</li>
+</ul>
+<p><strong>Use of trade finance in TBML</strong></p>
+<ul>
+<li>trade finance is often used by money launderer as a channel that
+<ul>
+<li>moves the funds around</li>
+<li>minimizes the cost and burden of funds used in trade</li>
+<li>disguises the source of funds through banks</li>
+</ul>
+</li>
+<li>typical trade finance instruments
+<ul>
+<li>import/export trade loan</li>
+<li>import/export invoice discounting</li>
+<li>letters of credit (“L/C”)</li>
+<li>financing for transactions under L/Cs</li>
+</ul>
+</li>
+</ul>
+<h2 id="challenges-to-combating-tbml">Challenges to Combating TBML</h2>
+<p><strong>Overview</strong></p>
+<ul>
+<li>TBML is a complex form of ML</li>
+<li>has low number of successful TBML investigations</li>
+</ul>
+<p><strong>Contents</strong></p>
+<ul>
+<li>lack of understanding and awareness
+<ul>
+<li>national authorities still only have a basic understanding of TBML</li>
+<li>authorities increase the knowledge, but criminals seek new methods through the misuse of the international trade system</li>
+<li>law-abiding organisations often only see a piece of puzzle</li>
+<li>new technologies and the digitalisation of trade increase the speed of trade operations</li>
+</ul>
+</li>
+<li>domestic co-ordination and co-operation
+<ul>
+<li>is one of the fundamental pillars</li>
+<li>a lack of collaboration between national authorities</li>
+<li>de-prioritise investigations into ML</li>
+<li>a lack of information sharing between national authorities</li>
+<li>analyze and match large volumes of data from various sources</li>
+</ul>
+</li>
+<li>international co-operation
+<ul>
+<li>criminals use front companies registered in one jurisdiction and transfer funds and goods between others</li>
+<li>internaltional co-operation in a timely manner</li>
+<li>TBML take place transnationally</li>
+<li>a lack of effective information sharing, how to provide information without significant delays</li>
+</ul>
+</li>
+<li>investigation and prosecution
+<ul>
+<li>ML is carried out by one group of criminals, while the predicate offences are committed by other criminals</li>
+<li>ML activity and predicate offences may lack the sufficient expertise to investigate the associated ML activity</li>
+<li>prosecution need to prove the laundered funds or assests are the proceeds of crime and that the defendant knew this</li>
+<li>knowledge requirement to collect enough evidence is hard, especially if predicate offence was committed in another jurisdiction</li>
+<li>often result in the procesution of predicate offences only, while TBML activity remains out of focus</li>
+</ul>
+</li>
+<li>challenges from the private sector perspective
+<ul>
+<li>FIs are often the forefront of the fight against ML, but criminals constantly improve their ML methods and the private sector has to keep pace</li>
+<li>TBML is highly adaptive, it is difficult for FIs to prioritize resources and translate the latest insights into the business rules and compliance systems</li>
+<li>involved FIs can see only a small part of the network</li>
+<li>verfication of information when there is a lack of a public registry to promptly verify information</li>
+<li>estimating the &ldquo;fair price&rdquo;, TBML using the over-/and under-pricing technique, FIs have only a vague description</li>
+<li>the documentation provided to FIs is often in different formats and languages, which would be done manually and need additional time and resources</li>
+<li>paying methods like letters of credit or documentary collection are often less vulnerable to TBML, money launderers may see open account trade as more attractive because the FI has limited oversight of the transaction</li>
+</ul>
+</li>
+</ul>
+<h2 id="red-flags">Red Flags</h2>
+<p><strong>Categories and contents</strong></p>
+<ul>
+<li>customer red flags
+<ul>
+<li>uncommon transaction structure or overly complex transaction structure</li>
+<li>significantly deviates from their historical pattern</li>
+<li>refuse contact and communication with the authorized insititutions (AIs)</li>
+<li>pay unusually high fees to the AI</li>
+<li>unknown party whose identity is not clear</li>
+<li>the transaction is not commensurate with known customer profile, structure or business strategy
+<ul>
+<li>this may be where the nature or type of goods shipped is not in line with the business nature of the customer - (e.g. a steel company that starts dealing in paper products, or an information technology company that starts dealing in bulk pharmaceuticals)</li>
+<li>the customer has no experience in the goods in question, or the size or frequency of the shipments appear inconsistent with the scale of the customer’s regular business activities (e.g. a sudden surge in transaction size)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>documentary red flags
+<ul>
+<li>high-risk countries or changes in the quality of the goods shipped</li>
+<li>contract value is unusually high for a party</li>
+<li>significantly amended letters of credit without reasonable justification</li>
+<li>the description of goods on the transport documents (if any) cannot be linked to the document terms and / or the actual invoice</li>
+<li>the customer re-submits a document rejected earlier</li>
+<li>unusual codes or markings</li>
+<li>the customer requests
+<ul>
+<li>an L/C without calling for a transport documents or documents evidencing shipment or delivery of goods</li>
+<li>an amendment to a L/C removing the transport document or document evidencing shipment or delivery of goods as required in the original terms</li>
+</ul>
+</li>
+<li>the documentation appears illogical, fraudulent and/or improperly modified</li>
+</ul>
+</li>
+<li>transaction red flags
+<ul>
+<li>the transaction structure is designed to conceal information or make it difficult for FIs to obtain certain information or the true nature of the transaction</li>
+<li>the transaction involves round-tripping or circular transactions</li>
+<li>the method of payment appears inconsistent with the risk characteristics of the transaction</li>
+<li>the transaction involves the use of front or shell companies</li>
+<li>documents through unverified channels such as unauthenticated SWIFT message</li>
+<li>the shipment does not make economic sense, takes an uneconomical shipping route, or the shipping route is unclear</li>
+<li>the commodity is trans-shipped through one or more jurisdictions for no apparent economic or other logistical reason</li>
+<li>the transaction involves the receipt of cash (or other payments) from third party entities that have no apparent connection with the transaction</li>
+<li>the transaction involves an unusually high number of intermediaries</li>
+</ul>
+</li>
+<li>commodity red flags
+<ul>
+<li>commodity being shipped is designated as “high risk” for trade-based money laundering activities (e.g. precious metals and stones)</li>
+<li>commodity being shipped appears inconsistent with the exporter or importer’s regular business activities</li>
+<li>commodity is shipped to (or from) a jurisdiction designated as “high risk” for ML/TF activities
+<ul>
+<li>India for diamonds</li>
+<li>Iraq, Afghanistan for military goods and weapons</li>
+</ul>
+</li>
+<li>significant discrepancies appear between the value of the commodity reported on the invoice and the commodity’s fair market value</li>
+</ul>
+</li>
+<li>vulnerable goods red flags
+<ul>
+<li>the transaction involves goods vulnerable to trade-based money laundering
+<ul>
+<li>gems</li>
+<li>jewellery</li>
+<li>cigarettes and other tobacco products</li>
+<li>consumer electronics and home appliances</li>
+<li>telephone cards and other stored value cards</li>
+<li>precious metals</li>
+<li>military goods and war material (such as arms, ammunition, bombs, missiles, sensor integration equipment, armoured vehicles, electronic equipment, laser systems, flying objects, tear gases and other irritants, certain components used for the production of arms and software developed for the use of war materials)</li>
+<li>obvious dual-use goods, having regard to the “Dual-use Goods List”</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="regtech-in-amlcft-and-fraud-investigation">Regtech in AML/CFT and Fraud Investigation</h2>
+<p><strong>Technology</strong></p>
+<ul>
+<li>using
+<ul>
+<li>Robotic Process Automation (RPA)</li>
+<li>Optical Character Recognition (OCR)</li>
+<li>network / graph analytics and Artificial Intelligence (AI)</li>
+<li>machine learning</li>
+<li>Natural Language Processing / Generation (NLP/NLG)</li>
+<li>cloud computing</li>
+<li>facial / voice recognition</li>
+<li>distributed ledger technology</li>
+</ul>
+</li>
+<li>takeaways
+<ul>
+<li>compliance has to use technology to keep pace with the new digital landscape</li>
+<li>rule-based transaction monitoring - to ensure it is effective, the parameters and thresholds need to be regularly reviewed</li>
+<li>machine learning is in development, FIs need to develop predictive risk-based patterns and cases</li>
+<li>data analytics help to assess client and transaction data in their transaction monitoring</li>
+<li>FIs should start collating good and complete static + behavioural data of their customers</li>
+<li>terrorist financing - name screening is focused on detecting know terrorists but FIs should take a comprehensive strategy to detect signs of potential terrorism financing</li>
+<li>investigation of CFT - monitoring alerts should pair traditional typologies with evolving knowledge about financing methods, social media, anonymized payment methods, etc.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Computer forensic</strong></p>
+<ul>
+<li>model
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-05-09%2014.51.35.png" alt=""></li>
+<li>four main steps
+<ul>
+<li>data acquisition
+<ul>
+<li>from suspect hard drive</li>
+<li>create image copies of suspect media</li>
+<li>to ensure the integrity of the evidence (the HDD), a hardware will be used to prevent any writing and corruption</li>
+<li>process of copying avoids risk of spoliation of the evidence</li>
+</ul>
+</li>
+<li>validation
+<ul>
+<li>in forensic workstation</li>
+<li>authenticate image copies</li>
+</ul>
+</li>
+<li>investigation (analysis)
+<ul>
+<li>in forensic workstation</li>
+<li>analyze content of suspect media</li>
+</ul>
+</li>
+<li>report
+<ul>
+<li>logical evidence file</li>
+<li>document findings / examination process</li>
+<li>deliverables
+<ul>
+<li>evidence report</li>
+<li>log report</li>
+<li>single-evidence custody form</li>
+<li>examination protocol</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>FITE7410 AML and CFT</title>
+            <link>https://www.marshalgao.com/fite7410-aml-and-cft/</link>
+            <pubDate>Thu, 06 May 2021 17:24:22 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/fite7410-aml-and-cft/</guid>
+            <description>Introduction Money laundering
+ definition  covers all kinds of methods used to change the identity of illegally obtained money (i.e. crime proceeds) so that it appears to have originated from a legitimate source   stages - frequently involving numerous transactions  placement  physical disposal of cash proceeds derived from illegal activities   layering  separating illicit proceeds from their source by creating complex layers of financial transactions   integration  returning the laundered proceeds back into the general financial system so that the proceeds appear to be the result of legitimate business activities      Terrorist financing</description>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/AML%20and%20CFT1.png" alt=""></p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Money laundering</strong></p>
+<ul>
+<li>definition
+<ul>
+<li>covers all kinds of methods used to change the identity of illegally obtained money (i.e. crime proceeds)</li>
+<li>so that it appears to have originated from a legitimate source</li>
+</ul>
+</li>
+<li>stages - frequently involving numerous transactions
+<ul>
+<li>placement
+<ul>
+<li>physical disposal of cash proceeds derived from illegal activities</li>
+</ul>
+</li>
+<li>layering
+<ul>
+<li>separating illicit proceeds from their source by creating complex layers of financial transactions</li>
+</ul>
+</li>
+<li>integration
+<ul>
+<li>returning the laundered proceeds back into the general financial system so that the proceeds appear to be the result of legitimate business activities</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Terrorist financing</strong></p>
+<ul>
+<li>definition
+<ul>
+<li>can be defined in simple terms as the financial support, in any form, of terrorism or to those who encourage, plan or engage in terrorism</li>
+<li>can be dirty or clean money, may come from donation, everyone may pay it</li>
+</ul>
+</li>
+</ul>
+<h2 id="international-standards">International Standards</h2>
+<p><strong>FATF</strong></p>
+<ul>
+<li>stands for
+<ul>
+<li>Financial Action Task Force</li>
+</ul>
+</li>
+<li>objectives
+<ul>
+<li>to set up standards and promote effective implementation of legal, regulatory and operational measures</li>
+<li>for combating ML/TF and other related threats to the integrity of the international financial system</li>
+</ul>
+</li>
+<li>key recommendations
+<ul>
+<li>customer due diligence (recommendation 10)</li>
+<li>politically exposed persons (recommendation 12)</li>
+<li>higher-risk countries (recommendation 19)</li>
+<li>record keeping (recommendation 11)</li>
+<li>reporting of suspicious transactions (recommendation 20)</li>
+<li>tipping-off and confidentiality (recommendation 21)</li>
+<li>suggest the requirements for FI regarding (recommendation 22 and 23)
+<ul>
+<li>the customer due diligence and record-keeping</li>
+<li>suspicious transactions reporting</li>
+<li>should also be applied to the designated non-financial businesses and professions (DNFBPs) involved in certain types of business</li>
+<li>DNFBPs includes
+<ul>
+<li>casinos</li>
+<li>real estate agents</li>
+<li>dealers in precious metals</li>
+<li>dealers in precious stones</li>
+<li>lawyers, notaries, other independent legal professionals and accountants</li>
+<li>trust and company service providers</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="legistation-and-regulation-in-hong-kong">Legistation and Regulation in Hong Kong</h2>
+<p><strong>Relevant to AML/CFT</strong></p>
+<ul>
+<li>key elements
+<ul>
+<li>Drug Trafficking (Recovery of Proceeds) Ordinance (“DTRPO”) (Cap. 405)</li>
+<li>Organized and Serious Crimes Ordinance (“OSCO”) (Cap. 455)</li>
+<li>United Nations (Anti-Terrorism Measures) Ordinance (“UNATMO”) (Cap. 575)
+<ul>
+<li>provides or collect funds</li>
+<li>make funds or financial services available to or for the benefit of terrorist</li>
+</ul>
+</li>
+<li>Anti-Money Laundering and Counter-Terrorist Financing Ordinance (“AMLO”) (Cap. 615)
+<ul>
+<li>take all reasonable measures
+<ul>
+<li>to ensure that proper sageguards exist</li>
+<li>to mitigate ML/TF risks</li>
+</ul>
+</li>
+<li>applies to
+<ul>
+<li>licensed corporations (by SFC)</li>
+<li>authorized institutions (by HKMA)</li>
+<li>insurers, insurance agents and brokers</li>
+<li>remittance agents and money changers</li>
+<li>DNFBPs</li>
+</ul>
+</li>
+<li>extend the statutory customer due diligence and record-keeping requirements to cover the following designated non-financial businesses or professions (“DNFBPs”)
+<ul>
+<li>legal professionals</li>
+<li>accounting professionals</li>
+<li>estate agents</li>
+<li>trust or company service providers</li>
+</ul>
+</li>
+<li>when they engage in specified transactions
+<ul>
+<li>specified transactions include
+<ul>
+<li>real estate transactions</li>
+<li>management of client money, securities or other assets</li>
+<li>management of bank, savings or securities accounts</li>
+<li>company formation and management</li>
+<li>buying and selling of business entities, etc.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>introduce a licensing regime for trust or company service providers</li>
+</ul>
+</li>
+<li>United Nations Sanctions Ordinance (“UNSO”) (Cap 537)</li>
+<li>Weapons of Mass Destruction (Control of Provision of Services) Ordinance (“WMD(CPS)O”) (CAP 526)</li>
+</ul>
+</li>
+<li>penalty
+<ul>
+<li><strong>Q: Is it an offence to deal with proceeds of drug trafficking or of an indictable offence?</strong></li>
+<li>A: Yes. The highest penalty for the offence upon conviction is imprisonment for 14 years and a fine of HK$5 million.</li>
+<li><strong>Q: Is it an offence to provide financial services to terrorists or their associates?</strong></li>
+<li>A: Yes. The highest penalty for the offence upon conviction is imprisonment for 14 years and a fine. The UNATMO also permits terrorist property to be frozen and subsequently forfeited.</li>
+<li><strong>Q: Is it a must to report suspicious transactions?</strong></li>
+<li>A: Yes. This offence carries a maximum term of imprisonment of 3 months and a fine of HK$50,000 upon conviction.</li>
+<li><strong>Q: Can I inform my client after submission of a suspicious transaction report?</strong></li>
+<li>A: No. A person commits an offence if, knowing or suspecting that a disclosure has been made, he discloses to any other person any matter which is likely to prejudice any investigation. Maximum penalty for the offence upon conviction is imprisonment for 3 years and a fine.</li>
+<li><strong>Q: What are the penalties imposed upon conviction of the offences under the AMLO?</strong></li>
+<li>A:
+<ul>
+<li>for contravening a specified provision (CDD and record keeping)
+<ul>
+<li>criminal sanction (both FI and employee’s liability)
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-05-07%2018.24.31.png" alt=""></li>
+<li>civil sanction (disciplinary action such as reprimand / remedy / fine for FI’s liability)</li>
+</ul>
+</li>
+<li>defence for employee – acted in accordance with policies and procedures established</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="key-requirements-and-best-practice">Key Requirements and Best Practice</h2>
+<p><strong>Risk-based approach</strong></p>
+<ul>
+<li>an FI should determine
+<ul>
+<li>the extent of CDD measure and ongoing monitoring by using a risk-based approach (“RBA”)</li>
+</ul>
+</li>
+<li>RBA depending upon
+<ul>
+<li>the background of the customer</li>
+<li>the product, transaction or service used by the customer</li>
+</ul>
+</li>
+<li>relevant factors to be considered
+<ul>
+<li>country risk</li>
+<li>customer risk</li>
+<li>product service risk</li>
+<li>delivery distribution channel risk</li>
+</ul>
+</li>
+<li>proportionate controls and oversight by determining
+<ul>
+<li>the extent of the due diligence to be performed on the direct customers</li>
+<li>the extent of the measures to be undertaken to verify the identity of any beneficial owner and any person purporting to act on behalf of the customer</li>
+<li>the level of ongoing monitoring to be applied to the relationship</li>
+<li>measures to mitigate any risks identified</li>
+</ul>
+</li>
+<li>keep records and relevant documents of the risk assessment
+<ul>
+<li>so that it can demonstrate to the relevant authorities
+<ul>
+<li>how it assesses the customer’s ML/TF risk</li>
+<li>the extent of CDD and ongoing monitoring is appropriate based on that customer’s ML/TF risks</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Customer due diligence</strong></p>
+<ul>
+<li>overview
+<ul>
+<li>the AMLO prescribes the circumstances in which an FI must carry out CDD</li>
+<li>FIs may also need to conduct additional measures or could conduct simplified customer due diligence (“SDD”) depending on specific circumstances</li>
+<li>an FI is required to carry out CDD measures when
+<ul>
+<li>opening account</li>
+<li>occasional transaction, equal to or exceeding HK$120,000</li>
+<li>wire transfer, equal to or exceeding HK$8,000</li>
+<li>suspect/doubt money laundering</li>
+<li>doubt the veracity or adequacy of any information previously obtained for the purpose of identifying the customer or verifying his/her identity</li>
+</ul>
+</li>
+<li>an FI is required to
+<ul>
+<li>identify the customer and verifying the customer’s identity using reliable, independent source documents, data, or information</li>
+<li>identify the beneficial owner and may adopt a risk-based approach</li>
+<li>obtain information on the purpose and intended nature of the business relationship (if any) established with the FI</li>
+<li>identify the person purports to act on behalf of the customer and taking reasonable measures to verify the person’s identity and verify the person’s authority to act on behalf of the customer</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>timing of identification and verification of identity
+<ul>
+<li>an FI must complete the CDD process before or during the course of establishing a business relationship or conducting transactions for occasional customers</li>
+<li>an FI may, exceptionally, verify the identity of a customer and any beneficial owner of the customer after establishing a business relationship if
+<ul>
+<li>the normal conduct of business with regard to the customer is not interrupted</li>
+<li>risk of money laundering or terrorist financing is effectively managed</li>
+</ul>
+</li>
+<li>example
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-05-07%2023.05.55.png" alt=""></li>
+</ul>
+</li>
+<li>corportation
+<ul>
+<li>an FI should obtain and verify the following information in relation to a customer which is a corporation
+<ul>
+<li>full name</li>
+<li>date and place of incorporation</li>
+<li>registration or incorporation number</li>
+<li>registered office address in the place of incorporation (if the business address of the customer is different from the registered office address -&gt; the FI should obtain information on the business address and verify as far as practicable)</li>
+</ul>
+</li>
+<li>the FI should record the names of all directors and verify the identity of directors on a risk-based approach</li>
+<li>an FI should verify the information from
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-05-07%2023.12.35.png" alt=""></li>
+</ul>
+</li>
+<li>beneficial owners
+<ul>
+<li>an FI should identify and record the identity of all beneficial owners, and take reasonable measures to verify the identity of
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-05-07%2023.14.10.png" alt=""></li>
+</ul>
+</li>
+<li>high-risk situations
+<ul>
+<li>an FI must, in any situation that by its nature presents a higher risk of ML / TF, take additional measures or enhanced due diligence to mitigate the risk of ML / TF, including
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-05-07%2023.25.40.png" alt=""></li>
+</ul>
+</li>
+<li>non-face-to-face customers
+<ul>
+<li>when a customer is not physically present for identification purposes (i.e. the non-face-to-face customer), a FI or a DNFBP must carry out at least one of the following measures
+<ul>
+<li>obtain additional documents, data or information to further verify the customer’s identity</li>
+<li>taking supplementary measures to verify “information relating to the customer that has been obtained by the FI or the DNFBP”)</li>
+<li>ensuring that the first payment made in relation to the customer’s account is carried out through an account opened in the customer’s name with –
+<ul>
+<li>an authorized institution</li>
+<li>an institution that
+<ul>
+<li>is incorporated or established in an equivalent jurisdiction</li>
+<li>carries on a business similar</li>
+<li>has measures in place similar to this Schedule of the AMLO</li>
+<li>is supervised by authorities in that jurisdiction which perform functions similar to those of the Monetary Authority</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>suitable certifiers and the certification procedure
+<ul>
+<li>use of an independent suitable certifier</li>
+<li>the certifier must sign and date the copy document</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>politically exposed person (PEP)
+<ul>
+<li>if a new customer or a beneficial owner of a new customer is a PEP, an FI or the DNFBP must
+<ul>
+<li>obtain approval from its senior management</li>
+<li>take reasonable measures to establish the customer’s or beneficial owner’s source of wealth and the source of the funds that will be involved in the proposed business relationship</li>
+</ul>
+</li>
+<li>if an existing customer or a beneficial owner of an existing customer is a PEP or has become a PEP, an FI or the DNFBP must not continue its business relationship with the customer unless it
+<ul>
+<li>has obtained approval from its senior management</li>
+<li>has taken reasonable measures to establish the customer’s or beneficial owner’s source of wealth and the source of the funds that will be involved in the proposed business relationship</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>wire transfers
+<ul>
+<li>applies to the cases equal to or above HK$8,000</li>
+<li>before carrying out a wire trnasfer, a FI must record
+<ul>
+<li>originator / recipient&rsquo;s name</li>
+<li>number of orginator / recipient&rsquo;s account</li>
+<li>originator&rsquo;s address</li>
+</ul>
+</li>
+<li>this section does not apply to a wire transfer
+<ul>
+<li>between 2 FIs if each of them acts on its own behalf</li>
+<li>between an FI and a foreign insititution if each of them acts on its own behalf</li>
+<li>is carried out using a credit or debit card</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>risk-based approach
+<ul>
+<li>FIs should conduct ongoing monitoring in relation to all business relationships following the RBA</li>
+<li>where the ML/TF risks are higher, the FI should conduct enhanced monitoring</li>
+<li>in lower risk situations, the FI may reduce the extent of monitoring
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-05-08%2014.40.08.png" alt=""></li>
+</ul>
+</li>
+<li>reliance on CDD performed by intermediaries
+<ul>
+<li>the ultimate responsibility for ensuring that CDD requirements are met remains with the FI</li>
+<li>FI should immediately obtain the data or information of CDD from the intermediaries</li>
+<li>the intermediaries must keep record for 5 years and provide upon request</li>
+<li>domestic intermediaries
+<ul>
+<li>FI</li>
+<li>CPA firm / CPA</li>
+<li>estate agents</li>
+<li>solicitor</li>
+<li>licensed trust or company service provider (TCSP)</li>
+</ul>
+</li>
+<li>oversea intermediaries
+<ul>
+<li>FIs are
+<ul>
+<li>intermediary FI with similar business</li>
+<li>lawyer or notary public</li>
+<li>auditor/ professional accountant/ tax advisor</li>
+<li>trust or company service provider</li>
+<li>trust company carrying on trust business</li>
+<li>person who carries on a business similar to estate agent</li>
+<li>related foreign financial institutions
+<ul>
+<li>FI may rely on a related foreign FI to perform any part of the CDD measures, if the related foreign FI
+<ul>
+<li>carries on a business similar to that carried on by an intermediary FI outside Hong Kong; and it is within the same group</li>
+<li>is required under group policy* to implement compliance programmes against AML/CFT</li>
+<li>is supervised for compliance with the requirements mentioned in paragraph (b) at a group level by an Regulated Authority (“RA”) or by an authority in an equivalent jurisdiction</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ongoing monitoring</strong></p>
+<ul>
+<li>definition
+<ul>
+<li>a FI must continuously monitor its business relationship with a customer by
+<ul>
+<li>reviewing from time to time documents, data and information</li>
+<li>conducting appropriate scrutiny of transactions</li>
+<li>identifying transactions that are complex, unusually large in amount or of unusual pattern, and have no apparent economic or lawful purpose
+<ul>
+<li>examining the background and purposes of those transactions and setting out the findings in writing</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>contents
+<ul>
+<li>for a pre-existing customer, the FI is only required to review the documents, data and information relating to the customer that are held by it at the time it conducts the review</li>
+<li>a FI must take additional measures to compensate for any risk of money laundering or terrorist financing if
+<ul>
+<li>a customer has not been physically present for identification purposes</li>
+<li>a customer or a beneficial owner of a customer is known to be a PEP</li>
+<li>a customer or a beneficial owner is involved in high risk situations</li>
+</ul>
+</li>
+<li>all customer that present high ML/TF risks should be subjects to a minimum of an annual review</li>
+</ul>
+</li>
+</ul>
+<p><strong>Record keeping and retention of records</strong></p>
+<ul>
+<li>definition
+<ul>
+<li>FIs should maintain CDD information, transaction records and other records to ensure that
+<ul>
+<li>the audit trail is clear and complete</li>
+<li>available swiftly</li>
+<li>compliance with any relevant requirements</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>customer records
+<ul>
+<li>include the original or a copy of identifying and verifying the identity of the customer</li>
+<li>must be kept for 5 years</li>
+</ul>
+</li>
+<li>transaction records
+<ul>
+<li>include the original or a copy of connection with the transaction</li>
+<li>must be kept for 5 years</li>
+</ul>
+</li>
+</ul>
+<p><strong>Recognition and reporting of suspicious transactions</strong></p>
+<ul>
+<li>definition
+<ul>
+<li>once an employee has reported his suspicion to the appropriate person in accordance with the procedure established by his employer</li>
+<li>he has fully satisfied the statutory obligation</li>
+</ul>
+</li>
+<li>contents
+<ul>
+<li>when a transaction or a series of transactions of a customer is unusual (e.g. in a pattern that has no apparent economic or lawful purpose), the FI should take appropriate steps to further examine the transactions and identify if there is any suspicion</li>
+<li>FIs should provide sufficient guidance to its staff</li>
+<li>FIs should appoint a Money Laundering Reporting Officer (“MLRO”)</li>
+<li>FIs should establish and maintain procedures to ensure that
+<ul>
+<li>all staff are made aware of the identity of the MLRO and of the procedures to follow when making an internal disclosure report</li>
+<li>all disclosure reports must reach the MLRO without undue delay</li>
+</ul>
+</li>
+<li>the internal report should include sufficient details of the customer concerned and the information giving rise to the suspicion</li>
+<li>the review process should be documented, together with any conclusions drawn</li>
+<li>if after completing the evaluation, the MLRO decides that there are grounds for knowledge or suspicion, he should disclose the information and file a suspicious transaction report (“STR”) to the JFIU as soon as it is reasonable to do so</li>
+<li>FIs must establish and maintain a record of all STRs made to the JFIU, the record must include
+<ul>
+<li>details of the date of the STR</li>
+<li>the person who made the STR</li>
+<li>information to allow the papers relevant to the STR to be located</li>
+</ul>
+</li>
+<li>examples that might give rise to suspicion
+<ul>
+<li>an institution located in a place outside Hong Kong who uses local accounts to trade on stock / futures exchanges located in that place</li>
+<li>requests by customers for investment management services (as regards securities, futures contracts or leveraged foreign exchange contracts) where the source of the funds is unclear or not consistent with the customers' apparent standing</li>
+<li>a number of transactions by the same customer in small amounts relating to the same investment, each purchased for cash and then sold in one transaction, the proceeds being paid to a person other than that customer</li>
+<li>frequent funds or other property transfers or cheque payments to or from third parties that are unrelated, unverified or difficult to verify</li>
+<li>incoming payments made by cheques with multiple endorsements</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>SFC suggestions
+<ul>
+<li>defining comprehensive parameters and thresholds for transaction monitoring in a wide range of situations which might give rise to suspicions. More stringent monitoring thresholds were applied to customers assessed to be of higher ML/TF risk</li>
+<li>performing annual reviews of the parameters and thresholds used in its automated transaction monitoring system to ensure its effectiveness in identifying potentially suspicious transactions and reducing false positives</li>
+<li>adopting a policy of not accepting any third-party fund deposits. For direct fund deposits, the LC would require customers to produce evidence to show the source of funds when the amount exceeded a certain threshold</li>
+<li>evaluating the reasonableness of third-party fund deposits. Obtaining corroborative evidence from the customers or other sources to verify their purported relationship with the third parties and the reasons for the third-party deposits</li>
+</ul>
+</li>
+</ul>
+<p><strong>Staff training</strong></p>
+<ul>
+<li>definition
+<ul>
+<li>provide and ensure adequate and appropriate AMLs/CFT training</li>
+<li>the scope and frequency of training should be tailored to the specific risks faced by the FI and pitched according to the job functions, responsibilities and experience of the staff, i.e. new staff, front-line personnel, back-office staff, managerial staff and MLROs</li>
+</ul>
+</li>
+<li>contents
+<ul>
+<li>refresher training</li>
+<li>staff should be made aware of
+<ul>
+<li>statutory obligations and the possible consequences if failed to report suspicious transactions and to comply with other statutory and regulatory requirements</li>
+<li>their FI’s AML/CFT policies and procedures</li>
+<li>any update on emerging techniques, methods and trends in ML/TF</li>
+</ul>
+</li>
+<li>FIs should maintain the staff training records for a minimum of 3 years</li>
+</ul>
+</li>
+</ul>
+<h2 id="latest-update-on-amlcft-in-hong-kong">Latest Update on AML/CFT in Hong Kong</h2>
+<p><strong>SFC fundings from inspections</strong></p>
+<ul>
+<li>failures in
+<ul>
+<li>comprehensive and up-to-date policies and procedures</li>
+<li>following up on the assessment results</li>
+<li>third party payors</li>
+<li>establishing source of wealth and source of funds</li>
+<li>screening existing customers, their beneficial owners</li>
+</ul>
+</li>
+<li>examples - internal control and governance
+<ul>
+<li>failed to update their policies and procedures promptly</li>
+<li>failed to provide sufficient information for senior management to maintain adequate oversight</li>
+<li>backlogs of sanctions screening and transaction alerts</li>
+<li>delays in performance of periodic reviews</li>
+</ul>
+</li>
+</ul>
+<p><strong>Deficiencies and non-compliance in the critical areas</strong></p>
+<ul>
+<li>ML/TF risk assessments
+<ul>
+<li>inadequate consideration of all key, relevant ML/TF risk factors in institutional risk assessment and customer risk assessment processes
+<ul>
+<li>deemed all countries which are a member jurisdiction of a FATF style regional body as non-high risk without conducting a proper assessment ML/TF risk assessments</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>transaction monitoring systems and processes
+<ul>
+<li>not all fund deposits by clients were assessed to ascertain whether they came from third party payors and should be subject to the LC’s due diligence and transaction review processes</li>
+</ul>
+</li>
+<li>establishing source of wealth and source of funds
+<ul>
+<li>merely collected general financial information from high-risk customers in account opening forms and failed to take reasonable measures to establish the sources of wealth and source of funds</li>
+<li>wrongly concluded that a customer’s source of funds had been established after confirming that the funds were transferred from the customer’ bank account without determining what activity generate the funds</li>
+</ul>
+</li>
+<li>sanctions screening systems
+<ul>
+<li>low-riskcustomers,suchaslistedcompanies,financialinstitutionsand its own affiliated companies, shareholders and employees, are not subject to sanctions screening</li>
+<li>conduct ongoing screening only at a fixed interval without regard to new designations or updates</li>
+</ul>
+</li>
+<li>senior management responsibilities
+<ul>
+<li>to properly discharge their role, senior management should ensure, among other actions
+<ul>
+<li>appropriate mechanisms are in place to develop and continuously review the firm’s AML/CFT policies and procedures</li>
+<li>adequate training tailored to their specific job functions and responsibilities is provided to staff</li>
+<li>appropriate ongoing compliance monitoring and periodic independent reviews are in place to detect and remedy any deficiencies or non-compliance in critical AML/CFT controls in a timely manner</li>
+<li>appropriate reporting mechanisms are in place for senior management to be apprised of key ML/TF risks and concerns in a timely manner</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>ECOM6029 Cases and Relevant Materials</title>
