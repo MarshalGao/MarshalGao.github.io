@@ -156,7 +156,7 @@
 <ul>
 <li>normalize and scale the data set</li>
 <li>randomly split into training data set (80%) and testing data set (20%)</li>
-<li>create the autoencoder: 5 fully connected layers with 29, 14, 7, 7 and 29 (for example) neurons respectively</li>
+<li>create the autoencoder: 5 fully connected layers with 29, 14, 7, 14 and 29 (for example) neurons respectively</li>
 <li>feed the normal data set into the autoencoder model for training</li>
 <li>check whether the reconstruction error on the training data set converge or not
 
@@ -682,7 +682,7 @@
 <li>data analytics help to assess client and transaction data in their transaction monitoring</li>
 <li>FIs should start collating good and complete static + behavioural data of their customers</li>
 <li>terrorist financing - name screening is focused on detecting know terrorists but FIs should take a comprehensive strategy to detect signs of potential terrorism financing</li>
-<li>investigation of CFT - monitoring alerts should pair traditional typologies with evolving knowledge about financing methods, social media, anonymized payment methods, etc.</li>
+<li>investigation of CTF - monitoring alerts should pair traditional typologies with evolving knowledge about financing methods, social media, anonymized payment methods, etc.</li>
 </ul>
 </li>
 </ul>
@@ -733,14 +733,14 @@
         </item>
         
         <item>
-            <title>FITE7410 AML and CFT</title>
-            <link>https://www.marshalgao.com/fite7410-aml-and-cft/</link>
+            <title>FITE7410 AML and CTF</title>
+            <link>https://www.marshalgao.com/fite7410-aml-and-ctf/</link>
             <pubDate>Thu, 06 May 2021 17:24:22 +0800</pubDate>
             
-            <guid>https://www.marshalgao.com/fite7410-aml-and-cft/</guid>
+            <guid>https://www.marshalgao.com/fite7410-aml-and-ctf/</guid>
             <description>Introduction Money laundering
  definition  covers all kinds of methods used to change the identity of illegally obtained money (i.e. crime proceeds) so that it appears to have originated from a legitimate source   stages - frequently involving numerous transactions  placement  physical disposal of cash proceeds derived from illegal activities   layering  separating illicit proceeds from their source by creating complex layers of financial transactions   integration  returning the laundered proceeds back into the general financial system so that the proceeds appear to be the result of legitimate business activities      Terrorist financing</description>
-            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/AML%20and%20CFT1.png" alt=""></p>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/AML%20and%20CTF.png" alt=""></p>
 <h2 id="introduction">Introduction</h2>
 <p><strong>Money laundering</strong></p>
 <ul>
@@ -822,7 +822,7 @@
 </li>
 </ul>
 <h2 id="legistation-and-regulation-in-hong-kong">Legistation and Regulation in Hong Kong</h2>
-<p><strong>Relevant to AML/CFT</strong></p>
+<p><strong>Relevant to AML/CTF</strong></p>
 <ul>
 <li>key elements
 <ul>
@@ -875,8 +875,8 @@
 <li>introduce a licensing regime for trust or company service providers</li>
 </ul>
 </li>
-<li>United Nations Sanctions Ordinance (“UNSO”) (Cap 537)</li>
-<li>Weapons of Mass Destruction (Control of Provision of Services) Ordinance (“WMD(CPS)O”) (CAP 526)</li>
+<li>United Nations Sanctions Ordinance (“UNSO”) (Cap. 537)</li>
+<li>Weapons of Mass Destruction (Control of Provision of Services) Ordinance (“WMD(CPS)O”) (CAP. 526)</li>
 </ul>
 </li>
 <li>penalty
@@ -1016,7 +1016,7 @@
 <li>when a customer is not physically present for identification purposes (i.e. the non-face-to-face customer), a FI or a DNFBP must carry out at least one of the following measures
 <ul>
 <li>obtain additional documents, data or information to further verify the customer’s identity</li>
-<li>taking supplementary measures to verify “information relating to the customer that has been obtained by the FI or the DNFBP”)</li>
+<li>taking supplementary measures to verify “information relating to the customer that has been obtained by the FI or the DNFBP”</li>
 <li>ensuring that the first payment made in relation to the customer’s account is carried out through an account opened in the customer’s name with –
 <ul>
 <li>an authorized institution</li>
@@ -1111,8 +1111,8 @@
 <ul>
 <li>FI may rely on a related foreign FI to perform any part of the CDD measures, if the related foreign FI
 <ul>
-<li>carries on a business similar to that carried on by an intermediary FI outside Hong Kong; and it is within the same group</li>
-<li>is required under group policy* to implement compliance programmes against AML/CFT</li>
+<li>carries on a business similar to that carried on by an intermediary FI outside Hong Kong, and it is within the same group</li>
+<li>is required under group policy to implement compliance programmes against AML/CTF</li>
 <li>is supervised for compliance with the requirements mentioned in paragraph (b) at a group level by an Regulated Authority (“RA”) or by an authority in an equivalent jurisdiction</li>
 </ul>
 </li>
@@ -1235,7 +1235,7 @@
 <ul>
 <li>definition
 <ul>
-<li>provide and ensure adequate and appropriate AMLs/CFT training</li>
+<li>provide and ensure adequate and appropriate AMLs/CTF training</li>
 <li>the scope and frequency of training should be tailored to the specific risks faced by the FI and pitched according to the job functions, responsibilities and experience of the staff, i.e. new staff, front-line personnel, back-office staff, managerial staff and MLROs</li>
 </ul>
 </li>
@@ -1245,7 +1245,7 @@
 <li>staff should be made aware of
 <ul>
 <li>statutory obligations and the possible consequences if failed to report suspicious transactions and to comply with other statutory and regulatory requirements</li>
-<li>their FI’s AML/CFT policies and procedures</li>
+<li>their FI’s AML/CTF policies and procedures</li>
 <li>any update on emerging techniques, methods and trends in ML/TF</li>
 </ul>
 </li>
@@ -1253,7 +1253,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="latest-update-on-amlcft-in-hong-kong">Latest Update on AML/CFT in Hong Kong</h2>
+<h2 id="latest-update-on-amlctf-in-hong-kong">Latest Update on AML/CTF in Hong Kong</h2>
 <p><strong>SFC fundings from inspections</strong></p>
 <ul>
 <li>failures in
@@ -1298,7 +1298,7 @@
 </li>
 <li>sanctions screening systems
 <ul>
-<li>low-riskcustomers,suchaslistedcompanies,financialinstitutionsand its own affiliated companies, shareholders and employees, are not subject to sanctions screening</li>
+<li>low-risk customers, such as listed companies, financial institutions and its own affiliated companies, shareholders and employees, are not subject to sanctions screening</li>
 <li>conduct ongoing screening only at a fixed interval without regard to new designations or updates</li>
 </ul>
 </li>
@@ -1306,9 +1306,9 @@
 <ul>
 <li>to properly discharge their role, senior management should ensure, among other actions
 <ul>
-<li>appropriate mechanisms are in place to develop and continuously review the firm’s AML/CFT policies and procedures</li>
+<li>appropriate mechanisms are in place to develop and continuously review the firm’s AML/CTF policies and procedures</li>
 <li>adequate training tailored to their specific job functions and responsibilities is provided to staff</li>
-<li>appropriate ongoing compliance monitoring and periodic independent reviews are in place to detect and remedy any deficiencies or non-compliance in critical AML/CFT controls in a timely manner</li>
+<li>appropriate ongoing compliance monitoring and periodic independent reviews are in place to detect and remedy any deficiencies or non-compliance in critical AML/CTF controls in a timely manner</li>
 <li>appropriate reporting mechanisms are in place for senior management to be apprised of key ML/TF risks and concerns in a timely manner</li>
 </ul>
 </li>
@@ -2706,7 +2706,7 @@ Cases  Nintendo&amp;rsquo;s Disruptive Strategy: Implications for the Video Game
 <ul>
 <li>network with a constant degree distribution</li>
 <li>each node in the network has the same degree</li>
-<li>e.g. 4-regulat graph
+<li>e.g. 4-regular graph
 <figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-22%20%E4%B8%8B%E5%8D%8812.20.56.png" alt=""></figure></li>
 </ul></li>
 </ul></li>
@@ -2725,7 +2725,7 @@ Cases  Nintendo&amp;rsquo;s Disruptive Strategy: Implications for the Video Game
 <li><p>definition</p>
 
 <ul>
-<li>measures the extent to which ndoes in a network are connected to each other</li>
+<li>measures the extent to which nodes in a network are connected to each other</li>
 <li>i.e. measures the number of observed edges (M) to the maximum possible number of edges in the graph</li>
 <li>full connected network: each node is connected to every other node, has <span  class="math">\(\frac{N(N-1)}{2}\)</span> edges, where N = total number of nodes</li>
 </ul>
@@ -2946,8 +2946,8 @@ Cases  Nintendo&amp;rsquo;s Disruptive Strategy: Implications for the Video Game
 
 <ul>
 <li>updates the expected class labels of the unknown nodes</li>
-<li>the first iterb steps approach a stationary distribution (burn-in period), where no statistics are recorded</li>
-<li>the last iterc steps, keeps track of which class labels are assigned to each node</li>
+<li>the first <span  class="math">\(iter_b\)</span> steps approach a stationary distribution (burn-in period), where no statistics are recorded</li>
+<li>the last <span  class="math">\(iter_c\)</span> steps, keeps track of which class labels are assigned to each node</li>
 <li>final class probability estimate is computed as normalized count of the number of times each class is assigned to a particular node
 <figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21032308.png" alt=""></figure></li>
 </ul></li>
@@ -3647,7 +3647,7 @@ Cases  Nintendo&amp;rsquo;s Disruptive Strategy: Implications for the Video Game
 
 <ul>
 <li>need to specify k, the number of clusters, in advance</li>
-<li>often terminates at a local optimum.  Need to try different initial cluster centres</li>
+<li>often terminates at a local optimum, need to try different initial cluster centres</li>
 <li>unable to handle noisy data and outliers</li>
 </ul></li>
 </ul></li>
@@ -4083,7 +4083,7 @@ Cases  Nintendo&amp;rsquo;s Disruptive Strategy: Implications for the Video Game
 <li>hyperparameter C - penalty parameter representing an error or any form of misclassification
 
 <ul>
-<li>samll C value
+<li>small C value
 
 <ul>
 <li>hyperplane with a larger margin, i.e. more violations are allowed, maximizing the margins</li>
@@ -4425,7 +4425,7 @@ Cases  Nintendo&amp;rsquo;s Disruptive Strategy: Implications for the Video Game
 
 <ul>
 <li>frequency of an item set is measured by means of its support
-<span  class="math">\(support(X) = \frac{number of transactions supporting (X)}{total number of transactions}\)</span></li>
+<span  class="math">\(support(X) = \frac{number \ of \ transactions \ supporting (X)}{total \ number \ of \ transactions}\)</span></li>
 <li>example
 
 <ul>
@@ -4775,7 +4775,7 @@ Cases  Nintendo&amp;rsquo;s Disruptive Strategy: Implications for the Video Game
 <li>the final performance is reported by averaging the errors from each iteration
 <figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21022713.png" alt=""></figure></li>
 </ul></li>
-<li>which one should be chosen
+<li>with more than one trained model, which one should be chosen
 
 <ul>
 <li>similar to ensemble method, use voting procedure</li>
@@ -4856,7 +4856,7 @@ Cases  Nintendo&amp;rsquo;s Disruptive Strategy: Implications for the Video Game
 <li><p>example
 <figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21030102.png" alt=""></figure></p>
 
-<p><span  class="math">\[Accuracy = \frac{0+90}{100}=90%\]</span></p>
+<p><span  class="math">\[Accuracy = \frac{0+90}{100}=90\%\]</span></p>
 
 <ul>
 <li>even with very high accuracy, this model is useless in detecting fraud cases, because no fraud cases are detected by this model</li>
@@ -4955,7 +4955,7 @@ Cases  Nintendo&amp;rsquo;s Disruptive Strategy: Implications for the Video Game
 </ul></li>
 </ul>
 
-<p><span  class="math">\[Adjusted R^2=1-\frac{(1-R^2)(N-1)}{N-p-1}\]</span></p>
+<p><span  class="math">\[Adjusted \ R^2=1-\frac{(1-R^2)(N-1)}{N-p-1}\]</span></p>
 
 <ul>
 <li><p>scatter plot</p>
@@ -5244,11 +5244,11 @@ Cases  Nintendo&amp;rsquo;s Disruptive Strategy: Implications for the Video Game
 
 <ul>
 <li>z-score (standard deviation), e.g. upper/lower limit = <span  class="math">\(M \pm 3 \times z-score\)</span></li>
-<li>IQR (interquartile range), e.g. upper/lower limit = <span  class="math">\(M \pm 3 \times IQR/(2 \times 0.6745)\)</span></li>
+<li>IQR (interquartile range), e.g. upper/lower limit = <span  class="math">\(M \pm 3 \times IQR/(2 \times 0.6745)\)</span> <a href="https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/box-whisker-plots/a/identifying-outliers-iqr-rule">(useful link)</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
-<li>outliers or reg flags
+<li>outliers or red flags
 
 <ul>
 <li>outliers may sometimes be actually the fraud cases, because behaviors of fraudsters usually deviant from normal non-fraudsters</li>
@@ -6013,7 +6013,7 @@ Cases  Nintendo&amp;rsquo;s Disruptive Strategy: Implications for the Video Game
 </li>
 <li>post-processing
 <ul>
-<li>key characteristics of a good fradu analytics model
+<li>key characteristics of a good fraud analytics model
 <ul>
 <li>statistical accuracy
 <ul>

@@ -386,7 +386,7 @@
 <ul>
 <li>network with a constant degree distribution</li>
 <li>each node in the network has the same degree</li>
-<li>e.g. 4-regulat graph
+<li>e.g. 4-regular graph
 <figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-03-22%20%E4%B8%8B%E5%8D%8812.20.56.png" alt=""></figure></li>
 </ul></li>
 </ul></li>
@@ -405,7 +405,7 @@
 <li><p>definition</p>
 
 <ul>
-<li>measures the extent to which ndoes in a network are connected to each other</li>
+<li>measures the extent to which nodes in a network are connected to each other</li>
 <li>i.e. measures the number of observed edges (M) to the maximum possible number of edges in the graph</li>
 <li>full connected network: each node is connected to every other node, has <span  class="math">\(\frac{N(N-1)}{2}\)</span> edges, where N = total number of nodes</li>
 </ul>
@@ -626,8 +626,8 @@
 
 <ul>
 <li>updates the expected class labels of the unknown nodes</li>
-<li>the first iterb steps approach a stationary distribution (burn-in period), where no statistics are recorded</li>
-<li>the last iterc steps, keeps track of which class labels are assigned to each node</li>
+<li>the first <span  class="math">\(iter_b\)</span> steps approach a stationary distribution (burn-in period), where no statistics are recorded</li>
+<li>the last <span  class="math">\(iter_c\)</span> steps, keeps track of which class labels are assigned to each node</li>
 <li>final class probability estimate is computed as normalized count of the number of times each class is assigned to a particular node
 <figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/21032308.png" alt=""></figure></li>
 </ul></li>
