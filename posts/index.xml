@@ -6,8 +6,1293 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-        <lastBuildDate>Sun, 09 May 2021 15:18:22 +0800</lastBuildDate>
+        <lastBuildDate>Sun, 06 Jun 2021 17:25:36 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Say Goodbye to Chaos</title>
+            <link>https://www.marshalgao.com/say-goodbye-to-chaos/</link>
+            <pubDate>Sun, 06 Jun 2021 17:25:36 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/say-goodbye-to-chaos/</guid>
+            <description>   汽车倒行，转眼间，便早已暂停于车站。我们都曾幻想过两点一线的美好未来，但现实的红色离别与混沌向浑沌的难以逾越，让曾经戛然于现实的影子，只可远看，但不愿回味。站在未来预估现实的未来，我知道未来早已恢复于美好，但也要与这一切挥手道别。
+ 拖更很久，主要是和朋友们在一起玩得太开心！ 告别了混沌，一个人顶着受伤的jio骑车看了梅窝的风景，也和可爱的人儿去看了山海！ </description>
+            <content type="html"><![CDATA[<div class="iframe-container">
+    <iframe src="//player.bilibili.com/player.html?aid=930890585&bvid=BV1NK4y1X74Q&cid=349793842&page=1" allowfullscreen> </iframe>
+</div>
+<hr>
+<h5 id="p-alignjustify汽车倒行转眼间便早已暂停于车站我们都曾幻想过两点一线的美好未来但现实的红色离别与混沌向浑沌的难以逾越让曾经戛然于现实的影子只可远看但不愿回味站在未来预估现实的未来我知道未来早已恢复于美好但也要与这一切挥手道别p"><p align="justify">汽车倒行，转眼间，便早已暂停于车站。我们都曾幻想过两点一线的美好未来，但现实的红色离别与混沌向浑沌的难以逾越，让曾经戛然于现实的影子，只可远看，但不愿回味。站在未来预估现实的未来，我知道未来早已恢复于美好，但也要与这一切挥手道别。</p></h5>
+<h5 id="拖更很久主要是和朋友们在一起玩得太开心">拖更很久，主要是和朋友们在一起玩得太开心！</h5>
+<h5 id="告别了混沌一个人顶着受伤的jio骑车看了梅窝的风景也和可爱的人儿去看了山海">告别了混沌，一个人顶着受伤的jio骑车看了梅窝的风景，也和可爱的人儿去看了山海！</h5>
+]]></content>
+        </item>
+        
+        <item>
+            <title>ECOM6008 Planning and Managing Inventories</title>
+            <link>https://www.marshalgao.com/ecom6008-planning-and-managing-inventories/</link>
+            <pubDate>Wed, 02 Jun 2021 15:28:54 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/ecom6008-planning-and-managing-inventories/</guid>
+            <description>Demand Forecasting Overview
+ problems  long lead times unreliable supply processes high demand variability a large number of SKU&#39;s  where do we hold inventory  suppliers and manufacturers warehouses and distribution centers retailers  types of inventory  raw materials work in process (WIP) finished goods   Handling inventory
+ reasons  economies of scale  encourage firms to transport large quantities of items, and therefore hold large inventories  unexpected changes in customer demand  the short life cycle of an increasing number of products – historical data is unavailable the presence of many competing products in the marketplace – group vs.</description>
+            <content type="html"><![CDATA[<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Planning%20and%20Managing%20Inventories.png" alt=""></figure></p>
+
+<h2 id="demand-forecasting">Demand Forecasting</h2>
+
+<p><strong>Overview</strong></p>
+
+<ul>
+<li>problems
+
+<ul>
+<li>long lead times</li>
+<li>unreliable supply processes</li>
+<li>high demand variability</li>
+<li>a large number of SKU's</li>
+</ul></li>
+<li>where do we hold inventory
+
+<ul>
+<li>suppliers and manufacturers</li>
+<li>warehouses and distribution centers</li>
+<li>retailers</li>
+</ul></li>
+<li>types of inventory
+
+<ul>
+<li>raw materials</li>
+<li>work in process (WIP)</li>
+<li>finished goods</li>
+</ul></li>
+</ul>
+
+<p><strong>Handling inventory</strong></p>
+
+<ul>
+<li>reasons
+
+<ul>
+<li>economies of scale
+
+<ul>
+<li>encourage firms to transport large quantities of items, and therefore hold large inventories</li>
+</ul></li>
+<li>unexpected changes in customer demand
+
+<ul>
+<li>the short life cycle of an increasing number of products – historical data is unavailable</li>
+<li>the presence of many competing products in the marketplace – group vs. single</li>
+</ul></li>
+<li>delivery lead time</li>
+<li>significant uncertainty quantity / quality
+
+<ul>
+<li>supply, supplier costs, and delivery times</li>
+</ul></li>
+</ul></li>
+<li>coordination
+
+<ul>
+<li>relationship
+
+<ul>
+<li>the need for the coordination of inventory decisions &amp; transportation policies</li>
+</ul></li>
+<li>impact
+
+<ul>
+<li>each types of inventory needs its own inventory control mechanism; interactions of the various levels in the supply chain</li>
+</ul></li>
+</ul></li>
+<li>two important issues
+
+<ul>
+<li>demand forecasting</li>
+<li>order quantity calculation</li>
+</ul></li>
+<li>tradeoffs
+
+<ul>
+<li>inventory cost</li>
+<li>ordering cost (e.g., shipment)</li>
+</ul></li>
+</ul>
+
+<h2 id="inventory-management">Inventory Management</h2>
+
+<p><strong>Inventory policy</strong></p>
+
+<ul>
+<li>key factors
+
+<ul>
+<li>customer demand
+
+<ul>
+<li>pattern or random</li>
+</ul></li>
+<li>replenishment lead time
+
+<ul>
+<li>certain or uncertain (lead time: time between placing order and receiving order)</li>
+</ul></li>
+<li>the number of different products stored at the warehouse</li>
+<li>the length of the planning horizon</li>
+<li>costs</li>
+<li>service level requirement</li>
+</ul></li>
+<li>cost factors
+
+<ul>
+<li>order cost
+
+<ul>
+<li>product cost</li>
+<li>transportation cost</li>
+</ul></li>
+<li>holding cost (or inventory carrying cost)
+
+<ul>
+<li>state taxes, property taxes, &amp; insurance on inventories</li>
+<li>maintenance costs</li>
+<li>obsolescence cost</li>
+<li>opportunity costs</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>A single warehouse inventory</strong></p>
+
+<ul>
+<li>the economic lot size model
+
+<ul>
+<li>constant demand for a single item</li>
+<li>unlimited capacity of the product supply</li>
+<li>demand is constant at a rate of D items/day</li>
+<li>order quantities are fixed at Q items/order</li>
+<li>a fixed setup cost (K) for each order</li>
+<li>an inventory carrying cost (h) holding cost - for every unit held in inventory per day</li>
+<li>the lead time, the time that elapses between the placement of an order and its receipt, is 0</li>
+<li>initial inventory is 0</li>
+<li>the planning horizon is long (infinite ∞)</li>
+<li>optimal order policy to minimize annual purchasing and carrying costs without shortage</li>
+<li>zero inventory ordering property
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-06-02%2023.14.46.png" alt=""></figure></li>
+<li>economic order quantity (EOQ)
+
+<ul>
+<li>total cost (per cycle) = setup cost + holding cost</li>
+<li>setup cost = K</li>
+<li>holding cost = (per unit per time period holding cost) × (average inventory level) × (the length of the cycle) = h × Q/2 × T</li>
+<li>total cost = K + hTQ/2</li>
+<li>average total cost = total cost/T = K/T + hTQ/2T = KD/Q + hQ/2
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-06-02%2023.22.25.png" alt=""></figure></li>
+<li>total inventory cost is insensitive to order quantity</li>
+<li>changes in order quantities have a relatively small impact on annual setup costs and inventory holding costs
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-06-02%2023.25.11.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+<li>the effect of demand uncertainty</li>
+<li>fixed order costs</li>
+<li>no fixed order costs</li>
+<li>variable lead times</li>
+</ul>
+
+<h2 id="managing-uncertainty">Managing Uncertainty</h2>
+
+<p><strong>The effect of demand uncertainty</strong></p>
+
+<ul>
+<li>real conditions
+
+<ul>
+<li>many treat the world as if it were predictable
+
+<ul>
+<li>production &amp; inventory planning based on forecasts of demand far in advance of the selling season</li>
+<li>companies are aware of demand uncertainty when create a forecast, but design their planning process as if the forecast truly represents reality</li>
+</ul></li>
+<li>recent technological advances have increased the level of demand uncertainty
+
+<ul>
+<li>products with short life cycle</li>
+<li>large variety of products compete in market</li>
+</ul></li>
+</ul></li>
+<li>risk/reward trade-off
+
+<ul>
+<li>production quantity <span  class="math">\(\uparrow\)</span>
+
+<ul>
+<li>the probability of large losses - risk <span  class="math">\(\uparrow\)</span></li>
+<li>the probability of large gains <span  class="math">\(\uparrow\)</span></li>
+</ul></li>
+</ul></li>
+<li>3 principles of all forecasting techniques
+
+<ul>
+<li>forecasting is always wrong</li>
+<li>the longer the forecast horizon the worse is the forecast</li>
+<li>aggregate forecasts are more accurate</li>
+</ul></li>
+</ul>
+
+<p><strong>The multi-period continuous review inventory model</strong></p>
+
+<ul>
+<li>overview
+
+<ul>
+<li>normally distributed random demand</li>
+<li>fixed order cost + a cost proportional to amount ordered</li>
+<li>inventory cost - charged per item per unit time</li>
+<li>if an order arrives and there is no inventory, the order is lost</li>
+<li>the distributor has a required service level - the likelihood not stock out during lead time</li>
+</ul></li>
+<li>inventory level based
+
+<ul>
+<li>the (s,S) policy or a min max policy
+
+<ul>
+<li>s as the reorder point</li>
+<li>S as the order-up-to-level</li>
+<li>the reorder point is a function of
+
+<ul>
+<li>lead time</li>
+<li>average demand</li>
+<li>demand variability</li>
+<li>service level
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-06-07%2016.07.34.png" alt=""></figure></li>
+</ul></li>
+<li>notations
+
+<ul>
+<li>AVG = average daily demand</li>
+<li>STD = standard deviation of daily demand</li>
+<li>L = replenishment lead time from the supplier to the distributor in days</li>
+<li>h = cost of holding one unit of the product for one day at the distributor</li>
+<li>K = fixed cost</li>
+<li>α = service level (probability of stocking out is 1 - α)</li>
+<li>inventory position at any time is the actual inventory plus items already ordered, but not yet delivered</li>
+</ul></li>
+<li>with fixed order costs
+
+<ul>
+<li>s = (average inventory during lead time) + (safety stock) = (average daily demand × the lead time) + (safety stock)
+
+<ul>
+<li>ensures that there will be enough inventory to last until the next order arrives</li>
+<li>the amount of inventory at the warehouse and in the pipeline to protect against deviations from average demand during lead time</li>
+</ul></li>
+<li>prob{demand during lead time ≥ L × AVG + z × STD × <span  class="math">\(\sqrt{L}\)</span>} = 1 − α
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-06-07%2016.21.11.png" alt=""></figure></li>
+<li>reorder point, s = L × AVG + z × STD × <span  class="math">\(\sqrt{L}\)</span></li>
+<li>order quantity, Q, economic lot size model, Q = <span  class="math">\(\sqrt{\frac{2K × AVG}{h}}\)</span></li>
+<li>order-up-to-level, S, order during the lead time and safety stick, S = Q + s = Q + L × AVG + z × STD × <span  class="math">\(\sqrt{L}\)</span></li>
+</ul></li>
+<li>without fixed order costs
+
+<ul>
+<li>transportation cost is 0</li>
+<li>s = S = (average inventory during lead time) + (safety stock) = (average daily demand × the lead time) + (safety stock)</li>
+<li>reorder point, s, is identical to the reorder point obtained in the case of “no fixed order cost”, s = L × AVG + z × STD × <span  class="math">\(\sqrt{L}\)</span></li>
+</ul></li>
+<li>variable lead times
+
+<ul>
+<li>the lead time is not constant</li>
+<li>normally distributed with average lead time AVGL standard deviation STDL</li>
+<li>AVG × AVGL - average demand during lead time</li>
+<li>the amount of safety stock <span  class="math">\(z × \sqrt{AVGL × {STD}^2 + {AVG}^2 + {STDL}^2}\)</span></li>
+<li>s = AVG × AVGL + <span  class="math">\(z × \sqrt{AVGL × {STD}^2 + {AVG}^2 + {STDL}^2}\)</span></li>
+<li>S = Q + s = Q + AVG × AVGL + <span  class="math">\(z × \sqrt{AVGL × {STD}^2 + {AVG}^2 + {STDL}^2}\)</span></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>time/cycle based
+
+<ul>
+<li>base-stock level policy
+
+<ul>
+<li>determine a target inventory level, base-stock level</li>
+<li>each review period, review the inventory position is reviewed and order enough to raise the inventory position to the base-stock level
+
+<ul>
+<li>r = length of the review period</li>
+<li>L = lead time</li>
+<li>AVG = average daily demand</li>
+<li>STD = standard deviation of this daily demand</li>
+</ul></li>
+<li>average demand during an interval of r + L days = (r + L) × AVG</li>
+<li>safety stock = z × STD × <span  class="math">\(\sqrt{r + L}\)</span>
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-06-07%2016.32.32.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+<li>service level optimization
+
+<ul>
+<li>optimal inventory policy assumes a specific service level target</li>
+<li>appropriate level of service?
+
+<ul>
+<li>may be determined by the downstream customer</li>
+<li>retailer may require the supplier, to maintain a specific service level</li>
+<li>supplier will use that target to manage its own inventory</li>
+<li>facility may have the flexibility to choose the appropriate level of service
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-06-07%2016.34.32.png" alt=""></figure></li>
+</ul></li>
+<li>trade-off - retail strategy
+
+<ul>
+<li>everything else being equal
+
+<ul>
+<li>service level <span  class="math">\(\uparrow\)</span>, inventory level <span  class="math">\(\uparrow\)</span></li>
+<li>for the same inventory level, lead time <span  class="math">\(\uparrow\)</span> to the facility, level of service provided by the facility <span  class="math">\(\downarrow\)</span></li>
+<li>inventory level <span  class="math">\(\downarrow\)</span>, the higher the impact of a unit of inventory on service level <span  class="math">\(\uparrow\)</span> and hence on expected profit</li>
+</ul></li>
+<li>given a target service level across all products determine service level for each SKU so as to maximize expected profit</li>
+<li>everything else being equal, service level <span  class="math">\(\uparrow\)</span> with
+
+<ul>
+<li><span  class="math">\(\uparrow\)</span> profit margin</li>
+<li><span  class="math">\(\uparrow\)</span> volume</li>
+<li><span  class="math">\(\downarrow\)</span> variability</li>
+<li><span  class="math">\(\downarrow\)</span> lead time</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>profit optimization and service level
+
+<ul>
+<li>target inventory level = 95% across all products</li>
+<li>service level &gt; 99% for many products with high profit margin, high volume and low variability</li>
+<li>service level &lt; 95% for products with low profit margin, low volume and high variability
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-06-07%2016.50.56.png" alt=""></figure></li>
+</ul></li>
+</ul>
+
+<h2 id="managing-inventory-in-supply-chain">Managing Inventory in Supply Chain</h2>
+
+<p><strong>Risk pooling</strong></p>
+
+<ul>
+<li>2 warehouses <span  class="math">\(\rightarrow\)</span> 1 warehouse
+
+<ul>
+<li>increase delivery time (disadvantage)</li>
+<li>either the same service level with much lower inventory or a higher service level with the same amount of total inventory (advantage)</li>
+</ul></li>
+<li>coefficient of variation
+
+<ul>
+<li>= standard deviation / co-efficient of variation</li>
+<li>standard deviation measures the absolute variability of customer demands</li>
+<li>co-efficient of variation measures variability relative to average demand</li>
+</ul></li>
+<li>benefits
+
+<ul>
+<li>demand variability is reduced
+
+<ul>
+<li>high demand from one customer will be offset by low demand from another</li>
+<li>allows to reduce safety stock, therefore reduce average inventory for the same service level</li>
+<li>the higher the coefficient of variation, the greater the benefit obtained from centralized systems</li>
+<li>the benefits from risk pooling depend on the behavior of demand from one market relative to demand from another</li>
+<li>one distribution center is better than two centers, two better than three (centralized better than decentralized)</li>
+</ul></li>
+</ul></li>
+<li>reduce systemwide cost
+
+<ul>
+<li>echelon inventory at any stage or level of the system is the inventory on hand at the echelon, plus all downstream inventory</li>
+<li>individual retailers are managed using the appropriate (s, S) inventory policy</li>
+<li>warehouse policy controls its echelon inventory position by (s, S) inventory policy</li>
+<li>whenever the echelon inventory position for the warehouse is below s, an order is placed to raise its echelon inventory position to S
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-06-07%2017.59.57.png" alt=""></figure></li>
+</ul></li>
+</ul>
+
+<h2 id="supply-contract">Supply Contract</h2>
+
+<p><strong>Overview</strong></p>
+
+<ul>
+<li>key insights
+
+<ul>
+<li>the optimal order quantity is not necessarily equal to average forecast demand</li>
+<li>the optimal quantity depends on the relationship between marginal profit &amp; marginal cost</li>
+<li>as order quantity increases, average profit first increases and then decreases</li>
+<li>as production quantity increases, risk increases; the probability of large gains and of large losses increases</li>
+<li>effective supply contracts allow supply chain partners to replace sequential optimization by global optimization</li>
+<li>buy back and revenue sharing contracts achieve this objective through risk sharing</li>
+</ul></li>
+<li>contracts
+
+<ul>
+<li>sequential</li>
+<li>buy back</li>
+<li>revenue sharing</li>
+<li>quantity flexibility contracts
+
+<ul>
+<li>supplier provides full refund for returned items as long as the number of returns is no larger than a certain quantity</li>
+</ul></li>
+<li>sales rebate contracts
+
+<ul>
+<li>supplier provides direct incentive for the retailer to increase sales by means of a rebate paid by the supplier for any item sold above a certain quantity</li>
+</ul></li>
+</ul></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>ECOM6008 Designing Supply Chain Network</title>
+            <link>https://www.marshalgao.com/ecom6008-designing-supply-chain-network/</link>
+            <pubDate>Sun, 30 May 2021 16:53:22 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/ecom6008-designing-supply-chain-network/</guid>
+            <description>Introduction Overview
+ why network planning  find the right balance between inventory, transportation and manufacturing costs match supply and demand under uncertainty by positioning and managing inventory effectively utilize resources effectively by sourcing products from the most appropriate manufacturing facility  three hierarchical steps  network design  number, locations and size of manufacturing plants &amp;amp; warehouses assignment of retail outlets to warehouses major sourcing decisions typical planning horizon is a few years  inventory positioning  identifying stocking points selecting facilities that will produce to stock &amp;amp; thus keep inventory selecting facilities that will produce to order &amp;amp; hence keep no inventory inventory management strategies  resource allocation  determine whether production and packaging of different products is done at the right facility what should be the plants sourcing strategies how much capacity each plant should have to meet seasonal demand    Logistic network</description>
+            <content type="html"><![CDATA[<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Designing%20Supply%20Chain%20Network.png" alt=""></figure></p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p><strong>Overview</strong></p>
+
+<ul>
+<li>why network planning
+
+<ul>
+<li>find the right balance between inventory, transportation and manufacturing costs</li>
+<li>match supply and demand under uncertainty by positioning and managing inventory effectively</li>
+<li>utilize resources effectively by sourcing products from the most appropriate manufacturing facility</li>
+</ul></li>
+<li>three hierarchical steps
+
+<ul>
+<li>network design
+
+<ul>
+<li>number, locations and size of manufacturing plants &amp; warehouses</li>
+<li>assignment of retail outlets to warehouses</li>
+<li>major sourcing decisions</li>
+<li>typical planning horizon is a few years</li>
+</ul></li>
+<li>inventory positioning
+
+<ul>
+<li>identifying stocking points</li>
+<li>selecting facilities that will produce to stock &amp; thus keep inventory</li>
+<li>selecting facilities that will produce to order &amp; hence keep no inventory</li>
+<li>inventory management strategies</li>
+</ul></li>
+<li>resource allocation
+
+<ul>
+<li>determine whether production and packaging of different products is done at the right facility</li>
+<li>what should be the plants sourcing strategies</li>
+<li>how much capacity each plant should have to meet seasonal demand</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>Logistic network</strong></p>
+
+<ul>
+<li>key strategic decisions
+
+<ul>
+<li>plant, warehouse, and retailer location</li>
+<li>determining the appropriate number of warehouses</li>
+<li>determining the location of each warehouse</li>
+<li>determining the size of each warehouse</li>
+<li>allocating space for products in each warehouse</li>
+<li>determining which products customers will receive from each warehouse</li>
+</ul></li>
+<li>problem
+
+<ul>
+<li>assuming that plant and retailer locations will not be changed, the objective is to design or reconfigure the logistics network so as to
+
+<ul>
+<li>minimize annual systemwide costs
+
+<ul>
+<li>including production &amp; purchasing costs, inventory holding costs, facility costs (storage, handling, and fixed costs), and transportation costs</li>
+</ul></li>
+<li>subject to a variety of service level requirements
+
+<ul>
+<li>tactical decision - the selection of transportation mode (e.g., truck, rail)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>Trade-offs by increasing the number of warehouse</strong></p>
+
+<ul>
+<li>disadvantages
+
+<ul>
+<li>an increase in overhead &amp; setup costs</li>
+<li>an increase in inbound transportation costs: transportation costs from the suppliers and/or manufacturers to the warehouses</li>
+<li>an increase in inventory costs due to increased safety stocks required to protect each warehouse against uncertainties in customer demands</li>
+</ul></li>
+<li>advantages
+
+<ul>
+<li>an improvement in service level due to the reduction in average travel time to the customers</li>
+<li>a reduction in outbound transportation costs: transportation costs from the warehouses to the customers</li>
+<li>firm must balance the costs of opening new warehouses with the advantages of being close to the customer</li>
+</ul></li>
+</ul>
+
+<p><strong>Network desgin</strong></p>
+
+<ul>
+<li>key issues
+
+<ul>
+<li>pick the optimal number, location and size of warehouses and/or plants</li>
+<li>determine optimal sourcing strategy
+
+<ul>
+<li>which plant/vendor should produce which product</li>
+</ul></li>
+<li>determine best distribution channels
+
+<ul>
+<li>which warehouses should service which customers</li>
+</ul></li>
+<li>the objective is to balance service level against
+
+<ul>
+<li>production/purchasing costs</li>
+<li>inventory carrying costs</li>
+<li>facility costs (handling &amp; fixed costs)</li>
+<li>transportation costs</li>
+<li>i.e. we would like to find a minimal-annual-cost configuration of the distribution network that satisfies product demands at specified customer service levels</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h2 id="data-collection">Data Collection</h2>
+
+<p><strong>Overview</strong></p>
+
+<ul>
+<li>information required for network configuration problems
+
+<ul>
+<li>location - retailers, distribution centers, manufacturing facilities, suppliers, etc.</li>
+<li>all products - volumes, transport modes</li>
+<li>annual demand - product /customer location</li>
+<li>transportation rates - mode</li>
+<li>warehousing costs - labor, inventory carrying charges, fixed operating costs, etc.</li>
+<li>shipment sizes &amp; frequencies - delivery</li>
+<li>order processing costs</li>
+<li>customer service - requirements and goals</li>
+</ul></li>
+<li>data collection issues
+
+<ul>
+<li>data aggregation</li>
+<li>transportation rates</li>
+<li>mileage estimation</li>
+<li>warehouse costs</li>
+<li>warehouse capacities</li>
+<li>potential warehouse locations</li>
+<li>service level requirements</li>
+<li>future demand</li>
+</ul></li>
+<li>too much information
+
+<ul>
+<li>sales data is typically collected on a by-customer basis</li>
+<li>network planning is facilitated if sales data is in a geographic rather than accounting database
+
+<ul>
+<li>distances and transportation costs</li>
+</ul></li>
+<li>customers located in close proximity are aggregated using a grid network or cluster
+
+<ul>
+<li>refer as a customer zone</li>
+</ul></li>
+</ul></li>
+<li>why aggregate
+
+<ul>
+<li>the cost of obtaining &amp; processing data</li>
+<li>the form in which data is available</li>
+<li>the size of the resulting location model</li>
+<li>the accuracy of forecast demand</li>
+<li>the customer zone balances
+
+<ul>
+<li>loss of accuracy (due to over aggregation)</li>
+<li>needless complexity</li>
+</ul></li>
+<li>factors affect efficiency of aggregation
+
+<ul>
+<li>the number of aggregated points, i.e. the # of different zones</li>
+<li>distribution of customers in each zone</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>Data aggregation</strong></p>
+
+<ul>
+<li>customer aggregation
+
+<ul>
+<li>grid network, clustering technique</li>
+<li>zip code</li>
+<li>service levels, frequency of delivery</li>
+</ul></li>
+<li>item aggregation - product groups
+
+<ul>
+<li>distribution pattern &amp; logistics characteristics</li>
+<li>product type</li>
+<li>companies may have thousands of individual items in their production line
+
+<ul>
+<li>variations in product models and style</li>
+<li>same products are packaged in many sizes</li>
+</ul></li>
+<li>within each of the source-groups, aggregate the SKU’s by similar logistics characteristics (e.g. weight, volume, holding cost, etc.)</li>
+<li>SKU (Stock Keeping Unit) - associated with any purchasable item in a store or catalog
+
+<ul>
+<li>e.g. a woman's blouse of a particular style and size - “3726-8” meaning “Style 3726, size 8”</li>
+<li>a source group is a group of SKU’s all sourced from the same place(s)</li>
+</ul></li>
+</ul></li>
+<li>guideline
+
+<ul>
+<li>aggregate demand points for 300 zones</li>
+<li>make sure each zone has approximately an equal amount of total demand</li>
+<li>place the aggregated points at the center of the zone</li>
+<li>aggregate the products into 20 to 50 product groups</li>
+<li>the error is typically no more than 1%</li>
+</ul></li>
+</ul>
+
+<p><strong>Others</strong></p>
+
+<ul>
+<li>transportation rates
+
+<ul>
+<li>huge number of rates representing all combinations of product flow</li>
+<li>rates: linear with distance and volume (e.g. truck, rail, UPS)</li>
+<li>transportation costs associated with an internal and an external fleet
+
+<ul>
+<li>internal - estimating transportation costs for company owned trucks</li>
+<li>external - Truckload (TL) mode and less than Truckload (LTL) mode</li>
+<li>ex. CZAR (Complete Zip Auditing &amp; Rating)
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-05-31%2016.48.23.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+<li>warehouse costs
+
+<ul>
+<li>fixed costs
+
+<ul>
+<li>proportional to warehouse size (capacity) but in a nonlinear way; this cost is fixed in certain ranges of the warehouse size
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-05-31%2016.51.15.png" alt=""></figure></li>
+</ul></li>
+<li>handling costs
+
+<ul>
+<li>labour &amp; utility costs which are proportional to annual flow through the warehouse</li>
+</ul></li>
+<li>storage costs
+
+<ul>
+<li>inventory holding costs, which are proportional to average inventory levels</li>
+</ul></li>
+</ul></li>
+
+<li><p>warehouse capacity</p>
+
+<ul>
+<li>amount of space is proportional to peak inventory, not annual flow
+<br></li>
+</ul>
+
+<p><span  class="math">\[annual \ storage \ costs = average \ inventory \ level \times inventory \ holding \ cost\]</span></p>
+
+<ul>
+<li>assume a regular shipment and delivery schedule</li>
+<li>required storage space is approximately 2λ
+<br></li>
+</ul>
+
+<p><span  class="math">\[inventory \ turnover \ ratio(\lambda)=\frac{annual \ sales(flow)}{average \ inventory \ level}\]</span></p>
+
+<p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-05-31%2016.57.47.png" alt=""></figure></p>
+
+<ul>
+<li>space for access &amp; handling pallet; for aisles, picking, sorting, and processing facilities</li>
+<li>multiply by a factor (typical 3)</li>
+</ul></li>
+
+<li><p>other issues</p>
+
+<ul>
+<li>warehouse location
+
+<ul>
+<li>geographical &amp; infrastructure conditions; natural resources &amp; labour availability; local industry &amp; tax regulations; public interest</li>
+</ul></li>
+<li>service level requirement
+
+<ul>
+<li>maximum distance between each customer and the warehouse serving it; proportion of customers (demand) within a given distance</li>
+</ul></li>
+<li>future demand
+
+<ul>
+<li>changes in customer demand over the next few years - possible scenarios</li>
+</ul></li>
+</ul></li>
+
+<li><p>a typical network design model</p>
+
+<ul>
+<li>several products are produced at several plants</li>
+<li>each plant has a known production capacity</li>
+<li>there is a known demand for each product at each customer zone</li>
+<li>the demand is satisfied by shipping the products via regional distribution centers</li>
+<li>there may be an upper bound on total throughput at each distribution center</li>
+</ul></li>
+
+<li><p>a typical location model</p>
+
+<ul>
+<li>there may be an upper bound on the distance between a distribution center and a market area served by it
+
+<ul>
+<li>like Hema, 3km, ensuing the food is fresh</li>
+</ul></li>
+<li>a set of potential location sites for the new facilities was identified</li>
+<li>costs
+
+<ul>
+<li>set-up costs</li>
+<li>transportation cost is proportional to the distance</li>
+<li>storage and handling costs</li>
+<li>production/supply costs</li>
+</ul></li>
+</ul></li>
+
+<li><p>complexity of network design</p>
+
+<ul>
+<li>location problems are, in general, very difficult problems</li>
+<li>the complexity increases with
+
+<ul>
+<li>the number of customers</li>
+<li>the number of products</li>
+<li>the number of potential locations for warehouses</li>
+<li>the number of warehouses located</li>
+</ul></li>
+<li>industry benchmarks: number of distribution centers
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-05-31%2017.06.15.png" alt=""></figure></li>
+</ul></li>
+</ul>
+
+<h2 id="network-design">Network Design</h2>
+
+<p><strong>Logistics network optimization</strong></p>
+
+<ul>
+<li>mathematical optimization techniques
+
+<ul>
+<li>exact algorithms that are guaranteed to find optimal solutions (i.e. least-cost solutions), mathematical programming
+
+<ul>
+<li>minimization on network</li>
+</ul></li>
+<li>heuristic algorithms that find good solutions, not necessarily optimal solutions
+
+<ul>
+<li>minimization on links</li>
+<li>minimization on paths</li>
+</ul></li>
+<li>these tools can determine strategies that will significantly reduce the total system cost
+
+<ul>
+<li>program complexity</li>
+<li>integer programming (IP) vs. linear programming (LP)</li>
+</ul></li>
+</ul></li>
+<li>simulation models
+
+<ul>
+<li>provide a mechanism to evaluate specified design alternatives created by the designer</li>
+<li>limitation of optimization techniques
+
+<ul>
+<li>characterizing performance for a given design – sometimes it is not realistic</li>
+<li>static models / system dynamics – sometimes it is not meaningful</li>
+</ul></li>
+<li>micro-level analysis
+
+<ul>
+<li>e.g. individual ordering pattern, specific inventory policies, inventory movements inside the warehouse</li>
+</ul></li>
+<li>characterizing the performance of a particular configuration but not in determining an effective configuration from a large set of potential configurations</li>
+</ul></li>
+</ul>
+
+<p><strong>Combination</strong></p>
+
+<ul>
+<li>hybrid model
+
+<ul>
+<li>use an optimization model to generate a number of least-cost solutions at the macrolevel, taking into account the most important cost components</li>
+<li>use a simulation model to evaluate the solutions generated in the first phase</li>
+</ul></li>
+<li>key features of a network configuration DSS
+
+<ul>
+<li>flexibility
+
+<ul>
+<li>the ability of the system to incorporate a large set of preexisting network characteristics</li>
+<li>customer-specific service level; existing warehouse; expansion of existing warehouse; warehouse-to-warehouse flow; bill of material</li>
+</ul></li>
+<li>effectiveness</li>
+<li>robustness</li>
+<li>reasonable running time</li>
+</ul></li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>ECOM6008 Introduction</title>
+            <link>https://www.marshalgao.com/ecom6008-introduction/</link>
+            <pubDate>Fri, 28 May 2021 16:47:40 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/ecom6008-introduction/</guid>
+            <description>What is SCM Today&amp;rsquo;s market environment Supply chain
+ also referred as logistics network  parties  suppliers manufacturers  raw materials are procured items are produced at one or more factories   warehouses &amp;amp; distribution centers retailers &amp;amp; customers   flows  raw materials work-in-process inventory finished products that flow between the facilities     goal  reduce cost improve service levels   tradeoffs  inventory level  average level of inventory inventory turnover ratio - the ratio of the annual flow to average inventory at the manufacturer&amp;rsquo;s main warehouse   service level  percent of orders are delivered on time   above two levels have interactions and mutual promotion   definition  a set of approaches, utilized to efficiently integrate suppliers, manufacturers, warehouses and stores merchandise is produced &amp;amp; distributed at the right quantities, to the right locations, and at the right time minimize systemwide costs while satisfying service level requirements   elaborated definition  to take into consideration every facility that has an impact on cost and plays a role in making the product conform to customer requirements to be efficient and cost-effective across the entire system – a systems approach to encompasses the firm&amp;rsquo;s activities at many levels, from the strategic level through the tactical to the operational level   definition of logistic management  process of planning, implementing, controlling the efficient, cost effective flow and storage of raw materials, in-process inventory, finished goods, &amp;amp; related information from point-of-origin to point-of-consumption for the purpose of conforming to customer requirements   main issues  who is involved?</description>
+            <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/ECOM6008_Introduction.png" alt=""></p>
+<h2 id="what-is-scm">What is SCM</h2>
+<p><strong>Today&rsquo;s market environment</strong>
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-05-28%2016.53.22.png" alt=""></p>
+<p><strong>Supply chain</strong></p>
+<ul>
+<li>also referred as logistics network
+<ul>
+<li>parties
+<ul>
+<li>suppliers</li>
+<li>manufacturers
+<ul>
+<li>raw materials are procured</li>
+<li>items are produced at one or more factories</li>
+</ul>
+</li>
+<li>warehouses &amp; distribution centers</li>
+<li>retailers &amp; customers</li>
+</ul>
+</li>
+<li>flows
+<ul>
+<li>raw materials</li>
+<li>work-in-process inventory</li>
+<li>finished products that flow between the facilities</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>goal
+<ul>
+<li>reduce cost</li>
+<li>improve service levels</li>
+</ul>
+</li>
+<li>tradeoffs
+<ul>
+<li>inventory level
+<ul>
+<li>average level of inventory</li>
+<li>inventory turnover ratio - the ratio of the annual flow to average inventory at the manufacturer&rsquo;s main warehouse</li>
+</ul>
+</li>
+<li>service level
+<ul>
+<li>percent of orders are delivered on time</li>
+</ul>
+</li>
+<li>above two levels have interactions and mutual promotion</li>
+</ul>
+</li>
+<li>definition
+<ul>
+<li>a set of approaches, utilized to efficiently integrate suppliers, manufacturers, warehouses and stores</li>
+<li>merchandise is produced &amp; distributed at the right quantities, to the right locations, and at the right time</li>
+<li>minimize systemwide costs while satisfying service level requirements</li>
+</ul>
+</li>
+<li>elaborated definition
+<ul>
+<li>to take into consideration every facility that has an impact on cost and plays a role in making the product conform to customer requirements</li>
+<li>to be efficient and cost-effective across the entire system – a systems approach</li>
+<li>to encompasses the firm&rsquo;s activities at many levels, from the strategic level through the tactical to the operational level</li>
+</ul>
+</li>
+<li>definition of logistic management
+<ul>
+<li>process of planning, implementing, controlling</li>
+<li>the efficient, cost effective flow and storage of raw materials, in-process inventory, finished goods, &amp; related information</li>
+<li>from point-of-origin to point-of-consumption for the purpose of conforming to customer requirements</li>
+</ul>
+</li>
+<li>main issues
+<ul>
+<li>who is involved?</li>
+<li>what is the goal?</li>
+<li>what is &ldquo;integration&rdquo;?</li>
+<li>what level of activities are involved?</li>
+</ul>
+</li>
+</ul>
+<p><strong>Development chain</strong></p>
+<ul>
+<li>definition
+<ul>
+<li>set of activities and processes associated with new product introduction</li>
+<li>includes
+<ul>
+<li>product design phase</li>
+<li>associated capabilities and knowledge</li>
+<li>sourcing decisions</li>
+<li>production plans
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-05-28%2017.19.43.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="why-scm">Why SCM</h2>
+<p><strong>Cost of SCM</strong></p>
+<ul>
+<li>within manufacturing plants and warehouses and between different components
+<ul>
+<li>movement</li>
+<li>storage</li>
+<li>control</li>
+</ul>
+</li>
+<li>investment including unnecessary cost
+<ul>
+<li>redundant stock</li>
+<li>inefficient transportation strategies</li>
+<li>other wasteful practices</li>
+</ul>
+</li>
+</ul>
+<p><strong>What makes SCM difficult</strong></p>
+<ul>
+<li>global optimization
+<ul>
+<li>desgin and operate a supply chain so that total system wide costs are minimized and system wide service levels are maintained</li>
+<li>single facility vs. entire system</li>
+</ul>
+</li>
+<li>uncertainty
+<ul>
+<li>eliminate as much uncertainty as possible and deal effectively with the remaining</li>
+<li>customer demand, travel times, machines, etc.</li>
+</ul>
+</li>
+<li>strategies for SCM
+<ul>
+<li>all of the advanced strategies, techniques, and approaches for SCM focus on
+<ul>
+<li>global optimization</li>
+<li>managing uncertainty</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Global optimization</strong></p>
+<ul>
+<li>sequential optimization vs. global optimization
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-05-29%2016.39.07.png" alt=""></li>
+<li>why is global optimization hard
+<ul>
+<li>SC is a complex network
+<ul>
+<li>dispersed over a large geography</li>
+</ul>
+</li>
+<li>SC may have different &amp; conflicting objectives
+<ul>
+<li>material – supplier v.s. manufacturer</li>
+</ul>
+</li>
+<li>SC is a dynamic system
+<ul>
+<li>customer demand &amp; supplier capabilities</li>
+<li>SC relationships change over time; power structure</li>
+</ul>
+</li>
+<li>SC varies over time
+<ul>
+<li>seasonal fluctuations, trends, advertising and promotions, competitors' pricing strategies, etc.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Managing uncertainty</strong></p>
+<ul>
+<li>contains
+<ul>
+<li>matching supply &amp; demand
+<ul>
+<li>what management gets
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-05-29%2016.49.11.png" alt=""></li>
+<li>what management wants
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-05-29%2016.49.22.png" alt=""></li>
+</ul>
+</li>
+<li>forecasting does not solve the problem
+<ul>
+<li>it is impossible to predict the precise demand for a specific item, even with the most advanced forecast techniques</li>
+</ul>
+</li>
+<li>inventory &amp; back-order levels fluctuate considerably across the supply chain
+<ul>
+<li>bullwhip effect</li>
+<li>even when customer demand for specific products does not vary greatly</li>
+<li>distributor orders to the factory fluctuate far more than the underlying retailer demand</li>
+</ul>
+</li>
+<li>demand is not the only source of uncertainty
+<ul>
+<li>delivery lead times, manufacturing yields, transportation times, and component availability</li>
+<li>as supply chains become larger and more geographically diverse, natural &amp; man-made disasters can have tremendous impact</li>
+</ul>
+</li>
+<li>recent trends make things more uncertain
+<ul>
+<li>lean manufacturing</li>
+<li>outsourcing</li>
+<li>off-shoring</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>dealing with uncertainty
+<ul>
+<li>pull systems</li>
+<li>risk pooling</li>
+<li>centralization</li>
+<li>postponement</li>
+<li>strategic alliances</li>
+<li>collaborative forecasting</li>
+</ul>
+</li>
+</ul>
+<h2 id="challenges-of-scm">Challenges of SCM</h2>
+<p><strong>Common distribution strategies</strong></p>
+<ul>
+<li>traditional distribution strategy
+<ul>
+<li>inventory is kept at the warehouses</li>
+</ul>
+</li>
+<li>cross-docking
+<ul>
+<li>operating strategy at flow consolidation centers - from the receiving dock to shipping dock directly without storage</li>
+<li>eliminates or significantly reduces the inventory at these centers</li>
+<li>improve transit time &amp; transportation cost without increasing inventory
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-05-29%2018.58.35.png" alt=""></li>
+</ul>
+</li>
+<li>direct shipping
+<ul>
+<li>goods are distributed from the suppliers directly to the retail stores</li>
+<li>avoiding warehouses altogether</li>
+</ul>
+</li>
+</ul>
+<p><strong>Major concerns</strong></p>
+<ul>
+<li>the ability to yield a globally optimized supply chain
+<ul>
+<li>each facility or party in the chain makes decisions with little regard to their impact on other supply chain partners</li>
+</ul>
+</li>
+<li>the ability to effectively manage uncertainty
+<ul>
+<li>product life cycles are becoming shorter &amp; shorter</li>
+<li>new products, no historical data are available</li>
+<li>proliferation of products</li>
+<li>significant price declines</li>
+</ul>
+</li>
+</ul>
+<p><strong>Decision level</strong></p>
+<ul>
+<li>strategic level
+<ul>
+<li>long-lasting effect on the firm</li>
+<li>number, location &amp; capacity of warehouses and manufacturing plants, and the flow of material through the logistics network</li>
+<li>acquisition of new production equipment and the design of working centers within each plant</li>
+<li>design of transportation facilities, comm equipment, data processing means, etc.</li>
+</ul>
+</li>
+<li>tactical level
+<ul>
+<li>updated anywhere between once every quarter &amp; once every year</li>
+<li>purchasing and production decisions, inventory policies, work-force size, and transportation strategies (e.g., frequency)</li>
+</ul>
+</li>
+<li>operational level
+<ul>
+<li>refers to day-to-day decisions</li>
+<li>scheduling, lead time quotations, routing, and truck loading</li>
+<li>the assignment of customer orders to individual machines</li>
+<li>dispatching, expediting and processing orders</li>
+</ul>
+</li>
+</ul>
+<p><strong>Key issues questions, and trad-offs associated with different decisions</strong></p>
+<ul>
+<li>contents
+<ul>
+<li>distribution network configuration</li>
+<li>information technology and decision-support systems</li>
+<li>inventory control</li>
+<li>customer value</li>
+<li>distribution strategies</li>
+<li>product design</li>
+<li>supply chain integration and strategic partnering</li>
+</ul>
+</li>
+<li>key SC issues
+<img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-05-29%2019.08.31.png" alt=""></li>
+</ul>
+<p><strong>What is new</strong></p>
+<ul>
+<li>challenges
+<ul>
+<li>global competition</li>
+<li>shorter product life cycle</li>
+<li>bew, low-cost distribution channels</li>
+<li>more powerful well-informed customers</li>
+<li>internet and e-business strategies</li>
+<li>sustainability issues</li>
+<li>risk management</li>
+</ul>
+</li>
+<li>approaches
+<ul>
+<li>push-pull strategies</li>
+<li>direct-to-consumer</li>
+<li>strategic alliances</li>
+<li>manufacturing postponement</li>
+<li>dynamic pricing</li>
+<li>e-procurement</li>
+</ul>
+</li>
+</ul>
+<p><strong>Internal and external</strong></p>
+<ul>
+<li>internal manufacturing operations
+<ul>
+<li>product design</li>
+<li>binding/packaging</li>
+<li>synchronization</li>
+</ul>
+</li>
+<li>external distribution process
+<ul>
+<li>material supply</li>
+<li>distribution/vendition</li>
+<li>coordination</li>
+</ul>
+</li>
+<li>problems
+<ul>
+<li>fluctuation in demand</li>
+<li>poor coordination in supply chain</li>
+<li>nullify manufacturing efficiency</li>
+</ul>
+</li>
+</ul>
+<h2 id="supply-chain-analytics">Supply Chain Analytics</h2>
+<p><strong>Overview</strong></p>
+<ul>
+<li>definition
+<ul>
+<li>the use of information and analytical tools to make better decisions regarding material flows in the supply chain</li>
+<li>analytical approaches to make decisions that better match supply and demand</li>
+</ul>
+</li>
+<li>contains
+<ul>
+<li>descriptive analytics
+<ul>
+<li>what is happening</li>
+<li>real-time information regarding location and quantities of goods in the supply chain</li>
+</ul>
+</li>
+<li>predictive analytics
+<ul>
+<li>what will be happening</li>
+<li>demand forecasting at strategic, tactical, and operational levels, planning process, etc.</li>
+</ul>
+</li>
+<li>prescriptive analytics
+<ul>
+<li>what should be happening</li>
+<li>mathematical optimization and simulation techniques to provide decision-support</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Supply chain operations reference (SCOR) model</strong></p>
+<ul>
+<li>plan</li>
+<li>source</li>
+<li>make</li>
+<li>deliver</li>
+<li>return</li>
+</ul>
+]]></content>
+        </item>
         
         <item>
             <title>FITE7410 Autoencoder and Benford&#39;s Law</title>
@@ -12254,7 +13539,7 @@ AddressId is the primary key column for this table.
             <pubDate>Mon, 21 Dec 2020 22:39:24 +0800</pubDate>
             
             <guid>https://www.marshalgao.com/hku-semester-1/</guid>
-            <description>   消失了好久，真的不是懒惰，是因为HKU的due实在太多了！ 好在好在HKU的第一学期结束啦，强迫自己圣诞节前出稿！ 马上要考研了，希望我的兄弟们可以smoothly有学上，已经上学的期末up起来！ 这次没有小刘同学的BGM，是这个?思想滑坡了！ 圣诞快乐啦，everybody！ btw，今天冬至，北方饺子，南方汤圆，都安排起来！！！ </description>
+            <description>   消失了好久，真的不是懒惰，是因为HKU的due实在太多了！ 好在好在HKU的第一学期结束啦，强迫自己圣诞节前出稿！ 马上要考研了，希望我的兄弟们可以smoothly有学上，已经上学的期末up起来！ 这次没有小刘同学的BGM，是这个🐶思想滑坡了！ 圣诞快乐啦，everybody！ btw，今天冬至，北方饺子，南方汤圆，都安排起来！！！ </description>
             <content type="html"><![CDATA[<div class="iframe-container">
     <iframe src="//player.bilibili.com/player.html?aid=843139818&bvid=BV1154y147Tt&cid=269266470&page=1" allowfullscreen> </iframe>
 </div>
@@ -12262,7 +13547,7 @@ AddressId is the primary key column for this table.
 <h5 id="消失了好久真的不是懒惰是因为hku的due实在太多了">消失了好久，真的不是懒惰，是因为HKU的due实在太多了！</h5>
 <h5 id="好在好在hku的第一学期结束啦强迫自己圣诞节前出稿">好在好在HKU的第一学期结束啦，强迫自己圣诞节前出稿！</h5>
 <h5 id="马上要考研了希望我的兄弟们可以smoothly有学上已经上学的期末up起来">马上要考研了，希望我的兄弟们可以smoothly有学上，已经上学的期末up起来！</h5>
-<h5 id="这次没有小刘同学的bgm是这个思想滑坡了">这次没有小刘同学的BGM，是这个?思想滑坡了！</h5>
+<h5 id="这次没有小刘同学的bgm是这个思想滑坡了">这次没有小刘同学的BGM，是这个🐶思想滑坡了！</h5>
 <h5 id="圣诞快乐啦everybody">圣诞快乐啦，everybody！</h5>
 <h5 id="btw今天冬至北方饺子南方汤圆都安排起来">btw，今天冬至，北方饺子，南方汤圆，都安排起来！！！</h5>
 ]]></content>

@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Marshal ">
+<meta name="description" content="Demand Forecasting Overview
+ problems  long lead times unreliable supply processes high demand variability a large number of SKU&#39;s  where do we hold inventory  suppliers and manufacturers warehouses and distribution centers retailers  types of inventory  raw materials work in process (WIP) finished goods   Handling inventory
+ reasons  economies of scale  encourage firms to transport large quantities of items, and therefore hold large inventories  unexpected changes in customer demand  the short life cycle of an increasing number of products – historical data is unavailable the presence of many competing products in the marketplace – group vs." />
+<meta name="keywords" content=", ecom6008, supply chain and e-logistics management, planning inventories, managing inventories" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="#252627" />
+<link rel="canonical" href="https://www.marshalgao.com/ecom6008-planning-and-managing-inventories/" />
+
+
+    <title>
+        
+            ECOM6008 Planning and Managing Inventories :: This is Marshal 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://www.marshalgao.com/main.1abfe30dec5ae0f5c4f84acd6413b12f63e4a6f9e1e7167f42de12192bfd25e9.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.marshalgao.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.marshalgao.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.marshalgao.com/favicon-16x16.png">
+    <link rel="manifest" href="https://www.marshalgao.com/site.webmanifest">
+    <link rel="mask-icon" href="https://www.marshalgao.com/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="https://www.marshalgao.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="ECOM6008 Planning and Managing Inventories">
+<meta itemprop="description" content="Demand Forecasting Overview
+ problems  long lead times unreliable supply processes high demand variability a large number of SKU&#39;s  where do we hold inventory  suppliers and manufacturers warehouses and distribution centers retailers  types of inventory  raw materials work in process (WIP) finished goods   Handling inventory
+ reasons  economies of scale  encourage firms to transport large quantities of items, and therefore hold large inventories  unexpected changes in customer demand  the short life cycle of an increasing number of products – historical data is unavailable the presence of many competing products in the marketplace – group vs.">
+<meta itemprop="datePublished" content="2021-06-02T15:28:54+08:00" />
+<meta itemprop="dateModified" content="2021-06-02T15:28:54+08:00" />
+<meta itemprop="wordCount" content="1634">
+<meta itemprop="image" content="https://www.marshalgao.com/"/>
+
+
+
+<meta itemprop="keywords" content="ecom6008,supply chain and e-logistics management,planning inventories,managing inventories," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.marshalgao.com/"/>
+
+<meta name="twitter:title" content="ECOM6008 Planning and Managing Inventories"/>
+<meta name="twitter:description" content="Demand Forecasting Overview
+ problems  long lead times unreliable supply processes high demand variability a large number of SKU&#39;s  where do we hold inventory  suppliers and manufacturers warehouses and distribution centers retailers  types of inventory  raw materials work in process (WIP) finished goods   Handling inventory
+ reasons  economies of scale  encourage firms to transport large quantities of items, and therefore hold large inventories  unexpected changes in customer demand  the short life cycle of an increasing number of products – historical data is unavailable the presence of many competing products in the marketplace – group vs."/>
+
+
+
+    <meta property="og:title" content="ECOM6008 Planning and Managing Inventories" />
+<meta property="og:description" content="Demand Forecasting Overview
+ problems  long lead times unreliable supply processes high demand variability a large number of SKU&#39;s  where do we hold inventory  suppliers and manufacturers warehouses and distribution centers retailers  types of inventory  raw materials work in process (WIP) finished goods   Handling inventory
+ reasons  economies of scale  encourage firms to transport large quantities of items, and therefore hold large inventories  unexpected changes in customer demand  the short life cycle of an increasing number of products – historical data is unavailable the presence of many competing products in the marketplace – group vs." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.marshalgao.com/ecom6008-planning-and-managing-inventories/" />
+<meta property="og:image" content="https://www.marshalgao.com/"/>
+<meta property="article:published_time" content="2021-06-02T15:28:54+08:00" />
+<meta property="article:modified_time" content="2021-06-02T15:28:54+08:00" />
+
+
+
+
+    <meta property="article:section" content="HKU" />
+
+
+
+    <meta property="article:published_time" content="2021-06-02 15:28:54 &#43;0800 CST" />
+
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css" integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.js" integrity="sha384-JiKN5O8x9Hhs/UE5cT5AAJqieYlOZbGT3CHws/y97o3ty4R7/O5poG9F3JoiOYw1" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://www.marshalgao.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://www.marshalgao.com/categories/hku">HKU</a></li><li><a href="https://www.marshalgao.com/categories/technology">TECH</a></li><li><a href="https://www.marshalgao.com/categories/product-manager">PM</a></li><li><a href="https://www.marshalgao.com/categories/life">LIFE</a></li><li><a href="https://www.marshalgao.com/about/">ABOUT</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        8 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://www.marshalgao.com/ecom6008-planning-and-managing-inventories/">ECOM6008 Planning and Managing Inventories</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <p><figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/Planning%20and%20Managing%20Inventories.png" alt=""></figure></p>
+
+<h2 id="demand-forecasting">Demand Forecasting</h2>
+
+<p><strong>Overview</strong></p>
+
+<ul>
+<li>problems
+
+<ul>
+<li>long lead times</li>
+<li>unreliable supply processes</li>
+<li>high demand variability</li>
+<li>a large number of SKU's</li>
+</ul></li>
+<li>where do we hold inventory
+
+<ul>
+<li>suppliers and manufacturers</li>
+<li>warehouses and distribution centers</li>
+<li>retailers</li>
+</ul></li>
+<li>types of inventory
+
+<ul>
+<li>raw materials</li>
+<li>work in process (WIP)</li>
+<li>finished goods</li>
+</ul></li>
+</ul>
+
+<p><strong>Handling inventory</strong></p>
+
+<ul>
+<li>reasons
+
+<ul>
+<li>economies of scale
+
+<ul>
+<li>encourage firms to transport large quantities of items, and therefore hold large inventories</li>
+</ul></li>
+<li>unexpected changes in customer demand
+
+<ul>
+<li>the short life cycle of an increasing number of products – historical data is unavailable</li>
+<li>the presence of many competing products in the marketplace – group vs. single</li>
+</ul></li>
+<li>delivery lead time</li>
+<li>significant uncertainty quantity / quality
+
+<ul>
+<li>supply, supplier costs, and delivery times</li>
+</ul></li>
+</ul></li>
+<li>coordination
+
+<ul>
+<li>relationship
+
+<ul>
+<li>the need for the coordination of inventory decisions &amp; transportation policies</li>
+</ul></li>
+<li>impact
+
+<ul>
+<li>each types of inventory needs its own inventory control mechanism; interactions of the various levels in the supply chain</li>
+</ul></li>
+</ul></li>
+<li>two important issues
+
+<ul>
+<li>demand forecasting</li>
+<li>order quantity calculation</li>
+</ul></li>
+<li>tradeoffs
+
+<ul>
+<li>inventory cost</li>
+<li>ordering cost (e.g., shipment)</li>
+</ul></li>
+</ul>
+
+<h2 id="inventory-management">Inventory Management</h2>
+
+<p><strong>Inventory policy</strong></p>
+
+<ul>
+<li>key factors
+
+<ul>
+<li>customer demand
+
+<ul>
+<li>pattern or random</li>
+</ul></li>
+<li>replenishment lead time
+
+<ul>
+<li>certain or uncertain (lead time: time between placing order and receiving order)</li>
+</ul></li>
+<li>the number of different products stored at the warehouse</li>
+<li>the length of the planning horizon</li>
+<li>costs</li>
+<li>service level requirement</li>
+</ul></li>
+<li>cost factors
+
+<ul>
+<li>order cost
+
+<ul>
+<li>product cost</li>
+<li>transportation cost</li>
+</ul></li>
+<li>holding cost (or inventory carrying cost)
+
+<ul>
+<li>state taxes, property taxes, &amp; insurance on inventories</li>
+<li>maintenance costs</li>
+<li>obsolescence cost</li>
+<li>opportunity costs</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>A single warehouse inventory</strong></p>
+
+<ul>
+<li>the economic lot size model
+
+<ul>
+<li>constant demand for a single item</li>
+<li>unlimited capacity of the product supply</li>
+<li>demand is constant at a rate of D items/day</li>
+<li>order quantities are fixed at Q items/order</li>
+<li>a fixed setup cost (K) for each order</li>
+<li>an inventory carrying cost (h) holding cost - for every unit held in inventory per day</li>
+<li>the lead time, the time that elapses between the placement of an order and its receipt, is 0</li>
+<li>initial inventory is 0</li>
+<li>the planning horizon is long (infinite ∞)</li>
+<li>optimal order policy to minimize annual purchasing and carrying costs without shortage</li>
+<li>zero inventory ordering property
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-06-02%2023.14.46.png" alt=""></figure></li>
+<li>economic order quantity (EOQ)
+
+<ul>
+<li>total cost (per cycle) = setup cost + holding cost</li>
+<li>setup cost = K</li>
+<li>holding cost = (per unit per time period holding cost) × (average inventory level) × (the length of the cycle) = h × Q/2 × T</li>
+<li>total cost = K + hTQ/2</li>
+<li>average total cost = total cost/T = K/T + hTQ/2T = KD/Q + hQ/2
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-06-02%2023.22.25.png" alt=""></figure></li>
+<li>total inventory cost is insensitive to order quantity</li>
+<li>changes in order quantities have a relatively small impact on annual setup costs and inventory holding costs
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-06-02%2023.25.11.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+<li>the effect of demand uncertainty</li>
+<li>fixed order costs</li>
+<li>no fixed order costs</li>
+<li>variable lead times</li>
+</ul>
+
+<h2 id="managing-uncertainty">Managing Uncertainty</h2>
+
+<p><strong>The effect of demand uncertainty</strong></p>
+
+<ul>
+<li>real conditions
+
+<ul>
+<li>many treat the world as if it were predictable
+
+<ul>
+<li>production &amp; inventory planning based on forecasts of demand far in advance of the selling season</li>
+<li>companies are aware of demand uncertainty when create a forecast, but design their planning process as if the forecast truly represents reality</li>
+</ul></li>
+<li>recent technological advances have increased the level of demand uncertainty
+
+<ul>
+<li>products with short life cycle</li>
+<li>large variety of products compete in market</li>
+</ul></li>
+</ul></li>
+<li>risk/reward trade-off
+
+<ul>
+<li>production quantity <span  class="math">\(\uparrow\)</span>
+
+<ul>
+<li>the probability of large losses - risk <span  class="math">\(\uparrow\)</span></li>
+<li>the probability of large gains <span  class="math">\(\uparrow\)</span></li>
+</ul></li>
+</ul></li>
+<li>3 principles of all forecasting techniques
+
+<ul>
+<li>forecasting is always wrong</li>
+<li>the longer the forecast horizon the worse is the forecast</li>
+<li>aggregate forecasts are more accurate</li>
+</ul></li>
+</ul>
+
+<p><strong>The multi-period continuous review inventory model</strong></p>
+
+<ul>
+<li>overview
+
+<ul>
+<li>normally distributed random demand</li>
+<li>fixed order cost + a cost proportional to amount ordered</li>
+<li>inventory cost - charged per item per unit time</li>
+<li>if an order arrives and there is no inventory, the order is lost</li>
+<li>the distributor has a required service level - the likelihood not stock out during lead time</li>
+</ul></li>
+<li>inventory level based
+
+<ul>
+<li>the (s,S) policy or a min max policy
+
+<ul>
+<li>s as the reorder point</li>
+<li>S as the order-up-to-level</li>
+<li>the reorder point is a function of
+
+<ul>
+<li>lead time</li>
+<li>average demand</li>
+<li>demand variability</li>
+<li>service level
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-06-07%2016.07.34.png" alt=""></figure></li>
+</ul></li>
+<li>notations
+
+<ul>
+<li>AVG = average daily demand</li>
+<li>STD = standard deviation of daily demand</li>
+<li>L = replenishment lead time from the supplier to the distributor in days</li>
+<li>h = cost of holding one unit of the product for one day at the distributor</li>
+<li>K = fixed cost</li>
+<li>α = service level (probability of stocking out is 1 - α)</li>
+<li>inventory position at any time is the actual inventory plus items already ordered, but not yet delivered</li>
+</ul></li>
+<li>with fixed order costs
+
+<ul>
+<li>s = (average inventory during lead time) + (safety stock) = (average daily demand × the lead time) + (safety stock)
+
+<ul>
+<li>ensures that there will be enough inventory to last until the next order arrives</li>
+<li>the amount of inventory at the warehouse and in the pipeline to protect against deviations from average demand during lead time</li>
+</ul></li>
+<li>prob{demand during lead time ≥ L × AVG + z × STD × <span  class="math">\(\sqrt{L}\)</span>} = 1 − α
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-06-07%2016.21.11.png" alt=""></figure></li>
+<li>reorder point, s = L × AVG + z × STD × <span  class="math">\(\sqrt{L}\)</span></li>
+<li>order quantity, Q, economic lot size model, Q = <span  class="math">\(\sqrt{\frac{2K × AVG}{h}}\)</span></li>
+<li>order-up-to-level, S, order during the lead time and safety stick, S = Q + s = Q + L × AVG + z × STD × <span  class="math">\(\sqrt{L}\)</span></li>
+</ul></li>
+<li>without fixed order costs
+
+<ul>
+<li>transportation cost is 0</li>
+<li>s = S = (average inventory during lead time) + (safety stock) = (average daily demand × the lead time) + (safety stock)</li>
+<li>reorder point, s, is identical to the reorder point obtained in the case of “no fixed order cost”, s = L × AVG + z × STD × <span  class="math">\(\sqrt{L}\)</span></li>
+</ul></li>
+<li>variable lead times
+
+<ul>
+<li>the lead time is not constant</li>
+<li>normally distributed with average lead time AVGL standard deviation STDL</li>
+<li>AVG × AVGL - average demand during lead time</li>
+<li>the amount of safety stock <span  class="math">\(z × \sqrt{AVGL × {STD}^2 + {AVG}^2 + {STDL}^2}\)</span></li>
+<li>s = AVG × AVGL + <span  class="math">\(z × \sqrt{AVGL × {STD}^2 + {AVG}^2 + {STDL}^2}\)</span></li>
+<li>S = Q + s = Q + AVG × AVGL + <span  class="math">\(z × \sqrt{AVGL × {STD}^2 + {AVG}^2 + {STDL}^2}\)</span></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>time/cycle based
+
+<ul>
+<li>base-stock level policy
+
+<ul>
+<li>determine a target inventory level, base-stock level</li>
+<li>each review period, review the inventory position is reviewed and order enough to raise the inventory position to the base-stock level
+
+<ul>
+<li>r = length of the review period</li>
+<li>L = lead time</li>
+<li>AVG = average daily demand</li>
+<li>STD = standard deviation of this daily demand</li>
+</ul></li>
+<li>average demand during an interval of r + L days = (r + L) × AVG</li>
+<li>safety stock = z × STD × <span  class="math">\(\sqrt{r + L}\)</span>
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-06-07%2016.32.32.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+<li>service level optimization
+
+<ul>
+<li>optimal inventory policy assumes a specific service level target</li>
+<li>appropriate level of service?
+
+<ul>
+<li>may be determined by the downstream customer</li>
+<li>retailer may require the supplier, to maintain a specific service level</li>
+<li>supplier will use that target to manage its own inventory</li>
+<li>facility may have the flexibility to choose the appropriate level of service
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-06-07%2016.34.32.png" alt=""></figure></li>
+</ul></li>
+<li>trade-off - retail strategy
+
+<ul>
+<li>everything else being equal
+
+<ul>
+<li>service level <span  class="math">\(\uparrow\)</span>, inventory level <span  class="math">\(\uparrow\)</span></li>
+<li>for the same inventory level, lead time <span  class="math">\(\uparrow\)</span> to the facility, level of service provided by the facility <span  class="math">\(\downarrow\)</span></li>
+<li>inventory level <span  class="math">\(\downarrow\)</span>, the higher the impact of a unit of inventory on service level <span  class="math">\(\uparrow\)</span> and hence on expected profit</li>
+</ul></li>
+<li>given a target service level across all products determine service level for each SKU so as to maximize expected profit</li>
+<li>everything else being equal, service level <span  class="math">\(\uparrow\)</span> with
+
+<ul>
+<li><span  class="math">\(\uparrow\)</span> profit margin</li>
+<li><span  class="math">\(\uparrow\)</span> volume</li>
+<li><span  class="math">\(\downarrow\)</span> variability</li>
+<li><span  class="math">\(\downarrow\)</span> lead time</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>profit optimization and service level
+
+<ul>
+<li>target inventory level = 95% across all products</li>
+<li>service level &gt; 99% for many products with high profit margin, high volume and low variability</li>
+<li>service level &lt; 95% for products with low profit margin, low volume and high variability
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-06-07%2016.50.56.png" alt=""></figure></li>
+</ul></li>
+</ul>
+
+<h2 id="managing-inventory-in-supply-chain">Managing Inventory in Supply Chain</h2>
+
+<p><strong>Risk pooling</strong></p>
+
+<ul>
+<li>2 warehouses <span  class="math">\(\rightarrow\)</span> 1 warehouse
+
+<ul>
+<li>increase delivery time (disadvantage)</li>
+<li>either the same service level with much lower inventory or a higher service level with the same amount of total inventory (advantage)</li>
+</ul></li>
+<li>coefficient of variation
+
+<ul>
+<li>= standard deviation / co-efficient of variation</li>
+<li>standard deviation measures the absolute variability of customer demands</li>
+<li>co-efficient of variation measures variability relative to average demand</li>
+</ul></li>
+<li>benefits
+
+<ul>
+<li>demand variability is reduced
+
+<ul>
+<li>high demand from one customer will be offset by low demand from another</li>
+<li>allows to reduce safety stock, therefore reduce average inventory for the same service level</li>
+<li>the higher the coefficient of variation, the greater the benefit obtained from centralized systems</li>
+<li>the benefits from risk pooling depend on the behavior of demand from one market relative to demand from another</li>
+<li>one distribution center is better than two centers, two better than three (centralized better than decentralized)</li>
+</ul></li>
+</ul></li>
+<li>reduce systemwide cost
+
+<ul>
+<li>echelon inventory at any stage or level of the system is the inventory on hand at the echelon, plus all downstream inventory</li>
+<li>individual retailers are managed using the appropriate (s, S) inventory policy</li>
+<li>warehouse policy controls its echelon inventory position by (s, S) inventory policy</li>
+<li>whenever the echelon inventory position for the warehouse is below s, an order is placed to raise its echelon inventory position to S
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-06-07%2017.59.57.png" alt=""></figure></li>
+</ul></li>
+</ul>
+
+<h2 id="supply-contract">Supply Contract</h2>
+
+<p><strong>Overview</strong></p>
+
+<ul>
+<li>key insights
+
+<ul>
+<li>the optimal order quantity is not necessarily equal to average forecast demand</li>
+<li>the optimal quantity depends on the relationship between marginal profit &amp; marginal cost</li>
+<li>as order quantity increases, average profit first increases and then decreases</li>
+<li>as production quantity increases, risk increases; the probability of large gains and of large losses increases</li>
+<li>effective supply contracts allow supply chain partners to replace sequential optimization by global optimization</li>
+<li>buy back and revenue sharing contracts achieve this objective through risk sharing</li>
+</ul></li>
+<li>contracts
+
+<ul>
+<li>sequential</li>
+<li>buy back</li>
+<li>revenue sharing</li>
+<li>quantity flexibility contracts
+
+<ul>
+<li>supplier provides full refund for returned items as long as the number of returns is no larger than a certain quantity</li>
+</ul></li>
+<li>sales rebate contracts
+
+<ul>
+<li>supplier provides direct incentive for the retailer to increase sales by means of a rebate paid by the supplier for any item sold above a certain quantity</li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/tags/ecom6008/">ecom6008</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/supply-chain-and-e-logistics-management/">supply chain and e-logistics management</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/planning-inventories/">planning inventories</a></span>
+        <span class="tag"><a href="https://www.marshalgao.com/tags/managing-inventories/">managing inventories</a></span>
+        
+    </p>
+
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="https://www.marshalgao.com/categories/hku/">HKU</a></span>
+        
+    </p>
+
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        1634 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2021-06-02 15:28
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h"></span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+            <span class="button previous">
+              <a href="https://www.marshalgao.com/say-goodbye-to-chaos/">
+                <span class="button__icon">←</span>
+                <span class="button__text">Say Goodbye to Chaos</span>
+              </a>
+            </span>
+          
+
+          
+            <span class="button next">
+              <a href="https://www.marshalgao.com/ecom6008-designing-supply-chain-network/">
+                <span class="button__text">ECOM6008 Designing Supply Chain Network</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span><a href="https://www.hku.hk" target="_blank" rel="noopener">The University of Hong Kong</a></span>
+            <span><a href="https://www.ecom-icom.hku.hk" target="_blank" rel="noopener">ECIC</a></span>
+          </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020-2021</span>
+            
+                
+                <span>Marshal</a></span>
+            
+            
+            
+        </div>
+    </div>
+</footer>
+
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://www.marshalgao.com/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>
