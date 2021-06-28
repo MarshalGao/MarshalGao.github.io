@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>supply chain integration on This is Marshal</title>
+    <link>https://www.marshalgao.com/tags/supply-chain-integration/</link>
+    <description>Recent content in supply chain integration on This is Marshal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 21 Jun 2021 17:03:13 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/supply-chain-integration/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECOM6008 Supply Chain Integration</title>
+      <link>https://www.marshalgao.com/ecom6008-supply-chain-integration/</link>
+      <pubDate>Mon, 21 Jun 2021 17:03:13 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/ecom6008-supply-chain-integration/</guid>
+      <description>Introduction Integration
+ coordinate  production transportation inventory decisions  integrate  the front-end of the SC, customer demand, to the back-end of the SC, the production &amp;amp; manufacturing portion   Opportunities and challenges
+ information availability activity coordination across the SC details  reduce cost better utilize resources increase service level reduce the bullwhip effect effectively respond to changes in the market   Exemplary approach
+ strategy  push, pull, and push-pull strategy demand driven strategy internet strategy  integration  centralized vs.</description>
+    </item>
+    
+  </channel>
+</rss>
