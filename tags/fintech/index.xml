@@ -7,108 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 09 May 2021 15:18:22 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/fintech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Feb 2021 12:17:11 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/tags/fintech/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>FITE7410 Autoencoder and Benford&#39;s Law</title>
-      <link>https://www.marshalgao.com/fite7410-autoencoder-and-benfords-law/</link>
-      <pubDate>Sun, 09 May 2021 15:18:22 +0800</pubDate>
+      <title>Basic Usage of R Language</title>
+      <link>https://www.marshalgao.com/basic-usage-of-r-language/</link>
+      <pubDate>Mon, 01 Feb 2021 12:17:11 +0800</pubDate>
       
-      <guid>https://www.marshalgao.com/fite7410-autoencoder-and-benfords-law/</guid>
-      <description>Review and Autoencoder A qiuck review
- assumptions underlying PCA  is not Gaussian distribution interval-level measurement random sampling linearity large variances have important structure the principal components are orthogonal  fraud detection with outliers  assume data has N features (N-dimensions) using PCA to find key components identify outliers using the key components  the reason of using PCA  N-dimensional data are difficult to understand PCA supports dimension reduction  PCA  is a technique to reduce the dimensionality of data by forming new variables that are linear composites of the original variables   Autoencoder</description>
-    </item>
-    
-    <item>
-      <title>FITE7410 Computer Forensic and Data Analytics in FF and ML</title>
-      <link>https://www.marshalgao.com/fite7410-computer-forensic-and-data-analytics-in-ff-and-ml/</link>
-      <pubDate>Sat, 08 May 2021 16:22:22 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/fite7410-computer-forensic-and-data-analytics-in-ff-and-ml/</guid>
-      <description>Trade Based Money Laundering (TBML) Overview
- definition  the process of disguising the proceeds of crime and moving value through the use of trade transactions in an attempt to legitimize their illicit origins or their activities contains lots of transactions   aim  is not the movement of goods, but the movement of money, which the trade transactions facilitate   trade process and financing  international trade involves a range of risks for the parties involved, leading to uncertainty over the timing of payments between the exporter and importer the Wolfsberg Group notes approximately 80% of international trade processed by FIs is open account trading  “open account transaction” involves a sale where the goods are shipped and delivered before payment is due   TBML schemes frequently involve this method because financial institutions have a reduced role on the documentary collection process in the transaction    TBML Risks &amp;amp; Trends Economic sectors and products vulnerable to TBML activities</description>
-    </item>
-    
-    <item>
-      <title>FITE7410 AML and CTF</title>
-      <link>https://www.marshalgao.com/fite7410-aml-and-ctf/</link>
-      <pubDate>Thu, 06 May 2021 17:24:22 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/fite7410-aml-and-ctf/</guid>
-      <description>Introduction Money laundering
- definition  covers all kinds of methods used to change the identity of illegally obtained money (i.e. crime proceeds) so that it appears to have originated from a legitimate source   stages - frequently involving numerous transactions  placement  physical disposal of cash proceeds derived from illegal activities   layering  separating illicit proceeds from their source by creating complex layers of financial transactions   integration  returning the laundered proceeds back into the general financial system so that the proceeds appear to be the result of legitimate business activities      Terrorist financing</description>
-    </item>
-    
-    <item>
-      <title>ECOM7122 Deep Learning</title>
-      <link>https://www.marshalgao.com/ecom7122-deep-learning/</link>
-      <pubDate>Wed, 31 Mar 2021 11:57:06 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/ecom7122-deep-learning/</guid>
-      <description>Deep Learning Image &amp;amp; Voice Overview
- for applied AI four pillars  corresponding to unlocking unstructured data  AI &amp;ldquo;core&amp;rdquo; capabilities in language and vision natural language processing (NLP)     the &amp;ldquo;core&amp;rdquo; deep learning breakthroughs  vision - image recognition language - voice recognition    Fastest growing product in history
- result  conclusion  smart speaker increases the most quickly to 50% but smart speaker goes smoothly after 5 years, compared the continuous dramatical growth of smartphone and TV after reaching 50% (growth flatten)  may due to the loss of freshness may due to the loss of practicality      Cases</description>
-    </item>
-    
-    <item>
-      <title>ECOM7122 Blue Ocean Value Innovation</title>
-      <link>https://www.marshalgao.com/ecom7122-blue-ocean-value-innovation/</link>
-      <pubDate>Tue, 30 Mar 2021 18:06:17 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/ecom7122-blue-ocean-value-innovation/</guid>
-      <description>Industry Life Cycle &amp;amp; Porter&amp;rsquo;s Five Forces Strategy toolbox
- firm-level analysis  target segments market size, etc.   industry-level analysis  competitive advantage analysis value chain analysis    Industry life cycle and five forces
- stages of the industry life cycle  Porter&amp;rsquo;s five forces analysis of industry profitability  influence  overall  average profitability  others  industries in the stages of Maturity and Decline will often seek government intervention or subsidies to help protect the declining industry often substitutes using innovation or new technology are the root cause of decline blue Ocean Strategy, sometimes called Value Innovation provides a new approach to managing mature or declining industries      Blue Ocean Strategy Red oceans vs.</description>
-    </item>
-    
-    <item>
-      <title>FITE7410 Forensic Accounting and Fraud Investigation</title>
-      <link>https://www.marshalgao.com/fite7410-forensic-accounting-and-fraud-investigation/</link>
-      <pubDate>Fri, 26 Mar 2021 09:45:22 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/fite7410-forensic-accounting-and-fraud-investigation/</guid>
-      <description>What Is Forensic Accounting Overview
- forensic accounting  a discipline that deals with the relationship and application of financial facts as they relate to legal issues in the court of law an important tool that assists in investigating crimes such as bribery, fraud, money laundering and other white collar crimes   forensic accountant  financial and fraud investigator identifier of issues gatherer of information analyst of documentation analyst of people expert witness   forensic accountant do  fraud prevention and detection forensic and fraud investigation regulatory compliance and internal control review asset tracing and recovery anti-money laundering investigation and review litigation support expert witness reporting and testimony    Difference between audit and forensic accounting Fraud Prevention and Detection Fraud</description>
-    </item>
-    
-    <item>
-      <title>ECOM7122 Machine Learning, InsurTech and Ethical Considerations</title>
-      <link>https://www.marshalgao.com/ecom7122-machine-learning-insurtech-and-ethical-considerations/</link>
-      <pubDate>Tue, 23 Mar 2021 17:07:01 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/ecom7122-machine-learning-insurtech-and-ethical-considerations/</guid>
-      <description>Machine Learning &amp;amp; Heart Attack Risk Overview
- traditional medical systems  treat illness when people are already sick   the reason of using machine learning  more accurate  20% - 30% better performance (means better prediction)   &amp;ldquo;unbiased&amp;rdquo;  statistical vs prejudicial bias   fast  automated decision making system but some decision making system may generate risks   cheap  predictive models work 24/7 can provide medical services all the time      Scorecard</description>
-    </item>
-    
-    <item>
-      <title>ECOM7122 Competitive Advantage and Profitability Analysis</title>
-      <link>https://www.marshalgao.com/ecom7122-competitive-advantage-and-profitability-analysis/</link>
-      <pubDate>Mon, 22 Mar 2021 10:36:00 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/ecom7122-competitive-advantage-and-profitability-analysis/</guid>
-      <description>Competitive Advantage Defined Strategy toolbox
- firm-level analysis  target segments market size mission statement, etc.   industry-level analysis  competitive adavantage analysis value chain analysis   tips  competitive advantage analysis requires &amp;ldquo;zooming out&amp;rdquo; to industry-level analysis, looking at the forest as well as the trees    Industry &amp;amp; market
- industry  many companies companies that make similar products or services   market  many buyers buyers of an industry&amp;rsquo;s products and services    Industry average profitability or &amp;ldquo;grades&amp;rdquo;</description>
-    </item>
-    
-    <item>
-      <title>FITE7410 Social Network Analysis and Post-Processing</title>
-      <link>https://www.marshalgao.com/fite7410-social-network-analysis-and-post-processing/</link>
-      <pubDate>Sat, 20 Mar 2021 16:08:36 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/fite7410-social-network-analysis-and-post-processing/</guid>
-      <description>Social Network Analysis for Fraud Detection Basic concepts
- guilt-by-association  the reason of studying social network assumes that a person is guilty of a crime because he/she is associated with someone or something involved in a crime  applications of social network analytics  because most frauds are committed by illegal set-ups of a group of fraudsters traditional fraud detection models have limitations to detect relations or insight from a social network social network analytics will give insights about some suspicious cases (e.</description>
-    </item>
-    
-    <item>
-      <title>ECOM7122 Applied AI in Business</title>
-      <link>https://www.marshalgao.com/ecom7122-applied-ai-in-business/</link>
-      <pubDate>Tue, 16 Mar 2021 10:01:44 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/ecom7122-applied-ai-in-business/</guid>
-      <description>Intro to Applied AI Four pillars of applied AI
- every industry may use it contains  virtual assistance  apple siri, etc. chat robot   generating insights  machine learning   automation of manual processes  industrial robot machine or program replacement for routine work   unlocking unstructured data  used structured data in the past, but can unlock unstructured data, transferring the books on the shelf into database understand consumer conversations, e.</description>
+      <guid>https://www.marshalgao.com/basic-usage-of-r-language/</guid>
+      <description>Installation R
+ download from official website -&amp;gt; click here choose the mirror to download according your location and OS  RStudio
+ ensure that you have installed R before installing RSudio download RStudio desktop from official website -&amp;gt; click here  Notebook
+ can use RStudio also can use Kaggle  Basic Functions and Usage of R Language  practice in Kaggle  </description>
     </item>
     
   </channel>
