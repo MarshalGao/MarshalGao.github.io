@@ -6,8 +6,293 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-        <lastBuildDate>Mon, 28 Jun 2021 17:09:13 +0800</lastBuildDate>
+        <lastBuildDate>Thu, 01 Jul 2021 15:53:40 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ECOM6008 Procurement and Outsourcing Strategies</title>
+            <link>https://www.marshalgao.com/ecom6008-procurement-and-outsourcing-strategies/</link>
+            <pubDate>Thu, 01 Jul 2021 15:53:40 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/ecom6008-procurement-and-outsourcing-strategies/</guid>
+            <description>Oursourcing Benefits and Risks Overview
+ what went wrong  need fine-tuning need more more effective IT due to  technologies change rapidly short life-cycle products uncertainty in customer demand is enormous   main issues  buy/make decision process  identify the advantages/risks associated with outsourcing present a framework for optimizing buy/make decisions  procurement process  independent, private, &amp;amp; consortium-based e-marketplaces opportunities &amp;amp; challenges    Outsourcing</description>
+            <content type="html"><![CDATA[<h2 id="oursourcing-benefits-and-risks">Oursourcing Benefits and Risks</h2>
+
+<p><strong>Overview</strong></p>
+
+<ul>
+<li>what went wrong
+
+<ul>
+<li>need fine-tuning</li>
+<li>need more more effective IT</li>
+<li>due to
+
+<ul>
+<li>technologies change rapidly</li>
+<li>short life-cycle products</li>
+<li>uncertainty in customer demand is enormous</li>
+</ul></li>
+</ul></li>
+<li>main issues
+
+<ul>
+<li>buy/make decision process
+
+<ul>
+<li>identify the advantages/risks associated with outsourcing</li>
+<li>present a framework for optimizing buy/make decisions</li>
+</ul></li>
+<li>procurement process
+
+<ul>
+<li>independent, private, &amp; consortium-based e-marketplaces</li>
+<li>opportunities &amp; challenges</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>Outsourcing</strong></p>
+
+<ul>
+<li>definition
+
+<ul>
+<li>outsourcing the manufacturing of key components, was used as a tool to rapidly cut costs</li>
+<li>these benefits come with new &amp; considerable risks</li>
+</ul></li>
+<li>motivations
+
+<ul>
+<li>economies of scale (EOS)
+
+<ul>
+<li>reduce manufacturing costs through the aggregation of orders from many different buyers - allows suppliers to take advantage of EOS, both in purchasing and in manufacturing</li>
+</ul></li>
+<li>risk pooling
+
+<ul>
+<li>allows buyers to transfer demand uncertainty to CEM (contract equipment manufacturer) who aggregates demand from many buying companies</li>
+</ul></li>
+<li>reduce capital investment
+
+<ul>
+<li>transfer also capital investment to CEM that can make this investment because it is implicitly shared between many of the CEM's customers</li>
+</ul></li>
+<li>focus on core competency
+
+<ul>
+<li>the buyer is able to focus on its core strength, the specific talent, skills, and knowledge sets that differentiate the company from its competitors</li>
+<li>e.g., Nike - focuses on innovation, marketing, distribution, and sales, not on manufacturing</li>
+</ul></li>
+<li>increased flexibility
+
+<ul>
+<li>the ability to better react to changes in customer demand</li>
+<li>the ability to use the supplier’s technical knowledge to accelerate product development cycle time</li>
+<li>the ability to gain access to new technologies &amp; innovation
+
+<ul>
+<li>technologies change very frequently (e.g. high- tech) and short life cycle (e.g. fashion products)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>New &amp; considerable risks</strong></p>
+
+<ul>
+<li>loss of competitive knowledge
+
+<ul>
+<li>outsourcing critical components to suppliers may open up opportunities for competitors
+
+<ul>
+<li>e.g., IBM PC example</li>
+</ul></li>
+<li>outsourcing implies companies lose their ability to introduce new designs based on their own agenda rather than the supplier’s agenda</li>
+<li>outsourcing the manufacturing of various components to different suppliers may prevent the development of new insights, innovations &amp; solutions that typically require cross-functional
+teamwork</li>
+</ul></li>
+<li>conflicting objectives
+
+<ul>
+<li>buyers
+
+<ul>
+<li>increased flexibility, a key objective when outsource the manufacturing of various components - an ability to better match supply and demand by adjusting production rates as needed; fast product design</li>
+</ul></li>
+<li>supplier
+
+<ul>
+<li>profit margins are relatively small and hence they have to focus on cost reduction, rather than flexibility which is in direct conflict with the suppliers’ objectives of long-term, firm, and stable commitment from the buyer</li>
+</ul></li>
+<li>good times vs. slow economy</li>
+</ul></li>
+</ul>
+
+<h2 id="a-framework-for-buymake-decisions">A Framework for Buy/Make Decisions</h2>
+
+<p><strong>Overview</strong></p>
+
+<ul>
+<li>process
+
+<ul>
+<li>how can the firm decide on which component to manufacture and which to outsource</li>
+<li>consultants and supply chain pundits typically suggest to focus on core competencies</li>
+<li>how can the firm identify what is in the core, and hence should be made internally</li>
+</ul></li>
+<li>reasons for outsourcing
+
+<ul>
+<li>the firm has the knowledge and the skills required to produce the component but for various reasons decides to outsource</li>
+<li>the company does not have the people, skills, and knowledge required to produce the component; outsource to have access to these capabilities</li>
+</ul></li>
+<li>product types
+
+<ul>
+<li>can be made by combining components whose different components</li>
+<li>is a product made up from components whose functionalities are tightly related</li>
+</ul></li>
+</ul>
+
+<p><strong>Modular product</strong></p>
+
+<ul>
+<li>content
+
+<ul>
+<li>components are independent of each other</li>
+<li>components are interchangeable</li>
+<li>standard interfaces are used</li>
+<li>a component can be designed or upgraded with little or no regard to other components</li>
+<li>customer preference determines the product configuration</li>
+</ul></li>
+<li>dependency on knowledge/capacity
+
+<ul>
+<li>capturing knowledge is important, whereas production capacity in-house is less critical
+
+<ul>
+<li>e.g., a PC manufacturer, capturing knowledge may refer to the design of the various components - outsourcing the manufacturing process provides an opportunity to reduce cost</li>
+</ul></li>
+<li>on the other hand, if the firm has neither knowledge nor capacity, outsourcing may be a risky strategy as the knowledge developed by the supplier may be transferred to a competitor’s products</li>
+</ul></li>
+</ul>
+
+<p><strong>Integral product</strong></p>
+
+<ul>
+<li>content
+
+<ul>
+<li>not made from off-the-shelf components</li>
+<li>designed as a system by taking a top-down design approach</li>
+<li>evaluated based on system performance, not based on component performance</li>
+<li>components perform multiple functions</li>
+</ul></li>
+<li>dependency on knowledge/capacity
+
+<ul>
+<li>capturing both knowledge &amp; capacity is important as long as it is possible to have both</li>
+<li>if the firm has both the knowledge &amp; the capacity, then in-house production is appropriate</li>
+<li>on the other hand, if the firm does not have both, perhaps it is in the wrong business</li>
+</ul></li>
+</ul>
+
+<p><strong>A framework for buy/make decisions</strong></p>
+
+<ul>
+<li>table
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-07-02%2010.33.21.png" alt=""></figure></li>
+<li>hierarchical model to decide whether to outsource or not
+
+<ul>
+<li>customer importance</li>
+<li>component clockspeed</li>
+<li>competitive position</li>
+<li>capable suppliers</li>
+<li>architecture</li>
+</ul></li>
+<li>examples of decisions
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-07-02%2010.37.55.png" alt=""></figure></li>
+<li>kraljic's supply matrix
+
+<ul>
+<li>top right quadrant
+
+<ul>
+<li>strategic items where supply risk and impact on profit are high</li>
+<li>highest impact on customer experience</li>
+<li>price is a large portion of the system cost</li>
+<li>typically have a single supplier</li>
+<li>focus on long-term partnerships with suppliers</li>
+</ul></li>
+<li>bottom right quadrant
+
+<ul>
+<li>items with high impact on profit</li>
+<li>low supply risk (leverage items)</li>
+<li>many suppliers</li>
+<li>small percentage of cost savings will have a large impact on bottom line</li>
+<li>focus on cost reduction by competition between suppliers</li>
+</ul></li>
+<li>top left quadrant
+
+<ul>
+<li>high supply risk but low profit impact items</li>
+<li>bottleneck components</li>
+<li>do not contribute a large portion of the product cost</li>
+<li>suppliers have power position</li>
+<li>ensure continuous supply, even possibly at a premium cost</li>
+<li>focus on long-term contracts or by carrying stock (or both)</li>
+</ul></li>
+<li>bottom left quadrant
+
+<ul>
+<li>non-critical items</li>
+<li>simplify and automate the procurement process as much as possible</li>
+<li>use a decentralized procurement policy with no formal requisition and approval process
+<figure><img src="https://raw.githubusercontent.com/MarshalGao/image_hosting/master/hugo_images/%E6%88%AA%E5%B1%8F2021-07-02%2010.41.27.png" alt=""></figure></li>
+</ul></li>
+</ul></li>
+<li>supplier footprint
+
+<ul>
+<li>supply Strategies have changed over the years
+
+<ul>
+<li>American automotive manufacturers
+
+<ul>
+<li>1980s: Suppliers either in the US or in Germany</li>
+<li>1990s: Suppliers in Mexico, Spain, and Portugal</li>
+<li>2000s: Suppliers in China</li>
+</ul></li>
+<li>high-tech industry
+
+<ul>
+<li>1980s: Sourcing in the US</li>
+<li>1990s: Singapore and Malaysia</li>
+<li>2000s: Taiwan and mainland China</li>
+</ul></li>
+</ul></li>
+<li>challenge
+
+<ul>
+<li>framework that helps organizations determine the appropriate supplier footprint</li>
+<li>strategy should depend on the type of product or component purchased</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h2 id="eprocurement-and-emarket">E-Procurement and E-Market</h2>
+
+<h2 id="a-framework-for-procurement-strategy">A Framework for Procurement Strategy</h2>
+]]></content>
+        </item>
         
         <item>
             <title>ECOM6008 Strategic Alliances</title>
@@ -27382,21 +27667,6 @@ Output: [0,1]</code></pre>
 <hr>
 <h5 id="疫情期间赴香港隔离一路上新奇拍拍拍要开始读书了冲">疫情期间赴香港隔离，一路上新奇拍拍拍。要开始读书了，冲！</h5>
 <h5 id="特别感谢小刘同学提供的bgm在这里夸赞一下她的歌品">特别感谢小刘同学提供的BGM，在这里夸赞一下她的歌品！</h5>
-]]></content>
-        </item>
-        
-        <item>
-            <title>Outside World MV</title>
-            <link>https://www.marshalgao.com/outside-world-mv/</link>
-            <pubDate>Sun, 26 Jul 2020 20:00:00 +0800</pubDate>
-            
-            <guid>https://www.marshalgao.com/outside-world-mv/</guid>
-            <description>   在杭电的四年的毕业之际，和兄弟meng一起去看看外面的世界，纪念人生最独特的2016-2020。 </description>
-            <content type="html"><![CDATA[<div class="iframe-container">
-    <iframe src="//player.bilibili.com/player.html?aid=711426478&bvid=BV17D4y1D76i&cid=216867249&page=1" allowfullscreen> </iframe>
-</div>
-<hr>
-<h5 id="在杭电的四年的毕业之际和兄弟meng一起去看看外面的世界纪念人生最独特的2016-2020">在杭电的四年的毕业之际，和兄弟meng一起去看看外面的世界，纪念人生最独特的2016-2020。</h5>
 ]]></content>
         </item>
         
