@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 06 Jun 2021 17:25:36 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Jan 2023 00:09:01 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why Did I Start?</title>
+      <link>https://www.marshalgao.com/why-did-i-start/</link>
+      <pubDate>Fri, 27 Jan 2023 00:09:01 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/why-did-i-start/</guid>
+      <description>This article was written on January 9, 2023. I have been working for almost two years. However, I found nothing useful left. For the same title, I wrote one in 2022. The first version was mostly helpless and roast, and I wrote a lot of words at that time, because I really had a lot to say. However, the previous roast was important and precious, and it reflected the thoughts at that time.</description>
+    </item>
+    
     <item>
       <title>Marshal K. Y. Ko</title>
       <link>https://www.marshalgao.com/about/</link>
@@ -104,18 +113,6 @@ For example, table cinema:
       <guid>https://www.marshalgao.com/leetcode601-human-traffic-of-stadium/</guid>
       <description>Question Table: Stadium
 +---------------+---------+ | Column Name | Type | +---------------+---------+ | id | int | | visit_date | date | | people | int | +---------------+---------+ visit_date is the primary key for this table. Each row of this table contains the visit date and visit id to the stadium with the number of people during the visit. No two rows will have the same visit_date, and as the id increases, the dates increase as well.</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[596] Classes More Than 5 Students</title>
-      <link>https://www.marshalgao.com/leetcode596-classes-more-than-5-students/</link>
-      <pubDate>Wed, 13 Jan 2021 15:10:29 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode596-classes-more-than-5-students/</guid>
-      <description>Question There is a table courses with columns: student and class
-Please list out all classes which have more than or equal to 5 students.
-For example, the table:
-+---------+------------+ | student | class | +---------+------------+ | A | Math | | B | English | | C | Math | | D | Biology | | E | Math | | F | Computer | | G | Math | | H | Math | | I | Math | +---------+------------+  Should output:</description>
     </item>
     
   </channel>
