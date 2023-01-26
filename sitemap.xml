@@ -3,12 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.marshalgao.com/categories/</loc>
-    <lastmod>2021-06-06T17:25:36+08:00</lastmod>
+    <loc>https://www.marshalgao.com/about/</loc>
+    <lastmod>2023-01-25T19:16:57+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.marshalgao.com/categories/life/</loc>
+    <loc>https://www.marshalgao.com/categories/</loc>
     <lastmod>2021-06-06T17:25:36+08:00</lastmod>
   </url>
   
@@ -38,12 +38,22 @@
   </url>
   
   <url>
+    <loc>https://www.marshalgao.com/categories/video/</loc>
+    <lastmod>2021-06-06T17:25:36+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.marshalgao.com/tags/video/</loc>
     <lastmod>2021-06-06T17:25:36+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.marshalgao.com/basic-usage-of-r-language/</loc>
+    <lastmod>2021-02-01T12:17:11+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.marshalgao.com/categories/code/</loc>
     <lastmod>2021-02-01T12:17:11+08:00</lastmod>
   </url>
   
@@ -64,11 +74,6 @@
   
   <url>
     <loc>https://www.marshalgao.com/tags/r-language/</loc>
-    <lastmod>2021-02-01T12:17:11+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.marshalgao.com/categories/technology/</loc>
     <lastmod>2021-02-01T12:17:11+08:00</lastmod>
   </url>
   
@@ -328,7 +333,7 @@
   </url>
   
   <url>
-    <loc>https://www.marshalgao.com/categories/product-manager/</loc>
+    <loc>https://www.marshalgao.com/categories/previous/</loc>
     <lastmod>2021-01-11T16:47:59+08:00</lastmod>
   </url>
   
@@ -850,41 +855,6 @@
   <url>
     <loc>https://www.marshalgao.com/axure-attachments/</loc>
     <lastmod>2020-11-07T00:25:03+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.marshalgao.com/tags/capabilities/</loc>
-    <lastmod>2020-11-06T00:45:23+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.marshalgao.com/capabilities-of-internet-advertising-product-manager/</loc>
-    <lastmod>2020-11-06T00:45:23+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.marshalgao.com/tags/jd/</loc>
-    <lastmod>2020-10-20T16:42:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.marshalgao.com/jds-of-product-manager-advertising-direction/</loc>
-    <lastmod>2020-10-20T16:42:50+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.marshalgao.com/tags/learning-timeline/</loc>
-    <lastmod>2020-10-18T11:21:28+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.marshalgao.com/learning-timeline-of-advertising-product-manager/</loc>
-    <lastmod>2020-10-18T11:21:28+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.marshalgao.com/about/</loc>
-    <lastmod>2020-10-10T23:27:48+08:00</lastmod>
   </url>
   
   <url>

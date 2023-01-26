@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Code on This Is Marshal</title>
+    <link>https://www.marshalgao.com/categories/code/</link>
+    <description>Recent content in Code on This Is Marshal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 01 Feb 2021 12:17:11 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic Usage of R Language</title>
+      <link>https://www.marshalgao.com/basic-usage-of-r-language/</link>
+      <pubDate>Mon, 01 Feb 2021 12:17:11 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/basic-usage-of-r-language/</guid>
+      <description>Installation R
+ download from official website -&amp;gt; click here choose the mirror to download according your location and OS  RStudio
+ ensure that you have installed R before installing RSudio download RStudio desktop from official website -&amp;gt; click here  Notebook
+ can use RStudio also can use Kaggle  Basic Functions and Usage of R Language  practice in Kaggle  </description>
+    </item>
+    
+    <item>
+      <title>LeetCode[1179] Reformat Department Table</title>
+      <link>https://www.marshalgao.com/leetcode1179-reformat-department-table/</link>
+      <pubDate>Thu, 14 Jan 2021 15:51:59 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode1179-reformat-department-table/</guid>
+      <description>Question Table: Department
++---------------+---------+ | Column Name | Type | +---------------+---------+ | id | int | | revenue | int | | month | varchar | +---------------+---------+ (id, month) is the primary key of this table. The table has information about the revenue of each department per month. The month has values in [&amp;quot;Jan&amp;quot;,&amp;quot;Feb&amp;quot;,&amp;quot;Mar&amp;quot;,&amp;quot;Apr&amp;quot;,&amp;quot;May&amp;quot;,&amp;quot;Jun&amp;quot;,&amp;quot;Jul&amp;quot;,&amp;quot;Aug&amp;quot;,&amp;quot;Sep&amp;quot;,&amp;quot;Oct&amp;quot;,&amp;quot;Nov&amp;quot;,&amp;quot;Dec&amp;quot;].  Write an SQL query to reformat the table such that there is a department id column and a revenue column for each month.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[627] Swap Salary</title>
+      <link>https://www.marshalgao.com/leetcode627-swap-salary/</link>
+      <pubDate>Thu, 14 Jan 2021 15:12:42 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode627-swap-salary/</guid>
+      <description>Question Given a table salary, such as the one below, that has m=male and f=female values. Swap all f and m values (i.e., change all f values to m and vice versa) with a single update statement and no intermediate temp table.
+Note that you must write a single update statement, DO NOT write any select statement for this problem.
+Example:
+| id | name | sex | salary | |----|------|-----|--------| | 1 | A | m | 2500 | | 2 | B | f | 1500 | | 3 | C | m | 5500 | | 4 | D | f | 500 |  After running your update statement, the above salary table should have the following rows:</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[626] Exchange Seats</title>
+      <link>https://www.marshalgao.com/leetcode626-exchange-seats/</link>
+      <pubDate>Thu, 14 Jan 2021 14:50:32 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode626-exchange-seats/</guid>
+      <description>Question Mary is a teacher in a middle school and she has a table seat storing students&#39; names and their corresponding seat ids.
+The column id is continuous increment.
+Mary wants to change seats for the adjacent students.
+Can you write a SQL query to output the result for Mary?
++---------+---------+ | id | student | +---------+---------+ | 1 | Abbot | | 2 | Doris | | 3 | Emerson | | 4 | Green | | 5 | Jeames | +---------+---------+  For the sample input, the output is:</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[620] Not Boring Movies</title>
+      <link>https://www.marshalgao.com/leetcode620-not-boring-movies/</link>
+      <pubDate>Thu, 14 Jan 2021 13:47:00 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode620-not-boring-movies/</guid>
+      <description>Question X city opened a new cinema, many people would like to go to this cinema. The cinema also gives out a poster indicating the movies’ ratings and descriptions.
+Please write a SQL query to output movies with an odd numbered ID and a description that is not &amp;lsquo;boring&amp;rsquo;. Order the result by rating.
+For example, table cinema:
++---------+-----------+--------------+-----------+ | id | movie | description | rating | +---------+-----------+--------------+-----------+ | 1 | War | great 3D | 8.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[601] Human Traffic of Stadium</title>
+      <link>https://www.marshalgao.com/leetcode601-human-traffic-of-stadium/</link>
+      <pubDate>Thu, 14 Jan 2021 13:31:17 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode601-human-traffic-of-stadium/</guid>
+      <description>Question Table: Stadium
++---------------+---------+ | Column Name | Type | +---------------+---------+ | id | int | | visit_date | date | | people | int | +---------------+---------+ visit_date is the primary key for this table. Each row of this table contains the visit date and visit id to the stadium with the number of people during the visit. No two rows will have the same visit_date, and as the id increases, the dates increase as well.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[596] Classes More Than 5 Students</title>
+      <link>https://www.marshalgao.com/leetcode596-classes-more-than-5-students/</link>
+      <pubDate>Wed, 13 Jan 2021 15:10:29 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode596-classes-more-than-5-students/</guid>
+      <description>Question There is a table courses with columns: student and class
+Please list out all classes which have more than or equal to 5 students.
+For example, the table:
++---------+------------+ | student | class | +---------+------------+ | A | Math | | B | English | | C | Math | | D | Biology | | E | Math | | F | Computer | | G | Math | | H | Math | | I | Math | +---------+------------+  Should output:</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[595] Big Countries</title>
+      <link>https://www.marshalgao.com/leetcode595-big-countries/</link>
+      <pubDate>Wed, 13 Jan 2021 15:03:55 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode595-big-countries/</guid>
+      <description>Question There is a table World.
++-----------------+------------+------------+--------------+---------------+ | name | continent | area | population | gdp | +-----------------+------------+------------+--------------+---------------+ | Afghanistan | Asia | 652230 | 25500100 | 20343000 | | Albania | Europe | 28748 | 2831741 | 12960000 | | Algeria | Africa | 2381741 | 37100000 | 188681000 | | Andorra | Europe | 468 | 78115 | 3712000 | | Angola | Africa | 1246700 | 20609294 | 100990000 | +-----------------+------------+------------+--------------+---------------+  A country is big if it has an area of bigger than 3 million square km or a population of more than 25 million.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[262] Trips and Users</title>
+      <link>https://www.marshalgao.com/leetcode262-trips-and-users/</link>
+      <pubDate>Wed, 13 Jan 2021 14:46:36 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode262-trips-and-users/</guid>
+      <description>Question The Trips table holds all taxi trips. Each trip has a unique Id, while Client_Id and Driver_Id are both foreign keys to the Users_Id at the Users table. Status is an ENUM type of (‘completed’, ‘cancelled_by_driver’, ‘cancelled_by_client’).
++----+-----------+-----------+---------+--------------------+----------+ | Id | Client_Id | Driver_Id | City_Id | Status |Request_at| +----+-----------+-----------+---------+--------------------+----------+ | 1 | 1 | 10 | 1 | completed |2013-10-01| | 2 | 2 | 11 | 1 | cancelled_by_driver|2013-10-01| | 3 | 3 | 12 | 6 | completed |2013-10-01| | 4 | 4 | 13 | 6 | cancelled_by_client|2013-10-01| | 5 | 1 | 10 | 1 | completed |2013-10-02| | 6 | 2 | 11 | 6 | completed |2013-10-02| | 7 | 3 | 12 | 6 | completed |2013-10-02| | 8 | 2 | 12 | 12 | completed |2013-10-03| | 9 | 3 | 10 | 12 | completed |2013-10-03| | 10 | 4 | 13 | 12 | cancelled_by_driver|2013-10-03| +----+-----------+-----------+---------+--------------------+----------+  The Users table holds all users.</description>
+    </item>
+    
+    <item>
+      <title>LeetCode[197] Rising Temperature</title>
+      <link>https://www.marshalgao.com/leetcode197-rising-temperature/</link>
+      <pubDate>Tue, 12 Jan 2021 15:21:40 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/leetcode197-rising-temperature/</guid>
+      <description>Question Table: Weather
++---------------+---------+ | Column Name | Type | +---------------+---------+ | id | int | | recordDate | date | | temperature | int | +---------------+---------+ id is the primary key for this table. This table contains information about the temperature in a certain day.  Write an SQL query to find all dates&#39; id with higher temperature compared to its previous dates (yesterday).
+Return the result table in any order.</description>
+    </item>
+    
+  </channel>
+</rss>

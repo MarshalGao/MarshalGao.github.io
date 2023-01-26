@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>This is Marshal</title>
+    <title>This Is Marshal</title>
     <link>https://www.marshalgao.com/</link>
-    <description>Recent content on This is Marshal</description>
+    <description>Recent content on This Is Marshal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Sun, 06 Jun 2021 17:25:36 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Marshal K. Y. Ko</title>
+      <link>https://www.marshalgao.com/about/</link>
+      <pubDate>Wed, 25 Jan 2023 19:16:57 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/about/</guid>
+      <description>Mr. Marshal Ko graduated from the University of Hong Kong with a Master&amp;rsquo;s degree. He has been working as a product manager for Internet industry in Mainland China for nearly two years. As an Internet product manager, Mr. Marshal Ko has successively worked in Meituan, Red Hub and 58.com, mainly engaged in search strategy and commercialization strategy.
+This website is mainly used to record the thinking of Internet products, programming skills.</description>
+    </item>
+    
     <item>
       <title>Say Goodbye to Chaos</title>
       <link>https://www.marshalgao.com/say-goodbye-to-chaos/</link>
@@ -106,16 +116,6 @@ For example, table cinema:
 Please list out all classes which have more than or equal to 5 students.
 For example, the table:
 +---------+------------+ | student | class | +---------+------------+ | A | Math | | B | English | | C | Math | | D | Biology | | E | Math | | F | Computer | | G | Math | | H | Math | | I | Math | +---------+------------+  Should output:</description>
-    </item>
-    
-    <item>
-      <title>LeetCode[595] Big Countries</title>
-      <link>https://www.marshalgao.com/leetcode595-big-countries/</link>
-      <pubDate>Wed, 13 Jan 2021 15:03:55 +0800</pubDate>
-      
-      <guid>https://www.marshalgao.com/leetcode595-big-countries/</guid>
-      <description>Question There is a table World.
-+-----------------+------------+------------+--------------+---------------+ | name | continent | area | population | gdp | +-----------------+------------+------------+--------------+---------------+ | Afghanistan | Asia | 652230 | 25500100 | 20343000 | | Albania | Europe | 28748 | 2831741 | 12960000 | | Algeria | Africa | 2381741 | 37100000 | 188681000 | | Andorra | Europe | 468 | 78115 | 3712000 | | Angola | Africa | 1246700 | 20609294 | 100990000 | +-----------------+------------+------------+--------------+---------------+  A country is big if it has an area of bigger than 3 million square km or a population of more than 25 million.</description>
     </item>
     
   </channel>
