@@ -6,8 +6,27 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-        <lastBuildDate>Fri, 27 Jan 2023 00:09:01 +0800</lastBuildDate>
+        <lastBuildDate>Fri, 23 Aug 2024 16:14:56 +0800</lastBuildDate>
         <atom:link href="https://www.marshalgao.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>What Are Inverted Index and Boolean Retrieval?</title>
+            <link>https://www.marshalgao.com/what-are-inverted-index-and-boolean-retrieval/</link>
+            <pubDate>Fri, 23 Aug 2024 16:14:56 +0800</pubDate>
+            
+            <guid>https://www.marshalgao.com/what-are-inverted-index-and-boolean-retrieval/</guid>
+            <description>After being a search produt manager for a period of time, I frequently heard technical terms such as inverted index and boolean retrieval. Out of curiosity, I went to thoroughly learn about them.
+Jumping out of the search engine, the so-called index is use a keyword to search and match from the beginning of the document until the corresponding query word is found. This method is logically simple, essentially brute-force disassembly, or exhaustive.</description>
+            <content type="html"><![CDATA[<p>After being a search produt manager for a period of time, I frequently heard technical terms such as inverted index and boolean retrieval. Out of curiosity, I went to thoroughly learn about them.</p>
+<p>Jumping out of the search engine, the so-called index is use a keyword to search and match from the beginning of the document until the corresponding query word is found. This method is logically simple, essentially brute-force disassembly, or exhaustive. However, it brings disadvantages. If the text is sufficient and long enough, then the idexing time will be very long and the efficiency is not high. But searching is a scene where the need is met in real time, and if the speed is too slow, the ueser experience will deteriorate.</p>
+<p>And the inverted idex is like looking up a dictionary. First, find the corresponding word according to the first letter, and then turn to the corresponding page for fine-grained query. The reason why this can be done is that the directory of the dictionary has been classified according to the first letter. For example, if you want to query &lsquo;Apple&rsquo;, then you will go to the classifcation starting with &lsquo;A&rsquo; to find &lsquo;Apple&rsquo;.</p>
+<p>In a search engine, each result (i.e., document) will be cut into multiple words (i.e., word segmentation), and the words cut out from different documents will most likely repeated, so earch segmented word will be assoicated with multiple documents. One segmented word can estabilsh a connection with multiple documents, and this process is indexing. Returning to the above example, in the documents that contain &lsquo;Apple&rsquo; afer word segmentation, an index established by &lsquo;Apple&rsquo; will be formed, just like the directory in a dictionary. When a user searches for &lsquo;Apple&rsquo;, all the documents with &lsquo;Apple&rsquo; will be quickly found.</p>
+<p><img src="../pictures/article_apple_case.png" alt=""></p>
+<p>But when a user searches for &lsquo;Apple Store&rsquo;, in theory, only the text containing &lsquo;Apple Store&rsquo; should be retrieved. In the above example, &lsquo;Apple is &hellip;&rsquo; and &lsquo;Apple has &hellip;&rsquo; should not be retrieved. How to achieve such a matching mechanism? The answer is boolean retrieval.</p>
+<p>There are three important judgment logics in boolean retrieval, which are AND (intersection), OR (union), and NOT (difference). After the user enters keywords, they will be split into multiple word segments, and these three logics will be used for matching and retrieval between multiple word segments, and only the results that meet the conditions will be retrieved. Then continue to use the above example to explain. When a user searches for &lsquo;Apple Store&rsquo;, this query will be cut into two words, &lsquo;Apple&rsquo; and &lsquo;Store&rsquo;. &lsquo;Apple&rsquo; can be retrieve the text &lsquo;Apple is &hellip;&rsquo;, &lsquo;Apple Store &hellip;&rsquo;, and &lsquo;Apple has &hellip;&rsquo;. &lsquo;Store&rsquo; can retrieve &lsquo;Apple Store &hellip;&rsquo;. We assume that complete inclusion is required here, then the boolean operation that needs to be performed in AND, and the intersection of the retrievable texts of &lsquo;Apple&rsquo; and &lsquo;Store&rsquo; is taken, and finally &lsquo;Apple Store &hellip;&rsquo; is retrieved.</p>
+<p>So are OR or NOT useless? Of course not. For example, if you want to expand the retrieval, then in the above case, OR operation can be performed to retrieve all the texts. However, the relevance between the text and query will also become worse. Of course, this is just for easy understanding, and it may not be used like this in actual business.</p>
+]]></content>
+        </item>
         
         <item>
             <title>Why Did I Start?</title>

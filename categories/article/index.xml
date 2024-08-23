@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 27 Jan 2023 00:09:01 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/article/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Aug 2024 16:14:56 +0800</lastBuildDate><atom:link href="https://www.marshalgao.com/categories/article/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What Are Inverted Index and Boolean Retrieval?</title>
+      <link>https://www.marshalgao.com/what-are-inverted-index-and-boolean-retrieval/</link>
+      <pubDate>Fri, 23 Aug 2024 16:14:56 +0800</pubDate>
+      
+      <guid>https://www.marshalgao.com/what-are-inverted-index-and-boolean-retrieval/</guid>
+      <description>After being a search produt manager for a period of time, I frequently heard technical terms such as inverted index and boolean retrieval. Out of curiosity, I went to thoroughly learn about them.
+Jumping out of the search engine, the so-called index is use a keyword to search and match from the beginning of the document until the corresponding query word is found. This method is logically simple, essentially brute-force disassembly, or exhaustive.</description>
+    </item>
+    
     <item>
       <title>Why Did I Start?</title>
       <link>https://www.marshalgao.com/why-did-i-start/</link>
